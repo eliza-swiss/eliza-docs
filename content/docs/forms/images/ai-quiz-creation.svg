@@ -1,0 +1,135 @@
+<svg width="800" height="480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+    <linearGradient id="aiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7B1FA2"/>
+      <stop offset="100%" style="stop-color:#9C27B0"/>
+    </linearGradient>
+    <marker id="arrowPurple" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#7B1FA2"/>
+    </marker>
+    <style>
+      .title { font-family: 'Roboto', Arial, sans-serif; font-weight: bold; }
+      .text { font-family: 'Roboto', Arial, sans-serif; }
+      .small { font-family: 'Roboto', Arial, sans-serif; font-size: 11px; }
+      .mono { font-family: 'Roboto Mono', monospace; font-size: 11px; }
+    </style>
+  </defs>
+
+  <!-- Hintergrund -->
+  <rect width="800" height="480" fill="#f5f5f5"/>
+
+  <!-- Titel -->
+  <text x="400" y="30" class="title" font-size="16" fill="#424242" text-anchor="middle">🎓 KI-gestützte Quiz-Erstellung: ISO 9001</text>
+
+  <!-- SCHRITT 1: Prompt Eingabe -->
+  <rect x="30" y="55" width="300" height="180" rx="8" fill="#fff" filter="url(#shadow)"/>
+  <rect x="30" y="55" width="300" height="30" rx="8" fill="#2196F3"/>
+  <rect x="30" y="77" width="300" height="8" fill="#2196F3"/>
+  <text x="45" y="76" class="text" font-size="12" fill="#fff">1. Dein Prompt</text>
+
+  <!-- Chat-Bubble Style -->
+  <rect x="45" y="95" width="270" height="125" rx="6" fill="#E3F2FD"/>
+  <text x="55" y="115" class="mono" fill="#424242">Erstelle ein Quiz über</text>
+  <text x="55" y="130" class="mono" fill="#424242">ISO 9001 mit 5 Fragen:</text>
+  <text x="55" y="150" class="mono" fill="#616161">1. Was bedeutet ISO 9001?</text>
+  <text x="55" y="165" class="mono" fill="#616161">2. Wie oft Überprüfung?</text>
+  <text x="55" y="180" class="mono" fill="#616161">3. Wer ist verantwortlich?</text>
+  <text x="55" y="195" class="mono" fill="#9E9E9E">...</text>
+  <text x="55" y="210" class="mono" fill="#2196F3">(korrekt) markieren</text>
+
+  <!-- Pfeil 1→2 -->
+  <line x1="330" y1="145" x2="360" y2="145" stroke="#7B1FA2" stroke-width="3" marker-end="url(#arrowPurple)"/>
+
+  <!-- SCHRITT 2: KI Verarbeitung -->
+  <rect x="365" y="90" width="120" height="110" rx="8" fill="url(#aiGradient)" filter="url(#shadow)"/>
+
+  <!-- ELIZA Logo - 5 farbige Kreise -->
+  <g transform="translate(378, 105)">
+    <!-- E - Blau -->
+    <circle cx="10" cy="20" r="11" fill="#42A5F5"/>
+    <text x="10" y="24" class="title" font-size="11" fill="#fff" text-anchor="middle">E</text>
+    <!-- L - Orange -->
+    <circle cx="26" cy="20" r="11" fill="#FF9800"/>
+    <text x="26" y="24" class="title" font-size="11" fill="#fff" text-anchor="middle">L</text>
+    <!-- I - Rot -->
+    <circle cx="42" cy="20" r="11" fill="#E53935"/>
+    <text x="42" y="24" class="title" font-size="11" fill="#fff" text-anchor="middle">I</text>
+    <!-- Z - Lila -->
+    <circle cx="58" cy="20" r="11" fill="#7B1FA2"/>
+    <text x="58" y="24" class="title" font-size="11" fill="#fff" text-anchor="middle">Z</text>
+    <!-- A - Grün -->
+    <circle cx="74" cy="20" r="11" fill="#4CAF50"/>
+    <text x="74" y="24" class="title" font-size="11" fill="#fff" text-anchor="middle">A</text>
+  </g>
+
+  <text x="425" y="160" class="text" font-size="11" fill="#fff" text-anchor="middle">AI Assistant</text>
+  <text x="425" y="175" class="small" fill="#E1BEE7" text-anchor="middle">analysiert...</text>
+
+  <!-- Pfeil 2→3 -->
+  <line x1="485" y1="145" x2="515" y2="145" stroke="#7B1FA2" stroke-width="3" marker-end="url(#arrowPurple)"/>
+
+  <!-- SCHRITT 3: Erstelltes Quiz -->
+  <rect x="520" y="55" width="250" height="180" rx="8" fill="#fff" filter="url(#shadow)"/>
+  <rect x="520" y="55" width="250" height="30" rx="8" fill="#4CAF50"/>
+  <rect x="520" y="77" width="250" height="8" fill="#4CAF50"/>
+  <text x="535" y="76" class="text" font-size="12" fill="#fff">3. Erstelltes Quiz</text>
+
+  <!-- Quiz Badge -->
+  <rect x="700" y="60" width="60" height="20" rx="10" fill="#FF9800"/>
+  <text x="730" y="74" class="small" fill="#fff" text-anchor="middle">Quiz</text>
+
+  <!-- Quiz Content -->
+  <text x="535" y="105" class="title" font-size="12" fill="#424242">ISO 9001 Grundlagen-Quiz</text>
+  <line x1="535" y1="112" x2="755" y2="112" stroke="#e0e0e0"/>
+
+  <!-- Frage 1 -->
+  <text x="535" y="130" class="small" fill="#424242">❓ Was bedeutet ISO 9001?</text>
+  <circle cx="545" cy="145" r="6" fill="#4CAF50"/>
+  <text x="549" y="148" class="small" fill="#fff">✓</text>
+  <text x="560" y="148" class="small" fill="#424242">Qualitätsmanagement</text>
+  <circle cx="545" cy="160" r="6" fill="none" stroke="#9E9E9E"/>
+  <text x="560" y="163" class="small" fill="#9E9E9E">Umweltmanagement</text>
+
+  <!-- Frage 2 -->
+  <text x="535" y="185" class="small" fill="#424242">❓ Wie oft Überprüfung?</text>
+  <circle cx="545" cy="200" r="6" fill="#4CAF50"/>
+  <text x="549" y="203" class="small" fill="#fff">✓</text>
+  <text x="560" y="203" class="small" fill="#424242">Jährlich</text>
+  <circle cx="645" cy="200" r="6" fill="none" stroke="#9E9E9E"/>
+  <text x="660" y="203" class="small" fill="#9E9E9E">Alle 3 Jahre</text>
+
+  <text x="535" y="225" class="small" fill="#9E9E9E">+ 3 weitere Fragen...</text>
+
+  <!-- Ergebnis-Info Box -->
+  <rect x="30" y="255" width="740" height="100" rx="8" fill="#fff" filter="url(#shadow)"/>
+  <text x="50" y="280" class="title" font-size="13" fill="#424242">✨ Was die KI automatisch macht:</text>
+
+  <rect x="50" y="295" width="160" height="50" rx="4" fill="#E8F5E9"/>
+  <text x="60" y="315" class="small" fill="#2E7D32">✓ Quiz-Modus aktiviert</text>
+  <text x="60" y="330" class="small" fill="#2E7D32">✓ 70% Bestehensgrenze</text>
+
+  <rect x="230" y="295" width="180" height="50" rx="4" fill="#E3F2FD"/>
+  <text x="240" y="315" class="small" fill="#1565C0">✓ Fragen erstellt</text>
+  <text x="240" y="330" class="small" fill="#1565C0">✓ Antworten hinzugefügt</text>
+
+  <rect x="430" y="295" width="160" height="50" rx="4" fill="#FFF3E0"/>
+  <text x="440" y="315" class="small" fill="#E65100">✓ Korrekte markiert</text>
+  <text x="440" y="330" class="small" fill="#E65100">✓ Punkte vergeben</text>
+
+  <rect x="610" y="295" width="150" height="50" rx="4" fill="#F3E5F5"/>
+  <text x="620" y="315" class="small" fill="#7B1FA2">✓ Vorlage gespeichert</text>
+  <text x="620" y="330" class="small" fill="#7B1FA2">✓ Sofort nutzbar</text>
+
+  <!-- Tipps -->
+  <rect x="30" y="375" width="740" height="90" rx="8" fill="#FFF8E1" stroke="#FFB300" stroke-width="1"/>
+  <text x="50" y="400" class="title" font-size="13" fill="#F57F17">💡 Tipps für bessere Ergebnisse:</text>
+  <text x="50" y="420" class="small" fill="#424242">• Markiere korrekte Antworten mit "(korrekt)" oder "(richtig)"</text>
+  <text x="50" y="435" class="small" fill="#424242">• Gib den gewünschten Modus an: "Quiz", "Test" oder "Training"</text>
+  <text x="50" y="450" class="small" fill="#424242">• Je detaillierter der Prompt, desto besser das Ergebnis</text>
+  <text x="450" y="420" class="small" fill="#424242">• Nutze Kategorien wie "ISO 9001", "Arbeitssicherheit"</text>
+  <text x="450" y="435" class="small" fill="#424242">• Gib die gewünschte Anzahl Fragen an</text>
+  <text x="450" y="450" class="small" fill="#424242">• Beschreibe den Schwierigkeitsgrad</text>
+</svg>

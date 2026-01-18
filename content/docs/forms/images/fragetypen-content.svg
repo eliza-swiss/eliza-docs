@@ -1,0 +1,37 @@
+<svg width="800" height="280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.1"/>
+    </filter>
+    <style>
+      .title { font-family: 'Roboto', Arial, sans-serif; font-weight: bold; }
+      .text { font-family: 'Roboto', Arial, sans-serif; }
+      .small { font-family: 'Roboto', Arial, sans-serif; font-size: 12px; }
+    </style>
+  </defs>
+
+  <!-- Hintergrund -->
+  <rect width="800" height="280" fill="#f5f5f5"/>
+
+  <!-- Titel -->
+  <text x="20" y="35" class="title" font-size="18" fill="#424242">Inhaltsblock (Content)</text>
+  <text x="20" y="55" class="small" fill="#9E9E9E">Zeigt formatierte Informationen ohne Eingabefeld an</text>
+
+  <!-- Beispiel Card -->
+  <rect x="20" y="75" width="760" height="180" rx="8" fill="#fff" filter="url(#shadow)"/>
+
+  <!-- Info-Banner -->
+  <rect x="40" y="95" width="720" height="140" rx="6" fill="#E3F2FD"/>
+  <rect x="40" y="95" width="6" height="140" rx="3" fill="#2196F3"/>
+
+  <!-- Icon -->
+  <circle cx="75" cy="130" r="20" fill="#2196F3"/>
+  <text x="68" y="137" class="title" font-size="18" fill="#fff">i</text>
+
+  <!-- Inhalt -->
+  <text x="110" y="125" class="title" font-size="14" fill="#424242">Wichtige Hinweise zum Ausfüllen</text>
+  <text x="110" y="150" class="text" font-size="13" fill="#616161">Bitte beachte folgende Punkte beim Ausfüllen dieses Formulars:</text>
+  <text x="110" y="175" class="text" font-size="13" fill="#616161">• Alle mit * markierten Felder sind Pflichtfelder</text>
+  <text x="110" y="195" class="text" font-size="13" fill="#616161">• Deine Antworten werden automatisch gespeichert</text>
+  <text x="110" y="215" class="text" font-size="13" fill="#616161">• Du kannst das Formular jederzeit unterbrechen und später fortsetzen</text>
+</svg>

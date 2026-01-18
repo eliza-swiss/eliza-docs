@@ -1,0 +1,88 @@
+<svg width="800" height="520" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.1"/>
+    </filter>
+    <style>
+      .title { font-family: 'Roboto', Arial, sans-serif; font-weight: bold; }
+      .text { font-family: 'Roboto', Arial, sans-serif; }
+      .small { font-family: 'Roboto', Arial, sans-serif; font-size: 12px; }
+    </style>
+  </defs>
+
+  <!-- Hintergrund -->
+  <rect width="800" height="520" fill="#f5f5f5"/>
+
+  <!-- Titel -->
+  <text x="20" y="35" class="title" font-size="18" fill="#424242">Matrix und Ranking</text>
+  <text x="20" y="55" class="small" fill="#9E9E9E">Für Bewertungen mehrerer Aspekte und Prioritätenlisten</text>
+
+  <!-- Matrix Card -->
+  <rect x="20" y="75" width="760" height="230" rx="8" fill="#fff" filter="url(#shadow)"/>
+  <rect x="20" y="75" width="760" height="30" rx="8" fill="#7B1FA2"/>
+  <rect x="20" y="97" width="760" height="8" fill="#7B1FA2"/>
+  <text x="35" y="96" class="text" font-size="13" fill="#fff">Matrix-Frage</text>
+
+  <text x="35" y="130" class="text" font-size="12" fill="#424242">Wie zufrieden bist du mit folgenden Aspekten?</text>
+
+  <!-- Matrix Header -->
+  <text x="300" y="160" class="small" fill="#9E9E9E" text-anchor="middle">Unzufrieden</text>
+  <text x="400" y="160" class="small" fill="#9E9E9E" text-anchor="middle">Neutral</text>
+  <text x="500" y="160" class="small" fill="#9E9E9E" text-anchor="middle">Zufrieden</text>
+  <text x="620" y="160" class="small" fill="#9E9E9E" text-anchor="middle">Sehr zufrieden</text>
+  <text x="730" y="160" class="small" fill="#9E9E9E" text-anchor="middle">k.A.</text>
+
+  <!-- Matrix Zeile 1 -->
+  <text x="35" y="195" class="text" font-size="13" fill="#424242">Arbeitsklima</text>
+  <circle cx="300" cy="190" r="10" fill="none" stroke="#9E9E9E" stroke-width="2"/>
+  <circle cx="400" cy="190" r="10" fill="none" stroke="#9E9E9E" stroke-width="2"/>
+  <circle cx="500" cy="190" r="10" fill="#7B1FA2" stroke="#7B1FA2" stroke-width="2"/>
+  <circle cx="500" cy="190" r="4" fill="#fff"/>
+  <circle cx="620" cy="190" r="10" fill="none" stroke="#9E9E9E" stroke-width="2"/>
+  <circle cx="730" cy="190" r="10" fill="none" stroke="#9E9E9E" stroke-width="2"/>
+
+  <!-- Matrix Zeile 2 -->
+  <text x="35" y="230" class="text" font-size="13" fill="#424242">Gehalt</text>
+  <circle cx="300" cy="225" r="10" fill="none" stroke="#9E9E9E" stroke-width="2"/>
+  <circle cx="400" cy="225" r="10" fill="#7B1FA2" stroke="#7B1FA2" stroke-width="2"/>
+  <circle cx="400" cy="225" r="4" fill="#fff"/>
+  <circle cx="500" cy="225" r="10" fill="none" stroke="#9E9E9E" stroke-width="2"/>
+  <circle cx="620" cy="225" r="10" fill="none" stroke="#9E9E9E" stroke-width="2"/>
+  <circle cx="730" cy="225" r="10" fill="none" stroke="#9E9E9E" stroke-width="2"/>
+
+  <!-- Matrix Zeile 3 -->
+  <text x="35" y="265" class="text" font-size="13" fill="#424242">Work-Life-Balance</text>
+  <circle cx="300" cy="260" r="10" fill="none" stroke="#9E9E9E" stroke-width="2"/>
+  <circle cx="400" cy="260" r="10" fill="none" stroke="#9E9E9E" stroke-width="2"/>
+  <circle cx="500" cy="260" r="10" fill="none" stroke="#9E9E9E" stroke-width="2"/>
+  <circle cx="620" cy="260" r="10" fill="#7B1FA2" stroke="#7B1FA2" stroke-width="2"/>
+  <circle cx="620" cy="260" r="4" fill="#fff"/>
+  <circle cx="730" cy="260" r="10" fill="none" stroke="#9E9E9E" stroke-width="2"/>
+
+  <text x="35" y="290" class="small" fill="#9E9E9E">Mehrere Zeilen mit gleichen Antwortoptionen</text>
+
+  <!-- Ranking Card -->
+  <rect x="20" y="320" width="760" height="180" rx="8" fill="#fff" filter="url(#shadow)"/>
+  <rect x="20" y="320" width="760" height="30" rx="8" fill="#FF9800"/>
+  <rect x="20" y="342" width="760" height="8" fill="#FF9800"/>
+  <text x="35" y="341" class="text" font-size="13" fill="#fff">Ranking (Prioritätenliste)</text>
+
+  <text x="35" y="375" class="text" font-size="12" fill="#424242">Ordne die folgenden Werte nach Wichtigkeit (Drag & Drop)</text>
+
+  <!-- Ranking Items -->
+  <rect x="35" y="395" width="300" height="40" rx="4" fill="#FFF3E0" stroke="#FF9800" stroke-width="1"/>
+  <text x="55" y="420" class="title" font-size="14" fill="#FF9800">1</text>
+  <text x="80" y="420" class="text" font-size="14" fill="#424242">Teamarbeit</text>
+  <text x="310" y="420" class="small" fill="#9E9E9E">≡</text>
+
+  <rect x="35" y="440" width="300" height="40" rx="4" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="55" y="465" class="text" font-size="14" fill="#9E9E9E">2</text>
+  <text x="80" y="465" class="text" font-size="14" fill="#424242">Innovation</text>
+  <text x="310" y="465" class="small" fill="#9E9E9E">≡</text>
+
+  <!-- Ranking Info -->
+  <rect x="400" y="395" width="360" height="85" rx="4" fill="#f5f5f5"/>
+  <text x="420" y="420" class="small" fill="#9E9E9E">Ziehe die Elemente in die gewünschte</text>
+  <text x="420" y="440" class="small" fill="#9E9E9E">Reihenfolge. Position 1 = höchste Priorität.</text>
+  <text x="420" y="465" class="small" fill="#FF9800">Touch-optimiert für mobile Geräte</text>
+</svg>

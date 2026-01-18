@@ -1,0 +1,133 @@
+<svg width="800" height="480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.1"/>
+    </filter>
+    <style>
+      .title { font-family: 'Roboto', Arial, sans-serif; font-weight: bold; }
+      .text { font-family: 'Roboto', Arial, sans-serif; }
+      .small { font-family: 'Roboto', Arial, sans-serif; font-size: 12px; }
+    </style>
+  </defs>
+
+  <!-- Hintergrund -->
+  <rect width="800" height="480" fill="#f5f5f5"/>
+
+  <!-- Titel -->
+  <text x="20" y="35" class="title" font-size="18" fill="#424242">Bewertungsskala - 4 Display-Modi</text>
+  <text x="20" y="55" class="small" fill="#9E9E9E">Wähle den passenden Modus für deinen Anwendungsfall</text>
+
+  <!-- Mode 1: Slider -->
+  <rect x="20" y="75" width="370" height="110" rx="8" fill="#fff" filter="url(#shadow)"/>
+  <rect x="20" y="75" width="370" height="30" rx="8" fill="#2196F3"/>
+  <rect x="20" y="97" width="370" height="8" fill="#2196F3"/>
+  <text x="35" y="96" class="text" font-size="13" fill="#fff">1. Slider (Schieberegler)</text>
+
+  <text x="35" y="130" class="text" font-size="12" fill="#424242">Wie zufrieden bist du? (0-10)</text>
+
+  <!-- Slider Track -->
+  <rect x="35" y="150" width="280" height="6" rx="3" fill="#e0e0e0"/>
+  <rect x="35" y="150" width="196" height="6" rx="3" fill="#2196F3"/>
+  <circle cx="231" cy="153" r="10" fill="#2196F3"/>
+  <circle cx="231" cy="153" r="5" fill="#fff"/>
+
+  <!-- Wert -->
+  <rect x="330" y="140" width="45" height="26" rx="4" fill="#2196F3"/>
+  <text x="345" y="159" class="title" font-size="14" fill="#fff">7</text>
+
+  <!-- Mode 2: Zahlenfeld -->
+  <rect x="410" y="75" width="370" height="110" rx="8" fill="#fff" filter="url(#shadow)"/>
+  <rect x="410" y="75" width="370" height="30" rx="8" fill="#4CAF50"/>
+  <rect x="410" y="97" width="370" height="8" fill="#4CAF50"/>
+  <text x="425" y="96" class="text" font-size="13" fill="#fff">2. Zahlenfeld (Eingabe)</text>
+
+  <text x="425" y="130" class="text" font-size="12" fill="#424242">Wie zufrieden bist du? (0-10)</text>
+
+  <!-- Eingabefeld -->
+  <rect x="425" y="145" width="80" height="30" rx="4" fill="#fff" stroke="#4CAF50" stroke-width="2"/>
+  <text x="455" y="167" class="title" font-size="16" fill="#424242">7</text>
+
+  <!-- Pfeile -->
+  <text x="475" y="157" class="text" font-size="10" fill="#9E9E9E">▲</text>
+  <text x="475" y="172" class="text" font-size="10" fill="#9E9E9E">▼</text>
+
+  <text x="520" y="167" class="small" fill="#9E9E9E">Wertebereich: 0-10</text>
+
+  <!-- Mode 3: Zahlen-Buttons -->
+  <rect x="20" y="200" width="370" height="130" rx="8" fill="#fff" filter="url(#shadow)"/>
+  <rect x="20" y="200" width="370" height="30" rx="8" fill="#FF9800"/>
+  <rect x="20" y="222" width="370" height="8" fill="#FF9800"/>
+  <text x="35" y="221" class="text" font-size="13" fill="#fff">3. Zahlen-Buttons (Anklickbar)</text>
+
+  <text x="35" y="255" class="text" font-size="12" fill="#424242">Wie bewertest du uns? (1-5)</text>
+
+  <!-- Zahlen-Buttons -->
+  <rect x="35" y="275" width="50" height="40" rx="4" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="52" y="302" class="title" font-size="18" fill="#666">1</text>
+
+  <rect x="95" y="275" width="50" height="40" rx="4" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="112" y="302" class="title" font-size="18" fill="#666">2</text>
+
+  <rect x="155" y="275" width="50" height="40" rx="4" fill="#FF9800"/>
+  <text x="172" y="302" class="title" font-size="18" fill="#fff">3</text>
+
+  <rect x="215" y="275" width="50" height="40" rx="4" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="232" y="302" class="title" font-size="18" fill="#666">4</text>
+
+  <rect x="275" y="275" width="50" height="40" rx="4" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="292" y="302" class="title" font-size="18" fill="#666">5</text>
+
+  <!-- Ausgewählt Label -->
+  <text x="340" y="300" class="small" fill="#FF9800">← Ausgewählt</text>
+
+  <!-- Mode 4: Sterne-Buttons -->
+  <rect x="410" y="200" width="370" height="130" rx="8" fill="#fff" filter="url(#shadow)"/>
+  <rect x="410" y="200" width="370" height="30" rx="8" fill="#7B1FA2"/>
+  <rect x="410" y="222" width="370" height="8" fill="#7B1FA2"/>
+  <text x="425" y="221" class="text" font-size="13" fill="#fff">4. Sterne-Buttons (Rating)</text>
+
+  <text x="425" y="255" class="text" font-size="12" fill="#424242">Wie bewertest du uns? (1-5 Sterne)</text>
+
+  <!-- Sterne -->
+  <text x="425" y="300" class="text" font-size="32" fill="#FFD700">★★★★</text>
+  <text x="553" y="300" class="text" font-size="32" fill="#e0e0e0">★</text>
+
+  <!-- Rating Text -->
+  <text x="620" y="300" class="text" font-size="14" fill="#7B1FA2">4 von 5</text>
+
+  <!-- Empfehlungstabelle -->
+  <rect x="20" y="350" width="760" height="115" rx="8" fill="#fff" filter="url(#shadow)"/>
+  <text x="35" y="380" class="title" font-size="14" fill="#424242">Empfohlene Verwendung</text>
+  <line x1="35" y1="390" x2="765" y2="390" stroke="#f0f0f0" stroke-width="1"/>
+
+  <!-- Tabellen-Header -->
+  <text x="35" y="415" class="small" fill="#9E9E9E">Modus</text>
+  <text x="180" y="415" class="small" fill="#9E9E9E">Optimal für</text>
+  <text x="450" y="415" class="small" fill="#9E9E9E">Wertebereich</text>
+  <text x="600" y="415" class="small" fill="#9E9E9E">Gerät</text>
+
+  <!-- Zeile 1 -->
+  <rect x="35" y="425" width="12" height="12" rx="2" fill="#2196F3"/>
+  <text x="55" y="436" class="small" fill="#424242">Slider</text>
+  <text x="180" y="436" class="small" fill="#424242">NPS, Zufriedenheit</text>
+  <text x="450" y="436" class="small" fill="#424242">0-100</text>
+  <text x="600" y="436" class="small" fill="#424242">Desktop/Tablet</text>
+
+  <!-- Zeile 2 -->
+  <rect x="35" y="445" width="12" height="12" rx="2" fill="#FF9800"/>
+  <text x="55" y="456" class="small" fill="#424242">Buttons</text>
+  <text x="180" y="456" class="small" fill="#424242">Likert-Skala, NPS</text>
+  <text x="450" y="456" class="small" fill="#424242">1-10</text>
+  <text x="600" y="456" class="small" fill="#424242">Mobile/Tablet</text>
+
+  <!-- Zeile 3 -->
+  <rect x="275" y="425" width="12" height="12" rx="2" fill="#4CAF50"/>
+  <text x="295" y="436" class="small" fill="#424242">Zahlenfeld</text>
+  <text x="295" y="456" class="small" fill="#424242">Exakte Werte, Schnelleingabe</text>
+
+  <rect x="275" y="445" width="12" height="12" rx="2" fill="#7B1FA2"/>
+  <text x="545" y="436" class="small" fill="#424242">Beliebig</text>
+  <text x="545" y="456" class="small" fill="#424242">1-5</text>
+  <text x="695" y="436" class="small" fill="#424242">Alle</text>
+  <text x="695" y="456" class="small" fill="#424242">Alle</text>
+</svg>

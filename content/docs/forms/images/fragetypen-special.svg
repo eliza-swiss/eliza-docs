@@ -1,0 +1,88 @@
+<svg width="800" height="480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.1"/>
+    </filter>
+    <style>
+      .title { font-family: 'Roboto', Arial, sans-serif; font-weight: bold; }
+      .text { font-family: 'Roboto', Arial, sans-serif; }
+      .small { font-family: 'Roboto', Arial, sans-serif; font-size: 12px; }
+    </style>
+  </defs>
+
+  <!-- Hintergrund -->
+  <rect width="800" height="480" fill="#f5f5f5"/>
+
+  <!-- Titel -->
+  <text x="20" y="35" class="title" font-size="18" fill="#424242">Spezial-Fragetypen</text>
+  <text x="20" y="55" class="small" fill="#9E9E9E">Datei-Upload, Unterschrift, Organisationseinheit und Captcha</text>
+
+  <!-- Datei-Upload Card -->
+  <rect x="20" y="75" width="370" height="150" rx="8" fill="#fff" filter="url(#shadow)"/>
+  <rect x="20" y="75" width="370" height="30" rx="8" fill="#2196F3"/>
+  <rect x="20" y="97" width="370" height="8" fill="#2196F3"/>
+  <text x="35" y="96" class="text" font-size="13" fill="#fff">Datei-Upload</text>
+
+  <text x="35" y="130" class="text" font-size="12" fill="#424242">Lade deine Dokumente hoch *</text>
+
+  <!-- Upload Zone -->
+  <rect x="35" y="145" width="340" height="60" rx="6" fill="#fff" stroke="#2196F3" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="150" y="175" class="text" font-size="13" fill="#9E9E9E">Dateien hier ablegen</text>
+  <text x="165" y="195" class="small" fill="#2196F3">oder klicken zum Auswählen</text>
+
+  <text x="35" y="215" class="small" fill="#9E9E9E">PDF, DOC, JPG • Max. 10 MB</text>
+
+  <!-- Unterschrift Card -->
+  <rect x="410" y="75" width="370" height="150" rx="8" fill="#fff" filter="url(#shadow)"/>
+  <rect x="410" y="75" width="370" height="30" rx="8" fill="#4CAF50"/>
+  <rect x="410" y="97" width="370" height="8" fill="#4CAF50"/>
+  <text x="425" y="96" class="text" font-size="13" fill="#fff">Unterschrift</text>
+
+  <text x="425" y="130" class="text" font-size="12" fill="#424242">Bitte hier unterschreiben *</text>
+
+  <!-- Signature Pad -->
+  <rect x="425" y="145" width="340" height="60" rx="6" fill="#fff" stroke="#4CAF50" stroke-width="2"/>
+  <!-- Signature Simulation -->
+  <path d="M445 180 Q480 160 510 175 T560 170 T620 185 T680 165 T730 180" fill="none" stroke="#424242" stroke-width="2"/>
+  <text x="425" y="215" class="small" fill="#4CAF50">Unterschrift löschen</text>
+
+  <!-- Organisationseinheit Card -->
+  <rect x="20" y="240" width="370" height="150" rx="8" fill="#fff" filter="url(#shadow)"/>
+  <rect x="20" y="240" width="370" height="30" rx="8" fill="#FF9800"/>
+  <rect x="20" y="262" width="370" height="8" fill="#FF9800"/>
+  <text x="35" y="261" class="text" font-size="13" fill="#fff">Organisationseinheit</text>
+
+  <text x="35" y="295" class="text" font-size="12" fill="#424242">Wähle deine Abteilung *</text>
+
+  <!-- Orgunit Dropdown -->
+  <rect x="35" y="310" width="340" height="40" rx="4" fill="#fff" stroke="#FF9800" stroke-width="2"/>
+  <text x="55" y="337" class="text" font-size="14" fill="#424242">IT-Abteilung</text>
+  <text x="345" y="337" class="text" font-size="12" fill="#9E9E9E">▼</text>
+
+  <!-- Hierarchie Indikator -->
+  <text x="35" y="370" class="small" fill="#9E9E9E">ELIZA AG › Technik › IT-Abteilung</text>
+  <text x="280" y="370" class="small" fill="#FF9800">Hierarchie-Ansicht</text>
+
+  <!-- Captcha Card -->
+  <rect x="410" y="240" width="370" height="150" rx="8" fill="#fff" filter="url(#shadow)"/>
+  <rect x="410" y="240" width="370" height="30" rx="8" fill="#F44336"/>
+  <rect x="410" y="262" width="370" height="8" fill="#F44336"/>
+  <text x="425" y="261" class="text" font-size="13" fill="#fff">Captcha (Bot-Schutz)</text>
+
+  <text x="425" y="295" class="text" font-size="12" fill="#424242">Bestätige, dass du ein Mensch bist</text>
+
+  <!-- Captcha Box -->
+  <rect x="425" y="310" width="300" height="50" rx="4" fill="#f9f9f9" stroke="#e0e0e0" stroke-width="1"/>
+  <rect x="440" y="320" width="30" height="30" rx="3" fill="#4CAF50"/>
+  <text x="448" y="341" class="text" font-size="16" fill="#fff">✓</text>
+  <text x="485" y="340" class="text" font-size="13" fill="#424242">Ich bin kein Roboter</text>
+  <!-- reCAPTCHA Logo -->
+  <text x="680" y="340" class="small" fill="#9E9E9E">🔄</text>
+
+  <text x="425" y="375" class="small" fill="#9E9E9E">Schützt vor automatisierten Einreichungen</text>
+
+  <!-- Info Box -->
+  <rect x="20" y="405" width="760" height="55" rx="8" fill="#fff" filter="url(#shadow)"/>
+  <text x="35" y="430" class="title" font-size="14" fill="#424242">Hinweis</text>
+  <text x="35" y="450" class="small" fill="#616161">Diese Fragetypen sind für spezielle Anwendungsfälle gedacht und sollten nur bei Bedarf eingesetzt werden.</text>
+</svg>

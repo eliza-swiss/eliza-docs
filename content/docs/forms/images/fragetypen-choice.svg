@@ -1,0 +1,93 @@
+<svg width="800" height="420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.1"/>
+    </filter>
+    <style>
+      .title { font-family: 'Roboto', Arial, sans-serif; font-weight: bold; }
+      .text { font-family: 'Roboto', Arial, sans-serif; }
+      .small { font-family: 'Roboto', Arial, sans-serif; font-size: 12px; }
+    </style>
+  </defs>
+
+  <!-- Hintergrund -->
+  <rect width="800" height="420" fill="#f5f5f5"/>
+
+  <!-- Titel -->
+  <text x="20" y="35" class="title" font-size="18" fill="#424242">Auswahl-Fragetypen - 3 Varianten</text>
+  <text x="20" y="55" class="small" fill="#9E9E9E">Für Einzel- und Mehrfachauswahl sowie Ja/Nein-Fragen</text>
+
+  <!-- Einfachauswahl Card -->
+  <rect x="20" y="75" width="240" height="200" rx="8" fill="#fff" filter="url(#shadow)"/>
+  <rect x="20" y="75" width="240" height="30" rx="8" fill="#2196F3"/>
+  <rect x="20" y="97" width="240" height="8" fill="#2196F3"/>
+  <text x="35" y="96" class="text" font-size="13" fill="#fff">Einfachauswahl</text>
+
+  <text x="35" y="130" class="text" font-size="12" fill="#424242">Bevorzugte Kontaktart *</text>
+
+  <!-- Radio Buttons -->
+  <circle cx="50" cy="160" r="10" fill="none" stroke="#9E9E9E" stroke-width="2"/>
+  <text x="70" y="165" class="text" font-size="13" fill="#424242">E-Mail</text>
+
+  <circle cx="50" cy="195" r="10" fill="#2196F3" stroke="#2196F3" stroke-width="2"/>
+  <circle cx="50" cy="195" r="4" fill="#fff"/>
+  <text x="70" y="200" class="text" font-size="13" fill="#424242" font-weight="bold">Telefon</text>
+
+  <circle cx="50" cy="230" r="10" fill="none" stroke="#9E9E9E" stroke-width="2"/>
+  <text x="70" y="235" class="text" font-size="13" fill="#424242">Post</text>
+
+  <text x="35" y="260" class="small" fill="#9E9E9E">Nur eine Auswahl möglich</text>
+
+  <!-- Mehrfachauswahl Card -->
+  <rect x="280" y="75" width="240" height="200" rx="8" fill="#fff" filter="url(#shadow)"/>
+  <rect x="280" y="75" width="240" height="30" rx="8" fill="#4CAF50"/>
+  <rect x="280" y="97" width="240" height="8" fill="#4CAF50"/>
+  <text x="295" y="96" class="text" font-size="13" fill="#fff">Mehrfachauswahl</text>
+
+  <text x="295" y="130" class="text" font-size="12" fill="#424242">Welche Sprachen sprichst du?</text>
+
+  <!-- Checkboxes -->
+  <rect x="295" y="150" width="20" height="20" rx="3" fill="#4CAF50" stroke="#4CAF50" stroke-width="2"/>
+  <text x="299" y="166" class="text" font-size="14" fill="#fff">✓</text>
+  <text x="325" y="165" class="text" font-size="13" fill="#424242" font-weight="bold">Deutsch</text>
+
+  <rect x="295" y="185" width="20" height="20" rx="3" fill="#4CAF50" stroke="#4CAF50" stroke-width="2"/>
+  <text x="299" y="201" class="text" font-size="14" fill="#fff">✓</text>
+  <text x="325" y="200" class="text" font-size="13" fill="#424242" font-weight="bold">Englisch</text>
+
+  <rect x="295" y="220" width="20" height="20" rx="3" fill="none" stroke="#9E9E9E" stroke-width="2"/>
+  <text x="325" y="235" class="text" font-size="13" fill="#424242">Französisch</text>
+
+  <text x="295" y="260" class="small" fill="#9E9E9E">Mehrere Auswahlen möglich</text>
+
+  <!-- Ja/Nein Card -->
+  <rect x="540" y="75" width="240" height="200" rx="8" fill="#fff" filter="url(#shadow)"/>
+  <rect x="540" y="75" width="240" height="30" rx="8" fill="#FF9800"/>
+  <rect x="540" y="97" width="240" height="8" fill="#FF9800"/>
+  <text x="555" y="96" class="text" font-size="13" fill="#fff">Ja/Nein</text>
+
+  <text x="555" y="130" class="text" font-size="12" fill="#424242">Hast du bereits Erfahrung? *</text>
+
+  <!-- Ja/Nein Buttons -->
+  <rect x="555" y="150" width="100" height="45" rx="6" fill="#4CAF50"/>
+  <text x="585" y="180" class="title" font-size="16" fill="#fff">Ja</text>
+
+  <rect x="665" y="150" width="100" height="45" rx="6" fill="#fff" stroke="#e0e0e0" stroke-width="2"/>
+  <text x="695" y="180" class="title" font-size="16" fill="#666">Nein</text>
+
+  <text x="555" y="225" class="small" fill="#9E9E9E">Einfache binäre Auswahl</text>
+
+  <!-- Info Box -->
+  <rect x="20" y="290" width="760" height="110" rx="8" fill="#fff" filter="url(#shadow)"/>
+  <text x="35" y="320" class="title" font-size="14" fill="#424242">Display-Optionen</text>
+  <line x1="35" y1="330" x2="765" y2="330" stroke="#f0f0f0" stroke-width="1"/>
+
+  <rect x="35" y="345" width="12" height="12" rx="2" fill="#2196F3"/>
+  <text x="55" y="356" class="small" fill="#424242">Einfach: Radio-Buttons, Dropdown, Button-Gruppe</text>
+
+  <rect x="35" y="370" width="12" height="12" rx="2" fill="#4CAF50"/>
+  <text x="55" y="381" class="small" fill="#424242">Mehrfach: Checkboxen, Multi-Select Dropdown</text>
+
+  <rect x="400" y="345" width="12" height="12" rx="2" fill="#FF9800"/>
+  <text x="420" y="356" class="small" fill="#424242">Ja/Nein: Buttons, Switch, Radio</text>
+</svg>

@@ -1,0 +1,75 @@
+<svg width="800" height="320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.1"/>
+    </filter>
+    <style>
+      .title { font-family: 'Roboto', Arial, sans-serif; font-weight: bold; }
+      .text { font-family: 'Roboto', Arial, sans-serif; }
+      .small { font-family: 'Roboto', Arial, sans-serif; font-size: 12px; }
+    </style>
+  </defs>
+
+  <!-- Hintergrund -->
+  <rect width="800" height="320" fill="#f5f5f5"/>
+
+  <!-- Titel -->
+  <text x="20" y="35" class="title" font-size="18" fill="#424242">Zahlen und Datum - 3 Varianten</text>
+  <text x="20" y="55" class="small" fill="#9E9E9E">Für numerische Eingaben und Datumsauswahl</text>
+
+  <!-- Ganzzahl Card -->
+  <rect x="20" y="75" width="240" height="130" rx="8" fill="#fff" filter="url(#shadow)"/>
+  <rect x="20" y="75" width="240" height="30" rx="8" fill="#2196F3"/>
+  <rect x="20" y="97" width="240" height="8" fill="#2196F3"/>
+  <text x="35" y="96" class="text" font-size="13" fill="#fff">Ganzzahl (Integer)</text>
+
+  <text x="35" y="130" class="text" font-size="12" fill="#424242">Anzahl Mitarbeitende *</text>
+
+  <!-- Ganzzahl Input -->
+  <rect x="35" y="145" width="100" height="40" rx="4" fill="#fff" stroke="#2196F3" stroke-width="2"/>
+  <text x="55" y="172" class="title" font-size="16" fill="#424242">25</text>
+  <!-- Pfeile -->
+  <text x="105" y="162" class="text" font-size="10" fill="#9E9E9E">▲</text>
+  <text x="105" y="177" class="text" font-size="10" fill="#9E9E9E">▼</text>
+
+  <!-- Dezimalzahl Card -->
+  <rect x="280" y="75" width="240" height="130" rx="8" fill="#fff" filter="url(#shadow)"/>
+  <rect x="280" y="75" width="240" height="30" rx="8" fill="#FF9800"/>
+  <rect x="280" y="97" width="240" height="8" fill="#FF9800"/>
+  <text x="295" y="96" class="text" font-size="13" fill="#fff">Dezimalzahl (Decimal)</text>
+
+  <text x="295" y="130" class="text" font-size="12" fill="#424242">Betrag in CHF</text>
+
+  <!-- Dezimal Input -->
+  <rect x="295" y="145" width="120" height="40" rx="4" fill="#fff" stroke="#FF9800" stroke-width="2"/>
+  <text x="315" y="172" class="title" font-size="16" fill="#424242">1'250.50</text>
+
+  <!-- Datum Card -->
+  <rect x="540" y="75" width="240" height="130" rx="8" fill="#fff" filter="url(#shadow)"/>
+  <rect x="540" y="75" width="240" height="30" rx="8" fill="#4CAF50"/>
+  <rect x="540" y="97" width="240" height="8" fill="#4CAF50"/>
+  <text x="555" y="96" class="text" font-size="13" fill="#fff">Datum (Date)</text>
+
+  <text x="555" y="130" class="text" font-size="12" fill="#424242">Gewünschtes Startdatum *</text>
+
+  <!-- Datum Input -->
+  <rect x="555" y="145" width="150" height="40" rx="4" fill="#fff" stroke="#4CAF50" stroke-width="2"/>
+  <text x="575" y="172" class="text" font-size="14" fill="#424242">15.01.2025</text>
+  <!-- Kalender Icon -->
+  <rect x="680" y="155" width="20" height="20" rx="2" fill="#4CAF50"/>
+  <text x="684" y="170" class="text" font-size="12" fill="#fff">📅</text>
+
+  <!-- Info Box -->
+  <rect x="20" y="220" width="760" height="80" rx="8" fill="#fff" filter="url(#shadow)"/>
+  <text x="35" y="250" class="title" font-size="14" fill="#424242">Validierungsoptionen</text>
+  <line x1="35" y1="260" x2="765" y2="260" stroke="#f0f0f0" stroke-width="1"/>
+
+  <rect x="35" y="272" width="12" height="12" rx="2" fill="#2196F3"/>
+  <text x="55" y="283" class="small" fill="#424242">Ganzzahl: Min/Max Wert, Nur positive Zahlen</text>
+
+  <rect x="280" y="272" width="12" height="12" rx="2" fill="#FF9800"/>
+  <text x="300" y="283" class="small" fill="#424242">Dezimal: Nachkommastellen, Währung</text>
+
+  <rect x="540" y="272" width="12" height="12" rx="2" fill="#4CAF50"/>
+  <text x="560" y="283" class="small" fill="#424242">Datum: Min/Max Datum, Format</text>
+</svg>

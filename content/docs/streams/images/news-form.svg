@@ -1,0 +1,107 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.1"/>
+    </filter>
+    <style>
+      .title { font-family: 'Roboto', Arial, sans-serif; font-weight: bold; }
+      .text { font-family: 'Roboto', Arial, sans-serif; }
+      .small { font-family: 'Roboto', Arial, sans-serif; font-size: 12px; }
+      .label { font-family: 'Roboto', Arial, sans-serif; font-size: 13px; fill: #424242; }
+    </style>
+  </defs>
+
+  <!-- Hintergrund -->
+  <rect width="800" height="650" fill="#f5f5f5"/>
+
+  <!-- Header -->
+  <rect width="800" height="50" fill="#424242"/>
+
+  <!-- Original ELIZA Logo (skaliert) -->
+  <g transform="translate(15, 10) scale(0.4)">
+    <path style="stroke:none;fill-rule:evenodd;fill:#42A5F5;fill-opacity:1;" d="M 4.097656 38.84375 C 3.328125 25.796875 13.257812 14.59375 26.277344 13.824219 C 32.527344 13.457031 38.667969 15.589844 43.347656 19.757812 C 48.027344 23.925781 50.867188 29.789062 51.234375 36.054688 C 52.003906 49.101562 42.074219 60.300781 29.058594 61.070312 C 16.039062 61.839844 4.867188 51.886719 4.097656 38.839844 Z M 4.097656 38.84375 "/>
+    <path style="stroke:none;fill-rule:nonzero;fill:#fff;fill-opacity:1;" d="M 20.761719 28.636719 L 18.339844 28.34375 L 18.214844 26.195312 L 34.992188 25.203125 L 35.707031 30.617188 L 33.289062 30.761719 L 32.027344 27.714844 L 25.972656 27.773438 L 26.445312 35.757812 L 30.175781 35.453125 L 30.578125 32.898438 L 32.699219 32.773438 L 33.152344 40.480469 L 31.03125 40.605469 L 30.359375 37.96875 L 26.582031 38.097656 L 27.074219 46.453125 L 33.769531 45.636719 L 35.402344 41.550781 L 38.046875 42.140625 L 37.65625 47.960938 L 19.59375 49.027344 L 19.472656 47 L 21.816406 46.546875 Z M 20.761719 28.636719 "/>
+    <path style="stroke:none;fill-rule:evenodd;fill:#FF9800;fill-opacity:1;" d="M 40.730469 39.570312 C 42.679688 26.644531 54.714844 17.75 67.609375 19.703125 C 73.804688 20.644531 79.371094 24.007812 83.085938 29.0625 C 86.804688 34.113281 88.367188 40.441406 87.429688 46.648438 C 85.480469 59.574219 73.445312 68.46875 60.546875 66.511719 C 47.652344 64.558594 38.777344 52.496094 40.730469 39.570312 Z M 40.730469 39.570312 "/>
+    <path style="stroke:none;fill-rule:nonzero;fill:#fff;fill-opacity:1;" d="M 59.179688 33.058594 L 56.964844 32.285156 L 57.285156 30.15625 L 67.644531 31.726562 L 67.320312 33.851562 L 64.363281 33.84375 L 61.695312 51.523438 L 67.457031 52.09375 L 70.335938 46.363281 L 73.140625 47.164062 L 71.003906 55.367188 L 53.816406 52.761719 L 54.117188 50.753906 L 56.503906 50.796875 Z M 59.179688 33.058594 "/>
+    <path style="stroke:none;fill-rule:evenodd;fill:#EA4545;fill-opacity:1;" d="M 73.121094 37.171875 C 70.8125 24.3125 79.335938 12.011719 92.167969 9.695312 C 98.328125 8.582031 104.675781 9.96875 109.820312 13.550781 C 114.960938 17.128906 118.472656 22.609375 119.582031 28.785156 C 121.890625 41.644531 113.363281 53.945312 100.535156 56.261719 C 87.707031 58.578125 75.433594 50.03125 73.121094 37.171875 Z M 73.121094 37.171875 "/>
+    <path style="stroke:none;fill-rule:nonzero;fill:#fff;fill-opacity:1;" d="M 92.105469 24.390625 L 89.546875 24.414062 L 89.167969 22.296875 L 99.359375 20.457031 L 99.738281 22.574219 L 97.277344 23.457031 L 100.449219 41.117188 L 103.050781 41 L 103.402344 42.964844 L 93.25 44.800781 L 92.890625 42.800781 L 95.273438 42.027344 Z M 92.105469 24.390625 "/>
+    <path style="stroke:none;fill-rule:evenodd;fill:#7B1FA2;fill-opacity:1;" d="M 106.398438 39.878906 C 107.492188 26.851562 118.917969 17.183594 131.914062 18.28125 C 138.152344 18.808594 143.929688 21.796875 147.972656 26.59375 C 152.011719 31.390625 153.988281 37.597656 153.460938 43.855469 C 152.367188 56.878906 140.941406 66.550781 127.945312 65.453125 C 114.949219 64.355469 105.300781 52.90625 106.398438 39.878906 Z M 106.398438 39.878906 "/>
+    <path style="stroke:none;fill-rule:nonzero;fill:#fff;fill-opacity:1;" d="M 134.289062 32.285156 L 126.972656 32.125 L 124.894531 36.1875 L 122.296875 35.59375 L 123.585938 29.4375 L 139.496094 30.78125 L 140.109375 32.65625 L 127.945312 48.742188 L 125.636719 50.550781 L 134.40625 50.652344 L 136.585938 46.066406 L 139.167969 46.851562 L 137.921875 53.664062 L 120.71875 52.210938 L 119.851562 50.351562 L 132.273438 34.214844 Z M 134.289062 32.285156 "/>
+    <path style="stroke:none;fill-rule:evenodd;fill:#4CAF50;fill-opacity:1;" d="M 143.242188 38.273438 C 141.617188 25.304688 150.789062 13.476562 163.726562 11.851562 C 169.9375 11.070312 176.207031 12.792969 181.148438 16.644531 C 186.09375 20.492188 189.308594 26.15625 190.085938 32.382812 C 191.710938 45.347656 182.539062 57.175781 169.601562 58.804688 C 156.667969 60.429688 144.863281 51.238281 143.242188 38.273438 Z M 143.242188 38.273438 "/>
+    <path style="stroke:none;fill-rule:nonzero;fill:#fff;fill-opacity:1;" d="M 163.472656 23.75 L 168.957031 23.058594 L 178.339844 42.664062 L 180.058594 42.761719 L 180.3125 44.78125 L 170.703125 45.988281 L 170.453125 43.972656 L 172.578125 43.390625 L 171.085938 39.855469 L 163.800781 40.773438 L 163.226562 44.601562 L 165.640625 44.578125 L 165.894531 46.59375 L 157.789062 47.613281 L 157.5 45.601562 L 159.230469 45.042969 Z M 166.386719 28.789062 L 165.664062 26.695312 L 165.449219 28.929688 L 164.113281 38.34375 L 170.148438 37.585938 Z M 166.386719 28.789062 "/>
+  </g>
+
+  <text x="105" y="32" class="title" font-size="14" fill="#fff">News &amp; Events › News › Neue News</text>
+
+  <!-- Formular Card -->
+  <rect x="30" y="70" width="740" height="560" rx="8" fill="#fff" filter="url(#shadow)"/>
+
+  <!-- Card Header -->
+  <rect x="30" y="70" width="740" height="50" rx="8" fill="#424242"/>
+  <rect x="30" y="112" width="740" height="8" fill="#424242"/>
+  <text x="55" y="102" class="title" font-size="16" fill="#fff">📝 Neue News erstellen</text>
+
+  <!-- Formularfelder -->
+  <!-- Newskanal -->
+  <text x="55" y="150" class="label">Newskanal *</text>
+  <rect x="55" y="160" width="700" height="40" rx="4" fill="#fff" stroke="#e0e0e0"/>
+  <text x="70" y="185" class="text" font-size="14" fill="#424242">Unternehmens-News</text>
+  <text x="720" y="185" class="text" font-size="14" fill="#9E9E9E">▼</text>
+
+  <!-- Titel -->
+  <text x="55" y="225" class="label">Titel</text>
+  <rect x="55" y="235" width="700" height="40" rx="4" fill="#fff" stroke="#e0e0e0"/>
+  <text x="70" y="260" class="text" font-size="14" fill="#9E9E9E">Titel eingeben...</text>
+
+  <!-- Text (Textarea) -->
+  <text x="55" y="300" class="label">Text (Markdown unterstützt)</text>
+  <rect x="55" y="310" width="700" height="120" rx="4" fill="#fff" stroke="#e0e0e0"/>
+
+  <!-- Markdown Toolbar -->
+  <rect x="55" y="310" width="700" height="30" fill="#f5f5f5" rx="4"/>
+  <rect x="55" y="332" width="700" height="8" fill="#f5f5f5"/>
+  <text x="70" y="330" class="small" fill="#666">B</text>
+  <text x="95" y="330" class="small" fill="#666" font-style="italic">I</text>
+  <text x="120" y="330" class="small" fill="#666">🔗</text>
+  <text x="150" y="330" class="small" fill="#666">📷</text>
+  <text x="180" y="330" class="small" fill="#666">📋</text>
+  <text x="210" y="330" class="small" fill="#666">•</text>
+  <text x="235" y="330" class="small" fill="#666">1.</text>
+
+  <text x="70" y="370" class="text" font-size="14" fill="#9E9E9E">Beschreibe hier deine News...</text>
+  <text x="70" y="390" class="text" font-size="14" fill="#9E9E9E">Du kannst **fett** und *kursiv* verwenden.</text>
+
+  <!-- Bild -->
+  <text x="55" y="455" class="label">Titelbild</text>
+  <rect x="55" y="465" width="330" height="60" rx="4" fill="#fff" stroke="#e0e0e0" stroke-dasharray="4"/>
+  <text x="160" y="495" class="small" fill="#9E9E9E">📷 Bild hochladen</text>
+  <text x="150" y="512" class="small" fill="#9E9E9E">oder hierher ziehen</text>
+
+  <!-- Veröffentlichung -->
+  <text x="420" y="455" class="label">Veröffentlichung</text>
+  <rect x="420" y="465" width="335" height="40" rx="4" fill="#fff" stroke="#e0e0e0"/>
+  <text x="435" y="490" class="text" font-size="14" fill="#424242">📅 15.01.2025, 09:00</text>
+
+  <!-- Checkboxen -->
+  <rect x="55" y="545" width="18" height="18" rx="2" fill="#4CAF50"/>
+  <text x="62" y="559" class="small" fill="#fff">✓</text>
+  <text x="85" y="559" class="text" font-size="13" fill="#424242">Kommentare erlauben</text>
+
+  <rect x="280" y="545" width="18" height="18" rx="2" fill="#4CAF50"/>
+  <text x="287" y="559" class="small" fill="#fff">✓</text>
+  <text x="310" y="559" class="text" font-size="13" fill="#424242">Likes erlauben</text>
+
+  <!-- Anheften Option -->
+  <rect x="500" y="545" width="18" height="18" rx="2" fill="#fff" stroke="#e0e0e0"/>
+  <text x="530" y="559" class="text" font-size="13" fill="#424242">📌 Als wichtig anheften</text>
+
+  <!-- Buttons -->
+  <rect x="55" y="590" width="100" height="36" rx="4" fill="#f5f5f5"/>
+  <text x="80" y="613" class="text" font-size="13" fill="#666">Abbrechen</text>
+
+  <rect x="640" y="590" width="115" height="36" rx="4" fill="#4CAF50"/>
+  <text x="660" y="613" class="text" font-size="13" fill="#fff">💾 Speichern</text>
+
+  <!-- Pflichtfeld Hinweis -->
+  <text x="55" y="645" class="small" fill="#9E9E9E">* = Pflichtfeld</text>
+</svg>

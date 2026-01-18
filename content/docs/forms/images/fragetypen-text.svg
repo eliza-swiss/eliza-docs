@@ -1,0 +1,67 @@
+<svg width="800" height="380" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.1"/>
+    </filter>
+    <style>
+      .title { font-family: 'Roboto', Arial, sans-serif; font-weight: bold; }
+      .text { font-family: 'Roboto', Arial, sans-serif; }
+      .small { font-family: 'Roboto', Arial, sans-serif; font-size: 12px; }
+    </style>
+  </defs>
+
+  <!-- Hintergrund -->
+  <rect width="800" height="380" fill="#f5f5f5"/>
+
+  <!-- Titel -->
+  <text x="20" y="35" class="title" font-size="18" fill="#424242">Text-Eingabe - 2 Varianten</text>
+  <text x="20" y="55" class="small" fill="#9E9E9E">Einzeiliger Text für kurze Antworten, mehrzeiliger Text für längere Beschreibungen</text>
+
+  <!-- Einzeiliger Text Card -->
+  <rect x="20" y="75" width="370" height="130" rx="8" fill="#fff" filter="url(#shadow)"/>
+  <rect x="20" y="75" width="370" height="30" rx="8" fill="#2196F3"/>
+  <rect x="20" y="97" width="370" height="8" fill="#2196F3"/>
+  <text x="35" y="96" class="text" font-size="13" fill="#fff">Einzeiliger Text</text>
+
+  <text x="35" y="130" class="text" font-size="12" fill="#424242">Wie heisst du? *</text>
+
+  <!-- Eingabefeld einzeilig -->
+  <rect x="35" y="145" width="340" height="40" rx="4" fill="#fff" stroke="#2196F3" stroke-width="2"/>
+  <text x="50" y="172" class="text" font-size="14" fill="#424242">Max Mustermann</text>
+  <line x1="35" y1="185" x2="375" y2="185" stroke="#2196F3" stroke-width="2"/>
+
+  <!-- Mehrzeiliger Text Card -->
+  <rect x="410" y="75" width="370" height="130" rx="8" fill="#fff" filter="url(#shadow)"/>
+  <rect x="410" y="75" width="370" height="30" rx="8" fill="#4CAF50"/>
+  <rect x="410" y="97" width="370" height="8" fill="#4CAF50"/>
+  <text x="425" y="96" class="text" font-size="13" fill="#fff">Mehrzeiliger Text</text>
+
+  <text x="425" y="130" class="text" font-size="12" fill="#424242">Beschreibe dein Anliegen</text>
+
+  <!-- Textarea -->
+  <rect x="425" y="145" width="340" height="40" rx="4" fill="#fff" stroke="#4CAF50" stroke-width="2"/>
+  <text x="440" y="167" class="text" font-size="13" fill="#9E9E9E">Gib hier deine Beschreibung ein...</text>
+  <line x1="425" y1="185" x2="765" y2="185" stroke="#4CAF50" stroke-width="2"/>
+
+  <!-- Beispiele Card -->
+  <rect x="20" y="220" width="760" height="140" rx="8" fill="#fff" filter="url(#shadow)"/>
+  <text x="35" y="250" class="title" font-size="14" fill="#424242">Typische Anwendungsfälle</text>
+  <line x1="35" y1="260" x2="765" y2="260" stroke="#f0f0f0" stroke-width="1"/>
+
+  <!-- Tabellen-Header -->
+  <text x="35" y="285" class="small" fill="#9E9E9E">Fragetyp</text>
+  <text x="200" y="285" class="small" fill="#9E9E9E">Beispiele</text>
+  <text x="550" y="285" class="small" fill="#9E9E9E">Validierung</text>
+
+  <!-- Zeile 1 -->
+  <rect x="35" y="295" width="12" height="12" rx="2" fill="#2196F3"/>
+  <text x="55" y="306" class="small" fill="#424242">Einzeilig</text>
+  <text x="200" y="306" class="small" fill="#424242">Name, E-Mail, Telefon, Kurze Antwort</text>
+  <text x="550" y="306" class="small" fill="#424242">E-Mail, Telefon, URL</text>
+
+  <!-- Zeile 2 -->
+  <rect x="35" y="320" width="12" height="12" rx="2" fill="#4CAF50"/>
+  <text x="55" y="331" class="small" fill="#424242">Mehrzeilig</text>
+  <text x="200" y="331" class="small" fill="#424242">Kommentar, Feedback, Beschreibung</text>
+  <text x="550" y="331" class="small" fill="#424242">Min/Max Zeichen</text>
+</svg>

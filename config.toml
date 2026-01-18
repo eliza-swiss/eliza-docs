@@ -1,0 +1,109 @@
+# ELIZA Documentation Site Configuration
+# Hugo Static Site Generator with Doks Theme
+# https://getdoks.org/
+
+baseURL = "https://docs.eliza.swiss/"
+languageCode = "de-ch"
+defaultContentLanguage = "de"
+title = "ELIZA Benutzerhandbuch"
+
+# Theme
+theme = "doks"
+
+# Taxonomies
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+# Permalinks
+[permalinks]
+  docs = "/:sections/:slug/"
+
+# Menu
+[menu]
+  [[menu.main]]
+    name = "Dokumentation"
+    url = "/docs/"
+    weight = 10
+  [[menu.main]]
+    name = "ELIZA"
+    url = "https://eliza.swiss"
+    weight = 20
+
+# Params
+[params]
+  # Meta
+  description = "Offizielles Benutzerhandbuch für ELIZA - Das Schweizer Qualitätsmanagementsystem"
+  author = "ELIZA AG"
+
+  # Theme Colors
+  themeColor = "#1976d2"
+  backgroundColor = "#ffffff"
+
+  # Logo
+  logo = "/images/eliza-logo.svg"
+  logoAlt = "ELIZA Logo"
+
+  # Images
+  images = ["eliza-docs-social.png"]
+
+  # Alert
+  alert = false
+  alertDismissable = true
+  alertText = "Willkommen zum neuen ELIZA Benutzerhandbuch!"
+
+  # Docs Sidebar
+  [params.sidebar]
+    expandAll = false
+    enableSearch = true
+
+  # Footer
+  [params.footer]
+    text = "ELIZA AG - Made in Switzerland"
+    links = [
+      ["ELIZA Website", "https://eliza.swiss"],
+      ["Kontakt", "https://eliza.swiss/kontakt"],
+    ]
+
+  # Edit Page
+  [params.editPage]
+    enable = false
+
+  # Last Modified
+  [params.lastMod]
+    enable = true
+    format = "2. January 2006"
+
+# Search
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# Markup
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    endLevel = 4
+    ordered = false
+    startLevel = 2
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    style = "monokai"
+
+# Security
+[security]
+  [security.funcs]
+    getenv = ["^HUGO_", "^CI$"]
+
+# Build
+[build]
+  writeStats = true
+
+# Caches
+[caches]
+  [caches.getjson]
+    dir = ":cacheDir/:project"
+    maxAge = "10s"
