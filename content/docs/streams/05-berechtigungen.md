@@ -310,4 +310,4 @@ Berechtigungen prüfen:
 
 - Kehre zur [Übersicht]({{< ref "index" >}}) zurück
 - Lies [Erste Schritte]({{< ref "01-erste-schritte" >}}) für den Einstieg
-- Erfahre mehr über [Newskanäle]({{< ref "02-newskan\u00e4le" >}})
+- Erfahre mehr über [Newskanäle]({{< ref "02-newskanäle" >}})

@@ -1,0 +1,81 @@
+# Netlify Build Configuration for ELIZA Docs
+# https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build]
+  # Hugo Build Command
+  command = "hugo --gc --minify"
+
+  # Output Directory
+  publish = "public"
+
+[build.environment]
+  # Hugo Version
+  HUGO_VERSION = "0.121.2"
+
+  # Production Environment
+  HUGO_ENV = "production"
+
+# Production Context
+[context.production]
+  command = "hugo --gc --minify --baseURL https://docs.eliza.swiss/"
+
+# Deploy Preview Context (für Pull Requests)
+[context.deploy-preview]
+  command = "hugo --gc --minify --buildFuture --baseURL $DEPLOY_PRIME_URL/"
+
+# Branch Deploy Context (für Feature Branches)
+[context.branch-deploy]
+  command = "hugo --gc --minify --buildFuture --baseURL $DEPLOY_PRIME_URL/"
+
+# Headers für bessere Performance und Sicherheit
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Cache für statische Assets (1 Jahr)
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Redirects für alte URLs
+[[redirects]]
+  from = "/handbuch/*"
+  to = "/docs/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/manual/*"
+  to = "/docs/:splat"
+  status = 301
+
+# Startseite zu Docs weiterleiten
+[[redirects]]
+  from = "/"
+  to = "/docs/"
+  status = 302
+
+# 404 Handling
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404

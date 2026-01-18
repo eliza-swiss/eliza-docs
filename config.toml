@@ -8,7 +8,7 @@ defaultContentLanguage = "de"
 title = "ELIZA Benutzerhandbuch"
 
 # Theme
-theme = "doks"
+theme = "hugo-book"
 
 # Taxonomies
 [taxonomies]
@@ -36,13 +36,18 @@ theme = "doks"
   description = "Offizielles Benutzerhandbuch für ELIZA - Das Schweizer Qualitätsmanagementsystem"
   author = "ELIZA AG"
 
-  # Theme Colors
-  themeColor = "#1976d2"
+  # Theme Colors (ELIZA Material Design)
+  themeColor = "#2196f3"
   backgroundColor = "#ffffff"
+
+  # ELIZA Brand Colors
+  primaryColor = "#2196f3"
+  secondaryColor = "#ff9800"
+  accentColor = "#1976d2"
 
   # Logo
   logo = "/images/eliza-logo.svg"
-  logoAlt = "ELIZA Logo"
+  logoAlt = "ELIZA - Qualitätsmanagementsystem"
 
   # Images
   images = ["eliza-docs-social.png"]
@@ -51,6 +56,9 @@ theme = "doks"
   alert = false
   alertDismissable = true
   alertText = "Willkommen zum neuen ELIZA Benutzerhandbuch!"
+
+  # Custom CSS
+  customCSS = ["/scss/custom.scss"]
 
   # Docs Sidebar
   [params.sidebar]
@@ -76,7 +84,7 @@ theme = "doks"
 
 # Search
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS"]
 
 # Markup
 [markup]

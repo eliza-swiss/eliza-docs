@@ -285,7 +285,7 @@ Nach dem Ausfüllen:
 
 Erstelle automatisch Meldungen bei kritischen Mängeln:
 
-- Nutze **Formular-Actions** (siehe Kapitel [Formular-Actions]({{< ref "08-formular-actions" >}}))
+- Nutze **Formular-Actions** (siehe Kapitel [Formular-Actions]({{< ref "09-formular-actions" >}}))
 - Definiere Trigger bei "Nein"-Antworten
 - Weise Massnahmen automatisch zu
 

@@ -153,6 +153,6 @@ Ja! Nutze die Suchfunktion (Alt+S) oder navigiere direkt zum entsprechenden News
 
 ## Nächste Schritte
 
-- Lerne mehr über [Newskanäle]({{< ref "02-newskan\u00e4le" >}})
+- Lerne mehr über [Newskanäle]({{< ref "02-newskanäle" >}})
 - Erfahre, wie du [News erstellst]({{< ref "03-news-erstellen" >}})
 - Entdecke die [Event-Verwaltung]({{< ref "04-events" >}})

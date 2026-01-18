@@ -45,7 +45,7 @@ Lerne die Grundlagen des Moduls kennen: Navigation, Übersicht und erste Aktione
 
 ---
 
-### [2. Newskanäle verstehen]({{< ref "02-newskan\u00e4le" >}})
+### [2. Newskanäle verstehen]({{< ref "02-newskanäle" >}})
 
 **Newskanäle erstellen und verwalten**
 
@@ -121,7 +121,7 @@ Verstehe das Berechtigungskonzept und wie Abonnements funktionieren.
 
 **Für Einsteiger:** Beginne mit [Kapitel 1: Erste Schritte]({{< ref "01-erste-schritte" >}})
 
-**Für Administratoren:** Lies [Kapitel 2: Newskanäle]({{< ref "02-newskan\u00e4le" >}}) und [Kapitel 5: Berechtigungen]({{< ref "05-berechtigungen" >}})
+**Für Administratoren:** Lies [Kapitel 2: Newskanäle]({{< ref "02-newskanäle" >}}) und [Kapitel 5: Berechtigungen]({{< ref "05-berechtigungen" >}})
 
 **Für Event-Organisatoren:** Springe direkt zu [Kapitel 4: Events]({{< ref "04-events" >}})
 
