@@ -9,8 +9,8 @@
   publish = "public"
 
 [build.environment]
-  # Hugo Version
-  HUGO_VERSION = "0.121.2"
+  # Hugo Version (must be compatible with hugo-book theme)
+  HUGO_VERSION = "0.147.0"
 
   # Production Environment
   HUGO_ENV = "production"
