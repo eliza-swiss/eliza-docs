@@ -65,6 +65,7 @@
                 </h4>
                 <div class="row">
                     {{ range .Sections }}
+                        {{ if and .Title (ne .Title "Untitled") }}
                         <div class="col s12 m6 l4">
                             <div class="card hoverable module-card">
                                 <div class="card-content">
@@ -87,6 +88,7 @@
                                 </div>
                             </div>
                         </div>
+                        {{ end }}
                     {{ end }}
                 </div>
             {{ end }}

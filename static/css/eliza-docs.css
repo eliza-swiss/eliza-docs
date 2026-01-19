@@ -657,41 +657,61 @@ main {
 .breadcrumbs-nav {
     background-color: transparent;
     box-shadow: none;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
+    height: auto !important;
+    line-height: 1.5 !important;
+    position: relative;
 }
 
 .breadcrumbs-nav .nav-wrapper {
     padding: 0;
+    height: auto !important;
 }
 
 .breadcrumb-wrapper {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    gap: 4px;
 }
 
-.breadcrumb {
+.breadcrumb-wrapper .breadcrumb {
     color: var(--text-secondary) !important;
     font-size: 14px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    position: static !important;
+    float: none !important;
 }
 
-.breadcrumb:before {
+.breadcrumb-wrapper .breadcrumb:before {
     color: var(--text-secondary);
     margin: 0 8px;
+    content: "›" !important;
+    font-size: 16px;
 }
 
-.breadcrumb:first-child:before {
+.breadcrumb-wrapper .breadcrumb:first-child:before {
     display: none;
 }
 
-.breadcrumb.active {
+.breadcrumb-wrapper .breadcrumb.active {
     color: var(--text-primary) !important;
 }
 
 .breadcrumb i.material-icons {
     font-size: 18px;
+}
+
+/* Responsive breadcrumbs */
+@media only screen and (max-width: 600px) {
+    .breadcrumb-wrapper .breadcrumb {
+        font-size: 12px;
+    }
+
+    .breadcrumb-wrapper .breadcrumb:before {
+        margin: 0 4px;
+    }
 }
 
 /* -----------------------------------------------------------------------------

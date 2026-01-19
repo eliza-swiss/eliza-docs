@@ -7,7 +7,7 @@
                 <div class="card-content center-align">
                     <img src="{{ "images/eliza-logo.svg" | relURL }}" alt="ELIZA Logo" class="hero-logo">
                     <h1 class="hero-title">{{ .Site.Title }}</h1>
-                    <p class="hero-subtitle grey-text text-darken-1">
+                    <p class="hero-subtitle">
                         {{ .Site.Params.description }}
                     </p>
                     <div class="hero-actions">
@@ -193,8 +193,9 @@
 
 .hero-subtitle {
     font-size: 18px;
-    color: rgba(255, 255, 255, 0.9) !important;
-    margin-bottom: 32px;
+    color: rgba(255, 255, 255, 0.95) !important;
+    margin-bottom: 56px !important;
+    padding-bottom: 0;
 }
 
 .hero-actions {
@@ -224,6 +225,21 @@
 .section-title i {
     margin-right: 12px;
     color: var(--eliza-blue);
+}
+
+/* Homepage card grid - equal height cards */
+.docs-wrapper > .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.docs-wrapper > .row > .col {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.docs-wrapper > .row > .col > .module-card {
+    width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
