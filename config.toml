@@ -1,14 +1,14 @@
 # ELIZA Documentation Site Configuration
-# Hugo Static Site Generator with Doks Theme
-# https://getdoks.org/
+# Hugo Static Site Generator with ELIZA Material Design
+# Basierend auf dem ELIZA Django-Material Layout
 
 baseURL = "https://docs.eliza.swiss/"
 languageCode = "de-ch"
 defaultContentLanguage = "de"
 title = "ELIZA Benutzerhandbuch"
 
-# Theme
-theme = "hugo-book"
+# Kein externes Theme - wir verwenden eigene Layouts
+# theme = ""
 
 # Taxonomies
 [taxonomies]
@@ -57,8 +57,8 @@ theme = "hugo-book"
   alertDismissable = true
   alertText = "Willkommen zum neuen ELIZA Benutzerhandbuch!"
 
-  # Custom CSS
-  customCSS = ["/scss/custom.scss"]
+  # Dark Mode
+  darkMode = true
 
   # Docs Sidebar
   [params.sidebar]

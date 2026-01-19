@@ -1,0 +1,1197 @@
+/* =============================================================================
+   ELIZA Documentation - Custom Styles
+   Based on ELIZA Material Design System
+   ============================================================================= */
+
+/* -----------------------------------------------------------------------------
+   CSS Custom Properties (Design Tokens)
+   ----------------------------------------------------------------------------- */
+:root {
+    /* ELIZA Brand Colors */
+    --eliza-blue: #2196f3;
+    --eliza-blue-dark: #1976d2;
+    --eliza-blue-light: #64b5f6;
+    --eliza-orange: #ff9800;
+    --eliza-red: #f44336;
+    --eliza-green: #4caf50;
+    --eliza-violet: #9c27b0;
+
+    /* Layout */
+    --sidenav-width: 300px;
+    --sidenav-width-mini: 64px;
+    --topbar-height: 64px;
+
+    /* Light Mode */
+    --bg-primary: #ffffff;
+    --bg-secondary: #fafafa;
+    --bg-tertiary: #f5f5f5;
+    --text-primary: rgba(0, 0, 0, 0.87);
+    --text-secondary: rgba(0, 0, 0, 0.60);
+    --border-color: #e0e0e0;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+
+    /* Gradient Buttons */
+    --btn-gradient: linear-gradient(135deg, #1f54cd, #4da0ff);
+    --btn-gradient-hover: linear-gradient(135deg, #1e4fd1, #3a78ff);
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+    --bg-primary: #121212;
+    --bg-secondary: #1e1e1e;
+    --bg-tertiary: #2d2d2d;
+    --text-primary: rgba(255, 255, 255, 0.87);
+    --text-secondary: rgba(255, 255, 255, 0.60);
+    --border-color: #424242;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+/* -----------------------------------------------------------------------------
+   Base Styles
+   ----------------------------------------------------------------------------- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    margin: 0;
+    padding: 0;
+}
+
+body.with-sidebar {
+    padding-left: var(--sidenav-width);
+}
+
+@media only screen and (max-width: 992px) {
+    body.with-sidebar {
+        padding-left: 0;
+    }
+}
+
+/* -----------------------------------------------------------------------------
+   Sidenav Styles (ELIZA Layout)
+   ----------------------------------------------------------------------------- */
+.sidenav {
+    position: fixed;
+    width: var(--sidenav-width);
+    height: 100vh;
+    background-color: var(--bg-primary);
+    z-index: 999;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 2px 0 8px var(--shadow-color);
+    border-right: 1px solid var(--border-color);
+}
+
+/* Sidenav Header - Logo Area (Sticky) */
+.sidenav .sidenav-header {
+    padding: 0;
+    line-height: normal;
+    background-color: var(--bg-primary);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.sidenav .sidenav-header .logo-wrapper {
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--bg-primary);
+    position: relative;
+}
+
+/* Close button for mobile sidenav */
+.sidenav-close-btn {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--text-secondary);
+    transition: background-color 0.2s ease;
+}
+
+.sidenav-close-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.sidenav-close-btn i {
+    font-size: 24px;
+}
+
+.sidenav .sidenav-header .eliza-logo {
+    height: 56px;
+    width: auto;
+    max-width: 180px;
+}
+
+.sidenav li > a {
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    height: 48px;
+    line-height: 48px;
+    font-weight: 400;
+    transition: background-color 0.2s ease;
+    /* Text overflow handling */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sidenav li > a:hover {
+    background-color: rgba(33, 150, 243, 0.08);
+}
+
+.sidenav li > a.active {
+    background-color: rgba(33, 150, 243, 0.12);
+    color: var(--eliza-blue);
+    font-weight: 500;
+    border-left: 3px solid var(--eliza-blue);
+}
+
+.sidenav li > a i.material-icons {
+    margin-right: 16px;
+    color: var(--text-secondary);
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.sidenav li > a.active i.material-icons {
+    color: var(--eliza-blue);
+}
+
+/* Collapsible in Sidenav */
+.sidenav .collapsible {
+    border: none;
+    box-shadow: none;
+    margin: 0;
+}
+
+.sidenav .collapsible-header {
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    height: 48px;
+    line-height: 48px;
+    border: none;
+    color: var(--text-primary);
+    background-color: transparent;
+    /* Text overflow handling */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sidenav .collapsible-header:hover {
+    background-color: rgba(33, 150, 243, 0.08);
+}
+
+.sidenav .collapsible-header.active {
+    background-color: rgba(33, 150, 243, 0.12);
+    color: var(--eliza-blue);
+}
+
+.sidenav .collapsible-header i.material-icons {
+    margin-right: 16px;
+    color: var(--text-secondary);
+}
+
+.sidenav .collapsible-header.active i.material-icons {
+    color: var(--eliza-blue);
+}
+
+.sidenav .collapsible-header i.chevron {
+    margin-left: auto;
+    margin-right: 0;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.sidenav .collapsible-header.active i.chevron {
+    transform: rotate(90deg);
+}
+
+/* Module link in collapsible header */
+.sidenav .collapsible-header .module-link {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    color: inherit;
+    text-decoration: none;
+    min-width: 0;
+}
+
+.sidenav .collapsible-header .module-link:hover {
+    color: var(--eliza-blue);
+}
+
+.sidenav .collapsible-header .module-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sidenav .collapsible-body {
+    border: none;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.sidenav .collapsible-body ul {
+    margin: 0;
+    padding: 8px 0;
+}
+
+.sidenav .collapsible-body ul li a {
+    padding-left: 72px;
+    padding-right: 16px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    /* Text overflow handling */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+/* Bottom padding for sidenav scrolling */
+.sidenav > .collapsible {
+    padding-bottom: 24px;
+}
+
+/* -----------------------------------------------------------------------------
+   Topbar Styles
+   ----------------------------------------------------------------------------- */
+.topbar {
+    position: fixed;
+    top: 0;
+    left: var(--sidenav-width);
+    right: 0;
+    height: var(--topbar-height);
+    background-color: var(--eliza-blue);
+    z-index: 998;
+    box-shadow: 0 2px 4px var(--shadow-color);
+    overflow: visible !important;
+}
+
+/* Override MaterializeCSS nav styles */
+nav.topbar {
+    line-height: var(--topbar-height);
+    overflow: visible !important;
+}
+
+nav.topbar .nav-wrapper {
+    overflow: visible !important;
+}
+
+@media only screen and (max-width: 992px) {
+    .topbar {
+        left: 0;
+    }
+}
+
+.topbar .nav-wrapper {
+    padding: 0 16px;
+    display: flex !important;
+    align-items: center;
+    height: 100%;
+    gap: 16px;
+    overflow: visible;
+    width: 100%;
+    max-width: none;
+    position: relative;
+}
+
+.topbar .sidenav-trigger {
+    display: none; /* Hidden on desktop - sidenav is fixed */
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+    flex-shrink: 0;
+}
+
+.topbar .sidenav-trigger:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Show hamburger menu only on mobile when sidenav is not fixed */
+@media only screen and (max-width: 992px) {
+    .topbar .sidenav-trigger {
+        display: flex;
+    }
+}
+
+.topbar .brand-logo {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-shrink: 0;
+    max-width: 300px;
+}
+
+.topbar .brand-logo .page-title {
+    display: flex;
+    align-items: center;
+}
+
+/* Search Bar in Topbar */
+.topbar .search-wrapper {
+    flex: 1;
+    min-width: 200px;
+    max-width: 400px;
+}
+
+.topbar .search-field {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 24px;
+    padding: 0 16px;
+    height: 40px;
+    transition: background-color 0.2s ease;
+}
+
+.topbar .search-field:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.topbar .search-field .search-icon {
+    color: rgba(255, 255, 255, 0.8);
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.topbar .search-field input {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 14px;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+}
+
+.topbar .search-field input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Right Navigation - Topbar Icons */
+#topbar-nav,
+.topbar-icons {
+    display: flex !important;
+    align-items: center;
+    gap: 4px;
+    list-style: none;
+    padding: 0 !important;
+    margin: 0 !important;
+    position: absolute !important;
+    right: 16px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+}
+
+#topbar-nav li,
+.topbar-icons li {
+    display: flex;
+}
+
+#topbar-nav li a,
+.topbar-icons li a {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+    padding: 0;
+}
+
+#topbar-nav li a:hover,
+.topbar-icons li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#topbar-nav li a i.material-icons,
+.topbar-icons li a i.material-icons {
+    color: white;
+    font-size: 24px;
+}
+
+/* User Avatar */
+.topbar .user-avatar a {
+    width: auto;
+    padding: 0;
+}
+
+.topbar .avatar-circle {
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, var(--eliza-blue-dark), var(--eliza-blue-light));
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* -----------------------------------------------------------------------------
+   Main Content Area
+   ----------------------------------------------------------------------------- */
+main {
+    margin-top: var(--topbar-height);
+    min-height: calc(100vh - var(--topbar-height) - 60px);
+    padding: 24px;
+}
+
+.docs-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* -----------------------------------------------------------------------------
+   Cards
+   ----------------------------------------------------------------------------- */
+.card {
+    background-color: var(--bg-primary);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px var(--shadow-color);
+    margin-bottom: 24px;
+}
+
+.card .card-content {
+    padding: 24px;
+}
+
+.card .card-action {
+    border-top: 1px solid var(--border-color);
+    padding: 16px 24px;
+}
+
+.docs-card,
+.module-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.docs-card .card-content,
+.module-card .card-content {
+    flex: 1;
+}
+
+.docs-card:hover,
+.module-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px var(--shadow-color);
+}
+
+/* Equal height cards in grid - only target card grid rows, not layout rows */
+.docs-wrapper > .row > .col > .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.docs-wrapper > .row > .col > .row > .col {
+    display: flex;
+    margin-bottom: 24px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+/* Ensure consistent column widths across breakpoints */
+@media only screen and (min-width: 993px) {
+    .docs-wrapper > .row > .col > .row > .col.l4 {
+        flex-basis: 33.3333% !important;
+        max-width: 33.3333%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    .docs-wrapper > .row > .col > .row > .col.l4,
+    .docs-wrapper > .row > .col > .row > .col.m6 {
+        flex-basis: 50% !important;
+        max-width: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .docs-wrapper > .row > .col > .row > .col.l4,
+    .docs-wrapper > .row > .col > .row > .col.m6,
+    .docs-wrapper > .row > .col > .row > .col.s12 {
+        flex-basis: 100% !important;
+        max-width: 100%;
+    }
+}
+
+/* -----------------------------------------------------------------------------
+   Typography
+   ----------------------------------------------------------------------------- */
+.docs-title {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0 0 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.docs-title i.material-icons {
+    margin-right: 12px;
+    color: var(--eliza-blue);
+}
+
+.docs-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.docs-content {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.docs-content h1,
+.docs-content h2,
+.docs-content h3,
+.docs-content h4,
+.docs-content h5,
+.docs-content h6 {
+    font-weight: 500;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.docs-content h1 { font-size: 28px; }
+.docs-content h2 { font-size: 24px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px; }
+.docs-content h3 { font-size: 20px; }
+.docs-content h4 { font-size: 18px; }
+
+.docs-content p {
+    margin-bottom: 16px;
+}
+
+.docs-content a {
+    color: var(--eliza-blue);
+    text-decoration: none;
+}
+
+.docs-content a:hover {
+    text-decoration: underline;
+}
+
+.docs-content ul,
+.docs-content ol {
+    padding-left: 24px;
+    margin-bottom: 16px;
+}
+
+.docs-content li {
+    margin-bottom: 8px;
+}
+
+/* -----------------------------------------------------------------------------
+   Code Blocks
+   ----------------------------------------------------------------------------- */
+.docs-content code {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+    font-size: 14px;
+    background-color: rgba(33, 150, 243, 0.08);
+    color: var(--eliza-blue-dark);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.docs-content pre {
+    background-color: #263238;
+    border-radius: 8px;
+    padding: 16px;
+    overflow-x: auto;
+    margin: 16px 0;
+}
+
+.docs-content pre code {
+    background-color: transparent;
+    color: #e0e0e0;
+    padding: 0;
+}
+
+/* -----------------------------------------------------------------------------
+   Tables
+   ----------------------------------------------------------------------------- */
+.docs-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+}
+
+.docs-content th {
+    background-color: var(--bg-tertiary);
+    font-weight: 500;
+    text-align: left;
+    padding: 12px 16px;
+    border-bottom: 2px solid var(--eliza-blue);
+}
+
+.docs-content td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.docs-content tr:hover {
+    background-color: rgba(33, 150, 243, 0.04);
+}
+
+/* -----------------------------------------------------------------------------
+   Breadcrumbs
+   ----------------------------------------------------------------------------- */
+.breadcrumbs-nav {
+    background-color: transparent;
+    box-shadow: none;
+    margin-bottom: 24px;
+    height: auto !important;
+    line-height: 1.5 !important;
+    position: relative;
+}
+
+.breadcrumbs-nav .nav-wrapper {
+    padding: 0;
+    height: auto !important;
+}
+
+.breadcrumb-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.breadcrumb-wrapper .breadcrumb {
+    color: var(--text-secondary) !important;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    position: static !important;
+    float: none !important;
+}
+
+.breadcrumb-wrapper .breadcrumb:before {
+    color: var(--text-secondary);
+    margin: 0 8px;
+    content: "›" !important;
+    font-size: 16px;
+}
+
+.breadcrumb-wrapper .breadcrumb:first-child:before {
+    display: none;
+}
+
+.breadcrumb-wrapper .breadcrumb.active {
+    color: var(--text-primary) !important;
+}
+
+.breadcrumb i.material-icons {
+    font-size: 18px;
+}
+
+/* Responsive breadcrumbs */
+@media only screen and (max-width: 600px) {
+    .breadcrumb-wrapper .breadcrumb {
+        font-size: 12px;
+    }
+
+    .breadcrumb-wrapper .breadcrumb:before {
+        margin: 0 4px;
+    }
+}
+
+/* -----------------------------------------------------------------------------
+   Table of Contents & Export Cards
+   ----------------------------------------------------------------------------- */
+/* Right column needs align-self for sticky to work in flexbox row */
+.col.l3.hide-on-med-and-down {
+    align-self: flex-start;
+}
+
+.toc-wrapper {
+    position: sticky;
+    top: calc(var(--topbar-height) + 24px);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.toc-card,
+.export-card {
+    background-color: var(--bg-primary);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px var(--shadow-color);
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+/* TOC Header */
+.toc-header,
+.export-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    background-color: var(--bg-tertiary);
+    border-bottom: 1px solid var(--border-color);
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--text-primary);
+}
+
+.toc-header i,
+.export-header i {
+    color: var(--eliza-blue);
+    font-size: 20px;
+}
+
+/* TOC Content */
+.toc-content {
+    padding: 12px 16px;
+    max-height: calc(100vh - var(--topbar-height) - 280px);
+    overflow-y: auto;
+}
+
+/* TOC Navigation - Hugo generates nav#TableOfContents */
+.toc-content nav,
+.toc-content #TableOfContents {
+    font-size: 13px;
+}
+
+.toc-content nav > ul,
+.toc-content #TableOfContents > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.toc-content nav ul,
+.toc-content #TableOfContents ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.toc-content nav li,
+.toc-content #TableOfContents li {
+    margin-bottom: 0;
+    display: block;
+}
+
+.toc-content nav a,
+.toc-content #TableOfContents a,
+.toc-content nav a:visited,
+.toc-content #TableOfContents a:visited,
+.toc-content nav a:active,
+.toc-content #TableOfContents a:active {
+    color: var(--text-secondary);
+    font-size: 13px;
+    line-height: 1.5;
+    display: block;
+    padding: 6px 8px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: color 0.2s ease, background-color 0.2s ease;
+    word-wrap: break-word;
+    border-left: 2px solid transparent !important;
+    background-color: transparent;
+}
+
+/* Reset any inherited highlight styles - force all backgrounds to transparent */
+.toc-content,
+.toc-content *,
+.toc-content nav,
+.toc-content nav *,
+.toc-content #TableOfContents,
+.toc-content #TableOfContents *,
+.toc-content nav li,
+.toc-content #TableOfContents li,
+.toc-content nav ul,
+.toc-content #TableOfContents ul,
+.toc-content .highlight,
+.toc-content mark {
+    background-color: transparent !important;
+    background: transparent !important;
+}
+
+.toc-content nav a:hover,
+.toc-content #TableOfContents a:hover {
+    color: var(--eliza-blue);
+    background-color: rgba(33, 150, 243, 0.08) !important;
+    border-left-color: var(--eliza-blue) !important;
+}
+
+/* Nested TOC items */
+.toc-content nav ul ul,
+.toc-content #TableOfContents ul ul {
+    padding-left: 12px;
+    margin-top: 2px;
+}
+
+.toc-content nav ul ul a,
+.toc-content #TableOfContents ul ul a {
+    font-size: 12px;
+    padding: 4px 8px;
+}
+
+/* Section Navigation (Child Pages in Module) */
+.section-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.section-nav li {
+    margin-bottom: 0;
+}
+
+.section-nav a {
+    color: var(--text-secondary);
+    font-size: 13px;
+    line-height: 1.5;
+    display: block;
+    padding: 6px 8px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: color 0.2s ease, background-color 0.2s ease;
+    border-left: 2px solid transparent;
+}
+
+.section-nav a:hover {
+    color: var(--eliza-blue);
+    background-color: rgba(33, 150, 243, 0.08);
+    border-left-color: var(--eliza-blue);
+}
+
+.section-nav a.active {
+    color: var(--eliza-blue);
+    border-left-color: var(--eliza-blue);
+    font-weight: 500;
+}
+
+/* Export Card */
+.export-card {
+    padding-bottom: 16px;
+}
+
+.export-description {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 0 16px;
+    margin: 12px 0;
+}
+
+.export-btn {
+    display: flex;
+    align-items: center;
+    margin: 8px 16px 0;
+    width: calc(100% - 32px);
+    justify-content: flex-start;
+}
+
+.export-btn.btn {
+    text-transform: none;
+}
+
+.export-btn.btn-flat {
+    color: var(--text-secondary);
+}
+
+/* Bottom Navigation */
+.bottom-nav-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px 0;
+    margin-top: 16px;
+}
+
+.bottom-nav-wrapper .btn,
+.bottom-nav-wrapper .btn-flat {
+    text-transform: none;
+}
+
+/* ELIZA Button Style */
+.eliza-btn {
+    background: var(--btn-gradient) !important;
+    border-radius: 20px;
+}
+
+/* -----------------------------------------------------------------------------
+   Tags / Chips
+   ----------------------------------------------------------------------------- */
+.docs-tags {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-color);
+}
+
+.chip {
+    background-color: rgba(33, 150, 243, 0.1);
+    color: var(--eliza-blue);
+    border-radius: 16px;
+    padding: 4px 12px;
+    font-size: 12px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+/* -----------------------------------------------------------------------------
+   Navigation (Prev/Next)
+   ----------------------------------------------------------------------------- */
+.docs-navigation {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border-color);
+}
+
+.docs-navigation .btn-flat {
+    text-transform: none;
+    font-weight: 400;
+}
+
+/* -----------------------------------------------------------------------------
+   Footer
+   ----------------------------------------------------------------------------- */
+.page-footer {
+    background-color: var(--bg-tertiary);
+    padding: 16px 0;
+    margin-top: auto;
+    border-top: 1px solid var(--border-color);
+    position: sticky;
+    bottom: 0;
+}
+
+.page-footer p,
+.page-footer .footer-content {
+    margin: 0;
+    font-size: 14px;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.page-footer .footer-company {
+    font-weight: 500;
+}
+
+.page-footer .footer-separator {
+    color: var(--border-color);
+}
+
+.page-footer .footer-email,
+.page-footer .footer-link {
+    color: var(--eliza-blue);
+    text-decoration: none;
+}
+
+.page-footer .footer-email:hover,
+.page-footer .footer-link:hover {
+    text-decoration: underline;
+}
+
+.page-footer .grey-text {
+    color: var(--text-secondary) !important;
+}
+
+.swiss-badge {
+    margin-left: 4px;
+}
+
+/* -----------------------------------------------------------------------------
+   Buttons (ELIZA Gradient Style)
+   ----------------------------------------------------------------------------- */
+.btn,
+.btn-small {
+    background: var(--btn-gradient);
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    box-shadow: 0 2px 4px var(--shadow-color);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:hover,
+.btn-small:hover {
+    background: var(--btn-gradient-hover);
+    box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3);
+    transform: translateY(-1px);
+}
+
+.btn.red,
+.btn-small.red {
+    background: linear-gradient(135deg, #991b1b, #ef4444);
+}
+
+.btn.green,
+.btn-small.green {
+    background: linear-gradient(135deg, #166534, #22c55e);
+}
+
+/* -----------------------------------------------------------------------------
+   Search Modal
+   ----------------------------------------------------------------------------- */
+#search-modal .modal-content {
+    padding: 24px;
+}
+
+#search-modal h5 {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+#search-modal h5 i {
+    margin-right: 12px;
+    color: var(--eliza-blue);
+}
+
+#search-results {
+    margin-top: 16px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* -----------------------------------------------------------------------------
+   Dark Mode Adjustments
+   ----------------------------------------------------------------------------- */
+[data-theme="dark"] .sidenav {
+    background-color: var(--bg-secondary);
+}
+
+[data-theme="dark"] .card {
+    background-color: var(--bg-secondary);
+}
+
+[data-theme="dark"] .docs-content code {
+    background-color: rgba(33, 150, 243, 0.15);
+}
+
+[data-theme="dark"] .chip {
+    background-color: rgba(33, 150, 243, 0.2);
+}
+
+[data-theme="dark"] .page-footer {
+    background-color: var(--bg-tertiary);
+}
+
+/* -----------------------------------------------------------------------------
+   Responsive Adjustments
+   ----------------------------------------------------------------------------- */
+@media only screen and (max-width: 992px) {
+    main {
+        padding: 16px;
+    }
+
+    .docs-title {
+        font-size: 24px;
+    }
+
+    .sidenav {
+        transform: translateX(-100%);
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .sidenav.open {
+        transform: translateX(0);
+    }
+
+    .sidenav-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 998;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .sidenav-overlay.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .card .card-content {
+        padding: 16px;
+    }
+
+    .docs-content {
+        font-size: 15px;
+    }
+
+    .topbar .brand-logo {
+        font-size: 16px;
+    }
+}
+
+/* -----------------------------------------------------------------------------
+   Print Styles
+   ----------------------------------------------------------------------------- */
+@media print {
+    .sidenav,
+    .topbar,
+    .toc-wrapper,
+    .page-footer,
+    .docs-navigation {
+        display: none !important;
+    }
+
+    body.with-sidebar {
+        padding-left: 0;
+    }
+
+    main {
+        margin-top: 0;
+    }
+
+    .card {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+}
