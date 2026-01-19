@@ -86,11 +86,14 @@ body.with-sidebar {
     border-right: 1px solid var(--border-color);
 }
 
-/* Sidenav Header - Logo Area */
+/* Sidenav Header - Logo Area (Sticky) */
 .sidenav .sidenav-header {
     padding: 0;
     line-height: normal;
     background-color: var(--bg-primary);
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .sidenav .sidenav-header .logo-wrapper {
@@ -99,6 +102,32 @@ body.with-sidebar {
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid var(--border-color);
+    background-color: var(--bg-primary);
+    position: relative;
+}
+
+/* Close button for mobile sidenav */
+.sidenav-close-btn {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--text-secondary);
+    transition: background-color 0.2s ease;
+}
+
+.sidenav-close-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.sidenav-close-btn i {
+    font-size: 24px;
 }
 
 .sidenav .sidenav-header .eliza-logo {
@@ -811,17 +840,49 @@ main {
 .page-footer {
     background-color: var(--bg-tertiary);
     padding: 16px 0;
-    margin-top: 48px;
+    margin-top: auto;
     border-top: 1px solid var(--border-color);
+    position: sticky;
+    bottom: 0;
 }
 
-.page-footer p {
+.page-footer p,
+.page-footer .footer-content {
     margin: 0;
     font-size: 14px;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.page-footer .footer-company {
+    font-weight: 500;
+}
+
+.page-footer .footer-separator {
+    color: var(--border-color);
+}
+
+.page-footer .footer-email,
+.page-footer .footer-link {
+    color: var(--eliza-blue);
+    text-decoration: none;
+}
+
+.page-footer .footer-email:hover,
+.page-footer .footer-link:hover {
+    text-decoration: underline;
+}
+
+.page-footer .grey-text {
+    color: var(--text-secondary) !important;
 }
 
 .swiss-badge {
-    margin-left: 8px;
+    margin-left: 4px;
 }
 
 /* -----------------------------------------------------------------------------

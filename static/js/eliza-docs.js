@@ -46,19 +46,17 @@ function initSidenav() {
 
     if (!sidenav) return;
 
-    // Mobile sidenav instance
-    if (window.innerWidth <= 992) {
-        M.Sidenav.init(sidenav, {
-            edge: 'left',
-            draggable: true,
-            onOpenStart: function() {
-                if (overlay) overlay.classList.add('visible');
-            },
-            onCloseEnd: function() {
-                if (overlay) overlay.classList.remove('visible');
-            }
-        });
-    }
+    // Always initialize MaterializeCSS Sidenav for mobile support
+    M.Sidenav.init(sidenav, {
+        edge: 'left',
+        draggable: true,
+        onOpenStart: function() {
+            if (overlay) overlay.classList.add('visible');
+        },
+        onCloseEnd: function() {
+            if (overlay) overlay.classList.remove('visible');
+        }
+    });
 
     // Highlight active section in sidenav
     highlightActiveSection();
@@ -71,6 +69,18 @@ function toggleSidenav() {
     var sidenav = document.getElementById('slide-out');
     var overlay = document.getElementById('sidenav-overlay');
 
+    // Try MaterializeCSS API first
+    var instance = M.Sidenav.getInstance(sidenav);
+    if (instance) {
+        if (instance.isOpen) {
+            instance.close();
+        } else {
+            instance.open();
+        }
+        return;
+    }
+
+    // Fallback to CSS class approach
     if (sidenav.classList.contains('open')) {
         closeSidenav();
     } else {
@@ -86,6 +96,13 @@ function closeSidenav() {
     var sidenav = document.getElementById('slide-out');
     var overlay = document.getElementById('sidenav-overlay');
 
+    // Try MaterializeCSS API first
+    var instance = M.Sidenav.getInstance(sidenav);
+    if (instance) {
+        instance.close();
+    }
+
+    // Also handle custom CSS class approach as fallback
     sidenav.classList.remove('open');
     if (overlay) overlay.classList.remove('visible');
 }

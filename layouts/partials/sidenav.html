@@ -9,6 +9,10 @@
             <a href="{{ .Site.BaseURL }}">
                 <img class="eliza-logo" src="{{ "images/eliza-logo.svg" | relURL }}" alt="{{ .Site.Title }}">
             </a>
+            <!-- Close Button (Mobile only) -->
+            <a href="#" class="sidenav-close-btn hide-on-large-only" onclick="closeSidenav(); return false;">
+                <i class="material-icons">close</i>
+            </a>
         </div>
     </li>
 
@@ -18,8 +22,6 @@
             <i class="material-icons">home</i>Startseite
         </a>
     </li>
-
-    <li><div class="divider"></div></li>
 
     <!-- Module Navigation -->
     <li>
