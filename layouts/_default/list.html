@@ -26,10 +26,10 @@
                 </div>
             </div>
 
-            <!-- Child Pages -->
-            {{ if .Pages }}
+            <!-- Child Pages (only regular pages, not section indexes) -->
+            {{ if .RegularPages }}
                 <div class="row">
-                    {{ range .Pages }}
+                    {{ range .RegularPages }}
                         <div class="col s12 m6 l4">
                             <div class="card hoverable docs-card">
                                 <div class="card-content">

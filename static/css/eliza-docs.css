@@ -478,12 +478,59 @@ main {
 .docs-card,
 .module-card {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.docs-card .card-content,
+.module-card .card-content {
+    flex: 1;
 }
 
 .docs-card:hover,
 .module-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 24px var(--shadow-color);
+}
+
+/* Equal height cards in grid - only target card grid rows, not layout rows */
+.docs-wrapper > .row > .col > .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.docs-wrapper > .row > .col > .row > .col {
+    display: flex;
+    margin-bottom: 24px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+/* Ensure consistent column widths across breakpoints */
+@media only screen and (min-width: 993px) {
+    .docs-wrapper > .row > .col > .row > .col.l4 {
+        flex-basis: 33.3333% !important;
+        max-width: 33.3333%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    .docs-wrapper > .row > .col > .row > .col.l4,
+    .docs-wrapper > .row > .col > .row > .col.m6 {
+        flex-basis: 50% !important;
+        max-width: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .docs-wrapper > .row > .col > .row > .col.l4,
+    .docs-wrapper > .row > .col > .row > .col.m6,
+    .docs-wrapper > .row > .col > .row > .col.s12 {
+        flex-basis: 100% !important;
+        max-width: 100%;
+    }
 }
 
 /* -----------------------------------------------------------------------------
@@ -650,6 +697,11 @@ main {
 /* -----------------------------------------------------------------------------
    Table of Contents & Export Cards
    ----------------------------------------------------------------------------- */
+/* Right column needs align-self for sticky to work in flexbox row */
+.col.l3.hide-on-med-and-down {
+    align-self: flex-start;
+}
+
 .toc-wrapper {
     position: sticky;
     top: calc(var(--topbar-height) + 24px);
@@ -664,6 +716,7 @@ main {
     border-radius: 8px;
     box-shadow: 0 2px 8px var(--shadow-color);
     overflow: hidden;
+    border: 1px solid var(--border-color);
 }
 
 /* TOC Header */
@@ -720,7 +773,11 @@ main {
 }
 
 .toc-content nav a,
-.toc-content #TableOfContents a {
+.toc-content #TableOfContents a,
+.toc-content nav a:visited,
+.toc-content #TableOfContents a:visited,
+.toc-content nav a:active,
+.toc-content #TableOfContents a:active {
     color: var(--text-secondary);
     font-size: 13px;
     line-height: 1.5;
@@ -730,14 +787,32 @@ main {
     border-radius: 4px;
     transition: color 0.2s ease, background-color 0.2s ease;
     word-wrap: break-word;
-    border-left: 2px solid transparent;
+    border-left: 2px solid transparent !important;
+    background-color: transparent;
+}
+
+/* Reset any inherited highlight styles - force all backgrounds to transparent */
+.toc-content,
+.toc-content *,
+.toc-content nav,
+.toc-content nav *,
+.toc-content #TableOfContents,
+.toc-content #TableOfContents *,
+.toc-content nav li,
+.toc-content #TableOfContents li,
+.toc-content nav ul,
+.toc-content #TableOfContents ul,
+.toc-content .highlight,
+.toc-content mark {
+    background-color: transparent !important;
+    background: transparent !important;
 }
 
 .toc-content nav a:hover,
 .toc-content #TableOfContents a:hover {
     color: var(--eliza-blue);
-    background-color: rgba(33, 150, 243, 0.08);
-    border-left-color: var(--eliza-blue);
+    background-color: rgba(33, 150, 243, 0.08) !important;
+    border-left-color: var(--eliza-blue) !important;
 }
 
 /* Nested TOC items */
