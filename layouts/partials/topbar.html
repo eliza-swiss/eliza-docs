@@ -1,0 +1,59 @@
+<!-- ============================================ -->
+<!-- TOPBAR - Material Design App Bar            -->
+<!-- ============================================ -->
+<nav class="topbar">
+    <div class="nav-wrapper">
+        <!-- Menu Trigger (Mobile) -->
+        <a href="#" data-target="slide-out" class="sidenav-trigger" onclick="toggleSidenav(); return false;">
+            <i class="material-icons">menu</i>
+        </a>
+
+        <!-- Page Title -->
+        <div class="brand-logo hide-on-med-and-down">
+            {{ if .Title }}
+                <span class="page-title">{{ .Title }}</span>
+            {{ else }}
+                <span class="page-title">{{ .Site.Title }}</span>
+            {{ end }}
+        </div>
+
+        <!-- Right Navigation -->
+        <ul id="nav-mobile" class="right">
+            <!-- Dark Mode Toggle -->
+            <li>
+                <a href="#" onclick="toggleDarkMode(); return false;" title="Dark Mode umschalten">
+                    <i class="material-icons" id="theme-icon">dark_mode</i>
+                </a>
+            </li>
+
+            <!-- Search (Desktop) -->
+            <li class="hide-on-med-and-down">
+                <a href="#" onclick="openSearch(); return false;" title="Suchen">
+                    <i class="material-icons">search</i>
+                </a>
+            </li>
+
+            <!-- GitHub Link -->
+            <li>
+                <a href="https://github.com/eliza-swiss/eliza-docs" target="_blank" title="GitHub">
+                    <i class="material-icons">code</i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Search Modal -->
+<div id="search-modal" class="modal">
+    <div class="modal-content">
+        <h5><i class="material-icons left">search</i> Dokumentation durchsuchen</h5>
+        <div class="input-field">
+            <input type="text" id="search-input" placeholder="Suchbegriff eingeben...">
+            <label for="search-input">Suche</label>
+        </div>
+        <div id="search-results"></div>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-blue btn-flat">Schliessen</a>
+    </div>
+</div>

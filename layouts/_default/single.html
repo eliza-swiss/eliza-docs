@@ -1,0 +1,88 @@
+{{ define "main" }}
+<div class="docs-wrapper">
+    <div class="row">
+        <!-- Main Content -->
+        <div class="col s12 m12 l9">
+            <div class="card">
+                <div class="card-content">
+                    <!-- Breadcrumbs -->
+                    <nav class="breadcrumbs-nav">
+                        <div class="nav-wrapper">
+                            <div class="breadcrumb-wrapper">
+                                <a href="{{ .Site.BaseURL }}" class="breadcrumb">
+                                    <i class="material-icons">home</i>
+                                </a>
+                                {{ range .Ancestors.Reverse }}
+                                    <a href="{{ .RelPermalink }}" class="breadcrumb">{{ .Title }}</a>
+                                {{ end }}
+                                <span class="breadcrumb active">{{ .Title }}</span>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <!-- Page Title -->
+                    <h1 class="docs-title">
+                        {{ if .Params.icon }}
+                            <i class="material-icons left">{{ .Params.icon }}</i>
+                        {{ end }}
+                        {{ .Title }}
+                    </h1>
+
+                    <!-- Meta Info -->
+                    {{ if .Params.description }}
+                        <p class="docs-description grey-text">{{ .Params.description }}</p>
+                    {{ end }}
+
+                    <div class="divider"></div>
+
+                    <!-- Content -->
+                    <div class="docs-content">
+                        {{ .Content }}
+                    </div>
+
+                    <!-- Tags -->
+                    {{ if .Params.tags }}
+                        <div class="docs-tags">
+                            {{ range .Params.tags }}
+                                <span class="chip">{{ . }}</span>
+                            {{ end }}
+                        </div>
+                    {{ end }}
+
+                    <!-- Navigation -->
+                    <div class="docs-navigation">
+                        <div class="row">
+                            <div class="col s6">
+                                {{ with .PrevInSection }}
+                                    <a href="{{ .RelPermalink }}" class="btn-flat waves-effect">
+                                        <i class="material-icons left">chevron_left</i>
+                                        {{ .Title | truncate 30 }}
+                                    </a>
+                                {{ end }}
+                            </div>
+                            <div class="col s6 right-align">
+                                {{ with .NextInSection }}
+                                    <a href="{{ .RelPermalink }}" class="btn-flat waves-effect">
+                                        {{ .Title | truncate 30 }}
+                                        <i class="material-icons right">chevron_right</i>
+                                    </a>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Table of Contents (Desktop) -->
+        <div class="col l3 hide-on-med-and-down">
+            <div class="toc-wrapper pinned">
+                <div class="toc-card">
+                    <h6>Auf dieser Seite</h6>
+                    {{ .TableOfContents }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}

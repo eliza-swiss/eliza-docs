@@ -1,0 +1,67 @@
+<!-- ============================================ -->
+<!-- SIDENAV - ELIZA Style Navigation            -->
+<!-- Fixed auf Desktop, Overlay auf Mobile       -->
+<!-- ============================================ -->
+<nav id="slide-out" class="sidenav sidenav-fixed">
+    <!-- User Header / Logo Area -->
+    <li class="sidenav-header">
+        <div class="user-view">
+            <div class="background eliza-gradient"></div>
+            <a href="{{ .Site.BaseURL }}">
+                <img class="eliza-logo" src="{{ "images/eliza-logo.svg" | relURL }}" alt="{{ .Site.Title }}">
+            </a>
+            <span class="site-title white-text">{{ .Site.Title }}</span>
+        </div>
+    </li>
+
+    <!-- Home Link -->
+    <li>
+        <a href="{{ .Site.BaseURL }}" class="waves-effect {{ if .IsHome }}active{{ end }}">
+            <i class="material-icons">home</i>Startseite
+        </a>
+    </li>
+
+    <li><div class="divider"></div></li>
+
+    <!-- Module Navigation -->
+    <li>
+        <ul class="collapsible collapsible-accordion">
+            {{ $currentPage := . }}
+            {{ $sections := .Site.GetPage "section" "docs" }}
+            {{ if $sections }}
+                {{ range $sections.Sections }}
+                    {{ $isActive := $currentPage.IsDescendant . }}
+                    <li class="{{ if $isActive }}active{{ end }}">
+                        <a class="collapsible-header waves-effect {{ if $isActive }}active{{ end }}">
+                            <i class="material-icons">{{ .Params.icon | default "folder" }}</i>
+                            {{ .Title }}
+                            <i class="material-icons chevron">chevron_right</i>
+                        </a>
+                        <div class="collapsible-body">
+                            <ul>
+                                {{ range .Pages }}
+                                    <li>
+                                        <a href="{{ .RelPermalink }}" class="{{ if eq $currentPage.RelPermalink .RelPermalink }}active{{ end }}">
+                                            {{ .Title }}
+                                        </a>
+                                    </li>
+                                {{ end }}
+                            </ul>
+                        </div>
+                    </li>
+                {{ end }}
+            {{ end }}
+        </ul>
+    </li>
+
+    <!-- Bottom Links -->
+    <li class="sidenav-bottom">
+        <div class="divider"></div>
+        <a href="https://eliza.swiss" target="_blank" class="waves-effect">
+            <i class="material-icons">open_in_new</i>eliza.swiss
+        </a>
+        <a href="https://eliza.swiss/kontakt" target="_blank" class="waves-effect">
+            <i class="material-icons">mail</i>Kontakt
+        </a>
+    </li>
+</nav>

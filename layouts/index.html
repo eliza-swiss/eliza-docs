@@ -1,0 +1,237 @@
+{{ define "main" }}
+<div class="docs-wrapper">
+    <!-- Hero Section -->
+    <div class="row">
+        <div class="col s12">
+            <div class="card hero-card">
+                <div class="card-content center-align">
+                    <img src="{{ "images/eliza-logo.svg" | relURL }}" alt="ELIZA Logo" class="hero-logo">
+                    <h1 class="hero-title">{{ .Site.Title }}</h1>
+                    <p class="hero-subtitle grey-text text-darken-1">
+                        {{ .Site.Params.description }}
+                    </p>
+                    <div class="hero-actions">
+                        <a href="{{ "docs/" | relURL }}" class="btn waves-effect waves-light">
+                            <i class="material-icons left">menu_book</i>
+                            Dokumentation öffnen
+                        </a>
+                        <a href="https://eliza.swiss" target="_blank" class="btn-flat waves-effect">
+                            <i class="material-icons left">open_in_new</i>
+                            eliza.swiss besuchen
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="row">
+        <div class="col s12">
+            <h4 class="section-title">
+                <i class="material-icons left">bolt</i>
+                Schnellzugriff
+            </h4>
+        </div>
+
+        <!-- Dashboard -->
+        <div class="col s12 m6 l4">
+            <div class="card hoverable module-card">
+                <div class="card-content">
+                    <span class="card-title">
+                        <i class="material-icons blue-text left">dashboard</i>
+                        Dashboard
+                    </span>
+                    <p class="grey-text">Dein persönliches Cockpit mit Favoriten und Benachrichtigungen.</p>
+                </div>
+                <div class="card-action">
+                    <a href="{{ "docs/dashboard/" | relURL }}" class="blue-text">
+                        Mehr erfahren
+                        <i class="material-icons right tiny">arrow_forward</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- DMS -->
+        <div class="col s12 m6 l4">
+            <div class="card hoverable module-card">
+                <div class="card-content">
+                    <span class="card-title">
+                        <i class="material-icons blue-text left">folder</i>
+                        Dokumentenmanagement
+                    </span>
+                    <p class="grey-text">Dokumentenlenkung mit Workflow, Versionierung und Vorlagen.</p>
+                </div>
+                <div class="card-action">
+                    <a href="{{ "docs/dms/" | relURL }}" class="blue-text">
+                        Mehr erfahren
+                        <i class="material-icons right tiny">arrow_forward</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Prozesse -->
+        <div class="col s12 m6 l4">
+            <div class="card hoverable module-card">
+                <div class="card-content">
+                    <span class="card-title">
+                        <i class="material-icons blue-text left">account_tree</i>
+                        Prozesse
+                    </span>
+                    <p class="grey-text">BPMN 2.0 Prozessmanagement mit visueller Modellierung.</p>
+                </div>
+                <div class="card-action">
+                    <a href="{{ "docs/prozesse/" | relURL }}" class="blue-text">
+                        Mehr erfahren
+                        <i class="material-icons right tiny">arrow_forward</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Forms -->
+        <div class="col s12 m6 l4">
+            <div class="card hoverable module-card">
+                <div class="card-content">
+                    <span class="card-title">
+                        <i class="material-icons blue-text left">assignment</i>
+                        Formulare
+                    </span>
+                    <p class="grey-text">Formulare, Quizze und Checklisten erstellen und auswerten.</p>
+                </div>
+                <div class="card-action">
+                    <a href="{{ "docs/forms/" | relURL }}" class="blue-text">
+                        Mehr erfahren
+                        <i class="material-icons right tiny">arrow_forward</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- KI-Assistent -->
+        <div class="col s12 m6 l4">
+            <div class="card hoverable module-card">
+                <div class="card-content">
+                    <span class="card-title">
+                        <i class="material-icons blue-text left">smart_toy</i>
+                        KI-Assistent
+                    </span>
+                    <p class="grey-text">Intelligente Unterstützung bei deiner täglichen Arbeit.</p>
+                </div>
+                <div class="card-action">
+                    <a href="{{ "docs/bot/" | relURL }}" class="blue-text">
+                        Mehr erfahren
+                        <i class="material-icons right tiny">arrow_forward</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Zeiterfassung -->
+        <div class="col s12 m6 l4">
+            <div class="card hoverable module-card">
+                <div class="card-content">
+                    <span class="card-title">
+                        <i class="material-icons blue-text left">schedule</i>
+                        Zeiterfassung
+                    </span>
+                    <p class="grey-text">Arbeitszeiten und Abwesenheiten einfach erfassen.</p>
+                </div>
+                <div class="card-action">
+                    <a href="{{ "docs/timetracker/" | relURL }}" class="blue-text">
+                        Mehr erfahren
+                        <i class="material-icons right tiny">arrow_forward</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- All Modules -->
+    <div class="row">
+        <div class="col s12">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">
+                        <i class="material-icons left">apps</i>
+                        Alle Module
+                    </span>
+                    <p class="grey-text">ELIZA bietet über 20 integrierte Module für dein Qualitätsmanagementsystem.</p>
+                    <div class="divider" style="margin: 16px 0;"></div>
+                    <a href="{{ "docs/" | relURL }}" class="btn waves-effect waves-light">
+                        Zur vollständigen Dokumentation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.hero-card {
+    background: linear-gradient(135deg, #1976d2 0%, #2196f3 50%, #64b5f6 100%);
+    color: white;
+    padding: 48px 24px;
+}
+
+.hero-logo {
+    height: 60px;
+    margin-bottom: 24px;
+    filter: brightness(0) invert(1);
+}
+
+.hero-title {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0 0 16px 0;
+    color: white;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.9) !important;
+    margin-bottom: 32px;
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.hero-actions .btn {
+    background: white;
+    color: #1976d2;
+}
+
+.hero-actions .btn-flat {
+    color: white;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 32px 0 24px 0;
+}
+
+.section-title i {
+    margin-right: 12px;
+    color: var(--eliza-blue);
+}
+
+@media only screen and (max-width: 600px) {
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+}
+</style>
+{{ end }}

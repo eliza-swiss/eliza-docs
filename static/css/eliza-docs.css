@@ -1,0 +1,826 @@
+/* =============================================================================
+   ELIZA Documentation - Custom Styles
+   Based on ELIZA Material Design System
+   ============================================================================= */
+
+/* -----------------------------------------------------------------------------
+   CSS Custom Properties (Design Tokens)
+   ----------------------------------------------------------------------------- */
+:root {
+    /* ELIZA Brand Colors */
+    --eliza-blue: #2196f3;
+    --eliza-blue-dark: #1976d2;
+    --eliza-blue-light: #64b5f6;
+    --eliza-orange: #ff9800;
+    --eliza-red: #f44336;
+    --eliza-green: #4caf50;
+    --eliza-violet: #9c27b0;
+
+    /* Layout */
+    --sidenav-width: 300px;
+    --sidenav-width-mini: 64px;
+    --topbar-height: 64px;
+
+    /* Light Mode */
+    --bg-primary: #ffffff;
+    --bg-secondary: #fafafa;
+    --bg-tertiary: #f5f5f5;
+    --text-primary: rgba(0, 0, 0, 0.87);
+    --text-secondary: rgba(0, 0, 0, 0.60);
+    --border-color: #e0e0e0;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+
+    /* Gradient Buttons */
+    --btn-gradient: linear-gradient(135deg, #1f54cd, #4da0ff);
+    --btn-gradient-hover: linear-gradient(135deg, #1e4fd1, #3a78ff);
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+    --bg-primary: #121212;
+    --bg-secondary: #1e1e1e;
+    --bg-tertiary: #2d2d2d;
+    --text-primary: rgba(255, 255, 255, 0.87);
+    --text-secondary: rgba(255, 255, 255, 0.60);
+    --border-color: #424242;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+/* -----------------------------------------------------------------------------
+   Base Styles
+   ----------------------------------------------------------------------------- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    margin: 0;
+    padding: 0;
+}
+
+body.with-sidebar {
+    padding-left: var(--sidenav-width);
+}
+
+@media only screen and (max-width: 992px) {
+    body.with-sidebar {
+        padding-left: 0;
+    }
+}
+
+/* -----------------------------------------------------------------------------
+   Sidenav Styles (ELIZA Layout)
+   ----------------------------------------------------------------------------- */
+.sidenav {
+    position: fixed;
+    width: var(--sidenav-width);
+    height: 100vh;
+    background-color: var(--bg-primary);
+    z-index: 999;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 2px 0 8px var(--shadow-color);
+    border-right: 1px solid var(--border-color);
+}
+
+.sidenav .sidenav-header {
+    padding: 0;
+    line-height: normal;
+}
+
+.sidenav .sidenav-header .user-view {
+    position: relative;
+    padding: 32px 24px 16px;
+    margin-bottom: 8px;
+}
+
+.sidenav .sidenav-header .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.sidenav .sidenav-header .background.eliza-gradient {
+    background: linear-gradient(135deg, #1976d2 0%, #2196f3 50%, #64b5f6 100%);
+}
+
+.sidenav .sidenav-header .eliza-logo {
+    position: relative;
+    z-index: 1;
+    height: 40px;
+    width: auto;
+    margin-bottom: 8px;
+    filter: brightness(0) invert(1);
+}
+
+.sidenav .sidenav-header .site-title {
+    display: block;
+    position: relative;
+    z-index: 1;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.sidenav li > a {
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    height: 48px;
+    line-height: 48px;
+    font-weight: 400;
+    transition: background-color 0.2s ease;
+}
+
+.sidenav li > a:hover {
+    background-color: rgba(33, 150, 243, 0.08);
+}
+
+.sidenav li > a.active {
+    background-color: rgba(33, 150, 243, 0.12);
+    color: var(--eliza-blue);
+    font-weight: 500;
+    border-left: 3px solid var(--eliza-blue);
+}
+
+.sidenav li > a i.material-icons {
+    margin-right: 16px;
+    color: var(--text-secondary);
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.sidenav li > a.active i.material-icons {
+    color: var(--eliza-blue);
+}
+
+/* Collapsible in Sidenav */
+.sidenav .collapsible {
+    border: none;
+    box-shadow: none;
+    margin: 0;
+}
+
+.sidenav .collapsible-header {
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    height: 48px;
+    line-height: 48px;
+    border: none;
+    color: var(--text-primary);
+    background-color: transparent;
+}
+
+.sidenav .collapsible-header:hover {
+    background-color: rgba(33, 150, 243, 0.08);
+}
+
+.sidenav .collapsible-header.active {
+    background-color: rgba(33, 150, 243, 0.12);
+    color: var(--eliza-blue);
+}
+
+.sidenav .collapsible-header i.material-icons {
+    margin-right: 16px;
+    color: var(--text-secondary);
+}
+
+.sidenav .collapsible-header.active i.material-icons {
+    color: var(--eliza-blue);
+}
+
+.sidenav .collapsible-header i.chevron {
+    margin-left: auto;
+    margin-right: 0;
+    transition: transform 0.3s ease;
+}
+
+.sidenav .collapsible-header.active i.chevron {
+    transform: rotate(90deg);
+}
+
+.sidenav .collapsible-body {
+    border: none;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.sidenav .collapsible-body ul {
+    margin: 0;
+    padding: 8px 0;
+}
+
+.sidenav .collapsible-body ul li a {
+    padding-left: 72px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+.sidenav .sidenav-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-primary);
+    border-top: 1px solid var(--border-color);
+}
+
+.sidenav .sidenav-bottom a {
+    font-size: 13px;
+    height: 40px;
+    line-height: 40px;
+}
+
+/* -----------------------------------------------------------------------------
+   Topbar Styles
+   ----------------------------------------------------------------------------- */
+.topbar {
+    position: fixed;
+    top: 0;
+    left: var(--sidenav-width);
+    right: 0;
+    height: var(--topbar-height);
+    background-color: var(--eliza-blue);
+    z-index: 998;
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+@media only screen and (max-width: 992px) {
+    .topbar {
+        left: 0;
+    }
+}
+
+.topbar .nav-wrapper {
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.topbar .sidenav-trigger {
+    display: none;
+    color: white;
+    margin-right: 16px;
+}
+
+@media only screen and (max-width: 992px) {
+    .topbar .sidenav-trigger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.topbar .brand-logo {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.topbar .brand-logo .page-title {
+    display: flex;
+    align-items: center;
+}
+
+.topbar ul.right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.topbar ul.right li {
+    display: flex;
+}
+
+.topbar ul.right li a {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+}
+
+.topbar ul.right li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+/* -----------------------------------------------------------------------------
+   Main Content Area
+   ----------------------------------------------------------------------------- */
+main {
+    margin-top: var(--topbar-height);
+    min-height: calc(100vh - var(--topbar-height) - 60px);
+    padding: 24px;
+}
+
+.docs-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* -----------------------------------------------------------------------------
+   Cards
+   ----------------------------------------------------------------------------- */
+.card {
+    background-color: var(--bg-primary);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px var(--shadow-color);
+    margin-bottom: 24px;
+}
+
+.card .card-content {
+    padding: 24px;
+}
+
+.card .card-action {
+    border-top: 1px solid var(--border-color);
+    padding: 16px 24px;
+}
+
+.docs-card,
+.module-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.docs-card:hover,
+.module-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px var(--shadow-color);
+}
+
+/* -----------------------------------------------------------------------------
+   Typography
+   ----------------------------------------------------------------------------- */
+.docs-title {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0 0 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.docs-title i.material-icons {
+    margin-right: 12px;
+    color: var(--eliza-blue);
+}
+
+.docs-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.docs-content {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.docs-content h1,
+.docs-content h2,
+.docs-content h3,
+.docs-content h4,
+.docs-content h5,
+.docs-content h6 {
+    font-weight: 500;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.docs-content h1 { font-size: 28px; }
+.docs-content h2 { font-size: 24px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px; }
+.docs-content h3 { font-size: 20px; }
+.docs-content h4 { font-size: 18px; }
+
+.docs-content p {
+    margin-bottom: 16px;
+}
+
+.docs-content a {
+    color: var(--eliza-blue);
+    text-decoration: none;
+}
+
+.docs-content a:hover {
+    text-decoration: underline;
+}
+
+.docs-content ul,
+.docs-content ol {
+    padding-left: 24px;
+    margin-bottom: 16px;
+}
+
+.docs-content li {
+    margin-bottom: 8px;
+}
+
+/* -----------------------------------------------------------------------------
+   Code Blocks
+   ----------------------------------------------------------------------------- */
+.docs-content code {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+    font-size: 14px;
+    background-color: rgba(33, 150, 243, 0.08);
+    color: var(--eliza-blue-dark);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.docs-content pre {
+    background-color: #263238;
+    border-radius: 8px;
+    padding: 16px;
+    overflow-x: auto;
+    margin: 16px 0;
+}
+
+.docs-content pre code {
+    background-color: transparent;
+    color: #e0e0e0;
+    padding: 0;
+}
+
+/* -----------------------------------------------------------------------------
+   Tables
+   ----------------------------------------------------------------------------- */
+.docs-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+}
+
+.docs-content th {
+    background-color: var(--bg-tertiary);
+    font-weight: 500;
+    text-align: left;
+    padding: 12px 16px;
+    border-bottom: 2px solid var(--eliza-blue);
+}
+
+.docs-content td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.docs-content tr:hover {
+    background-color: rgba(33, 150, 243, 0.04);
+}
+
+/* -----------------------------------------------------------------------------
+   Breadcrumbs
+   ----------------------------------------------------------------------------- */
+.breadcrumbs-nav {
+    background-color: transparent;
+    box-shadow: none;
+    margin-bottom: 16px;
+}
+
+.breadcrumbs-nav .nav-wrapper {
+    padding: 0;
+}
+
+.breadcrumb-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.breadcrumb {
+    color: var(--text-secondary) !important;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb:before {
+    color: var(--text-secondary);
+    margin: 0 8px;
+}
+
+.breadcrumb:first-child:before {
+    display: none;
+}
+
+.breadcrumb.active {
+    color: var(--text-primary) !important;
+}
+
+.breadcrumb i.material-icons {
+    font-size: 18px;
+}
+
+/* -----------------------------------------------------------------------------
+   Table of Contents
+   ----------------------------------------------------------------------------- */
+.toc-wrapper {
+    position: sticky;
+    top: calc(var(--topbar-height) + 24px);
+}
+
+.toc-card {
+    background-color: var(--bg-primary);
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 8px var(--shadow-color);
+    max-height: calc(100vh - var(--topbar-height) - 80px);
+    overflow-y: auto;
+}
+
+.toc-card h6 {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-secondary);
+    margin: 0 0 16px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* TOC Navigation - Hugo generates nav#TableOfContents */
+.toc-card nav,
+.toc-card #TableOfContents {
+    font-size: 13px;
+}
+
+.toc-card nav > ul,
+.toc-card #TableOfContents > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.toc-card nav ul,
+.toc-card #TableOfContents ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.toc-card nav li,
+.toc-card #TableOfContents li {
+    margin-bottom: 0;
+    display: block;
+}
+
+.toc-card nav a,
+.toc-card #TableOfContents a {
+    color: var(--text-secondary);
+    font-size: 13px;
+    line-height: 1.5;
+    display: block;
+    padding: 6px 8px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: color 0.2s ease, background-color 0.2s ease;
+    word-wrap: break-word;
+    border-left: 2px solid transparent;
+}
+
+.toc-card nav a:hover,
+.toc-card #TableOfContents a:hover {
+    color: var(--eliza-blue);
+    background-color: rgba(33, 150, 243, 0.08);
+    border-left-color: var(--eliza-blue);
+}
+
+/* Nested TOC items */
+.toc-card nav ul ul,
+.toc-card #TableOfContents ul ul {
+    padding-left: 12px;
+    margin-top: 2px;
+}
+
+.toc-card nav ul ul a,
+.toc-card #TableOfContents ul ul a {
+    font-size: 12px;
+    padding: 4px 8px;
+}
+
+/* -----------------------------------------------------------------------------
+   Tags / Chips
+   ----------------------------------------------------------------------------- */
+.docs-tags {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-color);
+}
+
+.chip {
+    background-color: rgba(33, 150, 243, 0.1);
+    color: var(--eliza-blue);
+    border-radius: 16px;
+    padding: 4px 12px;
+    font-size: 12px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+/* -----------------------------------------------------------------------------
+   Navigation (Prev/Next)
+   ----------------------------------------------------------------------------- */
+.docs-navigation {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border-color);
+}
+
+.docs-navigation .btn-flat {
+    text-transform: none;
+    font-weight: 400;
+}
+
+/* -----------------------------------------------------------------------------
+   Footer
+   ----------------------------------------------------------------------------- */
+.page-footer {
+    background-color: var(--bg-tertiary);
+    padding: 16px 0;
+    margin-top: 48px;
+    border-top: 1px solid var(--border-color);
+}
+
+.page-footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.swiss-badge {
+    margin-left: 8px;
+}
+
+/* -----------------------------------------------------------------------------
+   Buttons (ELIZA Gradient Style)
+   ----------------------------------------------------------------------------- */
+.btn,
+.btn-small {
+    background: var(--btn-gradient);
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    box-shadow: 0 2px 4px var(--shadow-color);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:hover,
+.btn-small:hover {
+    background: var(--btn-gradient-hover);
+    box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3);
+    transform: translateY(-1px);
+}
+
+.btn.red,
+.btn-small.red {
+    background: linear-gradient(135deg, #991b1b, #ef4444);
+}
+
+.btn.green,
+.btn-small.green {
+    background: linear-gradient(135deg, #166534, #22c55e);
+}
+
+/* -----------------------------------------------------------------------------
+   Search Modal
+   ----------------------------------------------------------------------------- */
+#search-modal .modal-content {
+    padding: 24px;
+}
+
+#search-modal h5 {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+#search-modal h5 i {
+    margin-right: 12px;
+    color: var(--eliza-blue);
+}
+
+#search-results {
+    margin-top: 16px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* -----------------------------------------------------------------------------
+   Dark Mode Adjustments
+   ----------------------------------------------------------------------------- */
+[data-theme="dark"] .sidenav {
+    background-color: var(--bg-secondary);
+}
+
+[data-theme="dark"] .card {
+    background-color: var(--bg-secondary);
+}
+
+[data-theme="dark"] .docs-content code {
+    background-color: rgba(33, 150, 243, 0.15);
+}
+
+[data-theme="dark"] .chip {
+    background-color: rgba(33, 150, 243, 0.2);
+}
+
+[data-theme="dark"] .page-footer {
+    background-color: var(--bg-tertiary);
+}
+
+/* -----------------------------------------------------------------------------
+   Responsive Adjustments
+   ----------------------------------------------------------------------------- */
+@media only screen and (max-width: 992px) {
+    main {
+        padding: 16px;
+    }
+
+    .docs-title {
+        font-size: 24px;
+    }
+
+    .sidenav {
+        transform: translateX(-100%);
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .sidenav.open {
+        transform: translateX(0);
+    }
+
+    .sidenav-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 998;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .sidenav-overlay.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .card .card-content {
+        padding: 16px;
+    }
+
+    .docs-content {
+        font-size: 15px;
+    }
+
+    .topbar .brand-logo {
+        font-size: 16px;
+    }
+}
+
+/* -----------------------------------------------------------------------------
+   Print Styles
+   ----------------------------------------------------------------------------- */
+@media print {
+    .sidenav,
+    .topbar,
+    .toc-wrapper,
+    .page-footer,
+    .docs-navigation {
+        display: none !important;
+    }
+
+    body.with-sidebar {
+        padding-left: 0;
+    }
+
+    main {
+        margin-top: 0;
+    }
+
+    .card {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+}
