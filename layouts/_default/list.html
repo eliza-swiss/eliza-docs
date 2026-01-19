@@ -1,7 +1,8 @@
 {{ define "main" }}
 <div class="docs-wrapper">
     <div class="row">
-        <div class="col s12">
+        <!-- Main Content -->
+        <div class="col s12 m12 l9">
             <!-- Section Header -->
             <div class="card">
                 <div class="card-content">
@@ -92,6 +93,41 @@
                     {{ end }}
                 </div>
             {{ end }}
+        </div>
+
+        <!-- Table of Contents (Desktop) -->
+        <div class="col l3 hide-on-med-and-down">
+            <div class="toc-wrapper">
+                <!-- Inhaltsverzeichnis -->
+                {{ if .Content }}
+                <div class="toc-card">
+                    <div class="toc-header">
+                        <i class="material-icons">format_list_bulleted</i>
+                        <span>Inhaltsverzeichnis</span>
+                    </div>
+                    <div class="toc-content">
+                        {{ .TableOfContents }}
+                    </div>
+                </div>
+                {{ end }}
+
+                <!-- Child Pages Navigation -->
+                {{ if or .RegularPages .Sections }}
+                <div class="toc-card">
+                    <div class="toc-header">
+                        <i class="material-icons">article</i>
+                        <span>In diesem Modul</span>
+                    </div>
+                    <div class="toc-content">
+                        <ul class="section-nav">
+                            {{ range .RegularPages }}
+                            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
         </div>
     </div>
 </div>

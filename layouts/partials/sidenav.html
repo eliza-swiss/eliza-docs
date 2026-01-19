@@ -30,13 +30,15 @@
             {{ $sections := .Site.GetPage "section" "docs" }}
             {{ if $sections }}
                 {{ range $sections.Sections }}
-                    {{ $isActive := $currentPage.IsDescendant . }}
+                    {{ $isActive := or ($currentPage.IsDescendant .) (eq $currentPage.RelPermalink .RelPermalink) }}
                     <li class="{{ if $isActive }}active{{ end }}">
-                        <a class="collapsible-header waves-effect {{ if $isActive }}active{{ end }}">
-                            <i class="material-icons">{{ .Params.icon | default "folder" }}</i>
-                            {{ .Title }}
+                        <div class="collapsible-header waves-effect {{ if $isActive }}active{{ end }}">
+                            <a href="{{ .RelPermalink }}" class="module-link">
+                                <i class="material-icons">{{ .Params.icon | default "folder" }}</i>
+                                <span class="module-title">{{ .Title }}</span>
+                            </a>
                             <i class="material-icons chevron">chevron_right</i>
-                        </a>
+                        </div>
                         <div class="collapsible-body">
                             <ul>
                                 {{ range .Pages }}

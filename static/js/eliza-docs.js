@@ -21,8 +21,11 @@ function initMaterialize() {
     // Collapsible (Accordion)
     var collapsibles = document.querySelectorAll('.collapsible');
     M.Collapsible.init(collapsibles, {
-        accordion: true
+        accordion: false // Allow multiple open sections
     });
+
+    // Auto-expand active sections
+    expandActiveSections();
 
     // Modals
     var modals = document.querySelectorAll('.modal');
@@ -108,6 +111,26 @@ function closeSidenav() {
 }
 
 /**
+ * Auto-expand active sections in sidenav collapsible
+ */
+function expandActiveSections() {
+    var collapsible = document.querySelector('.sidenav .collapsible');
+    if (!collapsible) return;
+
+    var instance = M.Collapsible.getInstance(collapsible);
+    if (!instance) return;
+
+    // Find all active li elements and expand them
+    var activeItems = collapsible.querySelectorAll('li.active');
+    activeItems.forEach(function(item) {
+        var index = Array.from(collapsible.children).indexOf(item);
+        if (index >= 0) {
+            instance.open(index);
+        }
+    });
+}
+
+/**
  * Highlight active section in sidenav
  */
 function highlightActiveSection() {
@@ -125,7 +148,6 @@ function highlightActiveSection() {
                 var collapsibleLi = collapsibleBody.closest('li');
                 if (collapsibleLi) {
                     collapsibleLi.classList.add('active');
-                    collapsibleBody.style.display = 'block';
 
                     var header = collapsibleLi.querySelector('.collapsible-header');
                     if (header) {
