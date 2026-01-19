@@ -17,16 +17,8 @@
             {{ end }}
         </div>
 
-        <!-- Search Bar (Center) -->
-        <div class="search-wrapper hide-on-small-only">
-            <div class="search-field">
-                <i class="material-icons search-icon">search</i>
-                <input type="text" id="topbar-search" placeholder="Suche (Alt+S)" onclick="openSearch(); return false;" readonly>
-            </div>
-        </div>
-
         <!-- Right Navigation -->
-        <ul id="nav-mobile" class="right">
+        <ul id="topbar-nav" class="topbar-icons">
             <!-- Search Icon (Mobile) -->
             <li class="hide-on-med-and-up">
                 <a href="#" onclick="openSearch(); return false;" title="Suchen">
@@ -41,9 +33,16 @@
                 </a>
             </li>
 
+            <!-- Kontakt Link -->
+            <li class="hide-on-small-only">
+                <a href="https://eliza.swiss/kontakt" target="_blank" title="Kontakt">
+                    <i class="material-icons">mail</i>
+                </a>
+            </li>
+
             <!-- ELIZA Link -->
-            <li>
-                <a href="https://eliza.swiss" target="_blank" title="Zu ELIZA">
+            <li class="hide-on-small-only">
+                <a href="https://eliza.swiss" target="_blank" title="eliza.swiss">
                     <i class="material-icons">open_in_new</i>
                 </a>
             </li>

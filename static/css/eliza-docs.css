@@ -220,19 +220,9 @@ body.with-sidebar {
     display: block;
 }
 
-.sidenav .sidenav-bottom {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: var(--bg-primary);
-    border-top: 1px solid var(--border-color);
-}
-
-.sidenav .sidenav-bottom a {
-    font-size: 13px;
-    height: 40px;
-    line-height: 40px;
+/* Bottom padding for sidenav scrolling */
+.sidenav > .collapsible {
+    padding-bottom: 24px;
 }
 
 /* -----------------------------------------------------------------------------
@@ -247,6 +237,17 @@ body.with-sidebar {
     background-color: var(--eliza-blue);
     z-index: 998;
     box-shadow: 0 2px 4px var(--shadow-color);
+    overflow: visible !important;
+}
+
+/* Override MaterializeCSS nav styles */
+nav.topbar {
+    line-height: var(--topbar-height);
+    overflow: visible !important;
+}
+
+nav.topbar .nav-wrapper {
+    overflow: visible !important;
 }
 
 @media only screen and (max-width: 992px) {
@@ -257,14 +258,18 @@ body.with-sidebar {
 
 .topbar .nav-wrapper {
     padding: 0 16px;
-    display: flex;
+    display: flex !important;
     align-items: center;
     height: 100%;
     gap: 16px;
+    overflow: visible;
+    width: 100%;
+    max-width: none;
+    position: relative;
 }
 
 .topbar .sidenav-trigger {
-    display: flex;
+    display: none; /* Hidden on desktop - sidenav is fixed */
     align-items: center;
     justify-content: center;
     width: 48px;
@@ -273,10 +278,18 @@ body.with-sidebar {
     cursor: pointer;
     border-radius: 50%;
     transition: background-color 0.2s ease;
+    flex-shrink: 0;
 }
 
 .topbar .sidenav-trigger:hover {
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Show hamburger menu only on mobile when sidenav is not fixed */
+@media only screen and (max-width: 992px) {
+    .topbar .sidenav-trigger {
+        display: flex;
+    }
 }
 
 .topbar .brand-logo {
@@ -284,6 +297,10 @@ body.with-sidebar {
     font-size: 18px;
     font-weight: 500;
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-shrink: 0;
+    max-width: 300px;
 }
 
 .topbar .brand-logo .page-title {
@@ -294,8 +311,8 @@ body.with-sidebar {
 /* Search Bar in Topbar */
 .topbar .search-wrapper {
     flex: 1;
-    max-width: 500px;
-    margin: 0 24px;
+    min-width: 200px;
+    max-width: 400px;
 }
 
 .topbar .search-field {
@@ -332,19 +349,28 @@ body.with-sidebar {
     color: rgba(255, 255, 255, 0.7);
 }
 
-/* Right Navigation */
-.topbar ul.right {
-    margin-left: auto;
-    display: flex;
+/* Right Navigation - Topbar Icons */
+#topbar-nav,
+.topbar-icons {
+    display: flex !important;
     align-items: center;
     gap: 4px;
+    list-style: none;
+    padding: 0 !important;
+    margin: 0 !important;
+    position: absolute !important;
+    right: 16px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
 }
 
-.topbar ul.right li {
+#topbar-nav li,
+.topbar-icons li {
     display: flex;
 }
 
-.topbar ul.right li a {
+#topbar-nav li a,
+.topbar-icons li a {
     color: white;
     display: flex;
     align-items: center;
@@ -353,10 +379,18 @@ body.with-sidebar {
     height: 40px;
     border-radius: 50%;
     transition: background-color 0.2s ease;
+    padding: 0;
 }
 
-.topbar ul.right li a:hover {
+#topbar-nav li a:hover,
+.topbar-icons li a:hover {
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+#topbar-nav li a i.material-icons,
+.topbar-icons li a i.material-icons {
+    color: white;
+    font-size: 24px;
 }
 
 /* User Avatar */
