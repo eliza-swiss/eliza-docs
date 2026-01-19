@@ -9,9 +9,6 @@
                     <nav class="breadcrumbs-nav">
                         <div class="nav-wrapper">
                             <div class="breadcrumb-wrapper">
-                                <a href="{{ .Site.BaseURL }}" class="breadcrumb">
-                                    <i class="material-icons">home</i>
-                                </a>
                                 {{ range .Ancestors.Reverse }}
                                     <a href="{{ .RelPermalink }}" class="breadcrumb">{{ .Title }}</a>
                                 {{ end }}
@@ -19,21 +16,6 @@
                             </div>
                         </div>
                     </nav>
-
-                    <!-- Page Title -->
-                    <h1 class="docs-title">
-                        {{ if .Params.icon }}
-                            <i class="material-icons left">{{ .Params.icon }}</i>
-                        {{ end }}
-                        {{ .Title }}
-                    </h1>
-
-                    <!-- Meta Info -->
-                    {{ if .Params.description }}
-                        <p class="docs-description grey-text">{{ .Params.description }}</p>
-                    {{ end }}
-
-                    <div class="divider"></div>
 
                     <!-- Content -->
                     <div class="docs-content">
@@ -72,14 +54,51 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Bottom Quick Navigation -->
+            <div class="bottom-nav-wrapper">
+                <a href="#" class="btn waves-effect waves-light eliza-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+                    <i class="material-icons left">home</i>
+                    Zum Anfang
+                </a>
+                {{ with .Parent }}
+                <a href="{{ .RelPermalink }}" class="btn-flat waves-effect">
+                    <i class="material-icons left">arrow_back</i>
+                    Zurück zum Modul
+                </a>
+                {{ end }}
+            </div>
         </div>
 
         <!-- Table of Contents (Desktop) -->
         <div class="col l3 hide-on-med-and-down">
-            <div class="toc-wrapper pinned">
+            <div class="toc-wrapper">
+                <!-- Inhaltsverzeichnis -->
                 <div class="toc-card">
-                    <h6>Auf dieser Seite</h6>
-                    {{ .TableOfContents }}
+                    <div class="toc-header">
+                        <i class="material-icons">format_list_bulleted</i>
+                        <span>Inhaltsverzeichnis</span>
+                    </div>
+                    <div class="toc-content">
+                        {{ .TableOfContents }}
+                    </div>
+                </div>
+
+                <!-- Word Export Section -->
+                <div class="export-card">
+                    <div class="export-header">
+                        <i class="material-icons">download</i>
+                        <span>Word-Export</span>
+                    </div>
+                    <p class="export-description">Exportiere das Handbuch als Word-Dokument.</p>
+                    <a href="#" class="btn waves-effect waves-light eliza-btn export-btn" onclick="alert('Export-Funktion kommt bald!'); return false;">
+                        <i class="material-icons left">description</i>
+                        Dieses Kapitel
+                    </a>
+                    <a href="#" class="btn-flat waves-effect export-btn" onclick="alert('Export-Funktion kommt bald!'); return false;">
+                        <i class="material-icons left">folder</i>
+                        Komplettes Modul
+                    </a>
                 </div>
             </div>
         </div>

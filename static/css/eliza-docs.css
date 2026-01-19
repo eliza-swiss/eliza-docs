@@ -86,46 +86,25 @@ body.with-sidebar {
     border-right: 1px solid var(--border-color);
 }
 
+/* Sidenav Header - Logo Area */
 .sidenav .sidenav-header {
     padding: 0;
     line-height: normal;
+    background-color: var(--bg-primary);
 }
 
-.sidenav .sidenav-header .user-view {
-    position: relative;
-    padding: 32px 24px 16px;
-    margin-bottom: 8px;
-}
-
-.sidenav .sidenav-header .background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
-}
-
-.sidenav .sidenav-header .background.eliza-gradient {
-    background: linear-gradient(135deg, #1976d2 0%, #2196f3 50%, #64b5f6 100%);
+.sidenav .sidenav-header .logo-wrapper {
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .sidenav .sidenav-header .eliza-logo {
-    position: relative;
-    z-index: 1;
-    height: 40px;
+    height: 56px;
     width: auto;
-    margin-bottom: 8px;
-    filter: brightness(0) invert(1);
-}
-
-.sidenav .sidenav-header .site-title {
-    display: block;
-    position: relative;
-    z-index: 1;
-    font-size: 14px;
-    font-weight: 500;
-    margin-top: 8px;
+    max-width: 180px;
 }
 
 .sidenav li > a {
@@ -137,6 +116,10 @@ body.with-sidebar {
     line-height: 48px;
     font-weight: 400;
     transition: background-color 0.2s ease;
+    /* Text overflow handling */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .sidenav li > a:hover {
@@ -179,6 +162,10 @@ body.with-sidebar {
     border: none;
     color: var(--text-primary);
     background-color: transparent;
+    /* Text overflow handling */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .sidenav .collapsible-header:hover {
@@ -222,9 +209,15 @@ body.with-sidebar {
 
 .sidenav .collapsible-body ul li a {
     padding-left: 72px;
+    padding-right: 16px;
     height: 40px;
     line-height: 40px;
     font-size: 14px;
+    /* Text overflow handling */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
 }
 
 .sidenav .sidenav-bottom {
@@ -267,28 +260,30 @@ body.with-sidebar {
     display: flex;
     align-items: center;
     height: 100%;
+    gap: 16px;
 }
 
 .topbar .sidenav-trigger {
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
     color: white;
-    margin-right: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
 }
 
-@media only screen and (max-width: 992px) {
-    .topbar .sidenav-trigger {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 48px;
-        height: 48px;
-    }
+.topbar .sidenav-trigger:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .topbar .brand-logo {
     color: white;
     font-size: 18px;
     font-weight: 500;
+    white-space: nowrap;
 }
 
 .topbar .brand-logo .page-title {
@@ -296,10 +291,53 @@ body.with-sidebar {
     align-items: center;
 }
 
+/* Search Bar in Topbar */
+.topbar .search-wrapper {
+    flex: 1;
+    max-width: 500px;
+    margin: 0 24px;
+}
+
+.topbar .search-field {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 24px;
+    padding: 0 16px;
+    height: 40px;
+    transition: background-color 0.2s ease;
+}
+
+.topbar .search-field:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.topbar .search-field .search-icon {
+    color: rgba(255, 255, 255, 0.8);
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.topbar .search-field input {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 14px;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+}
+
+.topbar .search-field input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Right Navigation */
 .topbar ul.right {
     margin-left: auto;
     display: flex;
     align-items: center;
+    gap: 4px;
 }
 
 .topbar ul.right li {
@@ -311,13 +349,34 @@ body.with-sidebar {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
 }
 
 .topbar ul.right li a:hover {
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* User Avatar */
+.topbar .user-avatar a {
+    width: auto;
+    padding: 0;
+}
+
+.topbar .avatar-circle {
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, var(--eliza-blue-dark), var(--eliza-blue-light));
+    border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
 }
 
 /* -----------------------------------------------------------------------------
@@ -526,61 +585,79 @@ main {
 }
 
 /* -----------------------------------------------------------------------------
-   Table of Contents
+   Table of Contents & Export Cards
    ----------------------------------------------------------------------------- */
 .toc-wrapper {
     position: sticky;
     top: calc(var(--topbar-height) + 24px);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
-.toc-card {
+.toc-card,
+.export-card {
     background-color: var(--bg-primary);
     border-radius: 8px;
-    padding: 16px;
     box-shadow: 0 2px 8px var(--shadow-color);
-    max-height: calc(100vh - var(--topbar-height) - 80px);
+    overflow: hidden;
+}
+
+/* TOC Header */
+.toc-header,
+.export-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    background-color: var(--bg-tertiary);
+    border-bottom: 1px solid var(--border-color);
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--text-primary);
+}
+
+.toc-header i,
+.export-header i {
+    color: var(--eliza-blue);
+    font-size: 20px;
+}
+
+/* TOC Content */
+.toc-content {
+    padding: 12px 16px;
+    max-height: calc(100vh - var(--topbar-height) - 280px);
     overflow-y: auto;
 }
 
-.toc-card h6 {
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    color: var(--text-secondary);
-    margin: 0 0 16px 0;
-    padding-bottom: 8px;
-    border-bottom: 1px solid var(--border-color);
-}
-
 /* TOC Navigation - Hugo generates nav#TableOfContents */
-.toc-card nav,
-.toc-card #TableOfContents {
+.toc-content nav,
+.toc-content #TableOfContents {
     font-size: 13px;
 }
 
-.toc-card nav > ul,
-.toc-card #TableOfContents > ul {
+.toc-content nav > ul,
+.toc-content #TableOfContents > ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.toc-card nav ul,
-.toc-card #TableOfContents ul {
+.toc-content nav ul,
+.toc-content #TableOfContents ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.toc-card nav li,
-.toc-card #TableOfContents li {
+.toc-content nav li,
+.toc-content #TableOfContents li {
     margin-bottom: 0;
     display: block;
 }
 
-.toc-card nav a,
-.toc-card #TableOfContents a {
+.toc-content nav a,
+.toc-content #TableOfContents a {
     color: var(--text-secondary);
     font-size: 13px;
     line-height: 1.5;
@@ -593,24 +670,72 @@ main {
     border-left: 2px solid transparent;
 }
 
-.toc-card nav a:hover,
-.toc-card #TableOfContents a:hover {
+.toc-content nav a:hover,
+.toc-content #TableOfContents a:hover {
     color: var(--eliza-blue);
     background-color: rgba(33, 150, 243, 0.08);
     border-left-color: var(--eliza-blue);
 }
 
 /* Nested TOC items */
-.toc-card nav ul ul,
-.toc-card #TableOfContents ul ul {
+.toc-content nav ul ul,
+.toc-content #TableOfContents ul ul {
     padding-left: 12px;
     margin-top: 2px;
 }
 
-.toc-card nav ul ul a,
-.toc-card #TableOfContents ul ul a {
+.toc-content nav ul ul a,
+.toc-content #TableOfContents ul ul a {
     font-size: 12px;
     padding: 4px 8px;
+}
+
+/* Export Card */
+.export-card {
+    padding-bottom: 16px;
+}
+
+.export-description {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 0 16px;
+    margin: 12px 0;
+}
+
+.export-btn {
+    display: flex;
+    align-items: center;
+    margin: 8px 16px 0;
+    width: calc(100% - 32px);
+    justify-content: flex-start;
+}
+
+.export-btn.btn {
+    text-transform: none;
+}
+
+.export-btn.btn-flat {
+    color: var(--text-secondary);
+}
+
+/* Bottom Navigation */
+.bottom-nav-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px 0;
+    margin-top: 16px;
+}
+
+.bottom-nav-wrapper .btn,
+.bottom-nav-wrapper .btn-flat {
+    text-transform: none;
+}
+
+/* ELIZA Button Style */
+.eliza-btn {
+    background: var(--btn-gradient) !important;
+    border-radius: 20px;
 }
 
 /* -----------------------------------------------------------------------------

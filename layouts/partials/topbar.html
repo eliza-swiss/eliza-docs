@@ -1,5 +1,5 @@
 <!-- ============================================ -->
-<!-- TOPBAR - Material Design App Bar            -->
+<!-- TOPBAR - ELIZA Material Design App Bar     -->
 <!-- ============================================ -->
 <nav class="topbar">
     <div class="nav-wrapper">
@@ -9,7 +9,7 @@
         </a>
 
         <!-- Page Title -->
-        <div class="brand-logo hide-on-med-and-down">
+        <div class="brand-logo">
             {{ if .Title }}
                 <span class="page-title">{{ .Title }}</span>
             {{ else }}
@@ -17,8 +17,23 @@
             {{ end }}
         </div>
 
+        <!-- Search Bar (Center) -->
+        <div class="search-wrapper hide-on-small-only">
+            <div class="search-field">
+                <i class="material-icons search-icon">search</i>
+                <input type="text" id="topbar-search" placeholder="Suche (Alt+S)" onclick="openSearch(); return false;" readonly>
+            </div>
+        </div>
+
         <!-- Right Navigation -->
         <ul id="nav-mobile" class="right">
+            <!-- Search Icon (Mobile) -->
+            <li class="hide-on-med-and-up">
+                <a href="#" onclick="openSearch(); return false;" title="Suchen">
+                    <i class="material-icons">search</i>
+                </a>
+            </li>
+
             <!-- Dark Mode Toggle -->
             <li>
                 <a href="#" onclick="toggleDarkMode(); return false;" title="Dark Mode umschalten">
@@ -26,17 +41,17 @@
                 </a>
             </li>
 
-            <!-- Search (Desktop) -->
-            <li class="hide-on-med-and-down">
-                <a href="#" onclick="openSearch(); return false;" title="Suchen">
-                    <i class="material-icons">search</i>
+            <!-- ELIZA Link -->
+            <li>
+                <a href="https://eliza.swiss" target="_blank" title="Zu ELIZA">
+                    <i class="material-icons">open_in_new</i>
                 </a>
             </li>
 
-            <!-- GitHub Link -->
-            <li>
-                <a href="https://github.com/eliza-swiss/eliza-docs" target="_blank" title="GitHub">
-                    <i class="material-icons">code</i>
+            <!-- User Avatar -->
+            <li class="user-avatar">
+                <a href="https://eliza.swiss" target="_blank" title="ELIZA">
+                    <span class="avatar-circle">E</span>
                 </a>
             </li>
         </ul>
