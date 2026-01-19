@@ -45,7 +45,10 @@ theme = "hugo-book"
   secondaryColor = "#ff9800"
   accentColor = "#1976d2"
 
-  # Logo
+  # Logo (hugo-book theme)
+  BookLogo = "images/eliza-logo.svg"
+
+  # Legacy logo config
   logo = "/images/eliza-logo.svg"
   logoAlt = "ELIZA - Qualitätsmanagementsystem"
 
