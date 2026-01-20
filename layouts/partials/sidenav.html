@@ -31,36 +31,34 @@
     </li>
 
     <!-- Module Navigation -->
-    <li>
-        <ul class="collapsible collapsible-accordion">
-            {{ $currentPage := . }}
-            {{ $sections := .Site.GetPage "section" "docs" }}
-            {{ if $sections }}
-                {{ range $sections.Sections }}
-                    {{ $isActive := or ($currentPage.IsDescendant .) (eq $currentPage.RelPermalink .RelPermalink) }}
-                    <li class="{{ if $isActive }}active{{ end }}">
-                        <div class="collapsible-header waves-effect {{ if $isActive }}active{{ end }}">
-                            <a href="{{ .RelPermalink }}" class="module-link">
-                                <i class="material-icons">{{ .Params.icon | default "folder" }}</i>
-                                <span class="module-title">{{ .Title }}</span>
-                            </a>
-                            <i class="material-icons chevron">chevron_right</i>
-                        </div>
-                        <div class="collapsible-body">
-                            <ul>
-                                {{ range .Pages }}
-                                    <li>
-                                        <a href="{{ .RelPermalink }}" class="{{ if eq $currentPage.RelPermalink .RelPermalink }}active{{ end }}">
-                                            {{ .Title }}
-                                        </a>
-                                    </li>
-                                {{ end }}
-                            </ul>
-                        </div>
-                    </li>
-                {{ end }}
+    <ul class="collapsible collapsible-accordion">
+        {{ $currentPage := . }}
+        {{ $sections := .Site.GetPage "section" "docs" }}
+        {{ if $sections }}
+            {{ range $sections.Sections }}
+                {{ $isActive := or ($currentPage.IsDescendant .) (eq $currentPage.RelPermalink .RelPermalink) }}
+                <li class="{{ if $isActive }}active{{ end }}">
+                    <div class="collapsible-header waves-effect {{ if $isActive }}active{{ end }}">
+                        <a href="{{ .RelPermalink }}" class="module-link">
+                            <i class="material-icons">{{ .Params.icon | default "folder" }}</i>
+                            <span class="module-title">{{ .Title }}</span>
+                        </a>
+                        <i class="material-icons chevron">chevron_right</i>
+                    </div>
+                    <div class="collapsible-body">
+                        <ul>
+                            {{ range .Pages }}
+                                <li>
+                                    <a href="{{ .RelPermalink }}" class="{{ if eq $currentPage.RelPermalink .RelPermalink }}active{{ end }}">
+                                        {{ .Title }}
+                                    </a>
+                                </li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </li>
             {{ end }}
-        </ul>
-    </li>
+        {{ end }}
+    </ul>
 
 </nav>
