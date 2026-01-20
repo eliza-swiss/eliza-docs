@@ -1,0 +1,134 @@
+{{ define "main" }}
+<div class="docs-wrapper">
+    <div class="row">
+        <!-- Main Content -->
+        <div class="col s12 m12 l9">
+            <!-- Section Header -->
+            <div class="card">
+                <div class="card-content">
+                    <h1 class="docs-title">
+                        {{ if .Params.icon }}
+                            <i class="material-icons left">{{ .Params.icon }}</i>
+                        {{ end }}
+                        {{ .Title }}
+                    </h1>
+
+                    {{ if .Params.description }}
+                        <p class="docs-description grey-text text-darken-1">
+                            {{ .Params.description }}
+                        </p>
+                    {{ end }}
+
+                    {{ if .Content }}
+                        <div class="docs-content">
+                            {{ .Content }}
+                        </div>
+                    {{ end }}
+                </div>
+            </div>
+
+            <!-- Child Pages (only regular pages, not section indexes) -->
+            {{ if .RegularPages }}
+                <div class="row">
+                    {{ range .RegularPages }}
+                        <div class="col s12 m6 l4">
+                            <div class="card hoverable docs-card">
+                                <div class="card-content">
+                                    <span class="card-title">
+                                        {{ if .Params.icon }}
+                                            <i class="material-icons blue-text left">{{ .Params.icon }}</i>
+                                        {{ else }}
+                                            <i class="material-icons blue-text left">description</i>
+                                        {{ end }}
+                                        {{ .Title }}
+                                    </span>
+                                    {{ if .Params.description }}
+                                        <p class="grey-text">{{ .Params.description | truncate 100 }}</p>
+                                    {{ end }}
+                                </div>
+                                <div class="card-action">
+                                    <a href="{{ .RelPermalink }}" class="blue-text">
+                                        Lesen
+                                        <i class="material-icons right tiny">arrow_forward</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    {{ end }}
+                </div>
+            {{ end }}
+
+            <!-- Subsections -->
+            {{ if .Sections }}
+                <h4 class="section-title">
+                    <i class="material-icons left">folder</i>
+                    Module
+                </h4>
+                <div class="row">
+                    {{ range .Sections }}
+                        {{ if and .Title (ne .Title "Untitled") }}
+                        <div class="col s12 m6 l4">
+                            <div class="card hoverable module-card">
+                                <div class="card-content">
+                                    <span class="card-title">
+                                        <i class="material-icons blue-text left">{{ .Params.icon | default "folder" }}</i>
+                                        {{ .Title }}
+                                    </span>
+                                    {{ if .Params.description }}
+                                        <p class="grey-text">{{ .Params.description | truncate 80 }}</p>
+                                    {{ end }}
+                                    <p class="grey-text text-darken-1">
+                                        <small>{{ len .Pages }} Artikel</small>
+                                    </p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="{{ .RelPermalink }}" class="blue-text">
+                                        Öffnen
+                                        <i class="material-icons right tiny">arrow_forward</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        {{ end }}
+                    {{ end }}
+                </div>
+            {{ end }}
+        </div>
+
+        <!-- Table of Contents (Desktop) -->
+        <div class="col l3 hide-on-med-and-down">
+            <div class="toc-wrapper">
+                <!-- Inhaltsverzeichnis -->
+                {{ if .Content }}
+                <div class="toc-card">
+                    <div class="toc-header">
+                        <i class="material-icons">format_list_bulleted</i>
+                        <span>Inhaltsverzeichnis</span>
+                    </div>
+                    <div class="toc-content">
+                        {{ .TableOfContents }}
+                    </div>
+                </div>
+                {{ end }}
+
+                <!-- Child Pages Navigation -->
+                {{ if or .RegularPages .Sections }}
+                <div class="toc-card">
+                    <div class="toc-header">
+                        <i class="material-icons">article</i>
+                        <span>In diesem Modul</span>
+                    </div>
+                    <div class="toc-content">
+                        <ul class="section-nav">
+                            {{ range .RegularPages }}
+                            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}

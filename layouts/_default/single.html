@@ -1,0 +1,91 @@
+{{ define "main" }}
+<div class="docs-wrapper">
+    <div class="row">
+        <!-- Main Content -->
+        <div class="col s12 m12 l9">
+            <div class="card">
+                <div class="card-content">
+                    <!-- Breadcrumbs -->
+                    <nav class="breadcrumbs-nav">
+                        <div class="nav-wrapper">
+                            <div class="breadcrumb-wrapper">
+                                {{ range .Ancestors.Reverse }}
+                                    <a href="{{ .RelPermalink }}" class="breadcrumb">{{ .Title }}</a>
+                                {{ end }}
+                                <span class="breadcrumb active">{{ .Title }}</span>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <!-- Content -->
+                    <div class="docs-content">
+                        {{ .Content }}
+                    </div>
+
+                    <!-- Tags -->
+                    {{ if .Params.tags }}
+                        <div class="docs-tags">
+                            {{ range .Params.tags }}
+                                <span class="chip">{{ . }}</span>
+                            {{ end }}
+                        </div>
+                    {{ end }}
+
+                    <!-- Navigation -->
+                    <div class="docs-navigation">
+                        <div class="row">
+                            <div class="col s6">
+                                {{ with .PrevInSection }}
+                                    <a href="{{ .RelPermalink }}" class="btn-flat waves-effect">
+                                        <i class="material-icons left">chevron_left</i>
+                                        {{ .Title | truncate 30 }}
+                                    </a>
+                                {{ end }}
+                            </div>
+                            <div class="col s6 right-align">
+                                {{ with .NextInSection }}
+                                    <a href="{{ .RelPermalink }}" class="btn-flat waves-effect">
+                                        {{ .Title | truncate 30 }}
+                                        <i class="material-icons right">chevron_right</i>
+                                    </a>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Quick Navigation -->
+            <div class="bottom-nav-wrapper">
+                <a href="#" class="btn waves-effect waves-light eliza-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+                    <i class="material-icons left">home</i>
+                    Zum Anfang
+                </a>
+                {{ with .Parent }}
+                <a href="{{ .RelPermalink }}" class="btn-flat waves-effect">
+                    <i class="material-icons left">arrow_back</i>
+                    Zurück zum Modul
+                </a>
+                {{ end }}
+            </div>
+        </div>
+
+        <!-- Table of Contents (Desktop) -->
+        <div class="col l3 hide-on-med-and-down">
+            <div class="toc-wrapper">
+                <!-- Inhaltsverzeichnis -->
+                <div class="toc-card">
+                    <div class="toc-header">
+                        <i class="material-icons">format_list_bulleted</i>
+                        <span>Inhaltsverzeichnis</span>
+                    </div>
+                    <div class="toc-content">
+                        {{ .TableOfContents }}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "de" }}" {{ if .Site.Params.darkMode }}data-theme="light"{{ end }}>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ .Description | default .Site.Params.description }}">
+    <meta name="author" content="{{ .Site.Params.author }}">
+
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | relURL }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | relURL }}">
+    <link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
+
+    <!-- Google Fonts: Roboto + Material Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- MaterializeCSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- ELIZA Custom Styles -->
+    <link rel="stylesheet" href="{{ "css/eliza-docs.css" | relURL }}">
+
+    {{ block "head" . }}{{ end }}
+</head>
+
+<body class="with-sidebar">
+    <!-- ============================================ -->
+    <!-- HEADER mit Sidenav und Topbar               -->
+    <!-- ============================================ -->
+    <header>
+        {{ partial "sidenav.html" . }}
+        {{ partial "topbar.html" . }}
+    </header>
+
+    <!-- ============================================ -->
+    <!-- SIDENAV OVERLAY (Mobile)                    -->
+    <!-- ============================================ -->
+    <div class="sidenav-overlay" id="sidenav-overlay" onclick="closeSidenav()"></div>
+
+    <!-- ============================================ -->
+    <!-- MAIN Content                                -->
+    <!-- ============================================ -->
+    <main>
+        {{ block "main" . }}
+            <div class="content">
+                {{ .Content }}
+            </div>
+        {{ end }}
+    </main>
+
+    <!-- ============================================ -->
+    <!-- FOOTER                                      -->
+    <!-- ============================================ -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <p class="footer-content">
+                        <span class="footer-company">ELIZA AG</span>
+                        <span class="footer-separator">|</span>
+                        <span class="footer-address">Dammweg 9, CH-3013 Bern</span>
+                        <span class="footer-separator">|</span>
+                        <a href="mailto:hello@eliza.swiss" class="footer-email">hello@eliza.swiss</a>
+                        <span class="footer-separator">|</span>
+                        <a href="https://eliza.swiss" target="_blank" class="footer-link">eliza.swiss</a>
+                        <span class="swiss-badge">🇨🇭</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- MaterializeCSS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- ELIZA Docs JS -->
+    <script src="{{ "js/eliza-docs.js" | relURL }}"></script>
+
+    {{ block "scripts" . }}{{ end }}
+</body>
+</html>

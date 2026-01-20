@@ -1,0 +1,73 @@
+<!-- ============================================ -->
+<!-- TOPBAR - ELIZA Material Design App Bar     -->
+<!-- ============================================ -->
+<nav class="topbar">
+    <div class="nav-wrapper">
+        <!-- Menu Trigger (Mobile) -->
+        <a href="#" data-target="slide-out" class="sidenav-trigger" onclick="toggleSidenav(); return false;">
+            <i class="material-icons">menu</i>
+        </a>
+
+        <!-- Page Title -->
+        <div class="brand-logo">
+            {{ if .Title }}
+                <span class="page-title">{{ .Title }}</span>
+            {{ else }}
+                <span class="page-title">{{ .Site.Title }}</span>
+            {{ end }}
+        </div>
+
+        <!-- Right Navigation -->
+        <ul id="topbar-nav" class="topbar-icons">
+            <!-- Search Icon (Mobile) -->
+            <li class="hide-on-med-and-up">
+                <a href="#" onclick="openSearch(); return false;" title="Suchen">
+                    <i class="material-icons">search</i>
+                </a>
+            </li>
+
+            <!-- Dark Mode Toggle -->
+            <li>
+                <a href="#" onclick="toggleDarkMode(); return false;" title="Dark Mode umschalten">
+                    <i class="material-icons" id="theme-icon">dark_mode</i>
+                </a>
+            </li>
+
+            <!-- Kontakt Link -->
+            <li class="hide-on-small-only">
+                <a href="https://eliza.swiss/kontakt" target="_blank" title="Kontakt">
+                    <i class="material-icons">mail</i>
+                </a>
+            </li>
+
+            <!-- ELIZA Link -->
+            <li class="hide-on-small-only">
+                <a href="https://eliza.swiss" target="_blank" title="eliza.swiss">
+                    <i class="material-icons">open_in_new</i>
+                </a>
+            </li>
+
+            <!-- User Avatar -->
+            <li class="user-avatar">
+                <a href="https://eliza.swiss" target="_blank" title="ELIZA">
+                    <span class="avatar-circle">E</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Search Modal -->
+<div id="search-modal" class="modal">
+    <div class="modal-content">
+        <h5><i class="material-icons left">search</i> Dokumentation durchsuchen</h5>
+        <div class="input-field">
+            <input type="text" id="search-input" placeholder="Suchbegriff eingeben...">
+            <label for="search-input">Suche</label>
+        </div>
+        <div id="search-results"></div>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-blue btn-flat">Schliessen</a>
+    </div>
+</div>
