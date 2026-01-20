@@ -82,9 +82,15 @@ title = "ELIZA Benutzerhandbuch"
     enable = true
     format = "2. January 2006"
 
-# Search
+# Search & SEO Outputs
 [outputs]
   home = ["HTML", "RSS"]
+
+# Sitemap für Suchmaschinen
+[sitemap]
+  changeFreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
 
 # Markup
 [markup]

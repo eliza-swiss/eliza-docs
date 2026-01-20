@@ -1,0 +1,33 @@
+# ELIZA Documentation - Robots.txt
+# Erlaubt Indexierung durch alle Suchmaschinen und KI-Crawler
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://docs.eliza.swiss/sitemap.xml
+
+# Spezifische KI-Crawler erlauben
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
