@@ -1,5 +1,5 @@
 ---
-name: "commit"
+name: "eliza-commit"
 description: "Erstellt Git-Commits mit Schweizer Rechtschreibung und Grammatik"
 author: "ELIZA Development Team"
 version: "1.0.0"
