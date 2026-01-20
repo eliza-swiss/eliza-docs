@@ -9,7 +9,7 @@ Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer
 
 Wir haben die Berechtigungsverwaltung für News-Erstellung in Newskanälen grundlegend verbessert! Ab sofort kannst du mit drei einfachen Checkboxen präzise festlegen, wer in deinen Newskanälen neue Beiträge erstellen darf.
 
-https://app.arcade.software/share/bIHgrwOG0wSMS160TXJr
+[https://app.arcade.software/share/bIHgrwOG0wSMS160TXJr](https://app.arcade.software/share/bIHgrwOG0wSMS160TXJr)
 
 ## Was ist neu?
 

@@ -9,7 +9,7 @@ Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer
 
 Wir freuen uns, dir eine neue Funktion vorzustellen, mit der du die Farben deiner Prozesse noch einfacher und übersichtlicher gestalten kannst! Ab sofort kannst du die Farben für alle deine Top-Level Prozesse zentral an einem Ort anpassen – und die Unterprozesse erhalten automatisch passende, hellere Abstufungen.
 
-https://app.arcade.software/share/2P6A8DXuDBWUwPAhfUHE
+[https://app.arcade.software/share/2P6A8DXuDBWUwPAhfUHE](https://app.arcade.software/share/2P6A8DXuDBWUwPAhfUHE)
 
 ## Was ist neu?
 

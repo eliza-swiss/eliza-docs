@@ -9,7 +9,7 @@ Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer,
 
 wir freuen uns, dir eine umfassende Verbesserung der Gruppenverwaltung vorstellen zu können: Das neue zweispaltige Layout mit Benutzervergleich macht die Verwaltung von Benutzergruppen und -berechtigungen noch einfacher und übersichtlicher.
 
-https://app.arcade.software/share/mAlmSGFI5waEno8DaMQ7
+[https://app.arcade.software/share/mAlmSGFI5waEno8DaMQ7](https://app.arcade.software/share/mAlmSGFI5waEno8DaMQ7)
 
 ## 🔄 Was ist neu?
 

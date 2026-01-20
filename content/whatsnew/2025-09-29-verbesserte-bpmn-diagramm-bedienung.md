@@ -7,7 +7,7 @@ emoji: ""
 
 Hallo! Wir haben die Bedienung der BPMN-Prozessdiagramme in ELIZA revolutionär verbessert. Das absolute Highlight: Du kannst jetzt Prozesselemente zwischen verschiedenen Diagrammen kopieren und einfügen - sogar zwischen verschiedenen Browser-Tabs!
 
-https://app.arcade.software/share/ag4sfWIpJW1zrEdLd5P2
+[https://app.arcade.software/share/ag4sfWIpJW1zrEdLd5P2](https://app.arcade.software/share/ag4sfWIpJW1zrEdLd5P2)
 
 ## Was ist neu?
 

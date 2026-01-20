@@ -7,7 +7,7 @@ emoji: "📊"
 
 Dein Meldekreis-Dashboard wurde um eine umfassende Statistik-Ansicht erweitert – mit vollständiger Historie, Domain-Analyse und Excel-Export!
 
-https://app.arcade.software/share/g9tAMwpLKxlU96S4fyAz
+[https://app.arcade.software/share/g9tAMwpLKxlU96S4fyAz](https://app.arcade.software/share/g9tAMwpLKxlU96S4fyAz)
 
 ## Was ist neu?
 

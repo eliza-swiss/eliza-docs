@@ -9,7 +9,7 @@ Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer
 
 Wir haben die Dokumentenbibliothek grundlegend modernisiert! Ab sofort kannst du mit einer intuitiven Suche und praktischen Filtern noch schneller die gewünschten Dokumente finden. Die neue Oberfläche funktioniert blitzschnell und passt sich perfekt an dein Mobilgerät an.
 
-https://app.arcade.software/share/ll2oTBTSkHMiILGxJ5Ge
+[https://app.arcade.software/share/ll2oTBTSkHMiILGxJ5Ge](https://app.arcade.software/share/ll2oTBTSkHMiILGxJ5Ge)
 
 ## Was ist neu?
 

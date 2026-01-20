@@ -1,0 +1,20 @@
+{{- $src := .Destination -}}
+{{- $alt := .Text -}}
+{{- $title := .Title -}}
+
+{{/* Generate unique ID for modal */}}
+{{- $id := printf "img-modal-%s" (md5 $src) | urlize -}}
+
+<figure class="docs-image">
+  <img
+    src="{{ $src }}"
+    alt="{{ $alt }}"
+    {{ with $title }}title="{{ . }}"{{ end }}
+    class="responsive-img materialboxed"
+    data-modal-id="{{ $id }}"
+    loading="lazy"
+  >
+  {{ with $alt }}
+  <figcaption>{{ . }}</figcaption>
+  {{ end }}
+</figure>

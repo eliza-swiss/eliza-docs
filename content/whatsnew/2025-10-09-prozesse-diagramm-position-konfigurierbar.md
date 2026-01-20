@@ -9,7 +9,7 @@ Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer
 
 Wir haben eine neue Einstellung in den Prozess-Darstellungsoptionen hinzugefügt, mit der du selbst entscheiden kannst, wo das BPMN-Diagramm in der Prozess-Detailansicht angezeigt wird. So kannst du die Ansicht optimal an deine Arbeitsweise anpassen.
 
-https://app.arcade.software/share/0WDtVi3ilh1nrMghhnyV
+[https://app.arcade.software/share/0WDtVi3ilh1nrMghhnyV](https://app.arcade.software/share/0WDtVi3ilh1nrMghhnyV)
 
 ## Was ist neu?
 

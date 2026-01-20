@@ -9,7 +9,7 @@ Liebe ELIZA-Nutzer,
 
 wir freuen uns, dir eine neue Funktion vorstellen zu können: Dashboard-Einstellungen für Administratoren! Ab sofort können berechtigte Benutzer das Dashboard noch individueller und bedarfsgerechter konfigurieren.
 
-https://app.arcade.software/share/Ic1d7p8ZcWOQhM2Ud2nY
+[https://app.arcade.software/share/Ic1d7p8ZcWOQhM2Ud2nY](https://app.arcade.software/share/Ic1d7p8ZcWOQhM2Ud2nY)
 
 ## Was ist neu?
 

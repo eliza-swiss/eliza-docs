@@ -9,7 +9,7 @@ Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer
 
 Wir haben die Benutzerverwaltung deutlich verbessert! Du kannst jetzt Berechtigungen und Zuordnungen von Benutzern sicher und übersichtlich verwalten - mit einer neuen Bestätigungsebene, die versehentliche Änderungen verhindert.
 
-https://app.arcade.software/share/tFFtuxDwWrwhtWHNtPmZ
+[https://app.arcade.software/share/tFFtuxDwWrwhtWHNtPmZ](https://app.arcade.software/share/tFFtuxDwWrwhtWHNtPmZ)
 
 ## Was ist neu?
 

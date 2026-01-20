@@ -1,0 +1,69 @@
+{{- $url := .Destination -}}
+{{- $text := .Text -}}
+
+{{/* Arcade */}}
+{{- if findRE `app\.arcade\.software/share/` $url -}}
+  {{- $id := replaceRE `.*app\.arcade\.software/share/([^/?]+).*` "$1" $url -}}
+  <div class="video-embed arcade-embed">
+    <iframe
+      src="https://app.arcade.software/embed/{{ $id }}"
+      title="Arcade Demo"
+      frameborder="0"
+      loading="lazy"
+      allowfullscreen
+      allow="clipboard-write"
+      style="width: 100%; aspect-ratio: 16/9;">
+    </iframe>
+  </div>
+
+{{/* YouTube */}}
+{{- else if or (findRE `youtube\.com/watch\?v=` $url) (findRE `youtu\.be/` $url) -}}
+  {{- $id := "" -}}
+  {{- if findRE `youtube\.com/watch\?v=` $url -}}
+    {{- $id = replaceRE `.*youtube\.com/watch\?v=([^&]+).*` "$1" $url -}}
+  {{- else -}}
+    {{- $id = replaceRE `.*youtu\.be/([^?]+).*` "$1" $url -}}
+  {{- end -}}
+  <div class="video-embed youtube-embed">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/{{ $id }}"
+      title="YouTube Video"
+      frameborder="0"
+      loading="lazy"
+      allowfullscreen
+      style="width: 100%; aspect-ratio: 16/9;">
+    </iframe>
+  </div>
+
+{{/* Vimeo */}}
+{{- else if findRE `vimeo\.com/` $url -}}
+  {{- $id := replaceRE `.*vimeo\.com/([0-9]+).*` "$1" $url -}}
+  <div class="video-embed vimeo-embed">
+    <iframe
+      src="https://player.vimeo.com/video/{{ $id }}"
+      title="Vimeo Video"
+      frameborder="0"
+      loading="lazy"
+      allowfullscreen
+      style="width: 100%; aspect-ratio: 16/9;">
+    </iframe>
+  </div>
+
+{{/* Loom */}}
+{{- else if findRE `loom\.com/share/` $url -}}
+  {{- $id := replaceRE `.*loom\.com/share/([^?]+).*` "$1" $url -}}
+  <div class="video-embed loom-embed">
+    <iframe
+      src="https://www.loom.com/embed/{{ $id }}"
+      title="Loom Recording"
+      frameborder="0"
+      loading="lazy"
+      allowfullscreen
+      style="width: 100%; aspect-ratio: 16/9;">
+    </iframe>
+  </div>
+
+{{/* Normale Links */}}
+{{- else -}}
+  <a href="{{ $url }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ $text }}</a>
+{{- end -}}

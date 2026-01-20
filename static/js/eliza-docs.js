@@ -12,7 +12,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize Sidenav
     initSidenav();
+
+    // Initialize Materialbox with small delay to ensure images are loaded
+    setTimeout(initMaterialbox, 50);
 });
+
+// Re-initialize after window load (for dynamically rendered content)
+window.addEventListener('load', function() {
+    initMaterialbox();
+});
+
+/**
+ * Initialize Materialbox for image lightbox functionality
+ */
+function initMaterialbox() {
+    var materialboxed = document.querySelectorAll('.materialboxed:not(.initialized)');
+    if (materialboxed.length > 0) {
+        M.Materialbox.init(materialboxed, {
+            onOpenStart: function(el) {
+                el.style.cursor = 'zoom-out';
+            },
+            onCloseEnd: function(el) {
+                el.style.cursor = 'zoom-in';
+            }
+        });
+    }
+}
 
 /**
  * Initialize MaterializeCSS Components
@@ -38,6 +63,8 @@ function initMaterialize() {
     // Dropdown
     var dropdowns = document.querySelectorAll('.dropdown-trigger');
     M.Dropdown.init(dropdowns);
+
+    // Materialbox is initialized separately via initMaterialbox()
 }
 
 /**

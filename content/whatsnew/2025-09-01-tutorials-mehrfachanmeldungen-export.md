@@ -9,7 +9,7 @@ Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer
 
 Wir haben die Tutorial-Verwaltung in ELIZA grundlegend erweitert! Du kannst jetzt mehrere Teilnehmer gleichzeitig zu verschiedenen Kursen anmelden, Teilnehmerdaten als Excel exportieren und automatisch Teilnahmebestätigungen generieren. Diese Verbesserungen sparen dir viel Zeit bei der Kurs- und Teilnehmerverwaltung.
 
-https://app.arcade.software/share/D6vehUkLTRKfwPSoc0KX
+[https://app.arcade.software/share/D6vehUkLTRKfwPSoc0KX](https://app.arcade.software/share/D6vehUkLTRKfwPSoc0KX)
 
 ## Was ist neu?
 

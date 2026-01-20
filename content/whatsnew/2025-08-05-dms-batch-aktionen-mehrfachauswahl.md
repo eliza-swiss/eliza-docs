@@ -20,7 +20,7 @@ Das DMS wurde um ein komplettes Batch-Aktionen-System erweitert, das dir erlaubt
 - Automatische Berechtigungsprüfung für jede Aktion
 - Elegante Modal-Dialoge für alle Batch-Operationen
 
-https://app.arcade.software/share/jab4iGnbwbp8n7bilSDE
+[https://app.arcade.software/share/jab4iGnbwbp8n7bilSDE](https://app.arcade.software/share/jab4iGnbwbp8n7bilSDE)
 
 **Verfügbare Batch-Aktionen:**
 
