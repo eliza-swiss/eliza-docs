@@ -10,7 +10,7 @@ Liebe ELIZA-Benutzer,
 
 wir freuen uns, dir eine leistungsstarke neue Funktion im AI Assistant vorzustellen: Die **Web-Suche mit Google Gemini**! Ab sofort kannst du den AI Assistant nutzen, um aktuelle Informationen direkt aus dem Web zu recherchieren – perfekt für Themen, die sich schnell ändern oder bei denen du die neuesten Daten benötigst.
 
-https://app.arcade.software/share/uGtufjlPnk9VvV45xONa
+[https://app.arcade.software/share/uGtufjlPnk9VvV45xONa](https://app.arcade.software/share/uGtufjlPnk9VvV45xONa)
 
 ## Was ist neu?
 

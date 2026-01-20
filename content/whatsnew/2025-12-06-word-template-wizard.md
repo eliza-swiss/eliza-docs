@@ -9,7 +9,7 @@ Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer
 
 Wir haben einen neuen Assistenten für die Erstellung professioneller Word-Vorlagen entwickelt. In nur 5 Schritten erstellst du eine fertige Dokumentvorlage mit Firmenlogo, einheitlichen Kopf- und Fusszeilen sowie deinem Corporate Design.
 
-https://app.arcade.software/share/8gt1CMn4gvgF9jPTl3b1
+[https://app.arcade.software/share/8gt1CMn4gvgF9jPTl3b1](https://app.arcade.software/share/8gt1CMn4gvgF9jPTl3b1)
 
 ## Was ist neu?
 

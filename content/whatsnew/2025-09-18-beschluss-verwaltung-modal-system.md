@@ -9,7 +9,7 @@ Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer
 
 Wir haben das Beschluss-Management in ELIZA grundlegend überarbeitet und dir ein brandneues, intuitives Modal-System zur Verfügung gestellt. Die Verwaltung von Beschlüssen ist jetzt noch einfacher, übersichtlicher und effizienter geworden.
 
-https://app.arcade.software/share/MBKj5sVuJLcdWgUlqsnb
+[https://app.arcade.software/share/MBKj5sVuJLcdWgUlqsnb](https://app.arcade.software/share/MBKj5sVuJLcdWgUlqsnb)
 
 ## Was ist neu?
 

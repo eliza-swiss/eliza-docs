@@ -9,7 +9,7 @@ Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer,
 
 wir haben das Tutorial-System von ELIZA um eine praktische neue Funktion erweitert! Du kannst jetzt relevante Dokumente direkt mit Tutorial-Abschnitten verknüpfen und sie bequem in einem modernen Modal-Overlay anzeigen lassen. Diese Verbesserung macht deine Lernmaterialien noch zugänglicher und professioneller.
 
-https://app.arcade.software/share/D5pprIYSv8hzfJi9i2fM
+[https://app.arcade.software/share/D5pprIYSv8hzfJi9i2fM](https://app.arcade.software/share/D5pprIYSv8hzfJi9i2fM)
 
 ## Was ist neu?
 

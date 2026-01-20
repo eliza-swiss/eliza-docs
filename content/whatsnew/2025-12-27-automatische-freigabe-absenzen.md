@@ -11,7 +11,7 @@ wir freuen uns, euch eine praktische Verbesserung im **Timetracker** vorzustelle
 
 ## Was ist neu?
 
-https://app.arcade.software/share/n2oFbJrs2cRcUxT5d7FZ
+[https://app.arcade.software/share/n2oFbJrs2cRcUxT5d7FZ](https://app.arcade.software/share/n2oFbJrs2cRcUxT5d7FZ)
 
 ### Automatische Freigabe für definierte Absenzenarten
 

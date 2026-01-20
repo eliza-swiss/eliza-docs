@@ -7,7 +7,7 @@ emoji: "📋"
 
 Du arbeitest mit Teams-Boards in ELIZA? Dann haben wir gute Nachrichten für dich! Das Kopieren von Boards und die Verwaltung von Benutzerberechtigungen wurde deutlich verbessert.
 
-https://app.arcade.software/share/1pmgoqtOtRf5dc6BvfKr
+[https://app.arcade.software/share/1pmgoqtOtRf5dc6BvfKr](https://app.arcade.software/share/1pmgoqtOtRf5dc6BvfKr)
 
 ## Was ist neu?
 

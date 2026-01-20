@@ -9,7 +9,7 @@ Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer,
 
 wir haben die **BPMN-Prozessdiagramme** in ELIZA grundlegend überarbeitet und dabei den Fokus auf eine interaktive und benutzerfreundliche Erfahrung gelegt. Ab sofort kannst du direkt in deinen Prozessdiagrammen auf einzelne Elemente klicken und erhältst sofort detaillierte Informationen.
 
-https://app.arcade.software/share/1m4biVv1j7dDWeRBeWdg
+[https://app.arcade.software/share/1m4biVv1j7dDWeRBeWdg](https://app.arcade.software/share/1m4biVv1j7dDWeRBeWdg)
 
 ## Was ist neu?
 

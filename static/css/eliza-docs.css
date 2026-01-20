@@ -1368,3 +1368,71 @@ main {
         border: 1px solid #ccc;
     }
 }
+
+/* -----------------------------------------------------------------------------
+   Documentation Images - Responsive with Lightbox
+   ----------------------------------------------------------------------------- */
+.docs-image {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.docs-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px var(--shadow-color);
+    cursor: zoom-in;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.docs-image img:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 16px var(--shadow-color);
+}
+
+.docs-image figcaption {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+/* MaterializeCSS Materialbox Overrides */
+.materialboxed {
+    cursor: zoom-in;
+}
+
+.materialboxed.active {
+    cursor: zoom-out;
+}
+
+#materialbox-overlay {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+/* Dark mode image adjustments */
+[data-theme="dark"] .docs-image img {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .docs-image img:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* Video embed styling */
+.video-embed {
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.video-embed iframe {
+    display: block;
+    max-width: 100%;
+}
+
+[data-theme="dark"] .video-embed {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}

@@ -9,7 +9,7 @@ Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer
 
 Der Monatsabschluss im Timetracker wurde deutlich verbessert! Du kannst jetzt manuelle Korrekturen mit perfekter Präzision vornehmen und alle Informationen sind übersichtlicher dargestellt.
 
-https://app.arcade.software/share/6nQ3uLhsUzXQOd8MQ8Tx
+[https://app.arcade.software/share/6nQ3uLhsUzXQOd8MQ8Tx](https://app.arcade.software/share/6nQ3uLhsUzXQOd8MQ8Tx)
 
 ## Was ist neu?
 

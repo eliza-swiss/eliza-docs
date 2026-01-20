@@ -9,7 +9,7 @@ Hallo!
 
 Wir haben die gesamte Navigation von ELIZA von Grund auf neu gestaltet! Egal ob du am Desktop-PC arbeitest, auf einem kleinen Laptop-Bildschirm oder unterwegs mit deinem Smartphone – die neue Navigation passt sich perfekt an deine Bedürfnisse an und macht das Arbeiten mit ELIZA noch effizienter.
 
-https://app.arcade.software/share/24ba8DZCpRf33a6o9REo
+[https://app.arcade.software/share/24ba8DZCpRf33a6o9REo](https://app.arcade.software/share/24ba8DZCpRf33a6o9REo)
 
 ## Was ist neu?
 

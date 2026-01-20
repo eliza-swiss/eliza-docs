@@ -9,7 +9,7 @@ Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer
 
 Wir haben die Prozessschritte-Ansicht mit einer intelligenten Hervorhebungsfunktion verbessert. Wenn du einen Prozessschritt öffnest, wird das zugehörige Element im BPMN-Diagramm automatisch hervorgehoben und optimal zentriert – so siehst du sofort, wo sich der Schritt im Gesamtprozess befindet.
 
-https://app.arcade.software/share/EDrpKYWTX7O24HQ7Q64N
+[https://app.arcade.software/share/EDrpKYWTX7O24HQ7Q64N](https://app.arcade.software/share/EDrpKYWTX7O24HQ7Q64N)
 
 ## Was ist neu?
 

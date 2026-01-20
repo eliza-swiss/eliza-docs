@@ -9,7 +9,7 @@ Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer
 
 Wir haben die Passwort-Verwaltung in ELIZA grundlegend überarbeitet und für dich deutlich benutzerfreundlicher gemacht. Ab sofort erhältst du beim Erstellen oder Ändern von Passwörtern sofortige visuelle Rückmeldungen und siehst auf einen Blick, welche Anforderungen bereits erfüllt sind.
 
-https://app.arcade.software/share/UtPm617UinGw4uFvzc1U
+[https://app.arcade.software/share/UtPm617UinGw4uFvzc1U](https://app.arcade.software/share/UtPm617UinGw4uFvzc1U)
 
 ## Was ist neu?
 

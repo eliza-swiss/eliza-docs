@@ -9,7 +9,7 @@ Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer
 
 Die Bearbeitung von Meldungen und Issues wird ab sofort deutlich komfortabler! Du kannst nun direkt aus der Übersicht heraus auf Meldungen antworten, ohne die Seite verlassen zu müssen.
 
-https://app.arcade.software/share/8J9XuIdlrCt749n5OHgx
+[https://app.arcade.software/share/8J9XuIdlrCt749n5OHgx](https://app.arcade.software/share/8J9XuIdlrCt749n5OHgx)
 
 ## Was ist neu?
 

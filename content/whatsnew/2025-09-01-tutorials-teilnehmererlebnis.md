@@ -9,7 +9,7 @@ Liebe Kursteilnehmerin, lieber Kursteilnehmer,
 
 wir haben das Tutorial-System von ELIZA gezielt für dich als Kursteilnehmer verbessert! Das Lernerlebnis wird jetzt noch intuitiver und professioneller.
 
-https://app.arcade.software/share/BaLAZqmiRu8qIL4SIsrt
+[https://app.arcade.software/share/BaLAZqmiRu8qIL4SIsrt](https://app.arcade.software/share/BaLAZqmiRu8qIL4SIsrt)
 
 ## Was ist neu?
 

@@ -9,7 +9,7 @@ emoji: "📁"
 
 Das Hochladen neuer Dokumentversionen ist jetzt noch einfacher und intelligenter geworden. Wenn du eine neue Version eines bereits freigegebenen Dokuments hochlädst, wird diese automatisch wieder freigegeben - mit nur einem Klick und einem Kommentar.
 
-https://app.arcade.software/share/XDu62KYibBMUHiOxZbhq
+[https://app.arcade.software/share/XDu62KYibBMUHiOxZbhq](https://app.arcade.software/share/XDu62KYibBMUHiOxZbhq)
 
 ## Was ist neu?
 

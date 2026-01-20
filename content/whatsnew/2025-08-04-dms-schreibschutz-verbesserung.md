@@ -18,7 +18,7 @@ wir freuen uns, euch eine wichtige Verbesserung im **Dokumenten-Management-Syste
 - **Flexiblere Handhabung** für autorisierte Benutzer
 - **Verbesserte Sicherheit** durch präzisere Rechteverwaltung
 
-https://app.arcade.software/share/I3oepDtzJE2SIVbTiB24
+[https://app.arcade.software/share/I3oepDtzJE2SIVbTiB24](https://app.arcade.software/share/I3oepDtzJE2SIVbTiB24)
 
 ### Neue Admin-Konfiguration
 
@@ -58,7 +58,7 @@ https://app.arcade.software/share/I3oepDtzJE2SIVbTiB24
 3. Speichere die Einstellungen - Änderungen sind sofort aktiv
 4. Alle Benutzer profitieren automatisch von der neuen Konfiguration
 
-https://app.arcade.software/share/TCiUHIMgeA7cLHxW481y
+[https://app.arcade.software/share/TCiUHIMgeA7cLHxW481y](https://app.arcade.software/share/TCiUHIMgeA7cLHxW481y)
 
 ### So funktioniert der neue Schreibschutz
 

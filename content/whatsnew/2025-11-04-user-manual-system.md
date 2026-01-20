@@ -10,7 +10,7 @@ Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer
 
 Wir freuen uns, dir unser komplett neues Benutzerhandbuch-System vorzustellen! Ab sofort findest du für mehrere ELIZA-Module ausführliche, interaktive Handbücher, die dir Schritt für Schritt bei der Arbeit helfen.
 
-https://app.arcade.software/share/D8P6oGEsAWRYERyvho9W
+[https://app.arcade.software/share/D8P6oGEsAWRYERyvho9W](https://app.arcade.software/share/D8P6oGEsAWRYERyvho9W)
 
 ## Was ist neu?
 
