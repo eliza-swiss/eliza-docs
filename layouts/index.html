@@ -1,8 +1,8 @@
 {{ define "main" }}
 <div class="docs-wrapper">
-    <!-- Hero Section -->
-    <div class="row">
-        <div class="col s12">
+    <!-- Hero Section with What's New -->
+    <div class="row hero-row">
+        <div class="col s12 l8">
             <div class="card hero-card">
                 <div class="card-content center-align">
                     <img src="{{ "images/eliza-logo.svg" | relURL }}" alt="ELIZA Logo" class="hero-logo">
@@ -20,6 +20,36 @@
                             eliza.swiss besuchen
                         </a>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 l4">
+            <div class="card whatsnew-sidebar-card">
+                <div class="card-content">
+                    <span class="card-title">
+                        <i class="material-icons left">new_releases</i>
+                        Was gibt's Neues
+                    </span>
+                    {{ $whatsnew := .Site.GetPage "section" "whatsnew" }}
+                    {{ if $whatsnew }}
+                        <ul class="whatsnew-list">
+                            {{ range first 3 $whatsnew.Pages.ByDate.Reverse }}
+                                <li class="whatsnew-item">
+                                    <a href="{{ .RelPermalink }}">
+                                        {{ with .Params.emoji }}<span class="emoji">{{ . }}</span>{{ end }}
+                                        <span class="title">{{ .Title }}</span>
+                                        <span class="date">{{ .Date.Format "02.01.2006" }}</span>
+                                    </a>
+                                </li>
+                            {{ end }}
+                        </ul>
+                    {{ end }}
+                </div>
+                <div class="card-action">
+                    <a href="{{ "whatsnew/" | relURL }}" class="blue-text">
+                        Alle Ankündigungen
+                        <i class="material-icons right tiny">arrow_forward</i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -212,6 +242,90 @@
 
 .hero-actions .btn-flat {
     color: white;
+}
+
+/* Hero row - equal height columns */
+.hero-row {
+    align-items: stretch;
+}
+
+.hero-row > .col {
+    display: flex;
+}
+
+.hero-row .hero-card,
+.hero-row .whatsnew-sidebar-card {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+}
+
+/* What's New Sidebar Card */
+.whatsnew-sidebar-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.whatsnew-sidebar-card .card-content {
+    flex: 1;
+}
+
+.whatsnew-sidebar-card .card-title {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.whatsnew-sidebar-card .card-title i {
+    color: var(--eliza-blue);
+}
+
+.whatsnew-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.whatsnew-item {
+    border-bottom: 1px solid #eee;
+    padding: 12px 0;
+}
+
+.whatsnew-item:last-child {
+    border-bottom: none;
+}
+
+.whatsnew-item a {
+    display: block;
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.whatsnew-item a:hover {
+    color: var(--eliza-blue);
+}
+
+.whatsnew-item .emoji {
+    margin-right: 8px;
+}
+
+.whatsnew-item .title {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.whatsnew-item .date {
+    display: block;
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+@media only screen and (max-width: 992px) {
+    .hero-row .hero-card {
+        margin-bottom: 20px;
+    }
 }
 
 .section-title {
