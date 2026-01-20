@@ -1171,6 +1171,152 @@ main {
 }
 
 /* -----------------------------------------------------------------------------
+   What's New Section Styles
+   ----------------------------------------------------------------------------- */
+
+/* Month group container */
+.whatsnew-month {
+    margin-bottom: 32px;
+    scroll-margin-top: calc(var(--topbar-height) + 24px);
+}
+
+/* Month header */
+.month-header {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 24px 0 16px 0;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--eliza-blue);
+    color: var(--text-primary);
+}
+
+.month-header i {
+    margin-right: 12px;
+    color: var(--eliza-blue);
+}
+
+.month-header .badge {
+    margin-left: auto;
+    background-color: var(--eliza-blue);
+    color: white;
+    border-radius: 12px;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* What's New card */
+.whatsnew-card {
+    margin-bottom: 16px;
+}
+
+.whatsnew-card .card-title {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.whatsnew-card .card-title .emoji {
+    font-size: 20px;
+}
+
+.whatsnew-date {
+    font-size: 13px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.whatsnew-date i {
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.whatsnew-summary {
+    margin-top: 8px;
+}
+
+/* Post meta on single page */
+.whatsnew-meta {
+    margin-bottom: 24px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.whatsnew-meta .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* Archive sidebar styles */
+.archive-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.archive-nav li {
+    margin-bottom: 4px;
+}
+
+.archive-nav li.divider {
+    height: 1px;
+    background: var(--border-color);
+    margin: 12px 0;
+}
+
+.archive-nav li a {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    color: var(--text-secondary);
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.archive-nav li a:hover {
+    background: var(--bg-tertiary);
+    color: var(--eliza-blue);
+}
+
+.archive-nav li a i {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.archive-nav li.archive-total a {
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.archive-nav .badge-count {
+    margin-left: auto;
+    background: var(--eliza-blue);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    min-width: 24px;
+    text-align: center;
+}
+
+/* Dark mode adjustments for What's New */
+[data-theme="dark"] .month-header {
+    border-bottom-color: var(--eliza-blue-light);
+}
+
+[data-theme="dark"] .archive-nav li a:hover {
+    background: var(--bg-tertiary);
+}
+
+/* -----------------------------------------------------------------------------
    Print Styles
    ----------------------------------------------------------------------------- */
 @media print {

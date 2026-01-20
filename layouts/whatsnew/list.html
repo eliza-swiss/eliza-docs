@@ -1,0 +1,90 @@
+{{ define "main" }}
+<div class="docs-wrapper">
+    <div class="row">
+        <!-- Main Content -->
+        <div class="col s12 m12 l9">
+            <!-- Section Header -->
+            <div class="card">
+                <div class="card-content">
+                    <h1 class="docs-title">
+                        <i class="material-icons left">new_releases</i>
+                        Was gibt's Neues
+                    </h1>
+                    <p class="docs-description grey-text text-darken-1">
+                        Alle Ankündigungen und Neuigkeiten zu ELIZA
+                    </p>
+                </div>
+            </div>
+
+            <!-- Posts grouped by month -->
+            {{ $pages := .Pages.ByDate.Reverse }}
+            {{ range $pages.GroupByDate "January 2006" }}
+                <div class="whatsnew-month" id="{{ .Key | urlize }}">
+                    <h4 class="month-header">
+                        <i class="material-icons left">event</i>
+                        {{ .Key }}
+                        <span class="badge">{{ len .Pages }}</span>
+                    </h4>
+                    {{ range .Pages }}
+                        <div class="card hoverable whatsnew-card">
+                            <div class="card-content">
+                                <span class="card-title">
+                                    {{ with .Params.emoji }}<span class="emoji">{{ . }}</span>{{ end }}
+                                    {{ .Title }}
+                                </span>
+                                <p class="grey-text whatsnew-date">
+                                    <i class="material-icons tiny">schedule</i>
+                                    {{ .Date.Format "2. January 2006" }}
+                                </p>
+                                {{ if .Summary }}
+                                    <p class="grey-text text-darken-1 whatsnew-summary">{{ .Summary | truncate 150 }}</p>
+                                {{ end }}
+                            </div>
+                            <div class="card-action">
+                                <a href="{{ .RelPermalink }}" class="blue-text">
+                                    Weiterlesen
+                                    <i class="material-icons right tiny">arrow_forward</i>
+                                </a>
+                            </div>
+                        </div>
+                    {{ end }}
+                </div>
+            {{ end }}
+        </div>
+
+        <!-- Archive Sidebar (Desktop) -->
+        <div class="col l3 hide-on-med-and-down">
+            <div class="toc-wrapper">
+                <!-- Total Count Card -->
+                <div class="toc-card">
+                    <div class="toc-header">
+                        <i class="material-icons">list</i>
+                        <span>Inhaltsverzeichnis</span>
+                    </div>
+                    <div class="toc-content">
+                        <ul class="archive-nav">
+                            <li class="archive-total">
+                                <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+                                    <i class="material-icons tiny">announcement</i>
+                                    Alle Ankündigungen
+                                    <span class="badge-count">{{ len $pages }}</span>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            {{ range $pages.GroupByDate "January 2006" }}
+                                <li>
+                                    <a href="#{{ .Key | urlize }}">
+                                        <i class="material-icons tiny">event</i>
+                                        {{ .Key }}
+                                        <span class="badge-count">{{ len .Pages }}</span>
+                                    </a>
+                                </li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
