@@ -109,7 +109,7 @@ Berechtigung: `businesscontext.add_interestedparty`
 - **Einfluss auf das Unternehmen**: Dropdown (-, klein, mittel, gross)
 - **Verantwortung**: Mehrfachauswahl von Funktionen
 
-1. Speichern
+4. Speichern
 
 **Bewertungslogik:**
 
@@ -226,7 +226,7 @@ Berechtigung: `businesscontext.add_issuetype`
 - **Name**: Bezeichnung (z.B. "Interne Themen", "Markttrends")
 - **Beschreibung**: Erklärung der Kategorie
 
-1. Speichern
+4. Speichern
 
 **Standard-Themenarten:**
 
@@ -265,7 +265,7 @@ Berechtigung: `businesscontext.add_issue`
 - **Beschreibung**: Detaillierte Erklärung (Markdown-Unterstützung)
 - **Verantwortung**: Mehrfachauswahl von Funktionen
 
-1. Speichern
+3. Speichern
 
 **Markdown-Unterstützung:**
 
@@ -445,6 +445,7 @@ Die Historie zeigt alle Änderungen chronologisch (neueste zuerst):
 
 ```text
 2025-01-15 14:23:45
+Bruno Buehlmann (bb)
 Geändert: Interessierte Partei "Kunden"
 
 Änderungen:
@@ -560,8 +561,8 @@ Ergebnis:
 Klick auf Spaltenüberschrift sortiert die Tabelle:
 
 - 1. Klick: Aufsteigend
-- 1. Klick: Absteigend
-- 1. Klick: Standard-Sortierung
+- 2. Klick: Absteigend
+- 3. Klick: Standard-Sortierung
 
 **Standard-Sortierung:**
 

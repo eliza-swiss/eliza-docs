@@ -1,10 +1,15 @@
 ---
 title: "Kursordner"
-slug: "kursordner"
-weight: 2
-category: "Verwaltung"
-tags: ["kursordner", "folder", "organisation", "struktur", "verwaltung"]
+description: ""
+weight: "2"
+tags:
+  - "kursordner"
+  - "folder"
+  - "organisation"
+  - "struktur"
+  - "verwaltung"
 ---
+
 
 # Kursordner
 
@@ -268,9 +273,9 @@ Zum Löschen:
 
 ## Nächste Schritte
 
-- **[Kapitel 3: Kurse](03_kurse.md)**: Erstelle Kurse innerhalb deiner Ordner
-- **[Kapitel 5: Kursanmeldungen](05_kursanmeldungen.md)**: Vertiefe die Teilnehmerverwaltung
-- **[Kapitel 7: Berechtigungen](07_berechtigungen.md)**: Lerne das Berechtigungskonzept im Detail
+- **[Kapitel 3: Kurse]({{< ref "03-kurse" >}})**: Erstelle Kurse innerhalb deiner Ordner
+- **[Kapitel 5: Kursanmeldungen]({{< ref "05-kursanmeldungen" >}})**: Vertiefe die Teilnehmerverwaltung
+- **[Kapitel 7: Berechtigungen]({{< ref "07-berechtigungen" >}})**: Lerne das Berechtigungskonzept im Detail
 
 ---
 

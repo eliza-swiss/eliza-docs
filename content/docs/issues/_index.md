@@ -149,6 +149,24 @@ Optimiere deine Arbeit mit dem Meldungen-Modul durch bewährte Vorgehensweisen u
 
 ---
 
+### [6. REST API]({{< ref "06-api" >}})
+
+**Programmier-Schnittstelle für Automatisierung**
+
+Integriere das Meldungen-Modul mit externen Systemen oder automatisiere Workflows über die REST API.
+
+**Inhalte:**
+- API-Endpunkte für Meldekreise, Kategorien und Meldungen
+- Authentifizierung mit API-Token
+- Kategorie-Farben (MaterializeCSS)
+- Berechtigungen und Fehlerbehandlung
+- Beispiel-Workflows
+
+**Zielgruppe:** Entwickler, Integratoren
+**Lesezeit:** ~15 Minuten
+
+---
+
 ## Zielgruppen
 
 Je nach deiner Rolle empfehlen wir unterschiedliche Leseschwerpunkte:
@@ -156,9 +174,10 @@ Je nach deiner Rolle empfehlen wir unterschiedliche Leseschwerpunkte:
 | Rolle | Empfohlene Kapitel |
 |-------|-------------------|
 | **Einsteiger** | Kapitel 1, 2, 5 |
-| **Bearbeiter** | Alle Kapitel |
+| **Bearbeiter** | Kapitel 1-5 |
 | **Teamleiter** | Kapitel 1-5, besonders 3 und 4 |
 | **Administrator** | Alle Kapitel, besonders 3 und 4 |
+| **Entwickler/Integrator** | Kapitel 6 (REST API) |
 
 ## Verwendete Konventionen
 
