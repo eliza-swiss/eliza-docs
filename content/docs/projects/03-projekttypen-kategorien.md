@@ -32,7 +32,7 @@ Projekttypen kategorisieren Projekte nach ihrer Art:
 1. Klicke **"+ Neuer Projekttyp"**
 2. Fülle Felder aus:
    - **Titel**: z.B. "IT-Projekt"
-   - **Beschreibung**: Erkl\u00e4rung des Typs
+   - **Beschreibung**: Erklärung des Typs
 3. Klicke **"Speichern"**
 
 ### Projekttyp zuweisen

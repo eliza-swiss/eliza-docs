@@ -1,10 +1,15 @@
 ---
 title: "Erste Schritte"
-slug: "erste-schritte"
-weight: 1
-category: "Grundlagen"
-tags: ["einführung", "übersicht", "navigation", "dashboard", "erste-schritte"]
+description: ""
+weight: "1"
+tags:
+  - "einführung"
+  - "übersicht"
+  - "navigation"
+  - "dashboard"
+  - "erste-schritte"
 ---
+
 
 # Erste Schritte
 
@@ -270,9 +275,9 @@ Bei Fragen oder Problemen:
 
 ## Nächste Schritte
 
-- **[Kapitel 2: Kursordner](02_kursordner.md)**: Lerne, wie du Kursordner erstellst und verwaltest
-- **[Kapitel 3: Kurse](03_kurse.md)**: Erstelle deinen ersten Kurs
-- **[Kapitel 4: Lektionen](04_lektionen.md)**: Fülle deinen Kurs mit Inhalten
+- **[Kapitel 2: Kursordner]({{< ref "02-kursordner" >}})**: Lerne, wie du Kursordner erstellst und verwaltest
+- **[Kapitel 3: Kurse]({{< ref "03-kurse" >}})**: Erstelle deinen ersten Kurs
+- **[Kapitel 4: Lektionen]({{< ref "04-lektionen" >}})**: Fülle deinen Kurs mit Inhalten
 
 ---
 

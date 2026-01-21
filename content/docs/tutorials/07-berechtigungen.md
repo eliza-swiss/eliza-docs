@@ -1,10 +1,16 @@
 ---
 title: "Berechtigungen und Zugriff"
-slug: "berechtigungen"
-weight: 7
-category: "Administration"
-tags: ["berechtigungen", "permissions", "zugriff", "admin", "gruppen", "sicherheit"]
+description: ""
+weight: "7"
+tags:
+  - "berechtigungen"
+  - "permissions"
+  - "zugriff"
+  - "admin"
+  - "gruppen"
+  - "sicherheit"
 ---
+
 
 # Berechtigungen und Zugriff
 

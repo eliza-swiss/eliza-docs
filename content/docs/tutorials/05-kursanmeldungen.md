@@ -1,10 +1,16 @@
 ---
 title: "Kursanmeldungen und Teilnehmerverwaltung"
-slug: "kursanmeldungen"
-weight: 5
-category: "Verwaltung"
-tags: ["anmeldungen", "enrollment", "teilnehmer", "fortschritt", "zertifikate", "fristen"]
+description: ""
+weight: "5"
+tags:
+  - "anmeldungen"
+  - "enrollment"
+  - "teilnehmer"
+  - "fortschritt"
+  - "zertifikate"
+  - "fristen"
 ---
+
 
 # Kursanmeldungen und Teilnehmerverwaltung
 
@@ -295,8 +301,8 @@ Eine Anmeldung kann automatisch abgeschlossen werden, wenn:
 
 ## Nächste Schritte
 
-- **[Kapitel 6: Quiz](06_quiz_abschlusstests.md)**: Integriere Wissenskontrollen
-- **[Kapitel 7: Berechtigungen](07_berechtigungen.md)**: Verstehe das Zugriffskonzept
+- **[Kapitel 6: Quiz]({{< ref "06-quiz-abschlusstests" >}})**: Integriere Wissenskontrollen
+- **[Kapitel 7: Berechtigungen]({{< ref "07-berechtigungen" >}})**: Verstehe das Zugriffskonzept
 
 ---
 

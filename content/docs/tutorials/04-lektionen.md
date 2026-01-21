@@ -1,10 +1,17 @@
 ---
 title: "Lektionen und Abschnitte"
-slug: "lektionen"
-weight: 4
-category: "Kurserstellung"
-tags: ["lektionen", "lesson", "abschnitte", "section", "videos", "inhalte", "kapitel"]
+description: ""
+weight: "4"
+tags:
+  - "lektionen"
+  - "lesson"
+  - "abschnitte"
+  - "section"
+  - "videos"
+  - "inhalte"
+  - "kapitel"
 ---
+
 
 # Lektionen und Abschnitte
 
@@ -321,8 +328,8 @@ Als Lernender kannst du eine Lektion als abgeschlossen markieren:
 
 ## Nächste Schritte
 
-- **[Kapitel 5: Kursanmeldungen](05_kursanmeldungen.md)**: Melde Teilnehmer an
-- **[Kapitel 6: Quiz](06_quiz_abschlusstests.md)**: Füge Wissenskontrollen zu Lektionen hinzu
+- **[Kapitel 5: Kursanmeldungen]({{< ref "05-kursanmeldungen" >}})**: Melde Teilnehmer an
+- **[Kapitel 6: Quiz]({{< ref "06-quiz-abschlusstests" >}})**: Füge Wissenskontrollen zu Lektionen hinzu
 
 ---
 

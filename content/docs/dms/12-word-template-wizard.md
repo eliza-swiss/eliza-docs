@@ -17,7 +17,7 @@ tags:
 
 Der Word Template Wizard führt dich in 5 einfachen Schritten zur Erstellung professioneller Word-Vorlagen. Du kannst Kopf- und Fusszeilen konfigurieren, Schriftarten und Farben anpassen und das Ergebnis als DMS-Vorlage speichern.
 
-https://app.arcade.software/share/8gt1CMn4gvgF9jPTl3b1
+[https://app.arcade.software/share/8gt1CMn4gvgF9jPTl3b1](https://app.arcade.software/share/8gt1CMn4gvgF9jPTl3b1)
 
 ## Übersicht
 

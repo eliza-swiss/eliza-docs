@@ -1,10 +1,16 @@
 ---
 title: "Quiz und Abschlusstests"
-slug: "quiz-abschlusstests"
-weight: 6
-category: "Kurserstellung"
-tags: ["quiz", "test", "wissenskontrolle", "abschlusstest", "formulare", "bewertung"]
+description: ""
+weight: "6"
+tags:
+  - "quiz"
+  - "test"
+  - "wissenskontrolle"
+  - "abschlusstest"
+  - "formulare"
+  - "bewertung"
 ---
+
 
 # Quiz und Abschlusstests
 
@@ -276,7 +282,7 @@ Die Punkteberechnung erfolgt im Forms-Modul:
 
 ## Nächste Schritte
 
-- **[Kapitel 7: Berechtigungen](07_berechtigungen.md)**: Verstehe das Zugriffskonzept
+- **[Kapitel 7: Berechtigungen]({{< ref "07-berechtigungen" >}})**: Verstehe das Zugriffskonzept
 - **Forms-Modul Dokumentation**: Erfahre mehr über Formular-Erstellung
 
 ---

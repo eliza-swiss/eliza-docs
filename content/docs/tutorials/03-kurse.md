@@ -1,10 +1,16 @@
 ---
 title: "Kurse erstellen und verwalten"
-slug: "kurse"
-weight: 3
-category: "Kurserstellung"
-tags: ["kurse", "course", "erstellen", "verwalten", "skills", "zertifikate"]
+description: ""
+weight: "3"
+tags:
+  - "kurse"
+  - "course"
+  - "erstellen"
+  - "verwalten"
+  - "skills"
+  - "zertifikate"
 ---
+
 
 # Kurse erstellen und verwalten
 
@@ -273,9 +279,9 @@ Zum Löschen:
 
 ## Nächste Schritte
 
-- **[Kapitel 4: Lektionen](04_lektionen.md)**: Erstelle Lerninhalte für deinen Kurs
-- **[Kapitel 5: Kursanmeldungen](05_kursanmeldungen.md)**: Melde Teilnehmer an
-- **[Kapitel 6: Quiz](06_quiz_abschlusstests.md)**: Füge Wissenskontrollen hinzu
+- **[Kapitel 4: Lektionen]({{< ref "04-lektionen" >}})**: Erstelle Lerninhalte für deinen Kurs
+- **[Kapitel 5: Kursanmeldungen]({{< ref "05-kursanmeldungen" >}})**: Melde Teilnehmer an
+- **[Kapitel 6: Quiz]({{< ref "06-quiz-abschlusstests" >}})**: Füge Wissenskontrollen hinzu
 
 ---
 
