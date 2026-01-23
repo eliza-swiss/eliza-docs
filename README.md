@@ -13,7 +13,7 @@ Dieses Repository enthält die Quelldateien für das ELIZA Benutzerhandbuch. Die
 ## Technologie-Stack
 
 - **Static Site Generator:** [Hugo](https://gohugo.io/) (Extended Edition)
-- **Theme:** [Doks](https://getdoks.org/)
+- **Design:** Eigene Layouts basierend auf ELIZA Material Design
 - **Hosting:** [GitHub Pages](https://pages.github.com/)
 - **CI/CD:** GitHub Actions
 
@@ -22,7 +22,6 @@ Dieses Repository enthält die Quelldateien für das ELIZA Benutzerhandbuch. Die
 ### Voraussetzungen
 
 - [Hugo Extended](https://gohugo.io/installation/) (v0.121.2+)
-- [Node.js](https://nodejs.org/) (v18+)
 - [Git](https://git-scm.com/)
 
 ### Installation
@@ -31,12 +30,6 @@ Dieses Repository enthält die Quelldateien für das ELIZA Benutzerhandbuch. Die
 # Repository klonen
 git clone https://github.com/eliza-swiss/eliza-docs.git
 cd eliza-docs
-
-# Theme als Submodule initialisieren
-git submodule update --init --recursive
-
-# Node dependencies installieren (falls vorhanden)
-npm install
 
 # Entwicklungsserver starten
 hugo server -D
@@ -85,10 +78,8 @@ eliza-docs/
 │       ├── bot/            # KI-Assistent
 │       ├── dms/            # Dokumentenmanagement
 │       └── ...             # Weitere Module
-├── layouts/                # Custom Layouts
-├── static/                 # Statische Dateien
-├── themes/
-│   └── doks/               # Doks Theme (Submodule)
+├── layouts/                # ELIZA Material Design Layouts
+├── static/                 # Statische Dateien (Logo, Icons)
 ├── config.toml             # Hugo Konfiguration
 └── README.md               # Diese Datei
 ```
