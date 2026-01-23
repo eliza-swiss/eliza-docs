@@ -765,14 +765,24 @@ main {
 /* -----------------------------------------------------------------------------
    Table of Contents & Export Cards
    ----------------------------------------------------------------------------- */
+/* Docs wrapper row must use flexbox with proper alignment for sticky to work */
+.docs-wrapper > .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    min-height: calc(100vh - var(--topbar-height) - 48px);
+}
+
 /* Right column needs align-self for sticky to work in flexbox row */
 .col.l3.hide-on-med-and-down {
     align-self: flex-start;
+    position: relative;
 }
 
 .toc-wrapper {
     position: sticky;
     top: calc(var(--topbar-height) + 24px);
+    max-height: calc(100vh - var(--topbar-height) - 48px);
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -1146,6 +1156,14 @@ main {
 /* -----------------------------------------------------------------------------
    Responsive Adjustments
    ----------------------------------------------------------------------------- */
+/* Reset docs-wrapper row flexbox for tablet/mobile */
+@media only screen and (max-width: 992px) {
+    .docs-wrapper > .row {
+        display: block;
+        min-height: auto;
+    }
+}
+
 @media only screen and (max-width: 992px) {
     main {
         padding: 16px;
