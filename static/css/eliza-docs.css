@@ -765,17 +765,21 @@ main {
 /* -----------------------------------------------------------------------------
    Table of Contents & Export Cards
    ----------------------------------------------------------------------------- */
-/* Right column needs align-self for sticky to work in flexbox row */
-.col.l3.hide-on-med-and-down {
-    align-self: flex-start;
+/* TOC column - fixed position for reliable sticky behavior */
+.docs-wrapper > .row > .col.l3.hide-on-med-and-down {
+    position: fixed;
+    right: 24px;
+    top: calc(var(--topbar-height) + 24px);
+    width: calc(25% - 48px);
+    max-width: 280px;
+    z-index: 100;
 }
 
 .toc-wrapper {
-    position: sticky;
-    top: calc(var(--topbar-height) + 24px);
     display: flex;
     flex-direction: column;
     gap: 16px;
+    max-height: calc(100vh - var(--topbar-height) - 48px);
 }
 
 .toc-card,
