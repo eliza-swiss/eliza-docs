@@ -20,7 +20,7 @@
                     <div class="whatsnew-meta">
                         <span class="chip blue lighten-4">
                             <i class="material-icons tiny">schedule</i>
-                            {{ .Date.Format "2. January 2006" }}
+                            {{ .Date.Day }}. {{ i18n (printf "month_%d" .Date.Month) }} {{ .Date.Year }}
                         </span>
                         {{ with .Params.emoji }}
                             <span class="chip">{{ . }}</span>
