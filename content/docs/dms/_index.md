@@ -184,6 +184,7 @@ Nutze die leistungsstarken Integrationen mit anderen ELIZA-Modulen und externen 
 - Prozess-Verknüpfung (BPMN)
 - Mitgeltende Dokumente
 - Office 365 / WOPI Integration
+- SharePoint-Integration
 - AI-Zusammenfassungen
 - Kommentare und Diskussionen
 - QR-Codes und Validierung
@@ -283,7 +284,7 @@ Dieses Handbuch wird kontinuierlich verbessert. Wenn du Fehler findest oder Verb
 
 ## Letzte Aktualisierung
 
-**Version**: 2025.12.07
+**Version**: 2026.01.30
 **Autor**: ELIZA Documentation Team
 
 ---

@@ -28,6 +28,7 @@ Dieses Kapitel erklärt die Verknüpfungen des DMS mit anderen ELIZA-Modulen und
 | **QR-Codes** | Dokumentvalidierung |
 | **Projekte** | Projektdokumentation |
 | **Teams** | Collaboration |
+| **SharePoint** | SharePoint-Dokumente direkt öffnen |
 
 ---
 
@@ -319,6 +320,62 @@ Dokumente können auf externe Ressourcen verweisen:
 
 ---
 
+## SharePoint-Integration
+
+### Konzept
+
+ELIZA erkennt automatisch SharePoint-URLs und bietet dir schnellen Zugriff auf deine SharePoint-Dokumente. So kannst du Dokumente zentral in SharePoint speichern und trotzdem über ELIZA darauf zugreifen.
+
+### SharePoint-Dokument verknüpfen
+
+1. Erstelle ein neues Dokument oder bearbeite ein bestehendes
+2. Im Feld **"Externe Referenz (URL)"** den SharePoint-Link eintragen
+3. Speichere das Dokument
+4. ELIZA erkennt automatisch den SharePoint-Link
+
+### Automatische SharePoint-Erkennung
+
+ELIZA erkennt folgende SharePoint-URL-Formate automatisch:
+
+| URL-Format | Beschreibung |
+|------------|--------------|
+| `*.sharepoint.com` | Standard SharePoint-Domäne |
+| `*.sharepoint-df.com` | SharePoint Dataflow-Domäne |
+
+### "In SharePoint öffnen"-Button
+
+Wenn ELIZA einen SharePoint-Link erkennt, erscheint ein blauer **"In SharePoint öffnen"**-Button:
+
+- In der Dokumenten-Detailansicht
+- Im BPMN-Prozessdiagramm bei verknüpften Dokumenten
+- Im Hilfsmittel-Modal
+- In der Dokument-Vorschau
+
+Ein Klick auf den Button öffnet das Dokument direkt in SharePoint in einem neuen Tab.
+
+### Vorteile der SharePoint-Integration
+
+- **Zentrale Verwaltung**: Dokumente bleiben in SharePoint, ELIZA dient als Einstiegspunkt
+- **Volle SharePoint-Funktionalität**: Nutze Co-Authoring, Versionierung und Freigaben
+- **Keine Duplikate**: Kein Herunterladen und erneutes Hochladen nötig
+- **Microsoft 365 Integration**: Ideal für Unternehmen mit Microsoft 365
+
+### Voraussetzungen für SharePoint
+
+- Das SharePoint-Dokument muss freigegeben sein
+- Benutzer müssen bei Microsoft angemeldet sein, um das Dokument zu öffnen
+- Der Link muss ein gültiger SharePoint-Link sein
+
+> **💡 Tipp:** Kopiere den Link direkt aus SharePoint ("Link kopieren" oder Browser-Adressleiste) für optimale Kompatibilität.
+
+### Bekannte Einschränkungen
+
+- **Keine eingebettete Vorschau**: SharePoint-Dokumente können nicht direkt in ELIZA angezeigt werden (Microsoft blockiert iFrame-Embedding aus Sicherheitsgründen)
+- **Keine ELIZA-Versionierung**: Da die Datei nicht lokal gespeichert wird, greift ELIZAs Versionierung nicht
+- **Separate Anmeldung**: Benutzer benötigen ggf. eine separate Microsoft-Anmeldung
+
+---
+
 ## Best Practices
 
 ### ✅ Konsistente Verknüpfungen
@@ -371,3 +428,4 @@ Nein, externe URLs werden nicht automatisch geprüft. Prüfe regelmässig, ob Li
 ✅ Du nutzt AI-Zusammenfassungen
 ✅ Du arbeitest mit Kommentaren und Diskussionen
 ✅ Du verstehst die Projekt- und Teams-Integration
+✅ Du weisst, wie SharePoint-Dokumente verknüpft werden

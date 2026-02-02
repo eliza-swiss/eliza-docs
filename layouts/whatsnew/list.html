@@ -19,10 +19,13 @@
             <!-- Posts grouped by month -->
             {{ $pages := .Pages.ByDate.Reverse }}
             {{ range $pages.GroupByDate "January 2006" }}
+                {{ $firstPage := index .Pages 0 }}
+                {{ $monthDe := i18n (printf "month_%d" $firstPage.Date.Month) }}
+                {{ $year := $firstPage.Date.Year }}
                 <div class="whatsnew-month" id="{{ .Key | urlize }}">
                     <h4 class="month-header">
                         <i class="material-icons left">event</i>
-                        {{ .Key }}
+                        {{ $monthDe }} {{ $year }}
                         <span class="badge">{{ len .Pages }}</span>
                     </h4>
                     {{ range .Pages }}
@@ -34,7 +37,7 @@
                                 </span>
                                 <p class="grey-text whatsnew-date">
                                     <i class="material-icons tiny">schedule</i>
-                                    {{ .Date.Format "2. January 2006" }}
+                                    {{ .Date.Day }}. {{ i18n (printf "month_%d" .Date.Month) }} {{ .Date.Year }}
                                 </p>
                                 {{ if .Summary }}
                                     <p class="grey-text text-darken-1 whatsnew-summary">{{ .Summary | truncate 150 }}</p>
@@ -72,10 +75,13 @@
                             </li>
                             <li class="divider"></li>
                             {{ range $pages.GroupByDate "January 2006" }}
+                                {{ $firstPage := index .Pages 0 }}
+                                {{ $monthDe := i18n (printf "month_%d" $firstPage.Date.Month) }}
+                                {{ $year := $firstPage.Date.Year }}
                                 <li>
                                     <a href="#{{ .Key | urlize }}">
                                         <i class="material-icons tiny">event</i>
-                                        {{ .Key }}
+                                        {{ $monthDe }} {{ $year }}
                                         <span class="badge-count">{{ len .Pages }}</span>
                                     </a>
                                 </li>
