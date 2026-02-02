@@ -32,14 +32,41 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | relURL }}">
     <link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
 
-    <!-- Google Fonts: Roboto + Material Icons -->
+    <!-- Critical CSS für sofortiges Rendering -->
+    <style>
+        :root{--sidenav-width:300px;--topbar-height:64px;--bg-primary:#fff;--bg-secondary:#fafafa;--text-primary:rgba(0,0,0,.87)}
+        [data-theme="dark"]{--bg-primary:#121212;--bg-secondary:#1e1e1e;--text-primary:rgba(255,255,255,.87)}
+        body{font-family:'Roboto',system-ui,sans-serif;background:var(--bg-secondary);color:var(--text-primary);margin:0}
+        body.with-sidebar{padding-left:var(--sidenav-width)}
+        @media(max-width:992px){body.with-sidebar{padding-left:0}}
+        .sidenav{position:fixed;width:var(--sidenav-width);height:100vh;background:var(--bg-primary);z-index:999;overflow-y:auto}
+        @media(max-width:992px){.sidenav{transform:translateX(-105%)}}
+        .topbar{position:fixed;top:0;right:0;left:var(--sidenav-width);height:var(--topbar-height);background:var(--bg-primary);z-index:998}
+        @media(max-width:992px){.topbar{left:0}}
+        main{padding-top:calc(var(--topbar-height) + 24px)}
+    </style>
+
+    <!-- DNS Prefetch & Preconnect für externe Ressourcen -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://code.jquery.com" crossorigin>
+    <link rel="dns-prefetch" href="https://stats.myeliza.ch">
 
-    <!-- MaterializeCSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Google Fonts mit font-display=swap -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"></noscript>
+
+    <!-- Material Icons mit font-display=swap -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap"></noscript>
+
+    <!-- MaterializeCSS (async laden) -->
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"></noscript>
 
     <!-- ELIZA Custom Styles -->
     <link rel="stylesheet" href="{{ "css/eliza-docs.css" | relURL }}">
@@ -97,14 +124,14 @@
         </div>
     </footer>
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- jQuery (defer für nicht-blockierendes Laden) -->
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-    <!-- MaterializeCSS JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- MaterializeCSS JS (defer) -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <!-- ELIZA Docs JS -->
-    <script src="{{ "js/eliza-docs.js" | relURL }}"></script>
+    <!-- ELIZA Docs JS (defer) -->
+    <script defer src="{{ "js/eliza-docs.js" | relURL }}"></script>
 
     {{ block "scripts" . }}{{ end }}
 </body>
