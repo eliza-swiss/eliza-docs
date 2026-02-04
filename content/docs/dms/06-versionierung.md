@@ -218,15 +218,43 @@ Der Audit-Trail protokolliert alle Aktionen an einem Dokument für Compliance-Zw
 
 ### Protokollierte Ereignisse
 
-| Ereignis | Details |
-|----------|---------|
-| **Erstellt** | Wer, wann |
-| **Bearbeitet** | Wer, wann, welche Felder |
-| **Status geändert** | Von/Nach, Wer, Kommentar |
-| **Datei hochgeladen** | Dateiname, Grösse |
-| **Angesehen** | Wer, wann (optional) |
-| **Heruntergeladen** | Wer, wann |
-| **Kommentiert** | Wer, wann, Text |
+| Ereignis | Symbol | Details |
+|----------|--------|---------|
+| **Erstellt** | ➕ | Wer, wann |
+| **Bearbeitet** | 🔄 | Wer, wann, welche Felder |
+| **Dokument gelesen** | 👁️ | Wer, wann (optional) |
+| **Heruntergeladen** | ⬇️ | Wer, wann (optional) |
+| **Freigegeben** | ✅ | Wer, wann, Kommentar |
+| **Zur Prüfung eingereicht** | 📝 | Wer, wann |
+| **Geprüft** | ☑️ | Wer, wann |
+| **Auf Entwurf gesetzt** | ✏️ | Wer, wann |
+| **Archiviert** | 📦 | Wer, wann |
+| **Arbeitskopie erstellt** | 📋 | Wer, wann |
+| **Verschoben** | 📁 | Wer, wann, von/nach Ordner |
+| **Kommentiert** | 💬 | Wer, wann, Text |
+
+### Dokumentzugriffe protokollieren
+
+Die Protokollierung von Dokumentzugriffen (Lesen, Herunterladen) ist optional und kann aktiviert werden:
+
+**Aktivierung:**
+
+1. Gehe zu **Dokumente → Einstellungen → DMS Konfiguration**
+2. Aktiviere die Option **"Dokumentzugriffe protokollieren"**
+3. Klicke auf **Speichern**
+
+**Was wird protokolliert:**
+
+- Jeder Aufruf der Dokument-Detailseite ("Dokument gelesen")
+- Jeder Download einer Datei ("Dokument heruntergeladen")
+
+**Was wird NICHT protokolliert:**
+
+- Zugriffe von Administratoren (Superuser)
+- Zugriffe auf die Ordner-Übersicht
+- Zugriffe auf Suchergebnisse
+
+> **💡 Tipp:** Diese Funktion ist besonders nützlich für Compliance-Anforderungen (ISO 9001, GxP) und um nachzuverfolgen, wer wichtige Dokumente gelesen hat.
 
 ### Audit-Trail exportieren
 

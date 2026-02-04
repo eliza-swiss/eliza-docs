@@ -278,7 +278,7 @@ Zusätzlich zu den globalen Berechtigungen können Funktionen definiert werden:
 
 ## Benachrichtigungen
 
-### Automatische Benachrichtigungen
+### Automatische Benachrichtigungen bei Workflow-Ereignissen
 
 ELIZA sendet automatisch Benachrichtigungen bei Workflow-Ereignissen:
 
@@ -288,13 +288,141 @@ ELIZA sendet automatisch Benachrichtigungen bei Workflow-Ereignissen:
 | Geprüft | Freigeber, Ersteller |
 | Freigegeben | Ersteller, Verantwortliche |
 | Abgelehnt | Ersteller |
-| Dokument abgelaufen | Verantwortliche |
+
+### Automatische Benachrichtigungen für Überprüfungstermine
+
+ELIZA führt regelmässig automatische Prüfungen durch und benachrichtigt relevante Benutzer über anstehende oder überfällige Überprüfungen.
+
+#### Tägliche Benachrichtigungen (Daily)
+
+Die tägliche Prüfung läuft automatisch und führt folgende Aktionen durch:
+
+| Aktion | Bedingung | Empfänger |
+|--------|-----------|-----------|
+| **Status auf "Abgelaufen" setzen** | `Gültig bis` < heute | Verantwortliche Benutzer |
+
+**Verantwortliche Benutzer** umfassen:
+- Dokument-Autor
+- Ordner-Administratoren
+- Beitragende des Dokuments
+
+> **💡 Hinweis:** Sobald das "Gültig bis"-Datum überschritten ist, wird das Dokument automatisch auf den Status "Abgelaufen" gesetzt und die verantwortlichen Benutzer werden benachrichtigt.
+
+#### Wöchentliche Benachrichtigungen (Weekly)
+
+Die wöchentliche Prüfung sendet Erinnerungen für bevorstehende und überfällige Termine:
+
+**Benachrichtigungen für "Gültig bis" (valid_to):**
+
+| Zeitraum | Benachrichtigung | Empfänger |
+|----------|------------------|-----------|
+| In den nächsten 7 Tagen | "Bald ablaufendes Dokument" | Dokument-Autor |
+| Bereits abgelaufen | "Dokument abgelaufen" | Dokument-Autor |
+
+**Benachrichtigungen für "Nächste Überprüfung" (next_review):**
+
+| Zeitraum | Benachrichtigung | Empfänger |
+|----------|------------------|-----------|
+| In den nächsten 7 Tagen | "Dokument muss bald überprüft werden" | Dokument-Autor + Verantwortliche Funktion |
+| Bereits überfällig | "Überprüfung des Dokuments überfällig" | Dokument-Autor + Verantwortliche Funktion |
+
+**Wichtig:** Bei Dokumenten mit einer **verantwortlichen Funktion** werden zusätzlich zum Autor auch alle Mitglieder der Funktions-Gruppe benachrichtigt. Der Autor wird dabei nicht doppelt benachrichtigt.
+
+### Unterschied: "Gültig bis" vs. "Nächste Überprüfung"
+
+| Feld | Bedeutung | Automatische Aktion |
+|------|-----------|---------------------|
+| **Gültig bis** | Ablaufdatum des Dokuments | Status wird auf "Abgelaufen" gesetzt |
+| **Nächste Überprüfung** | Datum für inhaltliche Prüfung | Nur Benachrichtigung, kein Statuswechsel |
+
+> **💡 Tipp:** Bei Dokumenten mit **Periodizität** wird nach jeder Freigabe das "Nächste Überprüfungsdatum" automatisch berechnet. Das "Gültig bis"-Datum wird dabei auf das gleiche Datum gesetzt.
+
+### Übersicht: Dokumente zur Überprüfung
+
+Du findest Dokumente mit anstehender Überprüfung unter:
+
+**DMS → Workflow → Nächste Überprüfung**
+
+Diese Übersicht zeigt alle freigegebenen Dokumente, deren Überprüfungsdatum in den **nächsten 30 Tagen** liegt.
+
+**Wer sieht welche Dokumente:**
+
+| Rolle | Sichtbare Dokumente |
+|-------|---------------------|
+| **Dokument-Autor** | Alle eigenen Dokumente |
+| **Verantwortliche Funktion** | Dokumente mit der eigenen Funktion als Verantwortliche |
+
+> **⚠️ Wichtig:** Du siehst nur Dokumente, für die du als Autor eingetragen bist oder bei denen du Mitglied der verantwortlichen Funktion bist.
+
+### Menüpunkt "Fristen"
+
+Der Menüpunkt **"Fristen"** im DMS bietet eine zentrale Übersicht über alle Dokumente mit Handlungsbedarf bezüglich Gültigkeit und Überprüfung.
+
+**Zugriff:**
+
+**DMS → Fristen**
+
+Der Fristen-Bereich zeigt einen Badge mit der Anzahl relevanter Dokumente an.
+
+#### Ansichten im Fristen-Bereich
+
+| Ansicht | URL | Beschreibung |
+|---------|-----|--------------|
+| **Abgelaufene Dokumente** | `/dms/documents/expired/` | Dokumente mit überschrittenem "Gültig bis"-Datum |
+| **Überfällige Überprüfungen** | `/dms/documents/expired_review/` | Dokumente mit überschrittenem Überprüfungsdatum |
+| **Anstehende Überprüfungen** | `/dms/documents/next_review/` | Dokumente mit Überprüfung in den nächsten 30 Tagen |
+
+#### Berechtigungen pro Ansicht
+
+**Abgelaufene Dokumente (`valid_to` < heute):**
+
+| Rolle | Sichtbarkeit |
+|-------|--------------|
+| **DMS Administrator** | Alle abgelaufenen Dokumente |
+| **Ordner-Administrator** | Abgelaufene Dokumente im eigenen Ordner |
+| **Verantwortliche Funktion** | Dokumente mit der eigenen Funktion |
+
+**Überfällige Überprüfungen (`next_review` < heute):**
+
+| Rolle | Sichtbarkeit |
+|-------|--------------|
+| **Benutzer mit Änderungsrecht** | Dokumente, für die man `change_permission` hat |
+
+**Anstehende Überprüfungen (nächste 30 Tage):**
+
+| Rolle | Sichtbarkeit |
+|-------|--------------|
+| **Dokument-Autor** | Eigene Dokumente |
+| **Verantwortliche Funktion** | Dokumente mit der eigenen Funktion |
+
+#### Aktionen bei abgelaufenen Dokumenten
+
+Wenn ein Dokument in der Fristen-Übersicht erscheint, hast du folgende Optionen:
+
+| Aktion | Beschreibung |
+|--------|--------------|
+| **Arbeitskopie erstellen** | Dokument überarbeiten und neu freigeben |
+| **Überprüfen & Bestätigen** | Dokument bleibt gültig, neues Überprüfungsdatum setzen |
+| **Archivieren** | Dokument wird nicht mehr benötigt |
+
+> **💡 Tipp:** Prüfe regelmässig den Fristen-Bereich, um keine wichtigen Überprüfungstermine zu verpassen. Der Badge in der Navigation zeigt dir auf einen Blick, ob Handlungsbedarf besteht.
 
 ### Benachrichtigungskanäle
 
 - **In-App Benachrichtigung**: Glocken-Icon im Header
 - **E-Mail**: Falls in den Einstellungen aktiviert
 - **Dashboard-Widget**: Überfällige Aufgaben
+
+### Benachrichtigungseinstellungen
+
+Du kannst deine Benachrichtigungseinstellungen anpassen unter:
+
+**Profil → Einstellungen → Benachrichtigungen**
+
+| Einstellung | Beschreibung |
+|-------------|--------------|
+| **Digest aktivieren** | Tägliche/wöchentliche Zusammenfassung erhalten |
+| **E-Mail-Benachrichtigungen** | Benachrichtigungen auch per E-Mail |
 
 ---
 
