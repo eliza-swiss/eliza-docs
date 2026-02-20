@@ -1,8 +1,6 @@
 ---
-title: "Prozessschritte im BPMN-Diagramm automatisch hervorheben und zentrieren"
-date: 2025-09-30
+category: "Prozesse & BPMN"
 slug: "prozessschritte-bpmn-highlighting"
-emoji: "🎯"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer

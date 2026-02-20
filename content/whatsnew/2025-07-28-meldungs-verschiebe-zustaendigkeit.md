@@ -1,8 +1,6 @@
 ---
-title: "Neue Meldungs-Verschiebefunktion mit automatischer Zuständigkeits-Prüfung"
-date: 2025-07-28
+category: "Meldungen & Issue-Tracker"
 slug: "meldungs-verschiebe-zustaendigkeit"
-emoji: ""
 ---
 
 ## Meldungen zwischen Meldekreisen verschieben

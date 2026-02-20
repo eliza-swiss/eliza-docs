@@ -1,8 +1,6 @@
 ---
-title: "Neue Funktion: Konfigurierbare Sprachauswahl mit erweiterten Sprachen"
-date: 2025-07-20
+category: "Hilfe & Dokumentation"
 slug: "sprachkonfiguration"
-emoji: ""
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer,

@@ -1,8 +1,6 @@
 ---
-title: "Tutorials Mehrfachanmeldungen und Export-Funktionen 📚"
-date: 2025-09-01
+category: "Tutorials & Schulung"
 slug: "tutorials-mehrfachanmeldungen-export"
-emoji: ""
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer

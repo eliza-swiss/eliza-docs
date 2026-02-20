@@ -1,8 +1,6 @@
 ---
-title: "Verbessertes Kurserlebnis für Kursteilnehmer"
-date: 2025-09-01
+category: "Tutorials & Schulung"
 slug: "tutorials-teilnehmererlebnis"
-emoji: "📚"
 ---
 
 Liebe Kursteilnehmerin, lieber Kursteilnehmer,

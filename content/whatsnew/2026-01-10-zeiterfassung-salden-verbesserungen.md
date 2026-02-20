@@ -1,8 +1,6 @@
 ---
-title: "⏰ Verbesserte Saldenanzeige in der Zeiterfassung"
-date: 2026-01-10
+category: "Zeiterfassung & Absenzen"
 slug: "zeiterfassung-salden-verbesserungen"
-emoji: ""
 ---
 
 Wir haben die Anzeige deiner Salden in der Zeiterfassung optimiert, damit du immer den Überblick behältst.

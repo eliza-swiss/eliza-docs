@@ -1,8 +1,6 @@
 ---
-title: "BPMN-Diagramme jetzt in PDF und SVG herunterladen"
-date: 2025-11-07
+category: "Prozesse & BPMN"
 slug: "bpmn-downloads"
-emoji: "📥"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer

@@ -1,8 +1,6 @@
 ---
-title: "️ Prozesse: Diagramm-Position in Detailansicht jetzt flexibel anpassbar"
-date: 2025-10-09
+category: "Prozesse & BPMN"
 slug: "prozesse-diagramm-position-konfigurierbar"
-emoji: "⚙"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer

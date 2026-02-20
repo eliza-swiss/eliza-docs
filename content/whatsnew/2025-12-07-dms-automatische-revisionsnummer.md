@@ -1,8 +1,6 @@
 ---
-title: "Automatische Revisionsnummer bei Dokumentfreigabe"
-date: 2025-12-07
+category: "Dokumentenmanagement"
 slug: "dms-automatische-revisionsnummer"
-emoji: "🔢"
 ---
 
 Hallo!

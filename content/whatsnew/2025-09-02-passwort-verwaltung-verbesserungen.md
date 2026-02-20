@@ -1,8 +1,6 @@
 ---
-title: "Verbesserte Passwort-Verwaltung für mehr Sicherheit"
-date: 2025-09-02
+category: "Benutzer & Sicherheit"
 slug: "passwort-verwaltung-verbesserungen"
-emoji: "🔐"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer

@@ -1,8 +1,6 @@
 ---
-title: "IKS-Berechtigungen neu organisiert"
-date: 2025-10-29
+category: "Benutzer & Sicherheit"
 slug: "iks-berechtigungen-optimiert"
-emoji: "🔐"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer

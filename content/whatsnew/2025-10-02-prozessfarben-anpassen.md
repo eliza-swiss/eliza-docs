@@ -1,8 +1,6 @@
 ---
-title: "Prozessfarben individuell anpassen"
-date: 2025-10-02
+category: "Prozesse & BPMN"
 slug: "prozessfarben-anpassen"
-emoji: "🎨"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer

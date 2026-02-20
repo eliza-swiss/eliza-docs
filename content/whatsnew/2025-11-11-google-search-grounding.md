@@ -1,8 +1,6 @@
 ---
-title: "Google Search Grounding – Der AI-Assistent mit aktuellem Wissen aus dem Web"
-date: 2025-11-11
+category: "KI & AI-Assistent"
 slug: "google-search-grounding"
-emoji: "🔍"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer

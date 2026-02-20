@@ -44,4 +44,4 @@ ELIZA besteht aus verschiedenen Modulen, die du je nach Bedarf nutzen kannst:
 ---
 
 **Version**: 2026.02
-**Letzte Aktualisierung**: 04.02.2026
+**Letzte Aktualisierung**: 20.02.2026

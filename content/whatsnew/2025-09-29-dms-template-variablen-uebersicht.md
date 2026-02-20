@@ -1,8 +1,6 @@
 ---
-title: "DMS Template-Variablen Übersicht - Alle verfügbaren Felder auf einen Blick"
-date: 2025-09-29
+category: "Dokumentenmanagement"
 slug: "dms-template-variablen-uebersicht"
-emoji: "📝"
 ---
 
 Hallo! Wir haben eine praktische neue Funktion im **Dokumenten-Management-System (DMS)** für dich entwickelt. Ab sofort kannst du dir alle verfügbaren Template-Variablen für deine DOCX- und XLSX-Dokumente übersichtlich anzeigen lassen.

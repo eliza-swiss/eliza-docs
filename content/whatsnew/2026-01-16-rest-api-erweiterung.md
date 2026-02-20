@@ -1,8 +1,6 @@
 ---
-title: "Erweiterte Schnittstellen für deine ELIZA-Integrationen"
-date: 2026-01-16
+category: "API & Integrationen"
 slug: "rest-api-erweiterung"
-emoji: "🔗"
 ---
 
 Gute Nachrichten für alle, die ELIZA mit anderen Systemen verbunden haben! Wir haben die Schnittstellen für externe Anbindungen massiv ausgebaut und dabei sichergestellt, dass bestehende Verbindungen weiterhin funktionieren.

@@ -1,8 +1,6 @@
 ---
-title: "Neue Funktion: Transparente Benutzertyp-Erklärungen in der Benutzerverwaltung"
-date: 2025-09-17
+category: "Benutzer & Sicherheit"
 slug: "benutzertyp-transparenz-verbesserungen"
-emoji: "🔍"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer,

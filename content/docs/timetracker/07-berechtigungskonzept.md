@@ -170,6 +170,22 @@ Diese Gruppe markiert genehmigte Spesen als erstattet:
 | Abwesenheit ablehnen | ❌ | ✅ |
 | Abwesenheitsarten verwalten | ❌ | ✅ |
 
+### Absenzen-Sichtbarkeit im Monatsplan
+
+Die Sichtbarkeit von Absenzen im Monatsplan und in Übersichten hängt von der Sichtbarkeitsstufe der Abwesenheitsart ab:
+
+| Wer sieht die Absenz? | Öffentlich | Organisationseinheit | Privat |
+|------------------------|:----------:|:--------------------:|:------:|
+| **Betroffene Person selbst** | ✅ | ✅ | ✅ |
+| **Vorgesetzte/r** | ✅ | ✅ | ✅ |
+| **HR/Admin** (view_absence) | ✅ | ✅ | ✅ |
+| **Gleiche Organisationseinheit** | ✅ | ✅ | ❌ |
+| **Andere Mitarbeitende** | ✅ | ❌ | ❌ |
+
+**Anonymisierte Darstellung:**
+
+Wenn die Systemeinstellung "Private Absenzen anonymisiert anzeigen" aktiviert ist, sehen Mitarbeitende ohne Sichtberechtigung ein neutrales "Belegt"-Symbol. Ist die Einstellung deaktiviert, werden nicht sichtbare Absenzen komplett ausgeblendet.
+
 ### Spesen
 
 | Aktion | users | approver | reimburser | admin |

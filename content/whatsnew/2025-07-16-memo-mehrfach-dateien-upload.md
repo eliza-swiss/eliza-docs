@@ -1,8 +1,6 @@
 ---
-title: "Neue Funktion: Mehrere Dateien gleichzeitig zu Memos hinzufügen"
-date: 2025-07-16
+category: "Organisation & HR"
 slug: "memo-mehrfach-dateien-upload"
-emoji: "🎉"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer,

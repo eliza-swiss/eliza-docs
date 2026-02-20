@@ -1,8 +1,6 @@
 ---
-title: "Meldungen bearbeiten - jetzt noch einfacher im Modal-Dialog"
-date: 2025-09-26
+category: "Meldungen & Issue-Tracker"
 slug: "meldungen-modal-dialog"
-emoji: "📋"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer

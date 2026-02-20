@@ -1,8 +1,6 @@
 ---
-title: "Word-Vorlagen im Handumdrehen erstellen"
-date: 2025-12-06
+category: "Prozesse & BPMN"
 slug: "word-template-wizard"
-emoji: "✨"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer

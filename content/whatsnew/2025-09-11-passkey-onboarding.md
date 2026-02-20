@@ -1,8 +1,6 @@
 ---
-title: "Neue Funktion: Passkey Onboarding mit QR-Code"
-date: 2025-09-11
+category: "Benutzer & Sicherheit"
 slug: "passkey-onboarding"
-emoji: "🔐"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer,

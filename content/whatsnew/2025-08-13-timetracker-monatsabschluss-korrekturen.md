@@ -1,8 +1,6 @@
 ---
-title: "⏰ Monatsabschluss Korrekturen - Präzise und übersichtlich"
-date: 2025-08-13
+category: "Zeiterfassung & Absenzen"
 slug: "timetracker-monatsabschluss-korrekturen"
-emoji: ""
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer

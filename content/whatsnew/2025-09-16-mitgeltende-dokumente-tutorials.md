@@ -1,8 +1,6 @@
 ---
-title: "Mitgeltende Dokumente in Tutorial-Abschnitten"
-date: 2025-09-16
+category: "Prozesse & BPMN"
 slug: "mitgeltende-dokumente-tutorials"
-emoji: "📖"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer,

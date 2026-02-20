@@ -177,6 +177,24 @@ Empfehlungen für produktionsreife Integrationen.
 
 ---
 
+### [11. SharePoint-Migration]({{< ref "11-sharepoint-migration" >}})
+
+**Dokumente aus SharePoint nach ELIZA DMS migrieren**
+
+Schritt-für-Schritt Anleitung für die Migration von SharePoint Document Libraries inkl. Versionshistorie.
+
+**Inhalte:**
+
+- Azure AD App Registration einrichten
+- Konfiguration und Zugangsdaten
+- Import mit Dry-Run, Versionen und Ordnerstruktur
+- Inkrementelle Synchronisation
+- Fehlerbehebung
+
+**Lesezeit:** ~15 Minuten
+
+---
+
 ## Lernpfad für Integratoren
 
 **Empfohlene Reihenfolge für den Einstieg:**

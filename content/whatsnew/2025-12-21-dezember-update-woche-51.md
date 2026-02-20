@@ -1,8 +1,6 @@
 ---
-title: "ELIZA Dezember-Update: Neue Funktionen für dich"
-date: 2025-12-21
+category: "Sammel-Updates"
 slug: "dezember-update-woche-51"
-emoji: "🎄"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer

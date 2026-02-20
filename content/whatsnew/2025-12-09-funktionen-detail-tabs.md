@@ -1,8 +1,6 @@
 ---
-title: "Neue Funktion: Erweiterte Funktionen-Detailseite mit Verknüpfungsübersicht"
-date: 2025-12-09
+category: "Prozesse & BPMN"
 slug: "funktionen-detail-tabs"
-emoji: "👤"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer,

@@ -1,8 +1,6 @@
 ---
-title: "Verbesserte BPMN-Diagramm Bedienung 🎯"
-date: 2025-09-29
+category: "Prozesse & BPMN"
 slug: "verbesserte-bpmn-diagramm-bedienung"
-emoji: ""
 ---
 
 Hallo! Wir haben die Bedienung der BPMN-Prozessdiagramme in ELIZA revolutionär verbessert. Das absolute Highlight: Du kannst jetzt Prozesselemente zwischen verschiedenen Diagrammen kopieren und einfügen - sogar zwischen verschiedenen Browser-Tabs!

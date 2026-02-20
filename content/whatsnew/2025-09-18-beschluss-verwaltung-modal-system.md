@@ -1,8 +1,6 @@
 ---
-title: "Neue Beschluss-Verwaltung mit Modal-System"
-date: 2025-09-18
+category: "Teams & Zusammenarbeit"
 slug: "beschluss-verwaltung-modal-system"
-emoji: "🔧"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer

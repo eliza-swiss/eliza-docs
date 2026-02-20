@@ -1,8 +1,6 @@
 ---
-title: "Neue Funktion: Verbesserte Gruppenverwaltung mit Benutzervergleich"
-date: 2025-07-14
+category: "Benutzer & Sicherheit"
 slug: "benutzer-verwaltung-verbesserungen"
-emoji: "🎉"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer,

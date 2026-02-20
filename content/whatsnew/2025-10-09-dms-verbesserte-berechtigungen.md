@@ -1,8 +1,6 @@
 ---
-title: "DMS: Intelligentere Berechtigungen für Prüfer und Freigeber"
-date: 2025-10-09
+category: "Dokumentenmanagement"
 slug: "dms-verbesserte-berechtigungen"
-emoji: "🔐"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer

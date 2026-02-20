@@ -1,8 +1,6 @@
 ---
-title: "Benachrichtigungen bei Cards: Mehr Kontrolle, weniger Unterbrechungen"
-date: 2025-09-02
+category: "Teams & Zusammenarbeit"
 slug: "teams-benachrichtigungen-optimiert"
-emoji: "📧"
 ---
 
 Hallo! Wir haben das Benachrichtigungssystem im Spaces-Modul für dich optimiert. Ab sofort hast du die volle Kontrolle darüber, wer über deine Card-Aktivitäten informiert wird.

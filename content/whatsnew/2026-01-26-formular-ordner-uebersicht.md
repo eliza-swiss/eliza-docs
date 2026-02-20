@@ -1,8 +1,6 @@
 ---
-title: "Neue Formular-Ordner Übersicht"
-date: 2026-01-26
+category: "Dokumentenmanagement"
 slug: "formular-ordner-uebersicht"
-emoji: "📂"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer

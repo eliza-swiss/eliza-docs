@@ -1,8 +1,6 @@
 ---
-title: "Neue Funktion: Spotify Podcasts direkt in ELIZA einbetten"
-date: 2025-06-23
+category: "KI & AI-Assistent"
 slug: "spotify-podcast-integration"
-emoji: "🎧"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer,

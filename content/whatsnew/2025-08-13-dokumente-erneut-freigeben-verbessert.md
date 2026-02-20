@@ -1,8 +1,6 @@
 ---
-title: "Dokumente erneut freigeben - Jetzt noch einfacher und intelligenter"
-date: 2025-08-13
+category: "Dokumentenmanagement"
 slug: "dokumente-erneut-freigeben-verbessert"
-emoji: "📋"
 ---
 
 Hallo! Wir haben das erneute Freigeben von Dokumenten im DMS deutlich verbessert. Ab sofort ist dieser Prozess nicht nur benutzerfreundlicher, sondern auch intelligenter geworden.
