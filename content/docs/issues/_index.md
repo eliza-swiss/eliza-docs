@@ -57,7 +57,7 @@ Eine **Meldung** ist ein einzelner Eintrag innerhalb eines Meldekreises. Sie ent
 
 ## Kapitel-Übersicht
 
-### [1. Erste Schritte](erste-schritte/)
+### [1. Erste Schritte]({{< ref "01-erste-schritte" >}})
 
 **Einführung ins Meldungen-Modul**
 
@@ -74,7 +74,7 @@ Lerne die Grundlagen: Navigation, Dashboard-Übersicht und das Erstellen deiner 
 
 ---
 
-### [2. Meldungen verwalten](meldungen-verwalten/)
+### [2. Meldungen verwalten]({{< ref "02-meldungen-verwalten" >}})
 
 **Meldungen erstellen, bearbeiten und bearbeiten**
 
@@ -93,7 +93,7 @@ Detaillierte Anleitungen für alle Funktionen rund um Meldungen: von der Erstell
 
 ---
 
-### [3. Meldekreise verwalten](meldekreise-verwalten/)
+### [3. Meldekreise verwalten]({{< ref "03-meldekreise-verwalten" >}})
 
 **Meldekreise einrichten und konfigurieren**
 
@@ -113,7 +113,7 @@ Erfahre, wie du als Administrator Meldekreise erstellst, konfigurierst und optim
 
 ---
 
-### [4. Berechtigungskonzept](berechtigungskonzept/)
+### [4. Berechtigungskonzept]({{< ref "04-berechtigungskonzept" >}})
 
 **Rollen, Rechte und Zugriffssteuerung**
 
@@ -131,7 +131,7 @@ Verstehe das mehrstufige Berechtigungssystem im Meldungen-Modul.
 
 ---
 
-### [5. Tipps und Tricks](tipps-und-tricks/)
+### [5. Tipps und Tricks]({{< ref "05-tipps-tricks" >}})
 
 **Best Practices und häufige Fragen**
 
@@ -149,7 +149,7 @@ Optimiere deine Arbeit mit dem Meldungen-Modul durch bewährte Vorgehensweisen u
 
 ---
 
-### [6. REST API](rest-api/)
+### [6. REST API]({{< ref "06-api" >}})
 
 **Programmier-Schnittstelle für Automatisierung**
 

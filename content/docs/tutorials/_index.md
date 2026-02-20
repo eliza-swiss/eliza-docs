@@ -24,7 +24,7 @@ Dieses Handbuch hilft dir, das Modul "Wissen & Lernen" effektiv zu nutzen. Es is
 
 ## 📚 Kapitel-Übersicht
 
-### [1. Erste Schritte](erste-schritte/)
+### [1. Erste Schritte]({{< ref "01-erste-schritte" >}})
 
 **Einführung ins E-Learning**
 
@@ -41,7 +41,7 @@ Lerne die Grundlagen des E-Learning-Moduls in ELIZA kennen. Dieses Kapitel erkl�
 
 ---
 
-### [2. Kursordner](kursordner/)
+### [2. Kursordner]({{< ref "02-kursordner" >}})
 
 **Kurse organisieren und strukturieren**
 
@@ -59,7 +59,7 @@ Erstelle und verwalte Kursordner, um deine Schulungsinhalte thematisch zu gruppi
 
 ---
 
-### [3. Kurse erstellen und verwalten](kurse-erstellen-und-verwalten/)
+### [3. Kurse erstellen und verwalten]({{< ref "03-kurse" >}})
 
 **Schulungskurse aufbauen**
 
@@ -79,7 +79,7 @@ Lerne, wie du Kurse erstellst, konfigurierst und mit Lektionen füllst.
 
 ---
 
-### [4. Lektionen und Abschnitte](lektionen-und-abschnitte/)
+### [4. Lektionen und Abschnitte]({{< ref "04-lektionen" >}})
 
 **Lerninhalte strukturieren**
 
@@ -99,7 +99,7 @@ Erstelle Lektionen mit verschiedenen Inhaltstypen und organisiere sie in Kapitel
 
 ---
 
-### [5. Kursanmeldungen und Teilnehmerverwaltung](kursanmeldungen-und-teilnehmerverwaltung/)
+### [5. Kursanmeldungen und Teilnehmerverwaltung]({{< ref "05-kursanmeldungen" >}})
 
 **Teilnehmende verwalten**
 
@@ -120,7 +120,7 @@ Melde Benutzer zu Kursen an und verfolge deren Fortschritt.
 
 ---
 
-### [6. Quiz und Abschlusstests](quiz-und-abschlusstests/)
+### [6. Quiz und Abschlusstests]({{< ref "06-quiz-abschlusstests" >}})
 
 **Wissen prüfen und zertifizieren**
 
@@ -139,7 +139,7 @@ Integriere Quiz und Tests in deine Lektionen für interaktives Lernen.
 
 ---
 
-### [7. Berechtigungen und Zugriff](berechtigungen-und-zugriff/)
+### [7. Berechtigungen und Zugriff]({{< ref "07-berechtigungen" >}})
 
 **Zugriffsrechte steuern**
 

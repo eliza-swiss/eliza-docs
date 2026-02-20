@@ -28,7 +28,7 @@ Das News & Events-Modul ist dein zentraler Kommunikationshub in ELIZA. Hier kann
 
 ## Kapitel-Übersicht
 
-### [1. Erste Schritte](erste-schritte/)
+### [1. Erste Schritte]({{< ref "01-erste-schritte" >}})
 
 **Einführung in News & Events**
 
@@ -45,7 +45,7 @@ Lerne die Grundlagen des Moduls kennen: Navigation, Übersicht und erste Aktione
 
 ---
 
-### [2. Newskanäle verstehen](newskanäle-verstehen/)
+### [2. Newskanäle verstehen]({{< ref "02-newskanäle" >}})
 
 **Newskanäle erstellen und verwalten**
 
@@ -63,7 +63,7 @@ Erfahre, wie du Newskanäle erstellst, konfigurierst und verwaltest.
 
 ---
 
-### [3. News erstellen und verwalten](news-erstellen-und-verwalten/)
+### [3. News erstellen und verwalten]({{< ref "03-news-erstellen" >}})
 
 **Nachrichten veröffentlichen**
 
@@ -81,7 +81,7 @@ Lerne, wie du News-Beiträge erstellst, formatierst und verwaltest.
 
 ---
 
-### [4. Events planen und verwalten](events-planen-und-verwalten/)
+### [4. Events planen und verwalten]({{< ref "04-events" >}})
 
 **Termine organisieren und Teilnehmer einladen**
 
@@ -99,7 +99,7 @@ Erfahre alles über die Event-Verwaltung: von der Erstellung bis zur Teilnehmerp
 
 ---
 
-### [5. Berechtigungen und Abonnements](berechtigungen-und-abonnements/)
+### [5. Berechtigungen und Abonnements]({{< ref "05-berechtigungen" >}})
 
 **Zugriffsrechte und Abonnement-Verwaltung verstehen**
 
@@ -119,11 +119,11 @@ Verstehe das Berechtigungskonzept und wie Abonnements funktionieren.
 
 ## Schnellstart
 
-**Für Einsteiger:** Beginne mit [Kapitel 1: Erste Schritte](erste-schritte/)
+**Für Einsteiger:** Beginne mit [Kapitel 1: Erste Schritte]({{< ref "01-erste-schritte" >}})
 
-**Für Administratoren:** Lies [Kapitel 2: Newskanäle](newskanäle-verstehen/) und [Kapitel 5: Berechtigungen](berechtigungen-und-abonnements/)
+**Für Administratoren:** Lies [Kapitel 2: Newskanäle]({{< ref "02-newskanäle" >}}) und [Kapitel 5: Berechtigungen]({{< ref "05-berechtigungen" >}})
 
-**Für Event-Organisatoren:** Springe direkt zu [Kapitel 4: Events](events-planen-und-verwalten/)
+**Für Event-Organisatoren:** Springe direkt zu [Kapitel 4: Events]({{< ref "04-events" >}})
 
 ## Verwendete Konventionen
 

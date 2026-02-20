@@ -64,11 +64,12 @@ Dieses Handbuch richtet sich an:
 2. **[Einschätzungen verwalten]({{< ref "einschaetzungen" >}})** - Risiken und Chancen erfassen
 3. **[Massnahmen erstellen]({{< ref "massnahmen" >}})** - Aktionen planen und umsetzen
 4. **[Kontrollen durchführen]({{< ref "kontrollen" >}})** - Massnahmen überprüfen
+5. **[Dashboard nutzen]({{< ref "dashboard" >}})** - Übersicht und Kennzahlen
 
 ### Erweiterte Themen
-5. **[Risikomap nutzen]({{< ref "risikomap" >}})** - Visualisierung und Priorisierung
-6. **[Reports erstellen]({{< ref "reports" >}})** - Auswertungen und Analysen
-7. **[Best Practices]({{< ref "best-practices" >}})** - Tipps für effektives IKS
+6. **[Risikomap nutzen]({{< ref "risikomap" >}})** - Visualisierung und Priorisierung
+7. **[Reports erstellen]({{< ref "reports" >}})** - Auswertungen und Analysen
+8. **[Best Practices]({{< ref "best-practices" >}})** - Tipps für effektives IKS
 
 ## Schnelleinstieg
 
@@ -137,8 +138,8 @@ Kontaktiere uns über den ELIZA-Support!
 
 ---
 
-**Version:** 1.0
-**Stand:** Oktober 2025
+**Version:** 2.0
+**Stand:** Februar 2026
 **Modul:** SWOT / IKS
 
 *Dein ELIZA-Team* 🐢

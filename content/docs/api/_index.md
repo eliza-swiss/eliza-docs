@@ -16,7 +16,7 @@ Willkommen zum Benutzerhandbuch der ELIZA REST API. Diese Dokumentation hilft di
 
 ## Kapitelübersicht
 
-### [1. Einführung](einführung/)
+### [1. Einführung]({{< ref "01-einfuehrung" >}})
 
 **Was ist die ELIZA REST API?**
 
@@ -32,7 +32,7 @@ Willkommen zum Benutzerhandbuch der ELIZA REST API. Diese Dokumentation hilft di
 
 ---
 
-### [2. Authentifizierung](authentifizierung/)
+### [2. Authentifizierung]({{< ref "02-authentifizierung" >}})
 
 **Zugang zur API sichern**
 
@@ -48,7 +48,7 @@ Alles über Token-Authentifizierung, Session-Auth und das Berechtigungssystem.
 
 ---
 
-### [3. Erste Anfragen](erste-anfragen/)
+### [3. Erste Anfragen]({{< ref "03-erste-anfragen" >}})
 
 **Schnellstart mit Python und curl**
 
@@ -64,7 +64,7 @@ Praktische Beispiele für deine ersten API-Aufrufe.
 
 ---
 
-### [4. Endpunkte-Übersicht](endpunkte-übersicht/)
+### [4. Endpunkte-Übersicht]({{< ref "04-endpunkte-uebersicht" >}})
 
 **Alle verfügbaren API-Endpoints**
 
@@ -80,7 +80,7 @@ Vollständige Referenz aller Module und ihrer Endpoints.
 
 ---
 
-### [5. Datenformate](datenformate/)
+### [5. Datenformate]({{< ref "05-datenformate" >}})
 
 **JSON-Struktur und Serialisierung**
 
@@ -96,7 +96,7 @@ Verstehe, wie Daten in der API strukturiert sind.
 
 ---
 
-### [6. Filterung und Suche](filterung-und-suche/)
+### [6. Filterung und Suche]({{< ref "06-filterung-suche" >}})
 
 **Daten effizient abfragen**
 
@@ -112,7 +112,7 @@ Query-Parameter für gezielte Datenabfragen.
 
 ---
 
-### [7. Fehlerbehandlung](fehlerbehandlung/)
+### [7. Fehlerbehandlung]({{< ref "07-fehlerbehandlung" >}})
 
 **HTTP-Status-Codes und Fehlermeldungen**
 
@@ -128,7 +128,7 @@ Fehler verstehen und korrekt behandeln.
 
 ---
 
-### [8. Praxisbeispiele](praxisbeispiele/)
+### [8. Praxisbeispiele]({{< ref "08-praxisbeispiele" >}})
 
 **Vollständige Integrationsszenarien**
 
@@ -145,7 +145,7 @@ Komplette Python-Skripte für typische Anwendungsfälle.
 
 ---
 
-### [9. Swagger & OpenAPI](swagger-openapi/)
+### [9. Swagger & OpenAPI]({{< ref "09-swagger-openapi" >}})
 
 **Interaktive Dokumentation nutzen**
 
@@ -161,7 +161,7 @@ Die Swagger-UI für Tests und Exploration verwenden.
 
 ---
 
-### [10. Best Practices](best-practices/)
+### [10. Best Practices]({{< ref "10-best-practices" >}})
 
 **Sicherheit und Performance**
 
@@ -177,7 +177,7 @@ Empfehlungen für produktionsreife Integrationen.
 
 ---
 
-### [11. SharePoint-Migration](sharepoint-migration/)
+### [11. SharePoint-Migration]({{< ref "11-sharepoint-migration" >}})
 
 **Dokumente aus SharePoint nach ELIZA DMS migrieren**
 

@@ -22,7 +22,7 @@ Dieses Handbuch hilft dir, das Dashboard-Modul effektiv zu nutzen. Es ist in meh
 
 ## 📚 Kapitel-Übersicht
 
-### [1. Erste Schritte](erste-schritte-im-dashboard/)
+### [1. Erste Schritte]({{< ref "01-erste-schritte" >}})
 
 **Einführung ins Dashboard**
 
@@ -39,7 +39,7 @@ Lerne die grundlegenden Konzepte des Dashboards kennen und mache dich mit der Na
 
 ---
 
-### [2. Dashboard-Übersicht und Widgets](dashboard-übersicht-und-widgets/)
+### [2. Dashboard-Übersicht und Widgets]({{< ref "02-dashboard-uebersicht" >}})
 
 **Dein persönlicher Arbeitsbereich**
 
@@ -60,7 +60,7 @@ Entdecke alle verfügbaren Widgets und lerne, wie du dein Dashboard an deine Bed
 
 ---
 
-### [3. Favoriten und Shortcuts](favoriten-und-shortcuts/)
+### [3. Favoriten und Shortcuts]({{< ref "03-favoriten" >}})
 
 **Schnellzugriff auf wichtige Inhalte**
 
@@ -78,7 +78,7 @@ Lerne, wie du Favoriten und Shortcuts effektiv nutzt, um schneller zu arbeiten.
 
 ---
 
-### [4. Benachrichtigungen und Posteingang](benachrichtigungen-und-posteingang/)
+### [4. Benachrichtigungen und Posteingang]({{< ref "04-benachrichtigungen" >}})
 
 **Nichts mehr verpassen**
 
@@ -97,7 +97,7 @@ Erfahre alles über das Benachrichtigungssystem und den Posteingang.
 
 ---
 
-### [5. Tipps und Tricks](tipps-und-tricks/)
+### [5. Tipps und Tricks]({{< ref "05-tipps-tricks" >}})
 
 **Werde zum Dashboard-Profi**
 
