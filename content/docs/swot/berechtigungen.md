@@ -1,8 +1,15 @@
 ---
-title: "Untitled"
+title: "IKS Berechtigungen"
 description: ""
-weight: 0
+weight: "1"
+tags:
+  - "berechtigungen"
+  - "rollen"
+  - "zugriff"
+  - "iks"
 ---
+
+
 # IKS Berechtigungen
 
 Eine umfassende Übersicht über das Berechtigungssystem im IKS-Modul.
