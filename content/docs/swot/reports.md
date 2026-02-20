@@ -145,7 +145,7 @@ Zusätzlich kannst du manuell Report-Einträge hinzufügen:
 3. Fülle das Formular aus
 4. Speichere
 
-Mehr dazu im Kapitel [Einschätzungen verwalten](einschaetzungen.md#iks-reporting).
+Mehr dazu im Kapitel [Einschätzungen verwalten]({{< ref "einschaetzungen#iks-reporting" >}}).
 
 ---
 

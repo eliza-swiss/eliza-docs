@@ -82,9 +82,9 @@ Dieses Handbuch richtet sich an:
 
 ### Häufige Aufgaben
 
-- **Risiko erfassen** → [Einschätzungen: Risiko erstellen](einschaetzungen.md#risiko-erstellen)
-- **Massnahme zuweisen** → [Massnahmen: Verantwortung zuweisen](massnahmen.md#verantwortung-zuweisen)
-- **Kontrolle dokumentieren** → [Kontrollen: Ergebnis erfassen](kontrollen.md#kontrolle-durchfuehren)
+- **Risiko erfassen** → [Einschätzungen: Risiko erstellen]({{< ref "einschaetzungen#risiko-erstellen" >}})
+- **Massnahme zuweisen** → [Massnahmen: Verantwortung zuweisen]({{< ref "massnahmen#verantwortung-zuweisen" >}})
+- **Kontrolle dokumentieren** → [Kontrollen: Ergebnis erfassen]({{< ref "kontrollen#kontrolle-durchfuehren" >}})
 - **Übersicht verschaffen** → [Dashboard nutzen]({{< ref "dashboard" >}})
 
 ## Wichtige Konzepte
