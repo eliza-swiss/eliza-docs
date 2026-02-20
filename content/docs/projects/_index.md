@@ -21,7 +21,7 @@ Dieses Handbuch hilft dir, das Projekte-Modul effektiv zu nutzen. Es ist in mehr
 
 ## 📚 Kapitel-Übersicht
 
-### [1. Erste Schritte]({{< ref "01-erste-schritte" >}})
+### [1. Erste Schritte](erste-schritte-im-projekte-modul/)
 
 **Einführung ins Projekte-Modul**
 
@@ -38,7 +38,7 @@ Lerne die Grundlagen des Projektmanagements in ELIZA kennen. Dieses Kapitel erkl
 
 ---
 
-### [2. Projekt erstellen]({{< ref "02-projekt-erstellen" >}})
+### [2. Projekt erstellen](projekt-erstellen/)
 
 **Neue Projekte anlegen und konfigurieren**
 
@@ -56,7 +56,7 @@ Schritt-für-Schritt Anleitung zum Erstellen deines ersten Projekts. Du erfährs
 
 ---
 
-### [3. Projekttypen und Kategorien]({{< ref "03-projekttypen-kategorien" >}})
+### [3. Projekttypen und Kategorien](projekttypen-und-kategorien/)
 
 **Projekte kategorisieren und organisieren**
 
@@ -74,7 +74,7 @@ Nutze Projekttypen und Labels, um deine Projekte übersichtlich zu organisieren 
 
 ---
 
-### [4. Status und Workflow]({{< ref "04-status-workflow" >}})
+### [4. Status und Workflow](status-und-workflow/)
 
 **Projekt-Lebenszyklus steuern**
 
@@ -92,7 +92,7 @@ Verstehe den Status-Workflow von der Planung bis zum Abschluss. Lerne, wie Geneh
 
 ---
 
-### [5. Projektphasen]({{< ref "05-projektphasen" >}})
+### [5. Projektphasen](projektphasen/)
 
 **Zeitliche Strukturierung von Projekten**
 
@@ -110,7 +110,7 @@ Teile deine Projekte in logische Phasen mit definierten Start- und End-Terminen 
 
 ---
 
-### [6. Team-Verwaltung]({{< ref "06-team-verwaltung" >}})
+### [6. Team-Verwaltung](team-verwaltung/)
 
 **Projektteam zusammenstellen und Rollen zuweisen**
 
@@ -129,7 +129,7 @@ Organisiere dein Projektteam mit klaren Rollen, Verantwortlichkeiten und Zugriff
 
 ---
 
-### [7. Kostenstellen und Zeitbudget]({{< ref "07-kostenstellen-zeitbudget" >}})
+### [7. Kostenstellen und Zeitbudget](kostenstellen-und-zeitbudget/)
 
 **Zeiterfassung und Budgetverwaltung**
 
@@ -148,7 +148,7 @@ Erstelle Kostenstellen für die Zeiterfassung und überwache Budgets effektiv.
 
 ---
 
-### [8. Meilensteine]({{< ref "08-meilensteine" >}})
+### [8. Meilensteine](meilensteine/)
 
 **Termine und Deadlines setzen**
 
@@ -166,7 +166,7 @@ Definiere wichtige Projekt-Meilensteine und überwache deren Erreichung.
 
 ---
 
-### [9. Reporting]({{< ref "09-reporting" >}})
+### [9. Reporting](projekt-reporting/)
 
 **Projekt-Reports erstellen und Fortschritt dokumentieren**
 
@@ -185,7 +185,7 @@ Dokumentiere den Projektfortschritt mit strukturierten Reports und Ampel-Bewertu
 
 ---
 
-### [10. Dateiverwaltung]({{< ref "10-dateiverwaltung" >}})
+### [10. Dateiverwaltung](dateiverwaltung/)
 
 **Projektdateien hochladen und verwalten**
 
@@ -203,7 +203,7 @@ Verwalte alle projektrelevanten Dokumente zentral im Projekt.
 
 ---
 
-### [11. Berechtigungskonzept]({{< ref "11-berechtigungskonzept" >}})
+### [11. Berechtigungskonzept](berechtigungskonzept/)
 
 **Zugriffsrechte und Sichtbarkeit steuern**
 
@@ -223,7 +223,7 @@ Verstehe, wie Berechtigungen funktionieren und wer welche Projekte sehen und bea
 
 ---
 
-### [12. Integrationen]({{< ref "12-integrationen" >}})
+### [12. Integrationen](integrationen/)
 
 **Verknüpfung mit anderen Modulen**
 
@@ -242,7 +242,7 @@ Nutze die leistungsstarken Integrationen mit anderen ELIZA-Modulen.
 
 ---
 
-### [13. Visualisierungen]({{< ref "13-visualisierungen" >}})
+### [13. Visualisierungen](visualisierungen/)
 
 **Gantt-Diagramm und Dashboard nutzen**
 
@@ -260,7 +260,7 @@ Visualisiere deine Projekte mit Gantt-Diagrammen, Kalendern und Dashboard-Ansich
 
 ---
 
-### [14. Best Practices]({{< ref "14-best-practices" >}})
+### [14. Best Practices](best-practices-und-faq/)
 
 **Tipps für effektives Projektmanagement**
 

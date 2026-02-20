@@ -36,7 +36,7 @@ Der AI Assistant bietet dir folgende Möglichkeiten:
 
 ## 📚 Kapitel-Übersicht
 
-### [1. Erste Schritte]({{< ref "01-erste-schritte" >}})
+### [1. Erste Schritte](erste-schritte-mit-dem-ai-assistant/)
 
 **Einführung in den AI Assistant**
 
@@ -47,7 +47,7 @@ Lerne die Grundlagen kennen: Zugriff auf den AI Assistant, Navigation in der Ben
 
 ---
 
-### [2. AI-Assistent nutzen]({{< ref "02-ki-assistent" >}})
+### [2. AI-Assistent nutzen](ai-assistent-nutzen/)
 
 **Chats führen und verwalten**
 
@@ -65,7 +65,7 @@ Detaillierte Anleitungen zum Erstellen und Verwalten von Chats, Auswahl des rich
 
 ---
 
-### [3. Dokumentensuche und Wissensbasis]({{< ref "03-dokumente-suche" >}})
+### [3. Dokumentensuche und Wissensbasis](dokumentensuche-und-wissensbasis/)
 
 **Dokumente als Kontext einbinden**
 
@@ -85,7 +85,7 @@ Erfahre, wie du Dokumente hochlädst und als Wissensbasis für den AI Assistant 
 
 ---
 
-### [4. Chatspaces und Team-Zusammenarbeit]({{< ref "04-integration" >}})
+### [4. Chatspaces und Team-Zusammenarbeit](chatspaces-und-team-zusammenarbeit/)
 
 **Gemeinsam mit dem Team arbeiten**
 
@@ -102,7 +102,7 @@ Lerne, wie du Chatspaces erstellst, Chat-Vorlagen nutzt und mit deinem Team zusa
 
 ---
 
-### [5. Tipps, Tricks und FAQ]({{< ref "05-tipps" >}})
+### [5. Tipps, Tricks und FAQ](tipps-tricks-und-faq/)
 
 **Best Practices und häufige Fragen**
 
@@ -119,7 +119,7 @@ Praktische Tipps zur effektiven Nutzung des AI Assistants, Lösungen für häufi
 
 ---
 
-### [6. Web-Suche mit Gemini]({{< ref "06-web-suche" >}})
+### [6. Web-Suche mit Gemini](web-suche-mit-gemini/)
 
 **Aktuelle Informationen aus dem Web nutzen**
 

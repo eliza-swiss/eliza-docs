@@ -22,7 +22,7 @@ Dieses Handbuch hilft dir, das Standards-Modul effektiv zu nutzen. Das Modul unt
 
 ## 📚 Kapitel-Übersicht
 
-### [1. Erste Schritte]({{< ref "01-erste-schritte" >}})
+### [1. Erste Schritte](erste-schritte-im-standards-modul/)
 
 **Einführung ins Standards-Modul**
 
@@ -39,7 +39,7 @@ Lerne die Grundlagen des Standards-Moduls kennen, verstehe den Aufbau und mache 
 
 ---
 
-### [2. Normen verwalten]({{< ref "02-normen-verwalten" >}})
+### [2. Normen verwalten](normen-verwalten/)
 
 **Normen erstellen, organisieren und pflegen**
 
@@ -57,7 +57,7 @@ Erfahre, wie du Normen und Standards in ELIZA anlegst, kategorisierst und verwal
 
 ---
 
-### [3. Kapitel und Erfüllung]({{< ref "03-kapitel-erfuellung" >}})
+### [3. Kapitel und Erfüllung](kapitel-und-erfüllung/)
 
 **Normkapitel strukturieren und Erfüllungsgrad dokumentieren**
 
@@ -75,7 +75,7 @@ Verstehe, wie du Normen in Kapitel unterteilst, Anforderungen dokumentierst und 
 
 ---
 
-### [4. Interessierte Parteien (Stakeholder)]({{< ref "04-stakeholder" >}})
+### [4. Interessierte Parteien (Stakeholder)](interessierte-parteien-stakeholder/)
 
 **Stakeholder identifizieren und bewerten**
 
@@ -92,7 +92,7 @@ Lerne, wie du interessierte Parteien erfasst, deren Einfluss und Interesse bewer
 
 ---
 
-### [5. Integration mit anderen Modulen]({{< ref "05-integration" >}})
+### [5. Integration mit anderen Modulen](integration-mit-anderen-modulen/)
 
 **Standards mit DMS, Prozessen und SWOT verknüpfen**
 
@@ -110,7 +110,7 @@ Erfahre, wie das Standards-Modul mit anderen ELIZA-Modulen zusammenarbeitet und 
 
 ---
 
-### [6. Berechtigungskonzept]({{< ref "06-berechtigungskonzept" >}})
+### [6. Berechtigungskonzept](berechtigungskonzept/)
 
 **Zugriffs- und Bearbeitungsrechte verstehen**
 
@@ -127,7 +127,7 @@ Verstehe das Berechtigungssystem für das Standards-Modul und lerne, wer welche 
 
 ---
 
-### [7. Best Practices und FAQ]({{< ref "07-best-practices" >}})
+### [7. Best Practices und FAQ](best-practices-und-faq/)
 
 **Empfohlene Workflows und häufige Fragen**
 
@@ -145,7 +145,7 @@ Profitiere von bewährten Vorgehensweisen, Tipps und Lösungen für häufige Pro
 
 ---
 
-### [8. ISO 9001 Umsetzung]({{< ref "08-iso9001-umsetzung" >}})
+### [8. ISO 9001 Umsetzung](iso-9001-umsetzung-mit-eliza/)
 
 **ISO 9001:2015 mit ELIZA implementieren**
 
@@ -167,7 +167,7 @@ Umfassende Anleitung zur Implementierung der ISO 9001 (Qualitätsmanagementsyste
 
 ---
 
-### [9. ISO 21001 Umsetzung]({{< ref "09-iso21001-umsetzung" >}})
+### [9. ISO 21001 Umsetzung](iso-21001-umsetzung-mit-eliza/)
 
 **ISO 21001:2018 mit ELIZA implementieren**
 
@@ -209,16 +209,16 @@ In diesem Handbuch verwenden wir folgende Konventionen:
 
 **Neu im Standards-Modul?**
 
-1. Lies [Erste Schritte]({{< ref "01-erste-schritte" >}}) für eine Einführung
-2. Folge [Normen verwalten]({{< ref "02-normen-verwalten" >}}) um deine erste Norm anzulegen
-3. Nutze [Kapitel und Erfüllung]({{< ref "03-kapitel-erfuellung" >}}) für die praktische Arbeit
+1. Lies [Erste Schritte](erste-schritte-im-standards-modul/) für eine Einführung
+2. Folge [Normen verwalten](normen-verwalten/) um deine erste Norm anzulegen
+3. Nutze [Kapitel und Erfüllung](kapitel-und-erfüllung/) für die praktische Arbeit
 
 **Spezifische Aufgabe?**
 
-- Norm anlegen → [Normen verwalten]({{< ref "02-normen-verwalten" >}})
-- Erfüllungsgrad bewerten → [Kapitel und Erfüllung]({{< ref "03-kapitel-erfuellung" >}})
-- Stakeholder erfassen → [Interessierte Parteien]({{< ref "04-stakeholder" >}})
-- Dokumente verknüpfen → [Integration]({{< ref "05-integration" >}})
+- Norm anlegen → [Normen verwalten](normen-verwalten/)
+- Erfüllungsgrad bewerten → [Kapitel und Erfüllung](kapitel-und-erfüllung/)
+- Stakeholder erfassen → [Interessierte Parteien](interessierte-parteien-stakeholder/)
+- Dokumente verknüpfen → [Integration](integration-mit-anderen-modulen/)
 
 ## Feedback und Verbesserungen
 

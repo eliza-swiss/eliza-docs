@@ -23,7 +23,7 @@ Dieses Handbuch hilft dir, das Organisation-Modul in ELIZA effektiv zu nutzen. D
 
 ## 📚 Kapitel-Übersicht
 
-### [1. Erste Schritte]({{< ref "01-erste-schritte" >}})
+### [1. Erste Schritte](erste-schritte-im-organisation-modul/)
 
 **Einführung in das Organisation-Modul**
 
@@ -40,7 +40,7 @@ Lerne die Grundlagen des Organisation-Moduls kennen: Navigation, Hauptfunktionen
 
 ---
 
-### [2. Mitarbeitende verwalten]({{< ref "02-mitarbeitende" >}})
+### [2. Mitarbeitende verwalten](mitarbeitende-verwalten/)
 
 **Mitarbeitende erfassen, bearbeiten und verwalten**
 
@@ -61,7 +61,7 @@ Detaillierte Anleitungen für die Verwaltung von Mitarbeitenden in ELIZA.
 
 ---
 
-### [3. Organisationseinheiten und Organigramm]({{< ref "03-organigramm" >}})
+### [3. Organisationseinheiten und Organigramm](organisationseinheiten-und-organigramm/)
 
 **Aufbauorganisation und Organigramm pflegen**
 
@@ -80,7 +80,7 @@ Lerne, wie du Organisationseinheiten erstellst und das Organigramm visualisierst
 
 ---
 
-### [4. Funktionen und Skills]({{< ref "04-funktionen-skills" >}})
+### [4. Funktionen und Skills](funktionen-und-skills/)
 
 **Funktionen, Skills und Qualifikationen verwalten**
 
@@ -99,7 +99,7 @@ Verstehe, wie du Funktionen und Skills in deiner Organisation definierst und zuw
 
 ---
 
-### [5. Integration mit anderen Modulen]({{< ref "05-integration" >}})
+### [5. Integration mit anderen Modulen](integration-mit-anderen-modulen/)
 
 **Verknüpfungen und Workflows mit anderen ELIZA-Modulen**
 
@@ -118,7 +118,7 @@ Erfahre, wie das Organisation-Modul mit anderen ELIZA-Modulen zusammenarbeitet.
 
 ---
 
-### [6. Berechtigungskonzept]({{< ref "06-berechtigungskonzept" >}})
+### [6. Berechtigungskonzept](berechtigungskonzept/)
 
 **Berechtigungen und Rollen im Organisation-Modul**
 
@@ -136,7 +136,7 @@ Verstehe das Berechtigungssystem und lerne, wie du Zugriffsrechte konfigurierst.
 
 ---
 
-### [7. Geburtstage und Dienstjubiläen]({{< ref "07-geburtstage-jubilaeen" >}})
+### [7. Geburtstage und Dienstjubiläen](untitled/)
 
 Lerne, wie du Geburtstage und Dienstjubiläen deiner Mitarbeitenden zentral verwaltest und im Blick behältst.
 

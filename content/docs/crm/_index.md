@@ -20,7 +20,7 @@ Dieses Handbuch hilft dir, das CRM-Modul effektiv zu nutzen. Es ist in mehrere K
 
 ## 📚 Kapitel-Übersicht
 
-### [1. Erste Schritte]({{< ref "01-erste-schritte" >}})
+### [1. Erste Schritte](erste-schritte-im-crm/)
 
 **Einführung ins CRM-Modul**
 
@@ -40,7 +40,7 @@ Lerne die Grundlagen des CRM-Moduls kennen und verstehe, wie du Kontakte, Organi
 
 ---
 
-### [2. Kontakte verwalten]({{< ref "02-kontakte-verwalten" >}})
+### [2. Kontakte verwalten](kontakte-verwalten/)
 
 **Umfassende Kontaktverwaltung**
 
@@ -62,7 +62,7 @@ Detaillierte Anleitung zur Verwaltung von Geschäftskontakten mit allen Funktion
 
 ---
 
-### [3. Unternehmen verwalten]({{< ref "03-unternehmen-verwalten" >}})
+### [3. Unternehmen verwalten](unternehmen-verwalten/)
 
 **Organisationsverwaltung im Detail**
 
@@ -85,7 +85,7 @@ Vollständige Anleitung zur Verwaltung von Unternehmen und deren Verknüpfung mi
 
 ---
 
-### [4. Beteiligungen und Rollen]({{< ref "04-beteiligungen" >}})
+### [4. Beteiligungen und Rollen](beteiligungen-und-rollen/)
 
 **Beziehungen zwischen Objekten abbilden**
 
@@ -108,7 +108,7 @@ Verstehe das Konzept von Beteiligungen und Rollen und nutze sie für komplexe Ge
 
 ---
 
-### [5. Integration mit anderen Modulen]({{< ref "05-integration" >}})
+### [5. Integration mit anderen Modulen](integration-mit-anderen-modulen/)
 
 **CRM als zentrale Schnittstelle**
 
@@ -133,7 +133,7 @@ Erfahre, wie das CRM-Modul mit anderen ELIZA-Modulen zusammenarbeitet und Workfl
 
 ---
 
-### [6. Berechtigungskonzept]({{< ref "06-berechtigungskonzept" >}})
+### [6. Berechtigungskonzept](berechtigungskonzept/)
 
 **Zugriffskontrolle und Sicherheit**
 

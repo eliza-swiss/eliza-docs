@@ -20,7 +20,7 @@ Dieses Handbuch hilft dir, das Zeiterfassungs-Modul effektiv zu nutzen. Es ist i
 
 ## 📚 Kapitel-Übersicht
 
-### [1. Erste Schritte]({{< ref "01-erste-schritte" >}})
+### [1. Erste Schritte](erste-schritte-in-der-zeiterfassung/)
 
 **Einführung in die Zeiterfassung**
 
@@ -34,7 +34,7 @@ Dieses Handbuch hilft dir, das Zeiterfassungs-Modul effektiv zu nutzen. Es ist i
 
 ---
 
-### [2. Anstellungsverhältnis]({{< ref "02-anstellungsverhaeltnis" >}})
+### [2. Anstellungsverhältnis](anstellungsverhältnis/)
 
 **Grundlage für die Zeiterfassung**
 
@@ -48,7 +48,7 @@ Dieses Handbuch hilft dir, das Zeiterfassungs-Modul effektiv zu nutzen. Es ist i
 
 ---
 
-### [3. Arbeitszeit erfassen]({{< ref "03-arbeitszeit-erfassen" >}})
+### [3. Arbeitszeit erfassen](arbeitszeit-erfassen/)
 
 **Tägliche Stundenerfassung**
 
@@ -64,7 +64,7 @@ Dieses Handbuch hilft dir, das Zeiterfassungs-Modul effektiv zu nutzen. Es ist i
 
 ---
 
-### [4. Abwesenheiten]({{< ref "04-abwesenheiten" >}})
+### [4. Abwesenheiten](abwesenheiten/)
 
 **Ferien, Krankheit und andere Absenzen**
 
@@ -80,7 +80,7 @@ Dieses Handbuch hilft dir, das Zeiterfassungs-Modul effektiv zu nutzen. Es ist i
 
 ---
 
-### [5. Spesen]({{< ref "05-spesen" >}})
+### [5. Spesen](spesen/)
 
 **Spesenabrechnung und -verwaltung**
 
@@ -96,7 +96,7 @@ Dieses Handbuch hilft dir, das Zeiterfassungs-Modul effektiv zu nutzen. Es ist i
 
 ---
 
-### [6. Auswertungen & Monatsabschluss]({{< ref "06-auswertungen" >}})
+### [6. Auswertungen & Monatsabschluss](auswertungen-monatsabschluss/)
 
 **Reports und Übersichten**
 
@@ -113,7 +113,7 @@ Dieses Handbuch hilft dir, das Zeiterfassungs-Modul effektiv zu nutzen. Es ist i
 
 ---
 
-### [7. Berechtigungskonzept]({{< ref "07-berechtigungskonzept" >}})
+### [7. Berechtigungskonzept](berechtigungskonzept/)
 
 **Rollen und Zugriffsrechte**
 
@@ -129,7 +129,7 @@ Dieses Handbuch hilft dir, das Zeiterfassungs-Modul effektiv zu nutzen. Es ist i
 
 ---
 
-### [8. Tipps & Tricks]({{< ref "08-tipps-tricks" >}})
+### [8. Tipps & Tricks](tipps-tricks-faq/)
 
 **Best Practices und häufige Fragen**
 
@@ -167,9 +167,9 @@ In diesem Handbuch verwenden wir folgende Konventionen:
 
 **Du möchtest sofort loslegen?**
 
-1. Lies [Erste Schritte]({{< ref "01-erste-schritte" >}}) für den Überblick
-2. Prüfe dein [Anstellungsverhältnis]({{< ref "02-anstellungsverhaeltnis" >}}) (oder frag deine HR-Abteilung)
-3. Beginne mit der [Arbeitszeiterfassung]({{< ref "03-arbeitszeit-erfassen" >}})
+1. Lies [Erste Schritte](erste-schritte-in-der-zeiterfassung/) für den Überblick
+2. Prüfe dein [Anstellungsverhältnis](anstellungsverhältnis/) (oder frag deine HR-Abteilung)
+3. Beginne mit der [Arbeitszeiterfassung](arbeitszeit-erfassen/)
 
 ---
 
