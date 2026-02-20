@@ -1,8 +1,6 @@
 ---
-title: "Neue Funktion: What's New Center mit Smart-Badges"
-date: 2025-07-05
+category: "Dashboard"
 slug: "help-whatsnew-badges"
-emoji: "🎉"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer,

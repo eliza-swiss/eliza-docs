@@ -1,8 +1,6 @@
 ---
-title: "Benutzerzuordnungen verwalten - Sicher und übersichtlich"
-date: 2025-08-06
+category: "Benutzer & Sicherheit"
 slug: "benutzerzuordnungen-verwalten"
-emoji: "👤"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer

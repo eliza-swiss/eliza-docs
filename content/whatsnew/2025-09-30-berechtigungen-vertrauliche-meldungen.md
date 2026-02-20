@@ -1,8 +1,6 @@
 ---
-title: "Verbesserte Berechtigungen für vertrauliche Meldungen"
-date: 2025-09-30
+category: "Meldungen & Issue-Tracker"
 slug: "berechtigungen-vertrauliche-meldungen"
-emoji: "🔐"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer

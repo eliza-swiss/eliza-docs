@@ -1,8 +1,6 @@
 ---
-title: "Verbesserter PDF-Viewer in ELIZA"
-date: 2025-09-30
+category: "Benutzeroberfläche"
 slug: "pdf-viewer-update"
-emoji: "📄"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer

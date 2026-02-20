@@ -1,8 +1,6 @@
 ---
-title: "Interaktive BPMN-Prozessdiagramme mit Klick-Details"
-date: 2025-09-08
+category: "Prozesse & BPMN"
 slug: "interaktive-bpmn-prozessdiagramme"
-emoji: "📊"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer,

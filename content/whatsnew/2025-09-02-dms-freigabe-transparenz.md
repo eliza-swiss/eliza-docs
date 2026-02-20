@@ -1,8 +1,6 @@
 ---
-title: "DMS Dokumentenfreigaben - Mehr Transparenz bei der Nachverfolgung"
-date: 2025-09-02
+category: "Dokumentenmanagement"
 slug: "dms-freigabe-transparenz"
-emoji: "🔍"
 ---
 
 Hallo! Wir haben eine wichtige Verbesserung im **Dokumenten-Management-System (DMS)** für dich umgesetzt. Ab sofort siehst du bei freigegebenen Dokumenten genau, welche Person die Freigabe tatsächlich durchgeführt hat.

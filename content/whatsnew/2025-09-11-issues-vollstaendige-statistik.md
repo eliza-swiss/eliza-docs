@@ -1,8 +1,6 @@
 ---
-title: "Neue Meldungs-Statistik für deinen Meldekreis"
-date: 2025-09-11
+category: "Meldungen & Issue-Tracker"
 slug: "issues-vollstaendige-statistik"
-emoji: "📊"
 ---
 
 Dein Meldekreis-Dashboard wurde um eine umfassende Statistik-Ansicht erweitert – mit vollständiger Historie, Domain-Analyse und Excel-Export!

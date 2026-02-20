@@ -1,8 +1,6 @@
 ---
-title: "Neue Funktion: Favoriten in Karten- oder Tabellenansicht"
-date: 2025-07-14
+category: "Dashboard"
 slug: "favoriten-ansichten"
-emoji: "🎉"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer,

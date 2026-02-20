@@ -1,8 +1,6 @@
 ---
-title: "Neue Funktion: Lieferantenbewertung mit CRM-Integration"
-date: 2025-07-18
+category: "CRM & Verträge"
 slug: "contractpartnerevaluation-crm-integration"
-emoji: ""
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer,

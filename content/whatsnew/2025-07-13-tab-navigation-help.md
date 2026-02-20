@@ -1,8 +1,6 @@
 ---
-title: "Neue Funktion: Tab-Navigation im Help-Bereich"
-date: 2025-07-13
+category: "Hilfe & Dokumentation"
 slug: "tab-navigation-help"
-emoji: "🎯"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer,

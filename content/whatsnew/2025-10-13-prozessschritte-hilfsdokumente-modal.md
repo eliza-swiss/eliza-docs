@@ -1,8 +1,6 @@
 ---
-title: "Hilfsdokumente in Prozessschritten jetzt direkt ansehen"
-date: 2025-10-13
+category: "Prozesse & BPMN"
 slug: "prozessschritte-hilfsdokumente-modal"
-emoji: "📄"
 ---
 
 Wir haben die Darstellung und Bedienung der Prozessschritte-Tabelle deutlich verbessert! Du kannst jetzt Hilfsdokumente direkt im Browser ansehen, ohne neue Tabs öffnen zu müssen.

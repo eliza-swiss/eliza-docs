@@ -1,8 +1,6 @@
 ---
-title: "Meldekreis-Berechtigungen und Meldungsmanagement - Bessere Sicherheit für vertrauliche Meldungen"
-date: 2025-08-29
+category: "Meldungen & Issue-Tracker"
 slug: "tracker-berechtigungen-verbesserungen"
-emoji: "🔒"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer

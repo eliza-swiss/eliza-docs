@@ -1,8 +1,6 @@
 ---
-title: "Dashboard-Einstellungen ⚙️"
-date: 2025-09-09
+category: "Dashboard"
 slug: "dashboard-einstellungen"
-emoji: ""
 ---
 
 Liebe ELIZA-Nutzer,

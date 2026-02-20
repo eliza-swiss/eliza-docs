@@ -1,8 +1,6 @@
 ---
-title: "Verbesserte Team-Berechtigungen im Issue-Tracker"
-date: 2025-11-13
+category: "Meldungen & Issue-Tracker"
 slug: "issuetracker-team-berechtigungen"
-emoji: "🔐"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer

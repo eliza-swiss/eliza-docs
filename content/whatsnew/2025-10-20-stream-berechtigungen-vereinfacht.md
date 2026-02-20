@@ -1,8 +1,6 @@
 ---
-title: "News-Berechtigungen flexibler steuern"
-date: 2025-10-20
+category: "News & Kommunikation"
 slug: "stream-berechtigungen-vereinfacht"
-emoji: "🔐"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer

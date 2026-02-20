@@ -3,6 +3,7 @@ title: "Web-Suche mit Google Gemini"
 date: 2025-11-14
 module: "bot"
 tags: ["ai-assistant", "gemini", "web-suche", "grounding", "datenschutz"]
+category: "KI & AI-Assistent"
 slug: "web-suche-mit-gemini"
 ---
 

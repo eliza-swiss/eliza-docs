@@ -1,8 +1,6 @@
 ---
-title: "Automatische Freigabe für Absenzen"
-date: 2025-12-27
+category: "Zeiterfassung & Absenzen"
 slug: "automatische-freigabe-absenzen"
-emoji: "✅"
 ---
 
 Hallo liebe ELIZA-Nutzende,

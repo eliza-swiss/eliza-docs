@@ -1,8 +1,6 @@
 ---
-title: "DMS: Neue Versionen mit automatischer Wiederfreigabe"
-date: 2025-09-09
+category: "Dokumentenmanagement"
 slug: "dms-neue-versionen-mit-automatischer-wiederfreigabe"
-emoji: "📁"
 ---
 
 ## Überblick

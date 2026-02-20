@@ -1,8 +1,6 @@
 ---
-title: "Modernisierte Suche und Filter in der Dokumentenbibliothek"
-date: 2025-10-21
+category: "Dokumentenmanagement"
 slug: "dokumentenbibliothek-suche-filter-modernisiert"
-emoji: "🔍"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer

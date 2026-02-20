@@ -1,8 +1,6 @@
 ---
-title: "DMS: Neue Batch-Aktionen mit Mehrfachauswahl 🎯"
-date: 2025-08-05
+category: "Dokumentenmanagement"
 slug: "dms-batch-aktionen-mehrfachauswahl"
-emoji: ""
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer

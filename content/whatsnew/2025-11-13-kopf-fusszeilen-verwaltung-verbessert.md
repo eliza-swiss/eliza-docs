@@ -1,8 +1,6 @@
 ---
-title: "Kopf- und Fusszeilen-Verwaltung verbessert"
-date: 2025-11-13
+category: "Dokumentenmanagement"
 slug: "kopf-fusszeilen-verwaltung-verbessert"
-emoji: "📄"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer

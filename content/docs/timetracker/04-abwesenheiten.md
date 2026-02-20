@@ -40,8 +40,27 @@ Jede Abwesenheitsart hat folgende Eigenschaften:
 - **Als Kranktage angerechnet** – Wird als Kranktag gezählt
 - **Als unbezahlte Abwesenheit** – Keine Lohnfortzahlung
 - **Automatisch freigeben** – Absenz wird ohne Genehmigung sofort freigegeben
+- **Sichtbarkeit** – Bestimmt, wer die Absenz im Monatsplan und in Übersichten sehen kann
 
 > **💡 Tipp:** Welche Abwesenheitsarten in deiner Organisation verfügbar sind, hängt von der Konfiguration ab.
+
+### Sichtbarkeit von Abwesenheitsarten
+
+Jede Abwesenheitsart hat eine einstellbare Sichtbarkeitsstufe, die bestimmt, wer die Absenzen im Monatsplan und in Übersichten sehen kann:
+
+| Stufe | Wer sieht die Absenz? | Beispiel |
+|-------|----------------------|----------|
+| **Öffentlich** | Alle Mitarbeitenden | Ferien, Militär |
+| **Organisationseinheit** | Nur Mitarbeitende im gleichen Bereich | Weiterbildung, Aussentermin |
+| **Privat** | Nur die betroffene Person, Vorgesetzte und HR | Arztbesuch, Therapie |
+
+**Wichtige Regeln:**
+
+- Deine eigenen Absenzen siehst du immer – unabhängig von der Sichtbarkeitsstufe
+- Vorgesetzte sehen immer alle Absenzen ihrer direkten Mitarbeitenden
+- HR-Administratoren (mit `view_absence`-Berechtigung) sehen alle Absenzen
+
+> **💡 Tipp:** Die Sichtbarkeitsstufe wird von deiner HR-Abteilung pro Abwesenheitsart konfiguriert. Frage bei Unklarheiten nach, welche Stufe für welche Art gilt.
 
 ### Info-Anzeige bei Absenzentyp-Auswahl
 
@@ -269,15 +288,23 @@ Das System benachrichtigt automatisch:
 
 ### Monatsplan
 
-Der Monatsplan zeigt alle Abwesenheiten des Teams:
+Der Monatsplan zeigt die Abwesenheiten des Teams unter Berücksichtigung der Sichtbarkeitsregeln:
 
 1. Klicke auf **Monatsplan** im Menü
-2. Du siehst einen Kalender mit allen Team-Abwesenheiten
+2. Du siehst einen Kalender mit allen für dich sichtbaren Team-Abwesenheiten
 3. Nutze die Navigation um zwischen Monaten zu wechseln
+4. Alle Mitarbeitenden werden auf einer Seite angezeigt
 
 **Farbcodierung:**
-- Verschiedene Abwesenheitsarten haben unterschiedliche Farben
+- Verschiedene Abwesenheitsarten haben unterschiedliche Farben und Icons
 - So erkennst du auf einen Blick, wer wann abwesend ist
+
+**Sichtbarkeit im Monatsplan:**
+- **Öffentliche Absenzen** werden mit dem jeweiligen Icon und der Farbe der Abwesenheitsart angezeigt
+- **Nicht sichtbare Absenzen** werden je nach Systemeinstellung entweder als neutrales "Belegt"-Symbol angezeigt oder komplett ausgeblendet
+- Deine eigenen Absenzen und die deiner Mitarbeitenden (als Vorgesetzte/r) sind immer vollständig sichtbar
+
+> **💡 Tipp:** Das neutrale "Belegt"-Symbol zeigt dir, dass jemand abwesend ist, ohne den Grund zu verraten. So kannst du trotzdem planen, auch wenn du die Details nicht siehst.
 
 ### Jahresübersicht
 
@@ -427,6 +454,14 @@ Bestimmte Absenzentypen (z.B. Schulabsenzen, Weiterbildungen) können von deiner
 
 Du erkennst auto-freigegebene Absenzentypen am grünen Chip "Automatisch freigegeben", der bei der Auswahl angezeigt wird.
 
+### Warum sehe ich bei manchen Personen ein graues "Belegt"-Symbol im Monatsplan?
+
+Das bedeutet, dass diese Person eine Absenz hat, deren Abwesenheitsart auf "Privat" oder "Organisationseinheit" eingestellt ist und du nicht berechtigt bist, die Details zu sehen. Du erkennst trotzdem, dass die Person abwesend ist, ohne den Grund zu erfahren.
+
+### Kann ich die Sichtbarkeit meiner Absenzen selbst ändern?
+
+Nein, die Sichtbarkeit wird pro Abwesenheitsart von der HR-Abteilung festgelegt. Alle Absenzen einer bestimmten Art haben die gleiche Sichtbarkeitsstufe. Wenn du Fragen dazu hast, wende dich an deine HR-Abteilung.
+
 ## Zusammenfassung
 
 In diesem Kapitel hast du gelernt:
@@ -436,6 +471,7 @@ In diesem Kapitel hast du gelernt:
 - ✅ Wie du Abwesenheiten erfasst und einreichst
 - ✅ Automatische Freigabe für bestimmte Absenzentypen verstehen
 - ✅ Den Standard-Freigabe-Workflow verstehen
+- ✅ Sichtbarkeitsstufen für Abwesenheiten verstehen (Öffentlich, Organisationseinheit, Privat)
 - ✅ Abwesenheiten bearbeiten und löschen
 - ✅ Übersichten und Kalender nutzen
 - ✅ Als Vorgesetzte/r Freigaben erteilen

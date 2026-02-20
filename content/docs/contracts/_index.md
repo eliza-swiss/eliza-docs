@@ -21,7 +21,7 @@ Dieses Handbuch hilft dir, das Vertragsmanagement-Modul effektiv zu nutzen. Es i
 
 ## 📚 Kapitel-Übersicht
 
-### [1. Einführung]({{< ref "01-einfuehrung" >}})
+### [1. Einführung](einführung-ins-vertragsmanagement/)
 
 **Was ist das Vertragsmanagement-Modul?**
 
@@ -40,7 +40,7 @@ Lerne die Grundlagen des Vertragsmanagements kennen und verstehe, wie du Verträ
 
 ---
 
-### [2. Erste Schritte]({{< ref "02-erste-schritte" >}})
+### [2. Erste Schritte](erste-schritte/)
 
 **Schneller Einstieg ins Vertragsmanagement**
 
@@ -61,7 +61,7 @@ Erste Schritte mit dem Modul, Navigation und wichtige Grundlagen.
 
 ---
 
-### [3. Verträge erstellen]({{< ref "03-vertraege-erstellen" >}})
+### [3. Verträge erstellen](verträge-erstellen/)
 
 **Verträge anlegen und bearbeiten**
 
@@ -83,7 +83,7 @@ Detaillierte Anleitung zum Erstellen und Bearbeiten von Verträgen mit allen Fel
 
 ---
 
-### [4. Vertragsübersicht]({{< ref "04-vertragsuebersicht" >}})
+### [4. Vertragsübersicht](vertragsübersicht/)
 
 **Verträge finden und filtern**
 
@@ -104,7 +104,7 @@ Nutze die Vertragsübersicht effektiv mit Suche, Filtern und Sortierung.
 
 ---
 
-### [5. Berechtigungskonzept]({{< ref "05-berechtigungskonzept" >}})
+### [5. Berechtigungskonzept](berechtigungskonzept/)
 
 **Zugriffskontrolle und Sicherheit**
 
@@ -127,7 +127,7 @@ Verstehe das Berechtigungssystem im Vertragsmanagement und lerne, wie du Zugriff
 
 ---
 
-### [6. Vorlagen]({{< ref "06-vorlagen" >}})
+### [6. Vorlagen](vertragsvorlagen/)
 
 **Vertragsvorlagen effektiv nutzen**
 
@@ -147,7 +147,7 @@ Erstelle und nutze Vertragsvorlagen für wiederkehrende Vertragsmuster.
 
 ---
 
-### [7. Workflow]({{< ref "07-workflow" >}})
+### [7. Workflow](workflow-und-freigabeprozesse/)
 
 **Workflow und Freigabeprozesse**
 
@@ -168,7 +168,7 @@ Nutze Workflows für strukturierte Vertragsprozesse mit Verantwortlichkeiten und
 
 ---
 
-### [8. Best Practices]({{< ref "08-best-practices" >}})
+### [8. Best Practices](best-practices/)
 
 **Tipps und Tricks für effektives Vertragsmanagement**
 

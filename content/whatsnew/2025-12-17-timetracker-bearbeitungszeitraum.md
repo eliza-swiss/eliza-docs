@@ -1,8 +1,6 @@
 ---
-title: "⏰ Zeiterfassung - Konfigurierbarer Bearbeitungszeitraum"
-date: 2025-12-17
+category: "Zeiterfassung & Absenzen"
 slug: "timetracker-bearbeitungszeitraum"
-emoji: ""
 ---
 
 Hallo liebe ELIZA-Nutzende,

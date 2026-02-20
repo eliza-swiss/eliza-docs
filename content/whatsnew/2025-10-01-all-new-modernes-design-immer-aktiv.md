@@ -1,8 +1,6 @@
 ---
-title: "Neues Design für ELIZA"
-date: 2025-10-01
+category: "Benutzeroberfläche"
 slug: "all-new-modernes-design-immer-aktiv"
-emoji: "✨"
 ---
 
 Liebe ELIZA-Benutzerin, lieber ELIZA-Benutzer  

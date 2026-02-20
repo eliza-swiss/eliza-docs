@@ -1,8 +1,6 @@
 ---
-title: "‍♂️ Neuer Salary-Wizard: Anstellungsverhältnisse einfach erstellen"
-date: 2025-12-17
+category: "Organisation & HR"
 slug: "salary-wizard-anstellungsverhaeltnis-assistent"
-emoji: "🧙"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer

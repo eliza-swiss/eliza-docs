@@ -1,8 +1,6 @@
 ---
-title: "Neue Funktion: Endless Scroll für What's New"
-date: 2025-07-03
+category: "Dashboard"
 slug: "endless-scroll-implementation"
-emoji: "🚀"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer,

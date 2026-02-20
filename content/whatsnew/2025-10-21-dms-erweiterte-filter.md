@@ -1,8 +1,6 @@
 ---
-title: "Erweiterte Filter für deine Dokumentenbibliothek"
-date: 2025-10-21
+category: "Dokumentenmanagement"
 slug: "dms-erweiterte-filter"
-emoji: "🔍"
 ---
 
 Hallo!

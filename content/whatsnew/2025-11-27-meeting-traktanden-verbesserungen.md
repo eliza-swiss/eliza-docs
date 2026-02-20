@@ -1,8 +1,6 @@
 ---
-title: "Umfassende Verbesserungen für Meeting-Agenda"
-date: 2025-11-27
+category: "Teams & Zusammenarbeit"
 slug: "meeting-traktanden-verbesserungen"
-emoji: "📋"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer

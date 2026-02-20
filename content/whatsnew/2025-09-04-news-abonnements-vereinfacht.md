@@ -1,8 +1,6 @@
 ---
-title: "Vereinfachte News-Abonnements für bessere Übersicht 📰"
-date: 2025-09-04
+category: "News & Kommunikation"
 slug: "news-abonnements-vereinfacht"
-emoji: ""
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer,

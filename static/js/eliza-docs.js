@@ -249,9 +249,10 @@ document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
     anchor.addEventListener('click', function(e) {
         var href = this.getAttribute('href');
         if (href.length > 1) {
-            e.preventDefault();
-            var target = document.querySelector(href);
+            var targetId = href.substring(1);
+            var target = document.getElementById(targetId);
             if (target) {
+                e.preventDefault();
                 target.scrollIntoView({
                     behavior: 'smooth',
                     block: 'start'

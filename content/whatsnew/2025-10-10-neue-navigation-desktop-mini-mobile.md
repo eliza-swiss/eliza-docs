@@ -1,8 +1,6 @@
 ---
-title: "Komplett neue Navigation: Desktop, Mini und Mobile"
-date: 2025-10-10
+category: "Benutzeroberfläche"
 slug: "neue-navigation-desktop-mini-mobile"
-emoji: "🧭"
 ---
 
 Hallo!

@@ -1,8 +1,6 @@
 ---
-title: "Verbesserungen für AI-Chat und Sprachnachrichten"
-date: 2025-10-14
+category: "KI & AI-Assistent"
 slug: "verbesserungen-ai-chat-formulare"
-emoji: "💬"
 ---
 
 Wir haben die AI-Chat-Funktion und die Sprachnachrichten runderneuert. Das Ergebnis: Schöneres Design, einfachere Bedienung und stabilere Performance.

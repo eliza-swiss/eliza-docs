@@ -13,16 +13,71 @@ tags:
 
 Ordner helfen dir, deine Formulare und Vorlagen zu organisieren. Du kannst Ordner nach Abteilungen, Projekten oder Themen strukturieren und für jedes Team eigene Berechtigungen setzen.
 
+## Ordner-Übersicht
+
+Die neue hierarchische Ordner-Übersicht zeigt alle deine Formular-Ordner auf einen Blick:
+
+### Zugriff auf die Ordner-Übersicht
+1. Klicke im Hauptmenü auf **Formulare**
+2. Wähle **Ordner** aus
+3. Du siehst jetzt eine Baumstruktur aller Ordner
+
+### Funktionen der Ordner-Übersicht
+
+**Hierarchische Darstellung**
+- Alle Ordner werden in einer Baumstruktur angezeigt
+- Die Einrückung zeigt die Hierarchie-Ebene
+- Unterordner sind deutlich erkennbar
+- Icons zeigen die Sichtbarkeit (🔒 Privat, 🔓 Geschützt, 📁 Öffentlich)
+
+**Informationen auf einen Blick**
+- **Verantwortliche Funktion**: Wer ist zuständig?
+- **Freigebende Funktion**: Wer gibt frei?
+- **Admin-Team**: Avatars aller Administratoren
+- **Team**: Avatars aller Team-Mitglieder
+
+**Filter nach Sichtbarkeit**
+Nutze die Filter-Buttons oberhalb der Tabelle:
+- **Alle**: Zeigt alle Ordner (mit Anzahl)
+- **Öffentlich**: Nur öffentliche Ordner
+- **Geschützt**: Nur geschützte Ordner
+- **Privat**: Nur private Ordner
+
+**Spalten anpassen**
+- Unterhalb der Filter findest du "Spalten ein- und ausblenden"
+- Klicke auf einen Spaltennamen zum Ein-/Ausblenden
+- Deine Auswahl wird automatisch gespeichert
+
+**Excel-Export**
+- Klicke auf den **Excel** Button oberhalb der Tabelle
+- Die gesamte Ordnerstruktur wird als Excel-Datei heruntergeladen
+- Perfekt für Reports und Dokumentationen
+
 ## Ordner erstellen
+
+### Neuen Top-Level Ordner erstellen
 
 1. Klicke im Hauptmenü auf **Formulare**
 2. Wähle **Ordner** aus
-3. Klicke auf den Button **+ Neuer Ordner**
+3. Klicke auf den Button **+ Ordner** (oben rechts)
 4. Fülle folgende Felder aus:
    - **Titel**: Aussagekräftiger Name (z.B. "HR - Mitarbeiterbefragungen")
    - **Beschreibung**: Optionale Beschreibung des Ordner-Zwecks
    - **Übergeordneter Ordner**: Wähle einen Eltern-Ordner für Unterordner (optional)
 5. Klicke auf **Speichern**
+
+### Unterordner erstellen (Schnellmethode)
+
+1. Öffne einen bestehenden Ordner in der Detail-Ansicht
+2. Klicke oben auf den **Unterordner** Button
+3. Der übergeordnete Ordner ist bereits vorausgewählt
+4. Fülle die Details aus:
+   - **Titel**: Name des Unterordners
+   - **Beschreibung**: Optionale Beschreibung
+   - **Berechtigungen vererben**: Standardmässig aktiviert
+5. Klicke auf **Speichern**
+
+> **💡 Tipp:** Die Schnellmethode spart Zeit, da der Parent-Ordner automatisch gesetzt wird!
 
 ## Berechtigungen festlegen
 
@@ -231,6 +286,27 @@ Für grössere Organisationen mit vielen Formularen:
 2. Ändere das Feld **Übergeordneter Ordner**
 3. Speichere die Änderungen
 
+**⚠️ Wichtig - Zirkuläre Referenzen werden verhindert:**
+
+Das System schützt dich automatisch vor fehlerhaften Ordnerstrukturen:
+
+- Du kannst einen Ordner **nicht als seinen eigenen Unterordner** auswählen
+- Du kannst einen **Unterordner nicht als übergeordneten Ordner** wählen
+- Nur Ordner, die eine gültige Hierarchie bilden, werden zur Auswahl angezeigt
+
+**Beispiel (nicht möglich):**
+```
+📁 Personal
+  📁 Recruiting
+    📁 Onboarding
+
+❌ "Personal" kann nicht "Onboarding" als Parent wählen
+❌ "Recruiting" kann nicht "Personal" als Parent wählen
+✅ "Onboarding" kann zu einem anderen Top-Level-Ordner verschoben werden
+```
+
+Diese intelligente Validierung stellt sicher, dass deine Ordnerstruktur immer funktioniert.
+
 ### Ordner löschen
 **⚠️ Achtung**: Das Löschen eines Ordners löscht auch alle enthaltenen Unterordner und Vorlagen!
 
@@ -267,13 +343,21 @@ Erstelle einen Archiv-Ordner für alte Formulare:
   📁 2024
 ```
 
-## Ordner-Übersicht nutzen
+## Ordner-Detailansicht
 
 In der Ordner-Detailansicht siehst du:
+
+- **Unterordner**: Alle Kind-Ordner (nur wenn vorhanden)
+  - Werden als Karten angezeigt
+  - Mit Icon für Sichtbarkeit
+  - Mit Beschreibung und Link
 - **Vorlagen**: Alle Vorlagen in diesem Ordner
-- **Formulare**: Alle erstellten Formulare aus Vorlagen dieses Ordners
-- **Unterordner**: Alle Kind-Ordner
-- **Statistiken**: Anzahl Vorlagen und Formulare
+  - Tabellarische Übersicht
+  - Mit Kategorie, Modus und Status
+  - Direkt ausfüllbar über Aktions-Button
+- **Schnellzugriff-Buttons**:
+  - **Unterordner**: Erstellt neuen Unterordner mit automatischer Parent-Vorauswahl
+  - **Assistent**: Startet Vorlagen-Erstellungs-Assistent für diesen Ordner
 
 ## Häufige Fragen
 

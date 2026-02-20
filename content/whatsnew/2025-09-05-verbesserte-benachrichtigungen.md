@@ -1,8 +1,6 @@
 ---
-title: "Verbesserte Benachrichtigungen mit neuen Verwaltungs-Funktionen 📬"
-date: 2025-09-05
+category: "Teams & Zusammenarbeit"
 slug: "verbesserte-benachrichtigungen"
-emoji: ""
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer

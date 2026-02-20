@@ -1,8 +1,6 @@
 ---
-title: "️ Neue Funktion: Überarbeitete Prozesslandkarte mit modernem Design"
-date: 2025-08-21
+category: "Prozesse & BPMN"
 slug: "neue-prozesslandkarte"
-emoji: "🗺"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer,

@@ -1,8 +1,6 @@
 ---
-title: "ELIZA Dezember-Update: Die wichtigsten Neuerungen"
-date: 2025-12-13
+category: "Sammel-Updates"
 slug: "dezember-update"
-emoji: "🎄"
 ---
 
 Hallo!

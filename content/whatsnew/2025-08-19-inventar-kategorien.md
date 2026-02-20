@@ -1,8 +1,6 @@
 ---
-title: "️ Kategorien-System für Inventarobjekte"
-date: 2025-08-19
+category: "Organisation & HR"
 slug: "inventar-kategorien"
-emoji: "🏷"
 ---
 
 Du verwaltest viele verschiedene Inventarobjekte in ELIZA? Das neue Kategorien-System hilft dir dabei, deine Gegenstände noch besser zu organisieren und strukturiert zu verwalten!

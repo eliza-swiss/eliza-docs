@@ -1,8 +1,6 @@
 ---
-title: "️ DMS Schreibschutz - Intelligentere Dokumentensicherheit"
-date: 2025-08-04
+category: "Dokumentenmanagement"
 slug: "dms-schreibschutz-verbesserung"
-emoji: "🛡"
 ---
 
 Hallo liebe ELIZA-Nutzende,

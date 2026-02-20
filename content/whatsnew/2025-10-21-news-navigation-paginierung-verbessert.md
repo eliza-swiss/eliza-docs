@@ -1,8 +1,6 @@
 ---
-title: "News-Navigation und -Laden deutlich verbessert"
-date: 2025-10-21
+category: "News & Kommunikation"
 slug: "news-navigation-paginierung-verbessert"
-emoji: "📰"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer,

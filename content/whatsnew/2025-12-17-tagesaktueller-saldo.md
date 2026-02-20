@@ -1,8 +1,6 @@
 ---
-title: "⏱️ Dein Gleitzeit- und Feriensaldo jetzt tagesaktuell"
-date: 2025-12-17
+category: "Zeiterfassung & Absenzen"
 slug: "tagesaktueller-saldo"
-emoji: ""
 ---
 
 Kennst du das? Du möchtest wissen, wie viele Überstunden oder Ferientage du noch hast - aber der angezeigte Wert stammt aus dem letzten Monatsabschluss. Ab sofort siehst du in ELIZA deinen **tagesaktuellen Saldo** - immer auf dem neuesten Stand!

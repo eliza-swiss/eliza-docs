@@ -1,8 +1,6 @@
 ---
-title: "Verbesserte Dokumenten-Historie und Zugriffsprotokollierung"
-date: 2026-02-03
+category: "Dokumentenmanagement"
 slug: "dms-dokumentzugriffe-historie"
-emoji: "📋"
 ---
 
 Hallo!

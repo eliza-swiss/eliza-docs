@@ -1,8 +1,6 @@
 ---
-title: "Update: Google Gemini AI-Modelle auf Version 2.5 aktualisiert"
-date: 2025-07-28
+category: "KI & AI-Assistent"
 slug: "google-gemini-2-5-modelle"
-emoji: "🤖"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer,

@@ -1,8 +1,6 @@
 ---
-title: "Stream Events - Neue Teilnehmerverwaltung und Kategorien"
-date: 2025-07-29
+category: "News & Kommunikation"
 slug: "stream-events-verbesserungen"
-emoji: "🎉"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer,

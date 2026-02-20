@@ -1,8 +1,6 @@
 ---
-title: "Meldekreise: Alle Benutzer können jetzt Meldungen erstellen 📢"
-date: 2025-08-29
+category: "Meldungen & Issue-Tracker"
 slug: "meldekreise-alle-benutzer"
-emoji: ""
 ---
 
 Hallo liebe ELIZA-Benutzerin, lieber ELIZA-Benutzer!

@@ -1,8 +1,6 @@
 ---
-title: "️ Verbesserte Absenzen-Übersicht"
-date: 2026-02-03
+category: "Zeiterfassung & Absenzen"
 slug: "absenzen-uebersicht-optimiert"
-emoji: "🏖"
 ---
 
 Die Absenzen-Verwaltung wurde grundlegend überarbeitet. Du profitierst von schnelleren Ladezeiten und einer besseren Übersicht über deine Ferienansprüche.

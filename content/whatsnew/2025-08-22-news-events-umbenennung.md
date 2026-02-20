@@ -1,8 +1,6 @@
 ---
-title: "Streams wird zu \"News & Events\" - Klarere Navigation für deine Unternehmenskommunikation"
-date: 2025-08-22
+category: "News & Kommunikation"
 slug: "news-events-umbenennung"
-emoji: "📰"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer

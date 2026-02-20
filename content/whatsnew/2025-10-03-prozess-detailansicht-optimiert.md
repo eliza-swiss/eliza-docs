@@ -1,8 +1,6 @@
 ---
-title: "Optimierte Prozess-Detailansicht: BPMN-Diagramme noch prominenter"
-date: 2025-10-03
+category: "Prozesse & BPMN"
 slug: "prozess-detailansicht-optimiert"
-emoji: "📊"
 ---
 
 Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer,

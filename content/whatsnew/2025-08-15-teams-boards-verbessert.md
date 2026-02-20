@@ -1,8 +1,6 @@
 ---
-title: "Teams-Boards intelligenter kopieren und verwalten"
-date: 2025-08-15
+category: "Teams & Zusammenarbeit"
 slug: "teams-boards-verbessert"
-emoji: "📋"
 ---
 
 Du arbeitest mit Teams-Boards in ELIZA? Dann haben wir gute Nachrichten für dich! Das Kopieren von Boards und die Verwaltung von Benutzerberechtigungen wurde deutlich verbessert.

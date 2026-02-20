@@ -1,8 +1,6 @@
 ---
-title: "Neue Mobile Navigation: Schneller und übersichtlicher unterwegs"
-date: 2025-10-07
+category: "Benutzeroberfläche"
 slug: "mobile-navigation-verbesserungen"
-emoji: "📱"
 ---
 
 Hallo!
