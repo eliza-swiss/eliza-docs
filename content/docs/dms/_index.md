@@ -24,7 +24,7 @@ Dieses Handbuch hilft dir, das DMS-Modul effektiv zu nutzen. Es ist in mehrere K
 
 ## 📚 Kapitel-Übersicht
 
-### [1. Erste Schritte]({{< ref "01-erste-schritte" >}})
+### [1. Erste Schritte](erste-schritte/)
 
 **Einführung ins DMS**
 
@@ -41,7 +41,7 @@ Lerne die Grundlagen des Dokumentenmanagements in ELIZA kennen. Dieses Kapitel e
 
 ---
 
-### [2. Dokumente erstellen und hochladen]({{< ref "02-dokumente-erstellen" >}})
+### [2. Dokumente erstellen und hochladen](dokumente-erstellen-und-hochladen/)
 
 **Neue Dokumente anlegen und importieren**
 
@@ -60,7 +60,7 @@ Schritt-für-Schritt Anleitung zum Erstellen und Hochladen von Dokumenten. Du er
 
 ---
 
-### [3. Ordnerstruktur und Navigation]({{< ref "03-ordnerstruktur" >}})
+### [3. Ordnerstruktur und Navigation](ordnerstruktur-und-navigation/)
 
 **Dokumente organisieren und wiederfinden**
 
@@ -79,7 +79,7 @@ Erstelle eine logische Ordnerstruktur und navigiere effizient durch deine Dokume
 
 ---
 
-### [4. Dokumenten-Workflow und Status]({{< ref "04-workflow-status" >}})
+### [4. Dokumenten-Workflow und Status](dokumenten-workflow-und-status/)
 
 **Dokumenten-Lebenszyklus steuern**
 
@@ -98,7 +98,7 @@ Verstehe den Status-Workflow von der Erstellung bis zur Freigabe. Lerne, wie Pr�
 
 ---
 
-### [5. Vorlagen und Template-Sprache]({{< ref "05-vorlagen" >}})
+### [5. Vorlagen und Template-Sprache](vorlagen-und-template-sprache/)
 
 **Dokumentvorlagen erstellen und nutzen**
 
@@ -117,7 +117,7 @@ Erstelle wiederverwendbare Vorlagen mit dynamischen Platzhaltern für automatisi
 
 ---
 
-### [6. Versionierung und Historie]({{< ref "06-versionierung" >}})
+### [6. Versionierung und Historie](versionierung-und-historie/)
 
 **Änderungen nachverfolgen und verwalten**
 
@@ -136,7 +136,7 @@ Nutze die Versionierung, um Dokumentenänderungen nachzuverfolgen und bei Bedarf
 
 ---
 
-### [7. Berechtigungen und Zugriff]({{< ref "07-berechtigungen" >}})
+### [7. Berechtigungen und Zugriff](berechtigungen-und-zugriff/)
 
 **Zugriffsrechte und Sichtbarkeit steuern**
 
@@ -155,7 +155,7 @@ Verstehe, wie Berechtigungen funktionieren und wer welche Dokumente sehen und be
 
 ---
 
-### [8. Suche und Filter]({{< ref "08-suche-filter" >}})
+### [8. Suche und Filter](suche-und-filter/)
 
 **Dokumente schnell finden**
 
@@ -174,7 +174,7 @@ Nutze die leistungsstarke Suche und Filter, um Dokumente effizient zu finden.
 
 ---
 
-### [9. Integrationen]({{< ref "09-integrationen" >}})
+### [9. Integrationen](integrationen/)
 
 **Verknüpfung mit anderen Modulen**
 
@@ -194,7 +194,7 @@ Nutze die leistungsstarken Integrationen mit anderen ELIZA-Modulen und externen 
 
 ---
 
-### [10. Best Practices und FAQ]({{< ref "10-best-practices" >}})
+### [10. Best Practices und FAQ](best-practices-und-faq/)
 
 **Tipps für effektives Dokumentenmanagement**
 
@@ -215,7 +215,7 @@ Bewährte Methoden und Empfehlungen für die erfolgreiche Dokumentenarbeit in EL
 
 ## Spezialthemen
 
-### [11. Excel Template-Sprache]({{< ref "11-excel-template-sprache" >}})
+### [11. Excel Template-Sprache](excel-template-sprache/)
 
 **Fortgeschrittene Excel-Vorlagen**
 
@@ -226,7 +226,7 @@ Detaillierte Anleitung zur Excel Template-Sprache mit Variablen, Schleifen und b
 
 ---
 
-### [12. Word Template Wizard]({{< ref "12-word-template-wizard" >}})
+### [12. Word Template Wizard](word-vorlage-erstellen-mit-dem-wizard/)
 
 **Word-Vorlagen im Handumdrehen erstellen**
 

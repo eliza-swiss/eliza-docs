@@ -24,7 +24,7 @@ Dieses Handbuch hilft dir, Benutzer in ELIZA effektiv zu verwalten, Berechtigung
 
 ## 📚 Kapitel-Übersicht
 
-### [1. Erste Schritte]({{< ref "01-erste-schritte" >}})
+### [1. Erste Schritte](erste-schritte-in-der-benutzerverwaltung/)
 
 **Einführung in die Benutzerverwaltung**
 
@@ -41,7 +41,7 @@ Lerne die Grundlagen der Benutzerverwaltung kennen: Navigation, Hauptfunktionen 
 
 ---
 
-### [2. Benutzer verwalten]({{< ref "02-benutzer-verwalten" >}})
+### [2. Benutzer verwalten](benutzer-verwalten/)
 
 **Benutzer erstellen, bearbeiten und verwalten**
 
@@ -60,7 +60,7 @@ Detaillierte Anleitungen für die tägliche Arbeit mit Benutzern in ELIZA.
 
 ---
 
-### [3. Benutzer-Import aus Excel]({{< ref "03-benutzer-import" >}})
+### [3. Benutzer-Import aus Excel](benutzer-import-aus-excel/)
 
 **Mehrere Benutzer gleichzeitig importieren**
 
@@ -79,7 +79,7 @@ Lerne, wie du Benutzer effizient aus Excel-Dateien importierst und Zeit sparst.
 
 ---
 
-### [4. Berechtigungskonzept]({{< ref "04-berechtigungen" >}})
+### [4. Berechtigungskonzept](berechtigungskonzept/)
 
 **Berechtigungen und Rollen verstehen**
 
@@ -98,7 +98,7 @@ Verstehe das mehrstufige Berechtigungssystem von ELIZA und setze es richtig ein.
 
 ---
 
-### [5. Systemgruppen-Referenz]({{< ref "05-systemgruppen-referenz" >}})
+### [5. Systemgruppen-Referenz](systemgruppen-referenz/)
 
 **Vollständige Liste aller Systemgruppen**
 
@@ -117,7 +117,7 @@ Nachschlagewerk für alle verfügbaren Systemgruppen in ELIZA.
 
 ---
 
-### [6. Benutzertypen-Referenz]({{< ref "06-benutzertypen-referenz" >}})
+### [6. Benutzertypen-Referenz](benutzertypen-referenz/)
 
 **Automatische Berechnung der Benutzertypen**
 
@@ -137,7 +137,7 @@ Technische Referenz zur automatischen Benutzertyp-Zuweisung durch ELIZA.
 
 ---
 
-### [7. Allgemeine Einstellungen]({{< ref "07-allgemeine-einstellungen" >}})
+### [7. Allgemeine Einstellungen](allgemeine-einstellungen/)
 
 **Globale ELIZA-Einstellungen konfigurieren**
 
@@ -159,7 +159,7 @@ Lerne, wie du die Allgemeinen Einstellungen verwaltest, die für alle Benutzer g
 
 ---
 
-### [8. Microsoft Entra ID Synchronisation]({{< ref "08-entra-sync" >}})
+### [8. Microsoft Entra ID Synchronisation](microsoft-entra-id-synchronisation/)
 
 **Automatische Benutzersynchronisation mit Microsoft Entra ID (Azure AD)**
 
@@ -180,7 +180,7 @@ Lerne, wie du Benutzer automatisch aus Microsoft Entra ID mit ELIZA synchronisie
 
 ---
 
-### [9. Datenexport und Backup]({{< ref "09-datenexport-backup" >}})
+### [9. Datenexport und Backup](datenexport-und-backup/)
 
 **Vollständiger Datenexport bei Vertragskündigung**
 

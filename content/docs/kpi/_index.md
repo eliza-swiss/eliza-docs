@@ -31,7 +31,7 @@ Kennzahlen (Key Performance Indicators, KPIs) sind messbare Werte, die den Erfol
 
 ## Kapitel-Übersicht
 
-### [1. Erste Schritte]({{< ref "01-erste-schritte" >}})
+### [1. Erste Schritte](erste-schritte-im-kennzahlen-modul/)
 
 **Einführung in das Kennzahlen-Modul**
 
@@ -48,7 +48,7 @@ Lerne die Grundlagen des Moduls kennen: Navigation, Aufbau und erste Orientierun
 
 ---
 
-### [2. Kennzahlen verwalten]({{< ref "02-kennzahlen-verwalten" >}})
+### [2. Kennzahlen verwalten](kennzahlen-verwalten/)
 
 **Kennzahlen und Ordner erstellen und bearbeiten**
 
@@ -66,7 +66,7 @@ Erfahre, wie du Kennzahlen strukturiert organisierst und mit allen relevanten In
 
 ---
 
-### [3. Messungen erfassen]({{< ref "03-messungen" >}})
+### [3. Messungen erfassen](messungen-erfassen/)
 
 **Regelmässige Messungen dokumentieren**
 
@@ -84,7 +84,7 @@ Lerne, wie du Messungen erfasst, bewertest und mit Zusatzinformationen versiehst
 
 ---
 
-### [4. Auswertung und Cockpit]({{< ref "04-auswertung-cockpit" >}})
+### [4. Auswertung und Cockpit](auswertung-und-cockpit/)
 
 **Kennzahlen analysieren und auswerten**
 
@@ -102,7 +102,7 @@ Nutze das Cockpit und die Diagrammfunktionen für datenbasierte Entscheidungen.
 
 ---
 
-### [5. Berechtigungskonzept]({{< ref "05-berechtigungskonzept" >}})
+### [5. Berechtigungskonzept](berechtigungskonzept/)
 
 **Zugriff und Berechtigungen verstehen**
 
@@ -119,7 +119,7 @@ Verstehe, wie Berechtigungen im Kennzahlen-Modul funktionieren.
 
 ---
 
-### [6. Beispiele für Kennzahlen]({{< ref "06-beispiele-kennzahlen" >}})
+### [6. Beispiele für Kennzahlen](beispiele-für-kennzahlen/)
 
 **Praktische Kennzahlen aus verschiedenen Branchen**
 

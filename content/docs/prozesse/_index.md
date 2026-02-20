@@ -22,7 +22,7 @@ Dieses Handbuch hilft dir, das Prozesse-Modul effektiv zu nutzen. Es ist in mehr
 
 ## 📚 Kapitel-Übersicht
 
-### [1. Erste Schritte]({{< ref "01-erste-schritte" >}})
+### [1. Erste Schritte](erste-schritte/)
 
 **Einführung ins Prozessmanagement**
 
@@ -39,7 +39,7 @@ Lerne die Grundlagen des Prozessmanagements in ELIZA kennen. Dieses Kapitel erkl
 
 ---
 
-### [2. Prozesse verwalten]({{< ref "02-prozesse-verwalten" >}})
+### [2. Prozesse verwalten](prozesse-verwalten/)
 
 **Prozesse erstellen und organisieren**
 
@@ -58,7 +58,7 @@ Schritt-für-Schritt Anleitung zum Erstellen und Verwalten von Prozessen. Du erf
 
 ---
 
-### [3. Prozessschritte]({{< ref "03-prozessschritte" >}})
+### [3. Prozessschritte](prozessschritte/)
 
 **Prozesse detailliert dokumentieren**
 
@@ -76,7 +76,7 @@ Erstelle detaillierte Prozessschritte mit Verantwortlichkeiten und verknüpfe si
 
 ---
 
-### [4. Workflow und Freigabe]({{< ref "04-workflow-freigabe" >}})
+### [4. Workflow und Freigabe](workflow-und-freigabe/)
 
 **Prozess-Lebenszyklus steuern**
 
@@ -96,7 +96,7 @@ Verstehe den Status-Workflow von der Erstellung bis zur Freigabe. Lerne, wie Pr�
 
 ---
 
-### [5. Hilfsmittel]({{< ref "05-hilfsmittel" >}})
+### [5. Hilfsmittel](hilfsmittel/)
 
 **Ressourcen für Prozesse verwalten**
 
@@ -113,7 +113,7 @@ Erstelle und verwalte Hilfsmittel, die für die Prozessdurchführung benötigt w
 
 ---
 
-### [6. Integration mit anderen Modulen]({{< ref "06-integration" >}})
+### [6. Integration mit anderen Modulen](integration-mit-anderen-modulen/)
 
 **Prozesse vernetzen**
 
@@ -132,7 +132,7 @@ Nutze die leistungsstarken Integrationen mit anderen ELIZA-Modulen.
 
 ---
 
-### [7. Best Practices und FAQ]({{< ref "07-best-practices" >}})
+### [7. Best Practices und FAQ](best-practices-und-faq/)
 
 **Tipps für effektives Prozessmanagement**
 
@@ -151,7 +151,7 @@ Bewährte Methoden und Empfehlungen für die erfolgreiche Prozessarbeit in ELIZA
 
 ---
 
-### [8. BPMN 2.0 Prozessmodellierung]({{< ref "08-bpmn" >}})
+### [8. BPMN 2.0 Prozessmodellierung](bpmn-20-prozessmodellierung/)
 
 **Visuelle Prozessdarstellung mit BPMN**
 
