@@ -1,0 +1,306 @@
+<!-- ELIZA Help Widget - KI-gestützte Dokumentationssuche -->
+<div id="help-widget">
+    <!-- Floating Button -->
+    <button id="help-fab" class="btn-floating btn-large waves-effect waves-light" title="Frag ELIZA" onclick="toggleHelp()">
+        <i class="material-icons" id="help-fab-icon">help_outline</i>
+    </button>
+
+    <!-- Chat Panel -->
+    <div id="help-panel" class="card" style="display: none;">
+        <div class="card-content" style="padding: 16px;">
+            <div id="help-header">
+                <span class="card-title" style="font-size: 1.1rem; margin: 0; display: flex; align-items: center; gap: 8px;">
+                    🐢 Frag ELIZA
+                    <span id="help-close" class="right" style="cursor: pointer; font-size: 1.2rem;" onclick="toggleHelp()">&times;</span>
+                </span>
+                <p style="margin: 4px 0 0; font-size: 0.85rem; color: #888;">Stelle eine Frage zur ELIZA-Dokumentation</p>
+            </div>
+
+            <!-- Messages -->
+            <div id="help-messages">
+                <div class="help-msg help-msg-bot">
+                    Hallo! Ich kann dir Fragen zur ELIZA-Plattform beantworten. Was möchtest du wissen?
+                </div>
+            </div>
+
+            <!-- Input -->
+            <div id="help-input-area">
+                <form onsubmit="askHelp(event)">
+                    <div style="display: flex; gap: 8px;">
+                        <input type="text" id="help-input" placeholder="z.B. Wie erstelle ich ein Formular?" autocomplete="off" style="margin: 0; flex: 1;">
+                        <button type="submit" class="btn waves-effect waves-light" id="help-send" style="min-width: 44px; padding: 0;">
+                            <i class="material-icons">send</i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+#help-widget {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 9999;
+    font-family: 'Roboto', sans-serif;
+}
+
+#help-fab {
+    background-color: #26a69a;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+}
+#help-fab:hover { transform: scale(1.1); }
+
+#help-panel {
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    width: 400px;
+    max-width: calc(100vw - 32px);
+    max-height: 500px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+[data-theme="dark"] #help-panel {
+    background: #1e1e1e;
+    border: 1px solid #333;
+}
+
+#help-messages {
+    flex: 1;
+    overflow-y: auto;
+    margin: 12px 0;
+    max-height: 320px;
+    min-height: 100px;
+}
+
+.help-msg {
+    padding: 10px 14px;
+    margin: 6px 0;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    max-width: 90%;
+    word-wrap: break-word;
+}
+
+.help-msg-user {
+    background: #26a69a;
+    color: white;
+    margin-left: auto;
+    border-bottom-right-radius: 4px;
+}
+
+.help-msg-bot {
+    background: #f0f0f0;
+    color: #333;
+    border-bottom-left-radius: 4px;
+}
+
+[data-theme="dark"] .help-msg-bot {
+    background: #2a2a2a;
+    color: #ddd;
+}
+
+.help-msg-bot a {
+    color: #26a69a;
+}
+
+.help-sources {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    font-size: 0.8rem;
+}
+
+[data-theme="dark"] .help-sources {
+    border-top-color: rgba(255,255,255,0.1);
+}
+
+.help-sources a {
+    display: block;
+    color: #26a69a;
+    text-decoration: none;
+    padding: 2px 0;
+}
+.help-sources a:hover { text-decoration: underline; }
+
+.help-typing {
+    display: inline-block;
+    padding: 10px 14px;
+    background: #f0f0f0;
+    border-radius: 12px;
+    font-size: 0.9rem;
+}
+[data-theme="dark"] .help-typing { background: #2a2a2a; color: #ddd; }
+
+.help-typing span {
+    animation: typing 1.4s infinite both;
+    display: inline-block;
+    width: 6px; height: 6px;
+    background: #999;
+    border-radius: 50%;
+    margin: 0 2px;
+}
+.help-typing span:nth-child(2) { animation-delay: 0.2s; }
+.help-typing span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes typing {
+    0%, 60%, 100% { transform: translateY(0); }
+    30% { transform: translateY(-6px); }
+}
+
+#help-input-area input {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 0 16px;
+    height: 40px;
+    box-sizing: border-box;
+}
+[data-theme="dark"] #help-input-area input {
+    border-color: #444;
+    background: #2a2a2a;
+    color: #ddd;
+}
+#help-input-area input:focus {
+    border-color: #26a69a;
+    box-shadow: none;
+}
+
+#help-send {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #26a69a;
+}
+
+@media (max-width: 480px) {
+    #help-panel { width: calc(100vw - 32px); right: -8px; }
+}
+</style>
+
+<script>
+const HELP_API_URL = '{{ .Site.Params.helpApiUrl | default "https://help.myeliza.ch" }}';
+
+function toggleHelp() {
+    const panel = document.getElementById('help-panel');
+    const icon = document.getElementById('help-fab-icon');
+    if (panel.style.display === 'none') {
+        panel.style.display = 'block';
+        icon.textContent = 'close';
+        document.getElementById('help-input').focus();
+    } else {
+        panel.style.display = 'none';
+        icon.textContent = 'help_outline';
+    }
+}
+
+function addMessage(text, type, sources) {
+    const container = document.getElementById('help-messages');
+    const msg = document.createElement('div');
+    msg.className = 'help-msg help-msg-' + type;
+
+    if (type === 'bot') {
+        // Simple markdown-like formatting
+        let html = text
+            .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+            .replace(/\n\n/g, '</p><p>')
+            .replace(/\n(\d+)\.\s/g, '<br>$1. ')
+            .replace(/\n[-•]\s/g, '<br>• ')
+            .replace(/\n/g, '<br>')
+            .replace(/`(.*?)`/g, '<code>$1</code>');
+        msg.innerHTML = '<p>' + html + '</p>';
+
+        if (sources && sources.length > 0) {
+            let srcHtml = '<div class="help-sources">📖 Quellen:<br>';
+            sources.forEach(function(s) {
+                srcHtml += '<a href="' + s.url + '" target="_blank">→ ' + s.title + '</a>';
+            });
+            srcHtml += '</div>';
+            msg.innerHTML += srcHtml;
+        }
+    } else {
+        msg.textContent = text;
+    }
+
+    container.appendChild(msg);
+    container.scrollTop = container.scrollHeight;
+}
+
+function showTyping() {
+    const container = document.getElementById('help-messages');
+    const typing = document.createElement('div');
+    typing.id = 'help-typing';
+    typing.className = 'help-typing';
+    typing.innerHTML = '<span></span><span></span><span></span>';
+    container.appendChild(typing);
+    container.scrollTop = container.scrollHeight;
+}
+
+function hideTyping() {
+    const el = document.getElementById('help-typing');
+    if (el) el.remove();
+}
+
+async function askHelp(e) {
+    e.preventDefault();
+    const input = document.getElementById('help-input');
+    const question = input.value.trim();
+    if (!question) return;
+
+    input.value = '';
+    addMessage(question, 'user');
+    showTyping();
+
+    // Detect current module from URL
+    let module = null;
+    const path = window.location.pathname;
+    const moduleMatch = path.match(/\/docs\/(\w+)\//);
+    if (moduleMatch) module = moduleMatch[1];
+
+    try {
+        const response = await fetch(HELP_API_URL + '/api/ask', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                question: question,
+                module: module,
+                lang: document.documentElement.lang || 'de'
+            })
+        });
+
+        hideTyping();
+
+        if (!response.ok) {
+            if (response.status === 429) {
+                addMessage('Bitte warte einen Moment bevor du eine weitere Frage stellst.', 'bot');
+            } else {
+                addMessage('Entschuldigung, es ist ein Fehler aufgetreten. Bitte versuche es später erneut.', 'bot');
+            }
+            return;
+        }
+
+        const data = await response.json();
+        addMessage(data.answer, 'bot', data.sources);
+
+    } catch (err) {
+        hideTyping();
+        addMessage('Der Hilfe-Service ist momentan nicht erreichbar. Bitte versuche es später erneut.', 'bot');
+    }
+}
+
+// Keyboard shortcut: Escape to close
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        const panel = document.getElementById('help-panel');
+        if (panel.style.display !== 'none') toggleHelp();
+    }
+});
+</script>

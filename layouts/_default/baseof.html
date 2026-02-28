@@ -133,6 +133,9 @@
     <!-- ELIZA Docs JS (defer) -->
     <script defer src="{{ "js/eliza-docs.js" | relURL }}"></script>
 
+    <!-- ELIZA Help Widget -->
+    {{ partial "help-widget.html" . }}
+
     {{ block "scripts" . }}{{ end }}
 </body>
 </html>

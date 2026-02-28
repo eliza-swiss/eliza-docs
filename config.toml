@@ -36,6 +36,9 @@ title = "ELIZA Benutzerhandbuch"
   description = "Offizielles Benutzerhandbuch für ELIZA - Das Schweizer Qualitätsmanagementsystem"
   author = "ELIZA AG"
 
+  # Help Service API URL
+  helpApiUrl = "https://help.myeliza.ch"
+
   # Theme Colors (ELIZA Material Design)
   themeColor = "#2196f3"
   backgroundColor = "#ffffff"
