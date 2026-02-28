@@ -188,6 +188,7 @@
 
 <script>
 const HELP_API_URL = '{{ .Site.Params.helpApiUrl | default "https://help.myeliza.ch" }}';
+let helpSessionId = localStorage.getItem('eliza-help-session') || null;
 
 function toggleHelp() {
     const panel = document.getElementById('help-panel');
@@ -272,7 +273,8 @@ async function askHelp(e) {
             body: JSON.stringify({
                 question: question,
                 module: module,
-                lang: document.documentElement.lang || 'de'
+                lang: document.documentElement.lang || 'de',
+                session_id: helpSessionId
             })
         });
 
@@ -288,6 +290,10 @@ async function askHelp(e) {
         }
 
         const data = await response.json();
+        if (data.session_id) {
+            helpSessionId = data.session_id;
+            localStorage.setItem('eliza-help-session', helpSessionId);
+        }
         addMessage(data.answer, 'bot', data.sources);
 
     } catch (err) {
