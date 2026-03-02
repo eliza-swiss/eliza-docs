@@ -11,6 +11,9 @@
             <div id="help-header">
                 <span class="card-title" style="font-size: 1.1rem; margin: 0; display: flex; align-items: center; gap: 8px;">
                     🐢 Frag ELIZA
+                    <span id="help-expand" class="right" style="cursor: pointer; font-size: 1.1rem; margin-right: 8px;" onclick="toggleHelpFullscreen()" title="Vergrössern/Verkleinern">
+                        <i class="material-icons" id="help-expand-icon" style="font-size: 1.2rem;">fullscreen</i>
+                    </span>
                     <span id="help-close" class="right" style="cursor: pointer; font-size: 1.2rem;" onclick="toggleHelp()">&times;</span>
                 </span>
                 <p style="margin: 4px 0 0; font-size: 0.85rem; color: #888;">Stelle eine Frage zur ELIZA-Dokumentation</p>
@@ -181,6 +184,27 @@
     background-color: #26a69a;
 }
 
+#help-panel.fullscreen {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    right: 16px;
+    bottom: 80px;
+    width: auto;
+    max-width: none;
+    max-height: none;
+    border-radius: 16px;
+}
+#help-panel.fullscreen #help-messages {
+    max-height: none;
+    flex: 1;
+}
+#help-panel.fullscreen .card-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 @media (max-width: 480px) {
     #help-panel { width: calc(100vw - 32px); right: -8px; }
 }
@@ -300,6 +324,13 @@ async function askHelp(e) {
         hideTyping();
         addMessage('Der Hilfe-Service ist momentan nicht erreichbar. Bitte versuche es später erneut.', 'bot');
     }
+}
+
+function toggleHelpFullscreen() {
+    const panel = document.getElementById('help-panel');
+    const icon = document.getElementById('help-expand-icon');
+    panel.classList.toggle('fullscreen');
+    icon.textContent = panel.classList.contains('fullscreen') ? 'fullscreen_exit' : 'fullscreen';
 }
 
 // Keyboard shortcut: Escape to close
