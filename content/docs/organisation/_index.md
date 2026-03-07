@@ -136,7 +136,7 @@ Verstehe das Berechtigungssystem und lerne, wie du Zugriffsrechte konfigurierst.
 
 ---
 
-### [7. Geburtstage und Dienstjubiläen](untitled/)
+### [7. Geburtstage und Dienstjubiläen](geburtstage-und-dienstjubiläen/)
 
 Lerne, wie du Geburtstage und Dienstjubiläen deiner Mitarbeitenden zentral verwaltest und im Blick behältst.
 

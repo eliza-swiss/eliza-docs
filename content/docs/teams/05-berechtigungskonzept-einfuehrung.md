@@ -1,8 +1,16 @@
 ---
-title: "Untitled"
+title: "Berechtigungen im Spaces-Modul"
 description: ""
-weight: 0
+weight: "5"
+tags:
+  - "berechtigungen"
+  - "spaces"
+  - "teams"
+  - "zugriff"
+  - "rollen"
 ---
+
+
 # Berechtigungen im Spaces-Modul - Einführung
 
 ## Überblick

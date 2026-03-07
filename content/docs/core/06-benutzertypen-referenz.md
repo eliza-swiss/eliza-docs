@@ -23,7 +23,7 @@ Dieses Kapitel ist eine **technische Referenz** für die automatische Benutzerty
 - Welche Objektverantwortlichkeiten berücksichtigt werden
 - Die genaue Berechnungslogik
 
-> **💡 Tipp:** Für eine benutzerfreundliche Erklärung siehe [Kapitel 2: Benutzer verwalten](02_benutzer_verwalten.md#benutzertypen-zuweisen).
+> **💡 Tipp:** Für eine benutzerfreundliche Erklärung siehe [Kapitel 2: Benutzer verwalten]({{< ref "02-benutzer-verwalten#benutzertypen-zuweisen" >}}).
 
 ## Benutzertypen-Übersicht
 

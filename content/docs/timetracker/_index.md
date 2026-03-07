@@ -167,9 +167,9 @@ In diesem Handbuch verwenden wir folgende Konventionen:
 
 **Du möchtest sofort loslegen?**
 
-1. Lies [Erste Schritte](erste-schritte-in-der-zeiterfassung/) für den Überblick
-2. Prüfe dein [Anstellungsverhältnis](anstellungsverhältnis/) (oder frag deine HR-Abteilung)
-3. Beginne mit der [Arbeitszeiterfassung](arbeitszeit-erfassen/)
+1. Lies [Erste Schritte]({{< ref "01-erste-schritte" >}}) für den Überblick
+2. Prüfe dein [Anstellungsverhältnis]({{< ref "02-anstellungsverhaeltnis" >}}) (oder frag deine HR-Abteilung)
+3. Beginne mit der [Arbeitszeiterfassung]({{< ref "03-arbeitszeit-erfassen" >}})
 
 ---
 

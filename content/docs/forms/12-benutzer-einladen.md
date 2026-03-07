@@ -267,7 +267,7 @@ In diesem Kapitel hast du gelernt:
 
 - **[Formulare ausfüllen]({{< ref "05-formulare-ausfuellen" >}})**: So füllen eingeladene Benutzer das Formular aus
 - **[Vorlagen erstellen]({{< ref "04-vorlagen" >}})**: Erstelle Vorlagen für deine Einladungen
-- **[Auswertung](04_vorlagen.md#auswertungs-view)**: Werte die ausgefüllten Formulare aus
+- **[Auswertung]({{< ref "04-vorlagen#auswertungs-view" >}})**: Werte die ausgefüllten Formulare aus
 
 ---
 
