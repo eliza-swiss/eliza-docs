@@ -1,8 +1,16 @@
 ---
-title: "Untitled"
+title: "Berechtigungskonzept im DMS"
 description: ""
-weight: 0
+weight: "7"
+tags:
+  - "berechtigungen"
+  - "dms"
+  - "zugriff"
+  - "ordner"
+  - "rollen"
 ---
+
+
 # 🔐 Berechtigungskonzept im DMS - Einführung
 
 Das Dokumentenmanagement-System (DMS) von ELIZA bietet dir ein flexibles und leistungsstarkes Berechtigungskonzept. Du kannst genau steuern, wer welche Ordner und Dokumente sehen, bearbeiten und freigeben darf. Dieses Kapitel erklärt dir, wie das Berechtigungssystem funktioniert und wie du es optimal für deine Organisation nutzt.

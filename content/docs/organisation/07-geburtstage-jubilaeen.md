@@ -1,8 +1,15 @@
 ---
-title: "Untitled"
+title: "Geburtstage und Dienstjubiläen"
 description: ""
-weight: 0
+weight: "7"
+tags:
+  - "geburtstage"
+  - "jubiläen"
+  - "dienstjubiläen"
+  - "mitarbeitende"
 ---
+
+
 # Geburtstage und Dienstjubiläen
 
 ## Einleitung
