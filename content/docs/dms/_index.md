@@ -213,6 +213,25 @@ Bewährte Methoden und Empfehlungen für die erfolgreiche Dokumentenarbeit in EL
 
 ---
 
+### [13. Öffentliche Dokumente und Pakete](öffentliche-dokumente-und-dokument-pakete/)
+
+**Dokumente ohne Login teilen**
+
+Publiziere Dokumente über öffentliche Links und erstelle Dokument-Pakete für externen Zugriff — ohne dass Empfänger ein ELIZA-Konto benötigen.
+
+**Inhalte:**
+- Dokumente publizieren und zurückziehen
+- Öffentliche Links und QR-Codes
+- Dokument-Pakete erstellen und verwalten
+- Ablaufdaten und Zugriffskontrolle
+- Berechtigungen (dms_publishers)
+- Sicherheitshinweise
+
+**Zielgruppe:** Dokumentenverantwortliche, Administratoren
+**Lesezeit:** ~12 Minuten
+
+---
+
 ## Spezialthemen
 
 ### [11. Excel Template-Sprache](excel-template-sprache/)

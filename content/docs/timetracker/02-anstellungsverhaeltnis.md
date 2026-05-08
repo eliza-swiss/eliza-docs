@@ -169,34 +169,97 @@ Monatliche Sollstunden = Tägliche Sollstunden × Arbeitstage im Monat
 
 Der Ferienanspruch wird je nach Arbeitszeitmodell unterschiedlich berechnet:
 
+**Vollzeit-Standard:**
+
+Beim Vollzeitmodell wird der volle Ferienanspruch gewährt. Pro Ferientag werden die vollen Tages-Sollstunden abgezogen.
+
+| | Wert |
+|---|---|
+| Basis-Ferientage | 25 Tage |
+| Anstellungsgrad | 100% |
+| **Ferienanspruch** | **25 Tage** |
+| Abzug pro Ferientag | 8.4 Stunden |
+
 **Teilzeit-Standard und Wochenstunden-Standard:**
+
 <pre>
 Ferienanspruch = Basis-Ferientage × (Anstellungsgrad ÷ 100)
 </pre>
 
-**Beispiel:**
-- Basis-Ferientage: 25 Tage
-- Anstellungsgrad: 80%
-- → Ferienanspruch: 25 × 0.8 = 20 Tage
+| | Wert |
+|---|---|
+| Basis-Ferientage | 25 Tage |
+| Anstellungsgrad | 80% |
+| **Ferienanspruch** | **25 × 0.8 = 20 Tage** |
+| Abzug pro Ferientag | 6.72 Stunden (80% von 8.4h) |
+
+> **💡 Wichtig:** Beim Teilzeit-Standardmodell wird pro Ferientag 1 ganzer Tag abgezogen, aber mit reduzierten Stunden. Du hast weniger Ferientage, aber jeder Tag "kostet" auch weniger Stunden.
+
+**Halbtags-Flex:**
+
+<pre>
+Ferienanspruch = Basis-Ferientage × (Anstellungsgrad ÷ 100)
+</pre>
+
+| | Wert |
+|---|---|
+| Basis-Ferientage | 25 Tage |
+| Arbeitstage | Mo (ganzer Tag), Di (ganzer Tag), Mi (Vormittag), Do (ganzer Tag) |
+| Anstellungsgrad | 70% (automatisch berechnet) |
+| **Ferienanspruch** | **25 × 0.7 = 17.5 Tage** |
 
 **Fixstunden-Teilzeit:**
+
+Beim Fixstunden-Modell basiert der Ferienanspruch auf der Anzahl Arbeitstage, nicht auf den Stunden.
+
 <pre>
 Ferienanspruch = Basis-Ferientage × (Arbeitstage pro Woche ÷ 5)
 </pre>
 
-**Beispiel:**
-- Basis-Ferientage: 25 Tage
-- Arbeitstage pro Woche: 4
-- → Ferienanspruch: 25 × (4 ÷ 5) = 20 Tage
+| | Wert |
+|---|---|
+| Basis-Ferientage | 25 Tage |
+| Arbeitstage pro Woche | 4 (Mo 8h, Di 6h, Mi 4h, Do 6h) |
+| **Ferienanspruch** | **25 × (4 ÷ 5) = 20 Tage** |
+
+> **⚠️ Wichtig:** Beim Fixstunden-Modell zählt die Anzahl Tage, nicht die Stundenzahl. Ob du an einem Tag 4 oder 8 Stunden arbeitest, spielt für die Ferienberechnung keine Rolle.
+
+### Übersicht: Ferienanspruch pro Arbeitszeitmodell
+
+| Arbeitszeitmodell | Basis | Berechnung | Beispiel (25 Tage Basis) |
+|---|---|---|---|
+| Vollzeit-Standard | 100% | Voller Anspruch | 25 Tage |
+| Teilzeit-Standard 80% | Anstellungsgrad | 25 × 80% | 20 Tage |
+| Teilzeit-Standard 60% | Anstellungsgrad | 25 × 60% | 15 Tage |
+| Halbtags-Flex 70% | Anstellungsgrad | 25 × 70% | 17.5 Tage |
+| Fixstunden (4 Tage) | Arbeitstage | 25 × 4/5 | 20 Tage |
+| Fixstunden (3 Tage) | Arbeitstage | 25 × 3/5 | 15 Tage |
 
 ### Benutzerdefinierter Ferienanspruch
 
-In besonderen Fällen kann ein **benutzerdefinierter Ferienanspruch** festgelegt werden. Dieser überschreibt die automatische Berechnung.
+In besonderen Fällen kann ein **benutzerdefinierter Ferienanspruch** festgelegt werden. Dieser überschreibt die automatische Berechnung komplett.
+
+> **⚠️ Wichtig:** Wenn ein benutzerdefinierter Ferienanspruch gesetzt ist, wird keine automatische Berechnung mehr durchgeführt. Der eingegebene Wert gilt direkt als Jahresanspruch.
+
+**Wo findest du dieses Feld?**
+
+Das Feld "Benutzerdefinierter Ferienanspruch" ist nur im vollständigen Anstellungsverhältnis-Formular sichtbar. Öffne dazu das Anstellungsverhältnis direkt (nicht über den Quick-Add in der Organisation).
 
 **Anwendungsfälle:**
 - Vertraglich vereinbarte Sonderregelungen
+- Altersbedingte Zusatzferien (z.B. ab 50 Jahren: 30 statt 25 Tage)
+- Kaderverträge mit individuellen Ferienregelungen
 - Übertrag aus Vorjahren
-- Altersbedingte Zusatzferien
+
+**Beispiel:**
+
+| | Standard | Benutzerdefiniert |
+|---|---|---|
+| Anstellungsgrad | 80% | 80% |
+| Basis-Ferientage | 25 | 25 |
+| Automatische Berechnung | 25 × 0.8 = 20 Tage | *wird ignoriert* |
+| Benutzerdefiniert | - | 28 Tage |
+| **Effektiver Anspruch** | **20 Tage** | **28 Tage** |
 
 ### Anteiliger Ferienanspruch bei Ein-/Austritt
 
@@ -206,7 +269,41 @@ Bei unterjährigem Ein- oder Austritt wird der Ferienanspruch anteilig berechnet
 Anteiliger Anspruch = Jahresanspruch × (Beschäftigungstage ÷ 365)
 </pre>
 
+**Beispiel:**
+
+| | Wert |
+|---|---|
+| Eintrittsdatum | 15. März 2026 |
+| Ferienanspruch (Jahr) | 25 Tage |
+| Beschäftigungstage bis 31.12. | 291 Tage |
+| **Anteiliger Anspruch** | **25 × (291 ÷ 365) = 19.9 → 20 Tage** |
+
 > **💡 Tipp:** ELIZA rundet den Ferienanspruch standardmässig auf halbe Tage. In Deutschland wird auf ganze Tage gerundet.
+
+## Stundenlohn-Mitarbeitende
+
+Für Mitarbeitende im Stundenlohn (z.B. Aushilfen, Temporärmitarbeitende) gibt es aktuell kein eigenes Arbeitszeitmodell. So erfasst du Stundenlohn-Mitarbeitende:
+
+**Empfohlene Konfiguration:**
+
+1. **Lohnart**: Stundenlohn wählen
+2. **Vertrauensarbeitszeit**: Aktivieren (keine Sollstunden, kein Gleitzeitsaldo)
+3. **Ferienanspruch**: Benutzerdefiniert setzen oder leer lassen
+4. **Arbeitszeit**: Mitarbeitende erfassen ihre geleisteten Stunden normal
+
+**Ferienanspruch bei Stundenlohn:**
+
+In der Schweiz wird der Ferienanspruch bei Stundenlöhnern oft als prozentualer Zuschlag auf den Stundenlohn abgegolten:
+
+| Ferienanspruch | Zuschlag |
+|---|---|
+| 4 Wochen (20 Tage) | 8.33% |
+| 5 Wochen (25 Tage) | 10.64% |
+| 6 Wochen (30 Tage) | 13.04% |
+
+In diesem Fall wird kein Ferienanspruch in ELIZA hinterlegt, da die Ferien über den Lohn abgegolten werden.
+
+> **💡 Tipp:** Falls du den Ferienbezug trotzdem in ELIZA tracken möchtest, setze einen benutzerdefinierten Ferienanspruch und erfasse Ferien als Abwesenheit.
 
 ## Vertrauensarbeitszeit
 

@@ -119,11 +119,11 @@ Verstehe das Berechtigungskonzept und wie Abonnements funktionieren.
 
 ## Schnellstart
 
-**Für Einsteiger:** Beginne mit [Kapitel 1: Erste Schritte](erste-schritte/)
+**Für Einsteiger:** Beginne mit [Kapitel 1: Erste Schritte]({{< ref "01-erste-schritte" >}})
 
-**Für Administratoren:** Lies [Kapitel 2: Newskanäle](newskanäle-verstehen/) und [Kapitel 5: Berechtigungen](berechtigungen-und-abonnements/)
+**Für Administratoren:** Lies [Kapitel 2: Newskanäle]({{< ref "02-newskanäle" >}}) und [Kapitel 5: Berechtigungen]({{< ref "05-berechtigungen" >}})
 
-**Für Event-Organisatoren:** Springe direkt zu [Kapitel 4: Events](events-planen-und-verwalten/)
+**Für Event-Organisatoren:** Springe direkt zu [Kapitel 4: Events]({{< ref "04-events" >}})
 
 ## Verwendete Konventionen
 

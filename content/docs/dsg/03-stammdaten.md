@@ -229,6 +229,32 @@ Untervertragspartner (auch: Auftragsverarbeiter) sind **externe Dienstleister**,
 | **Telefonnummer** | Nein | Kontakttelefon |
 | **URL** | Nein | Webseite |
 
+### Dokumente bei Untervertragspartnern
+
+Du kannst Dokumente wie **Auftragsverarbeitungsverträge (AVV)**, Zertifikate oder andere relevante Unterlagen direkt beim Untervertragspartner hinterlegen.
+
+#### Dokument hochladen
+
+1. Öffne die Detailseite eines Untervertragspartners
+2. Im Bereich **Dokumente** hast du zwei Möglichkeiten:
+   - **"Dokument"**: Öffnet ein Formular, in dem du Titel, Beschreibung und Datei angeben kannst
+   - **"Datei hochladen"**: Öffnet einen Drag & Drop-Bereich für schnelles Hochladen mehrerer Dateien
+
+#### Dokument-Detailansicht
+
+Klicke auf ein hochgeladenes Dokument, um die Detailansicht zu öffnen. Dort findest du:
+
+- **Übersicht**: Metadaten wie Erstellungsdatum, Grösse und Beschreibung (Markdown wird unterstützt)
+- **Datei-Vorschau**: PDF-Dokumente, Bilder und Videos werden direkt angezeigt. Office-Dokumente (DOCX, XLSX etc.) können über die Online-Vorschau betrachtet und bearbeitet werden
+- **Digitale Unterschriften**: Unterzeichnete Dokumente werden speziell gekennzeichnet
+- **Versionen**: Im Tab "Versionen" siehst du die gesamte Änderungshistorie mit Datum, Bearbeiter und Kommentar. Jede Version kann einzeln heruntergeladen werden
+
+#### Tipps für Dokumente
+
+- Verwende aussagekräftige Titel (z.B. "AVV Microsoft 2026" statt nur den Dateinamen)
+- Nutze die Beschreibung für Hinweise wie Gültigkeitsdauer oder Ansprechpartner
+- Hochgeladene Dokumente werden automatisch in die ELIZA-Volltextsuche aufgenommen
+
 ## Technische und Organisatorische Massnahmen (TOMs)
 
 ### Was sind TOMs?

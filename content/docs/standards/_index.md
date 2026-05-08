@@ -209,16 +209,16 @@ In diesem Handbuch verwenden wir folgende Konventionen:
 
 **Neu im Standards-Modul?**
 
-1. Lies [Erste Schritte](erste-schritte-im-standards-modul/) für eine Einführung
-2. Folge [Normen verwalten](normen-verwalten/) um deine erste Norm anzulegen
-3. Nutze [Kapitel und Erfüllung](kapitel-und-erfüllung/) für die praktische Arbeit
+1. Lies [Erste Schritte]({{< ref "01-erste-schritte" >}}) für eine Einführung
+2. Folge [Normen verwalten]({{< ref "02-normen-verwalten" >}}) um deine erste Norm anzulegen
+3. Nutze [Kapitel und Erfüllung]({{< ref "03-kapitel-erfuellung" >}}) für die praktische Arbeit
 
 **Spezifische Aufgabe?**
 
-- Norm anlegen → [Normen verwalten](normen-verwalten/)
-- Erfüllungsgrad bewerten → [Kapitel und Erfüllung](kapitel-und-erfüllung/)
-- Stakeholder erfassen → [Interessierte Parteien](interessierte-parteien-stakeholder/)
-- Dokumente verknüpfen → [Integration](integration-mit-anderen-modulen/)
+- Norm anlegen → [Normen verwalten]({{< ref "02-normen-verwalten" >}})
+- Erfüllungsgrad bewerten → [Kapitel und Erfüllung]({{< ref "03-kapitel-erfuellung" >}})
+- Stakeholder erfassen → [Interessierte Parteien]({{< ref "04-stakeholder" >}})
+- Dokumente verknüpfen → [Integration]({{< ref "05-integration" >}})
 
 ## Feedback und Verbesserungen
 
