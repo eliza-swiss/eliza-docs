@@ -23,7 +23,7 @@ Dieses Kapitel ist eine **technische Referenz** für die automatische Benutzerty
 - Welche Objektverantwortlichkeiten berücksichtigt werden
 - Die genaue Berechnungslogik
 
-> **💡 Tipp:** Für eine benutzerfreundliche Erklärung siehe [Kapitel 2: Benutzer verwalten](02_benutzer_verwalten.md#benutzertypen-zuweisen).
+> **💡 Tipp:** Für eine benutzerfreundliche Erklärung siehe [Kapitel 2: Benutzer verwalten]({{< ref "02-benutzer-verwalten#benutzertypen-zuweisen" >}}).
 
 ## Benutzertypen-Übersicht
 
@@ -64,6 +64,8 @@ ELIZA berechnet den Benutzertyp in folgenden Schritten:
    - Prozess-Admin?
    - Tracker-Admin/Teammitglied?
    - Massnahmen-Controller?
+   - Space-Admin?
+   - Sitzungs-Admin (nicht archiviert)?
    └─ Hat Verantwortlichkeiten? → Markiere "active"
 
 6. Finale Typ-Bestimmung:
@@ -164,6 +166,13 @@ Selbst wenn ein Benutzer nur Lese-Berechtigungen hat, wird er zu einem **Aktiven
 |--------------------|---------|-------------|
 | **Tracker-Admin** | Ist in `Tracker.admins` | "Ist Admin von Trackern" |
 | **Tracker-Team** | Ist in `Tracker.team` | "Ist Teammitglied in Trackern" |
+
+### Teams-Verantwortlichkeiten
+
+| Verantwortlichkeit | Prüfung | Badge-Grund |
+|--------------------|---------|-------------|
+| **Space-Admin** | Ist in `Space.admins` | "Ist Admin von Spaces" |
+| **Sitzungs-Admin** | Ist in `Meeting.admins` (nicht archiviert) | "Ist Admin von Sitzungen" |
 
 ### IKS-Verantwortlichkeiten
 

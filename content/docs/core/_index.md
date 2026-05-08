@@ -200,6 +200,24 @@ Erfahre, wie ein vollständiges Backup aller ELIZA-Daten erstellt wird und wie d
 
 ---
 
+### [10. ELIZA als Mobile App nutzen](eliza-als-mobile-app-nutzen/)
+
+**App installieren, Benachrichtigungen aktivieren**
+
+Lerne, wie du ELIZA als App auf deinem Smartphone installierst und Push-Benachrichtigungen einrichtest.
+
+**Inhalte:**
+- App installieren (Android, iOS, Desktop)
+- Push-Benachrichtigungen aktivieren und verwalten
+- Plattform-spezifische Besonderheiten (iOS-Einschränkungen)
+- Offline-Nutzung
+- Häufige Fragen und Troubleshooting
+
+**Zielgruppe:** Alle Benutzer
+**Lesezeit:** ~10 Minuten
+
+---
+
 ## Zielgruppen
 
 ### 🔧 Administratoren (Superuser)

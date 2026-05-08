@@ -192,6 +192,38 @@ Die Einstellungen sind in folgende Kategorien gruppiert:
 
 ---
 
+### User Manual / Hilfe
+
+#### Hilfe-Sichtbarkeit
+
+- **Beschreibung**: Steuere, welche Benutzer die Hilfe-Menüeinträge sehen
+- **Standard**: Alle Benutzer
+- **Verfügbare Modi**:
+
+| Modus | Beschreibung |
+|-------|-------------|
+| **Alle Benutzer** | Alle eingeloggten Benutzer sehen die Hilfe (Standard) |
+| **Nur aktive Benutzer** | Nur Benutzer mit dem Benutzertyp "aktiv" sehen die Hilfe |
+| **Nur Administratoren** | Nur ELIZA-Administratoren sehen die Hilfe |
+| **Nur Benutzer mit Berechtigung** | Nur Benutzer mit der Berechtigung "Kann Hilfe und Benutzerhandbuch sehen" |
+
+**Was wird gesteuert?**
+- Der Hauptmenüpunkt **Hilfe** in der Sidebar
+- Die **Hilfe-Links** innerhalb der Untermenüs aller Module (z.B. Dashboard → Hilfe, Dokumente → Hilfe)
+
+> **Hinweis:** Die Seite **Was gibt's Neues** bleibt immer für alle Benutzer sichtbar, unabhängig von dieser Einstellung.
+
+**Berechtigung zuweisen (Modus "Nur mit Berechtigung"):**
+
+1. Navigiere zu **Benutzerverwaltung → Gruppen**
+2. Wähle die gewünschte Gruppe aus (oder erstelle eine neue, z.B. "Hilfe-Zugriff")
+3. Füge die Berechtigung **Kann Hilfe und Benutzerhandbuch sehen** hinzu
+4. Speichere die Änderungen
+
+> **Tipp:** Erstelle eine eigene Gruppe für den Hilfe-Zugriff. So kannst du den Zugriff einfach über Gruppenmitgliedschaften steuern.
+
+---
+
 ## Einstellungen ändern
 
 ### Schritt-für-Schritt Anleitung

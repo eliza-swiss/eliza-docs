@@ -132,9 +132,28 @@ WOPI (Web Application Open Platform Interface) ermöglicht die Online-Bearbeitun
 
 ### Einschränkungen
 
-- Nur bei aktivierter Integration
+Microsoft Office Online (Word for the Web) ist ein von Microsoft bereitgestellter Dienst mit eingeschränktem Funktionsumfang gegenüber der Desktop-App. Folgende Features sind **nur in der Desktop-App** verfügbar:
+
+| Feature | Details |
+|---------|---------|
+| **Makros** | Automatisierte Workflows werden in Office Online nicht unterstützt |
+| **Serienbriefe (Mail Merge)** | Datenbankfelder und personalisierte Massendokumente |
+| **Eingebettete Objekte** | Excel-Tabellen, PDFs oder andere Dateien einbetten |
+| **SmartArt und 3D-Modelle** | Anzeige teilweise möglich, Bearbeitung nur Desktop |
+| **Abschnittswechsel** | Nur in der Desktop-App erstellbar |
+| **Passwortschutz** | Geschützte Dokumente können online nur gelesen werden |
+| **Wasserzeichen** | Nur in der Desktop-App |
+| **ActiveX Controls** | Interaktive Formularelemente |
+
+> 💡 **Tipp:** Wenn deine Dokumente Makros, Serienbriefe oder Datenbankfelder verwenden, bearbeite sie in der lokalen Microsoft Word Desktop-App und lade die aktualisierte Version in ELIZA hoch.
+
+> ⚠️ **Wichtig:** Diese Einschränkungen sind von Microsoft vorgegeben und betreffen alle Anwendungen, die Office Online nutzen (SharePoint, OneDrive, ELIZA, etc.).
+
+Detaillierter Vergleich: [Microsoft Word Features Comparison: Web vs Desktop](https://support.microsoft.com/en-us/office/word-features-comparison-web-vs-desktop-3e863ce3-e82c-4211-8f97-5b33c36c55f8)
+
+Weitere Voraussetzungen:
+- WOPI-Integration muss aktiviert sein
 - Internetverbindung erforderlich
-- Manche Formatierungen können abweichen
 
 ---
 
