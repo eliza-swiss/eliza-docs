@@ -336,4 +336,4 @@ In diesem Kapitel hast du:
 
 ---
 
-**← Zurück zu: [Berechtigungen]({{< ref "04-berechtigungen" >}}) | Zurück zum [Inhaltsverzeichnis]({{< ref "_index" >}})**
+**← Zurück zu: [Berechtigungen]({{< ref "04-berechtigungen" >}}) | Zurück zum [Inhaltsverzeichnis](./)**

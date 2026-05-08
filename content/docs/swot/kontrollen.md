@@ -217,6 +217,6 @@ Ja, du kannst beliebige Dateien als Nachweisdokumente hochladen. Diese werden in
 
 ---
 
-**Zurück zur [Übersicht]({{< ref "_index" >}})**
+**Zurück zur [Übersicht](./)**
 
 *Stand: Februar 2026*

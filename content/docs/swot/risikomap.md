@@ -157,6 +157,6 @@ Bearbeite die Einschätzung und ändere die Felder "Wahrscheinlichkeit" und "Aus
 
 ---
 
-**Zurück zur [Übersicht]({{< ref "_index" >}})**
+**Zurück zur [Übersicht](./)**
 
 *Stand: Februar 2026*

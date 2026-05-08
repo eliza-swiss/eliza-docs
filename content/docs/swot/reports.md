@@ -201,6 +201,6 @@ Nein, die Spalten sind fest definiert. Du kannst aber in Excel nach dem Export S
 
 ---
 
-**Zurück zur [Übersicht]({{< ref "_index" >}})**
+**Zurück zur [Übersicht](./)**
 
 *Stand: Februar 2026*

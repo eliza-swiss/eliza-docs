@@ -392,4 +392,4 @@ In diesem Kapitel hast du gelernt:
 
 ---
 
-**← Zurück zu: [Systemgruppen-Referenz]({{< ref "05-systemgruppen-referenz" >}}) | Zurück zum [Inhaltsverzeichnis]({{< ref "_index" >}})**
+**← Zurück zu: [Systemgruppen-Referenz]({{< ref "05-systemgruppen-referenz" >}}) | Zurück zum [Inhaltsverzeichnis](./)**

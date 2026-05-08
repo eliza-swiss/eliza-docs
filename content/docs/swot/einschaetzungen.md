@@ -261,6 +261,6 @@ Die Map-Ansichten zeigen nur Einschätzungen mit Status **"aktiv"** oder **"in A
 
 ---
 
-**Zurück zur [Übersicht]({{< ref "_index" >}})**
+**Zurück zur [Übersicht](./)**
 
 *Stand: Februar 2026*

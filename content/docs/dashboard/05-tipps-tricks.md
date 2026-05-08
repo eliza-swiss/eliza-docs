@@ -262,4 +262,4 @@ Das Dashboard ist dein persönlicher Arbeitsbereich in ELIZA. Mit den richtigen 
 
 ## Zurück zur Übersicht
 
-→ [Dashboard Benutzerhandbuch]({{< ref "_index" >}})
+→ [Dashboard Benutzerhandbuch](./)

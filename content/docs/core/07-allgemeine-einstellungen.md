@@ -371,7 +371,7 @@ In diesem Kapitel hast du gelernt:
 
 ## Nächste Schritte
 
-**Zurück zur Übersicht:** [Inhaltsverzeichnis]({{< ref "_index" >}})
+**Zurück zur Übersicht:** [Inhaltsverzeichnis](./)
 
 **Verwandte Kapitel:**
 - [Kapitel 1: Erste Schritte]({{< ref "01-erste-schritte" >}}) - Grundlagen der Benutzerverwaltung
@@ -384,4 +384,4 @@ In diesem Kapitel hast du gelernt:
 
 ---
 
-**← Zurück zu: [Benutzertypen-Referenz]({{< ref "06-benutzertypen-referenz" >}}) | Zurück zum [Inhaltsverzeichnis]({{< ref "_index" >}})**
+**← Zurück zu: [Benutzertypen-Referenz]({{< ref "06-benutzertypen-referenz" >}}) | Zurück zum [Inhaltsverzeichnis](./)**

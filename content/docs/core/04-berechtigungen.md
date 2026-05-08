@@ -465,4 +465,4 @@ Du hast jetzt alle Kapitel der Benutzerverwaltung durchgearbeitet! 🎉
 
 ---
 
-**← Zurück zu: [Benutzer-Import]({{< ref "03-benutzer-import" >}}) | Zurück zum [Inhaltsverzeichnis]({{< ref "_index" >}})**
+**← Zurück zu: [Benutzer-Import]({{< ref "03-benutzer-import" >}}) | Zurück zum [Inhaltsverzeichnis](./)**

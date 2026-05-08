@@ -398,4 +398,4 @@ Die wichtigsten Tipps auf einen Blick:
 
 **Du hast weitere Fragen?** Wende dich an deinen Administrator oder das Support-Team.
 
-**Zurück zur [Übersicht]({{< ref "_index" >}})**
+**Zurück zur [Übersicht](./)**

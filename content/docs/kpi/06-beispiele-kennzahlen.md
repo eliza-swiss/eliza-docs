@@ -273,4 +273,4 @@ Nutze diese Beispiele als Inspiration und passe sie an deine spezifische Situati
 
 ---
 
-→ [Zurück zur Übersicht]({{< ref "_index" >}})
+→ [Zurück zur Übersicht](./)

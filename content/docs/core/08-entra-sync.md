@@ -400,4 +400,4 @@ Die Entra ID Synchronisation ermöglicht:
 
 ---
 
-**Vorheriges Kapitel:** [Allgemeine Einstellungen]({{< ref "07-allgemeine-einstellungen" >}}) | **Zur Übersicht:** [Index]({{< ref "_index" >}})
+**Vorheriges Kapitel:** [Allgemeine Einstellungen]({{< ref "07-allgemeine-einstellungen" >}}) | **Zur Übersicht:** [Index](./)

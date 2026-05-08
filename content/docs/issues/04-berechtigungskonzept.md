@@ -396,4 +396,4 @@ Das Berechtigungssystem des Meldungen-Moduls ist hierarchisch aufgebaut:
 ## Nächste Schritte
 
 - Erfahre [Tipps und Tricks]({{< ref "05-tipps-tricks" >}}) für effizientes Arbeiten
-- Zurück zur [Übersicht]({{< ref "_index" >}})
+- Zurück zur [Übersicht](./)
