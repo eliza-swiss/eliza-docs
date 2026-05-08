@@ -118,6 +118,6 @@ Nein, in den Kacheln werden alle Einschätzungen unabhängig vom Status gezählt
 
 ---
 
-**Zurück zur [Übersicht]({{< ref "_index" >}})**
+**Zurück zur [Übersicht](./)**
 
 *Stand: Februar 2026*

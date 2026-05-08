@@ -306,4 +306,4 @@ Du hast das komplette Benutzerhandbuch für das Kennzahlen-Modul durchgearbeitet
 
 ---
 
-→ [Zurück zur Übersicht]({{< ref "_index" >}})
+→ [Zurück zur Übersicht](./)

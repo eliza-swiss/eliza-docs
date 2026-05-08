@@ -843,7 +843,7 @@ Für Organisationen, die schnell starten möchten:
 ## 🔗 Weiterführende Ressourcen
 
 ### ELIZA-Dokumentation
-- [Standards-Modul Handbuch]({{< ref "_index" >}})
+- [Standards-Modul Handbuch](./)
 - [Kapitel und Erfüllung]({{< ref "03-kapitel-erfuellung" >}})
 - [Integration mit anderen Modulen]({{< ref "05-integration" >}})
 

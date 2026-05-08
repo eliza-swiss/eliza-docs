@@ -317,4 +317,4 @@ In diesem Kapitel hast du gelernt:
 
 ---
 
-**← Zurück zu: [Microsoft Entra ID Synchronisation]({{< ref "08-entra-sync" >}}) | Zur Übersicht: [Index →]({{< ref "_index" >}})**
+**← Zurück zu: [Microsoft Entra ID Synchronisation]({{< ref "08-entra-sync" >}}) | Zur Übersicht: [Index →](./)**

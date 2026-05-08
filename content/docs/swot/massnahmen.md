@@ -252,6 +252,6 @@ Ja, bearbeite die Massnahme und ändere das Feld "Verantwortung" oder "Verantwor
 
 ---
 
-**Zurück zur [Übersicht]({{< ref "_index" >}})**
+**Zurück zur [Übersicht](./)**
 
 *Stand: Februar 2026*
