@@ -7,7 +7,7 @@ Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer,
 
 du kennst das vielleicht: Auf dem Dashboard steht eine Zahl offener Aufgaben — du klickst auf "Meine Fristen" und plötzlich tauchen dort auch Aufgaben anderer Personen auf. Das war verwirrend, vor allem wenn du in mehreren Bereichen Admin-Rechte oder Freigabe-Berechtigungen hast. Wir haben das jetzt aufgeräumt.
 
-![Vergleich der Fristen-Übersicht mit und ohne erweiterten Schalter](/dashboard/help/images/deadlines-admin-scope.svg)
+![Vergleich der Fristen-Übersicht mit und ohne erweiterten Schalter](/docs/dashboard/images/deadlines-admin-scope.svg)
 
 ## Was ist neu?
 

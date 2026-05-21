@@ -7,7 +7,7 @@ Liebe ELIZA-Nutzerin, lieber ELIZA-Nutzer,
 
 wir freuen uns, eine modulübergreifende Neuerung vorzustellen: die **Diskussions-Card**. Sie ist jetzt auf **News-Beiträgen**, **DMS-Dokumenten**, **Tutorials-Lektionen** und **Prozessen** verfügbar und macht es einfach, schnell zu reagieren, zu kommentieren und zu sehen, wer einen Inhalt schon angeschaut hat — vergleichbar mit LinkedIn oder Facebook, aber im geschützten Rahmen deiner ELIZA-Installation.
 
-![Diskussions-Card mit Reagieren, Kommentieren und Gesehen-Tracking](/streams/help/images/social-bar-overview.svg)
+![Diskussions-Card mit Reagieren, Kommentieren und Gesehen-Tracking](/docs/streams/images/social-bar-overview.svg)
 
 ## 🚀 Was ist neu?
 
@@ -23,7 +23,7 @@ wir freuen uns, eine modulübergreifende Neuerung vorzustellen: die **Diskussion
 
 ### Aktions-Leiste im Detail
 
-![Detail der Aktions-Leiste](/streams/help/images/social-bar-actions.svg)
+![Detail der Aktions-Leiste](/docs/streams/images/social-bar-actions.svg)
 
 ### Reagieren
 
