@@ -117,6 +117,24 @@ Verstehe das Berechtigungskonzept und wie Abonnements funktionieren.
 
 ---
 
+### [6. Diskussion: Reagieren, Kommentieren, Gesehen](diskussion-reagieren-kommentieren-gesehen/)
+
+**Die modulübergreifende Social-Bar verstehen**
+
+Die Diskussions-Card erscheint nicht nur unter News, sondern auch auf DMS-Dokumenten, Tutorials-Lektionen und Prozessen. Lerne, wie du reagierst, kommentierst und Gesehen-Tracking nutzt.
+
+**Inhalte:**
+- Reagieren mit Emojis
+- Kommentare verfassen, bearbeiten, beantworten
+- Gesehen-Tracking
+- Benachrichtigungen
+- Aktivierung pro Modul (Admin)
+
+**Zielgruppe:** Alle Benutzer
+**Lesezeit:** ~10 Minuten
+
+---
+
 ## Schnellstart
 
 **Für Einsteiger:** Beginne mit [Kapitel 1: Erste Schritte]({{< ref "01-erste-schritte" >}})

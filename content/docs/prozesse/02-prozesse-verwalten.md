@@ -345,6 +345,16 @@ Unterprozesse werden mit dem Hauptprozess gelöscht. Archiviere stattdessen, wen
 
 ---
 
+## Diskussion zu einem Prozess
+
+Falls dein Administrator die **Diskussions-Card** für Prozesse aktiviert hat, erscheint unten auf der Prozess-Detailseite eine **Diskussion** mit Reagieren, Kommentieren und Gesehen-Tracking — analog zu LinkedIn.
+
+💡 Die Funktionsweise ist im News & Events-Handbuch beschrieben: → [**Diskussion: Reagieren, Kommentieren, Gesehen**]({{< ref "../../streams/user-manual/06-diskussion" >}})
+
+Sobald die Diskussion aktiviert ist, ersetzt sie das frühere kleinere Kommentar-Feld auf der Prozess-Detailseite. Prozess-Admins werden bei neuen Kommentaren automatisch benachrichtigt.
+
+---
+
 ## Nächste Schritte
 
 - **[Kapitel 3: Prozessschritte]({{< ref "03-prozessschritte" >}})**: Dokumentiere die einzelnen Aktivitäten

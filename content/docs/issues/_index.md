@@ -107,6 +107,7 @@ Erfahre, wie du als Administrator Meldekreise erstellst, konfigurierst und optim
 - Öffentliche Formulare einrichten
 - E-Mail-Benachrichtigungen konfigurieren
 - Wissensdatenbank aktivieren
+- 🧪 Eigene Workflow-Status mit Kanban-Ansicht in der Meldekreis-Übersicht (BETA — auf Anfrage bei [support@eliza.swiss](mailto:support@eliza.swiss))
 
 **Zielgruppe:** Administratoren, Teamleiter
 **Lesezeit:** ~25 Minuten

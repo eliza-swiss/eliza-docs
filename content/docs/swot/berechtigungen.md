@@ -477,6 +477,6 @@ Die Berechtigungen werden sofort angepasst.
 
 ---
 
-**Zurück zur [Übersicht](./)**
+**Zurück zur [Übersicht]({{< ref "index" >}})**
 
 *Stand: Oktober 2025*

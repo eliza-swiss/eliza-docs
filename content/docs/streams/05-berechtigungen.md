@@ -308,6 +308,6 @@ Berechtigungen prüfen:
 
 ## Nächste Schritte
 
-- Kehre zur [Übersicht](./) zurück
+- Kehre zur [Übersicht]({{< ref "index" >}}) zurück
 - Lies [Erste Schritte]({{< ref "01-erste-schritte" >}}) für den Einstieg
 - Erfahre mehr über [Newskanäle]({{< ref "02-newskanäle" >}})

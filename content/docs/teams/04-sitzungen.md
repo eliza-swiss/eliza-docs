@@ -18,9 +18,9 @@ In diesem Kapitel lernst du, wie du Sitzungen (Meetings) mit Agenda-Punkten und 
 
 ### Voraussetzungen
 
-- Du musst Mitglied eines Space sein
-- Du benötigst die Permission `teams.add_meeting`
-- Oder: Du bist Space-Admin
+- Du musst **Admin** des Space sein
+
+Reine Team-Mitgliedschaft (auch über eine Benutzergruppe) reicht nicht aus. Team-Mitglieder ohne Admin-Rolle sehen den Space und seine Sitzungen, können aber selbst keine neuen Sitzungen anlegen. Wenn du eine Sitzung anlegen möchtest und den Button "Sitzung" nicht siehst, bitte einen Space-Admin, dich unter "Admins" als Admin einzutragen.
 
 ### Schritt 1: Meeting-Formular öffnen
 

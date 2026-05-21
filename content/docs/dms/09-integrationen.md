@@ -192,6 +192,8 @@ ELIZA kann automatisch Zusammenfassungen von Dokumenten erstellen:
 
 ## Kommentare und Diskussionen
 
+💡 **Hinweis:** Wenn dein Administrator die **Diskussions-Card** (Social-Bar) für DMS aktiviert hat, erscheint unten am Dokument eine zusätzliche Card mit **Reagieren**, **Kommentieren** und **Gesehen-Tracking** — analog zu LinkedIn. Die Funktionsweise ist im News & Events-Handbuch beschrieben: → [**Diskussion: Reagieren, Kommentieren, Gesehen**]({{< ref "../../streams/user-manual/06-diskussion" >}})
+
 ### Kommentar hinzufügen
 
 1. Öffne das Dokument
