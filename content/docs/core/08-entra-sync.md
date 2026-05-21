@@ -16,6 +16,8 @@ tags:
 
 In diesem Kapitel lernst du, wie du Benutzer und Mitarbeitende automatisch aus Microsoft Entra ID (früher Azure AD) mit ELIZA synchronisierst.
 
+> 💡 **Du suchst SSO-Login statt Sync?** Dieses Kapitel beschreibt nur den Hintergrund-**Datenabgleich** (Server-zu-Server mit Application Permissions). Wenn Benutzer sich mit ihrem Microsoft-365-Konto in ELIZA **anmelden** sollen, lies stattdessen [Kapitel 11: Single Sign-On (SSO) mit Microsoft 365 einrichten]({{< ref "11-sso-login" >}}). Beide Integrationen können parallel betrieben werden.
+
 ## Lernziele
 
 Nach diesem Kapitel kannst du:

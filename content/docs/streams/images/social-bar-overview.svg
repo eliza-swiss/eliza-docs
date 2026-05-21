@@ -1,0 +1,126 @@
+<svg width="800" height="640" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.1"/>
+    </filter>
+    <style>
+      .title { font-family: 'Roboto', Arial, sans-serif; font-weight: bold; }
+      .text { font-family: 'Roboto', Arial, sans-serif; }
+      .small { font-family: 'Roboto', Arial, sans-serif; font-size: 12px; }
+      .tiny { font-family: 'Roboto', Arial, sans-serif; font-size: 10px; }
+      .mono { font-family: 'Roboto Mono', monospace; }
+      .annotation { font-family: 'Roboto', Arial, sans-serif; font-size: 11px; font-style: italic; }
+    </style>
+  </defs>
+
+  <!-- Hintergrund -->
+  <rect width="800" height="640" fill="#f5f5f5"/>
+
+  <!-- Lesson/Document/Process Card (oben angedeutet) -->
+  <rect x="30" y="20" width="540" height="60" rx="8" fill="#fff" filter="url(#shadow)"/>
+  <text x="50" y="45" class="title" font-size="16" fill="#424242">Qualitätshandbuch 2026</text>
+  <text x="50" y="65" class="small" fill="#9E9E9E">Inhalt der Lektion / des Dokuments / des Prozesses…</text>
+
+  <!-- Diskussions-Card -->
+  <rect x="30" y="100" width="540" height="500" rx="8" fill="#fff" filter="url(#shadow)"/>
+
+  <!-- Card Title -->
+  <text x="50" y="135" class="title" font-size="20" fill="#424242">Diskussion</text>
+  <line x1="50" y1="155" x2="550" y2="155" stroke="#eeeeee" stroke-width="1"/>
+
+  <!-- Reaction Summary (über der Action Bar) -->
+  <g transform="translate(50, 175)">
+    <rect width="80" height="26" rx="13" fill="#f5f5f5"/>
+    <text x="10" y="18" font-size="14">👍</text>
+    <text x="30" y="18" font-size="14">❤️</text>
+    <text x="48" y="18" font-size="14">🔥</text>
+    <text x="65" y="18" class="small" fill="#666">4</text>
+  </g>
+
+  <!-- Action Bar (Reagieren / Kommentieren / Stats) -->
+  <line x1="50" y1="215" x2="550" y2="215" stroke="#eeeeee" stroke-width="1"/>
+  <g transform="translate(50, 232)">
+    <!-- Reagieren Button -->
+    <text x="0" y="14" font-size="16">👍</text>
+    <text x="22" y="15" class="text" font-size="14" fill="#1976D2" font-weight="bold">Reagieren</text>
+    <!-- Trenner -->
+    <line x1="110" y1="0" x2="110" y2="22" stroke="#dddddd"/>
+    <!-- Kommentieren Button -->
+    <text x="125" y="14" font-size="14">💬</text>
+    <text x="148" y="15" class="text" font-size="14" fill="#1976D2" font-weight="bold">Kommentieren (2)</text>
+    <!-- Stats rechts -->
+    <text x="430" y="15" font-size="14">👁</text>
+    <text x="450" y="15" class="text" font-size="14" fill="#9E9E9E">3</text>
+  </g>
+  <line x1="50" y1="265" x2="550" y2="265" stroke="#eeeeee" stroke-width="1"/>
+
+  <!-- Kommentar-Eingabefeld -->
+  <g transform="translate(50, 285)">
+    <circle cx="14" cy="14" r="14" fill="#42A5F5"/>
+    <text x="9" y="19" class="small" fill="#fff" font-weight="bold">DU</text>
+    <rect x="36" y="0" width="468" height="28" rx="14" fill="#f5f5f5" stroke="#e0e0e0"/>
+    <text x="50" y="19" class="small" fill="#9E9E9E">Kommentar schreiben…</text>
+    <text x="486" y="19" font-size="14" fill="#9E9E9E">➤</text>
+  </g>
+
+  <!-- Bestehender Kommentar 1 -->
+  <g transform="translate(50, 335)">
+    <rect x="0" y="0" width="500" height="100" rx="8" fill="#fafafa"/>
+    <circle cx="20" cy="22" r="14" fill="#66BB6A"/>
+    <text x="14" y="27" class="small" fill="#fff" font-weight="bold">HB</text>
+    <text x="44" y="20" class="title" font-size="13" fill="#424242">Hugo Boss</text>
+    <text x="105" y="20" class="small" fill="#9E9E9E">vor 12 Minuten</text>
+    <text x="180" y="20" class="annotation" fill="#9E9E9E">(bearbeitet)</text>
+    <!-- Edit + Delete Icons rechts -->
+    <text x="465" y="20" font-size="12" fill="#9E9E9E">✏️</text>
+    <text x="483" y="20" font-size="12" fill="#9E9E9E">✕</text>
+    <text x="44" y="42" class="text" font-size="13" fill="#424242">Sehr verständlich erklärt — danke!</text>
+    <!-- Reply/React-Actions -->
+    <text x="44" y="78" font-size="11">↩</text>
+    <text x="58" y="78" class="small" fill="#1976D2" font-weight="bold">Antworten</text>
+    <line x1="115" y1="68" x2="115" y2="83" stroke="#dddddd"/>
+    <text x="125" y="78" font-size="11">👍</text>
+    <text x="140" y="78" class="small" fill="#1976D2" font-weight="bold">Reagieren</text>
+    <text x="200" y="78" font-size="11">❤️</text>
+    <text x="218" y="78" class="tiny" fill="#666">1</text>
+  </g>
+
+  <!-- Reply -->
+  <g transform="translate(80, 450)">
+    <rect x="0" y="0" width="470" height="65" rx="8" fill="#fafafa"/>
+    <circle cx="18" cy="20" r="12" fill="#FFA726"/>
+    <text x="12" y="25" class="tiny" fill="#fff" font-weight="bold">AD</text>
+    <text x="40" y="18" class="title" font-size="12" fill="#424242">Admin</text>
+    <text x="95" y="18" class="small" fill="#9E9E9E">vor 5 Minuten</text>
+    <text x="40" y="38" class="text" font-size="12" fill="#424242">Danke, freut mich!</text>
+    <text x="40" y="58" font-size="11">👍</text>
+    <text x="55" y="58" class="tiny" fill="#1976D2">Reagieren</text>
+  </g>
+
+  <!-- Annotationen rechts -->
+  <line x1="590" y1="135" x2="620" y2="135" stroke="#FF9800" stroke-width="2"/>
+  <text x="625" y="138" class="annotation" fill="#FF9800">Karten-Titel</text>
+
+  <line x1="590" y1="188" x2="620" y2="188" stroke="#FF9800" stroke-width="2"/>
+  <text x="625" y="178" class="annotation" fill="#FF9800">Reaktions-Übersicht</text>
+  <text x="625" y="195" class="tiny" fill="#666">Klick öffnet Modal</text>
+  <text x="625" y="210" class="tiny" fill="#666">mit allen Reaktionen</text>
+
+  <line x1="590" y1="245" x2="620" y2="245" stroke="#FF9800" stroke-width="2"/>
+  <text x="625" y="240" class="annotation" fill="#FF9800">Aktions-Leiste</text>
+  <text x="625" y="258" class="tiny" fill="#666">Reagieren · Kommentieren ·</text>
+  <text x="625" y="272" class="tiny" fill="#666">Gesehen-Counter</text>
+
+  <line x1="590" y1="350" x2="620" y2="350" stroke="#FF9800" stroke-width="2"/>
+  <text x="625" y="345" class="annotation" fill="#FF9800">Kommentar mit</text>
+  <text x="625" y="360" class="annotation" fill="#FF9800">Bearbeiten/Löschen</text>
+  <text x="625" y="378" class="tiny" fill="#666">Stift- und X-Icon nur</text>
+  <text x="625" y="392" class="tiny" fill="#666">beim eigenen Kommentar</text>
+
+  <line x1="590" y1="455" x2="620" y2="455" stroke="#FF9800" stroke-width="2"/>
+  <text x="625" y="455" class="annotation" fill="#FF9800">Antwort (eingerückt)</text>
+  <text x="625" y="473" class="tiny" fill="#666">eine Ebene Verschachtelung</text>
+
+  <!-- Fussnote -->
+  <text x="30" y="624" class="tiny" fill="#9E9E9E">Diese Card erscheint identisch unter News, DMS-Dokumenten, Tutorials-Lektionen und Prozessen.</text>
+</svg>

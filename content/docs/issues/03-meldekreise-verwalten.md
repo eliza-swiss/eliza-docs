@@ -312,6 +312,90 @@ Wenn das Zeiterfassungsmodul aktiviert ist, kannst du Zeiterfassung für Meldung
 
 Benutzer können dann beim Bearbeiten von Meldungen Arbeitszeit erfassen.
 
+## Eigene Workflow-Status (BETA)
+
+> **🧪 BETA-Funktion**: Diese Funktion befindet sich in der Beta-Phase und ist standardmässig deaktiviert. Wenn du sie ausprobieren möchtest, melde dich bei [support@eliza.swiss](mailto:support@eliza.swiss) — wir schalten sie gerne für deine Installation frei.
+
+Statt der klassischen sieben Status (Neu, In Prüfung, Akzeptiert, …) kannst du **pro Meldekreis** eigene Workflow-Status definieren — mit eigener Bezeichnung, Farbe, Icon und gestufter Sichtbarkeit. Sobald mindestens ein Custom-Status angelegt ist, zeigt die **Meldekreis-Übersicht** die Meldungen automatisch als Kanban mit Drag & Drop zwischen den Status-Spalten — eine separate Board-Ansicht ist nicht nötig.
+
+![Kanban-Ansicht der Meldekreis-Übersicht mit Custom Workflow-Status](images/kanban_custom_states.svg)
+
+### Status anlegen
+
+1. Öffne den Meldekreis und klicke in der Tab-Navigation auf **Workflow** (Zeitleiste-Icon)
+2. Klicke auf **Status hinzufügen**
+3. Felder ausfüllen:
+   - **Bezeichnung**: Anzeigename, z. B. "Anfrage erhalten"
+   - **Slug**: interner Bezeichner, z. B. "anfrage" (eindeutig pro Meldekreis)
+   - **Farbe**: MaterializeCSS-Farbklasse (z. B. blue lighten-2, green)
+   - **Icon** (optional): Material-Icon zur visuellen Unterscheidung
+   - **Startstatus**: wird neuen Meldungen automatisch zugewiesen (genau ein Status pro Meldekreis)
+   - **Abgeschlossen**: Meldungen in diesem Status zählen nicht mehr als offen
+   - **Sichtbarkeit**: siehe Tabelle unten
+4. **Speichern**
+
+Die Reihenfolge passt du anschliessend per Drag & Drop am Punktraster-Symbol an — sie bestimmt die Spalten auf dem Kanban-Board.
+
+![Workflow-Editor mit Custom Workflow-Status](images/workflow_editor.svg)
+
+### Sichtbarkeitsstufen
+
+Jeder Status hat eine eigene Sichtbarkeitsstufe — ideal für Triage-Phasen:
+
+| Stufe | Wer sieht Meldungen in diesem Status? |
+|-------|---------------------------------------|
+| **Alle Teammitglieder** | Jede berechtigte Person sieht die Meldung (Standard) |
+| **Nur Tracker-Admins** | Nur Admins — perfekt für Triage, bevor das Team eingebunden wird |
+| **Admins + zuständige Person** | Nur die zugewiesene Person und Admins sehen die Meldung |
+
+### Kanban-Ansicht nutzen
+
+Sobald mindestens ein Custom-Status existiert, zeigt die **Meldekreis-Übersicht** die Meldungen automatisch als Kanban mit den Status als Spalten — kein separates Board und keine zusätzliche Tab-Navigation:
+
+1. Jede Meldung erscheint als Karte in der Spalte ihres aktuellen Status
+2. Ziehe eine Karte in eine andere Spalte, um den Status zu wechseln
+3. Ein Modal bestätigt den Statuswechsel und erlaubt einen optionalen Kommentar — auch als interner Kommentar
+4. Die Änderung wird gespeichert und als System-Kommentar (`Status geändert: X → Y`) im Verlauf der Meldung dokumentiert
+
+### Meldekreis-Wizard
+
+Beim Anlegen eines neuen Meldekreises führt dich ein **3-Schritte-Wizard** durch die Konfiguration:
+
+1. **Basis**: Titel, Beschreibung, Symbol
+2. **Workflow**: Auswahl einer Workflow-Vorlage (z. B. Sales-Pipeline, Support mit Triage) oder klassischer Workflow ohne Custom States
+3. **Zugriff**: Admins, Team, Sichtbarkeit
+
+Die Vorlagen kannst du anschliessend jederzeit über den Workflow-Editor anpassen.
+
+### Beispiel: Sales-Pipeline
+
+| Position | Status | Farbe | Markierung |
+|----------|--------|-------|------------|
+| 1 | Anfrage | Grau | Startstatus |
+| 2 | Qualifiziert | Hellblau | |
+| 3 | Präsentation | Blau | |
+| 4 | Angebot gesendet | Hellorange | |
+| 5 | Verhandlung | Orange | |
+| 6 | Mündliche Zusage | Hellgrün | |
+| 7 | Auftrag gewonnen | Grün | abgeschlossen |
+| 8 | Verloren | Rot | abgeschlossen |
+
+### Beispiel: Support mit Triage
+
+| Position | Status | Sichtbarkeit | Beschreibung |
+|----------|--------|--------------|--------------|
+| 1 | Eingegangen | Nur Admins | Triage-Phase |
+| 2 | Triagiert | Admins + zuständige Person | |
+| 3 | In Bearbeitung | Alle | Team sieht es ab hier |
+| 4 | Warte auf Kunde | Alle | |
+| 5 | Gelöst | Alle | abgeschlossen |
+
+### Status löschen
+
+Wenn du einen Status löschst, wirst du gefragt, in welchen anderen Status die zugehörigen Meldungen umgeordnet werden sollen — keine Meldung geht verloren.
+
+> **💡 Tipp:** Solange du keine eigenen Status anlegst, läuft alles wie bisher mit den klassischen Status weiter. Bestehende Meldekreise sind also nicht betroffen, wenn die Funktion freigeschaltet wird.
+
 ## Chatbot-Integration
 
 Du kannst einen Chatbot-Template für den Meldekreis hinterlegen:

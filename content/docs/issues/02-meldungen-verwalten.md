@@ -116,6 +116,8 @@ Der Kommentarbereich zeigt den gesamten Verlauf:
 
 ## Status-Workflow
 
+> **🧪 BETA: Eigene Workflow-Status**: Neu kannst du pro Meldekreis eigene Workflow-Status mit Kanban-Board definieren — statt der klassischen sieben Status. Die Funktion befindet sich in der Beta-Phase und ist standardmässig deaktiviert. Melde dich bei [support@eliza.swiss](mailto:support@eliza.swiss), um sie freischalten zu lassen. Details siehe [Kapitel 3: Eigene Workflow-Status]({{< ref "03-meldekreise-verwalten#eigene-workflow-status-beta" >}}).
+
 ### Übersicht der Status
 
 Meldungen durchlaufen einen definierten Workflow:

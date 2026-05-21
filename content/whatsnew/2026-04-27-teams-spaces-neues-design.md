@@ -1,13 +1,13 @@
 ---
-title: "Spaces und Boards im neuen Design – mit individueller Farbwahl"
+title: "Teams: Spaces und Boards im neuen Design – mit individueller Farbwahl"
 date: 2026-04-27
-category: "Spaces"
+category: "Teams"
 metadata:
-  category: "Spaces"
+  category: "Teams"
 slug: "teams-spaces-neues-design"
 ---
 
-Das Spaces-Modul in ELIZA hat eine umfassende Frischzellenkur erhalten. Spaces und Boards erscheinen jetzt in einem einheitlichen Karten-Design, die SWOT-Analyse ist übersichtlicher als je zuvor – und das Highlight: Du kannst jedem Space ab sofort eine eigene Farbe geben.
+Das Teams-Modul in ELIZA hat eine umfassende Frischzellenkur erhalten. Spaces und Boards erscheinen jetzt in einem einheitlichen Karten-Design, die SWOT-Analyse ist übersichtlicher als je zuvor – und das Highlight: Du kannst jedem Space ab sofort eine eigene Farbe geben.
 
 [https://app.arcade.software/share/iWWp6gDpLTU6NyZ4NKS0](https://app.arcade.software/share/iWWp6gDpLTU6NyZ4NKS0)
 
@@ -32,13 +32,13 @@ Das Spaces-Modul in ELIZA hat eine umfassende Frischzellenkur erhalten. Spaces u
 
 ## Wie profitierst du davon?
 
-- Du erkennst deine wichtigsten Spaces sofort an der Farbe – ideal in Installationen mit vielen Spaces
+- Du erkennst deine wichtigsten Spaces sofort an der Farbe – ideal in Installationen mit vielen Teams
 - Das einheitliche Karten-Layout macht das Dashboard übersichtlicher und reduziert die Informationsflut
 - Dank der neuen Schnellfilter findest du schneller, was du suchst, ohne endlos zu scrollen
 
 ## Wie wählst du eine Farbe für deinen Space?
 
-1. Öffne den gewünschten Space im Spaces-Modul
+1. Öffne den gewünschten Space im Teams-Modul
 2. Klicke im Menü auf das **Palette-Icon** und wähle **Farbe ändern**
 3. Klicke auf die gewünschte Hintergrundfarbe aus der Palette
 4. Wähle die passende Schriftfarbe (Schwarz oder Weiss) für optimalen Kontrast

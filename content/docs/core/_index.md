@@ -218,6 +218,29 @@ Lerne, wie du ELIZA als App auf deinem Smartphone installierst und Push-Benachri
 
 ---
 
+### [11. Single Sign-On (SSO) mit Microsoft 365 einrichten](single-sign-on-sso-mit-microsoft-365/)
+
+**Passwortloser Login mit Microsoft-365-Konten**
+
+Schritt-für-Schritt-Anleitung für IT-Administratoren beim Kunden, wie SSO mit Microsoft Entra ID (Azure AD) eingerichtet wird.
+
+**Inhalte:**
+- Unterschied SSO-Login vs. Entra Sync
+- App Registration in Entra ID erstellen (mit Redirect-URI)
+- Delegated Permissions konfigurieren
+- **Admin-Consent erteilen** (löst "Genehmigung erforderlich")
+- Client Secret erstellen und verwalten
+- SSO-Konfiguration in ELIZA (Whitelist, Standard-Gruppe, Login ausblenden)
+- Ersten Login testen
+- Troubleshooting (AADSTS-Fehlercodes, Redirect-URI-Mismatch, Secret-Ablauf)
+- Sicherheitsempfehlungen und FAQ
+
+**Zielgruppe:** IT-Administratoren beim Kunden, Microsoft-365-Admins
+**Lesezeit:** ~20 Minuten
+**Besonderes:** Praxis-Anleitung für die häufigsten Stolpersteine im OAuth-Flow
+
+---
+
 ## Zielgruppen
 
 ### 🔧 Administratoren (Superuser)

@@ -326,6 +326,16 @@ Als Lernender kannst du eine Lektion als abgeschlossen markieren:
 
 ---
 
+## Diskussion zu einer Lektion
+
+Falls dein Administrator die **Diskussions-Card** für Tutorials aktiviert hat, erscheint am Ende jeder Lektion (auch im Vollbild-Modus) eine **Diskussion** mit Reagieren, Kommentieren und Gesehen-Tracking — analog zu LinkedIn.
+
+💡 Die Funktionsweise ist im News & Events-Handbuch beschrieben: → [**Diskussion: Reagieren, Kommentieren, Gesehen**]({{< ref "../../streams/user-manual/06-diskussion" >}})
+
+Kurz: Lernende können Fragen stellen oder Feedback geben, Kurs-Admins werden automatisch benachrichtigt und können sehen, wer eine Lektion schon angeschaut hat.
+
+---
+
 ## Nächste Schritte
 
 - **[Kapitel 5: Kursanmeldungen]({{< ref "05-kursanmeldungen" >}})**: Melde Teilnehmer an
