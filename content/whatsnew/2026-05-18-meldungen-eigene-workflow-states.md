@@ -11,7 +11,7 @@ slug: "meldungen-eigene-workflow-states"
 
 Bisher hatten alle Meldungen die gleichen festen Status (neu, in Prüfung, akzeptiert, ...). Jetzt kannst du **pro Meldekreis** eigene Workflow-Status definieren -- mit eigener Farbe, Reihenfolge und sogar gestufter Sichtbarkeit. Sobald du Custom Status angelegt hast, zeigt die **Meldekreis-Übersicht** die Meldungen automatisch als Kanban mit Drag & Drop zwischen den Status-Spalten.
 
-![Kanban-Ansicht der Meldekreis-Übersicht mit Custom Workflow-Status](/issues/help/images/kanban_custom_states.svg)
+![Kanban-Ansicht der Meldekreis-Übersicht mit Custom Workflow-Status](/docs/issues/images/kanban_custom_states.svg)
 
 ## Was ist neu?
 
@@ -46,7 +46,7 @@ Bisher hatten alle Meldungen die gleichen festen Status (neu, in Prüfung, akzep
 
 Wiederhole das für alle Status. Die Reihenfolge passt du per Drag & Drop am Punktraster-Symbol links an.
 
-![Workflow-Editor mit Custom Workflow-Status](/issues/help/images/workflow_editor.svg)
+![Workflow-Editor mit Custom Workflow-Status](/docs/issues/images/workflow_editor.svg)
 
 ### 2. Kanban-Ansicht nutzen
 
