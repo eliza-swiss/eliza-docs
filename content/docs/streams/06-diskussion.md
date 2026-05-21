@@ -30,7 +30,7 @@ Sobald die Administration sie aktiviert hat, erscheint die Diskussions-Card am E
 - **Tutorials-Lektionen**
 - **Prozesse**
 
-![Diskussions-Card mit Reagieren, Kommentieren und Seen-Tracking](images/social-bar-overview.svg)
+![Diskussions-Card mit Reagieren, Kommentieren und Seen-Tracking](/docs/streams/images/social-bar-overview.svg)
 
 Jede dieser Seiten zeigt die gleiche Diskussions-Card mit derselben Bedienung — was du hier lernst, gilt überall.
 
@@ -69,7 +69,7 @@ Die Zusammenfassung oberhalb der Action-Bar zeigt die häufigsten Emojis und die
 
 Kommentare sind ausführlicher als Reaktionen — geeignet für Rückmeldungen, Fragen oder Diskussionen.
 
-![Action-Bar: Reagieren, Kommentieren und Stats-Pillen](images/social-bar-actions.svg)
+![Action-Bar: Reagieren, Kommentieren und Stats-Pillen](/docs/streams/images/social-bar-actions.svg)
 
 ### Kommentar verfassen
 

@@ -32,7 +32,7 @@ Mit der Einladungs-Funktion kannst du gezielt Benutzer zum Ausfüllen eines Form
 1. Öffne die **Formular-Vorlage**, zu der du Benutzer einladen möchtest
 2. Klicke auf den Button **"Einladen"** (person_add Icon) in der Aktionsleiste
 
-![Einladungs-Workflow](images/invitation-workflow.svg)
+![Einladungs-Workflow](/docs/forms/images/invitation-workflow.svg)
 
 ### Einladungsformular ausfüllen
 

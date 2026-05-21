@@ -97,7 +97,7 @@ Wenn die Vorlage als "Öffentliches Formular" konfiguriert ist:
 
 Das Formular präsentiert alle Fragen in der definierten Reihenfolge.
 
-![Formular ausfüllen mit Fortschrittsanzeige](images/form-fill-progress.svg)
+![Formular ausfüllen mit Fortschrittsanzeige](/docs/forms/images/form-fill-progress.svg)
 
 ### Formular-Aufbau
 

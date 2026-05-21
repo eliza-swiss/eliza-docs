@@ -31,7 +31,7 @@ Du gelangst automatisch zur News-Übersicht, wo du die neuesten Nachrichten aus 
 
 ## Die Startseite im Überblick
 
-![News-Feed Übersicht](images/news-feed-overview.svg)
+![News-Feed Übersicht](/docs/streams/images/news-feed-overview.svg)
 
 Die News-Startseite zeigt dir:
 

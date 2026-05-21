@@ -243,7 +243,7 @@ Direkter Link zum ausgefüllten Formular:
 
 ### Workflow-Übersicht
 
-![Workflow-Übersicht: Formular-Actions](images/workflow-overview.svg)
+![Workflow-Übersicht: Formular-Actions](/docs/forms/images/workflow-overview.svg)
 
 ### Action-Ausführung im Detail
 

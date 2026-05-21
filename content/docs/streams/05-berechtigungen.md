@@ -203,7 +203,7 @@ Newskanäle können einen von drei Abo-Modi haben:
 
 ## Abonnements verwalten
 
-![Abo-Einstellungen](images/abo-settings.svg)
+![Abo-Einstellungen](/docs/streams/images/abo-settings.svg)
 
 ### Einen Kanal abonnieren
 

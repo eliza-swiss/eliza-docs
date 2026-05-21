@@ -27,7 +27,7 @@ Ein Newskanal ist ein thematischer Container, der zusammengehörige News und Eve
 
 **Navigationspfad:** News & Events → Newskanäle
 
-![Newskanal-Liste](images/newskanal-list.svg)
+![Newskanal-Liste](/docs/streams/images/newskanal-list.svg)
 
 Du siehst eine Übersicht aller Newskanäle, auf die du Zugriff hast. Die Ansicht zeigt:
 

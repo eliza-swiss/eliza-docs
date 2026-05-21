@@ -16,7 +16,7 @@ icon: "public"
 
 Du kannst freigegebene Dokumente über einen öffentlichen Link ohne Login zugänglich machen. Externe Personen — Kunden, Partner oder Prüfer — können diese Dokumente direkt im Browser ansehen und herunterladen, ohne ein ELIZA-Benutzerkonto zu benötigen.
 
-![Öffentliche Dokumente in ELIZA](images/oeffentliche_dokumente.svg)
+![Öffentliche Dokumente in ELIZA](/docs/dms/images/oeffentliche_dokumente.svg)
 
 ## Voraussetzungen
 

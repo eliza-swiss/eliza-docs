@@ -58,7 +58,7 @@ Erstelle ein Mitarbeiter-Feedback-Formular mit folgenden Fragen:
 
 #### 🎓 Quiz über ISO 9001
 
-![KI-gestützte Quiz-Erstellung](images/ai-quiz-creation.svg)
+![KI-gestützte Quiz-Erstellung](/docs/forms/images/ai-quiz-creation.svg)
 
 **Beispiel-Prompt:**
 

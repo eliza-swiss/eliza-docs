@@ -35,7 +35,7 @@ In diesem Kapitel lernst du, wie du News-Beiträge erstellst, formatierst und mi
 
 ## Das News-Formular
 
-![News-Formular](images/news-form.svg)
+![News-Formular](/docs/streams/images/news-form.svg)
 
 ### Grundlegende Felder
 

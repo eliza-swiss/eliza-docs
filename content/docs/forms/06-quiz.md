@@ -15,7 +15,7 @@ tags:
 
 Der Quiz-Modus ermöglicht es dir, interaktive Tests und Trainings zu erstellen. Du kannst Fragen mit korrekten Antworten versehen, Punkte vergeben und eine Bestehensgrenze festlegen.
 
-![Quiz-Frage ausfüllen](images/quiz-fill-single-choice.svg)
+![Quiz-Frage ausfüllen](/docs/forms/images/quiz-fill-single-choice.svg)
 
 ## Quiz-Modi
 
@@ -122,7 +122,7 @@ Gib den korrekten numerischen Wert im Feld **"Richtige Antwort"** ein
 
 ## Quiz-Ergebnis-Anzeige
 
-![Quiz-Ergebnis bestanden](images/quiz-result-passed.svg)
+![Quiz-Ergebnis bestanden](/docs/forms/images/quiz-result-passed.svg)
 
 ### Was Teilnehmer nach dem Absenden sehen
 
