@@ -289,4 +289,4 @@ Abonniere den iCal-Feed in deiner Kalender-App. Der Feed aktualisiert sich autom
 ## Nächste Schritte
 
 - Verstehe das [Berechtigungskonzept]({{< ref "05-berechtigungen" >}})
-- Kehre zur [Übersicht]({{< ref "index" >}}) zurück
+- Kehre zur [Übersicht](./) zurück
