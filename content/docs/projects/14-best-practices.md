@@ -1632,7 +1632,7 @@ Status Parent: "In Arbeit" (wenn mind. 1 Child "In Arbeit")
 
 ## 📞 Weitere Hilfe
 
-- **User Manual Hauptseite:** [Übersicht]({{< ref "index" >}})
+- **User Manual Hauptseite:** [Übersicht](./)
 - **Visualisierungen:** Siehe [Visualisierungen]({{< ref "13-visualisierungen" >}})
 - **Support:** support@eliza.swiss
 - **Community:** ELIZA User Forum (intern)
