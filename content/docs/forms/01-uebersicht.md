@@ -19,7 +19,7 @@ Das Forms-Modul in ELIZA ist dein Werkzeug für die Erstellung, Verwaltung und A
 - **Antworten sammeln** und auswerten
 - **Vorlagen wiederverwenden** für wiederkehrende Befragungen
 
-![Forms-Modul Übersicht](images/forms_overview.svg)
+![Forms-Modul Übersicht](/docs/forms/images/forms_overview.svg)
 
 ## Hauptfunktionen auf einen Blick
 

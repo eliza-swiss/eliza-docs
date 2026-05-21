@@ -109,7 +109,7 @@ Zeigt nur Events, die dich betreffen:
 
 ## Event-Detailansicht
 
-![Event mit Teilnehmern](images/event-participants.svg)
+![Event mit Teilnehmern](/docs/streams/images/event-participants.svg)
 
 ## Teilnehmer einladen
 

@@ -318,7 +318,7 @@ Benutzer können dann beim Bearbeiten von Meldungen Arbeitszeit erfassen.
 
 Statt der klassischen sieben Status (Neu, In Prüfung, Akzeptiert, …) kannst du **pro Meldekreis** eigene Workflow-Status definieren — mit eigener Bezeichnung, Farbe, Icon und gestufter Sichtbarkeit. Sobald mindestens ein Custom-Status angelegt ist, zeigt die **Meldekreis-Übersicht** die Meldungen automatisch als Kanban mit Drag & Drop zwischen den Status-Spalten — eine separate Board-Ansicht ist nicht nötig.
 
-![Kanban-Ansicht der Meldekreis-Übersicht mit Custom Workflow-Status](images/kanban_custom_states.svg)
+![Kanban-Ansicht der Meldekreis-Übersicht mit Custom Workflow-Status](/docs/issues/images/kanban_custom_states.svg)
 
 ### Status anlegen
 
@@ -336,7 +336,7 @@ Statt der klassischen sieben Status (Neu, In Prüfung, Akzeptiert, …) kannst d
 
 Die Reihenfolge passt du anschliessend per Drag & Drop am Punktraster-Symbol an — sie bestimmt die Spalten auf dem Kanban-Board.
 
-![Workflow-Editor mit Custom Workflow-Status](images/workflow_editor.svg)
+![Workflow-Editor mit Custom Workflow-Status](/docs/issues/images/workflow_editor.svg)
 
 ### Sichtbarkeitsstufen
 

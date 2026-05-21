@@ -42,7 +42,7 @@ Beide können kombiniert werden, sind aber unabhängig voneinander.
 
 Die Anmeldung läuft als klassischer **OAuth 2.0 / OpenID Connect Flow** ab. Du als Admin musst nichts davon manuell ausführen – die Abbildung zeigt nur, was im Hintergrund passiert:
 
-![Ablauf SSO-Login mit Microsoft 365](images/sso_login_flow.svg)
+![Ablauf SSO-Login mit Microsoft 365](/docs/core/images/sso_login_flow.svg)
 
 **Kurzfassung der Schritte:**
 

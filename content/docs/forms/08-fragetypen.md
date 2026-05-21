@@ -13,7 +13,7 @@ Das Forms-Modul bietet 16 verschiedene Fragetypen für unterschiedliche Anwendun
 
 ## 📰 Inhaltsblöcke
 
-![Inhaltsblock Fragetyp](images/fragetypen-content.svg)
+![Inhaltsblock Fragetyp](/docs/forms/images/fragetypen-content.svg)
 
 ### 1. Inhaltsblock
 **Antworttyp:** `content`
@@ -65,7 +65,7 @@ ca. 10 Minuten. Alle Antworten werden vertraulich behandelt.
 
 ## 📝 Text-Eingabe
 
-![Text-Eingabe Fragetypen](images/fragetypen-text.svg)
+![Text-Eingabe Fragetypen](/docs/forms/images/fragetypen-text.svg)
 
 ### 2. Einzeiliger Text
 **Antworttyp:** `text`
@@ -116,7 +116,7 @@ Für längere Texteingaben und offenes Feedback.
 
 ## 🔢 Zahlen-Eingabe
 
-![Zahlen-Eingabe Fragetypen](images/fragetypen-numbers.svg)
+![Zahlen-Eingabe Fragetypen](/docs/forms/images/fragetypen-numbers.svg)
 
 ### 4. Ganzzahl
 **Antworttyp:** `integer`
@@ -192,7 +192,7 @@ Für Datumsangaben.
 
 ## ☑️ Auswahl-Fragen
 
-![Auswahl-Fragetypen](images/fragetypen-choice.svg)
+![Auswahl-Fragetypen](/docs/forms/images/fragetypen-choice.svg)
 
 ### 7. Einfachauswahl (Single Choice)
 **Antworttyp:** `single_choice`
@@ -280,7 +280,7 @@ Einfache Entscheidungsfrage.
 
 Numerische Bewertung auf einer Skala mit **4 verschiedenen Darstellungsformen**.
 
-![Bewertungsskala Display-Modi](images/fragetypen-scale.svg)
+![Bewertungsskala Display-Modi](/docs/forms/images/fragetypen-scale.svg)
 
 **Konfiguration:**
 - Minimum-Wert (z.B. 0, 1)
@@ -421,7 +421,7 @@ Beim Bearbeiten einer Scale-Frage kannst du den Display-Modus wählen:
 
 ### 11. Matrix-Frage
 
-![Matrix und Ranking Fragetypen](images/fragetypen-matrix.svg)
+![Matrix und Ranking Fragetypen](/docs/forms/images/fragetypen-matrix.svg)
 
 **Antworttyp:** `matrix`
 
@@ -488,7 +488,7 @@ Verfügbare Themen (ziehen und ablegen):
 
 ## 📎 Spezial-Typen
 
-![Spezial-Fragetypen](images/fragetypen-special.svg)
+![Spezial-Fragetypen](/docs/forms/images/fragetypen-special.svg)
 
 ### 13. Datei-Upload
 **Antworttyp:** `file`
