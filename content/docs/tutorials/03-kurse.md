@@ -20,11 +20,31 @@ Kurse sind in sich geschlossene Schulungseinheiten zu einem bestimmten Thema. In
 
 Ein Kurs in ELIZA:
 
-- **Gehört zu einem Kursordner** und erbt dessen Berechtigungen
+- **Gehört zu einem Ordner** und erbt dessen Berechtigungen
+- **Hat einen Modus**: Schulung (mit Anmeldung/Fortschritt) oder Handbuch (Nachschlagewerk)
 - **Enthält Lektionen** mit strukturierten Lerninhalten
+- **Kann Labels** zur thematischen Verschlagwortung haben
 - **Kann Skills verknüpfen** für Kompetenzentwicklung
-- **Ermöglicht Teilnehmer-Anmeldungen** mit Fortschrittsverfolgung
-- **Unterstützt Zertifikate** als Teilnahmebestätigung
+- **Ermöglicht Teilnehmer-Anmeldungen** mit Fortschrittsverfolgung (Schulungs-Modus)
+- **Unterstützt Zertifikate** als Teilnahmebestätigung (Schulungs-Modus)
+
+> 💡 Im Handbuch-Modus entfallen Anmeldung, Fortschritt und Quiz. Stattdessen werden Inline-Editing, Kommentare und eine Artikel-Ansicht aktiviert. Details: [Kapitel 8: Handbuch-Modus]({{< ref "08-handbuch-modus" >}}).
+
+### Schulung vs. Handbuch — Modus wählen
+
+| Aspekt | Schulung | Handbuch |
+|--------|----------|----------|
+| **Anmeldung / Enrollment** | Ja | Nein |
+| **Fortschrittsverfolgung** | Ja | Nein |
+| **Quiz / Tests** | Ja | Nein |
+| **Zertifikat** | Ja | Nein |
+| **Einladungen zu einzelnen Lektionen** | Ja | Ja |
+| **Inline-Editing der Inhalte** | Über Lektions-Bearbeiten | Direkt auf der Artikel-Seite |
+| **Kommentare** | Nein | Ja (auf Artikel-Ebene) |
+| **Section-Anker-Navigation** | Nein | Ja |
+| **Vollbild-Lese-Ansicht** | Vollbild für Lektion | Eigene Artikel-Ansicht |
+
+Der Modus wird beim Erstellen festgelegt und sollte nicht mehr gewechselt werden, sobald Lektionen existieren.
 
 ---
 
@@ -34,17 +54,26 @@ Ein Kurs in ELIZA:
 
 Du benötigst:
 
-- Bearbeitungsrechte für den Kursordner (Admin-Team-Mitglied oder `add_course`-Berechtigung)
+- Bearbeitungsrechte für den Ordner (Admin-Team-Mitglied oder `add_course`-Berechtigung)
 
-### Schritt-für-Schritt
+### Variante 1: Wizard (empfohlen)
 
-1. **Navigiere zum Kursordner**, in dem du den Kurs erstellen möchtest
-2. **Klicke auf**: "Kurs hinzufügen" (grüner Button mit + Symbol)
+1. Wissenshub-Startseite → **Hinzufügen**
+2. **Schritt 1**: Wähle "Schulungskurs" oder "Handbuch"
+3. **Schritt 2**: Wähle (oder erstelle) einen Ordner
+4. **Schritt 3**: Titel, Beschreibung, optional Titelbild
+5. **Speichern** — der Kurs landet im Status "Entwurf" und du kannst sofort die ersten Lektionen anlegen
+
+### Variante 2: Direkt im Ordner
+
+1. **Navigiere zum Ordner**
+2. **Klicke auf**: "Schulungskurs hinzufügen" oder "Handbuch hinzufügen"
 3. **Fülle die Pflichtfelder aus**:
    - **Titel**: Aussagekräftiger Kursname
 4. **Optionale Felder** (empfohlen):
    - **Beschreibung**: Lernziele und Kursinhalte (Markdown unterstützt)
-   - **Titelbild**: Visuelles Erkennungsmerkmal
+   - **Titelbild / Cover-Bild**: Visuelles Erkennungsmerkmal (Fallback ist ein Icon-Platzhalter)
+   - **Labels**: Themen-Schlagworte zur Auffindbarkeit (siehe [Kapitel 9]({{< ref "09-labels-themen-suche" >}}))
 5. **Klicke auf**: "Speichern"
 
 Der Kurs wird im Status "Entwurf" erstellt und ist nur für Administratoren sichtbar.
@@ -60,9 +89,11 @@ Der Kurs wird im Status "Entwurf" erstellt und ist nur für Administratoren sich
 | Feld | Beschreibung | Pflicht |
 |------|--------------|---------|
 | **Titel** | Name des Kurses (max. 255 Zeichen) | ✅ |
+| **Modus** | Schulung oder Handbuch (siehe oben) | ✅ |
 | **Beschreibung** | Ausführliche Beschreibung (Markdown) | Empfohlen |
-| **Titelbild** | Bild für visuelle Darstellung | Optional |
-| **Kursordner** | Übergeordneter Ordner | Automatisch |
+| **Titelbild** | Cover-Bild für visuelle Darstellung | Optional |
+| **Ordner** | Übergeordneter Ordner | Automatisch |
+| **Labels** | Themen zur Auffindbarkeit | Optional |
 
 ### Status
 
@@ -86,6 +117,17 @@ Jeder Kurs hat einen Freigabe-Status:
 ---
 
 ## Erweiterte Einstellungen
+
+### Labels (Themen)
+
+Mit Labels (intern: `ProcessLabel`) verschlagwortest du Kurse thematisch. Labels werden im Wissenshub als klickbare Themen-Chips angezeigt und sind in der Suche durchsuchbar.
+
+**Labels vergeben:**
+
+- Im Kurs-Bearbeiten-Formular im Feld "Labels" auswählen
+- **Inline auf der Kurs-Detailseite**: Klick auf den Labels-Bereich öffnet das Inline-Edit (HTMX, kein Reload) — Labels können direkt hinzugefügt oder entfernt werden
+
+Mehr dazu in [Kapitel 9: Labels, Themen und Suche]({{< ref "09-labels-themen-suche" >}}).
 
 ### Admin-Team
 
@@ -129,6 +171,18 @@ Du kannst eine Word-Vorlage aus dem DMS hinterlegen, die als Teilnahmebestätigu
    - `{{ enrollment.completion_date }}` - Abschlussdatum
 2. **Verknüpfe die Vorlage** im Kurs-Formular unter "Zertifikatsvorlage"
 3. **Teilnehmer können nach Abschluss** ihr Zertifikat herunterladen
+
+---
+
+## Cover-Bild
+
+Pro Kurs/Handbuch kann ein **Cover-Bild** gesetzt werden:
+
+- Wird in Listen-Karten (Wissenshub, Ordner-Detail) und auf der Detailseite angezeigt
+- Bei fehlendem Bild zeigt ELIZA einen **Icon-Platzhalter** in einem zur Kategorie passenden Stil (Kurs: Schulungs-Icon, Handbuch: Buch-Icon, Ordner: Ordner-Icon)
+- Das Cover-Bild kann beim Erstellen direkt im Wizard hochgeladen oder später im Bearbeiten-Formular aktualisiert werden
+
+> 💡 Cover-Bilder erhöhen die visuelle Wiedererkennbarkeit deutlich, vor allem auf der Wissenshub-Startseite mit ihren vielen Kacheln.
 
 ---
 
@@ -282,6 +336,8 @@ Zum Löschen:
 - **[Kapitel 4: Lektionen]({{< ref "04-lektionen" >}})**: Erstelle Lerninhalte für deinen Kurs
 - **[Kapitel 5: Kursanmeldungen]({{< ref "05-kursanmeldungen" >}})**: Melde Teilnehmer an
 - **[Kapitel 6: Quiz]({{< ref "06-quiz-abschlusstests" >}})**: Füge Wissenskontrollen hinzu
+- **[Kapitel 8: Handbuch-Modus]({{< ref "08-handbuch-modus" >}})**: Wenn du den Modus "Handbuch" gewählt hast
+- **[Kapitel 9: Labels, Themen und Suche]({{< ref "09-labels-themen-suche" >}})**: Kurs mit Labels auffindbar machen
 
 ---
 

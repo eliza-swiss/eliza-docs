@@ -8,6 +8,10 @@ tags:
   - "participants"
   - "invitations"
   - "ical"
+  - "self-registration"
+  - "waitlist"
+  - "attendance"
+  - "signature"
 ---
 
 
@@ -97,7 +101,9 @@ Zeigt nur Events, die dich betreffen:
 | **Minimale Teilnehmerzahl** | Mindestanzahl für Durchführung |
 | **Maximale Teilnehmerzahl** | Kapazitätsgrenze |
 | **Anmeldefrist** | Bis wann Anmeldungen möglich sind |
+| **Selbstanmeldung erlauben** | Personen können sich ohne Einladung selbst anmelden |
 | **Unterschrift erforderlich** | Teilnehmer müssen digital unterschreiben |
+| **Teilnehmerliste für alle sichtbar** | Standardmässig aktiv. Wenn deaktiviert, sehen nur Ersteller, Admins und Anwesenheitsprüfer die Namensliste – die Teilnehmerzahl bleibt für alle sichtbar |
 
 ### Verwaltung
 
@@ -145,7 +151,10 @@ Als eingeladene Person siehst du das Event unter **Meine Events**:
 |--------|-----------|------|
 | **Eingeladen** | Keine Antwort bisher | ✉️ |
 | **Zugesagt** | Teilnahme bestätigt | ✓ |
+| **Warteliste** | Event ausgebucht, du rückst bei freien Plätzen nach | ⏳ |
 | **Abgelehnt** | Kann nicht teilnehmen | ✗ |
+
+> 💡 **Hinweis:** Hast du abgesagt, kannst du es dir anders überlegen – auf der Event-Seite erscheint ein Hinweis mit einem **Zusagen**-Button, solange das Event nicht vorbei ist. An-, Ab- und Zusagen werden jeweils mit einer Sicherheitsabfrage bestätigt.
 
 ## Anmeldefrist
 
@@ -155,6 +164,41 @@ Wenn eine **Anmeldefrist** gesetzt ist:
 - Nach der Frist: Keine Änderungen mehr möglich
 
 > 💡 **Tipp:** Setze die Anmeldefrist einige Tage vor dem Event, damit du planen kannst.
+
+## Selbst anmelden (ohne Einladung)
+
+Ist bei einem Event **Selbstanmeldung erlauben** aktiviert, kannst du dich ohne persönliche Einladung selbst eintragen.
+
+### In der Events-Übersicht
+
+In der Liste **News & Events → Events** siehst du zwei Spalten, die dir die Anmeldung erleichtern:
+
+- **Plätze**: zeigt freie Plätze an (z.B. «3 / 10»), «Ausgebucht» oder «Unbegrenzt»
+- **Anmeldung**: zeigt deinen aktuellen Status (Angemeldet / Warteliste / Eingeladen) oder einen Button **Anmelden** bzw. **Auf Warteliste** – je nachdem, ob noch Plätze frei sind
+
+Ist die Anmeldefrist abgelaufen oder das Event bereits beendet, ist keine Anmeldung mehr möglich; das wird entsprechend angezeigt.
+
+### Auf der Event-Seite
+
+Öffnest du das Event, zeigt dir ein farbiges Banner deinen Status:
+
+- **Anmelden-Banner**: «Du kannst dich selbst für dieses Event anmelden» mit Button **Anmelden** (oder **Auf Warteliste setzen**, wenn das Event voll ist)
+- **Status-Banner**: «Du bist für dieses Event angemeldet» bzw. «Du bist auf der Warteliste» – mit Button **Abmelden**
+
+Ist ein Event ausgebucht, landest du beim Anmelden automatisch auf der **Warteliste** und rückst nach, sobald ein Platz frei wird.
+
+## Anwesenheit selbst bestätigen
+
+Während ein Event läuft, kannst du als angemeldete Person deine Anwesenheit direkt selbst bestätigen:
+
+1. Öffne das Event (während es läuft)
+2. Im Status-Banner erscheint der Button **Anwesenheit bestätigen** (bzw. **Anwesenheit mit Unterschrift bestätigen**)
+3. Verlangt das Event eine Unterschrift, unterschreibst du direkt auf dem Bildschirm und bestätigst mit **Unterzeichnen**
+4. Danach zeigt das Banner «Deine Anwesenheit ist bestätigt»
+
+Das Unterschrift-Fenster zeigt dir klar, um welches Event es geht (Titel, Datum, Ort) und auf welchen Namen unterschrieben wird.
+
+> ⚠️ **Hinweis:** Der Button erscheint nur, solange das Event läuft. Sobald deine Anwesenheit bestätigt ist, kannst du dich nicht mehr abmelden.
 
 ## Teilnehmerlimits
 
@@ -186,6 +230,16 @@ Als **Anwesenheitsprüfer** oder **Admin** kannst du die tatsächliche Teilnahme
 2. Gehe zu **Teilnehmer**
 3. Markiere anwesende Personen
 4. Bei Bedarf: Lasse Teilnehmer vor Ort unterschreiben
+
+Auf der Teilnehmer-Seite hast du zusätzlich:
+
+- **Anwesenheitsliste**: alle als anwesend markierten Personen. Bei unterschriftspflichtigen Events siehst du pro Person, ob die Unterschrift vorliegt («Signiert») oder noch fehlt («Unterschrift offen»). Fehlende Unterschriften kannst du über **Unterschrift nachtragen** erfassen.
+- **Abwesend**: zugesagte Personen, die noch nicht als anwesend markiert sind – so erkennst du auf einen Blick, wer fehlt.
+- **Excel-Export**: die Anwesenheitsliste lässt sich als Excel-Datei exportieren (inkl. Unterschriftsbild).
+
+Anwesenheit und Unterschrift lassen sich auch **nach dem Event** noch erfassen oder nachtragen.
+
+> 💡 **Hinweis:** Teilnehmende werden mit Avatar dargestellt. Der Name ist nur für berechtigte Personen (mit der Berechtigung «Benutzer ansehen») anklickbar.
 
 ## Event anheften (Sticky)
 
@@ -272,7 +326,11 @@ Ja, als Admin siehst du die vollständige Teilnehmerliste mit Status und kannst 
 
 ### Was passiert, wenn ich ein Event absage?
 
-Dein Status ändert sich zu "Abgelehnt". Du kannst dies rückgängig machen, solange die Anmeldefrist nicht abgelaufen ist.
+Dein Status ändert sich zu "Abgelehnt". Du kannst es dir anders überlegen: Auf der Event-Seite erscheint ein **Zusagen**-Button, solange das Event nicht vorbei ist – das gilt auch für Events ohne Selbstanmeldung. Hast du deine Anwesenheit aber bereits bestätigt, ist eine Abmeldung nicht mehr möglich.
+
+### Kann ich mich nach einer Abmeldung wieder anmelden?
+
+Ja. Bei Events mit Selbstanmeldung erscheint wieder der **Anmelden**-Button, bei Einladungs-Events ein **Zusagen**-Button – jeweils solange das Event nicht beendet ist.
 
 ### Werden Teilnehmer bei Änderungen benachrichtigt?
 

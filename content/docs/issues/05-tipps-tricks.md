@@ -97,19 +97,21 @@ Verwende das Format `Kategorie:Wert` für organisierte Labels:
 
 **Für Administratoren:**
 
-1. **Zentrale Benachrichtigungs-E-Mail** einrichten statt einzelner Admins
-2. **E-Mail-Filter** oder Ordner für Meldungs-E-Mails erstellen
-3. Bei hohem Volumen: **Automatische E-Mails deaktivieren**, ELIZA-Benachrichtigungen nutzen
+1. **Favoriten-Modus aktivieren**: Schalter «Automatische E-Mails an alle Beteiligten versenden» im Meldekreis deaktivieren – dann abonniert jede Person per Stern selbst die relevanten Meldungen (siehe [Meldekreise verwalten]({{< ref "03-meldekreise-verwalten" >}}))
+2. **Zentrale Benachrichtigungs-E-Mail** einrichten statt einzelner Admins
+3. **E-Mail-Filter** oder Ordner für Meldungs-E-Mails erstellen
 
 **Für Benutzer:**
 
-1. **Nicht bei jeder Aktion benachrichtigen** - nur bei wichtigen Änderungen
+1. **Meldungen gezielt abonnieren**: Den Stern nur bei Meldungen setzen, die dich wirklich interessieren
 2. **Benachrichtigungs-Auswahl gezielt setzen** beim Kommentieren
-3. ELIZA-Benachrichtigungen in der Sidebar prüfen
+3. **E-Mails persönlich abschalten**: In den Einstellungen «Benachrichtigungen per E-Mail erhalten» deaktivieren – die Benachrichtigungen bleiben im Dashboard sichtbar
 
 ### Wichtige Benachrichtigungen nicht verpassen
 
 **Sicherstellen:**
+
+- Relevante Meldungen mit dem **Stern** als Favorit abonnieren
 - E-Mail-Adresse im Profil ist aktuell
 - Meldungs-E-Mails landen nicht im Spam
 - Regelmässig "Mir zugewiesen" prüfen
@@ -250,21 +252,24 @@ Bei Problemen mit Meldungen:
 - Prüfe, ob du im richtigen Meldekreis bist
 - Nutze ggf. ein öffentliches Formular
 
-### Problem: E-Mail-Benachrichtigungen fehlen
+### Problem: Benachrichtigungen fehlen
 
-**Symptom:** Du erhältst keine E-Mails zu Meldungsänderungen.
+**Symptom:** Du erhältst keine Benachrichtigungen zu Meldungsänderungen.
 
 **Mögliche Ursachen:**
 
-1. **Spam-Filter**: E-Mails landen im Spam
-2. **E-Mail-Adresse**: Im Profil fehlt oder ist falsch
-3. **Benachrichtigungen deaktiviert**: Im Meldekreis oder global
-4. **Nicht als Beitragender**: Du bist nicht an der Meldung beteiligt
+1. **Benachrichtigungen kommen im Dashboard an**: Als ELIZA-Benutzer erhältst du Benachrichtigungen über die Glocke im Dashboard, nicht als direkte E-Mail
+2. **Meldung nicht abonniert**: Im Favoriten-Modus musst du die Meldung mit dem Stern abonnieren
+3. **E-Mails persönlich deaktiviert**: Einstellung «Benachrichtigungen per E-Mail erhalten» ist ausgeschaltet
+4. **Spam-Filter**: E-Mails landen im Spam
+5. **E-Mail-Adresse**: Im Profil fehlt oder ist falsch
 
 **Lösung:**
-- Prüfe deinen Spam-Ordner
-- Aktualisiere deine E-Mail-Adresse im Profil
-- Frage den Meldekreis-Admin nach den Einstellungen
+
+- Prüfe die Glocke im Dashboard
+- Setze den Stern auf der Meldung, die du verfolgen willst
+- Prüfe deinen Spam-Ordner und deine E-Mail-Adresse im Profil
+- Frage den Meldekreis-Admin nach dem Benachrichtigungs-Modus
 
 ### Problem: Status kann nicht geändert werden
 

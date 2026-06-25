@@ -1,8 +1,9 @@
 ---
-title: "Kursordner"
+title: "Ordner"
 description: ""
 weight: "2"
 tags:
+  - "ordner"
   - "kursordner"
   - "folder"
   - "organisation"
@@ -11,67 +12,78 @@ tags:
 ---
 
 
-# Kursordner
+# Ordner
 
-Kursordner sind Container, die mehrere thematisch zusammengehörende Kurse gruppieren. Sie helfen dir, deine Schulungsinhalte übersichtlich zu organisieren.
+Ordner sind Container, die mehrere thematisch zusammengehörende Kurse und Handbücher gruppieren. Sie helfen dir, dein Wissen übersichtlich zu organisieren. Im Code heissen sie weiterhin "Folder" — im UI sprechen wir je nach Kontext von "Ordner" oder "Ordner".
 
-## Was sind Kursordner?
+## Was sind Ordner?
 
-Ein Kursordner:
+Ein Ordner:
 
-- **Gruppiert Kurse** thematisch (z.B. "Onboarding", "Sicherheit")
-- **Definiert Berechtigungen** für alle enthaltenen Kurse
+- **Gruppiert Kurse und Handbücher** thematisch (z.B. "Onboarding", "Sicherheit", "QM-Wissen")
+- **Definiert Berechtigungen** für alle enthaltenen Inhalte
 - **Ermöglicht Massenanmeldungen** für mehrere Kurse gleichzeitig
 - **Bietet Übersichten** über Teilnehmer und Fortschritt
 
-### Typische Kursordner-Struktur
+Ein Ordner kann **gleichzeitig Schulungs-Kurse und Handbücher** enthalten — beide Modi nutzen die gleiche Ordnerstruktur. In der Ordner-Detailansicht werden Kurse und Handbücher getrennt dargestellt.
 
-```
+### Typische Ordner-Struktur
+
+```text
 📁 Mitarbeiter-Onboarding
-   └── 📘 Tag 1: Willkommen im Unternehmen
-   └── 📘 Tag 2: IT-Systeme und Zugänge
-   └── 📘 Woche 1: Abteilungseinführung
+   ├── 📘 Tag 1: Willkommen im Unternehmen   (Schulung)
+   ├── 📘 Tag 2: IT-Systeme und Zugänge       (Schulung)
+   └── 📖 Onboarding-Handbuch                 (Handbuch)
 
 📁 Qualitätsmanagement
-   └── 📘 QM-Grundlagen
-   └── 📘 Prozessdokumentation
-   └── 📘 Auditierung
+   ├── 📘 QM-Grundlagen                       (Schulung)
+   ├── 📖 QM-Handbuch                         (Handbuch)
+   └── 📖 Audit-Leitfaden                     (Handbuch)
 
 📁 Sicherheit am Arbeitsplatz
-   └── 📘 Brandschutz
-   └── 📘 Erste Hilfe
-   └── 📘 Datenschutz-Basics
+   ├── 📘 Brandschutz                         (Schulung mit Quiz)
+   ├── 📘 Erste Hilfe                         (Schulung)
+   └── 📖 Notfall-Handbuch                    (Handbuch)
 ```
 
 ---
 
-## Kursordner erstellen
+## Ordner erstellen
 
 ### Voraussetzungen
 
 Du benötigst die Berechtigung `add_folder` oder musst Mitglied der Gruppe "Tutorials (Admin)" sein.
 
-### Schritt-für-Schritt
+### Variante 1: Via Wizard (empfohlen)
 
-1. **Navigiere zu**: Wissen & Lernen → Kursordner
-2. **Klicke auf**: "Kursordner hinzufügen" (grüner Button)
+Der schnellste Weg führt über den Wizard auf der Wissenshub-Startseite:
+
+1. Im Wissenshub auf **Hinzufügen** klicken
+2. In Schritt 1 einen Inhalt wählen (z.B. "Schulungskurs" oder "Handbuch")
+3. In Schritt 2 auf **"Neuer Ordner"** klicken — der Ordner wird direkt aus dem Wizard heraus erstellt, ohne den Wizard zu verlassen
+4. Schritt 3 ausfüllen — der neue Inhalt landet im frischen Ordner
+
+### Variante 2: Direkt im Ordner-Bereich
+
+1. **Navigiere zu**: Wissen & Lernen → Ordner
+2. **Klicke auf**: "Ordner hinzufügen" (grüner Button)
 3. **Fülle die Felder aus**:
    - **Titel** (Pflicht): Aussagekräftiger Name
    - **Beschreibung**: Detaillierte Beschreibung des Ordnerinhalts
-   - **Titelbild**: Visuelles Erkennungsmerkmal (optional)
+   - **Titelbild** / **Cover-Bild**: Visuelles Erkennungsmerkmal (optional). Wenn kein Bild gesetzt ist, zeigt ELIZA ein Ordner-Icon als Platzhalter
 4. **Klicke auf**: "Speichern"
 
-Der neue Kursordner wird im Status "Entwurf" erstellt.
+Der neue Ordner wird im Status "Entwurf" erstellt.
 
 ---
 
-## Kursordner-Einstellungen
+## Ordner-Einstellungen
 
 ### Grundeinstellungen
 
 | Feld | Beschreibung |
 |------|--------------|
-| **Titel** | Name des Kursordners (max. 255 Zeichen) |
+| **Titel** | Name des Ordners (max. 255 Zeichen) |
 | **Beschreibung** | Ausführliche Beschreibung, unterstützt Markdown |
 | **Titelbild** | Bild zur visuellen Kennzeichnung |
 | **Reihenfolge** | Position in der Ordnerliste |
@@ -86,7 +98,7 @@ Der neue Kursordner wird im Status "Entwurf" erstellt.
 | **Abgelaufen** | Überprüfung fällig |
 | **Archiviert** | Nicht mehr aktiv |
 
-> **⚠️ Wichtig:** Nur freigegebene Kursordner sind für normale Benutzer sichtbar.
+> **⚠️ Wichtig:** Nur freigegebene Ordner sind für normale Benutzer sichtbar.
 
 ### Sichtbarkeit
 
@@ -103,7 +115,7 @@ Du kannst zwischen zwei Sichtbarkeitsstufen wählen:
 
 ### Admin-Team
 
-Das Admin-Team eines Kursordners hat volle Verwaltungsrechte:
+Das Admin-Team eines Ordners hat volle Verwaltungsrechte:
 
 - Kurse hinzufügen und bearbeiten
 - Lektionen erstellen und verwalten
@@ -112,7 +124,7 @@ Das Admin-Team eines Kursordners hat volle Verwaltungsrechte:
 
 **So fügst du Admins hinzu:**
 
-1. Öffne den Kursordner zur Bearbeitung
+1. Öffne den Ordner zur Bearbeitung
 2. Wähle im Feld "Admin-Team" die gewünschten Benutzer
 3. Speichere die Änderungen
 
@@ -134,11 +146,24 @@ Du kannst Organisationseinheiten (Orgunits) zuweisen, um Berechtigungen nach Abt
 
 ---
 
+## Inhalte im Ordner: Kurs oder Handbuch hinzufügen
+
+In der Ordner-Detailansicht findest du oben rechts Buttons, um neue Inhalte anzulegen:
+
+- **Schulungskurs hinzufügen** — legt einen Kurs mit `mode="training"` an
+- **Handbuch hinzufügen** — legt einen Kurs mit `mode="manual"` an
+
+Beide landen im selben Ordner und teilen sich die Ordner-Berechtigungen. In der Detailansicht werden sie in zwei eigenen Sektionen ("Schulungskurse" und "Handbücher") dargestellt.
+
+> 💡 Sektionen ohne Inhalt (z.B. keine Handbücher im Ordner) werden ausgeblendet.
+
+---
+
 ## Teilnehmerverwaltung
 
 ### Übersicht der Teilnehmer
 
-**Wissen & Lernen → Kursordner → [Ordner] → Teilnehmer verwalten**
+**Wissen & Lernen → Ordner → [Ordner] → Teilnehmer verwalten**
 
 Die Teilnehmerübersicht zeigt:
 
@@ -159,7 +184,7 @@ Die Teilnehmerübersicht zeigt:
 
 Du kannst mehrere Teilnehmer gleichzeitig zu mehreren Kursen anmelden:
 
-1. **Navigiere zu**: Kursordner → "Anmeldungen hinzufügen"
+1. **Navigiere zu**: Ordner → "Anmeldungen hinzufügen"
 2. **Wähle die Kurse**: Mehrfachauswahl möglich
 3. **Wähle die Teilnehmer**: Mehrfachauswahl möglich
 4. **Setze gemeinsame Optionen**:
@@ -225,7 +250,7 @@ Du kannst Teilnehmer über ihren Kursstatus benachrichtigen:
 
 ---
 
-## Kursordner bearbeiten
+## Ordner bearbeiten
 
 ### Grunddaten ändern
 
@@ -236,7 +261,7 @@ Du kannst Teilnehmer über ihren Kursstatus benachrichtigen:
 
 ### Status ändern
 
-Um einen Kursordner freizugeben:
+Um einen Ordner freizugeben:
 
 1. Öffne den Ordner zur Bearbeitung
 2. Ändere den Status auf "Freigegeben"
@@ -244,15 +269,15 @@ Um einen Kursordner freizugeben:
 
 ### Reihenfolge ändern
 
-Die Reihenfolge der Kursordner in der Liste kann über das Feld "Reihenfolge" angepasst werden. Niedrigere Werte werden zuerst angezeigt.
+Die Reihenfolge der Ordner in der Liste kann über das Feld "Reihenfolge" angepasst werden. Niedrigere Werte werden zuerst angezeigt.
 
 ---
 
-## Kursordner archivieren/löschen
+## Ordner archivieren/löschen
 
 ### Archivieren
 
-Archivierte Kursordner:
+Archivierte Ordner:
 
 - Sind nicht mehr in der Standardansicht sichtbar
 - Behalten alle Daten und Verknüpfungen
@@ -260,7 +285,7 @@ Archivierte Kursordner:
 
 ### Löschen
 
-> **⚠️ Achtung:** Das Löschen eines Kursordners entfernt auch alle enthaltenen Kurse, Lektionen und Anmeldungen!
+> **⚠️ Achtung:** Das Löschen eines Ordners entfernt auch alle enthaltenen Kurse, Lektionen und Anmeldungen!
 
 Zum Löschen:
 
@@ -281,8 +306,8 @@ Zum Löschen:
 
 ## Zusammenfassung
 
-✅ Du weisst, was Kursordner sind und wofür sie verwendet werden
-✅ Du kannst Kursordner erstellen und konfigurieren
+✅ Du weisst, was Ordner sind und wofür sie verwendet werden
+✅ Du kannst Ordner erstellen und konfigurieren
 ✅ Du verstehst die Berechtigungsoptionen (Admin-Team, Team, Orgunits)
 ✅ Du kannst Teilnehmer in Ordner-übergreifenden Übersichten verwalten
 ✅ Du kennst die Massenanmeldung und Batch-Operationen

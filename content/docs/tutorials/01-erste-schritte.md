@@ -6,218 +6,224 @@ tags:
   - "einführung"
   - "übersicht"
   - "navigation"
+  - "wissenshub"
   - "dashboard"
+  - "suche"
+  - "favoriten"
   - "erste-schritte"
 ---
 
 
 # Erste Schritte
 
-Dieses Kapitel führt dich in das ELIZA Modul "Wissen & Lernen" ein und zeigt dir, wie du schnell produktiv wirst.
+Dieses Kapitel führt dich in das ELIZA Modul "Wissen & Lernen" — auch "Wissenshub" genannt — ein und zeigt dir, wie du schnell produktiv wirst.
 
 ## Was ist "Wissen & Lernen"?
 
-Das ELIZA Modul "Wissen & Lernen" ist ein umfassendes E-Learning-System für Schulungen, Einarbeitungen und Wissensvermittlung. Es unterstützt dich bei:
+Das ELIZA Modul "Wissen & Lernen" ist dein zentraler Ort für Wissensvermittlung, Schulungen, Einarbeitungen und Nachschlagewerke. Du kannst damit:
 
-- **Strukturierte Schulungsinhalte**: Kurse mit Lektionen und Abschnitten
-- **Multimediale Inhalte**: Text, Bilder, Videos (YouTube, Vimeo, Loom, Arcade)
-- **Fortschrittsverfolgung**: Verfolge den Lernfortschritt deiner Mitarbeitenden
-- **Quiz und Tests**: Überprüfe das erlernte Wissen
-- **Zertifikate**: Erstelle Teilnahmebestätigungen
-- **Integration**: Verknüpfung mit Prozessen, Dokumenten und Skills
+- **Strukturierte Schulungen** mit Lektionen, Quiz und Fortschrittsverfolgung anlegen
+- **Handbücher** als strukturierte Online-Nachschlagewerke veröffentlichen (Handbuch-Modus)
+- **Multimediale Inhalte** einbinden: Text, Bilder, Videos, PDFs, BPMN-Diagramme, Excalidraw-Zeichnungen
+- **Modulübergreifend suchen**: Dokumente (DMS), Prozesse, News und Lerninhalte in einem Treffer
+- **Teilnehmende verwalten**: anmelden, einladen, erinnern, auswerten
+- **Quiz und Tests** durchführen und Zertifikate erstellen
+- **Inhalte verschlagworten** und mit Themen filtern
 
 ### Typische Anwendungsfälle
 
-| Anwendungsfall | Beschreibung |
-|----------------|--------------|
-| **Mitarbeiter-Onboarding** | Einarbeitung neuer Mitarbeitender mit strukturierten Kursen |
-| **Compliance-Schulungen** | Pflichtschulungen mit Nachverfolgung und Zertifikaten |
-| **Qualitätsmanagement** | Schulung zu Prozessen und Arbeitsanweisungen |
-| **Produktschulungen** | Wissensvermittlung zu Produkten und Dienstleistungen |
-| **Weiterbildung** | Kontinuierliche Lernprogramme für Mitarbeitende |
+| Anwendungsfall | Empfohlener Modus |
+|----------------|-------------------|
+| **Mitarbeiter-Onboarding** | Schulung mit Anmeldung und Fortschritt |
+| **Compliance-Schulungen** | Schulung mit Quiz und Zertifikat |
+| **Qualitätsmanagement** | Handbuch mit verlinkten Prozessen |
+| **Produktschulungen** | Schulung oder Handbuch (je nach Tiefe) |
+| **Interne Wissensbasis** | Handbuch im Wissenshub |
+| **FAQ / How-to-Sammlung** | Handbuch mit Kommentaren |
 
 ---
 
-## Zugriff auf "Wissen & Lernen"
+## Zugriff auf den Wissenshub
 
 ### Navigation
 
-**Hauptmenü → Wissen & Lernen** oder **Dashboard → Lernkachel**
+**Hauptmenü → Wissen & Lernen**
 
-Das Modul erreichst du über das Hauptmenü auf der linken Seite.
+Die Startseite des Wissenshubs öffnet sich. Sie ist gleichzeitig die zentrale Suchseite.
 
 ### Voraussetzungen
 
-Um das Modul nutzen zu können, benötigst du:
+Um das Modul zu nutzen, brauchst du:
 
-1. **Aktives ELIZA-Konto**: Ein gültiger Benutzeraccount
-2. **Berechtigung**: Mindestens die Berechtigung `view_course` für Kurse
-3. **Modulaktivierung**: Das Tutorials-Modul muss für deine Organisation aktiviert sein
+1. **Aktives ELIZA-Konto** mit gültigem Benutzeraccount
+2. **Modul-Aktivierung**: `TUTORIALS_ENABLED` muss in deiner Installation aktiv sein
+3. **Berechtigung**: mindestens `tutorials.view_course` für Lese-Zugriff
 
-> **💡 Tipp:** Wenn du keinen Zugriff auf das Modul hast, wende dich an deinen Administrator.
+> 💡 **Tipp:** Wenn du das Modul nicht siehst, wende dich an deinen Administrator. Möglicherweise fehlt die Modul-Aktivierung oder die Berechtigung.
+
+---
+
+## Die Wissenshub-Startseite
+
+Die Startseite (`/tutorials/`) ist als prominente Such- und Übersichtsseite gestaltet. Du findest folgende Bereiche:
+
+### 1. Suchfeld (oben, gross)
+
+Direkt im Zentrum: das Suchfeld mit Auto-Fokus (Desktop). Tippe los und du erhältst sofort Treffer per Live-Suche.
+
+Die Suche durchsucht **modulübergreifend**:
+
+- Lektionen, Kurse, Handbuch-Artikel (Tutorials)
+- Dokumente aus dem DMS (mit Datei-Typ-Icons für PDF, Word, Excel etc.)
+- Prozesse aus dem Prozessmodul
+- News aus Streams
+
+Details zur Suche siehst du in [Kapitel 9: Labels, Themen und Suche]({{< ref "09-labels-themen-suche" >}}).
+
+### 2. Ordner-Übersicht
+
+Alle Ordner, auf die du Zugriff hast, sind als Kacheln dargestellt. Pro Ordner siehst du:
+
+- Titelbild (oder ein Platzhalter-Icon)
+- Name und Beschreibung
+- Anzahl enthaltener Kurse und Handbücher
+
+### 3. Favoriten
+
+Deine markierten Kurse, Handbücher und Lektionen erscheinen als eigene Sektion auf der Startseite. Den Favoriten-Stern setzt du auf jeder Detailseite mit einem Klick (HTMX, kein Reload).
+
+### 4. Für dich
+
+Diese Sektion zeigt **offene Einladungen** — also Lektionen oder Artikel, zu denen du gezielt eingeladen wurdest und die du noch nicht erledigt hast.
+
+### 5. Schulungen
+
+Alle freigegebenen Schulungs-Kurse, gruppiert nach Ordner.
+
+### 6. Handbücher
+
+Alle freigegebenen Handbücher, gruppiert nach Ordner.
+
+> 💡 Sektionen ohne Inhalt (z.B. keine Handbücher vorhanden) werden ausgeblendet.
+
+### 7. Themen
+
+Klickbare Label-Chips zu Themen, die im Wissenshub vergeben sind. Ein Klick filtert die Inhalte auf das gewählte Thema.
+
+### 8. Was ist neu
+
+Liste der zuletzt aktualisierten Lektionen und Artikel — ideal für den schnellen Überblick.
+
+### 9. Letzte Kommentare
+
+Die neuesten Kommentare aus dem Handbuch-Modus. Klick auf einen Kommentar springt direkt zum Artikel.
 
 ---
 
 ## Struktur verstehen
 
-Das Modul "Wissen & Lernen" ist hierarchisch aufgebaut:
+Der Wissenshub ist hierarchisch aufgebaut:
 
+```text
+📁 Ordner (Folder)
+ └── 📘 Kurs / 📖 Handbuch (Course mit mode="training" oder mode="manual")
+      └── 📄 Lektion / Artikel (Lesson)
+           ├── 📝 Abschnitt — Text (Section)
+           ├── 🖼  Abschnitt — Bild
+           ├── 🎥 Abschnitt — Video
+           ├── 📄 Abschnitt — PDF
+           ├── 🧩 Abschnitt — BPMN-Diagramm
+           └── ✏️  Abschnitt — Excalidraw-Zeichnung
 ```
-📁 Kursordner (Folder)
- └── 📘 Kurs (Course)
-      └── 📄 Lektion (Lesson)
-           └── 📝 Abschnitt (Section)
-           └── 📝 Abschnitt (Section)
-      └── 📄 Lektion (Lesson)
-           └── 📄 Unterlektion (Sublesson)
-```
 
-### Kursordner
+### Ordner
 
-Kursordner sind Container, die mehrere thematisch zusammengehörende Kurse gruppieren. Beispiele:
+Container, die mehrere thematisch zusammengehörende Kurse und Handbücher gruppieren. Ein Ordner kann sowohl Schulungs-Kurse als auch Handbücher enthalten.
 
-- 📁 Onboarding
-- 📁 Qualitätsmanagement
-- 📁 IT-Sicherheit
-- 📁 Produktschulungen
+### Kurs vs. Handbuch (Modus)
 
-### Kurse
+Jeder "Kurs" hat einen Modus:
 
-Kurse sind in sich geschlossene Schulungseinheiten zu einem bestimmten Thema. Ein Kurs besteht aus mehreren Lektionen.
+- **Schulung** (`mode="training"`): klassischer Kurs mit Lektionen, Anmeldung, Fortschrittsverfolgung, Quiz, Zertifikat
+- **Handbuch** (`mode="manual"`): strukturiertes Nachschlagewerk mit eigener Artikel-Ansicht, Inline-Editing, Kommentaren, Section-Anker-Navigation
 
-### Lektionen
+Den Modus wählst du beim Erstellen — er bestimmt die ganze UI für diesen Kurs. Siehe [Kapitel 8: Handbuch-Modus]({{< ref "08-handbuch-modus" >}}).
 
-Lektionen sind die einzelnen Lerneinheiten innerhalb eines Kurses. Sie können Text, Bilder, Videos und verknüpfte Dokumente enthalten.
+### Lektion / Artikel
 
-### Abschnitte
+Eine Lerneinheit (Schulungs-Modus) oder ein Artikel (Handbuch-Modus). Sie kann Unterlektionen ("Kapitel") enthalten.
 
-Abschnitte sind die Bausteine einer Lektion. Jeder Abschnitt kann unterschiedliche Inhaltstypen haben (Text, Bild, Video).
+### Abschnitt (Section)
+
+Die Bausteine einer Lektion. Verfügbare Typen:
+
+- **Text** — formatierter Fliesstext (HTML)
+- **Bild** — Bild mit Layout-Option (volle Breite, links, rechts)
+- **Video** — eingebettet von YouTube, Vimeo, Loom, Arcade, SharePoint
+- **PDF** — eingebettete PDF-Vorschau
+- **BPMN-Diagramm** — interaktiv mit Zoom-Toolbar
+- **Excalidraw-Zeichnung** — eingebettete Zeichnung
 
 ---
 
-## Hauptbereiche
+## Inhalte erstellen — Der Wizard
 
-### 1. Kurs-Übersicht
+Klick im Wissenshub auf den **Hinzufügen-Button** (oben rechts). Es öffnet sich ein dreistufiger Wizard:
 
-Die Kurs-Übersicht ist deine Startseite im Modul. Hier siehst du:
+### Schritt 1 — Was möchtest du erstellen?
 
-- **Verfügbare Kurse**: Alle Kurse, zu denen du Zugang hast
-- **Deine Anmeldungen**: Kurse, zu denen du angemeldet bist
-- **Fortschritt**: Dein Lernfortschritt bei aktiven Kursen
+Wähle:
 
-### 2. Kursordner
+- **Schulungskurs** — klassischer Kurs mit Lektionen und Anmeldungen
+- **Handbuch** — Online-Nachschlagewerk
+- **Wissensartikel** — einzelner Artikel (wird als Handbuch mit einer Lektion angelegt)
+- **Lektion / Kapitel** in einem bestehenden Kurs
 
-**Wissen & Lernen → Kursordner**
+### Schritt 2 — In welchem Ordner?
 
-Die Kursordner-Übersicht zeigt alle thematischen Sammlungen von Kursen.
+Wähle einen bestehenden Ordner aus der Liste. Du kannst direkt aus Schritt 2 auch einen neuen Ordner anlegen, ohne den Wizard zu verlassen.
 
-### 3. Favoriten
+### Schritt 3 — Titel, Beschreibung und Bild
 
-**Wissen & Lernen → Favoriten**
+Gib Titel, Beschreibung und optional ein Titelbild ein. Nach dem Speichern landest du direkt im neuen Kurs/Artikel und kannst die ersten Inhalte hinzufügen.
 
-Deine persönliche Sammlung häufig genutzter Kurse und Lektionen.
-
-### 4. Meine Kurse
-
-Im Dashboard siehst du deine aktuellen Kursanmeldungen mit Fortschrittsanzeige.
+> ✅ **Best Practice**: Starte direkt mit dem Wizard. Du musst dir keine Gedanken über interne Reihenfolge der Felder machen — der Wizard führt dich.
 
 ---
 
-## Die Benutzeroberfläche
+## Für Lernende: Wissen finden und konsumieren
 
-### Kursordner-Ansicht
+### Wissen suchen
 
-```
-┌─────────────────────────────────────────────────────────┐
-│  🏠  ⭐  Ordnername                                      │  ← Navigation
-├─────────────────────────────────────────────────────────┤
-│  [Bild]                                                 │  ← Titelbild
-├─────────────────────────────────────────────────────────┤
-│  Beschreibung des Kursordners...                        │
-├─────────────────────────────────────────────────────────┤
-│  📘 Kurs 1 - Einführung                    Freigegeben  │
-│  📘 Kurs 2 - Fortgeschritten               Entwurf      │  ← Kurse
-│  📘 Kurs 3 - Expertenwissen                Freigegeben  │
-└─────────────────────────────────────────────────────────┘
-```
+1. Öffne den Wissenshub
+2. Tippe ins Suchfeld
+3. Klicke auf den passenden Treffer
 
-### Kurs-Detailansicht
+### Einer Schulung beitreten
 
-Wenn du einen Kurs öffnest, siehst du:
+Wenn du zu einem Schulungs-Kurs angemeldet bist, siehst du den Kurs im "Für dich"-Bereich oder in der Schulungs-Sektion. Klick auf **"Lesen beginnen"** oder eine Lektion startet den Kurs.
 
-| Bereich | Inhalt |
-|---------|--------|
-| **Kopfzeile** | Titel, Breadcrumb-Navigation |
-| **Titelbild** | Visuelles Erkennungsmerkmal |
-| **Anmeldebanner** | Dein Status und Fortschritt (falls angemeldet) |
-| **Beschreibung** | Kursinhalt und Lernziele |
-| **Lektionen** | Liste aller Lektionen mit Status |
-| **Tabs** | Übersicht, Teilnehmende (für Admins) |
+### Ein Handbuch lesen
 
-### Lektions-Ansicht
+1. Öffne ein Handbuch via Ordner, Suche oder Themen-Filter
+2. Auf der Handbuch-Startseite findest du das Inhaltsverzeichnis
+3. Klick auf einen Artikel öffnet ihn im Vollbild-Modus
+4. Rechts findest du die Section-Anker für schnelle Navigation
+5. Du kannst Kommentare schreiben und Artikel als Favorit markieren
 
-Die Lektionsansicht zeigt:
+### Lektion abschliessen (Schulungs-Modus)
 
-- **Lektionstitel** und Beschreibung
-- **Abschnitte** mit Text, Bildern und Videos
-- **Navigation**: Vorherige/Nächste Lektion
-- **Unterlektionen** (falls vorhanden)
-- **Mitgeltende Dokumente**
-
----
-
-## Für Lernende: Kurs absolvieren
-
-### Schritt 1: Kurs finden
-
-1. Navigiere zu **Wissen & Lernen**
-2. Suche den gewünschten Kurs
-3. Klicke auf den Kurs, um die Details zu sehen
-
-### Schritt 2: Kurs starten
-
-Wenn du zu einem Kurs angemeldet bist:
-
-1. Klicke auf **"Kurs starten"** oder die erste Lektion
-2. Arbeite die Lektionen der Reihe nach durch
-3. Dein Fortschritt wird automatisch gespeichert
-
-### Schritt 3: Lektion abschliessen
-
-1. Lies/sieh dir alle Abschnitte an
+1. Arbeite die Abschnitte durch
 2. Bearbeite ggf. das Quiz
-3. Klicke auf **"Lektion abschliessen"** oder wechsle zur nächsten
+3. Markiere die Lektion als "abgeschlossen" — oder lass den Fortschritt automatisch erfassen, wenn du alles durchgearbeitet hast
 
-### Schritt 4: Kurs abschliessen
+### Kurs abschliessen
 
-Wenn du alle Lektionen abgeschlossen hast:
+Wenn alle Lektionen abgeschlossen sind:
 
 1. Der Kurs wird als "abgeschlossen" markiert
 2. Falls erforderlich, unterschreibe digital
 3. Lade dein Zertifikat herunter (falls verfügbar)
-
-> **💡 Tipp:** Im Vollbild-Modus kannst du dich besser auf den Lerninhalt konzentrieren.
-
----
-
-## Für Kursersteller: Schnellstart
-
-### Einen Kurs erstellen
-
-1. **Kursordner auswählen**: Navigiere zum gewünschten Ordner
-2. **Neuer Kurs**: Klicke auf "Kurs hinzufügen"
-3. **Grunddaten**: Titel, Beschreibung, Titelbild eingeben
-4. **Speichern**: Der Kurs wird im Entwurf-Status erstellt
-
-### Eine Lektion hinzufügen
-
-1. **Kurs öffnen**: Navigiere zum erstellten Kurs
-2. **Lektion hinzufügen**: Klicke auf "Lektion hinzufügen"
-3. **Inhalte erstellen**: Titel, Beschreibung eingeben
-4. **Abschnitte hinzufügen**: Text, Bilder oder Videos einfügen
-5. **Freigeben**: Status auf "Freigegeben" setzen
-
-> **⚠️ Wichtig:** Nur freigegebene Kurse und Lektionen sind für Lernende sichtbar.
 
 ---
 
@@ -254,37 +260,39 @@ Wenn du alle Lektionen abgeschlossen hast:
 
 ---
 
-## Hilfe und Support
+## Tipps für den Start
 
-### Dokumentation
+- ✅ **Wizard nutzen**: Für neue Inhalte ist der Wizard schneller als alle Felder einzeln zu füllen
+- ✅ **Suche zuerst**: Bevor du etwas Neues anlegst, suche im Wissenshub — vielleicht existiert schon ein passender Artikel
+- ✅ **Favoriten setzen**: Häufig gebrauchte Kurse/Artikel mit dem Stern markieren — sie erscheinen auf der Startseite
+- ✅ **Labels vergeben**: Inhalte mit Themen versehen, damit sie via Themen-Filter und Suche schnell gefunden werden
+- ❌ **Nicht direkt im Entwurf-Status verlinken**: Lernende sehen nur freigegebene Inhalte
+
+---
+
+## Hilfe und Support
 
 - **Dieses Handbuch**: Umfassende Anleitungen für alle Funktionen
 - **Tooltips**: Fahre mit der Maus über Icons für Erklärungen
-- **Hilfetexte**: Kontextbezogene Hilfe in Formularen
-
-### Support
-
-Bei Fragen oder Problemen:
-
-1. Konsultiere dieses Handbuch
-2. Nutze die Suche im Hilfe-Bereich
-3. Kontaktiere deinen lokalen Administrator
-4. Wende dich an den ELIZA Support
+- **Suchfeld im Wissenshub**: Findet auch FAQ-Artikel, falls vorhanden
+- **ELIZA Support**: Bei Fragen oder Problemen wende dich an deinen Administrator oder den Support
 
 ---
 
 ## Nächste Schritte
 
-- **[Kapitel 2: Kursordner]({{< ref "02-kursordner" >}})**: Lerne, wie du Kursordner erstellst und verwaltest
-- **[Kapitel 3: Kurse]({{< ref "03-kurse" >}})**: Erstelle deinen ersten Kurs
-- **[Kapitel 4: Lektionen]({{< ref "04-lektionen" >}})**: Fülle deinen Kurs mit Inhalten
+- **[Kapitel 2: Kursordner]({{< ref "02-kursordner" >}})**: Ordner erstellen und verwalten
+- **[Kapitel 3: Kurse]({{< ref "03-kurse" >}})**: Ersten Kurs anlegen
+- **[Kapitel 8: Handbuch-Modus]({{< ref "08-handbuch-modus" >}})**: Handbücher als Nachschlagewerk
+- **[Kapitel 9: Labels, Themen und Suche]({{< ref "09-labels-themen-suche" >}})**: Inhalte auffindbar machen
 
 ---
 
 ## Zusammenfassung
 
-✅ Du weisst, was "Wissen & Lernen" ist und wofür es verwendet wird
-✅ Du kennst die hierarchische Struktur (Ordner → Kurse → Lektionen → Abschnitte)
-✅ Du verstehst die Benutzeroberfläche und Navigation
-✅ Du kannst als Lernender einen Kurs absolvieren
-✅ Du weisst, wo du Hilfe findest
+- ✅ Du kennst die Wissenshub-Startseite mit Suche, Favoriten und Themen
+- ✅ Du verstehst die hierarchische Struktur (Ordner → Kurs/Handbuch → Lektion → Abschnitt)
+- ✅ Du kennst den Unterschied zwischen Schulungs- und Handbuch-Modus
+- ✅ Du kannst neue Inhalte über den Wizard erstellen
+- ✅ Du kennst die Abschnitts-Typen (Text, Bild, Video, PDF, BPMN, Excalidraw)
+- ✅ Du weisst, wo du Hilfe findest

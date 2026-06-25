@@ -90,8 +90,11 @@ Erfahre alles über die Event-Verwaltung: von der Erstellung bis zur Teilnehmerp
 **Inhalte:**
 - Event erstellen
 - Teilnehmer einladen
+- Selbstanmeldung und Warteliste
 - Anmeldefrist und Teilnehmerlimits
-- Anwesenheitsprüfung und Unterschriften
+- Anwesenheit selbst bestätigen (mit Unterschrift)
+- Anwesenheitsprüfung, Abwesenheitsliste und Unterschriften
+- Sichtbarkeit der Teilnehmerliste
 - Kalender-Integration (iCal)
 
 **Zielgruppe:** Event-Organisatoren, Team-Leads

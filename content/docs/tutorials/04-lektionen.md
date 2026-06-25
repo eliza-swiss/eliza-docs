@@ -91,15 +91,32 @@ Abschnitte sind die Bausteine einer Lektion. Sie können verschiedene Inhaltstyp
 
 ### Neuen Abschnitt hinzufügen
 
-1. **Öffne die Lektion**
-2. **Klicke auf**: "Abschnitt hinzufügen"
-3. **Fülle die Felder aus**:
-   - **Titel**: Optional, für Abschnittsüberschrift
-   - **Beschreibung**: Hauptinhalt (Markdown unterstützt)
-   - **Weitere Optionen** je nach Inhaltstyp
-4. **Speichere**
+Im Handbuch-Modus und auf der Lesson-Detail-Seite findest du das **"Abschnitt hinzufügen"-Panel** direkt am Inhalt. Wähle einen Abschnitts-Typ:
 
-### Inhaltstypen
+| Typ | Wofür |
+|-----|-------|
+| **Text** | Fliesstext mit Markdown-Formatierung |
+| **Bild** | Bild mit Layout-Option (volle Breite, links, rechts) |
+| **Video** | YouTube, Vimeo, Loom, Arcade, SharePoint, Excalidraw |
+| **PDF** | Eingebettete PDF-Vorschau |
+| **BPMN-Diagramm** | Interaktives Prozessdiagramm mit Zoom-Toolbar |
+| **Excalidraw-Zeichnung** | Zeichnung direkt im Browser bearbeitbar |
+| **Mitgeltende Dokumente** | Verknüpfung mit DMS-Dokumenten |
+
+Nach dem Klick öffnet sich das passende Inline-Formular direkt auf der Seite (HTMX). Nach dem Speichern ist der Abschnitt sofort sichtbar — keine Seiten-Neuladung.
+
+> ✅ **Best Practice**: Inline-Editing macht das Erstellen von Lektionen wesentlich schneller — du arbeitest direkt am Endergebnis.
+
+### Inline-Editing bestehender Abschnitte
+
+Auf der Lektions-/Artikel-Seite kannst du Abschnitte direkt bearbeiten:
+
+- Klick auf das **Stift-Icon** an einem Abschnitt öffnet das Inline-Edit-Formular
+- Klick auf das **Zahnrad-Icon** öffnet die Section-Einstellungen (Layout, Titel)
+- Klick auf das **Mülleimer-Icon** löscht den Abschnitt nach Bestätigung
+- Drag & Drop sortiert Abschnitte um
+
+### Inhaltstypen im Detail
 
 #### Text mit Markdown
 
@@ -165,6 +182,32 @@ Verknüpfe Dokumente aus dem DMS mit dem Abschnitt:
 1. Wähle im Feld "Mitgeltende Dokumente" die relevanten DMS-Dokumente
 2. Die Dokumente werden als Links im Abschnitt angezeigt
 3. Lernende können die Dokumente direkt öffnen
+
+#### PDF einbetten
+
+Ein PDF lässt sich direkt als Abschnitt einbinden:
+
+1. Wähle den Abschnitts-Typ "PDF"
+2. Lade das PDF hoch
+3. Das PDF wird als eingebettete Vorschau angezeigt — Lernende können scrollen, zoomen und herunterladen
+
+#### BPMN-Diagramm einbetten
+
+Du kannst ein BPMN-Diagramm direkt in eine Lektion einbetten — ideal für Prozess-Schulungen und Handbuch-Artikel:
+
+1. Wähle den Abschnitts-Typ "BPMN-Diagramm"
+2. Lade eine `.bpmn`-Datei hoch oder verknüpfe ein bestehendes Diagramm
+3. Das Diagramm wird interaktiv angezeigt mit einer **Zoom-Toolbar**
+4. Lernende können das Diagramm in der normalen Ansicht, im Vollbild oder im Article-Modus durchklicken
+
+Verfügbar in allen drei Ansichten (Standard, Vollbild, Handbuch-Artikel) mit identischer Bedienung.
+
+#### Excalidraw-Zeichnung
+
+Excalidraw-Zeichnungen sind ideal für Skizzen, Konzepte und Erklärungen:
+
+- **Eingebettet via Video-Link**: Eine `https://link.excalidraw.com/...`-URL wird als Iframe gerendert
+- **Lokale Zeichnung**: Eine `.excalidraw`-Datei hochladen — sie öffnet sich direkt im Excalidraw-Editor und ist über das Hinzufügen-Panel direkt bearbeitbar
 
 ---
 
@@ -275,6 +318,37 @@ Das Feld `bpmn_id` ermöglicht die Verknüpfung mit Prozess-Elementen:
 
 ---
 
+## Historie und Versionsvergleich
+
+Jede Änderung an einer Lektion wird in der **Historie** festgehalten (Reversion-basiert). Du kannst frühere Versionen einsehen und mit der aktuellen vergleichen.
+
+### Historie öffnen
+
+- **Schulungs-Modus**: Tab "Historie" auf der Lesson-Detail-Seite
+- **Handbuch-Modus**: Eintrag "Historie" in der rechten Sidebar — öffnet ein Modal
+
+### Versionsvergleich
+
+1. Öffne die Historie-Liste
+2. Klick auf eine Version öffnet das **Diff-Modal**
+3. Das Modal zeigt Änderungen pro Feld (alt vs. neu)
+4. Aus dem Diff-Modal heraus kannst du mit "Zurück zur Liste" zur Historie zurückspringen — auch im Manual-Modus
+
+> 💡 Die Historie hilft, nachzuvollziehen, wer wann was geändert hat — wichtig für Wissensartikel mit mehreren Autoren.
+
+---
+
+## Labels (Themen) auf Lektions-Ebene
+
+Auch einzelne Lektionen können Labels haben. Du vergibst sie:
+
+- Im Lektions-Bearbeiten-Formular
+- **Inline auf der Detail-Seite** über das Klick auf den Labels-Bereich
+
+Labels machen Lektionen über die Wissenshub-Suche und den Themen-Filter auffindbar.
+
+---
+
 ## Lernfortschritt
 
 ### Automatische Erfassung
@@ -323,6 +397,17 @@ Als Lernender kannst du eine Lektion als abgeschlossen markieren:
 1. Öffne die Lektion
 2. Klicke auf das Löschen-Symbol
 3. Bestätige die Aktion
+
+---
+
+## Kommentare (Handbuch-Modus)
+
+Im Handbuch-Modus erhält jeder Artikel eine **Kommentarfunktion** über die Social-Bar (`streams.Comment`). Damit können Leser Fragen stellen, Feedback geben oder ergänzen.
+
+- Sichtbar unter dem Artikel als Teil der Social-Bar (zusammen mit Reaktionen und Gesehen-Tracking)
+- Die neuesten Kommentare aus dem ganzen Wissenshub erscheinen auf der Startseite in der Sektion "Letzte Kommentare"
+
+Details siehe [Kapitel 8: Handbuch-Modus]({{< ref "08-handbuch-modus" >}}).
 
 ---
 

@@ -170,7 +170,20 @@ Benutzer in den zugewiesenen Organisationseinheiten:
 | Sichtbarkeit | Wer kann zugreifen |
 |--------------|-------------------|
 | **Normal** | Alle mit `view_folder`/`view_course`-Berechtigung |
-| **Geschützt** | Nur Admin-Team, Team oder zugewiesene Orgunits |
+| **Geschützt** | Admin-Team, Folder-Admins, zugewiesene Orgunits **oder explizit eingeladene Personen** |
+
+#### Geschützte Kurse — Einladung gibt Zugriff
+
+Bei einem **geschützten Kurs** prüft ELIZA in dieser Reihenfolge:
+
+1. Ist der Benutzer Kurs-Admin? → Zugriff
+2. Hat der Benutzer Ordner-Berechtigung? → Zugriff
+3. Hat der Benutzer ein **aktives Enrollment** auf dem Kurs (Status `invited`, `not_started`, `in_progress` oder `completed`)? → Zugriff
+4. Sonst: kein Zugriff
+
+Das bedeutet konkret: **Eine Anmeldung oder direkte Einladung auf eine Lektion eines geschützten Kurses gibt der Person gezielt Lese-Zugriff** — auch ohne formale `view_course`-Gruppe oder Orgunit-Mitgliedschaft.
+
+> 💡 So lässt sich ein vertrauliches Handbuch (Modus = Handbuch, Sichtbarkeit = geschützt) gezielt nur einem definierten Personenkreis öffnen, ohne neue Berechtigungsgruppen anlegen zu müssen.
 
 ### Status-abhängige Sichtbarkeit
 
@@ -181,6 +194,19 @@ Benutzer in den zugewiesenen Organisationseinheiten:
 | **Freigegeben** | Alle berechtigten Benutzer |
 | **Abgelaufen** | Alle berechtigten Benutzer (mit Warnung) |
 | **Archiviert** | Nur Admins |
+
+---
+
+## Modul-Aktivierung
+
+Damit das Modul "Wissen & Lernen" überhaupt im Hauptmenü erscheint, müssen **zwei** Bedingungen erfüllt sein:
+
+1. **`TUTORIALS_ENABLED`** in der Constance-Konfiguration ist auf `True` gesetzt
+2. Der Benutzer hat die Berechtigung **`tutorials.view_course`**
+
+Ist eine der beiden Bedingungen nicht erfüllt, ist das Modul für den Benutzer unsichtbar — selbst wenn andere Berechtigungen vorhanden wären.
+
+> 💡 Diese Doppel-Kopplung verhindert, dass das Modul versehentlich für alle Benutzer sichtbar wird, wenn ein Administrator es einfach in Constance einschaltet.
 
 ---
 

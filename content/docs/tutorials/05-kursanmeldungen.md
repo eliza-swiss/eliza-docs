@@ -18,6 +18,21 @@ Die Teilnehmerverwaltung ermöglicht dir, Benutzer zu Kursen anzumelden, deren F
 
 ## Übersicht
 
+ELIZA kennt zwei sich ergänzende Konzepte, um Teilnehmende zuzuordnen:
+
+### Anmeldung (Enrollment) vs. Einladung (Invitation)
+
+| Aspekt | Anmeldung (Enrollment) | Einladung (Invitation) |
+|--------|------------------------|------------------------|
+| **Zielobjekt** | Ganzer Kurs | Einzelne Lektion / Artikel |
+| **Verfügbar bei** | Schulungs-Modus | Schulungs- und Handbuch-Modus |
+| **Fortschritt** | Über alle Lektionen | Nur für die eingeladene Lektion |
+| **Frist** | Ja | Optional pro Lektion |
+| **Zertifikat** | Möglich | Nicht direkt |
+| **Anwendungsfall** | Vollständige Schulung | Gezielte Aufgabe / Lese-Auftrag |
+
+> 💡 **Faustregel**: Soll jemand einen kompletten Kurs absolvieren, **anmelden**. Soll jemand einen bestimmten Artikel/eine Lektion lesen oder kommentieren, **einladen**.
+
 Eine Kursanmeldung (Enrollment) in ELIZA:
 
 - **Verknüpft einen Benutzer mit einem Kurs**
@@ -25,6 +40,13 @@ Eine Kursanmeldung (Enrollment) in ELIZA:
 - **Ermöglicht Fristen** für den Kursabschluss
 - **Kann Unterschriften erfordern** beim Abschluss
 - **Generiert Zertifikate** bei erfolgreicher Teilnahme
+
+Eine Einladung (Invitation, intern `LessonInvite`):
+
+- **Verknüpft einen Benutzer mit einer einzelnen Lektion oder einem Artikel**
+- **Erstellt einen LessonProgress-Eintrag** für die eingeladene Lektion
+- **Zeigt einen Einladungs-Banner** auf der Lektion/dem Artikel
+- **Erscheint im "Für dich"-Bereich** im Wissenshub bis erledigt
 
 ---
 
@@ -53,8 +75,8 @@ Der Teilnehmer erhält eine Benachrichtigung über die Anmeldung.
 
 Für effiziente Anmeldungen mehrerer Personen:
 
-1. **Navigiere zum Kursordner**
-2. **Klicke auf**: "Anmeldungen hinzufügen"
+1. **Navigiere zum Ordner** oder zur **globalen Einladungs-Seite** (`/tutorials/add_multiple_enrollments_global/`)
+2. **Klicke auf**: "Anmeldungen hinzufügen" / "Neue Einladungen erstellen"
 3. **Wähle die Kurse** (Mehrfachauswahl möglich)
 4. **Wähle die Teilnehmer** (Mehrfachauswahl möglich)
 5. **Setze gemeinsame Optionen**:
@@ -64,7 +86,54 @@ Für effiziente Anmeldungen mehrerer Personen:
    - Unterschrift erforderlich
 6. **Klicke auf**: "Anmeldungen erstellen"
 
-> **💡 Tipp:** Die Massenanmeldung spart viel Zeit beim Onboarding neuer Mitarbeiter oder bei Pflichtschulungen.
+> **💡 Tipp:** Die globale Einladungs-Seite ist ideal, wenn du mehreren Personen Kurse aus verschiedenen Ordnern in einem Schritt zuweisen willst.
+
+---
+
+## Einladung zu einzelnen Lektionen/Artikeln
+
+Statt eines kompletten Kurses kannst du Personen gezielt zu einer **einzelnen Lektion** oder einem **Handbuch-Artikel** einladen.
+
+### Anwendungsfälle
+
+- Lese-Auftrag zu einem bestimmten Artikel im Handbuch
+- Punktuelle Schulung zu einem einzelnen Thema
+- Aufgabe an bestimmte Mitarbeitende ohne komplette Kursanmeldung
+
+### Einladung erstellen
+
+1. **Öffne die Lektion** oder den Handbuch-Artikel
+2. **Klick auf das Personen-Icon** / "Einladen" in der Toolbar oder Sidebar
+3. **Wähle die einzuladenden Personen** (Mehrfachauswahl)
+4. **Optional**: Nachricht beifügen, Frist setzen
+5. **Speichern** — die Einladung wird verschickt, ein `LessonProgress`-Eintrag mit Status "eingeladen" wird angelegt
+
+Eingeladene Personen sehen:
+
+- Einen **Einladungs-Banner** oben am Artikel/Lektion mit den Aktionen **"Start"** und **"Erledigt markieren"**
+- Den Eintrag in der Sektion **"Für dich"** auf der Wissenshub-Startseite
+- Auf der Handbuch-Startseite einen Hinweis-Banner, falls Einladungen im Handbuch offen sind
+
+> 💡 Offene **Einladungs-Duplikate** werden auf der Lektion erkannt und in einem Banner angezeigt (z.B. wenn jemand mehrfach eingeladen wurde).
+
+### Einladungen vs. Enrollments — was passiert intern
+
+- Einladung schreibt einen `LessonProgress` mit `state="invited"` und einem **`sender`**, der die direkte Einladung markiert
+- Anders als bei einer Anmeldung wird **kein Kurs-Enrollment** angelegt — die Person hat dadurch nicht automatisch Zugriff auf den ganzen Kurs (ausser bei **geschützten Kursen**: dort gibt die Einladung gezielt Lese-Zugriff auf diese Lektion, siehe [Kapitel 7]({{< ref "07-berechtigungen" >}}))
+
+---
+
+## Globaler Teilnehmer-Dashboard
+
+Unter **Wissen & Lernen → Teilnehmer verwalten** findest du einen **globalen Dashboard** für alle Anmeldungen und Einladungen, die du verwalten darfst — Ordner- und Kurs-übergreifend.
+
+Funktionen:
+
+- Filter nach Kurs, Person, Status, Datum
+- Massen-Aktionen: bearbeiten, benachrichtigen, löschen
+- Direkt-Einstieg in die Detailseite jeder Anmeldung
+
+Die alte Ansicht auf Ordner-Ebene gibt es weiterhin (über das Ordner-Menü), der globale Dashboard ist aber meist die erste Anlaufstelle für Admins, die mehrere Ordner betreuen.
 
 ---
 

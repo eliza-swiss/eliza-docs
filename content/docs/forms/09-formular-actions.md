@@ -151,6 +151,7 @@ Im Tab "Formularaktionen" siehst du alle konfigurierten Actions in einer übersi
 - Definiere den Titel der automatisch erstellten Meldung
 - Verwende Platzhalter für dynamische Inhalte
 - Beispiel: `Formular: {form_title}`
+- **Tipp:** Mit `{feld:Fragetext}` übernimmst du den vom Benutzer eingegebenen Wert eines Formularfelds direkt in den Titel. So wird jede Meldung sprechend (z.B. ergibt `{feld:Titel}` als Titel genau das, was der Ausfüllende ins Feld «Titel» geschrieben hat) statt überall gleich zu heissen. Damit du die Schreibweise nicht von Hand eintippen musst, kannst du die Bausteine unterhalb des Feldes anklicken (siehe Abschnitt «Bausteine einfügen und Live-Vorschau» weiter unten).
 
 **Meldungs-Beschreibung Template**
 
@@ -213,11 +214,15 @@ Du kannst folgende Platzhalter in Titel und Beschreibung verwenden:
 
 | Platzhalter | Beschreibung | Beispiel |
 |-------------|--------------|----------|
-| `{form_title}` | Titel des ausgefüllten Formulars | "Kundenreklamation XY" |
-| `{template_description}` | Beschreibung des Templates | "Erfassung von Kundenreklamationen" |
+| `{feld:Fragetext}` | **Der vom Benutzer eingegebene Wert eines Formularfelds.** Ersetze `Fragetext` durch den genauen Namen der Frage (Gross-/Kleinschreibung egal) | "Drucker im 2. Stock defekt" |
+| `{form_title}` | Titel des ausgefüllten Formulars (Name der Vorlage) | "Kundenreklamation XY" |
+| `{template_description}` | Beschreibung der Vorlage | "Erfassung von Kundenreklamationen" |
 | `{user}` | Vollständiger Name des Benutzers | "Max Mustermann" |
+| `{email}` | E-Mail-Adresse aus den Kontaktangaben des Formulars | "max@example.com" |
 | `{created_date}` | Datum und Uhrzeit der Erstellung | "28.10.2025 14:30" |
 | `{form_url}` | Direkter Link zum Formular | "/forms/forms/123/detail/" |
+
+> **🚀 Neu:** Der Platzhalter `{feld:Fragetext}` ist der Schlüssel zu aussagekräftigen Meldungen. Statt dass alle Meldungen eines Formulars gleich heissen (z.B. immer «IT-Helpdesk»), übernimmst du damit den konkret eingegebenen Wert eines Feldes. Bleibt das Feld leer oder gibt es keine Frage mit diesem Namen, wird automatisch der Formularname als Titel verwendet – es entsteht also nie eine Meldung ohne Titel.
 
 **Beispiel-Konfiguration:**
 
@@ -238,6 +243,30 @@ Beschreibung des Templates:
 Direkter Link zum ausgefüllten Formular:
 {form_url}
 ```
+
+### Bausteine einfügen und Live-Vorschau
+
+Damit du dir die genaue Schreibweise der Platzhalter nicht merken musst, helfen dir beim Bearbeiten einer Action zwei Komfortfunktionen direkt unter jedem Vorlage-Feld (Meldungs-Titel, -Beschreibung sowie die E-Mail-Texte).
+
+**Bausteine einfügen**
+
+Unter dem Feld findest du eine Reihe anklickbarer Bausteine. Ein Klick fügt den passenden Platzhalter genau dort ein, wo dein Cursor gerade steht:
+
+- Je ein Baustein für die Standard-Platzhalter (z.B. **Formularname**, **Benutzer**, **Datum**, **E-Mail**)
+- Je ein Baustein pro Formularfeld deiner Vorlage, beschriftet mit dem Feldnamen (z.B. **Titel**, **Beschreibung**)
+
+So vermeidest du Tippfehler und Verweise auf nicht existierende Felder. Den eingefügten Baustein kannst du beliebig mit eigenem Text kombinieren, zum Beispiel `[Helpdesk] {feld:Titel}`.
+
+> **💡 Tipp:** Felder, die sich nicht als Text eignen (z.B. Datei-Uploads, Unterschriften oder Inhaltsblöcke), erscheinen bewusst nicht als Baustein.
+
+**Live-Vorschau**
+
+Unter den Bausteinen zeigt dir eine Vorschau laufend, wie das Ergebnis aussehen wird. Sie aktualisiert sich sofort, während du tippst oder einen Baustein anklickst:
+
+- Bekannte Werte werden mit Beispielen gefüllt: Der **Formularname** ist echt, **Benutzer** und **Datum** sind Beispielangaben.
+- Werte aus **Formularfeldern** werden als hervorgehobener Baustein angezeigt (z.B. «Titel»), weil sie bei jeder Meldung anders sind. So erkennst du auf einen Blick, welcher Teil fix ist und welcher pro Meldung durch die Eingabe des Benutzers ersetzt wird.
+
+> **💡 Tipp:** Die Vorschau hängt nicht davon ab, ob das Formular schon ausgefüllt wurde. Du siehst den Aufbau also bereits beim erstmaligen Einrichten.
 
 ## Funktionsweise
 
@@ -325,7 +354,7 @@ Kundenreklamationen werden manuell in einem Formular erfasst und müssen dann ma
    - Beschreibung: `Kundenreklamation erfasst von {user} am {created_date}\n\n{form_url}`
 
 **Ergebnis**:
-- Sobald ein Mitarbeiter eine Reklamation ausfüllt und abschließt, wird automatisch eine Q-Meldung erstellt
+- Sobald ein Mitarbeiter eine Reklamation ausfüllt und abschliesst, wird automatisch eine Q-Meldung erstellt
 - Die Meldung enthält alle relevanten Informationen und einen Link zum Formular
 - Zeitersparnis und keine vergessenen Meldungen mehr
 
@@ -355,7 +384,7 @@ Mitarbeiter melden Adressänderungen über ein Formular. Die Personalabteilung s
 ### Beispiel 3: Compliance-Checks mit Eskalation
 
 **Ausgangslage**:
-Compliance-Checks müssen regelmäßig durchgeführt und bei Auffälligkeiten eskaliert werden.
+Compliance-Checks müssen regelmässig durchgeführt und bei Auffälligkeiten eskaliert werden.
 
 **Lösung mit Formular-Actions:**
 
@@ -495,7 +524,7 @@ Bei mehreren Actions:
 ### 4. Actions testen
 
 - Erstelle ein Test-Formular
-- Fülle es aus und schließe es ab
+- Fülle es aus und schliesse es ab
 - Prüfe ob Actions wie erwartet ausgeführt wurden
 - Prüfe die Server-Logs bei Problemen
 
