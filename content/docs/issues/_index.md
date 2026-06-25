@@ -85,6 +85,7 @@ Detaillierte Anleitungen für alle Funktionen rund um Meldungen: von der Erstell
 - Meldungsdetails und Felder
 - Status-Workflow verstehen
 - Kommentare und Dateien hinzufügen
+- Meldungen abonnieren (Favoriten-Stern)
 - Meldungen zuweisen und mit Fristen versehen
 - Meldungen zwischen Meldekreisen verschieben
 
@@ -105,9 +106,9 @@ Erfahre, wie du als Administrator Meldekreise erstellst, konfigurierst und optim
 - Kategorien (Labels) verwalten
 - Nummernkreise und Präfixe
 - Öffentliche Formulare einrichten
-- E-Mail-Benachrichtigungen konfigurieren
+- E-Mail-Benachrichtigungen konfigurieren (zwei Modi: alle Beteiligten oder Favoriten-Abo)
 - Wissensdatenbank aktivieren
-- 🧪 Eigene Workflow-Status mit Kanban-Ansicht in der Meldekreis-Übersicht (BETA — auf Anfrage bei [support@eliza.swiss](mailto:support@eliza.swiss))
+- Eigene Workflow-Status mit Kanban-Ansicht in der Meldekreis-Übersicht (von einem Meldungs-Admin in den Einstellungen aktivierbar)
 
 **Zielgruppe:** Administratoren, Teamleiter
 **Lesezeit:** ~25 Minuten

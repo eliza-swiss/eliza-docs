@@ -1,0 +1,293 @@
+<svg width="980" height="1480" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 1480">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1976d2"/>
+      <stop offset="60%" style="stop-color:#2196f3"/>
+      <stop offset="100%" style="stop-color:#4fc3f7"/>
+    </linearGradient>
+    <style>
+      .title { font-family: 'Roboto', Arial, sans-serif; font-weight: 500; }
+      .titleBold { font-family: 'Roboto', Arial, sans-serif; font-weight: 700; }
+      .text { font-family: 'Roboto', Arial, sans-serif; font-weight: 400; }
+      .small { font-family: 'Roboto', Arial, sans-serif; font-size: 11px; }
+      .micro { font-family: 'Roboto', Arial, sans-serif; font-size: 10px; }
+    </style>
+  </defs>
+
+  <!-- Hintergrund -->
+  <rect width="980" height="1480" fill="#f5f5f5"/>
+
+  <!-- ELIZA Header -->
+  <rect width="980" height="50" fill="#424242"/>
+  <g transform="translate(15, 10) scale(0.4)">
+    <path fill="#42a5f6" d="M 4.097656 38.84375 C 3.328125 25.796875 13.257812 14.59375 26.277344 13.824219 C 32.527344 13.457031 38.667969 15.589844 43.347656 19.757812 C 48.027344 23.925781 50.867188 29.789062 51.234375 36.054688 C 52.003906 49.101562 42.074219 60.300781 29.058594 61.070312 C 16.039062 61.839844 4.867188 51.886719 4.097656 38.839844 Z"/>
+    <path fill="#fff" d="M 20.761719 28.636719 L 18.339844 28.34375 L 18.214844 26.195312 L 34.992188 25.203125 L 35.707031 30.617188 L 33.289062 30.761719 L 32.027344 27.714844 L 25.972656 27.773438 L 26.445312 35.757812 L 30.175781 35.453125 L 30.578125 32.898438 L 32.699219 32.773438 L 33.152344 40.480469 L 31.03125 40.605469 L 30.359375 37.96875 L 26.582031 38.097656 L 27.074219 46.453125 L 33.769531 45.636719 L 35.402344 41.550781 L 38.046875 42.140625 L 37.65625 47.960938 L 19.59375 49.027344 L 19.472656 47 L 21.816406 46.546875 Z"/>
+    <path fill="#ff9800" d="M 40.730469 39.570312 C 42.679688 26.644531 54.714844 17.75 67.609375 19.703125 C 73.804688 20.644531 79.371094 24.007812 83.085938 29.0625 C 86.804688 34.113281 88.367188 40.441406 87.429688 46.648438 C 85.480469 59.574219 73.445312 68.46875 60.546875 66.511719 C 47.652344 64.558594 38.777344 52.496094 40.730469 39.570312 Z"/>
+    <path fill="#fff" d="M 59.179688 33.058594 L 56.964844 32.285156 L 57.285156 30.15625 L 67.644531 31.726562 L 67.320312 33.851562 L 64.363281 33.84375 L 61.695312 51.523438 L 67.457031 52.09375 L 70.335938 46.363281 L 73.140625 47.164062 L 71.003906 55.367188 L 53.816406 52.761719 L 54.117188 50.753906 L 56.503906 50.796875 Z"/>
+    <path fill="#ea4545" d="M 73.121094 37.171875 C 70.8125 24.3125 79.335938 12.011719 92.167969 9.695312 C 98.328125 8.582031 104.675781 9.96875 109.820312 13.550781 C 114.960938 17.128906 118.472656 22.609375 119.582031 28.785156 C 121.890625 41.644531 113.363281 53.945312 100.535156 56.261719 C 87.707031 58.578125 75.433594 50.03125 73.121094 37.171875 Z"/>
+    <path fill="#fff" d="M 92.105469 24.390625 L 89.546875 24.414062 L 89.167969 22.296875 L 99.359375 20.457031 L 99.738281 22.574219 L 97.277344 23.457031 L 100.449219 41.117188 L 103.050781 41 L 103.402344 42.964844 L 93.25 44.800781 L 92.890625 42.800781 L 95.273438 42.027344 Z"/>
+    <path fill="#7b1fa2" d="M 106.398438 39.878906 C 107.492188 26.851562 118.917969 17.183594 131.914062 18.28125 C 138.152344 18.808594 143.929688 21.796875 147.972656 26.59375 C 152.011719 31.390625 153.988281 37.597656 153.460938 43.855469 C 152.367188 56.878906 140.941406 66.550781 127.945312 65.453125 C 114.949219 64.355469 105.300781 52.90625 106.398438 39.878906 Z"/>
+    <path fill="#fff" d="M 134.289062 32.285156 L 126.972656 32.125 L 124.894531 36.1875 L 122.296875 35.59375 L 123.585938 29.4375 L 139.496094 30.78125 L 140.109375 32.65625 L 127.945312 48.742188 L 125.636719 50.550781 L 134.40625 50.652344 L 136.585938 46.066406 L 139.167969 46.851562 L 137.921875 53.664062 L 120.71875 52.210938 L 119.851562 50.351562 L 132.273438 34.214844 Z"/>
+    <path fill="#4caf50" d="M 143.242188 38.273438 C 141.617188 25.304688 150.789062 13.476562 163.726562 11.851562 C 169.9375 11.070312 176.207031 12.792969 181.148438 16.644531 C 186.09375 20.492188 189.308594 26.15625 190.085938 32.382812 C 191.710938 45.347656 182.539062 57.175781 169.601562 58.804688 C 156.667969 60.429688 144.863281 51.238281 143.242188 38.273438 Z"/>
+    <path fill="#fff" d="M 163.472656 23.75 L 168.957031 23.058594 L 178.339844 42.664062 L 180.058594 42.761719 L 180.3125 44.78125 L 170.703125 45.988281 L 170.453125 43.972656 L 172.578125 43.390625 L 171.085938 39.855469 L 163.800781 40.773438 L 163.226562 44.601562 L 165.640625 44.578125 L 165.894531 46.59375 L 157.789062 47.613281 L 157.5 45.601562 L 159.230469 45.042969 Z M 166.386719 28.789062 L 165.664062 26.695312 L 165.449219 28.929688 L 164.113281 38.34375 L 170.148438 37.585938 Z"/>
+  </g>
+  <text x="105" y="32" class="titleBold" font-size="14" fill="#fff">Wissen finden</text>
+  <text x="930" y="32" class="text" font-size="18" fill="#fff">★</text>
+
+  <!-- TOP-TOOLBAR (Navigation Tabs + Neuer Inhalt) -->
+  <rect x="20" y="68" width="940" height="56" rx="2" fill="#fff" filter="url(#shadow)"/>
+  <!-- Home aktiv (blau) -->
+  <rect x="35" y="84" width="36" height="26" rx="2" fill="#1976d2"/>
+  <text x="44" y="103" class="text" font-size="14" fill="#fff">⌂</text>
+  <!-- Favoriten -->
+  <rect x="76" y="84" width="36" height="26" rx="2" fill="#9e9e9e"/>
+  <text x="86" y="103" class="text" font-size="13" fill="#fff">★</text>
+  <!-- Meine Kurse -->
+  <rect x="117" y="84" width="120" height="26" rx="2" fill="#9e9e9e"/>
+  <text x="126" y="103" class="text" font-size="11" fill="#fff">MEINE KURSE</text>
+  <!-- Neue Kurse -->
+  <rect x="242" y="84" width="108" height="26" rx="2" fill="#673ab7"/>
+  <text x="254" y="103" class="text" font-size="11" fill="#fff">NEUE KURSE</text>
+  <!-- Teilnehmende -->
+  <rect x="355" y="84" width="120" height="26" rx="2" fill="#9e9e9e"/>
+  <text x="362" y="103" class="text" font-size="11" fill="#fff">TEILNEHMENDE</text>
+  <!-- Neuer Inhalt (rechts) -->
+  <rect x="810" y="84" width="135" height="26" rx="2" fill="#4caf50"/>
+  <text x="822" y="103" class="text" font-size="11" fill="#fff" font-weight="bold">+ NEUER INHALT</text>
+
+  <!-- HERO mit blauem Gradient + prominenter Suche -->
+  <rect x="20" y="138" width="940" height="180" rx="12" fill="url(#heroGradient)" filter="url(#shadow)"/>
+  <text x="50" y="190" class="text" font-size="28" fill="#fff">🧭</text>
+  <text x="90" y="190" class="titleBold" font-size="26" fill="#fff">Wissen finden</text>
+  <text x="50" y="218" class="text" font-size="14" fill="#fff" opacity="0.92">Schnell zum richtigen Wissen — Handbücher, Schulungen und Anleitungen für deinen Alltag.</text>
+
+  <!-- Suchleiste (weiss, in Hero eingebettet) -->
+  <rect x="50" y="238" width="880" height="56" rx="10" fill="#fff" filter="url(#shadow)"/>
+  <text x="68" y="272" class="text" font-size="20" fill="#757575">🔍</text>
+  <text x="100" y="273" class="text" font-size="15" fill="#9e9e9e">Was suchst du? Suche in Handbüchern, Schulungen und Anleitungen …</text>
+
+  <!-- THEMEN-Card -->
+  <rect x="20" y="338" width="940" height="100" rx="6" fill="#fff" filter="url(#shadow)"/>
+  <text x="40" y="372" class="text" font-size="20" fill="#3949ab">🏷</text>
+  <text x="70" y="372" class="title" font-size="16" fill="#424242">Themen</text>
+  <text x="940" y="372" class="small" fill="#9e9e9e" text-anchor="end">Klick auf ein Thema filtert die Liste</text>
+
+  <!-- Label-Chips (gefüllt mit Materialize-Farben + Count-Badge) -->
+  <g transform="translate(40, 390)">
+    <rect x="0" y="0" width="125" height="28" rx="14" fill="#1976d2"/>
+    <text x="14" y="19" class="text" font-size="12" fill="#fff">Onboarding</text>
+    <rect x="92" y="6" width="26" height="16" rx="8" fill="#fff" fill-opacity="0.25"/>
+    <text x="98" y="18" class="micro" fill="#fff" font-weight="bold">12</text>
+
+    <rect x="135" y="0" width="155" height="28" rx="14" fill="#ef6c00"/>
+    <text x="149" y="19" class="text" font-size="12" fill="#fff">Qualitätsmgmt</text>
+    <rect x="258" y="6" width="22" height="16" rx="8" fill="#fff" fill-opacity="0.25"/>
+    <text x="263" y="18" class="micro" fill="#fff" font-weight="bold">8</text>
+
+    <rect x="300" y="0" width="115" height="28" rx="14" fill="#2e7d32"/>
+    <text x="314" y="19" class="text" font-size="12" fill="#fff">HR/People</text>
+    <rect x="383" y="6" width="22" height="16" rx="8" fill="#fff" fill-opacity="0.25"/>
+    <text x="388" y="18" class="micro" fill="#fff" font-weight="bold">6</text>
+
+    <rect x="425" y="0" width="105" height="28" rx="14" fill="#6a1b9a"/>
+    <text x="439" y="19" class="text" font-size="12" fill="#fff">Prozesse</text>
+    <rect x="498" y="6" width="22" height="16" rx="8" fill="#fff" fill-opacity="0.25"/>
+    <text x="503" y="18" class="micro" fill="#fff" font-weight="bold">9</text>
+
+    <rect x="540" y="0" width="105" height="28" rx="14" fill="#c62828"/>
+    <text x="554" y="19" class="text" font-size="12" fill="#fff">Sicherheit</text>
+    <rect x="613" y="6" width="22" height="16" rx="8" fill="#fff" fill-opacity="0.25"/>
+    <text x="618" y="18" class="micro" fill="#fff" font-weight="bold">4</text>
+
+    <rect x="655" y="0" width="90" height="28" rx="14" fill="#546e7a"/>
+    <text x="669" y="19" class="text" font-size="12" fill="#fff">IT-Tools</text>
+    <rect x="713" y="6" width="22" height="16" rx="8" fill="#fff" fill-opacity="0.25"/>
+    <text x="718" y="18" class="micro" fill="#fff" font-weight="bold">7</text>
+  </g>
+
+  <!-- FÜR DICH Card -->
+  <rect x="20" y="458" width="940" height="172" rx="6" fill="#fff" filter="url(#shadow)"/>
+  <text x="40" y="492" class="text" font-size="20" fill="#1976d2">📧</text>
+  <text x="70" y="492" class="title" font-size="16" fill="#424242">Für dich</text>
+
+  <!-- Invitation Card 1 (hellblau #e3f2fd) -->
+  <rect x="40" y="506" width="900" height="50" rx="8" fill="#e3f2fd" stroke="#90caf9" stroke-width="1"/>
+  <text x="58" y="540" class="text" font-size="20" fill="#1565c0">🎓</text>
+  <rect x="88" y="520" width="78" height="18" rx="9" fill="#1565c0"/>
+  <text x="98" y="533" class="micro" fill="#fff" font-weight="bold">EINLADUNG</text>
+  <text x="175" y="534" class="title" font-size="13" fill="#424242">Schulung Datenschutz 2026</text>
+  <text x="88" y="551" class="small" fill="#757575">Du wurdest zu dieser Schulung eingeladen</text>
+  <text x="920" y="540" class="text" font-size="18" fill="#9e9e9e">→</text>
+
+  <!-- Invitation Card 2 -->
+  <rect x="40" y="566" width="900" height="50" rx="8" fill="#e3f2fd" stroke="#90caf9" stroke-width="1"/>
+  <text x="58" y="600" class="text" font-size="20" fill="#1565c0">📄</text>
+  <rect x="88" y="580" width="78" height="18" rx="9" fill="#1565c0"/>
+  <text x="98" y="593" class="micro" fill="#fff" font-weight="bold">EINLADUNG</text>
+  <text x="175" y="594" class="title" font-size="13" fill="#424242">Onboarding-Leitfaden: IT-Tools</text>
+  <text x="88" y="611" class="small" fill="#757575">Personalhandbuch · Du wurdest zu diesem Artikel eingeladen</text>
+  <text x="920" y="600" class="text" font-size="18" fill="#9e9e9e">→</text>
+
+  <!-- FAVORITEN Card -->
+  <rect x="20" y="650" width="940" height="170" rx="6" fill="#fff" filter="url(#shadow)"/>
+  <text x="40" y="684" class="text" font-size="20" fill="#ff8f00">⭐</text>
+  <text x="70" y="684" class="title" font-size="16" fill="#424242">Meine Favoriten</text>
+  <rect x="830" y="668" width="110" height="26" rx="4" fill="none" stroke="#1976d2" stroke-width="1"/>
+  <text x="843" y="686" class="small" fill="#1976d2" font-weight="500">Alle anzeigen →</text>
+
+  <!-- Favorit-Karte 1 (gelb #fffde7) -->
+  <rect x="40" y="704" width="290" height="64" rx="8" fill="#fffde7" stroke="#ffe082" stroke-width="1"/>
+  <text x="58" y="742" class="text" font-size="22" fill="#f9a825">★</text>
+  <text x="92" y="730" class="titleBold" font-size="13" fill="#424242">Mitarbeitendenhandbuch</text>
+  <text x="92" y="748" class="small" fill="#757575">📖 Handbuch · HR/People</text>
+
+  <!-- Favorit-Karte 2 -->
+  <rect x="340" y="704" width="290" height="64" rx="8" fill="#fffde7" stroke="#ffe082" stroke-width="1"/>
+  <text x="358" y="742" class="text" font-size="22" fill="#f9a825">★</text>
+  <text x="392" y="730" class="titleBold" font-size="13" fill="#424242">Hygienekonzept</text>
+  <text x="392" y="748" class="small" fill="#757575">🎓 Schulungskurs · 6 Lektionen</text>
+
+  <!-- Favorit-Karte 3 -->
+  <rect x="640" y="704" width="300" height="64" rx="8" fill="#fffde7" stroke="#ffe082" stroke-width="1"/>
+  <text x="658" y="742" class="text" font-size="22" fill="#f9a825">★</text>
+  <text x="692" y="730" class="titleBold" font-size="13" fill="#424242">IT-Sicherheitsrichtlinien</text>
+  <text x="692" y="748" class="small" fill="#757575">📖 Handbuch · Sicherheit</text>
+
+  <!-- Favorit-Karte 4 + 5 zweite Reihe -->
+  <rect x="40" y="780" width="290" height="32" rx="8" fill="#fffde7" stroke="#ffe082" stroke-width="1"/>
+  <text x="58" y="803" class="text" font-size="18" fill="#f9a825">★</text>
+  <text x="86" y="800" class="titleBold" font-size="12" fill="#424242">QM-Handbuch ISO 9001</text>
+
+  <rect x="340" y="780" width="290" height="32" rx="8" fill="#fffde7" stroke="#ffe082" stroke-width="1"/>
+  <text x="358" y="803" class="text" font-size="18" fill="#f9a825">★</text>
+  <text x="386" y="800" class="titleBold" font-size="12" fill="#424242">Brandschutz-Auffrischung</text>
+
+  <!-- LETZTE KOMMENTARE Card -->
+  <rect x="20" y="840" width="940" height="194" rx="6" fill="#fff" filter="url(#shadow)"/>
+  <text x="40" y="874" class="text" font-size="20" fill="#7b1fa2">💬</text>
+  <text x="70" y="874" class="title" font-size="16" fill="#424242">Letzte Kommentare</text>
+
+  <!-- Kommentar 1 (lila Hintergrund #faf5ff) -->
+  <rect x="40" y="888" width="900" height="46" rx="8" fill="#faf5ff" stroke="#e1bee7" stroke-width="1"/>
+  <circle cx="68" cy="911" r="16" fill="#ab47bc"/>
+  <text x="68" y="916" class="small" fill="#fff" font-weight="bold" text-anchor="middle">AM</text>
+  <text x="96" y="906" class="titleBold" font-size="12" fill="#424242">Anna Müller</text>
+  <text x="172" y="906" class="small" fill="#757575">· vor 2 Std</text>
+  <text x="96" y="922" class="small" fill="#424242">"Den Abschnitt zum HR-Tool habe ich angepasst, bitte nochmals durchsehen."</text>
+  <text x="96" y="934" class="micro" fill="#757575">📖 Onboarding-Leitfaden · Personalhandbuch</text>
+
+  <!-- Kommentar 2 -->
+  <rect x="40" y="944" width="900" height="46" rx="8" fill="#faf5ff" stroke="#e1bee7" stroke-width="1"/>
+  <circle cx="68" cy="967" r="16" fill="#ab47bc"/>
+  <text x="68" y="972" class="small" fill="#fff" font-weight="bold" text-anchor="middle">TB</text>
+  <text x="96" y="962" class="titleBold" font-size="12" fill="#424242">Thomas Berger</text>
+  <text x="195" y="962" class="small" fill="#757575">· gestern</text>
+  <text x="96" y="978" class="small" fill="#424242">"Bitte Schritt 4 mit dem neuen Formular ergänzen — Vorlage ist im DMS."</text>
+  <text x="96" y="990" class="micro" fill="#757575">🎓 Lektion 3: Reinigungsplan · Hygienekonzept</text>
+
+  <!-- Kommentar 3 -->
+  <rect x="40" y="1000" width="900" height="28" rx="8" fill="#faf5ff" stroke="#e1bee7" stroke-width="1"/>
+  <circle cx="60" cy="1014" r="12" fill="#ab47bc"/>
+  <text x="60" y="1018" class="micro" fill="#fff" font-weight="bold" text-anchor="middle">SK</text>
+  <text x="82" y="1011" class="titleBold" font-size="12" fill="#424242">Sarah Kunz</text>
+  <text x="145" y="1011" class="small" fill="#757575">· vor 2 Tagen — "@bernhard kannst du die VPN-Schritte prüfen?"</text>
+
+  <!-- HANDBÜCHER Card -->
+  <rect x="20" y="1054" width="940" height="166" rx="6" fill="#fff" filter="url(#shadow)"/>
+  <text x="40" y="1088" class="text" font-size="20" fill="#1976d2">📖</text>
+  <text x="70" y="1088" class="title" font-size="16" fill="#424242">Handbücher</text>
+  <rect x="830" y="1072" width="110" height="26" rx="4" fill="none" stroke="#1976d2" stroke-width="1"/>
+  <text x="843" y="1090" class="small" fill="#1976d2" font-weight="500">Alle anzeigen →</text>
+
+  <!-- c-entity-card 1 -->
+  <rect x="40" y="1106" width="218" height="100" rx="6" fill="#fff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)"/>
+  <rect x="40" y="1106" width="218" height="50" rx="6" fill="#e3f2fd"/>
+  <rect x="40" y="1150" width="218" height="6" fill="#e3f2fd"/>
+  <text x="149" y="1140" class="text" font-size="26" fill="#1976d2" text-anchor="middle">📘</text>
+  <text x="54" y="1175" class="titleBold" font-size="12" fill="#424242">Mitarbeitenden-</text>
+  <text x="54" y="1188" class="titleBold" font-size="12" fill="#424242">handbuch</text>
+  <text x="54" y="1201" class="micro" fill="#757575">18 Artikel · 24.05.2026</text>
+
+  <!-- c-entity-card 2 -->
+  <rect x="265" y="1106" width="218" height="100" rx="6" fill="#fff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)"/>
+  <rect x="265" y="1106" width="218" height="50" rx="6" fill="#e3f2fd"/>
+  <rect x="265" y="1150" width="218" height="6" fill="#e3f2fd"/>
+  <text x="374" y="1140" class="text" font-size="26" fill="#1976d2" text-anchor="middle">📘</text>
+  <text x="279" y="1175" class="titleBold" font-size="12" fill="#424242">QM-Handbuch</text>
+  <text x="279" y="1190" class="micro" fill="#757575">24 Artikel · 23.05.2026</text>
+
+  <!-- c-entity-card 3 -->
+  <rect x="490" y="1106" width="218" height="100" rx="6" fill="#fff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)"/>
+  <rect x="490" y="1106" width="218" height="50" rx="6" fill="#e3f2fd"/>
+  <rect x="490" y="1150" width="218" height="6" fill="#e3f2fd"/>
+  <text x="599" y="1140" class="text" font-size="26" fill="#1976d2" text-anchor="middle">📘</text>
+  <text x="504" y="1175" class="titleBold" font-size="12" fill="#424242">Prozesshandbuch</text>
+  <text x="504" y="1190" class="micro" fill="#757575">12 Artikel · 21.05.2026</text>
+
+  <!-- c-entity-card 4 -->
+  <rect x="715" y="1106" width="225" height="100" rx="6" fill="#fff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)"/>
+  <rect x="715" y="1106" width="225" height="50" rx="6" fill="#e3f2fd"/>
+  <rect x="715" y="1150" width="225" height="6" fill="#e3f2fd"/>
+  <text x="827" y="1140" class="text" font-size="26" fill="#1976d2" text-anchor="middle">📘</text>
+  <text x="729" y="1175" class="titleBold" font-size="12" fill="#424242">IT-Sicherheits-RL</text>
+  <text x="729" y="1190" class="micro" fill="#757575">9 Artikel · 18.05.2026</text>
+
+  <!-- SCHULUNGSKURSE Card -->
+  <rect x="20" y="1240" width="940" height="100" rx="6" fill="#fff" filter="url(#shadow)"/>
+  <text x="40" y="1274" class="text" font-size="20" fill="#00897b">🎓</text>
+  <text x="70" y="1274" class="title" font-size="16" fill="#424242">Schulungskurse</text>
+  <rect x="830" y="1258" width="110" height="26" rx="4" fill="none" stroke="#1976d2" stroke-width="1"/>
+  <text x="843" y="1276" class="small" fill="#1976d2" font-weight="500">Alle anzeigen →</text>
+
+  <!-- Mini-Karten -->
+  <rect x="40" y="1292" width="218" height="40" rx="6" fill="#e0f2f1" stroke="#80cbc4" stroke-width="1"/>
+  <text x="58" y="1318" class="text" font-size="18" fill="#00897b">🎓</text>
+  <text x="86" y="1308" class="titleBold" font-size="12" fill="#424242">Datenschutz 2026</text>
+  <text x="86" y="1322" class="micro" fill="#757575">5 Lektionen · Compliance</text>
+
+  <rect x="265" y="1292" width="218" height="40" rx="6" fill="#e0f2f1" stroke="#80cbc4" stroke-width="1"/>
+  <text x="283" y="1318" class="text" font-size="18" fill="#00897b">🎓</text>
+  <text x="311" y="1308" class="titleBold" font-size="12" fill="#424242">Brandschutz</text>
+  <text x="311" y="1322" class="micro" fill="#757575">8 Lektionen · Sicherheit</text>
+
+  <rect x="490" y="1292" width="218" height="40" rx="6" fill="#e0f2f1" stroke="#80cbc4" stroke-width="1"/>
+  <text x="508" y="1318" class="text" font-size="18" fill="#00897b">🎓</text>
+  <text x="536" y="1308" class="titleBold" font-size="12" fill="#424242">Hygieneschulung</text>
+  <text x="536" y="1322" class="micro" fill="#757575">6 Lektionen · Onboarding</text>
+
+  <rect x="715" y="1292" width="225" height="40" rx="6" fill="#e0f2f1" stroke="#80cbc4" stroke-width="1"/>
+  <text x="733" y="1318" class="text" font-size="18" fill="#00897b">🎓</text>
+  <text x="761" y="1308" class="titleBold" font-size="12" fill="#424242">QM nach ISO 9001</text>
+  <text x="761" y="1322" class="micro" fill="#757575">10 Lekt. · Qualitätsmgmt</text>
+
+  <!-- WAS IST NEU? Card (2-spaltig) -->
+  <rect x="20" y="1360" width="940" height="110" rx="6" fill="#fff" filter="url(#shadow)"/>
+  <text x="40" y="1394" class="text" font-size="20" fill="#2e7d32">✨</text>
+  <text x="70" y="1394" class="title" font-size="16" fill="#424242">Was ist neu?</text>
+
+  <!-- Spalte links: Neue Inhalte -->
+  <text x="40" y="1416" class="text" font-size="11" fill="#2e7d32" font-weight="bold">+ NEUE INHALTE</text>
+  <line x1="40" y1="1422" x2="465" y2="1422" stroke="#eee"/>
+  <text x="40" y="1438" class="text" font-size="12" fill="#1976d2">📘</text>
+  <text x="60" y="1438" class="titleBold" font-size="12" fill="#424242">Datenschutz für Mitarbeitende</text>
+  <text x="40" y="1454" class="micro" fill="#9e9e9e">Personalhandbuch · vor 1 Std</text>
+  <line x1="40" y1="1459" x2="465" y2="1459" stroke="#f0f0f0"/>
+  <text x="40" y="1473" class="text" font-size="12" fill="#1976d2">📘</text>
+  <text x="60" y="1473" class="titleBold" font-size="12" fill="#424242">Reisekosten-Anleitung</text>
+  <text x="465" y="1473" class="micro" fill="#9e9e9e" text-anchor="end">gestern</text>
+
+  <!-- Spalte rechts: Geänderte Inhalte -->
+  <text x="495" y="1416" class="text" font-size="11" fill="#ef6c00" font-weight="bold">✎ GEÄNDERTE INHALTE</text>
+  <line x1="495" y1="1422" x2="940" y2="1422" stroke="#eee"/>
+  <text x="495" y="1438" class="text" font-size="12" fill="#00897b">🎓</text>
+  <text x="515" y="1438" class="titleBold" font-size="12" fill="#424242">Onboarding-Leitfaden</text>
+  <text x="495" y="1454" class="micro" fill="#9e9e9e">Abschnitt "IT-Tools" überarbeitet · vor 3 Std</text>
+  <line x1="495" y1="1459" x2="940" y2="1459" stroke="#f0f0f0"/>
+  <text x="495" y="1473" class="text" font-size="12" fill="#00897b">🎓</text>
+  <text x="515" y="1473" class="titleBold" font-size="12" fill="#424242">Hygienekonzept · Lektion 3</text>
+  <text x="940" y="1473" class="micro" fill="#9e9e9e" text-anchor="end">vor 5 Std</text>
+
+</svg>

@@ -16,7 +16,7 @@ icon: "folder"
 
 Willkommen zum umfassenden Benutzerhandbuch für das ELIZA Dokumentenmanagementsystem (DMS).
 
-![Dokumentenlenkung im DMS](images/dokumentenlenkung.png)
+![Dokumentenlenkung im DMS](/docs/dms/images/dokumentenlenkung.png)
 
 ## Über dieses Handbuch
 

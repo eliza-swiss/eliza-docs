@@ -20,7 +20,7 @@ Willkommen zum umfassenden Benutzerhandbuch für die ELIZA Einstellungen und Ben
 
 Dieses Handbuch hilft dir, Benutzer in ELIZA effektiv zu verwalten, Berechtigungen zu konfigurieren und das System nach deinen Anforderungen einzustellen. Es richtet sich sowohl an Administratoren als auch an Benutzer mit erweiterten Rechten.
 
-![Übersicht Benutzerverwaltung](images/ueberblick.png)
+![Übersicht Benutzerverwaltung](/docs/core/images/ueberblick.png)
 
 ## 📚 Kapitel-Übersicht
 

@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="100%" font-family="Roboto, Arial, sans-serif">
+  <defs>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Hintergrund -->
+  <rect width="1000" height="640" fill="#f5f5f5"/>
+
+  <!-- Header -->
+  <rect width="1000" height="50" fill="#424242"/>
+  <!-- Mini ELIZA Logo (5 farbige Punkte) -->
+  <circle cx="22" cy="25" r="6" fill="#42A5F5"/>
+  <circle cx="36" cy="25" r="6" fill="#FF9800"/>
+  <circle cx="50" cy="25" r="6" fill="#EA4545"/>
+  <circle cx="64" cy="25" r="6" fill="#7B1FA2"/>
+  <circle cx="78" cy="25" r="6" fill="#4CAF50"/>
+  <text x="105" y="32" fill="#fff" font-size="14" font-weight="bold">Meldungen › Benachrichtigungen bei Antworten</text>
+
+  <!-- Ausgangspunkt: Neue Antwort -->
+  <rect x="330" y="74" width="340" height="56" rx="8" fill="#fff" filter="url(#cardShadow)"/>
+  <text x="500" y="98" text-anchor="middle" fill="#424242" font-size="16" font-weight="bold">💬 Neue Antwort auf eine Meldung</text>
+  <text x="500" y="119" text-anchor="middle" fill="#9E9E9E" font-size="12">Wer wird benachrichtigt?</text>
+
+  <!-- Verbindungslinien zu den zwei Modi -->
+  <path d="M 430 130 L 255 168" stroke="#BDBDBD" stroke-width="2" fill="none"/>
+  <path d="M 570 130 L 745 168" stroke="#BDBDBD" stroke-width="2" fill="none"/>
+
+  <!-- ===================== Linke Karte: Schalter EIN ===================== -->
+  <rect x="30" y="170" width="450" height="350" rx="8" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="30" y="170" width="450" height="64" rx="8" fill="#E8F5E9"/>
+  <rect x="30" y="220" width="450" height="14" fill="#E8F5E9"/>
+
+  <!-- Schalter EIN -->
+  <rect x="52" y="190" width="44" height="22" rx="11" fill="#4CAF50"/>
+  <circle cx="85" cy="201" r="9" fill="#fff"/>
+  <text x="110" y="199" fill="#2E7D32" font-size="14" font-weight="bold">Automatische E-Mails: EIN</text>
+  <text x="110" y="218" fill="#558B2F" font-size="12">Alle Beteiligten werden informiert (wie bisher)</text>
+
+  <!-- Empfängerliste links -->
+  <text x="60" y="272" fill="#4CAF50" font-size="15" font-weight="bold">✓</text>
+  <text x="84" y="272" fill="#424242" font-size="14">Admins des Meldekreises</text>
+
+  <text x="60" y="308" fill="#4CAF50" font-size="15" font-weight="bold">✓</text>
+  <text x="84" y="308" fill="#424242" font-size="14">Alle Beteiligten (wer schon geantwortet hat)</text>
+
+  <text x="60" y="344" fill="#4CAF50" font-size="15" font-weight="bold">✓</text>
+  <text x="84" y="344" fill="#424242" font-size="14">Zugewiesene Person</text>
+
+  <text x="60" y="380" fill="#4CAF50" font-size="15" font-weight="bold">✓</text>
+  <text x="84" y="380" fill="#424242" font-size="14">Ausgewählte Empfänger der Antwort</text>
+
+  <text x="60" y="416" fill="#4CAF50" font-size="15" font-weight="bold">✓</text>
+  <text x="84" y="416" fill="#424242" font-size="14" font-weight="bold">⭐ Favoriten-Abonnenten</text>
+  <rect x="84" y="426" width="42" height="18" rx="9" fill="#FFF8E1"/>
+  <text x="105" y="439" text-anchor="middle" fill="#F57F17" font-size="11" font-weight="bold">NEU</text>
+
+  <text x="60" y="478" fill="#4CAF50" font-size="15" font-weight="bold">✓</text>
+  <text x="84" y="478" fill="#424242" font-size="14">Zentrale Benachrichtigungs-E-Mail</text>
+
+  <!-- ===================== Rechte Karte: Schalter AUS ===================== -->
+  <rect x="520" y="170" width="450" height="350" rx="8" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="520" y="170" width="450" height="64" rx="8" fill="#FFF8E1"/>
+  <rect x="520" y="220" width="450" height="14" fill="#FFF8E1"/>
+
+  <!-- Schalter AUS -->
+  <rect x="542" y="190" width="44" height="22" rx="11" fill="#BDBDBD"/>
+  <circle cx="553" cy="201" r="9" fill="#fff"/>
+  <text x="600" y="199" fill="#E65100" font-size="14" font-weight="bold">Automatische E-Mails: AUS</text>
+  <text x="600" y="218" fill="#F57F17" font-size="12">Favoriten-Modus – du entscheidest selbst</text>
+
+  <!-- Empfängerliste rechts -->
+  <text x="550" y="272" fill="#E53935" font-size="15" font-weight="bold">✗</text>
+  <text x="574" y="272" fill="#9E9E9E" font-size="14" text-decoration="line-through">Admins des Meldekreises</text>
+
+  <text x="550" y="308" fill="#E53935" font-size="15" font-weight="bold">✗</text>
+  <text x="574" y="308" fill="#9E9E9E" font-size="14" text-decoration="line-through">Alle Beteiligten (wer schon geantwortet hat)</text>
+
+  <text x="550" y="344" fill="#4CAF50" font-size="15" font-weight="bold">✓</text>
+  <text x="574" y="344" fill="#424242" font-size="14">Zugewiesene Person</text>
+
+  <text x="550" y="380" fill="#4CAF50" font-size="15" font-weight="bold">✓</text>
+  <text x="574" y="380" fill="#424242" font-size="14">Ausgewählte Empfänger der Antwort</text>
+
+  <text x="550" y="416" fill="#4CAF50" font-size="15" font-weight="bold">✓</text>
+  <text x="574" y="416" fill="#424242" font-size="14" font-weight="bold">⭐ Favoriten-Abonnenten</text>
+  <rect x="574" y="426" width="42" height="18" rx="9" fill="#FFF8E1"/>
+  <text x="595" y="439" text-anchor="middle" fill="#F57F17" font-size="11" font-weight="bold">NEU</text>
+
+  <text x="550" y="478" fill="#9E9E9E" font-size="13" font-style="italic">Admins werden weiterhin über neue</text>
+  <text x="550" y="496" fill="#9E9E9E" font-size="13" font-style="italic">Meldungen informiert – nur nicht mehr über jede Antwort</text>
+
+  <!-- ===================== Fussnote: Stern = Abo ===================== -->
+  <rect x="30" y="544" width="940" height="72" rx="8" fill="#E3F2FD" filter="url(#cardShadow)"/>
+  <text x="62" y="574" fill="#F9A825" font-size="22">★</text>
+  <text x="95" y="572" fill="#1565C0" font-size="14" font-weight="bold">So abonnierst du eine Meldung:</text>
+  <text x="95" y="594" fill="#1976D2" font-size="13">Klicke auf den Stern oben rechts in der Meldung. Als ELIZA-Benutzer erhältst du Benachrichtigungen direkt im Dashboard – E-Mails gehen nur noch an externe Adressen.</text>
+</svg>

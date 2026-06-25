@@ -257,6 +257,27 @@ Im Dropdown des Glocken-Symbols:
 - **Nachricht anklicken**: Direkt zur Nachricht
 - **Alle anzeigen**: Zum vollständigen Posteingang
 
+## Benachrichtigungs-Einstellungen
+
+Du kannst selbst steuern, ob und wie du über Benachrichtigungen informiert wirst.
+
+### Einstellungen öffnen
+
+1. Öffne deine **Einstellungen** (über dein Benutzermenü)
+2. Wechsle zum Bereich **Benachrichtigungen**
+3. Setze oder entferne die Häkchen nach Wunsch und klicke auf **Speichern**
+
+### Verfügbare Schalter
+
+| Schalter | Wirkung |
+|----------|---------|
+| **Benachrichtigungen per E-Mail erhalten** | Ist dieser Schalter aus, erhältst du keine Benachrichtigungs-E-Mails mehr. Die Benachrichtigungen bleiben aber wie gewohnt im Dashboard und im Posteingang sichtbar |
+| **Tägliche Zusammenfassung erhalten** | Steuert die tägliche Zusammenfassungs-E-Mail sowie Erinnerungen aus der Zeiterfassung |
+| **Geburtstags-, Dienstjubiläums- und Pensionierungs-Benachrichtigungen** | Erinnerungen für HR-Verantwortliche zu anstehenden Geburtstagen, Dienstjubiläen und Pensionierungen |
+| **Benachrichtigungen der Zeiterfassung** | Erinnerungen für fehlende Arbeitszeit |
+
+> **💡 Tipp:** Möchtest du dein Postfach entlasten, aber nichts verpassen? Schalte «Benachrichtigungen per E-Mail erhalten» aus und prüfe deine Benachrichtigungen direkt im Dashboard.
+
 ## Häufige Fragen
 
 ### Warum erhalte ich keine Benachrichtigungen?

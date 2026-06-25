@@ -116,7 +116,7 @@ Der Kommentarbereich zeigt den gesamten Verlauf:
 
 ## Status-Workflow
 
-> **🧪 BETA: Eigene Workflow-Status**: Neu kannst du pro Meldekreis eigene Workflow-Status mit Kanban-Board definieren — statt der klassischen sieben Status. Die Funktion befindet sich in der Beta-Phase und ist standardmässig deaktiviert. Melde dich bei [support@eliza.swiss](mailto:support@eliza.swiss), um sie freischalten zu lassen. Details siehe [Kapitel 3: Eigene Workflow-Status]({{< ref "03-meldekreise-verwalten#eigene-workflow-status-beta" >}}).
+> **Eigene Workflow-Status**: Du kannst pro Meldekreis eigene Workflow-Status mit Kanban-Board definieren — statt der klassischen sieben Status. Die Funktion ist standardmässig deaktiviert und wird von einem Meldungs-Admin unter **Meldungen → Einstellungen → Benutzerdefinierte Workflow-Status** aktiviert. Details siehe [Kapitel 3: Eigene Workflow-Status]({{< ref "03-meldekreise-verwalten#eigene-workflow-status" >}}).
 
 ### Übersicht der Status
 
@@ -259,6 +259,34 @@ Die Checkbox-Liste zeigt:
 
 - 👁️ = Benutzer kann die Meldung aktuell einsehen
 - 🚫 = Benutzer kann die Meldung erst nach Statusänderung sehen
+
+### Meldungen abonnieren (Favoriten-Stern)
+
+Mit dem Stern oben rechts in der Meldung abonnierst du Benachrichtigungen für diese Meldung – der Stern ist auch im Meldungs-Modal des Kanban-Boards verfügbar:
+
+1. Öffne die gewünschte Meldung
+2. Klicke auf den **Stern** – die Meldung wird als Favorit markiert und du bist abonniert
+3. Ab sofort erhältst du bei jeder neuen Antwort eine **Benachrichtigung im Dashboard**
+4. Zum Abbestellen klickst du einfach erneut auf den Stern
+
+Das Umschalten funktioniert ohne Neuladen der Seite. Die Meldung erscheint zusätzlich in deinen Favoriten auf dem Dashboard.
+
+![Übersicht: Wer wird bei einer neuen Antwort benachrichtigt – die zwei Modi im Vergleich](/docs/issues/images/favoriten_benachrichtigungen.svg)
+
+**Wer wird bei einer neuen Antwort benachrichtigt?**
+
+Das hängt vom Modus des Meldekreises ab (Schalter «Automatische E-Mails an alle Beteiligten versenden», siehe [Meldekreise verwalten]({{< ref "03-meldekreise-verwalten" >}})):
+
+| Empfänger | Schalter aktiviert | Schalter deaktiviert |
+| --- | :---: | :---: |
+| Zugewiesene Person | ✓ | ✓ |
+| Ausgewählte Empfänger der Antwort | ✓ | ✓ |
+| ⭐ Favoriten-Abonnenten | ✓ | ✓ |
+| Admins des Meldekreises | ✓ | – |
+| Alle Beitragenden | ✓ | – |
+| Zentrale Benachrichtigungs-E-Mail | ✓ | – |
+
+> **💡 Hinweis:** Als ELIZA-Benutzer erhältst du Benachrichtigungen direkt im Dashboard (Glocke). Direkte E-Mails gehen nur an externe Adressen. Ob du zusätzlich E-Mails erhältst, steuerst du in deinen persönlichen Einstellungen mit «Benachrichtigungen per E-Mail erhalten».
 
 ## Zuständigkeit und Fristen
 

@@ -212,17 +212,33 @@ Gib eine E-Mail-Adresse an, die bei allen Änderungen benachrichtigt wird:
 - Feld: **"Benachrichtigungs E-Mail"**
 - Diese Adresse erhält E-Mails bei:
   - Neuen Meldungen
-  - Neuen Kommentaren
+  - Neuen Kommentaren (nur im Modus «Automatische E-Mails aktiviert»)
   - Statusänderungen
 
-### Automatische Benachrichtigungen
+### Automatische Benachrichtigungen: Die zwei Modi
 
-Checkbox **"Automatische Benachrichtigungs E-Mails versenden"**:
+Der Schalter **«Automatische E-Mails an alle Beteiligten versenden»** steuert, wer bei neuen Antworten automatisch benachrichtigt wird:
 
-- Aktiviert: E-Mails werden automatisch versendet
-- Deaktiviert: Keine automatischen E-Mails
+![Übersicht: Wer wird bei einer neuen Antwort benachrichtigt – die zwei Modi im Vergleich](/docs/issues/images/favoriten_benachrichtigungen.svg)
 
-> **💡 Tipp:** Bei hohem Meldungsaufkommen kann es sinnvoll sein, automatische E-Mails zu deaktivieren und stattdessen die ELIZA-Benachrichtigungen zu nutzen.
+**Aktiviert (Standard):**
+
+- Admins, alle Beitragenden und die Benachrichtigungs-E-Mail werden bei jeder Antwort informiert
+- Zusätzlich werden Favoriten-Abonnenten benachrichtigt
+
+**Deaktiviert (Favoriten-Modus):**
+
+- Bei Antworten werden nur noch die zugewiesene Person, explizit ausgewählte Empfänger und Favoriten-Abonnenten benachrichtigt
+- Admins und Beitragende erhalten keine automatischen Benachrichtigungen mehr – wer eine Meldung verfolgen will, markiert sie mit dem **Stern** als Favorit
+- Admins werden weiterhin über **neue Meldungen** informiert
+
+In beiden Modi gilt:
+
+- Interne ELIZA-Benutzer erhalten Benachrichtigungen direkt im Dashboard (Glocke); direkte E-Mails gehen nur an externe Adressen
+- Der Verfasser einer Antwort wird nie selbst benachrichtigt
+- Benutzer mit deaktivierter Einstellung «Benachrichtigungen per E-Mail erhalten» bekommen keine E-Mails, sehen die Benachrichtigungen aber im Dashboard
+
+> **💡 Tipp:** Bei hohem Meldungsaufkommen lohnt sich der Favoriten-Modus: Deaktiviere den Schalter, damit sich jede Person per Stern selbst für die relevanten Meldungen anmeldet.
 
 ## Labels (Kategorien) verwalten
 
@@ -312,9 +328,9 @@ Wenn das Zeiterfassungsmodul aktiviert ist, kannst du Zeiterfassung für Meldung
 
 Benutzer können dann beim Bearbeiten von Meldungen Arbeitszeit erfassen.
 
-## Eigene Workflow-Status (BETA)
+## Eigene Workflow-Status
 
-> **🧪 BETA-Funktion**: Diese Funktion befindet sich in der Beta-Phase und ist standardmässig deaktiviert. Wenn du sie ausprobieren möchtest, melde dich bei [support@eliza.swiss](mailto:support@eliza.swiss) — wir schalten sie gerne für deine Installation frei.
+> **Standardmässig deaktiviert**: Diese Funktion ist standardmässig ausgeschaltet. Ein Meldungs-Admin aktiviert sie unter **Meldungen → Einstellungen → Benutzerdefinierte Workflow-Status**. Bestehende Meldekreise mit klassischen Status bleiben unverändert.
 
 Statt der klassischen sieben Status (Neu, In Prüfung, Akzeptiert, …) kannst du **pro Meldekreis** eigene Workflow-Status definieren — mit eigener Bezeichnung, Farbe, Icon und gestufter Sichtbarkeit. Sobald mindestens ein Custom-Status angelegt ist, zeigt die **Meldekreis-Übersicht** die Meldungen automatisch als Kanban mit Drag & Drop zwischen den Status-Spalten — eine separate Board-Ansicht ist nicht nötig.
 
