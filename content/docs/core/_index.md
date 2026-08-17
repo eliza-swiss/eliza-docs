@@ -232,6 +232,7 @@ Schritt-für-Schritt-Anleitung für IT-Administratoren beim Kunden, wie SSO mit 
 - Client Secret erstellen und verwalten
 - SSO-Konfiguration in ELIZA (Whitelist, Standard-Gruppe, Login ausblenden)
 - Ersten Login testen
+- **Direkter Microsoft-Login per Link** (ohne Button-Klick, ideal für Gruppen-PCs)
 - Troubleshooting (AADSTS-Fehlercodes, Redirect-URI-Mismatch, Secret-Ablauf)
 - Sicherheitsempfehlungen und FAQ
 

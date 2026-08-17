@@ -105,6 +105,26 @@ Hier findest du alle Prozesse, für die du verantwortlich bist oder in deren Tea
 
 Deine persönliche Sammlung häufig genutzter Prozesse für schnellen Zugriff.
 
+### 6. Prozess-Mindmap (BETA)
+
+**Prozesse → Mindmap-Symbol in der Prozess-Navigation**
+
+Die Prozess-Mindmap zeigt die gesamte Prozesslandschaft als interaktive Karte: die Wurzel in der Mitte, Hauptprozesse als Äste, Unterprozesse daran aufgereiht.
+
+![Prozess-Mindmap mit geöffneten Ästen](/docs/prozesse/images/prozess_mindmap_horizontal.png)
+
+**Funktionen:**
+
+- **Äste öffnen und schliessen**: Das Plus/Minus an jedem Knoten klappt Unterprozesse auf und zu; die Karte ordnet sich automatisch überlappungsfrei neu
+- **Details per Klick**: Ein Klick auf einen Prozess öffnet ein Fenster mit Beschreibung, Verantwortung, Prozessschritten und Prozessdiagramm; ein Doppelklick führt direkt zur vollständigen Prozessansicht
+- **Zwei Darstellungen**: Über den Schalter in der Werkzeugleiste wechselst du zwischen der kompakten horizontalen Ansicht (Standard) und der radialen Landkarte; deine Wahl bleibt pro Browser gespeichert
+- **Suchen und Navigieren**: Die Suche öffnet automatisch alle Äste bis zum Treffer; Mausrad zoomt, Ziehen verschiebt die Karte, der Einpassen-Knopf bringt alles zurück ins Bild
+- **Präsentationsmodus**: Der orange Knopf schaltet in den Vollbildmodus — ideal für Schulungen und Audits
+
+**Aktivierung (BETA):** Die Mindmap ist standardmässig ausgeschaltet. Administratoren aktivieren sie unter **Prozesse → Einstellungen → Darstellungsoptionen** mit dem Schalter **Prozess-Mindmap aktivieren (BETA)**. Erst danach erscheint das Mindmap-Symbol in der Prozess-Navigation.
+
+Die Mindmap zeigt nur Prozesse, die du auch öffnen darfst. Prozesse, deren übergeordneter Prozess archiviert wurde, findest du gebündelt unter dem Sammelast «Weitere Prozesse».
+
 ---
 
 ## Die Prozesse-Oberfläche

@@ -17,7 +17,7 @@ In diesem Kapitel lernst du, wie du Zielsysteme erstellst und verwaltest - das s
 
 ## Was ist ein Zielsystem?
 
-Ein **Zielsystem** ist die oberste Ebene der OKR-Hierarchie. Es definiert das strategische Framework, in dem alle Ziele eingebettet sind.
+Ein **Zielsystem** ist die oberste Ebene im Kompass-Modul. Es bildet entweder das strategische Framework für OKRs oder den dauerhaften organisatorischen Rahmen für Managementbewertungen.
 
 Ein Zielsystem enthält:
 
@@ -28,6 +28,15 @@ Ein Zielsystem enthält:
 | **Mission** | Kernauftrag | "Wir vereinfachen Qualitätsmanagement für KMU" |
 | **Strategie** | Der Weg zum Ziel | "Fokus auf Benutzerfreundlichkeit und KI-Integration" |
 | **Nordstern** | Die wichtigste Leitmetrik | "1000 aktive Kunden bis Ende 2025" |
+
+### Typen von Zielsystemen
+
+| Typ | Verwendung |
+|-----|------------|
+| **OKR** | Strategische Zielsysteme mit Perioden, Objectives und Key Results |
+| **Managementbewertung** | Wiederkehrende Managementreviews mit Bewertungsthemen, Nachweisen, Entscheiden und Abschluss-PDF |
+
+Bei einer Managementbewertung stehen zusätzlich **Normen** und der **Meldekreis für Massnahmen** zur Verfügung. Den vollständigen Ablauf findest du unter [Managementbewertung durchführen](../managementbewertung/).
 
 ## Zielsysteme anzeigen
 
@@ -87,6 +96,8 @@ Klicke auf ein Zielsystem, um die Details zu sehen:
 ## Zielsystem löschen
 
 > **⚠️ Wichtig:** Das Löschen eines Zielsystems entfernt auch alle zugehörigen Perioden, Objectives und Key Results!
+
+Managementreview-Systeme mit mindestens einer abgeschlossenen Bewertung können zum Schutz des Auditnachweises nicht mehr gelöscht werden.
 
 1. Öffne das Zielsystem
 2. Klicke auf das **Papierkorb-Symbol** (Löschen)
@@ -259,6 +270,7 @@ Du weisst nun, wie du Zielsysteme erstellst und verwaltest. Fahre fort mit:
 
 - [Perioden und Zielsetzungen](../perioden-objectives/) - Lerne, Perioden und Objectives anzulegen
 - [Ergebnisse und Updates](../ergebnisse-updates/) - Definiere messbare Key Results
+- [Managementbewertung durchführen](../managementbewertung/) - Führe ein Managementreview nach ISO 9001 durch
 
 ## Zusammenfassung
 

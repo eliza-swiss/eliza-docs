@@ -1,20 +1,22 @@
 ---
 title: "OKR"
-description: "Objectives und Key Results für strategische Zielsetzungen verwalten"
+description: "OKR-Ziele und Managementbewertungen im Kompass-Modul verwalten"
 weight: 57
 tags:
   - "overview"
   - "manual"
+  - "kompass"
   - "okr"
+  - "managementbewertung"
   - "objectives"
   - "key-results"
 icon: "flag"
 ---
 
 
-# OKR Benutzerhandbuch
+# Kompass Benutzerhandbuch
 
-Willkommen zum umfassenden Benutzerhandbuch für das ELIZA OKR-Modul.
+Willkommen zum Benutzerhandbuch für das ELIZA Kompass-Modul. Kompass unterstützt sowohl **Objectives and Key Results (OKR)** für die strategische Zielarbeit als auch strukturierte **Managementbewertungen** mit operativen Nachweisen und archiviertem Abschluss-PDF.
 
 ## Was ist OKR?
 
@@ -29,7 +31,7 @@ Das OKR-Framework hilft dir dabei:
 
 ## Über dieses Handbuch
 
-Dieses Handbuch führt dich durch alle Funktionen des OKR-Moduls in ELIZA. Es ist in mehrere Kapitel unterteilt, die dich von den Grundlagen bis zu fortgeschrittenen Funktionen begleiten.
+Dieses Handbuch führt dich durch die Funktionen des Kompass-Moduls in ELIZA. Die Kapitel 1 bis 6 behandeln die OKR-Zielarbeit. Kapitel 7 beschreibt den vollständigen Ablauf einer Managementbewertung.
 
 ## 📚 Kapitelübersicht
 
@@ -140,6 +142,25 @@ Entdecke vollständige OKR-Beispiele aus Startup, Altersheim und Pizzeria - mit 
 
 ---
 
+### [7. Managementbewertung durchführen](managementbewertung/)
+
+**Managementbewertungen nach ISO 9001 vorbereiten, dokumentieren und revisionssicher abschliessen**
+
+Lerne, wie du ein Managementreview-System einrichtest, die zwölf ISO-9001-Themen übernimmst, Fakten und Nachweise verknüpfst und einen unveränderbaren PDF-Abschlussnachweis erzeugst.
+
+**Inhalte:**
+- Managementreview-System und Bewertungsperiode einrichten
+- ISO-9001-Themen aus der Vorlage übernehmen
+- Bewertung, Trend, Datenstand, Auswertung und Managemententscheid dokumentieren
+- KPIs, Prozesse, OKRs, Risiken, Massnahmen, Meldungen und Dokumente verknüpfen
+- Themen sortieren und PDF-Vorschau prüfen
+- Managementbewertung sicher abschliessen
+
+**Zielgruppe:** Geschäftsleitung, Qualitätsmanagement, Prozessverantwortliche
+**Lesezeit:** ~20 Minuten
+
+---
+
 ## Die OKR-Hierarchie auf einen Blick
 
 <pre>
@@ -166,6 +187,31 @@ Entdecke vollständige OKR-Beispiele aus Startup, Altersheim und Pizzeria - mit 
 └─────────────────────────────────────────────────────────────────┘
 </pre>
 
+## Die Managementreview-Hierarchie auf einen Blick
+
+<pre>
+┌─────────────────────────────────────────────────────────────────┐
+│                  MANAGEMENTREVIEW-SYSTEM                        │
+│      (Normen, Verantwortung, Meldekreis, Sichtbarkeit)           │
+│                              │                                  │
+│                    ┌─────────┴─────────┐                         │
+│                    ▼                   ▼                         │
+│          Bewertungsperiode     Bewertungsperiode                │
+│               2026                  2027                         │
+│                    │                                             │
+│         ┌──────────┼──────────┐                                  │
+│         ▼          ▼          ▼                                  │
+│       Thema 1    Thema 2    Thema 3 ...                         │
+│         │                                                           │
+│         ├── Bewertung, Trend, Datenstand                          │
+│         ├── Auswertung und Managemententscheid                   │
+│         └── Fakten, Nachweise und Massnahmen                     │
+│                    │                                             │
+│                    ▼                                             │
+│       unveränderbarer PDF-Nachweis nach Abschluss                │
+└─────────────────────────────────────────────────────────────────┘
+</pre>
+
 ## Schnellstart
 
 Wenn du sofort loslegen möchtest, hier die wichtigsten Schritte:
@@ -175,6 +221,15 @@ Wenn du sofort loslegen möchtest, hier die wichtigsten Schritte:
 3. **Objectives formulieren** → Lege ambitionierte, qualitative Ziele fest
 4. **Key Results definieren** → Erstelle messbare Ergebnisse für jedes Objective
 5. **Updates erfassen** → Dokumentiere regelmässig den Fortschritt
+
+### Schnellstart Managementbewertung
+
+1. **Zielsystem erstellen** → Typ «Managementbewertung», Normen und Meldekreis festlegen
+2. **Bewertungsperiode anlegen** → Zeitraum und Review-Datum bestimmen
+3. **ISO-9001-Vorlage anwenden** → Bewertungsthemen auswählen
+4. **Themen bearbeiten** → Fakten, Auswertung und Managemententscheid dokumentieren
+5. **PDF-Vorschau prüfen** → Vollständigkeit und Reihenfolge kontrollieren
+6. **Abschliessen** → Unveränderbaren PDF-Nachweis archivieren
 
 ## Tipps für erfolgreiches OKR
 
@@ -206,4 +261,4 @@ In diesem Handbuch verwenden wir folgende Konventionen:
 
 ---
 
-**Viel Erfolg bei der Arbeit mit OKR!** 🎯
+**Viel Erfolg bei der Arbeit mit Kompass!** 🎯

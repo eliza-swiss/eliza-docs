@@ -299,25 +299,17 @@ Die tägliche Prüfung läuft automatisch und führt folgende Aktionen durch:
 
 | Aktion | Bedingung | Empfänger |
 |--------|-----------|-----------|
-| **Status auf "Abgelaufen" setzen** | `Gültig bis` < heute | Verantwortliche Benutzer |
+| **Status auf "Abgelaufen" setzen** | `Gültig bis` < heute | Dokument-Autor/in + Verantwortliche Funktion |
+| **Vorwarnung "Dokument läuft in 30 Tagen ab"** | `Gültig bis` = heute + 30 Tage | Dokument-Autor/in + Verantwortliche Funktion |
+| **Vorwarnung "Dokument läuft in 7 Tagen ab"** | `Gültig bis` = heute + 7 Tage | Dokument-Autor/in + Verantwortliche Funktion |
 
-**Verantwortliche Benutzer** umfassen:
-- Dokument-Autor
-- Ordner-Administratoren
-- Beitragende des Dokuments
+**Empfänger** sind die Autor:in des Dokuments sowie alle Mitglieder der verantwortlichen Funktion (direkt am Dokument oder über den Ordner vererbt). Mitwirkende und Ordner-Administratoren erhalten diese Benachrichtigungen nicht.
 
-> **💡 Hinweis:** Sobald das "Gültig bis"-Datum überschritten ist, wird das Dokument automatisch auf den Status "Abgelaufen" gesetzt und die verantwortlichen Benutzer werden benachrichtigt.
+> **💡 Hinweis:** Sobald das "Gültig bis"-Datum überschritten ist, wird das Dokument automatisch auf den Status "Abgelaufen" gesetzt. Damit du genug Zeit für die Verlängerung hast, wirst du bereits 30 und 7 Tage vor dem Ablaufdatum vorgewarnt.
 
 #### Wöchentliche Benachrichtigungen (Weekly)
 
-Die wöchentliche Prüfung sendet Erinnerungen für bevorstehende und überfällige Termine:
-
-**Benachrichtigungen für "Gültig bis" (valid_to):**
-
-| Zeitraum | Benachrichtigung | Empfänger |
-|----------|------------------|-----------|
-| In den nächsten 7 Tagen | "Bald ablaufendes Dokument" | Dokument-Autor |
-| Bereits abgelaufen | "Dokument abgelaufen" | Dokument-Autor |
+Die wöchentliche Prüfung sendet Erinnerungen für überfällige Termine:
 
 **Benachrichtigungen für "Nächste Überprüfung" (next_review):**
 

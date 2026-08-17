@@ -9,6 +9,7 @@ tags:
   - "lesebestätigung"
   - "unterschrift"
   - "fristen"
+  - "sammelmeldung"
 ---
 
 
@@ -210,8 +211,8 @@ Für einen Überblick über alle deine Fristen:
 2. Klicke auf **Meine Fristen**
 
 Die Fristen-Übersicht zeigt:
-- Alle anstehenden Deadlines
-- Fristen aus verschiedenen Modulen (Benachrichtigungen, Verträge, Projekte, etc.)
+- Alle anstehenden Fristen
+- Fristen aus allen Bereichen, in denen du zuständig bist
 - Farbcodierung nach Dringlichkeit
 
 | Farbe | Bedeutung |
@@ -219,6 +220,101 @@ Die Fristen-Übersicht zeigt:
 | **Rot** | Überfällig oder heute fällig |
 | **Orange** | In den nächsten Tagen fällig |
 | **Grün** | Mehr als eine Woche Zeit |
+
+### Woher deine Fristen kommen
+
+Es gibt in ELIZA kein eigenes Feld «Frist», das überall gleich heisst. Je nach Objekt ist es ein anderes Datum, das in deiner Übersicht landet. Diese Tabelle zeigt dir, welches:
+
+| Objekt | Welches Datum zählt | Es erscheint, solange … | Wer es sieht |
+|--------|---------------------|--------------------------|--------------|
+| **Massnahme** | Frist | sie geplant, laufend oder in Arbeit ist | Verantwortung, Kontrolle durch, verantwortliche oder kontrollierende Funktion |
+| **Meldung** | Frist | sie offen ist — auch während der Wirksamkeitsprüfung | die zugewiesene Person |
+| **Card** | Frist | sie nicht erledigt, abgebrochen oder archiviert ist | die zugewiesene Person |
+| **Sitzung** | Beginn | sie geplant oder vorbereitet und noch nicht vorbei ist | alle mit Zugriff auf den Space |
+| **Dokument** | Gültig bis | es freigegeben oder bereits abgelaufen ist | Autor oder verantwortliche Funktion |
+| **Dokument** | Datum der nächsten Überprüfung | es freigegeben ist | Autor oder verantwortliche Funktion |
+| **Dokument** | Frist | es noch nicht freigegeben ist | die zugewiesene Person |
+| **Prozess** | Gültig bis | er nicht archiviert ist | Prozessverantwortung und Stellvertretung |
+| **Prozess** | Datum der nächsten Überprüfung | er nicht archiviert ist | Prozessverantwortung und Stellvertretung |
+| **Prozess** | Frist | er noch nicht freigegeben ist | die zugewiesene Person |
+| **Kennzahl** | Datum der nächsten Messung | sie nicht archiviert ist | verantwortliche Person oder Funktion |
+| **Prüfmittel** | Nächste Überprüfung | es nicht archiviert ist | alle mit Leserecht auf Prüfmittel |
+| **Benachrichtigung** | Frist | sie ungelesen ist und eine Lesebestätigung verlangt | die Empfängerin oder der Empfänger |
+
+> **💡 Tipp:** Suchst du eine Frist vergeblich? Dann ist meistens eine der drei Bedingungen nicht erfüllt: das Datum ist leer, das Objekt ist erledigt oder archiviert, oder du bist dafür nicht zuständig. Ein Blick auf das Objekt selbst klärt es in der Regel sofort.
+
+**Woran du in der Liste erkennst, worum es geht:**
+
+Bei Massnahmen, Meldungen und Cards steht einfach der Titel. Alles andere trägt einen Zusatz davor, der dir sagt, was zu tun ist:
+
+| Zusatz im Eintrag | Was dahintersteckt |
+|-------------------|--------------------|
+| **Dokument läuft ab:** | Die Gültigkeit des Dokuments endet |
+| **Überprüfung fällig:** | Das Dokument sollte überprüft werden |
+| **Dokument-Aufgabe fällig:** | Deine Aufgabe auf dem Weg zur Freigabe eines Dokuments |
+| **Prozess läuft ab:** | Die Gültigkeit des Prozesses endet |
+| **Prozess-Überprüfung fällig:** | Der Prozess sollte überprüft werden |
+| **Prozess-Aufgabe fällig:** | Deine Aufgabe auf dem Weg zur Freigabe eines Prozesses |
+| **Messung fällig:** | Für die Kennzahl steht eine Messung an |
+| **Prüfung fällig:** | Das Prüfmittel muss überprüft werden |
+| **Sitzung:** | Eine Sitzung steht an, mit Uhrzeit dahinter |
+
+**Zwei Besonderheiten:**
+
+Beim **Prüfmittel** entscheidet nicht die Zuständigkeit, sondern das Leserecht: Wer Prüfmittel sehen darf, sieht alle fälligen Überprüfungen — bei allen anderen Objekten zählt nur, wofür du selbst zuständig bist.
+
+Die **Sitzung** ist streng genommen keine Frist, sondern ein Termin. Sie steht trotzdem in der Liste, weil sie am Sitzungstag als «heute fällig» erscheint und dich so rechtzeitig daran erinnert.
+
+**Wie weit nach vorne geschaut wird:**
+
+Angezeigt wird alles, was in den nächsten **30 Tagen** fällig wird. Nach hinten gibt es keine Grenze — eine Frist, die seit zwei Jahren offen ist, bleibt in deiner Übersicht stehen, bis das Objekt erledigt oder archiviert ist.
+
+> **💡 Tipp:** Hast du eine Admin- oder Freigabe-Rolle, erscheint in der Fristen-Übersicht zusätzlich der Schalter **«Auch Aufgaben anzeigen, bei denen ich nur Admin- oder Freigabe-Berechtigung habe»**. Damit siehst du auch, was in deinem Verantwortungsbereich liegt, ohne dir persönlich zugewiesen zu sein — bei Cards, Dokumenten, Prozessen, Kennzahlen und Massnahmen. Der Schalter wirkt nur auf die Übersicht: Die Sammelmeldung nennt immer nur deine eigene Zuständigkeit.
+
+### Die Fristen-Sammelmeldung
+
+Damit du deine Fristen nicht selbst im Auge behalten musst, erhältst du sie regelmässig als **eine** Benachrichtigung im Posteingang — unabhängig davon, wie viele Fristen offen sind.
+
+Die Meldung sieht so aus:
+
+<pre>
+Du hast 12 offene Fristen
+
+Überfällig (3)
+• 22.07.2025 · Überprüfung fällig: Hygienekonzept
+• 05.08.2025 · Reklamation Lieferant
+• 11.08.2025 · Schulung Notfallplan
+
+Heute fällig (2)
+• 11.08.2026 · Angebot prüfen
+• 11.08.2026 · Messung fällig: Kundenzufriedenheit
+
+→ Meine Fristen
+</pre>
+
+**So arbeitest du damit:**
+
+1. Öffne den **Posteingang** — die Meldung erkennst du an der Überschrift «Du hast … offene Fristen»
+2. Klicke auf einen **Eintrag in der Liste**, um direkt zum Dokument, zur Meldung oder zur Massnahme zu gelangen
+3. Über **Meine Fristen** am Ende der Meldung öffnest du die vollständige Übersicht mit allen Einträgen und Filtern
+
+> **💡 Tipp:** Pro Dringlichkeitsstufe werden bis zu fünf Einträge aufgezählt, danach folgt «… und X weitere». Die Zahl in der Überschrift nennt aber immer den vollständigen Stand — den kompletten Bestand findest du unter «Meine Fristen».
+
+**Wann die Meldung sich meldet:**
+
+Es gibt immer nur **eine** Fristen-Sammelmeldung in deinem Posteingang. Sie wird aktualisiert statt vervielfacht, und sie meldet sich nur, wenn sich tatsächlich etwas geändert hat:
+
+| Situation | Was passiert |
+|-----------|--------------|
+| Eine neue Frist kommt dazu | Die Meldung wird wieder ungelesen und du erhältst eine E-Mail |
+| Eine Frist wird heute fällig | Die Meldung wird wieder ungelesen und du erhältst eine E-Mail |
+| Eine Frist läuft ab | Die Meldung wird wieder ungelesen und du erhältst eine E-Mail |
+| Es ändert sich nichts | Es bleibt still — keine neue Meldung, keine E-Mail |
+| Du hast keine offenen Fristen mehr | Die Meldung verschwindet aus deinem Posteingang |
+
+> **💡 Tipp:** Markierst du die Meldung als gelesen, bleibt sie gelesen — bis sich an deinen Fristen etwas ändert. Du wirst also nicht für das Aufräumen bestraft.
+
+> **⚠️ Wichtig:** Löschst du die Meldung, wird beim nächsten Durchlauf eine neue erstellt. Löschen heisst «weg damit», nicht «erledigt». Wenn du sie später wieder sehen möchtest, markiere sie stattdessen als ungelesen.
 
 ## Dateianhänge
 
@@ -275,8 +371,19 @@ Du kannst selbst steuern, ob und wie du über Benachrichtigungen informiert wirs
 | **Tägliche Zusammenfassung erhalten** | Steuert die tägliche Zusammenfassungs-E-Mail sowie Erinnerungen aus der Zeiterfassung |
 | **Geburtstags-, Dienstjubiläums- und Pensionierungs-Benachrichtigungen** | Erinnerungen für HR-Verantwortliche zu anstehenden Geburtstagen, Dienstjubiläen und Pensionierungen |
 | **Benachrichtigungen der Zeiterfassung** | Erinnerungen für fehlende Arbeitszeit |
+| **Erinnerung an offene Fristen** | Wie oft du die Fristen-Sammelmeldung erhältst: **Täglich**, **Wöchentlich (montags)** oder **Keine** |
 
 > **💡 Tipp:** Möchtest du dein Postfach entlasten, aber nichts verpassen? Schalte «Benachrichtigungen per E-Mail erhalten» aus und prüfe deine Benachrichtigungen direkt im Dashboard.
+
+**Zur Wahl bei «Erinnerung an offene Fristen»:**
+
+| Einstellung | Für wen geeignet |
+|-------------|------------------|
+| **Täglich** (Voreinstellung) | Du wirst am Tag erinnert, an dem eine Frist fällig wird oder abläuft. An Tagen ohne Veränderung bleibt es still |
+| **Wöchentlich (montags)** | Du liest lieber gesammelt zu Wochenbeginn. Beachte, dass du damit keine Erinnerung am Fälligkeitstag selbst mehr bekommst |
+| **Keine** | Du behältst deine Fristen selbst im Blick. Sie bleiben unter **Meine Fristen** vollständig sichtbar |
+
+> **💡 Tipp:** «Täglich» bedeutet nicht «jeden Tag eine E-Mail». Die Meldung wird zwar täglich aktualisiert, verschickt wird aber nur, wenn tatsächlich etwas dazugekommen, fällig geworden oder abgelaufen ist.
 
 ## Häufige Fragen
 
@@ -304,12 +411,33 @@ Bei abgelaufenen Fristen:
 
 Nein, gelöschte Nachrichten werden dauerhaft entfernt.
 
+### Erhalte ich jeden Tag dieselbe Fristen-Meldung?
+
+Nein. Die Meldung wird zwar täglich nachgeführt, sie meldet sich aber nur, wenn sich an deinen Fristen etwas geändert hat — wenn eine dazugekommen ist, heute fällig wird oder abgelaufen ist. An Tagen ohne Veränderung bleibt es still, und du erhältst auch keine E-Mail.
+
+### Ich habe die Fristen-Meldung als gelesen markiert — kommt sie wieder?
+
+Sie bleibt gelesen, solange sich nichts ändert. Sobald eine Frist dazukommt, fällig wird oder abläuft, wird dieselbe Meldung wieder ungelesen und rückt mit dem neuen Stand nach oben.
+
+### Ich habe die Fristen-Meldung gelöscht — sind meine Fristen jetzt weg?
+
+Nein. Deine Fristen bleiben unter **Meine Fristen** vollständig sichtbar. Beim nächsten Durchlauf wird eine neue Meldung erstellt, denn Löschen heisst «weg damit», nicht «erledigt».
+
+### Warum sehe ich in der Meldung nicht alle meine Fristen?
+
+Pro Dringlichkeitsstufe werden bis zu fünf Einträge aufgezählt, damit die Meldung übersichtlich bleibt. Die Zahl in der Überschrift nennt aber immer den vollständigen Stand. Alle Einträge findest du unter **Meine Fristen**.
+
+### Warum bekomme ich gar keine Fristen-Meldung?
+
+Wenn du keine offenen Fristen hast, wird auch keine Meldung erstellt. Prüfe zusätzlich in deinen Einstellungen, ob bei **Erinnerung an offene Fristen** nicht **Keine** eingestellt ist.
+
 ## Best Practices
 
 - ✅ **Täglich prüfen**: Schaue regelmässig in deinen Posteingang
 - ✅ **Zeitnah reagieren**: Bearbeite Nachrichten mit Lesebestätigung prompt
 - ✅ **Fristen beachten**: Nutze die Fristen-Übersicht
 - ✅ **Aufräumen**: Lösche gelesene Nachrichten regelmässig
+- ✅ **Fristen-Meldung als gelesen markieren statt löschen**: So bleibt sie ruhig, meldet sich aber wieder, sobald es Neues gibt
 - ❌ **Nicht ignorieren**: Unbearbeitete Nachrichten häufen sich
 
 ## Nächste Schritte
