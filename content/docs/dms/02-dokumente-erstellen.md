@@ -161,6 +161,18 @@ Farbige Tags zur zusätzlichen Kategorisierung.
 - 🔵 Intern
 - 🟡 Review erforderlich
 
+**Labels direkt auf der Dokument-Detailseite vergeben:**
+
+Du musst das Dokument nicht bearbeiten, um seine Labels zu ändern:
+
+1. Klicke im Labels-Bereich der Detailseite auf das **Etiketten-Symbol** 🏷️
+2. Klicke die gewünschten Labels an (nochmals klicken entfernt die Zuweisung)
+3. Bestätige mit **"Übernehmen"** — mit **"Abbrechen"** verwirfst du die Änderung
+
+Ein Klick auf ein farbiges Label zeigt dir alle damit verknüpften Inhalte — auch aus anderen Modulen.
+
+> **💡 Gemeinsame Labels:** Es sind dieselben Labels wie im Prozessmodul, und die Bedienung ist überall identisch — bei Dokumenten, Prozessen und Wissensinhalten. Farbwahl, Scoped Labels und Berechtigungen sind samt Video-Anleitung im modulübergreifenden Kapitel [Labels und Kategorisierung]({{< ref "06-labels" >}}) beschrieben.
+
 ---
 
 ## Verantwortlichkeiten

@@ -167,6 +167,32 @@ Nach der Freigabe gelten die normalen Berechtigungsregeln über das übergeordne
 - ³ Innerhalb der eigenen Periode/des eigenen Objectives
 - ⁴ Für die eigenen Key Results
 
+## Besondere Regeln für Managementbewertungen
+
+Managementbewertungen verwenden die Berechtigungen des übergeordneten Zielsystems und zusätzliche Schutzregeln für Nachweise und Abschlussdokumente.
+
+### Fakten und Nachweise
+
+- In einem Bewertungsthema kannst du nur Objekte auswählen, die du selbst sehen darfst.
+- Die PDF-Vorschau enthält nur Nachweise, die für die betrachtende Person sichtbar sind.
+- Bestehende, für dich nicht sichtbare Verknüpfungen bleiben beim Bearbeiten erhalten.
+- Die Verknüpfung gibt anderen Personen keine zusätzlichen Rechte auf das Originalobjekt.
+
+### Massnahmen erstellen
+
+Die Aktion **Massnahme erstellen** ist nur verfügbar, wenn:
+
+- am Managementreview-System ein Meldekreis hinterlegt ist und
+- du in diesem Meldekreis neue Meldungen beziehungsweise Massnahmen erfassen darfst.
+
+### Abgeschlossene Bewertungen
+
+Nach dem Abschluss sind Periode, Bewertungsthemen, Reihenfolge und PDF-Nachweis unveränderbar. Als regulärer Benutzer kannst du den archivierten PDF-Nachweis nur öffnen, wenn du weiterhin alle darin enthaltenen Nachweise sehen darfst. Superuser behalten den administrativen Zugriff. Zusätzlich prüft ELIZA die SHA-256-Prüfsumme der Datei.
+
+> **Hinweis:** Wenn du eine abgeschlossene Bewertung sehen, aber ihr PDF nicht öffnen kannst, hat sich möglicherweise deine Berechtigung auf einen enthaltenen Nachweis geändert.
+
+Mehr dazu: [Managementbewertung durchführen](../managementbewertung/)
+
 ## Typische Szenarien
 
 ### Szenario 1: Unternehmensweites OKR
@@ -265,9 +291,10 @@ In diesem Kapitel hast du gelernt:
 - ✅ Den Unterschied zwischen normaler und geschützter Sichtbarkeit
 - ✅ Wie Organisationseinheiten den Zugriff steuern
 - ✅ Typische Szenarien für die Berechtigungskonfiguration
+- ✅ Die zusätzlichen Nachweis- und Abschlussschutzregeln für Managementbewertungen
 
 ---
 
-**Du hast das OKR Benutzerhandbuch abgeschlossen!** 🎉
+Weiter geht es mit [Managementbewertung durchführen](../managementbewertung/), wenn du ein Managementreview nach ISO 9001 vorbereiten und abschliessen möchtest.
 
 Zurück zur [Übersicht](../index/)

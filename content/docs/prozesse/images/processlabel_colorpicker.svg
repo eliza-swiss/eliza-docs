@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Schematischer ELIZA-Colorpicker für Prozesslabels</title>
+  <desc id="desc">Eine neutrale ELIZA-Oberfläche zeigt das Farbfeld eines Prozesslabels und den geöffneten Colorpicker mit Grundfarben, Helligkeitsstufen und einer Vorschau.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#263238" flood-opacity="0.18"/>
+    </filter>
+    <style>
+      text { font-family: Roboto, Arial, sans-serif; fill: #263238; }
+      .small { font-size: 16px; }
+      .label { font-size: 14px; fill: #607d8b; }
+      .title { font-size: 28px; font-weight: 500; }
+      .subtitle { font-size: 20px; font-weight: 500; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="760" fill="#f3f5f7"/>
+  <rect width="1200" height="72" fill="#455a64"/>
+  <circle cx="40" cy="36" r="18" fill="#80cbc4"/>
+  <text x="72" y="44" font-size="24" font-weight="500" style="fill:#fff">ELIZA · Prozesslabels</text>
+
+  <rect x="56" y="112" width="1088" height="592" rx="14" fill="#fff" filter="url(#shadow)"/>
+  <text x="92" y="162" class="title">Label bearbeiten</text>
+  <text x="92" y="208" class="label">TITEL</text>
+  <rect x="92" y="220" width="342" height="48" rx="6" fill="#fff" stroke="#b0bec5" stroke-width="2"/>
+  <text x="108" y="251" class="small">Qualität:Patientensicherheit</text>
+  <text x="92" y="305" class="label">FARBE</text>
+  <rect x="92" y="317" width="342" height="48" rx="6" fill="#fff" stroke="#1565c0" stroke-width="2"/>
+  <rect x="108" y="329" width="24" height="24" rx="4" fill="#1565c0"/>
+  <text x="146" y="349" class="small">blue darken-3</text>
+  <text x="92" y="402" class="label">VORSCHAU</text>
+  <rect x="92" y="416" width="234" height="38" rx="19" fill="#1565c0"/>
+  <text x="112" y="441" class="small" style="fill:#fff">Patientensicherheit</text>
+
+  <rect x="470" y="150" width="620" height="500" rx="16" fill="#fff" filter="url(#shadow)"/>
+  <text x="506" y="197" class="subtitle">ELIZA Colorpicker</text>
+  <text x="1045" y="197" font-size="28" style="fill:#607d8b">×</text>
+  <text x="506" y="232" class="small">Wähle eine Grundfarbe:</text>
+
+  <g transform="translate(506 254)">
+    <rect x="0" y="0" width="42" height="42" rx="6" fill="#f44336"/>
+    <rect x="54" y="0" width="42" height="42" rx="6" fill="#e91e63"/>
+    <rect x="108" y="0" width="42" height="42" rx="6" fill="#9c27b0"/>
+    <rect x="162" y="0" width="42" height="42" rx="6" fill="#673ab7"/>
+    <rect x="216" y="0" width="42" height="42" rx="6" fill="#3f51b5"/>
+    <rect x="270" y="0" width="42" height="42" rx="6" fill="#2196f3" stroke="#212121" stroke-width="3"/>
+    <rect x="324" y="0" width="42" height="42" rx="6" fill="#03a9f4"/>
+    <rect x="378" y="0" width="42" height="42" rx="6" fill="#00bcd4"/>
+    <rect x="432" y="0" width="42" height="42" rx="6" fill="#009688"/>
+    <rect x="486" y="0" width="42" height="42" rx="6" fill="#4caf50"/>
+
+    <rect x="0" y="56" width="42" height="42" rx="6" fill="#8bc34a"/>
+    <rect x="54" y="56" width="42" height="42" rx="6" fill="#cddc39"/>
+    <rect x="108" y="56" width="42" height="42" rx="6" fill="#ffeb3b"/>
+    <rect x="162" y="56" width="42" height="42" rx="6" fill="#ffc107"/>
+    <rect x="216" y="56" width="42" height="42" rx="6" fill="#ff9800"/>
+    <rect x="270" y="56" width="42" height="42" rx="6" fill="#ff5722"/>
+    <rect x="324" y="56" width="42" height="42" rx="6" fill="#795548"/>
+    <rect x="378" y="56" width="42" height="42" rx="6" fill="#9e9e9e"/>
+    <rect x="432" y="56" width="42" height="42" rx="6" fill="#607d8b"/>
+    <rect x="486" y="56" width="42" height="42" rx="6" fill="#212121"/>
+  </g>
+
+  <text x="506" y="386" class="small">Helligkeit anpassen:</text>
+  <g transform="translate(506 408)">
+    <rect x="0" y="0" width="42" height="42" rx="6" fill="#e3f2fd" stroke="#cfd8dc"/>
+    <rect x="54" y="0" width="42" height="42" rx="6" fill="#bbdefb"/>
+    <rect x="108" y="0" width="42" height="42" rx="6" fill="#90caf9"/>
+    <rect x="162" y="0" width="42" height="42" rx="6" fill="#64b5f6"/>
+    <rect x="216" y="0" width="42" height="42" rx="6" fill="#42a5f5"/>
+    <rect x="270" y="0" width="42" height="42" rx="6" fill="#2196f3"/>
+    <rect x="324" y="0" width="42" height="42" rx="6" fill="#1e88e5"/>
+    <rect x="378" y="0" width="42" height="42" rx="6" fill="#1976d2"/>
+    <rect x="432" y="0" width="42" height="42" rx="6" fill="#1565c0" stroke="#fff" stroke-width="3"/>
+    <rect x="428" y="-4" width="50" height="50" rx="9" fill="none" stroke="#212121" stroke-width="3"/>
+    <rect x="486" y="0" width="42" height="42" rx="6" fill="#0d47a1"/>
+  </g>
+
+  <rect x="506" y="492" width="548" height="1" fill="#eceff1"/>
+  <circle cx="526" cy="530" r="11" fill="#1565c0"/>
+  <text x="548" y="536" class="small">Auswahl: blue darken-3</text>
+  <rect x="506" y="566" width="244" height="40" rx="20" fill="#1565c0"/>
+  <text x="528" y="592" class="small" style="fill:#fff">Qualität:Patientensicherheit</text>
+  <rect x="765" y="566" width="252" height="40" rx="20" fill="#fff9c4"/>
+  <text x="787" y="592" class="small">Kritikalität:Zeitkritisch</text>
+
+  <text x="92" y="664" class="label">SCHEMATISCHE DARSTELLUNG · KEINE KUNDENDATEN</text>
+</svg>

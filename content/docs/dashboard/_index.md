@@ -91,6 +91,8 @@ Erfahre alles über das Benachrichtigungssystem und den Posteingang.
 - Gesendete Nachrichten verfolgen
 - Alle als gelesen markieren
 - Fristen und Deadlines im Überblick
+- Woher deine Fristen kommen: welches Datum bei welchem Objekt zählt
+- Die Fristen-Sammelmeldung und ihre Häufigkeit einstellen
 
 **Zielgruppe:** Alle Benutzer
 **Lesezeit:** ~15 Minuten
@@ -114,10 +116,29 @@ Entdecke fortgeschrittene Funktionen und Best Practices für die tägliche Arbei
 
 ---
 
+### [6. Labels und Kategorisierung](labels-und-kategorisierung/)
+
+**Themen über Module hinweg kennzeichnen**
+
+Labels verbinden Prozesse, Dokumente, Kurse und Formulare zu gemeinsamen Themen. Weil sie modulübergreifend gelten, sind sie hier beschrieben und nicht in einem einzelnen Modulhandbuch.
+
+**Inhalte:**
+- Wo Labels überall vergeben werden können
+- Farbe wählen mit dem ELIZA-Colorpicker
+- Scoped Labels für gruppierte Kategorien
+- Labels direkt auf der Detailseite vergeben (mit Video-Anleitung)
+- Verknüpfte Inhalte über einen Label-Klick anzeigen
+- Berechtigungen rund um Labels
+
+**Zielgruppe:** Alle Benutzer
+**Lesezeit:** ~10 Minuten
+
+---
+
 ## Zielgruppen
 
 - **Einsteiger**: Lies Kapitel 1-2 für einen guten Start
-- **Aktive Benutzer**: Fokus auf Kapitel 3-4 für effizientes Arbeiten
+- **Aktive Benutzer**: Fokus auf Kapitel 3-4 und 6 für effizientes Arbeiten
 - **Administratoren**: Alle Kapitel, besonders Kapitel 5
 
 ## Verwendete Konventionen

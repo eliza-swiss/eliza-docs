@@ -195,6 +195,23 @@ Schritt-für-Schritt Anleitung für die Migration von SharePoint Document Librar
 
 ---
 
+### [12. KI-Tools verbinden (MCP-Server)](ki-tools-verbinden-mcp-server/)
+
+**Claude Code, ChatGPT, Microsoft 365 Copilot und Hermes Agent mit ELIZA verbinden**
+
+ELIZA als MCP-Server für externe KI-Werkzeuge: Autorisierung per Browser-Login, Arbeiten mit den eigenen Berechtigungen, Zugriff jederzeit widerrufbar.
+
+**Inhalte:**
+
+- MCP-Server aktivieren (Administratoren)
+- Einrichtung mit Claude Code, ChatGPT, Microsoft 365 Copilot und Hermes Agent
+- Verfügbare Werkzeuge und Beispiel-Anfragen
+- Lese-/Schreibzugriff steuern und Zugriffe widerrufen
+
+**Lesezeit:** ~15 Minuten
+
+---
+
 ## Lernpfad für Integratoren
 
 **Empfohlene Reihenfolge für den Einstieg:**

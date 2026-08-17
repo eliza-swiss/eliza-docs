@@ -135,9 +135,9 @@ Issue-Tracking und Tickets.
 | `/api/issue/issue` | Issues/Tickets |
 | `/api/issue/category` | Issue-Kategorien |
 
-## OKR
+## Kompass / OKR
 
-Objectives and Key Results.
+Objectives and Key Results sowie Managementbewertungen.
 
 | Endpoint | Beschreibung |
 |----------|--------------|
@@ -146,6 +146,21 @@ Objectives and Key Results.
 | `/api/okr/objective` | Objectives (Ziele) |
 | `/api/okr/result` | Key Results |
 | `/api/okr/update` | Updates/Check-ins |
+| `/api/okr/review-item` | Bewertungsthemen einer Managementbewertung |
+
+Für eine Managementbewertung stehen zusätzlich Aktionen auf der Periode zur Verfügung:
+
+| Endpoint | Methode | Beschreibung |
+|----------|---------|--------------|
+| `/api/okr/period/{id}/apply_review_template` | POST | Zwölf ISO-9001-Standardthemen übernehmen |
+| `/api/okr/period/{id}/copy_review` | POST | Ausgewählte Themen und optional sichtbare Nachweise aus einer früheren Bewertung kopieren |
+| `/api/okr/period/{id}/reorder_review_items` | POST | Vollständige Themenreihenfolge konfliktbewusst speichern |
+| `/api/okr/period/{id}/close_review` | POST | Bewertung abschliessen und unveränderbaren PDF-Nachweis erzeugen |
+| `/api/okr/period/{id}/review_pdf` | GET | Dynamische Vorschau oder archivierten PDF-Nachweis mit API-Token herunterladen |
+
+`copy_review` erwartet `source_period`, optional `item_ids` und `copy_evidence`. Ohne `item_ids` werden alle Themen der sichtbaren Quelle kopiert. Bewertungen, Trends, Datenstände, Auswertungen, Managemententscheide und Abschlussnachweise werden nie übernommen.
+
+`reorder_review_items` erwartet alle `item_ids` in der gewünschten Reihenfolge. Mit `previous_item_ids` kann ein Client verhindern, dass eine zwischenzeitlich geänderte Reihenfolge überschrieben wird.
 
 ## Streams / Events
 

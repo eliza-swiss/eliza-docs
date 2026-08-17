@@ -27,21 +27,29 @@ Labels sind Schlagworte, die du an Kurse, Handbücher, Lektionen und Artikel anh
 
 | Objekt | Vergabe im Formular | Inline-Edit |
 |--------|---------------------|-------------|
-| **Kurs / Handbuch** | Ja | Ja (Klick auf Labels-Bereich der Detailseite) |
-| **Lektion / Artikel** | Ja | Ja (Klick auf Labels-Bereich der Detailseite) |
+| **Kurs / Handbuch** | Ja | Ja (Etiketten-Symbol im Labels-Bereich der Detailseite) |
+| **Lektion / Artikel** | Ja | Ja (Etiketten-Symbol im Labels-Bereich der Detailseite) |
 | **Folder** | Nein | – |
 | **Section** | Nein | – |
 
 ### Labels inline vergeben
 
-Auf jeder Kurs-/Lektions-Detailseite gibt es einen **Labels-Bereich**:
+Auf jeder Kurs-/Lektions-Detailseite gibt es einen **Labels-Bereich**. Der Ablauf ist derselbe wie bei Prozessen und Dokumenten:
 
-1. Klick auf den Labels-Bereich öffnet das Inline-Edit-Feld (Cotton-Komponente `<c-labels>`)
-2. Tippe ein Label — die Auto-Vervollständigung schlägt vorhandene Labels vor
-3. Enter erstellt das Label (falls neu) und hängt es an
-4. Klick aufs ✕ am Chip entfernt das Label
+1. Klicke auf das **Etiketten-Symbol** 🏷️ (Tooltip: "Labels bearbeiten") — die Auswahl öffnet sich
+2. Suche bei vielen Labels über das Feld **"Label suchen …"**
+3. **Klicke einen Chip an**, um das Label zuzuweisen — ein weiterer Klick entfernt die Zuweisung
+4. Bestätige mit **"Übernehmen"** oder verwirf die Änderung mit **"Abbrechen"**
 
-Alle Änderungen werden über HTMX live gespeichert — kein Reload.
+> **⚠️ Wichtig:** Die Änderungen werden erst mit **"Übernehmen"** gespeichert — nicht schon beim Anklicken der Chips.
+
+**Neues Label direkt anlegen:** Tippe den Namen im Feld **"Neues Label …"**, bestimme über **"Farbe wählen"** die Farbe im ELIZA-Colorpicker und klicke auf **"Hinzufügen"**. Das Label wird angelegt und direkt zugewiesen; deine bisherige Auswahl bleibt erhalten. Der Bereich erscheint nur, wenn du berechtigt bist, neue Labels anzulegen.
+
+> **💡 Mehr dazu:** Farbpalette, Scoped Labels (`Bereich:Wert`) und Berechtigungen sind im modulübergreifenden Kapitel [Labels und Kategorisierung]({{< ref "06-labels" >}}) beschrieben.
+
+### Verknüpfte Inhalte anzeigen
+
+Ein Klick auf einen farbigen Label-Chip öffnet ein Fenster mit allen Inhalten, die dieses Label tragen — modulübergreifend und nach Typ gruppiert. Es erscheinen nur Inhalte, die du sehen darfst.
 
 ### Labels in Listen
 

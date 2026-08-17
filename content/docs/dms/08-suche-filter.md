@@ -235,6 +235,15 @@ Labels ermöglichen eine flexible Kategorisierung quer zur Ordnerstruktur:
 - Ein Dokument kann mehrere Labels haben
 - Labels sind farbcodiert
 - Labels können kombiniert gefiltert werden
+- Es sind dieselben Labels wie in Prozessen und im Wissensbereich
+
+### Verknüpfte Inhalte per Klick anzeigen
+
+Der schnellste Weg zu allem, was zu einem Thema gehört: **Klicke auf der Dokument-Detailseite auf ein farbiges Label.**
+
+Ein Fenster zeigt dir alle verknüpften Inhalte, gruppiert nach Typ (Dokumente, Prozesse, Kurse …) und mit Anzahl. Es erscheinen dabei nur Inhalte, für die du eine Leseberechtigung hast.
+
+> **💡 Mehr dazu:** Farbwahl, Scoped Labels und Berechtigungen sind im modulübergreifenden Kapitel [Labels und Kategorisierung]({{< ref "06-labels" >}}) beschrieben.
 
 ### Label-Filter anwenden
 

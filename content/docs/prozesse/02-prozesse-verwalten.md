@@ -185,9 +185,17 @@ Labels helfen, Prozesse zu kategorisieren und schnell zu finden.
 
 ### Labels zuweisen
 
+**Im Bearbeitungsformular:**
+
 1. Öffne den Prozess zum Bearbeiten
 2. Im Feld **"Labels"** wähle vorhandene Labels oder erstelle neue
 3. Speichere die Änderungen
+
+**Direkt auf der Prozess-Detailseite:**
+
+1. Klicke im Labels-Bereich auf das **Etiketten-Symbol** 🏷️
+2. Klicke die gewünschten Labels an (nochmals klicken entfernt die Zuweisung)
+3. Bestätige mit **"Übernehmen"**
 
 ### Labels verwalten
 
@@ -199,7 +207,9 @@ Hier kannst du Labels erstellen und verwalten:
 |------|--------------|
 | **Titel** | Name des Labels |
 | **Beschreibung** | Erklärung wofür das Label verwendet wird |
-| **Farbe** | Farbcodierung (rot, grün, orange, blau) |
+| **Farbe** | Farbe aus der ELIZA-Farbpalette, gewählt über den visuellen Colorpicker |
+
+> **💡 Mehr dazu:** Colorpicker, Scoped Labels, Inline-Bearbeitung und Berechtigungen sind ausführlich im modulübergreifenden Kapitel [Labels und Kategorisierung]({{< ref "06-labels" >}}) beschrieben — Labels gelten auch für Dokumente, Kurse und Formular-Vorlagen.
 
 ---
 

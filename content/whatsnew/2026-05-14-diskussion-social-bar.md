@@ -81,6 +81,6 @@ Die Diskussion respektiert die normalen Sichtbarkeits-Regeln:
 
 ## 📚 Mehr erfahren
 
-Vollständige Anleitung mit allen Details: → [**Diskussion: Reagieren, Kommentieren, Gesehen** im News-Handbuch](/streams/help/diskussion/)
+Vollständige Anleitung mit allen Details: → [**Diskussion: Reagieren, Kommentieren, Gesehen** im News-Handbuch]({{< ref "06-diskussion" >}})
 
 Viel Freude beim Diskutieren! 🎉

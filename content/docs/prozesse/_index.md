@@ -32,6 +32,7 @@ Lerne die Grundlagen des Prozessmanagements in ELIZA kennen. Dieses Kapitel erkl
 - Was ist das Prozesse-Modul?
 - Hauptfunktionen im Überblick
 - Navigation und Prozesslandkarte
+- Prozess-Mindmap (BETA)
 - Zugriff und Berechtigungen
 
 **Zielgruppe:** Alle Benutzer
@@ -171,6 +172,14 @@ Lerne die BPMN 2.0 Notation kennen und erstelle professionelle Prozessdiagramme.
 
 ---
 
+## Ergänzendes Kapitel ausserhalb dieses Handbuchs
+
+### [Labels und Kategorisierung](/docs/dashboard/labels-und-kategorisierung/)
+
+Labels werden zwar unter **Prozesse → Labels** verwaltet, gelten aber modulübergreifend für Prozesse, Prozessschritte, Dokumente, Kurse, Lektionen und Formular-Vorlagen. Das vollständige Kapitel steht deshalb im modulübergreifenden Teil des Handbuchs und behandelt Colorpicker, Scoped Labels, die Bearbeitung direkt auf der Detailseite, das Inhaltsfenster je Label und die Berechtigungen — samt Video-Anleitung.
+
+---
+
 ## Zielgruppen
 
 ### 📋 Einsteiger
@@ -186,7 +195,7 @@ Fokussiere dich auf Prozessverwaltung, Prozessschritte, Workflow und Hilfsmittel
 ### 🔧 Administratoren
 **Empfohlene Kapitel:** 2, 5, 6, 7
 
-Verstehe Prozesshierarchien, Hilfsmittelverwaltung und Integrationen mit anderen Modulen.
+Verstehe Prozesshierarchien, Hilfsmittelverwaltung und Integrationen mit anderen Modulen. Für die modulübergreifende Kategorisierung siehe zusätzlich das Kapitel [Labels und Kategorisierung]({{< ref "06-labels" >}}).
 
 ### 💪 Power User
 **Empfohlene Kapitel:** Alle Kapitel

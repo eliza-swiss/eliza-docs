@@ -21,6 +21,8 @@ In diesem Kapitel lernst du, wie du Perioden als Zeitrahmen für deine Ziele anl
 
 Eine **Periode** ist ein definierter Zeitabschnitt, in dem Ziele verfolgt werden. Typischerweise sind dies Quartale, aber du kannst beliebige Zeiträume definieren.
 
+In einem Zielsystem vom Typ **Managementbewertung** bildet eine Periode stattdessen eine konkrete Bewertungsrunde ab. Sie enthält Bewertungsthemen, Teilnehmende, Gesamtbeurteilung und Abschlussnachweis. Siehe [Managementbewertung durchführen](../managementbewertung/).
+
 | Feld | Beschreibung | Beispiel |
 |------|--------------|----------|
 | **Titel** | Name der Periode | "Q1 2025" |
@@ -80,6 +82,8 @@ Beim Erstellen einer neuen Periode kannst du bestehende Objectives übernehmen:
 ## Periode löschen
 
 > **⚠️ Wichtig:** Das Löschen einer Periode entfernt auch alle zugehörigen Objectives und Key Results!
+
+Eine abgeschlossene Managementbewertungsperiode kann weder bearbeitet noch gelöscht werden.
 
 1. Öffne die Periode
 2. Klicke auf das **Papierkorb-Symbol**

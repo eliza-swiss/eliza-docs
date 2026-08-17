@@ -10,6 +10,10 @@ tags:
   - "azure-ad"
   - "admin-consent"
   - "admin"
+  - "direktlink"
+  - "gruppen-pc"
+  - "kiosk"
+  - "startseite"
 ---
 
 
@@ -140,6 +144,40 @@ Wenn das nicht klappt → siehe **Troubleshooting**.
 
 ---
 
+## Direkter Microsoft-Login per Link (ohne Button-Klick)
+
+Normalerweise öffnet ein Benutzer die Login-Seite und klickt auf **Mit Microsoft anmelden**. Du kannst diesen Klick aber überspringen: ELIZA bietet eine spezielle Adresse, die den Microsoft-Login **automatisch** startet.
+
+```
+https://kunde.myeliza.ch/core/microsoft_login/
+```
+
+Wer diese Adresse aufruft, wird sofort und ohne Zwischenseite zu Microsoft weitergeleitet. Ist der Benutzer in Microsoft 365 bereits angemeldet (z.B. auf einem Firmen-Notebook), landet er **ohne einen einzigen Klick** direkt im ELIZA-Dashboard.
+
+### Typischer Anwendungsfall: Gruppen-PCs und Kiosk-Geräte
+
+Dieser Direktlink eignet sich ideal für **gemeinsam genutzte Geräte** – zum Beispiel ein Stations-PC im Pflegeheim, ein Tablet in der Werkstatt oder ein Empfangs-Terminal:
+
+1. Hinterlege `https://kunde.myeliza.ch/core/microsoft_login/` als **Startseite des Browsers**
+2. Beim Öffnen des Browsers startet der Microsoft-Login automatisch
+3. Der angemeldete Mitarbeitende gelangt mit minimalem Aufwand in ELIZA
+
+So entfällt die Zwischenseite mit dem Anmelde-Button vollständig.
+
+### Direkt auf eine bestimmte Seite springen (`next`)
+
+Du kannst den Link mit einem `next`-Parameter kombinieren, um den Benutzer nach dem Login direkt auf eine **bestimmte Zielseite** zu leiten – statt auf das Dashboard. Das ist praktisch, wenn ein Gruppen-PC z.B. immer direkt ein bestimmtes Formular öffnen soll:
+
+```
+https://kunde.myeliza.ch/core/microsoft_login/?next=/forms/templates/2/fill-direct/
+```
+
+> 🔐 **Sicherheit:** ELIZA akzeptiert als `next`-Ziel nur Adressen **innerhalb deiner ELIZA-Instanz**. Externe Links (z.B. auf eine fremde Website) werden aus Sicherheitsgründen ignoriert – der Benutzer landet dann auf dem Dashboard. So sind Weiterleitungs-Angriffe (Open Redirect) ausgeschlossen.
+
+> 💡 **Tipp:** Den passenden Pfad für `next` findest du, indem du die gewünschte Zielseite in ELIZA aufrufst und alles **nach** der Domain aus der Adresszeile kopierst (also z.B. `/forms/templates/2/fill-direct/`).
+
+---
+
 ## Troubleshooting
 
 ### "Genehmigung erforderlich" – ELIZA AG nicht überprüft
@@ -258,6 +296,10 @@ Sobald sein Microsoft-365-Konto deaktiviert wird, kann er sich nicht mehr per SS
 ### Wie viele Klicks braucht der Login nach der Einrichtung?
 
 Wenn der Benutzer in Microsoft 365 bereits angemeldet ist (z.B. im Outlook-Web-Client): **Ein Klick** auf „Mit Microsoft anmelden" – und er ist in ELIZA. Andernfalls plus Passwort + MFA.
+
+### Kann ich den Anmelde-Button überspringen und direkt zu Microsoft springen?
+
+**Ja.** Rufe die Adresse `https://kunde.myeliza.ch/core/microsoft_login/` auf – der Microsoft-Login startet dann automatisch ohne Zwischenseite. Ideal als Browser-Startseite auf Gruppen-PCs. Mit `?next=/pfad/` kannst du den Benutzer zusätzlich direkt auf eine bestimmte Seite leiten. Details siehe Abschnitt *Direkter Microsoft-Login per Link*.
 
 ---
 
