@@ -1,7 +1,7 @@
 ---
 title: "🚀 ELIZA November-Update: Office am Computer und PDF-Darstellung"
 date: "2026-11-07"
-publishDate: "2026-11-06"
+publishDate: "2026-11-05"
 category: "Sammel-Updates"
 modules: ["dms", "wopi", "contracts", "teams", "prozesse", "search", "organisation", "tutorials", "core"]
 slug: "november-update-2026"
