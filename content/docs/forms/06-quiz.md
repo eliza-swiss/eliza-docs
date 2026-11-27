@@ -35,7 +35,7 @@ Der Quiz-Modus ermöglicht es dir, interaktive Tests und Trainings zu erstellen.
 
 ### Schritt 1: Vorlage erstellen
 
-1. Navigiere zu **Formulare → Vorlagen → Neue Vorlage**
+1. Öffne **Formulare** und klicke auf **+ Formular-Vorlage**
 2. Fülle die Grundinformationen aus:
    - **Titel**: z.B. "James Cook Quiz"
    - **Beschreibung**: Kurze Erklärung des Quiz-Inhalts

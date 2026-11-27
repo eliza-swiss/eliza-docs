@@ -25,36 +25,37 @@ Administratoren können das Dashboard-Verhalten für alle Benutzer konfigurieren
 1. Gehe zum Dashboard
 2. Klicke auf **Einstellungen** im Dashboard-Menü
 
-> **💡 Tipp:** Die Einstellungen sind nur für Benutzer mit Administrator-Rechten sichtbar.
+Die Seite hat zwei Teile: links die [zentralen Vorgaben]({{< ref "08-zentrale-vorgaben" >}}) für einzelne Gruppen, rechts **«Allgemein»** mit den Einstellungen für alle. Du siehst nur die Teile, für die du berechtigt bist.
 
-### Verfügbare Einstellungen
+### Bereich «Allgemein»
+
+Oben stehen die Einstellungen, die vom Standard abweichen. Die übrigen siehst du, wenn du «weitere Werte auf Standard» aufklappst.
 
 | Einstellung | Beschreibung | Standard |
 |-------------|--------------|----------|
 | **Neues Dashboard** | Aktiviert das modernere Dashboard-Design | Aus |
-| **Lesebestätigung** | Ermöglicht Lesebestätigungen bei Benachrichtigungen | Ein |
-| **Favoriten-Ansicht** | Standard-Ansichtsmodus (Karten/Tabelle) | Karten |
+| **Lesebestätigung** | Ermöglicht Lesebestätigungen bei Benachrichtigungen | Aus |
+| **Favoriten-Ansicht** | Standard-Ansichtsmodus (Karten/Tabelle) | Tabelle |
 | **Wetter-Widget** | Zeigt das Wetter-Widget an | Ein |
-| **Prozesse-Widget** | Zeigt offene Genehmigungen | Ein |
-| **DMS-Widget** | Zeigt zuletzt geöffnete Dokumente | Ein |
 | **Fristen-Vorschau** | Anzahl Tage für Fristen-Übersicht | 30 |
 | **Fristen-Warnung** | Tage vor Ablauf für Warnfarbe | 7 |
 
-### Einstellungen speichern
+### Einstellungen ändern
 
-1. Ändere die gewünschten Einstellungen
-2. Klicke auf **Speichern**
-3. Die Änderungen werden sofort wirksam
+1. Klicke im Bereich «Allgemein» auf **«Allgemein bearbeiten»**
+2. Ändere die gewünschten Einstellungen
+3. Klicke auf **Speichern**
 
-> **⚠️ Wichtig:** Einige Einstellungen wirken sich auf alle Benutzer aus, nicht nur auf dich.
+> **⚠️ Wichtig:** Diese Einstellungen wirken sich auf alle Benutzer aus, nicht nur auf dich.
 
 ### Widget-Einstellungen (nur Superuser)
 
-Superuser haben Zugriff auf zusätzliche Widget-Einstellungen:
+Superuser sehen und ändern zusätzlich:
 - Prozesse-Widget aktivieren/deaktivieren
 - DMS-Widget aktivieren/deaktivieren
+- ELIZA Sign-Widget aktivieren/deaktivieren
 
-Diese Einstellungen beeinflussen, welche Widgets allen Benutzern zur Verfügung stehen.
+Diese Einstellungen gelten für alle. Willst du ein Widget nur für bestimmte Gruppen ein- oder ausschalten, nutze die [zentralen Vorgaben]({{< ref "08-zentrale-vorgaben" >}}).
 
 ## Aktivitätsprotokoll (Auditlog)
 

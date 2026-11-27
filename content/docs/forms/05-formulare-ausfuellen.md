@@ -26,6 +26,17 @@ Nachdem eine Vorlage erstellt wurde, können Benutzer Formulare daraus erstellen
 
 ---
 
+## 🔑 Wer darf ausfüllen?
+
+- **Intern**: Jede angemeldete Person füllt ein aktives, gültiges Formular über den internen Link aus. Du brauchst dafür weder eine Formulargruppe noch Zugriff auf den Ordner. Ohne Anmeldung leitet dich ELIZA zur Anmeldung oder, wenn das Formular öffentlich ist, zum öffentlichen Link.
+- **Öffentlich**: Ist «Öffentlich ausfüllbar» an, kann jede Person das Formular ohne Anmeldung über den öffentlichen Link ausfüllen.
+- **Meldung erstellen**: Erstellt ein Formular eine Meldung, brauchst du als angemeldete Person das Melderecht im Ziel-Meldekreis. Das gilt auch für Folgeformulare in mehrstufigen Formularen. Öffentliche Meldeformulare bleiben offen.
+- **Nur aktive Formulare**: Entwürfe, archivierte und abgelaufene Formulare lassen sich nicht mehr ausfüllen, auch nicht über alte Links, QR-Codes, Einladungen oder Einmal-Links.
+
+Die Detailseite, die Auswertung und der Editor einer Vorlage bleiben durch die Sicherheitsstufe des Ordners geschützt.
+
+---
+
 ## 📝 Formular aus Vorlage erstellen
 
 Es gibt mehrere Wege, ein neues Formular zu starten.
@@ -41,7 +52,7 @@ Es gibt mehrere Wege, ein neues Formular zu starten.
 
 **Schritte:**
 
-1. Navigiere zu **Forms** → **Vorlagen**
+1. Öffne **Formulare**, die Übersicht der Formular-Vorlagen erscheint
 2. Finde die gewünschte Vorlage
 3. Klicke auf Button **"Ausfüllen"**
 4. Das leere Formular öffnet sich

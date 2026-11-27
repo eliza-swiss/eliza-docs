@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" font-family="Roboto, Arial, sans-serif">
+  <defs>
+    <filter id="schatten" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="880" height="400" fill="#f5f5f5" rx="12"/>
+  <rect width="880" height="48" fill="#424242" rx="12"/>
+  <rect y="36" width="880" height="12" fill="#424242"/>
+  <text x="24" y="30" font-size="15" font-weight="bold" fill="#fff">Dokumente</text>
+  <text x="120" y="30" font-size="13" fill="#bdbdbd">›  Einstellungen  ›  Laufende Bearbeitungen am Desktop</text>
+
+  <rect x="24" y="64" width="832" height="316" rx="10" fill="#fff" filter="url(#schatten)"/>
+
+  <!-- Kopf -->
+  <rect x="48" y="84" width="40" height="40" rx="8" fill="#e3f2fd"/>
+  <rect x="58" y="95" width="20" height="13" rx="2" fill="none" stroke="#1e88e5" stroke-width="2.2"/>
+  <rect x="64" y="108" width="8" height="4" fill="#1e88e5"/>
+  <text x="102" y="106" font-size="20" fill="#212121">Laufende Bearbeitungen am Desktop</text>
+  <text x="102" y="128" font-size="12.5" fill="#757575">Hier siehst du, wer gerade ein Dokument am Desktop offen hat. Du kannst eine Bearbeitung beenden,</text>
+  <text x="102" y="146" font-size="12.5" fill="#757575">wenn sie hängen geblieben ist. Was bis dahin gespeichert wurde, bleibt als Fassung erhalten.</text>
+  <text x="826" y="106" font-size="18" fill="#757575" text-anchor="middle">✕</text>
+
+  <!-- Tabelle -->
+  <line x1="48" y1="184" x2="832" y2="184" stroke="#e0e0e0"/>
+  <text x="56" y="204" font-size="12" font-weight="bold" fill="#424242">Dokument</text>
+  <text x="275" y="204" font-size="12" font-weight="bold" fill="#424242">Benutzer</text>
+  <text x="365" y="204" font-size="12" font-weight="bold" fill="#424242">Programm</text>
+  <text x="475" y="204" font-size="12" font-weight="bold" fill="#424242">Seit</text>
+  <text x="612" y="204" font-size="12" font-weight="bold" fill="#424242">Zuletzt gespeichert</text>
+  <line x1="48" y1="216" x2="832" y2="216" stroke="#eeeeee"/>
+
+  <text x="56" y="244" font-size="12.5" fill="#1e88e5">Hygienekonzept Küche (Arbeitskopie)</text>
+  <text x="275" y="244" font-size="12.5" fill="#424242">Anna Meier</text>
+  <text x="365" y="244" font-size="12.5" fill="#424242">Microsoft Word</text>
+  <text x="475" y="244" font-size="12.5" fill="#424242">09.10.2026 09:14</text>
+  <text x="612" y="244" font-size="12.5" fill="#424242">09.10.2026 09:26</text>
+  <rect x="748" y="226" width="76" height="26" rx="7" fill="#e3f2fd" stroke="#bbdefb"/>
+  <text x="786" y="244" font-size="12" font-weight="bold" fill="#1565c0" text-anchor="middle">Beenden</text>
+  <line x1="48" y1="264" x2="832" y2="264" stroke="#eeeeee"/>
+
+  <text x="56" y="292" font-size="12.5" fill="#1e88e5">Reinigungsplan Wäscherei</text>
+  <text x="275" y="292" font-size="12.5" fill="#424242">Marco Keller</text>
+  <text x="365" y="292" font-size="12.5" fill="#424242">LibreOffice</text>
+  <text x="475" y="292" font-size="12.5" fill="#424242">08.10.2026 16:52</text>
+  <text x="612" y="292" font-size="12.5" fill="#424242">–</text>
+  <rect x="748" y="274" width="76" height="26" rx="7" fill="#fff3e0" stroke="#ff9800" stroke-width="2"/>
+  <text x="786" y="292" font-size="12" font-weight="bold" fill="#1565c0" text-anchor="middle">Beenden</text>
+  <line x1="48" y1="312" x2="832" y2="312" stroke="#eeeeee"/>
+
+  <!-- Hinweis -->
+  <path d="M786 304 L786 336" stroke="#ff9800" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="776" y="352" font-size="12" fill="#ef6c00" text-anchor="end">seit gestern offen: hängen geblieben, hier freigeben</text>
+</svg>

@@ -150,7 +150,7 @@ Shortcuts sind benutzerdefinierte Verknüpfungen zu beliebigen Seiten in ELIZA o
 
 **Pflichtfelder:**
 - **Titel**: Anzeigename des Shortcuts (max. 250 Zeichen)
-- **URL**: Zieladresse (z.B. `/crm/contacts/` oder `https://extern.ch`)
+- **URL**: Zieladresse (z.B. `/crm/contacts/` oder `https://extern.ch`). Sie muss mit `/`, `http://`, `https://` oder `mailto:` beginnen
 
 **Optionale Felder:**
 - **Icon**: Material Design Icon (Standard: `link`)
@@ -277,7 +277,7 @@ Es gibt keine technische Grenze, aber für eine gute Übersicht empfehlen wir ma
 
 ### Kann ich Shortcuts zu externen Seiten erstellen?
 
-Ja! Du kannst jede URL eingeben, auch externe Websites wie `https://google.ch`.
+Ja. Gib die ganze Adresse ein, z.B. `https://google.ch`. Für eine Seite in ELIZA reicht der Teil ab `/`, z.B. `/dms/`. Für eine E-Mail-Adresse schreibst du `mailto:` davor.
 
 ### Werden meine Favoriten synchronisiert?
 

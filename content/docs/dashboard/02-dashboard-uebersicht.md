@@ -34,6 +34,57 @@ Je nach Konfiguration und aktivierten Modulen stehen dir verschiedene Widgets zu
 | **Streams** | Aktivitäten und Nachrichten | Streams-Modul |
 | **Tutorials** | Aktive Kurse | Tutorials-Modul |
 
+## Dashboard anpassen
+
+Du bestimmst selbst, welche Widgets du siehst und in welcher Reihenfolge. Die Einstellung gilt nur für dich und auf allen deinen Geräten.
+
+### Anpassungsmodus öffnen
+
+Klicke oben rechts im Dashboard auf «Dashboard anpassen». Jedes Widget zeigt nun eine kleine Werkzeugleiste:
+
+| Symbol | Wirkung |
+|--------|---------|
+| Griff (sechs Punkte) | Zum Ziehen kannst du das Widget an einer beliebigen Stelle packen, der Griff zeigt es nur an. Mit der Tastatur: Griff anwählen, Pfeil hoch oder runter drücken |
+| Pfeil hoch, Pfeil runter | Widget um eine Position verschieben |
+| Auge | Widget ausblenden |
+
+Hat deine Administration eine fixe Widget-Reihenfolge vorgegeben («Fix»), fehlen Griff und Pfeile: Die Reihenfolge lässt sich dann nicht verschieben. Ausblenden funktioniert weiterhin, ausser bei Pflicht-Widgets.
+
+Jede Änderung wird sofort gespeichert; du siehst die Meldung «Layout gespeichert». Mit «Fertig» verlässt du den Modus.
+
+### Ausgeblendete Widgets zurückholen
+
+Ein ausgeblendetes Widget bleibt im Anpassungsmodus als abgedunkelte Karte an seinem Platz stehen, mit dem Hinweis «Ausgeblendet» und dem Knopf «Einblenden». Du kannst es auch in diesem Zustand verschieben. Im normalen Dashboard ist es unsichtbar und lädt im Browser nichts nach.
+
+### Standard wiederherstellen
+
+Im Anpassungsmodus findest du oben rechts «Standard wiederherstellen». Damit gilt wieder die ursprüngliche Reihenfolge, und alle Widgets sind eingeblendet. ELIZA fragt vorher nach, weil deine eigene Anordnung dabei verloren geht.
+
+### Gut zu wissen
+
+- Die drei Fristen-Karten (überfällig, heute, demnächst) sind ein gemeinsames Widget.
+- Ein Widget ohne aktuelle Einträge, etwa Geburtstage, ist im normalen Betrieb unsichtbar und erscheint im Anpassungsmodus als Platzhalter, damit du es verschieben kannst.
+- Ob ein Widget überhaupt verfügbar ist, hängt von den aktivierten Modulen und den Dashboard-Einstellungen deiner Administration ab. Ein Widget, dessen Modul später eingeschaltet wird, erscheint an der Stelle, die du ihm zuvor gegeben hast.
+
+### Vorgaben deiner Administration
+
+Deine Administration kann dir Favoriten, Shortcuts und Widgets fürs Dashboard bereitstellen. Du erkennst sie am Chip **«Vorgabe»**. Sie stehen oben, vor deinen eigenen Einträgen.
+
+| Du siehst | Das bedeutet |
+|-----------|--------------|
+| Schloss | Fest vorgegeben. Du kannst den Eintrag nicht ausblenden. |
+| Auge | Ein Vorschlag. Klick aufs Auge, und er verschwindet aus deinem Dashboard. |
+| «2 ausgeblendete Vorgaben» | Klapp die Liste auf und klick beim gewünschten Eintrag auf «Einblenden». |
+
+Legst du selbst denselben Favoriten oder Shortcut an, erscheint er nur einmal.
+
+**Widgets:**
+
+- Zeigt ein Widget im Anpassungsmodus ein Schloss statt eines Auges, ist es Pflicht. Du kannst es verschieben, aber nicht ausblenden.
+- Hat deine Administration ein Widget ausgeschaltet, fehlt es ganz.
+- Gibt deine Administration eine Reihenfolge vor, startet dein Dashboard so. Verschiebst du selbst etwas, gilt deine Reihenfolge. «Standard wiederherstellen» bringt die Vorgabe zurück.
+- Steht «Die Reihenfolge der Widgets gibt deine Administration vor.», kannst du die Widgets nicht verschieben. Ausblenden geht weiterhin, ausser bei Pflicht-Widgets.
+
 ## Favoriten-Widget
 
 Das Favoriten-Widget zeigt alle Objekte, die du als Favorit markiert hast.

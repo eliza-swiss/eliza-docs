@@ -135,11 +135,47 @@ Labels verbinden Prozesse, Dokumente, Kurse und Formulare zu gemeinsamen Themen.
 
 ---
 
+### [7. Kommentare: alle Diskussionen an einem Ort](kommentare-alle-diskussionen-an-einem-ort/)
+
+**Modulübergreifende Kommentar-Übersicht**
+
+Sitzungen, News, Dokumente, Prozesse: Kommentare aus allen Modulen an einem Ort, mit den Registern Neueste, Erwähnungen und Meine.
+
+**Inhalte:**
+- Die drei Register und was sie zeigen
+- Aufbau der Tabelle und Sprung zum Objekt
+- Aus welchen Modulen Kommentare stammen
+- Wer welche Kommentare sieht (Berechtigungen, öffentliche und geschützte Spaces)
+- Häufige Fragen
+
+**Zielgruppe:** Alle Benutzer
+**Lesezeit:** ~5 Minuten
+
+---
+
+### [8. Zentrale Vorgaben](zentrale-vorgaben/)
+
+**Favoriten, Shortcuts und Widget-Reihenfolge zentral vorbereiten**
+
+Administratoren legen Vorgaben pro Zielgruppe an, im Modus «Fix» oder «Vorschlag».
+
+**Inhalte:**
+- Zweck und Weg über Dashboard › Einstellungen › Zentrale Vorgaben
+- Eine Vorgabe anlegen: Titel, Priorität, Modus, Zielgruppe
+- Favoriten und Shortcuts hinzufügen, sortieren, entfernen
+- Widget-Reihenfolge vorgeben (bei «Vorschlag» als Ausgangspunkt, bei «Fix» verbindlich)
+- Verhalten bei mehreren Vorgaben, Berechtigung und Gruppe `dashboard_admin`
+
+**Zielgruppe:** Administratoren
+**Lesezeit:** ~10 Minuten
+
+---
+
 ## Zielgruppen
 
 - **Einsteiger**: Lies Kapitel 1-2 für einen guten Start
-- **Aktive Benutzer**: Fokus auf Kapitel 3-4 und 6 für effizientes Arbeiten
-- **Administratoren**: Alle Kapitel, besonders Kapitel 5
+- **Aktive Benutzer**: Fokus auf Kapitel 3-4 sowie 6-7 für effizientes Arbeiten
+- **Administratoren**: Alle Kapitel, besonders Kapitel 5 und 8
 
 ## Verwendete Konventionen
 

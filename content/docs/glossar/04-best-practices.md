@@ -41,6 +41,8 @@ Lege Regeln fest und halte dich daran:
 | **Schweizer Rechtschreibung** | "Massnahme" statt "Maßnahme" |
 | **Gross-/Kleinschreibung** | "ISO 9001" nicht "iso 9001" |
 
+**Abkürzungen ganz in Grossbuchstaben erfassen:** Die automatische Verlinkung in Prozessen und Dokumenten erkennt einen Begriff, der ganz in Grossbuchstaben erfasst ist (z.B. "IM" oder "ISO 9001"), nur in genau dieser Schreibweise. So wird aus dem Wort "im" kein Link auf "IM" (Inklusionsmanagement). Alle anderen Begriffe werden unabhängig von der Gross-/Kleinschreibung erkannt, "Audit" also auch als "audit". Gibt es denselben Begriff in mehreren Schreibweisen (z.B. "Im" und "IM"), wird jede Schreibweise nur genau so verlinkt.
+
 ## Beschreibungen schreiben
 
 ### Die 5-Satz-Regel

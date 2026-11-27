@@ -260,6 +260,9 @@ Link zu einer externen Ressource.
 - Verknüpfung mit externen Systemen (SharePoint, Google Drive, etc.)
 - Link zu Online-Dokumenten
 - Referenz auf Webseiten
+- Direkter Verweis auf einen CMI-Eintrag im Format `kal://<UUID>`
+
+CMI-Verweise werden nur gespeichert, wenn nach `kal://` eine gültige UUID folgt. Ein abschliessender Schrägstrich ist erlaubt. Zusätzliche Pfade, Parameter oder Textteile sind nicht zulässig.
 
 ### Revisionsnummer
 

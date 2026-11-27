@@ -87,17 +87,17 @@ Detaillierte Anleitung zum Erstellen und Bearbeiten von Verträgen mit allen Fel
 
 **Verträge finden und filtern**
 
-Nutze die Vertragsübersicht effektiv mit Suche, Filtern und Sortierung.
+Finde Verträge auf der Startseite und in den Vertragsordnern mit Filter, Suche und Sortierung.
 
 **Inhalte:**
 
-- Vertragsübersicht öffnen
-- Suche und Filter nutzen
-- Nach Status filtern
-- Nach Ablaufdatum sortieren
-- Verträge exportieren
-- Spalten anpassen
-- Listen-Ansicht vs. Kalender-Ansicht
+- Startseite und Vertragsordner im Überblick
+- Filtern nach Status, Freigabestatus, Vertragsart, Vertragsende, Geldfluss, Verantwortung und Vertragspartner
+- Suchbegriff
+- Filter als Link weitergeben und merken
+- Spalten, Sortierung und Seiten
+- Excel-Export der gefilterten Liste
+- Unterordner einbeziehen und Total pro Jahr
 
 **Zielgruppe:** Alle Benutzer
 **Lesezeit:** ~15 Minuten
@@ -189,6 +189,20 @@ Praktische Empfehlungen und häufige Fehlerquellen.
 **Lesezeit:** ~15 Minuten
 
 ---
+
+### [9. Freigabe-Workflow](freigabe-workflow-und-arbeitskopien/)
+
+**Freigabe-Workflow und Arbeitskopien**
+
+Prüfe und gib Verträge und Vertragsdokumente frei – mit prüfender und freigebender Funktion, Workflow-Dialog und Arbeitskopie für Änderungen an freigegebenen Verträgen.
+
+**Inhalte:**
+
+- Freigabestatus: Entwurf, zur Prüfung, Geprüft, Freigegeben
+- Prüfende und freigebende Funktion am Vertrag und am Ordner
+- Workflow-Dialog mit Direktaktionen
+- Arbeitskopie für freigegebene Verträge, neue Version für Vertragsdokumente
+- Übersicht «Meine Vertrags-Workflows»
 
 ## Gesamtumfang
 

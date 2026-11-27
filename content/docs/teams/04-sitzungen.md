@@ -547,51 +547,70 @@ Datei wird beim Agenda-Punkt und im Meeting-Datei-Tab angezeigt.
 
 ## Export und Druck
 
-### Protokoll als Word exportieren
+Alle Exporte findest du in der Sitzung oben rechts im Menü mit den drei Punkten:
 
-**Export:**
-
-1. Öffne Meeting
-2. Klicke auf **"Protokoll exportieren"**
-3. Wähle **"Word (.docx)"**
-4. Datei wird heruntergeladen
-
-**Enthält:**
-
-- Meeting-Informationen (Titel, Datum, Ort, Teilnehmer)
-- Alle Traktanden mit Nummer, Titel, Text und Ergebnis
-- Hierarchische Struktur bei Sub-Traktanden
-- Alle Beschlüsse mit Nummer, Text, Verantwortung, Frist
-
-**Formatierung:**
-
-- Überschriften für Traktanden
-- Nummerierung gemäss Agenda
-- Tabelle für Beschlüsse
+![Menü der Sitzung mit Word-Export, PDF-Export und Zip-Export](/docs/teams/images/sitzung_exportmenue.webp)
 
 ### Protokoll als PDF exportieren
 
-**Export:**
+1. Öffne die Sitzung
+2. Klicke oben rechts auf die drei Punkte
+3. Wähle **«PDF-Export»**
+4. Das PDF wird heruntergeladen
 
-1. Öffne Meeting
-2. Klicke auf **"Protokoll exportieren"**
-3. Wähle **"PDF"**
-4. PDF wird generiert
+**Das PDF enthält:**
 
-### Druckansicht
+- Oben rechts auf jeder Seite das Logo deiner ELIZA (dasselbe wie in Word-Dokumenten)
+- Titelblock mit Space, Nummer und Status der Sitzung
+- Datum, Zeit, Ort, Teilnehmende und bei abgeschlossenen Sitzungen, wann und von wem sie abgeschlossen wurde
+- Beschreibung und eine Traktandenliste als Übersicht
+- Alle Traktanden und Unter-Traktanden nummeriert, mit Text und hervorgehobenem Ergebnis
+- Beschlüsse mit Nummer, Text, Verantwortung, Frist und Status
+- Verknüpfte Cards und Meldungen
+- Bilder aus den Beilagen, andere Beilagen als Liste mit Dateinamen
+- Fusszeile mit dem Titel der Sitzung und «Seite X von Y»
 
-**Drucken:**
+Farben und Schrift richten sich nach den Whitelabel-Einstellungen deiner ELIZA. Zum Drucken öffnest du das PDF und druckst es wie gewohnt.
 
-1. Öffne Meeting
-2. Klicke auf **"Drucken"**
-3. Browser-Druckdialog öffnet sich
-4. Wähle Drucker oder "Als PDF speichern"
+### Protokoll als Word exportieren
 
-**Druckfreundliches Layout:**
+1. Öffne die Sitzung
+2. Klicke oben rechts auf die drei Punkte
+3. Wähle **«Word-Export»**
+4. Wähle im Fenster **«Ohne Vorlage»** oder eine Word-Vorlage aus dem DMS
+5. Klicke auf **«Exportieren»**, das Word-Dokument wird heruntergeladen
 
-- Entfernt Navigation und Buttons
-- Optimiert für A4
-- Seitenumbrüche bei Traktanden
+![Fenster Word-Export mit der Auswahl «Ohne Vorlage» und Vorlagen aus dem DMS](/docs/teams/images/sitzung_word_export_vorlage.webp)
+
+**Ohne Vorlage** enthält das Dokument in der Kopfzeile das Logo deiner ELIZA und in der Fusszeile den Titel der Sitzung mit Seitenzahl.
+
+**Mit Vorlage** übernimmt das Dokument aus der Vorlage:
+
+- Kopf- und Fusszeilen, zum Beispiel deinen Briefkopf
+- Seitenränder und Seitenformat
+- Formatierung, zum Beispiel Schrift und Farbe der Überschriften
+
+Der Inhalt der Vorlage selbst wird nicht übernommen. Der Inhalt des Protokolls ist in beiden Fällen gleich wie im PDF.
+
+**Eine Word-Vorlage bereitstellen:**
+
+1. Erstelle in Word ein Dokument mit der gewünschten Kopf- und Fusszeile, die Seite selbst kann leer bleiben
+2. Passe bei Bedarf die Formatvorlagen «Überschrift 1» bis «Überschrift 3» und «Standard» an
+3. Speichere es im Format **.docx** (nicht .dotx)
+4. Lege es im DMS ab, setze das Häkchen **«Vorlage»** und gib das Dokument frei
+
+Im Fenster Word-Export erscheinen alle .docx-Vorlagen, die du im DMS sehen darfst.
+
+### Sitzung mit Beilagen als Zip exportieren
+
+1. Öffne die Sitzung
+2. Klicke oben rechts auf die drei Punkte
+3. Wähle **«Zip-Export»**
+4. Du erhältst ein Zip-Archiv mit allen Beilagen der Sitzung und ihrer Traktanden
+
+### Was im Export erscheint
+
+Exporte zeigen nur, was du selbst sehen darfst: Verknüpfte Cards, Meldungen und Beilagen erscheinen im PDF und im Word-Dokument nur, wenn du sie in ELIZA öffnen darfst. Gibst du ein Protokoll weiter, prüfe deshalb, ob der Empfänger dieselben Inhalte sehen soll.
 
 ## Benachrichtigungen
 
@@ -643,6 +662,10 @@ Datei wird beim Agenda-Punkt und im Meeting-Datei-Tab angezeigt.
 - Notizen während der Sitzung
 - Nachfragen zu Agenda-Punkten
 - Feedback zu Beschlüssen
+
+Kommentare an Sitzungen und Traktanden laufen über die **Diskussion**: Du kannst auf einen Kommentar antworten, mit einem Emoji reagieren und andere mit `@` erwähnen. Alle Kommentare, die du sehen darfst, findest du zusätzlich gesammelt unter **Dashboard → Kommentare**.
+
+> **⚠️ Wer mitliest:** Ob jemand die Kommentare einer Sitzung sieht, entscheidet die Sichtbarkeit des Spaces, nicht die Mitgliedschaft. Ein Space auf «öffentlich» ist für alle Mitarbeitenden einsehbar. Für vertrauliche Sitzungen gehört der Space auf «geschützt».
 
 ## Meeting-Administration
 
@@ -724,7 +747,7 @@ Space-Admins haben automatisch Meeting-Admin-Rechte.
 **Nach der Sitzung:**
 
 1. **Status "abgeschlossen"**: Meeting finalisieren
-2. **Protokoll exportieren**: Als Word/PDF
+2. **Protokoll exportieren**: Als PDF oder Word, auf Wunsch mit einer Word-Vorlage aus dem DMS
 3. **Beschlüsse verfolgen**: Status regelmässig prüfen
 4. **Archivierung**: Nach Umsetzung aller Beschlüsse
 

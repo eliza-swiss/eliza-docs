@@ -21,7 +21,7 @@ Formular-Vorlagen sind das Herzstück des Forms-Moduls. Eine Vorlage definiert, 
 - Fragen hinzufügen und konfigurieren
 - Fragen bearbeiten und anordnen
 - Layout-Optionen nutzen (volle/halbe/drittel Breite)
-- Bedingte Fragen konfigurieren
+- Mit Folgeformularen verzweigen
 - Quiz- und Checklisten-Einstellungen
 
 ---
@@ -143,7 +143,7 @@ In der Vorlagen-Detailansicht siehst du alle Fragen in einer übersichtlichen Ta
 - **⚙️ Optionen bearbeiten**: Konfiguriere fragenspezifische Einstellungen
 - **✏️ Bearbeiten**: Ändere Fragetext, Hilfetext und Pflichtfeld-Status
 - **🗑️ Entfernen**: Lösche die Frage aus der Vorlage
-- **↕️ Drag & Drop**: Ziehe Fragen um die Reihenfolge zu ändern
+- **↕️ Drag & Drop**: Ziehe Fragen am Griff mit den sechs Punkten, um die Reihenfolge zu ändern. Auf Touch-Geräten hältst du den Griff zuerst kurz ruhig (350 ms) und ziehst anschliessend die Frage an die gewünschte Position. Wenn du direkt wischst, scrollst du stattdessen durch das Formular. Mit der Maus kannst du sofort ziehen.
 
 ---
 
@@ -206,6 +206,30 @@ Manche Fragetypen haben zusätzliche Konfigurationsoptionen. Klicke auf **Option
 
 ---
 
+## 🖼️ Titelbild
+
+Ein querformatiges Bild über Titel und Beschreibung gibt dem Formular ein Gesicht, zum Beispiel ein Foto vom Anlass oder das Motiv deiner Kampagne. Es erscheint in der Ausfüllansicht (angemeldet und öffentlich), in der Website-Einbettung, auf der Detailseite der Vorlage sowie im PDF- und Word-Ausdruck.
+
+### Titelbild hochladen
+
+1. Öffne die Vorlage und klicke auf **Bearbeiten**.
+2. Wähle im Abschnitt **Darstellung** beim Feld **Titelbild** eine Bilddatei.
+3. Klicke auf **Speichern**.
+
+Zum Entfernen setzt du beim Feld **Titelbild** das Häkchen **Löschen** und speicherst.
+
+### Formate und Grösse
+
+- **Dateiformate**: JPEG, PNG oder WebP. GIF, SVG und PDF werden abgelehnt.
+- **Dateigrösse**: höchstens 5 MB.
+- **Empfohlene Abmessungen**: 1600 × 500 Pixel (Seitenverhältnis 16:5).
+
+Das Bild füllt die volle Breite der Formularkarte und wird auf das Verhältnis 16:5 zugeschnitten, mittig und ohne Verzerrung. Wichtige Motive gehören deshalb in die Bildmitte; bei einem hochformatigen Foto bleiben nur der mittlere Streifen sichtbar.
+
+> **💡 Tipp:** Beim Duplizieren einer Vorlage wird das Titelbild mitkopiert. Die Kopie hat ihre eigene Bilddatei, du kannst sie also unabhängig vom Original ändern.
+
+---
+
 ## 📐 Layout-Optionen
 
 Gestalte dein Formular übersichtlich mit verschiedenen Spaltenbreiten.
@@ -228,41 +252,55 @@ Gestalte dein Formular übersichtlich mit verschiedenen Spaltenbreiten.
 
 ---
 
-## 🔀 Bedingte Fragen
+## 🔀 Verzweigen mit Folgeformularen
 
-Zeige Fragen nur an, wenn bestimmte Bedingungen erfüllt sind.
+Einzelne Fragen innerhalb eines Formulars lassen sich nicht abhängig von früheren Antworten ein- oder ausblenden. Verzweigen kannst du aber zwischen ganzen Formularen: Nach dem Absenden geht es in einem passenden **Folgeformular** weiter. Das passende Folgeformular wählt entweder die ausfüllende Person selbst oder ELIZA anhand der Antworten.
 
-### Bedingte Anzeige konfigurieren
+**Beispiel (automatische Auswahl):** Ein kurzes Startformular fragt "Nutzt du Software?". Bei "Ja" geht es im Folgeformular "Software-Details" weiter, bei "Nein" wird der Ablauf abgeschlossen.
 
-**Bedingte Anzeige aktivieren:**
+### Folgeformular verknüpfen
 
-1. Aktiviere "Diese Frage nur anzeigen wenn"
-2. Wähle die Bedingung:
-   - **Frage auswählen**: Die Frage, deren Antwort geprüft wird
-   - **Operator**: Vergleichsoperator (=, ≠, enthält, >, <)
-   - **Wert**: Der erwartete Wert
+1. Erstelle zuerst die Folgeformulare als eigene Vorlagen und aktiviere sie
+2. Öffne die Vorlage, mit der der Ablauf beginnt (Startformular)
+3. Wechsle in den Tab **Folgeformulare**
+4. Wähle oben den **Auswahlmodus für Folgeformulare** (siehe unten), bevor du Verknüpfungen anlegst: Die Felder für die Regel erscheinen nur bei automatischer Auswahl
+5. Klicke auf **Folgeformular hinzufügen** und wähle das **Zielformular**
+6. Bei automatischer Auswahl: Lege die Regel fest oder setze **Als «Standard/Sonst» verwenden** (siehe unten)
+7. Speichere mit **Folgeformular verknüpfen**
 
-**Beispiel:** Die Frage "Welche Software?" wird NUR angezeigt, wenn "Nutzt du Software?" = "Ja"
+### Auswahlmodus wählen
 
-**Operatoren:**
+Unter **Auswahlmodus für Folgeformulare** legst du fest, wie das passende Folgeformular bestimmt wird:
 
-- **=** (ist gleich): Für Single Choice, Ja/Nein
-- **≠** (ist ungleich): Für negierte Bedingungen
-- **enthält**: Für Multiple Choice, Text-Eingaben
-- **>** / **<**: Für Zahlen, Skalen, Daten
+- **Manuelle Auswahl mit Anleitung** (Standard): Die ausfüllende Person wählt nach dem Absenden selbst. Gibt es nur ein Folgeformular, das sie ausfüllen kann, geht es ohne Auswahlseite direkt dorthin. Hinterlege bei jeder Verknüpfung eine **Anleitung für die Auswahl**, z.B. "Wähle dieses Formular, wenn du Software nutzt".
+- **Automatische Auswahl per Regel**: ELIZA wählt das Folgeformular anhand der Antworten im Startformular.
+
+### Regeln für die automatische Auswahl
+
+Bei jeder Verknüpfung legst du unter **Automatische Auswahlregel** eine oder mehrere Bedingungen fest:
+
+- **Frage**: Die Frage im Startformular, deren Antwort geprüft wird
+- **Operator**: Passend zum Fragetyp, z.B. "ist gleich", "ist nicht gleich", "ist eine von", "enthält", bei Zahlen "ist grösser als" oder "ist kleiner als", bei Daten "vor" oder "nach"
+- **Wert**: Der erwartete Wert, bei Auswahlfragen eine der Optionen
+
+Unter **Verknüpfung** wählst du **Alle Bedingungen müssen zutreffen** oder **Mindestens eine Bedingung muss zutreffen**.
+
+**So wählt ELIZA aus:**
+
+- Treffen mehrere Regeln zu, gilt das erste Folgeformular in der **Reihenfolge**
+- Trifft keine Regel zu, greift das Folgeformular mit **Als «Standard/Sonst» verwenden** (höchstens eines pro Startformular)
+- Gibt es kein Standard-Folgeformular, wird der Ablauf ohne Folgeformular abgeschlossen
 
 **Anwendungsbeispiele:**
 
 1. **Rückfragen bei bestimmten Antworten:**
-   - "Warum nicht?" → nur wenn "Zufrieden?" = "Nein"
+   - Folgeformular "Verbesserungsvorschläge" → wenn "Zufrieden?" ist gleich "Nein"
 
 2. **Detaillierte Informationen:**
-   - "Welches Modell?" → nur wenn "Besitzt du ein Auto?" = "Ja"
+   - Folgeformular "Fahrzeugangaben" → wenn "Besitzt du ein Auto?" ist gleich "Ja"
 
 3. **Segmentierung:**
-   - "Mitarbeiterfragen" → nur wenn "Rolle" = "Mitarbeiter"
-
-> **⚠️ Wichtig:** Bedingte Fragen dürfen keine zirkulären Abhängigkeiten haben!
+   - Folgeformular "Mitarbeiterfragen" → wenn "Rolle" ist gleich "Mitarbeiter"
 
 ---
 
@@ -393,7 +431,7 @@ Nutze Hilfetexte für:
 
 **Lösung:**
 - Teile lange Formulare in mehrere Vorlagen auf
-- Nutze bedingte Fragen um Irrelevantes auszublenden
+- Verschiebe Detailfragen, die nur manche betreffen, in Folgeformulare
 - Frage nur das Nötigste
 
 ### ❌ Fehler 2: Fehlende Beschreibung
@@ -527,6 +565,22 @@ Klicke auf **"Excel-Export"** um die Auswertungsdaten herunterzuladen:
 2. Kopiere den Formular-Link
 3. Teile Link per E-Mail oder im Intranet
 
+Hat das öffentliche Formular Folgeformulare, öffnen sich ohne Anmeldung nur die Folgeformulare, die selbst öffentlich sind. Vor einem nicht öffentlichen Folgeformular geht es mit einem öffentlichen weiter oder der Ablauf endet. Der Reiter «Folgeformulare» der Vorlage nennt die Folgeformulare, die sich ohne Anmeldung nicht öffnen.
+
+**In eine externe Website einbetten:**
+
+Einseitige öffentliche Formulare ohne Folge- oder Unterformulare können direkt in einer Website angezeigt werden:
+
+1. Aktiviere **Öffentliches Formular** und **Einbettung in externe Websites erlauben**.
+2. Trage unter **Erlaubte Websites** pro Zeile eine vollständige Website-Origin ein, zum Beispiel `https://www.beispiel.ch`. Pfade wie `/kontakt` gehören nicht dazu.
+3. Speichere die Vorlage.
+4. Kopiere auf der Vorlagen-Detailseite unter **In Website einbetten** den angezeigten Code.
+5. Füge den Code an der gewünschten Stelle in der Website ein.
+
+Die Formularhöhe passt sich automatisch an. ELIZA akzeptiert die Einbettung nur auf den eingetragenen Websites; der normale öffentliche Link bleibt davon unabhängig verfügbar.
+
+> **Hinweis:** Mehrseitige Formulare sowie Formulare mit Folge- oder Unterformularen können noch nicht eingebettet werden. Verwende dafür den öffentlichen Link.
+
 **Ordner-basiert:**
 - Berechtigungen werden vom Ordner geerbt
 - Admins und Team haben automatisch Zugriff
@@ -550,7 +604,7 @@ In diesem Kapitel hast du gelernt:
 - ✅ Vorlagen mit dem 3-Schritt-Wizard erstellen
 - ✅ Fragen hinzufügen und anordnen
 - ✅ Layout-Optionen nutzen (volle/halbe/drittel Breite)
-- ✅ Bedingte Fragen für dynamische Formulare
+- ✅ Mit Folgeformularen je nach Antwort verzweigen
 - ✅ Quiz- und Checklisten-Einstellungen konfigurieren
 - ✅ Auswertungs-View und Excel-Export verwenden
 - ✅ Best Practices für professionelle Formulare

@@ -237,7 +237,6 @@ Wenn alle Lektionen abgeschlossen sind:
 | **Zur Prüfung** | 🟡 | Wartet auf Freigabe |
 | **Freigegeben** | 🟢 | Aktiv und für Lernende verfügbar |
 | **Abgelaufen** | 🔴 | Überprüfung fällig |
-| **Archiviert** | ⚫ | Nicht mehr aktiv |
 
 ### Anmeldestatus (Enrollment)
 

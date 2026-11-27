@@ -72,7 +72,14 @@ Die Lektion wird im Status "Entwurf" erstellt.
 | **Zur Prüfung** | 🟡 | Wartet auf Freigabe |
 | **Freigegeben** | 🟢 | Aktiv, für Lernende sichtbar |
 | **Abgelaufen** | 🔴 | Überprüfung fällig |
-| **Archiviert** | ⚫ | Nicht mehr aktiv |
+
+Lektionen (im Handbuch: Wissensartikel) kannst du mit Änderungsrecht im
+Dreipunktmenü über **Archivieren** aus dem aktiven Bestand nehmen. Auch
+Unterlektionen sind dann nicht mehr für Lernende aufrufbar oder über die Schnellsuche auffindbar.
+Für Verantwortliche bleibt die archivierte Objektseite schreibgeschützt erreichbar.
+Über **Filter anwenden → Status → Archiviert** findest du den Eintrag wieder;
+dort wählst du auf der Objektseite im Hinweis oben oder im Dreipunktmenü **Archivierung aufheben**.
+Ist der übergeordnete Kurs oder eine Eltern-Lektion archiviert, musst du diese zuerst reaktivieren.
 
 > **⚠️ Wichtig:** Nur freigegebene Lektionen sind für Lernende sichtbar, auch wenn der Kurs freigegeben ist.
 

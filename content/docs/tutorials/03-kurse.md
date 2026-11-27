@@ -105,7 +105,6 @@ Jeder Kurs hat einen Freigabe-Status:
 | **Zur Prüfung** | 🟡 | Wartet auf Freigabe |
 | **Freigegeben** | 🟢 | Aktiv, für angemeldete Benutzer sichtbar |
 | **Abgelaufen** | 🔴 | Überprüfung fällig |
-| **Archiviert** | ⚫ | Nicht mehr aktiv |
 
 ### Sichtbarkeit
 
@@ -313,11 +312,26 @@ Die Kurs-Matrix zeigt den Lernfortschritt aller Teilnehmer in einer Übersichtst
 
 ### Archivieren
 
+Im Dreipunktmenü des Kurses oder Handbuchs wählst du **Archivieren**. Die Aktion
+ist nur für Personen mit Änderungsrecht sichtbar und entfernt den Inhalt aus
+den aktiven Ansichten und der Schnellsuche. Lektionen und Artikel darunter sind
+ebenfalls nicht mehr zugänglich. Die Archivierung löscht keine Daten. Vorher
+zeigt eine Bestätigungsseite, wie viele Lektionen oder Artikel und wie viele
+Anmeldungen betroffen sind; erst dort bestätigst du mit **Archivieren**.
+
 Archivierte Kurse:
 
-- Sind in der Standardansicht nicht mehr sichtbar
+- Sind in der Standardansicht nicht mehr sichtbar; du findest sie unter **Filter anwenden → Status → Archiviert**
 - Behalten alle Daten, Lektionen und Anmeldungen
-- Können wiederhergestellt werden
+- Bleiben für Verantwortliche auf ihrer Objektseite schreibgeschützt sichtbar
+- Können dort im Hinweis oben oder im Dreipunktmenü mit **Archivierung aufheben** wieder aktiviert werden
+
+Die darunterliegenden Lektionen bleiben nach dem Reaktivieren eines Kurses weiterhin einzeln archiviert, falls du sie separat archiviert hast.
+
+«Archiviert» ist kein Status mehr, den du im Bearbeitungsformular wählst. Kurse,
+Handbücher, Lektionen und Artikel mit dem früheren Status «Archiviert» liegen
+automatisch im Archiv. Hebst du die Archivierung auf, stehen sie auf **Abgelaufen**
+und sind erst nach einer neuen Freigabe wieder für Lernende sichtbar.
 
 ### Löschen
 

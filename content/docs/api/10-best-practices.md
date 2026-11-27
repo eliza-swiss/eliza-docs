@@ -34,7 +34,7 @@ API_TOKEN = os.environ.get("ELIZA_API_TOKEN")
 
 ```python
 # FALSCH - Token im Code
-API_TOKEN = "1801d1fd0c1c1f9e3388bba24a747b7311dbdc72"
+API_TOKEN = "3f9a0c7e..."  # dein Token, im Klartext
 
 # FALSCH - Token in Konfigurationsdatei ohne Verschlüsselung
 config = {"token": "..."}

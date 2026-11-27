@@ -474,10 +474,12 @@ Weise dem Benutzer mindestens eine Admin-Gruppe zu (z.B. "Projekte (Admin)", "DM
 
 **Schritt-für-Schritt:**
 
-1. Öffne die Benutzer-Detailseite
-2. **Entferne** die Checkbox **"Aktiv"**
-3. Klicke auf **[Speichern]**
-4. Der Benutzer kann sich nicht mehr anmelden
+1. Navigiere zur **Benutzerliste**
+2. Klicke auf den gewünschten Benutzer, um die Detailseite zu öffnen
+3. Klicke oben rechts auf das **Archivieren-Icon** (Kasten mit Pfeil nach unten, Tooltip **"Benutzer archivieren"**)
+4. Der Benutzer wird sofort archiviert und kann sich nicht mehr anmelden
+
+> **Hinweis:** Das Icon erscheint nur, wenn der Benutzer aktiv ist und es sich nicht um dein eigenes Konto handelt.
 
 > **💡 Tipp:** Archivierte Benutzer bleiben in der Datenbank und können reaktiviert werden.
 
@@ -485,18 +487,25 @@ Weise dem Benutzer mindestens eine Admin-Gruppe zu (z.B. "Projekte (Admin)", "DM
 
 **Schritt-für-Schritt:**
 
-1. Navigiere zur Benutzerliste
+1. Navigiere zur **Benutzerliste**
 2. Klicke auf den Filter-Button **[Archivierte Benutzer]**
-3. Finde den zu reaktivierenden Benutzer
-4. Öffne die Benutzer-Detailseite
-5. **Setze** die Checkbox **"Aktiv"**
-6. Klicke auf **[Speichern]**
+3. Klicke auf den zu reaktivierenden Benutzer, um die Detailseite zu öffnen
+4. Klicke im orangen Hinweis **"Dieser Benutzer ist archiviert"** auf **[reaktivieren]**
+5. Der Benutzer kann sich sofort wieder anmelden
 
 ### Benutzer komplett löschen
 
 > **⚠️ ACHTUNG:** Das Löschen von Benutzern ist **irreversibel** und kann zu Datenverlusten führen!
 
-**Empfehlung:** Archiviere Benutzer statt sie zu löschen.
+**Wir empfehlen ausdrücklich, Benutzer zu archivieren statt sie zu löschen.**
+
+Archivieren erreicht dasselbe Ziel — der Benutzer kann sich nicht mehr anmelden — und ist dabei die klar bessere Wahl:
+
+- Der Benutzer bleibt in der Datenbank erhalten und lässt sich jederzeit wieder reaktivieren
+- Seine bisherige Arbeit (Dokumente, Meldungen, Prozesse, Zeiterfassung) bleibt korrekt zugeordnet und nachvollziehbar
+- Die Nachvollziehbarkeit für Audits und die ISO-Konformität bleibt gewahrt
+
+Beim Löschen gehen diese Verknüpfungen unwiderruflich verloren. Es gibt keine Rückgängig-Funktion und keinen Papierkorb.
 
 **Nur in Ausnahmefällen löschen:**
 - Testbenutzer
@@ -505,9 +514,13 @@ Weise dem Benutzer mindestens eine Admin-Gruppe zu (z.B. "Projekte (Admin)", "DM
 
 **Zum Löschen:**
 
-1. Öffne die Benutzer-Detailseite
-2. Klicke auf **[Löschen]** (roter Button)
-3. Bestätige die Sicherheitsabfrage
+1. Navigiere zur **Benutzerliste**
+2. Klicke auf den gewünschten Benutzer, um die Detailseite zu öffnen
+3. Klicke oben rechts auf das **Papierkorb-Icon** (Tooltip **"Benutzer löschen"**)
+4. Die Bestätigungsseite listet auf, welche verknüpften Objekte mitgelöscht werden — prüfe diese Liste sorgfältig
+5. Bestätige mit dem roten Button **[Ja, ich bin sicher]**
+
+> **💡 Tipp:** Sind noch geschützte Objekte mit dem Benutzer verknüpft, ist der Bestätigungs-Button deaktiviert und die Seite zeigt, welche Objekte das Löschen verhindern. Archiviere den Benutzer in diesem Fall.
 
 ## Benutzer einladen (Onboarding)
 

@@ -166,12 +166,16 @@ Lerne, wie du die Allgemeinen Einstellungen verwaltest, die für alle Benutzer g
 Lerne, wie du Benutzer automatisch aus Microsoft Entra ID mit ELIZA synchronisierst.
 
 **Inhalte:**
-- Azure AD App Registration einrichten
-- ELIZA API Token konfigurieren
-- Konfigurationsdatei erstellen
-- Dry-Run und echte Synchronisation
-- Organisationseinheiten-Sync
-- Automatisierung mit Cron/Systemd
+- App Registration in Entra ID einrichten
+- Technischen Benutzer und API Token in ELIZA erstellen
+- Zugangsdaten in der `.env`, Konfigurationsdatei erstellen
+- Checkliste: welche Angaben in Entra ID gepflegt sein sollten
+- Wer synchronisiert wird: Gruppen-, Domain- und Ausschlussfilter
+- Austritt und Wiedereintritt
+- Organisationseinheiten aus Entra-Gruppen oder Firmendaten
+- Berechtigungsgruppen, vorgesetzte Person und Austrittsdatum aus Entra ID
+- Alle Benutzer einer Gruppe zuweisen
+- Dry Run, Zeitplan und Überwachung über Exit-Codes
 - Troubleshooting und Best Practices
 
 **Zielgruppe:** IT-Administratoren, System-Verantwortliche
@@ -242,6 +246,41 @@ Schritt-für-Schritt-Anleitung für IT-Administratoren beim Kunden, wie SSO mit 
 
 ---
 
+### [12. CMI-Verweise in Texten verwenden](cmi-verweise-in-texten-verwenden/)
+
+**Aus ELIZA-Texten direkt den passenden CMI-Eintrag öffnen**
+
+Lerne, wie du UUID-basierte CMI-Verweise in ELIZA-Texteditoren einfügst und Probleme beim Öffnen behebst.
+
+**Inhalte:**
+- CMI-Verweise über die Formatierungsleiste einfügen
+- Gültiges `kal://<UUID>`-Format
+- Sicherheitsprüfung ungültiger Ziele
+- Voraussetzungen und Fehlerbehebung
+
+**Zielgruppe:** Alle Benutzer, die mit CMI und ELIZA arbeiten
+**Lesezeit:** ~5 Minuten
+
+---
+
+### [13. Texteditor](texteditor/)
+
+**Formatierte Texte einheitlich bearbeiten**
+
+Lerne die Werkzeugleiste kennen und erfahre, wie du Links, Tabellen, Bilder und Markdown-kompatible Inhalte bearbeitest.
+
+**Inhalte:**
+- Text formatieren und strukturieren
+- Links und Tabellen einfügen
+- Bilder aus Datei, Zwischenablage oder per Drag & Drop einfügen
+- Speichern und lokale Entwürfe
+- Automatischer Ersatzeditor bei technischen Problemen
+
+**Zielgruppe:** Alle Benutzer
+**Lesezeit:** ~7 Minuten
+
+---
+
 ## Zielgruppen
 
 ### 🔧 Administratoren (Superuser)
@@ -301,6 +340,7 @@ Um die Benutzerverwaltung zu nutzen, benötigst du:
 6. **Benutzertyp verstehen** → Kapitel 6, Benutzertypen-Referenz
 7. **Allgemeine Einstellungen konfigurieren** → Kapitel 7, vollständige Anleitung
 8. **Entra ID Synchronisation einrichten** → Kapitel 8, vollständige Anleitung
+9. **Formatierte Texte bearbeiten** → Kapitel 13, Texteditor
 
 ## Feedback und Verbesserungen
 
@@ -311,11 +351,12 @@ Dieses Handbuch wird kontinuierlich verbessert. Wenn du Fehler findest, Fragen h
 
 ## Letzte Aktualisierung
 
-**Version**: 2025.11.27
+**Version**: 2026.09.27
 **Autor**: ELIZA Documentation Team
 
 **Änderungen:**
 
+- Kapitel 13 hinzugefügt: Texteditor als einheitlicher Standard mit automatischem Ersatzeditor
 - Kapitel 8 hinzugefügt: Microsoft Entra ID Synchronisation (Azure AD Integration)
 - Kapitel 7 hinzugefügt: Allgemeine Einstellungen (Region, Währung, Sprachen, UI-Konfigurationen)
 - Kapitel 5 hinzugefügt: Systemgruppen-Referenz (82 Systemgruppen)

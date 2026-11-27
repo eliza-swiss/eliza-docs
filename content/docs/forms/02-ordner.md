@@ -83,6 +83,10 @@ Nutze die Filter-Buttons oberhalb der Tabelle:
 
 ### Sichtbarkeit
 
+Die Sicherheitsstufe gilt pro Ordner. Beim Anlegen eines Unterordners übernimmt sie die Stufe des übergeordneten Ordners als Startwert, du kannst sie ändern. Ist ein Ordner weniger streng als einer seiner übergeordneten Ordner, erscheint ein Hinweis. Auf der Ordnerseite siehst du zusätzlich die geerbten Admins, Teams und Organisationseinheiten; auf der Vorlagenseite stehen die Ordner-Admins als Empfänger von Mitteilungen.
+
+Die Stufe schützt die Verwaltung (Ordner, Vorlagen, Auswertung), nicht das Ausfüllen: Aktive, gültige Formulare füllt jede angemeldete Person über den internen Link aus, unabhängig von der Stufe des Ordners.
+
 Wähle eine der drei Sichtbarkeits-Stufen:
 
 #### 🌐 Öffentlich

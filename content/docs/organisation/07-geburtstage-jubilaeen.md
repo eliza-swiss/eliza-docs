@@ -91,6 +91,18 @@ Die Geburtstagsliste zeigt alle Geburtstage des Jahres chronologisch an.
 2. Die Liste zeigt alle Geburtstage für die nächsten 365 Tage
 3. Beginnt mit heutigen Geburtstagen, dann chronologisch fortlaufend
 
+### Spalten der Geburtstagsliste
+
+- **Geburtsdatum**: Das hinterlegte Geburtsdatum
+- **Alter heute**: Das aktuelle Alter, so wie es auch unter **Private Daten** der Person steht
+- **Nächster Geburtstag**: Datum des kommenden Geburtstags inklusive Jahr
+
+Die Liste ist eine Vorschau auf die kommenden Geburtstage; das Alter, das die Person dann erreicht, ergibt sich aus «Alter heute» plus eins (ausser der Geburtstag ist heute).
+
+### Excel-Export
+
+Über den Knopf **Excel** oberhalb der Tabelle exportierst du die Liste mit allen Spalten, inklusive Geburtsdatum und aktuellem Alter.
+
 ### Besonderheit: 29. Februar
 
 Mitarbeitende, die am 29. Februar Geburtstag haben, erscheinen in Nicht-Schaltjahren am **28. Februar** in der Liste.

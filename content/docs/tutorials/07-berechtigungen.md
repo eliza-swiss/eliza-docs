@@ -193,7 +193,7 @@ Das bedeutet konkret: **Eine Anmeldung oder direkte Einladung auf eine Lektion e
 | **Zur Prüfung** | Admins und Bearbeiter |
 | **Freigegeben** | Alle berechtigten Benutzer |
 | **Abgelaufen** | Alle berechtigten Benutzer (mit Warnung) |
-| **Archiviert** | Nur Admins |
+| **Archiviert** | Verantwortliche können die Objektseite schreibgeschützt öffnen und die Archivierung bei bestehendem Änderungsrecht aufheben; für andere nicht aufrufbar |
 
 ---
 

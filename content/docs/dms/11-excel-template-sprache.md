@@ -9,6 +9,9 @@ tags:
   - "platzhalter"
   - "variablen"
   - "logo"
+  - "kopfzeile"
+  - "fusszeile"
+  - "pdf"
 ---
 
 
@@ -119,15 +122,25 @@ Diese Variablen zeigen, wer für das Dokument verantwortlich ist:
 | `{{ document_function_code }}` | Kürzel der Funktion | QMB |
 | `{{ document_reviewer_function }}` | Prüfende Funktion | Technische Leitung |
 | `{{ document_reviewer_function_code }}` | Kürzel der prüfenden Funktion | TL |
-| `{{ document_approval_by }}` | Freigebende Funktion und Person | QMB (Max Mustermann) |
+| `{{ document_reviewed_by }}` | Person, die geprüft hat | Anna Muster |
+| `{{ document_approval_by }}` | Freigebende Funktion | QMB |
 | `{{ document_approval_by_code }}` | Kürzel der freigebenden Funktion | QMB |
 | `{{ document_approved_by }}` | Person die freigegeben hat | Max Mustermann |
 
 **Unterschied zwischen den Freigabe-Variablen:**
 
-- `document_approval_by`: Zeigt Funktion und Person, z.B. "QMB (Max Mustermann)"
+- `document_approval_by`: Die freigebende Funktion, z.B. "QMB". Ist keine Funktion hinterlegt, steht hier der Name der Person, die freigegeben hat
 - `document_approval_by_code`: Nur das Funktionskürzel, z.B. "QMB"
-- `document_approved_by`: Nur der Name der Person, z.B. "Max Mustermann"
+- `document_approved_by`: Nur der Name der Person, die das Dokument auf "Freigegeben" gesetzt hat, z.B. "Max Mustermann"
+
+**Prüfende Person:**
+
+- `document_reviewed_by` zeigt den Namen der Person, die das Dokument im Workflow auf "Geprüft" gesetzt hat (fachliche Prüfung)
+- Es zählt die Prüfung, die zur letzten Freigabe gehört. Wurde das Dokument ohne den Schritt "Geprüft" freigegeben oder nach der Prüfung zurück auf Entwurf gesetzt und ohne neue Prüfung freigegeben, bleibt die Variable leer
+- Vor der ersten Freigabe zeigt die Variable die Person, die die erste Fassung geprüft hat
+- Bei einer Überarbeitung (Arbeitskopie oder zurück auf Entwurf) zählt die neue Prüfung erst, wenn das Dokument wieder freigegeben ist. Bis dahin zeigt die Variable, wie Freigabedatum und Version, den Stand der letzten Freigabe
+- «Erneut überprüfen» (periodische Überprüfung) ändert die Variable nicht: Sie zeigt weiterhin die Person, die den Workflow-Schritt "Geprüft" ausgeführt hat
+- Eine Wiederfreigabe ändert die prüfende Person nicht
 
 ### Organisationseinheiten
 
@@ -136,6 +149,17 @@ Diese Variablen zeigen, wer für das Dokument verantwortlich ist:
 | `{{ orgunits }}` | Zugeordnete Organisationseinheiten | Produktion, Qualität, Verwaltung |
 
 > **ℹ️ Hinweis:** Mehrere Organisationseinheiten werden durch Kommas getrennt.
+
+### Links und mitgeltende Dokumente
+
+| Variable | Beschreibung | Beispiel-Wert |
+|----------|--------------|---------------|
+| `{{ applicable_documents }}` | Mitgeltende Dokumente mit Dokument-ID und Titel | HA-00412 Betriebskonzept Akutabteilung, FO-00347 Sicherheitsdispositiv |
+| `{{ applicable_documents_links }}` | In Excel derselbe Text wie `applicable_documents` | HA-00412 Betriebskonzept Akutabteilung, FO-00347 Sicherheitsdispositiv |
+| `{{ document_link }}` | Vollständige Adresse dieses Dokuments in ELIZA | https://firma.myeliza.ch/dms/documents/42/detail/ |
+| `{{ document_hyperlink }}` | In Excel dieselbe Adresse wie `document_link` | https://firma.myeliza.ch/dms/documents/42/detail/ |
+
+> **ℹ️ Hinweis:** Klickbare Links erzeugen `applicable_documents_links` und `document_hyperlink` nur in Word. In Excel setzt ELIZA den Text ein. In einer Arbeitskopie zeigt `document_link` auf das Original.
 
 ### Technische Informationen
 
@@ -359,6 +383,19 @@ Wenn du ein Excel-Template mit Header-Grafiken verwendest, bleiben folgende Elem
 - Template-Variablen direkt in Headern/Fusszeilen
 - Dynamische Bilder in Headern (nur statische Grafiken)
 
+### Kopf- und Fusszeilen in der PDF-Darstellung
+
+Ist für das Dokument die PDF-Darstellung für Leser aktiv, übernimmt das PDF die Seiteneinrichtung aus Excel. Kopf- und Fusszeilen erscheinen im PDF so, wie du sie in Excel in der Seitenlayout-Ansicht oder in der Druckvorschau siehst:
+
+- Text links, in der Mitte und rechts
+- Seitenzahlen wie «Seite 1 von 3»
+
+Das gilt für Excel-Dateien (XLSX) und für Tabellen im offenen Format ODS.
+
+> **💡 Tipp:** In der Vorschau mit Office Online siehst du Kopf- und Fusszeilen nur in der Druckansicht. Das ist normal: Excel im Browser zeigt sie in der Tabellenansicht nie an. Zur Kontrolle wechselst du in der Dokumentansicht auf **«PDF-Darstellung»**.
+
+Eine PDF-Darstellung, die vor dieser Neuerung erstellt wurde, zeigt Kopf- und Fusszeilen erst, nachdem das PDF neu erstellt wurde. Klicke dazu in der Leiste über der Vorschau auf die drei Punkte (**«Weitere Aktionen»**) und wähle **«PDF-Darstellung neu erstellen»**.
+
 ### Technischer Hintergrund
 
 ELIZA verwendet einen mehrstufigen Prozess, um Header-Grafiken zu erhalten:
@@ -434,7 +471,7 @@ Aktiviere "Zeilenumbruch" für Zellen mit:
 - [ ] Formatierung einheitlich und professionell
 - [ ] Logo-Platzhalter korrekt positioniert
 - [ ] Template mit verschiedenen Dokumenten getestet
-- [ ] Header und Fusszeilen korrekt dargestellt
+- [ ] Header und Fusszeilen korrekt dargestellt, auch in der PDF-Darstellung
 - [ ] Keine unerwünschten Platzhalter übrig
 
 ### Wiederverwendbarkeit

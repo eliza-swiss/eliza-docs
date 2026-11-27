@@ -118,12 +118,12 @@ Verwende das Format `Kategorie:Wert` für organisierte Labels:
 
 ## Vorlagen nutzen
 
-### Meldungsvorlagen erstellen
+### Antwortvorlagen erstellen
 
-Als Bearbeiter kannst du persönliche Vorlagen für häufige Antworten erstellen:
+Als Bearbeiter kannst du persönliche Antwortvorlagen für häufige Antworten erstellen, so viele du brauchst:
 
 1. Öffne einen Meldekreis
-2. Gehe zu **"Vorlagen"**
+2. Klicke auf **"Antwortvorlagen"**
 3. Erstelle eine neue Vorlage mit:
    - Titel (z.B. "Erste Antwort Kundenreklamation")
    - Text mit Platzhaltern
@@ -133,11 +133,22 @@ Als Bearbeiter kannst du persönliche Vorlagen für häufige Antworten erstellen
 - `{{ firstname }}` - Vorname
 - `{{ lastname }}` - Nachname
 
-### Vorlagen aktivieren
+### Antwortvorlagen verwalten
 
-1. Wähle eine Vorlage als **"Aktiv"**
-2. Beim Öffnen einer Meldung wird der Text automatisch ins Kommentarfeld geladen
-3. Passe den Text nach Bedarf an
+Im Menü **"Standardvorlage auswählen"** siehst du alle deine Vorlagen dieses Meldekreises:
+
+- Klicke auf einen Titel, um diese Vorlage als **Standardvorlage** zu setzen; mit **"Keine Antwortvorlage"** hebst du die Standardvorlage wieder auf
+- Mit dem Stift-Symbol bearbeitest du Titel und Text in einem Dialog. Dort kannst du die Vorlage auch löschen
+- Mit dem Papierkorb-Symbol löschst du eine Vorlage direkt
+
+### Antwortvorlage beim Antworten wählen
+
+1. Beim Öffnen einer Meldung ist das Antwortfeld mit deiner Standardvorlage vorbelegt
+2. In der Leiste direkt unter dem Antwortfeld steht rechts **"Vorlage: …"** mit der aktuellen Vorlage. Ein Klick darauf öffnet deine Vorlagen; die Auswahl ersetzt den Text im Antwortfeld
+3. Mit **"Leeren"** daneben leerst du das Antwortfeld
+4. Passe den Text nach Bedarf an
+
+Links in derselben Leiste schaltest du **"Interner Kommentar"** ein. Dann färben sich Antwortfeld und Leiste orange, und nur die Admins des Meldekreises sehen deinen Kommentar.
 
 ## Suche und Filter
 

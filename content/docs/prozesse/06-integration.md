@@ -7,6 +7,9 @@ tags:
   - "dms"
   - "kpi"
   - "swot"
+  - "teams"
+  - "audit"
+  - "auditkriterien"
   - "tutorials"
   - "verknüpfung"
 ---
@@ -23,7 +26,8 @@ Das Prozesse-Modul ist eng mit anderen ELIZA-Modulen verknüpft. Dieses Kapitel 
 | **DMS** | Dokumente verknüpfen | Arbeitsanweisungen, Formulare bereitstellen |
 | **Organisation** | Funktionen nutzen | RACI-Matrix, Verantwortlichkeiten |
 | **KPI** | Kennzahlen zuordnen | Prozessleistung messen |
-| **SWOT** | Audits vorbereiten | Risiken und Massnahmen verknüpfen |
+| **SWOT** | Massnahmen verknüpfen | Risiken und Massnahmen nachverfolgen |
+| **Teams** | Audit vorbereiten | Audit-Board mit Cards und Checklisten erzeugen |
 | **Tutorials** | Schulungen verlinken | Mitarbeitende schulen |
 | **Checklisten** | Prüflisten erstellen | Prozessausführung unterstützen |
 
@@ -118,28 +122,70 @@ Prozesse können mit KPIs (Key Performance Indicators) verknüpft werden, um die
 
 ---
 
+## Audit vorbereiten (Teams)
+
+Der Assistent **"Audit vorbereiten"** überführt deine Prozesse in ein Kanban-Board: Für jeden ausgewählten Prozess entsteht eine Card, und die Auditkriterien des Prozesses werden auf dieser Card als Checkliste hinterlegt. So arbeitest du ein internes oder externes Audit Prozess für Prozess ab und siehst jederzeit, welche Kriterien schon geprüft sind.
+
+**Prozesse → Einstellungen → Audit vorbereiten**
+
+### Voraussetzungen
+
+| Voraussetzung | Wo du sie einrichtest |
+|---------------|-----------------------|
+| Ein Board für die Audit-Cards | Teams → Space → Board erstellen |
+| Deine Mitgliedschaft im Space des Boards | Teams → Space → Team |
+| Mindestens eine Liste auf dem Board | Teams → Board → Liste hinzufügen |
+| Auditkriterien an den Prozessen | Prozess → Tab **"Auditkriterien"** |
+
+> **⚠️ Achtung:** Im ersten Schritt erscheinen nur Boards aus Spaces, in denen du selbst Teammitglied bist. Bleibt die Auswahl leer, gibt es entweder noch kein Board oder du bist im betreffenden Space nicht eingetragen. Beides pflegst du im Teams-Modul, es gibt dafür keine Einstellung im Prozesse-Modul.
+
+### Auditkriterien erfassen
+
+Auditkriterien legen fest, was bei einem Audit geprüft wird. Du erfasst sie immer direkt am Prozess:
+
+1. Öffne den Prozess
+2. Wechsle zum Tab **"Auditkriterien"**
+3. Klicke auf **"+ Auditkriterium"**
+4. Fülle die Felder aus und speichere
+
+| Feld | Bedeutung |
+|------|-----------|
+| **Titel** | Wird beim Audit-Assistenten zum Eintrag in der Checkliste auf der Card |
+| **Beschreibung** | Erläuterung, was genau geprüft wird |
+| **Nachweis** | Womit die Erfüllung belegt wird |
+| **Nachweis durch Hilfsmittel** | Verknüpfung zu Hilfsmitteln des Prozesses |
+| **Nachweis durch Dokumente** | Verknüpfung zu DMS-Dokumenten |
+| **Erfüllungsgrad in %** | Farbige Bewertung in der Übersicht: grün bei hoher, orange bei mittlerer, kräftiges Orange bei tiefer Erfüllung |
+
+> **💡 Tipp:** Der Tab **"Auditkriterien"** ist nur mit dem Recht **"Auditkriterium ansehen"** sichtbar. Eine modulweite Liste aller Auditkriterien gibt es im Menü nicht, die Pflege erfolgt immer am einzelnen Prozess.
+
+### Der Assistent in drei Schritten
+
+**Schritt 1: Board**
+
+Wähle das Board, auf dem die Audit-Cards entstehen sollen. Unter dem Dropdown siehst du zur Kontrolle den Space sowie die Anzahl Listen und Cards des gewählten Boards.
+
+**Schritt 2: Prozesse**
+
+Wähle im Prozessbaum die Prozesse aus, die auditiert werden sollen. Zur Auswahl stehen Prozesse im Status **Entwurf** und **freigegeben**; Prozesse in Prüfung, geprüfte, abgelaufene und archivierte Prozesse erscheinen nicht.
+
+**Schritt 3: Erstellen**
+
+Die Zusammenfassung zeigt pro Prozess, wie viele Auditkriterien mitkommen. Mit dem Erstellen legt ELIZA die Cards an und öffnet anschliessend das Board.
+
+### Was auf dem Board entsteht
+
+- Pro Prozess eine Card mit dem Prozesstitel, abgelegt in der **ersten Liste** des Boards
+- Auf der Card eine Checkliste **"Auditkriterien"** mit einem Eintrag pro Auditkriterium des Prozesses
+- Die Card ist mit dem Prozess verknüpft, du springst also direkt vom Audit zurück in die Prozessdokumentation
+
+Prozesse ohne Auditkriterien ergeben eine Card ohne Checkliste. Erfasse die Kriterien darum vor dem Start des Assistenten.
+
+> **⚠️ Achtung:** Der Assistent legt bei jedem Durchlauf neue Cards an und erkennt keine bereits vorhandenen. Startest du ihn für dieselben Prozesse zweimal, entstehen doppelte Cards.
+
+---
+
 ## SWOT Integration
-
-### Audits vorbereiten
-
-Für interne Audits können Prozesse mit dem SWOT-Modul verknüpft werden:
-
-**Prozesse → Audit vorbereiten**
-
-Diese Funktion ermöglicht:
-- Auditkriterien zu Prozessen zuordnen
-- Stärken und Schwächen dokumentieren
-- Massnahmen ableiten
-
-### Auditkriterien
-
-Auditkriterien definieren, was bei einem Audit geprüft wird:
-
-**Prozesse → Auditkriterien**
-
-1. Erstelle Auditkriterien
-2. Ordne sie den relevanten Prozessen zu
-3. Nutze sie bei der Audit-Vorbereitung
 
 ### Massnahmen verknüpfen
 

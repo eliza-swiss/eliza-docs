@@ -21,13 +21,16 @@ Kommentare sind das Herzstück der Kommunikation im Spaces-Modul. Sie können zu
 
 ### Wo können Kommentare hinzugefügt werden?
 
-**Kommentare sind möglich bei:**
+Spaces kennen zwei Arten von Kommentaren, die sich in Bedienung und Funktionsumfang unterscheiden:
 
-- ✅ Cards (Aufgaben)
-- ✅ Meetings (Sitzungen)
-- ✅ Meetingitems (Traktanden)
-- ✅ Decisions (Beschlüsse)
-- ✅ Files (Dateien)
+| Objekt | Art | Funktionen |
+|--------|-----|------------|
+| **Sitzungen** und **Traktanden** | Diskussion | Kommentare, Antworten, Emoji-Reaktionen, @-Erwähnungen |
+| **Cards** (Aufgaben) und **Beschlüsse** | Klassisches Kommentarfeld | Kommentar schreiben, bearbeiten, löschen |
+
+> **💡 Alles an einem Ort:** Kommentare aus der Diskussion, also an Sitzungen und Traktanden, sammelt ELIZA zusätzlich unter **Dashboard → Kommentare**, zusammen mit den Kommentaren aus den übrigen Modulen. Wie diese Übersicht funktioniert und wer dort was sieht, steht im Dashboard-Handbuch, Kapitel «Kommentare: alle Diskussionen an einem Ort». Kommentare an Cards und Beschlüssen erscheinen dort nicht, sie stehen nur am Objekt selbst.
+
+> **⚠️ Sichtbarkeit:** Bei Sitzungen und Traktanden zählt die Sichtbarkeit des Spaces und nicht die Mitgliedschaft. Steht ein Space auf **öffentlich**, sind seine Sitzungen, Traktanden und deren Kommentare für alle Mitarbeitenden einsehbar. Für vertrauliche Themen gehört der Space auf **geschützt**.
 
 ### Kommentar erstellen
 

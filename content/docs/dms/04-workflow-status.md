@@ -246,9 +246,41 @@ oder
 
 | Aktion | Beschreibung |
 |--------|--------------|
-| **Überprüfen & Bestätigen** | Dokument bleibt gültig, neues Überprüfungsdatum setzen |
+| **Erneut überprüfen** | Dokument bleibt gültig, neue Daten für «Gültig bis» und «Nächste Überprüfung» setzen |
+| **Erneut freigeben** | Unveränderten Inhalt nochmals freigeben, mit neuem Freigabedatum |
 | **Arbeitskopie erstellen** | Dokument aktualisieren und neu freigeben |
 | **Archivieren** | Dokument wird nicht mehr benötigt |
+
+### «Erneut überprüfen» oder «Erneut freigeben»?
+
+Beide Wege bestätigen, dass ein Dokument weiterhin gilt. Sie halten das aber unterschiedlich fest.
+
+| | Erneut überprüfen | Erneut freigeben |
+|---|---|---|
+| **Wo** | Tab «Metadaten», Knopf «erneut überprüfen» bei «Nächste Überprüfung» | Statusdialog (Zahnrad beim Status) oder Sammelaktion in den Fristenlisten |
+| **Bedeutung** | Du hast den Inhalt angeschaut, er ist weiterhin richtig | Das Dokument wird mit unverändertem Inhalt nochmals freigegeben |
+| **Freigabedatum** | Bleibt unverändert | Wird auf heute gesetzt |
+| **Freigegeben durch** | Bleibt unverändert | Die freigebende Person |
+| **Versionen** | Keine neue Version | Jede erneute Freigabe erhält eine eigene Version |
+| **Revisionsnummer** | Bleibt unverändert | Bleibt unverändert, auch bei automatischer Vergabe |
+| **Historie** | «Dokument überprüft (weiterhin gültig)» | «Dokument erneut freigegeben» |
+| **Daten** | Du wählst «Gültig bis» und «Nächste Überprüfung» selbst | Mit Periodizität neu berechnet, sonst unverändert |
+
+**Erneut überprüfen im Detail:**
+
+1. Öffne das Dokument und wechsle in den Tab **«Metadaten»**.
+2. Klicke bei «Nächste Überprüfung» auf **«erneut überprüfen»**.
+3. Das Formular zeigt die gespeicherten Daten. Passe «Gültig bis» und «Nächste Überprüfung» an oder leere sie:
+   - Ein geleertes «Gültig bis» bleibt leer.
+   - Eine geleerte «Nächste Überprüfung» bleibt leer. Hat das Dokument eine Periodizität, setzt ELIZA stattdessen das daraus berechnete Datum.
+   - Ein eingetragenes Datum muss in der Zukunft liegen, bei beiden Feldern.
+4. Schreibe bei Bedarf einen Kommentar und speichere.
+
+Danach zeigt der Tab «Metadaten» die Zeile **«Zuletzt überprüft am … durch …»**.
+
+**Abgelaufene Dokumente überprüfen:** Liegt «Gültig bis» nach dem Speichern in der Zukunft oder ist es leer, wird das Dokument wieder «freigegeben». Die Historie hält die Überprüfung und den Statuswechsel «Abgelaufen → Freigegeben» fest.
+
+**Wer darf erneut überprüfen:** Admins, Ordner-Admins, die Autorin oder der Autor, Mitglieder der verantwortlichen Funktion und Freigabeberechtigte, bei freigegebenen und abgelaufenen Dokumenten.
 
 ---
 
@@ -341,10 +373,13 @@ Diese Übersicht zeigt alle freigegebenen Dokumente, deren Überprüfungsdatum i
 
 | Rolle | Sichtbare Dokumente |
 |-------|---------------------|
-| **Dokument-Autor** | Alle eigenen Dokumente |
+| **DMS-Administrator** | Alle Dokumente |
+| **Ordner-Administrator** | Dokumente in den eigenen Ordnern (auch über vererbte Zuständigkeit) |
 | **Verantwortliche Funktion** | Dokumente mit der eigenen Funktion als Verantwortliche |
+| **Freigabeberechtigte** | Dokumente, die sie freigeben dürfen |
+| **Dokument-Autor** | Alle eigenen Dokumente |
 
-> **⚠️ Wichtig:** Du siehst nur Dokumente, für die du als Autor eingetragen bist oder bei denen du Mitglied der verantwortlichen Funktion bist.
+> **⚠️ Wichtig:** Das Leserecht auf einen Ordner reicht nicht. Du siehst nur Dokumente, für die du zuständig bist. Dokumente, die du nur lesen darfst, findest du weiterhin über den Ordner oder die Suche, aber nicht in den Fristenlisten.
 
 ### Menüpunkt "Fristen"
 
@@ -366,26 +401,17 @@ Der Fristen-Bereich zeigt einen Badge mit der Anzahl relevanter Dokumente an.
 
 #### Berechtigungen pro Ansicht
 
-**Abgelaufene Dokumente (`valid_to` < heute):**
+Alle drei Ansichten und der Zähler im Menüpunkt «Fristen» verwenden dieselbe Regel. Du siehst ein Dokument, wenn mindestens ein Punkt zutrifft:
 
 | Rolle | Sichtbarkeit |
 |-------|--------------|
-| **DMS Administrator** | Alle abgelaufenen Dokumente |
-| **Ordner-Administrator** | Abgelaufene Dokumente im eigenen Ordner |
+| **DMS-Administrator** | Alle Dokumente |
+| **Ordner-Administrator** | Dokumente in den eigenen Ordnern |
 | **Verantwortliche Funktion** | Dokumente mit der eigenen Funktion |
-
-**Überfällige Überprüfungen (`next_review` < heute):**
-
-| Rolle | Sichtbarkeit |
-|-------|--------------|
-| **Benutzer mit Änderungsrecht** | Dokumente, für die man `change_permission` hat |
-
-**Anstehende Überprüfungen (nächste 30 Tage):**
-
-| Rolle | Sichtbarkeit |
-|-------|--------------|
+| **Freigabeberechtigte** | Dokumente, die sie freigeben dürfen |
 | **Dokument-Autor** | Eigene Dokumente |
-| **Verantwortliche Funktion** | Dokumente mit der eigenen Funktion |
+
+Das reine Leserecht auf einen Ordner zählt nicht. So bleiben die Fristenlisten deine persönliche Aufgabenliste und zeigen nicht die Dokumente anderer Abteilungen.
 
 #### Aktionen bei abgelaufenen Dokumenten
 
@@ -394,8 +420,11 @@ Wenn ein Dokument in der Fristen-Übersicht erscheint, hast du folgende Optionen
 | Aktion | Beschreibung |
 |--------|--------------|
 | **Arbeitskopie erstellen** | Dokument überarbeiten und neu freigeben |
-| **Überprüfen & Bestätigen** | Dokument bleibt gültig, neues Überprüfungsdatum setzen |
+| **Erneut überprüfen** | Dokument bleibt gültig, neue Daten setzen (Tab «Metadaten») |
+| **Erneut freigeben** | Unveränderten Inhalt nochmals freigeben, auch für mehrere Dokumente gleichzeitig |
 | **Archivieren** | Dokument wird nicht mehr benötigt |
+
+Den Unterschied zwischen «erneut überprüfen» und «erneut freigeben» erklärt der Abschnitt [«Erneut überprüfen» oder «Erneut freigeben»?](#erneut-uberprufen-oder-erneut-freigeben).
 
 > **💡 Tipp:** Prüfe regelmässig den Fristen-Bereich, um keine wichtigen Überprüfungstermine zu verpassen. Der Badge in der Navigation zeigt dir auf einen Blick, ob Handlungsbedarf besteht.
 

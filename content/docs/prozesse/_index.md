@@ -123,7 +123,8 @@ Nutze die leistungsstarken Integrationen mit anderen ELIZA-Modulen.
 **Inhalte:**
 - Dokumente verknüpfen (DMS)
 - KPIs zuordnen
-- Audits vorbereiten (SWOT)
+- Audit vorbereiten: Audit-Board mit Cards und Checklisten (Teams)
+- Massnahmen verknüpfen (SWOT)
 - Schulungen verknüpfen (Tutorials)
 - Checklisten erstellen
 - Benachrichtigungen und Mitteilungen

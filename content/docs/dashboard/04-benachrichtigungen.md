@@ -227,10 +227,10 @@ Es gibt in ELIZA kein eigenes Feld «Frist», das überall gleich heisst. Je nac
 
 | Objekt | Welches Datum zählt | Es erscheint, solange … | Wer es sieht |
 |--------|---------------------|--------------------------|--------------|
-| **Massnahme** | Frist | sie geplant, laufend oder in Arbeit ist | Verantwortung, Kontrolle durch, verantwortliche oder kontrollierende Funktion |
+| **Massnahme** | Frist | sie geplant, laufend oder in Arbeit ist | Verantwortliche oder kontrollierende Person, verantwortliche oder kontrollierende Funktion |
 | **Meldung** | Frist | sie offen ist — auch während der Wirksamkeitsprüfung | die zugewiesene Person |
 | **Card** | Frist | sie nicht erledigt, abgebrochen oder archiviert ist | die zugewiesene Person |
-| **Sitzung** | Beginn | sie geplant oder vorbereitet und noch nicht vorbei ist | alle mit Zugriff auf den Space |
+| **Sitzung** | Beginn | sie geplant oder vorbereitet und noch nicht vorbei ist | Mitglieder des Space (Owner, Admins, Team) und Sitzungs-Admins |
 | **Dokument** | Gültig bis | es freigegeben oder bereits abgelaufen ist | Autor oder verantwortliche Funktion |
 | **Dokument** | Datum der nächsten Überprüfung | es freigegeben ist | Autor oder verantwortliche Funktion |
 | **Dokument** | Frist | es noch nicht freigegeben ist | die zugewiesene Person |
@@ -238,7 +238,7 @@ Es gibt in ELIZA kein eigenes Feld «Frist», das überall gleich heisst. Je nac
 | **Prozess** | Datum der nächsten Überprüfung | er nicht archiviert ist | Prozessverantwortung und Stellvertretung |
 | **Prozess** | Frist | er noch nicht freigegeben ist | die zugewiesene Person |
 | **Kennzahl** | Datum der nächsten Messung | sie nicht archiviert ist | verantwortliche Person oder Funktion |
-| **Prüfmittel** | Nächste Überprüfung | es nicht archiviert ist | alle mit Leserecht auf Prüfmittel |
+| **Prüfmittel** | Nächste Überprüfung | es nicht archiviert ist | verantwortliche Person oder verantwortliche Funktion; ohne erreichbare Verantwortliche alle mit Änderungsrecht auf Prüfmittel |
 | **Benachrichtigung** | Frist | sie ungelesen ist und eine Lesebestätigung verlangt | die Empfängerin oder der Empfänger |
 
 > **💡 Tipp:** Suchst du eine Frist vergeblich? Dann ist meistens eine der drei Bedingungen nicht erfüllt: das Datum ist leer, das Objekt ist erledigt oder archiviert, oder du bist dafür nicht zuständig. Ein Blick auf das Objekt selbst klärt es in der Regel sofort.
@@ -261,7 +261,7 @@ Bei Massnahmen, Meldungen und Cards steht einfach der Titel. Alles andere trägt
 
 **Zwei Besonderheiten:**
 
-Beim **Prüfmittel** entscheidet nicht die Zuständigkeit, sondern das Leserecht: Wer Prüfmittel sehen darf, sieht alle fälligen Überprüfungen — bei allen anderen Objekten zählt nur, wofür du selbst zuständig bist.
+Beim **Prüfmittel** zählt die Verantwortung am Prüfmittel: die hinterlegte Person oder die Mitglieder der verantwortlichen Funktion. Ist keines von beidem hinterlegt oder niemand erreichbar (die Person hat kein aktives Benutzerkonto, die Funktion hat keine aktiven Mitglieder), geht die Erinnerung an alle mit Änderungsrecht auf Prüfmittel, damit die Prüfung nicht unbemerkt bleibt. Wer Prüfmittel nur lesen darf, bekommt keine Erinnerung.
 
 Die **Sitzung** ist streng genommen keine Frist, sondern ein Termin. Sie steht trotzdem in der Liste, weil sie am Sitzungstag als «heute fällig» erscheint und dich so rechtzeitig daran erinnert.
 
@@ -269,7 +269,7 @@ Die **Sitzung** ist streng genommen keine Frist, sondern ein Termin. Sie steht t
 
 Angezeigt wird alles, was in den nächsten **30 Tagen** fällig wird. Nach hinten gibt es keine Grenze — eine Frist, die seit zwei Jahren offen ist, bleibt in deiner Übersicht stehen, bis das Objekt erledigt oder archiviert ist.
 
-> **💡 Tipp:** Hast du eine Admin- oder Freigabe-Rolle, erscheint in der Fristen-Übersicht zusätzlich der Schalter **«Auch Aufgaben anzeigen, bei denen ich nur Admin- oder Freigabe-Berechtigung habe»**. Damit siehst du auch, was in deinem Verantwortungsbereich liegt, ohne dir persönlich zugewiesen zu sein — bei Cards, Dokumenten, Prozessen, Kennzahlen und Massnahmen. Der Schalter wirkt nur auf die Übersicht: Die Sammelmeldung nennt immer nur deine eigene Zuständigkeit.
+> **💡 Tipp:** Hast du eine Admin- oder Freigabe-Rolle, erscheint in der Fristen-Übersicht zusätzlich der Schalter **«Auch Aufgaben anzeigen, bei denen ich nur Admin- oder Freigabe-Berechtigung habe»**. Damit siehst du auch, was in deinem Verantwortungsbereich liegt, ohne dir persönlich zugewiesen zu sein — bei Cards, Dokumenten, Prozessen, Kennzahlen, Massnahmen und Prüfmitteln. Der Schalter wirkt nur auf die Übersicht: Die Sammelmeldung nennt immer nur deine eigene Zuständigkeit.
 
 ### Die Fristen-Sammelmeldung
 
@@ -278,7 +278,7 @@ Damit du deine Fristen nicht selbst im Auge behalten musst, erhältst du sie reg
 Die Meldung sieht so aus:
 
 <pre>
-Du hast 12 offene Fristen
+Du hast 5 offene Fristen
 
 Überfällig (3)
 • 22.07.2025 · Überprüfung fällig: Hygienekonzept
@@ -289,16 +289,26 @@ Heute fällig (2)
 • 11.08.2026 · Angebot prüfen
 • 11.08.2026 · Messung fällig: Kundenzufriedenheit
 
+In den nächsten Tagen (7)
+• 14.08.2026 · Vertrag verlängern: Wartung Lift
+• 18.08.2026 · Überprüfung fällig: Brandschutzkonzept
+• 21.08.2026 · Kennzahl erfassen: Krankheitstage
+• 25.08.2026 · Massnahme abschliessen: Audit-Feststellung 3
+• 28.08.2026 · Schulung Datenschutz
+… und 2 weitere
+
 → Meine Fristen
 </pre>
 
+Als **offen** zählt die Überschrift nur, was überfällig oder heute fällig ist — im Beispiel 3 + 2 = 5. Fristen, die erst in den nächsten Tagen anstehen, werden aufgelistet, aber nicht mitgezählt. Stehen ausschliesslich kommende Fristen an, lautet die Überschrift stattdessen «Du hast 7 anstehende Fristen».
+
 **So arbeitest du damit:**
 
-1. Öffne den **Posteingang** — die Meldung erkennst du an der Überschrift «Du hast … offene Fristen»
+1. Öffne den **Posteingang** — die Meldung erkennst du an der Überschrift «Du hast … offene Fristen» oder, wenn nichts überfällig oder heute fällig ist, «Du hast … anstehende Fristen»
 2. Klicke auf einen **Eintrag in der Liste**, um direkt zum Dokument, zur Meldung oder zur Massnahme zu gelangen
 3. Über **Meine Fristen** am Ende der Meldung öffnest du die vollständige Übersicht mit allen Einträgen und Filtern
 
-> **💡 Tipp:** Pro Dringlichkeitsstufe werden bis zu fünf Einträge aufgezählt, danach folgt «… und X weitere». Die Zahl in der Überschrift nennt aber immer den vollständigen Stand — den kompletten Bestand findest du unter «Meine Fristen».
+> **💡 Tipp:** Pro Dringlichkeitsstufe werden bis zu fünf Einträge aufgezählt, danach folgt «… und X weitere». Die Zahl in Klammern hinter jeder Stufe nennt aber immer den vollständigen Stand dieser Stufe — den kompletten Bestand findest du unter «Meine Fristen».
 
 **Wann die Meldung sich meldet:**
 
@@ -425,7 +435,7 @@ Nein. Deine Fristen bleiben unter **Meine Fristen** vollständig sichtbar. Beim 
 
 ### Warum sehe ich in der Meldung nicht alle meine Fristen?
 
-Pro Dringlichkeitsstufe werden bis zu fünf Einträge aufgezählt, damit die Meldung übersichtlich bleibt. Die Zahl in der Überschrift nennt aber immer den vollständigen Stand. Alle Einträge findest du unter **Meine Fristen**.
+Pro Dringlichkeitsstufe werden bis zu fünf Einträge aufgezählt, damit die Meldung übersichtlich bleibt. Die Zahl in Klammern hinter jeder Stufe nennt aber immer den vollständigen Stand dieser Stufe. Die Überschrift zählt nur überfällige und heute fällige Fristen als offen; kommende Fristen stehen in der Liste «In den nächsten Tagen». Alle Einträge findest du unter **Meine Fristen**.
 
 ### Warum bekomme ich gar keine Fristen-Meldung?
 
