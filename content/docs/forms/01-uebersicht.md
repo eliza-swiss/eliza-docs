@@ -37,7 +37,7 @@ Gestalte Vorlagen für wiederkehrende Befragungen:
 
 - Drag & Drop Editor für intuitive Gestaltung
 - 14 verschiedene Fragetypen
-- Bedingte Fragen (zeige/verberge basierend auf Antworten)
+- Folgeformulare, um je nach Antwort in einem passenden Formular weiterzufahren
 - Verschiedene Layouts (volle Breite, halbe Breite, Drittel)
 
 ### ✉️ Benutzer einladen
@@ -115,7 +115,7 @@ Werte die Antworten aus:
 Das Forms-Modul findest du im Hauptmenü unter **Formulare**. Von dort aus kannst du zugreifen auf:
 
 - **Ordner**: Übersicht aller Formular-Ordner
-- **Vorlagen**: Liste aller Formular-Vorlagen
+- **Formular-Vorlagen**: Liste aller Formular-Vorlagen, die Startseite des Moduls
 - **Formulare**: Aktive und abgeschlossene Formulare
 
 ## Typischer Workflow
@@ -140,13 +140,20 @@ Das Forms-Modul findest du im Hauptmenü unter **Formulare**. Von dort aus kanns
 
 ## Berechtigungen
 
-Du benötigst folgende Berechtigungen, um das Forms-Modul zu nutzen:
+Wer was darf, ergibt sich aus dem Link, der Sicherheitsstufe des Ordners und den Gruppen:
 
-- **Formulare ansehen**: Formulare und Vorlagen sehen
-- **Formulare bearbeiten**: Formulare erstellen und bearbeiten
-- **Formulare verwalten**: Ordner und Berechtigungen verwalten
+| Was | Wer |
+|---|---|
+| Aktives Formular über internen Link ausfüllen | jede angemeldete Person |
+| Formular über öffentlichen Link ausfüllen | jede Person, wenn «Öffentlich ausfüllbar» an ist |
+| Formular ausfüllen, das eine Meldung erstellt | angemeldete Personen mit dem Melderecht im Ziel-Meldekreis (öffentliche Meldeformulare bleiben offen) |
+| Ordner und Vorlagen sehen | nach Sicherheitsstufe des Ordners (Öffentlich: alle Angemeldeten; Geschützt/Vertraulich: Admin-Team, Team, Funktionen, Organisationseinheiten) |
+| Vorlagen bearbeiten | Admin-Team des Ordners, Ersteller:in, Gruppe «Formulare (Admin)» |
+| Ordner, Vorlagen und Gruppen administrieren | Gruppe «Formulare (Admin)» |
 
-Dein Administrator kann dir diese Berechtigungen zuweisen.
+Ausfüllen geht nur, solange das Formular aktiv und gültig ist. Entwürfe, archivierte und abgelaufene Formulare lassen sich auch über alte Links nicht mehr ausfüllen. Die Gruppe «Formulare (Vorlagen lesen)» ist dafür nicht nötig.
+
+Dein Administrator kann dir die Gruppen zuweisen.
 
 ## Nächste Schritte
 

@@ -211,14 +211,25 @@ Die Template-Sprache bietet umfangreiche Variablen für alle Dokumenteigenschaft
 | `{{ document_function_code }}` | Kürzel der verantwortlichen Funktion | QMB |
 | `{{ document_reviewer_function }}` | Prüfende Funktion | Technische Leitung |
 | `{{ document_reviewer_function_code }}` | Kürzel der prüfenden Funktion | TL |
-| `{{ document_approval_by }}` | Freigebende Funktion mit Person | QMB (Max Mustermann) |
+| `{{ document_reviewed_by }}` | Name der prüfenden Person | Anna Muster |
+| `{{ document_approval_by }}` | Freigebende Funktion | QMB |
 | `{{ document_approval_by_code }}` | Kürzel der freigebenden Funktion | QMB |
 | `{{ document_approved_by }}` | Name der freigebenden Person | Max Mustermann |
 
 **Unterschied zwischen den Freigabe-Variablen:**
-- `document_approval_by`: Zeigt Funktion UND Person, z.B. "QMB (Max Mustermann)"
+- `document_approval_by`: Die freigebende Funktion, z.B. "QMB". Ist keine Funktion hinterlegt, steht hier der Name der Person, die freigegeben hat
 - `document_approval_by_code`: Nur das Funktionskürzel, z.B. "QMB"
-- `document_approved_by`: Nur der Name der Person, z.B. "Max Mustermann"
+- `document_approved_by`: Nur der Name der Person, die das Dokument auf "Freigegeben" gesetzt hat, z.B. "Max Mustermann"
+- Funktion und Person kombinierst du selbst: `{{ document_approval_by }} ({{ document_approved_by }})` ergibt "QMB (Max Mustermann)"
+
+**Prüfende Person:**
+- `document_reviewed_by` zeigt den Namen der Person, die das Dokument im Workflow auf "Geprüft" gesetzt hat, also die fachliche Prüfung. Das ist nicht unbedingt dieselbe Person wie bei `document_approved_by`
+- Es zählt die Prüfung, die zur letzten Freigabe gehört. Wurde das Dokument ohne den Schritt "Geprüft" freigegeben oder nach der Prüfung zurück auf Entwurf gesetzt und ohne neue Prüfung freigegeben, bleibt die Variable leer
+- Vor der ersten Freigabe zeigt die Variable die Person, die die erste Fassung geprüft hat
+- Bei einer Überarbeitung (Arbeitskopie oder zurück auf Entwurf) zählt die neue Prüfung erst, wenn das Dokument wieder freigegeben ist. Bis dahin zeigt die Variable, wie Freigabedatum und Version, den Stand der letzten Freigabe
+- «Erneut überprüfen» (periodische Überprüfung) ändert die Variable nicht: Sie zeigt weiterhin die Person, die den Workflow-Schritt "Geprüft" ausgeführt hat
+- Eine Wiederfreigabe ändert die prüfende Person nicht
+- Beispiel für die Fusszeile: `Geprüft: {{ document_reviewed_by }} | Freigegeben: {{ document_approved_by }}, {{ document_approval_date }}`
 
 #### Organisations-Variablen
 
@@ -227,6 +238,24 @@ Die Template-Sprache bietet umfangreiche Variablen für alle Dokumenteigenschaft
 | `{{ orgunits }}` | Zugeordnete Organisationseinheiten | Produktion, Qualität, Verwaltung |
 
 > **ℹ️ Hinweis:** Mehrere Organisationseinheiten werden durch Kommas getrennt.
+
+#### Links und mitgeltende Dokumente
+
+| Variable | Beschreibung | Beispiel |
+|----------|--------------|----------|
+| `{{ applicable_documents }}` | Mitgeltende Dokumente als Text, mit Dokument-ID und Titel | HA-00412 Betriebskonzept Akutabteilung, FO-00347 Sicherheitsdispositiv |
+| `{{ applicable_documents_links }}` | Dieselbe Liste, jedes Dokument als klickbarer Link (nur Word) | <u>HA-00412 Betriebskonzept Akutabteilung</u>, <u>FO-00347 Sicherheitsdispositiv</u> |
+| `{{ document_link }}` | Vollständige Adresse dieses Dokuments in ELIZA (Text) | https://firma.myeliza.ch/dms/documents/42/detail/ |
+| `{{ document_hyperlink }}` | Dieselbe Adresse als klickbarer Link (nur Word) | <u>https://firma.myeliza.ch/dms/documents/42/detail/</u> |
+
+**So funktionieren die Links:**
+- Die mitgeltenden Dokumente pflegst du im Dokument unter «Mitgeltende Dokumente». Es erscheinen nur aktive Dokumente, sortiert nach Dokument-ID und Titel. Dokumente ohne Dokument-ID stehen mit ihrem Titel am Schluss
+- Die Links führen auf die Detailseite des Dokuments in ELIZA. Der Link bleibt gültig, wenn eine neue Fassung freigegeben wird. Ist das verknüpfte Dokument eine Arbeitskopie, führt der Link auf das Original. Auch `document_link` zeigt in einer Arbeitskopie auf das Original
+- Wer einen Link anklickt, sieht das Dokument nur mit den nötigen Berechtigungen
+- `…_links` und `…_hyperlink` erzeugen in Word klickbare Links in der Hyperlink-Formatierung (blau, unterstrichen), auch in Kopf- und Fusszeilen. Du schreibst sie wie alle anderen Variablen, z.B. `Mitgeltende Dokumente: {{ applicable_documents_links }}`; ELIZA ergänzt intern das `r`, das die Template-Sprache für formatierten Text braucht. Die Schreibweise `{{r applicable_documents_links }}` funktioniert ebenfalls
+- Die Links übernehmen die Formatierung der Stelle, an der der Platzhalter steht (Schrift, Grösse, fett usw.), und erhalten zusätzlich Farbe und Unterstreichung. Text vor und nach dem Platzhalter behält seine Formatierung
+- In Excel und in PDF-Vorlagen gibt es keine klickbaren Links: `{{ applicable_documents_links }}` setzt dort denselben Text ein wie `{{ applicable_documents }}`, `{{ document_hyperlink }}` dieselbe Adresse wie `{{ document_link }}`
+- Aufgeführt werden die mitgeltenden Dokumente, die die Person lesen darf, die das Dokument zuletzt gespeichert hat (ohne gespeicherte Person: die Autorin oder der Autor). Geschützte Dokumente, die sie nicht sehen darf, erscheinen nicht. Wer das Dokument später liest, kann auf Links stossen, die er selbst nicht öffnen darf
 
 #### Logo-Variablen (Word und Excel)
 
@@ -253,6 +282,14 @@ Die Template-Sprache bietet umfangreiche Variablen für alle Dokumenteigenschaft
 - **`{{ qr_code_validation }}`**: Ermöglicht die Prüfung, ob ein gedrucktes Dokument noch aktuell ist. Beim Scannen wird angezeigt, ob die Version noch gültig ist oder ob eine neuere Version existiert.
 
 > **✅ Best Practice:** Füge `{{ qr_code_validation }}` in die Fusszeile von ISO 9001 gelenkten Dokumenten ein. So können Mitarbeitende jederzeit prüfen, ob sie die aktuelle Version verwenden.
+
+> **💡 Platz für QR-Code und Logo einplanen:** Beim Bearbeiten siehst du nur den kurzen Platzhalter. Erst beim Speichern setzt ELIZA die Bilder ein: das Logo in der eingestellten Höhe, den QR-Code in 2 × 2 cm. Plane diesen Platz in deiner Vorlage ein, damit die Seiten beim Bearbeiten und im gespeicherten Dokument gleich umbrechen:
+>
+> - Stelle den unteren Seitenrand so ein, dass die ganze Fusszeile samt QR-Code darin Platz hat. Den oberen Rand richtest du ebenso nach Kopfzeile und Logo.
+> - Steht der QR-Code in einer Tabelle, gib der Zeile eine feste Höhe (Tabelleneigenschaften → Zeile → Zeilenhöhe «Genau», etwa 4 mm mehr als der QR-Code, also 2,4 cm).
+> - Schiebe Text nicht mit leeren Zeilen auf die nächste Seite. Verwende einen Seitenumbruch (Ctrl+Enter).
+>
+> Neu erstellte Vorlagen aus dem Vorlagen-Assistenten berücksichtigen den Platz für Logo und QR-Code automatisch.
 
 ### Beispiel: Word-Vorlage
 

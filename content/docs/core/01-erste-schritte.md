@@ -72,7 +72,7 @@ Die Benutzer-Übersicht ist deine Hauptarbeitsfläche und zeigt dir alle wichtig
 │  Filter-Buttons:                                       │
 │  [Alle] [Aktive] [Lese] [Berater:in] [Archivierte]    │
 │                                                        │
-│  Aktionen (nur Superuser):                             │
+│  Aktionen (Benutzerverwaltung):                        │
 │  [Excel Export] [✉ Einladen] [☁ Import] [↻ Avatare]    │
 │                                                        │
 │  ┌──────────────────────────────────────────────┐    │
@@ -90,14 +90,14 @@ Die Benutzer-Übersicht ist deine Hauptarbeitsfläche und zeigt dir alle wichtig
 
 #### 1. Aktions-Buttons (oben rechts)
 
-**Für alle Administratoren:**
+**Für alle Personen mit Benutzerverwaltung (Gruppe «Benutzer verwalten (Admin)»):**
 - **[+ Benutzer]** (grün): Neuen Benutzer manuell erstellen
-- **[Benutzertypen aktualisieren]**: Benutzertypen neu berechnen
-
-**Nur für Superuser:**
 - **[Excel Export]**: Berechtigungen aller Benutzer als Excel exportieren
 - **[✉ Einladen]**: Benutzer per E-Mail einladen (Onboarding)
 - **[☁ Import]**: Benutzer aus Excel-Datei importieren
+
+**Nur für Superuser:**
+- **[Benutzertypen aktualisieren]**: Benutzertypen neu berechnen
 - **[↻ Avatare]**: Alle Profilbilder neu laden
 
 #### 2. Filter-Buttons
@@ -246,10 +246,10 @@ Um die Details eines Benutzers anzuzeigen:
 
 ### Warum sehe ich den Import-Button nicht?
 
-**Import-Funktion ist nur für Superuser verfügbar:**
+**Der Import braucht das Recht «Benutzer ändern» (`core.change_user`):**
 
-- Der Button ☁ (Cloud-Icon) erscheint nur für Benutzer mit `is_superuser=True`
-- Normale Administratoren können nicht importieren
+- Der Button ☁ (Cloud-Icon) erscheint für alle Mitglieder der Gruppe «Benutzer verwalten (Admin)» (technisch `manage_users`)
+- Fehlt dir die Gruppe, kann sie dir eine Person mit Benutzerverwaltung im Benutzerprofil zuweisen; Superuser-Rechte sind dafür nicht nötig
 
 ### Was bedeutet "Zuordnungen"?
 

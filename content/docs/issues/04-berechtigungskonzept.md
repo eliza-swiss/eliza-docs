@@ -48,7 +48,7 @@ Systemgruppen werden von ELIZA-Administratoren zugewiesen und bestimmen die Basi
 
 | Berechtigung | Beschreibung |
 |--------------|-------------|
-| `view_genericissue` | Meldungen anzeigen |
+| `view_genericissue` | Meldungen in der Favoriten-Suche finden |
 | `add_issue` | Neue Meldungen erstellen |
 | `view_tracker` | Meldekreise anzeigen |
 
@@ -72,7 +72,7 @@ Systemgruppen werden von ELIZA-Administratoren zugewiesen und bestimmen die Basi
 
 | Berechtigung | Beschreibung |
 |--------------|-------------|
-| `view_genericissue` | Meldungen anzeigen |
+| `view_genericissue` | Meldungen in der Favoriten-Suche finden |
 | `add_issue` | Neue Meldungen erstellen |
 | `change_issue` | Meldungen bearbeiten |
 | `delete_issue` | Meldungen löschen |
@@ -107,6 +107,7 @@ Jeder Meldekreis hat eigene Rollen, die die Systemgruppen ergänzen oder übersc
 - Voller Zugriff auf den Meldekreis
 - Können alle Meldungen sehen und bearbeiten
 - Können den Meldekreis konfigurieren
+- Können den Meldekreis löschen, ausser er ist vertraulich: Vertrauliche Meldekreise kann niemand löschen
 - Sehen auch "geheime" Meldungen
 - Können als Zuständige zugewiesen werden
 - Erhalten Benachrichtigungen bei neuen Meldungen

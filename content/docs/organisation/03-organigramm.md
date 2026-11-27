@@ -76,7 +76,7 @@ Organisationseinheiten (Orgunits) bilden die Struktur deines Unternehmens ab. Si
 | **E-Mail** | Kontakt-E-Mail |
 | **Website** | Webseite der Einheit |
 | **Reihenfolge** | Sortierung in Listen |
-| **In Organigramm anzeigen** | Sichtbarkeit im Organigramm |
+| **Im Organigramm anzeigen** | Sichtbarkeit im Organigramm |
 | **Planstellen in %** | Geplante Stellenprozente |
 
 **Schritt 4: Spezielle Einstellungen**
@@ -170,8 +170,8 @@ Im Organigramm erscheinen:
 - **Mitglieder** (abhängig von der Konfiguration)
 
 **Ausblenden:**
-- Setze "In Organigramm anzeigen" auf "Nein" bei der Organisationseinheit
-- Bei Mitgliedschaften: "In Organigramm anzeigen" deaktivieren
+- Setze "Im Organigramm anzeigen" auf "Nein" bei der Organisationseinheit
+- Bei Mitgliedschaften: "Im Organigramm anzeigen" deaktivieren
 
 ### Organigramm-Einstellungen
 
@@ -244,7 +244,7 @@ Mitgliedschaften verbinden Mitarbeitende mit Organisationseinheiten.
 | **Anstellungsgrad** | Stellenprozente in dieser Einheit |
 | **Beschreibung** | Zusätzliche Informationen |
 | **Reihenfolge** | Sortierung in Listen |
-| **In Organigramm anzeigen** | Sichtbarkeit im Organigramm |
+| **Im Organigramm anzeigen** | Sichtbarkeit im Organigramm |
 | **Qualifikation** | Optionale Qualifikationsstufe |
 
 ### Mehrfache Mitgliedschaften

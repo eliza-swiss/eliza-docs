@@ -100,10 +100,10 @@ Massnahmen können auch aus Prozessen, IMS-Objekten und anderen verknüpften Ele
 | **Frist** | Nein | Termin, bis wann die Massnahme umgesetzt sein soll |
 | **Periodizität** | Nein | Regelmässige Durchführung (z.B. 1× jährlich) |
 | **Status** | Ja | Aktueller Umsetzungsstand |
-| **Verantwortliche Funktion** | Nein | Funktion, die für die Umsetzung verantwortlich ist |
-| **Verantwortung** | Nein | Person, die für die Umsetzung verantwortlich ist |
-| **Kontrollierende Funktion** | Nein | Funktion, die die Wirksamkeit kontrolliert |
-| **Kontrolle durch** | Nein | Person, die die Wirksamkeit kontrolliert |
+| **Verantwortliche Funktion** | Nein | Funktion, welche die Massnahme umsetzt und die zugeordnete Massnahme bearbeiten kann |
+| **Verantwortliche Person** | Nein | Person, welche die Massnahme umsetzt und die zugeordnete Massnahme bearbeiten kann |
+| **Kontrollierende Funktion** | Nein | Funktion, welche die Umsetzung beziehungsweise Wirksamkeit der Massnahme überprüft und die Kontrolle dokumentiert |
+| **Kontrollierende Person** | Nein | Person, welche die Umsetzung beziehungsweise Wirksamkeit der Massnahme überprüft und die Kontrolle dokumentiert |
 | **Beteiligte Organisationseinheiten** | Nein | Welche Abteilungen betroffen sind |
 
 > **💡 Tipp:** Definiere sowohl eine **verantwortliche** als auch eine **kontrollierende** Person oder Funktion. So stellst du das Vier-Augen-Prinzip sicher.
@@ -123,7 +123,7 @@ Wenn du eine Massnahme öffnest, siehst du:
 ### Detailtabelle
 - **Gehört zu**: Verknüpftes Objekt (z.B. Einschätzung)
 - **Status**: Aktueller Umsetzungsstand
-- **Verantwortung**: Verantwortliche Person mit Avatar
+- **Verantwortliche Person**: Verantwortliche Person mit Avatar
 - **Beteiligte Organisationseinheiten**: Betroffene Abteilungen
 - **Verantwortliche Funktion**: Verantwortliche Funktion mit Gruppenmitgliedern
 - **Kontrollierende Person**: Wer kontrolliert
@@ -240,7 +240,7 @@ Alle zugehörigen **Kontrollen** und **Kontrolldateien** werden ebenfalls gelös
 
 ### Kann ich den Verantwortlichen nachträglich ändern?
 
-Ja, bearbeite die Massnahme und ändere das Feld "Verantwortung" oder "Verantwortliche Funktion".
+Ja, bearbeite die Massnahme und ändere das Feld "Verantwortliche Person" oder "Verantwortliche Funktion".
 
 ---
 

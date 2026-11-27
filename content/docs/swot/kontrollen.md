@@ -41,7 +41,7 @@ Es gibt verschiedene Wege, die Berechtigung zum Erstellen von Kontrollen zu erha
 
 ### Automatisch berechtigt (ohne zusätzliche Berechtigung)
 
-- **Kontrollierende Person**: Wenn du im Feld "Kontrolle durch" einer Massnahme eingetragen bist
+- **Kontrollierende Person**: Wenn du im Feld "Kontrollierende Person" einer Massnahme eingetragen bist
 - **Kontrollierende Funktion**: Wenn du Mitglied der kontrollierenden Funktion bist
 - **Verantwortliche Person**: Wenn du als verantwortliche Person eingetragen bist
 - **Verantwortliche Funktion**: Wenn du Mitglied der verantwortlichen Funktion bist
@@ -49,7 +49,7 @@ Es gibt verschiedene Wege, die Berechtigung zum Erstellen von Kontrollen zu erha
 ### Über Berechtigung
 
 - **Kontrollen (Lesen und Hinzufügen)**: Allgemeine Berechtigung für Kontrollen
-- **Massnahmen (Admin)**: Vollzugriff auf alle Massnahmen und Kontrollen
+- **Massnahmen modulübergreifend (Admin)**: Vollzugriff auf das Massnahmen-Modul; bei Massnahmen an Objekten anderer Module (z.B. Inventar, Prüfmittel) zählt das Recht am verknüpften Objekt
 
 > **💡 Tipp:** Mehr Details zu den Berechtigungen findest du im Kapitel [Berechtigungen]({{< ref "berechtigungen" >}}).
 

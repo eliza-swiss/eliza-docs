@@ -214,6 +214,22 @@ Wenn du eine Arbeitskopie eines Prozesses erstellst:
 
 ---
 
+## Spaltenbreiten der Prozessschritt-Tabelle anpassen
+
+Die Tabelle der Prozessschritte zeigt die Spalten **Schritt**, **Ergebnis**, **Hilfsmittel** und **Mitwirkungen** (sowie **Labels**, falls ein Schritt Labels trägt). Standardmässig erhält die Beschreibung mit 42 Prozent den grössten Anteil, Ergebnis 18, Hilfsmittel 22 und Mitwirkungen 18 Prozent.
+
+Admins mit dem Recht *Prozesse löschen* können die Aufteilung für alle anpassen:
+
+1. Öffne **Prozesse › Einstellungen** und wähle bei **Darstellungsoptionen** «Konfigurieren»
+2. Trage im Abschnitt **Prozessschritte-Tabelle** die Breite jeder Spalte in Prozent ein (5 bis 80). Die Summe muss 100 ergeben; eine Vorschau zeigt die Proportionen sofort
+3. Setze bei **Spalten ausblenden** ein Häkchen für Spalten, die du nicht brauchst. Ihre Breite verteilt sich anteilig auf die übrigen Spalten
+4. Aktiviere **Leere Spalten automatisch ausblenden**, wenn Spalten ohne Inhalt pro Prozess von selbst verschwinden sollen
+5. **Speichern**. Mit «Standard wiederherstellen» setzt du die Werte jederzeit zurück
+
+Die Einstellung gilt gemeinsam für die Detailansicht, die Druckansicht und den Word/PDF-Export. Die Spalte **Schritt** lässt sich nicht ausblenden.
+
+---
+
 ## Best Practices
 
 ### ✅ Empfehlungen

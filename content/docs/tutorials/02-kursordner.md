@@ -96,7 +96,6 @@ Der neue Ordner wird im Status "Entwurf" erstellt.
 | **Zur Prüfung** | Wartet auf Freigabe |
 | **Freigegeben** | Für berechtigte Benutzer sichtbar |
 | **Abgelaufen** | Überprüfung fällig |
-| **Archiviert** | Nicht mehr aktiv |
 
 > **⚠️ Wichtig:** Nur freigegebene Ordner sind für normale Benutzer sichtbar.
 
@@ -277,11 +276,10 @@ Die Reihenfolge der Ordner in der Liste kann über das Feld "Reihenfolge" angepa
 
 ### Archivieren
 
-Archivierte Ordner:
-
-- Sind nicht mehr in der Standardansicht sichtbar
-- Behalten alle Daten und Verknüpfungen
-- Können bei Bedarf wiederhergestellt werden
+Ordner selbst lassen sich nicht archivieren. Archiviere stattdessen die Kurse
+und Handbücher darin einzeln (siehe Kurse). Einen Ordner, den du nicht mehr
+brauchst, setzt du auf den Status **Abgelaufen**; dann sehen ihn nur noch Admins.
+Ordner mit dem früheren Status «Archiviert» stehen neu auf **Abgelaufen**.
 
 ### Löschen
 

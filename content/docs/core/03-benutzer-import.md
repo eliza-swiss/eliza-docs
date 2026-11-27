@@ -51,10 +51,10 @@ Nach diesem Kapitel kannst du:
 
 ### Benötigte Berechtigungen
 
-- **Superuser-Status** erforderlich (`is_superuser=True`)
-- Normale Administratoren können **nicht** importieren
+- Systemgruppe **«Benutzer verwalten (Admin)»** (technisch `manage_users`), also das Recht «Benutzer ändern» (`core.change_user`)
+- **Kein** Superuser-Status nötig
 
-> **⚠️ Wichtig:** Die Import-Funktion ist bewusst auf Superuser beschränkt aus Sicherheitsgründen.
+> **💡 Tipp:** Wer Benutzer manuell anlegen darf, darf sie auch importieren. Der Import vergibt nur Gruppen, die du auch im Benutzerformular zuweisen könntest.
 
 ### Benötigte Software
 
@@ -65,6 +65,19 @@ Nach diesem Kapitel kannst du:
 > **💡 Tipp:** CSV-Dateien werden NICHT unterstützt - nur .xlsx Excel-Format!
 
 ## Excel-Datei strukturieren
+
+### Vorlage herunterladen
+
+Du musst die Datei nicht selbst aufbauen. Auf der Import-Seite findest du zwei Knöpfe:
+
+| Knopf | Inhalt | Wofür |
+|-------|--------|-------|
+| **Leere Vorlage herunterladen** | Nur die Kopfzeile | Neue Benutzer erfassen |
+| **Aktuelle Benutzer als Excel herunterladen** | Alle aktiven Benutzer mit ihren Gruppen | Bestehende Benutzer ergänzen, Gruppen nachtragen, Sicherung vor einem Massen-Import |
+
+Beide Dateien haben exakt die Struktur, die der Import erwartet. Bestehende Benutzer werden am Benutzernamen erkannt und nicht doppelt angelegt.
+
+> **⚠️ Wichtig:** Der Knopf «Excel» über der Benutzerliste ist dafür **nicht** geeignet. Er schreibt eine Titelzeile vor die Kopfzeile, und der Import lehnt die Datei ab.
 
 ### Pflicht-Spalten
 
@@ -161,40 +174,43 @@ Wenn die Spalte "Gruppen" **leer** ist oder **fehlt**:
 
 ### Schritt 1: Excel-Datei vorbereiten
 
-1. Öffne Excel, LibreOffice oder Google Sheets
-2. Erstelle eine neue Tabelle
-3. Füge die Spalten-Überschriften in Zeile 1 ein:
-   - `Vorname | Nachname | E-Mail | Benutzername | Gruppen`
-4. Fülle die Benutzerdaten ab Zeile 2 ein
-5. Speichere die Datei als **`.xlsx`** Format
+1. Öffne die Import-Seite (siehe Schritt 2) und klicke auf **Leere Vorlage herunterladen** (oder auf **Aktuelle Benutzer als Excel herunterladen**, wenn du bestehende Benutzer ergänzen willst)
+2. Öffne die Datei in Excel, LibreOffice Calc oder Google Sheets
+3. Fülle die Benutzerdaten ab Zeile 2 ein; die Spalten-Überschriften in Zeile 1 bleiben unverändert. Formeln sind erlaubt (z.B. `=KLEIN(A2&"."&B2)` für den Benutzernamen): ELIZA importiert den berechneten Wert, nicht die Formel
+4. Speichere die Datei als **`.xlsx`** Format (kein CSV)
 
 > **💡 Tipp:** Beginne mit wenigen Test-Benutzern (3-5) um die Struktur zu überprüfen.
 
 ### Schritt 2: Import-Funktion öffnen
 
-1. Melde dich als **Superuser** in ELIZA an
+1. Melde dich mit einem Konto an, das Benutzer verwalten darf (Gruppe «Benutzer verwalten (Admin)»)
 2. Navigiere zu **Einstellungen** → **Benutzer**
 3. Klicke oben rechts auf das **☁ Cloud-Upload-Icon**
 4. Die Import-Seite öffnet sich
 
 <pre>
-┌────────────────────────────────────────────────────┐
-│  Benutzer importieren                               │
-├────────────────────────────────────────────────────┤
-│                                                    │
-│  Excel Datei:  [Datei auswählen...]               │
-│                                                    │
-│  [Importieren]                                     │
-│                                                    │
-└────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────┐
+│  Benutzer importieren                                │
+│  Lege mehrere Benutzer auf einmal aus einer          │
+│  Excel-Datei an. ...                                 │
+│  ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┐  │
+│  │   ☁  Excel-Datei hierher ziehen oder auswählen │  │
+│  │   [Datei]  Excel Datei                          │  │
+│  └ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┘  │
+│                                      [Importieren]   │
+│                                                      │
+│  NOCH KEINE DATEI?                                   │
+│  ┌ Vorlage ─────────────┐ ┌ So muss Zeile 1 … ─────┐ │
+│  │ Leere Vorlage        │ │  A    B    C    D    E  │ │
+│  │ Aktuelle Benutzer    │ │ 1 Vorname Nachname …    │ │
+│  └──────────────────────┘ └────────────────────────┘ │
+└──────────────────────────────────────────────────────┘
 </pre>
 
 ### Schritt 3: Excel-Datei hochladen
 
-1. Klicke auf **[Datei auswählen...]**
-2. Wähle deine vorbereitete `.xlsx` Datei aus
-3. Klicke auf **[Öffnen]**
-4. Der Dateiname erscheint neben dem Button
+1. Ziehe deine vorbereitete `.xlsx` Datei in das gestrichelte Feld **oder** klicke auf **[Datei]** und wähle sie aus
+2. Der Dateiname erscheint im Feld neben dem Knopf
 
 ### Schritt 4: Import starten
 
@@ -264,29 +280,33 @@ Importierte Benutzer haben **kein Passwort**!
 
 ## Häufige Fehler und Lösungen
 
-### Fehler 1: "Excel-Datei konnte nicht gelesen werden"
+Bei einer unbrauchbaren Datei wird nichts importiert. Die Import-Seite zeigt die Meldung direkt unter dem Dateifeld an.
 
-**Symptome:**
-- Fehler beim Upload
-- Import bricht ab
+### Fehler 1: "Bitte lade eine Excel-Datei im Format .xlsx hoch. CSV-Dateien werden nicht unterstützt."
+
+**Ursache:**
+- Die Datei hat eine andere Endung als `.xlsx` (z.B. `.csv`, `.xls`, `.ods`)
+
+**Lösung:**
+- Öffne die Datei in Excel, LibreOffice Calc oder Google Sheets und speichere sie als **Excel-Arbeitsmappe (.xlsx)**
+
+### Fehler 2: "Die Datei konnte nicht als Excel-Datei gelesen werden."
 
 **Ursachen & Lösungen:**
 
 | Ursache | Lösung |
 |---------|--------|
-| Datei ist kein `.xlsx` Format | Speichere als Excel 2007+ (.xlsx) |
+| Datei wurde nur umbenannt (z.B. CSV in `.xlsx`) | In Excel öffnen und als `.xlsx` speichern |
 | Datei ist beschädigt | Neu erstellen oder reparieren |
 | Datei ist zu gross (>10 MB) | Reduziere Benutzeranzahl, Import in Teilen |
-| Falscher Sheet-Name | Verwende das erste Sheet (Standard) |
 
-### Fehler 2: "Spalte 'Vorname' nicht gefunden"
+### Fehler 3: "In der ersten Zeile fehlen die Spaltentitel: ..."
 
 **Symptome:**
-- Import bricht sofort ab
-- Fehlermeldung: "Spalte nicht gefunden"
+- Die Meldung nennt die fehlenden Spalten, z.B. `Nachname, E-Mail`
 
 **Ursache:**
-- Spalten-Überschriften sind falsch geschrieben
+- Spalten-Überschriften sind falsch geschrieben oder stehen nicht in der ersten Zeile
 
 **Lösung:**
 - Überprüfe die exakte Schreibweise:
@@ -295,7 +315,24 @@ Importierte Benutzer haben **kein Passwort**!
   - ✅ `E-Mail` (nicht `Email`, `E-mail`, `e-mail`)
   - ✅ `Benutzername` (nicht `Username`, `User`, `Login`)
 
-### Fehler 3: "Gruppe 'xyz' nicht gefunden"
+### Fehler 4: "In C2 steht eine Formel ohne gültigen Wert."
+
+**Symptome:**
+- Die Meldung nennt die betroffenen Zellen, z.B. `C2, D2`
+- Es wird nichts importiert
+
+**Ursache:**
+- In einer Import-Spalte (Vorname, Nachname, Benutzername, E-Mail, Gruppen) steht eine Formel, zu der die Datei keinen berechneten Wert enthält. Das passiert bei Dateien, die ein Programm oder Skript ohne Berechnung erzeugt hat, oder wenn die Formel einen Fehlerwert wie `#REF!`, `#NAME?` oder `#WERT!` liefert
+
+**Lösung:**
+
+1. Öffne die Datei in Excel (oder LibreOffice Calc, Google Sheets)
+2. Prüfe, ob die Formelzellen den gewünschten Wert anzeigen und keinen Fehlerwert
+3. Speichere die Datei erneut als `.xlsx` und lade sie nochmals hoch
+
+> **💡 Tipp:** Wenn du ganz sichergehen willst, kopiere die Formelspalte und füge sie über **Inhalte einfügen → Werte** wieder ein. Dann enthält die Datei nur noch Werte.
+
+### Fehler 5: "Gruppe 'xyz' nicht gefunden"
 
 **Symptome:**
 - Benutzer wird importiert, aber ohne Gruppen
@@ -319,7 +356,7 @@ Excel-Eintrag: dms_admin  (Kleinschreibung, Leerzeichen durch _ ersetzt)
 
 > **💡 Tipp:** Verwende den **technischen Namen** (lowercase mit Unterstrichen) statt dem Titel.
 
-### Fehler 4: "E-Mail bereits vorhanden"
+### Fehler 6: "E-Mail bereits vorhanden"
 
 **Symptome:**
 - Import bricht ab
@@ -334,7 +371,7 @@ Excel-Eintrag: dms_admin  (Kleinschreibung, Leerzeichen durch _ ersetzt)
 2. **Option B**: Lösche den bestehenden Benutzer (falls Duplikat)
 3. **Option C**: Überspringe diesen Benutzer (lass Zeile leer)
 
-### Fehler 5: "Benutzername bereits vorhanden"
+### Fehler 7: "Benutzername bereits vorhanden"
 
 **Symptome:**
 - Benutzer wird übersprungen
@@ -451,10 +488,12 @@ Peter   | Meier    | peter.meier@schule.ch | peter.meier | eliza_users
 
 1. Erstelle eine **Standard-Vorlage** mit Beispieldaten
 2. Dokumentiere den Prozess (Checkliste)
-3. Nutze Excel-Formeln für automatische Generierung von Benutzernamen:
+3. Nutze Excel-Formeln für die automatische Generierung von Benutzernamen, z.B. in der Spalte Benutzername:
    ```excel
-   =LOWERCASE(A2&"."&B2)  // Vorname.Nachname
+   =KLEIN(A2&"."&B2)   → vorname.nachname (deutsches Excel)
+   =LOWER(A2&"."&B2)   → vorname.nachname (englisches Excel)
    ```
+   ELIZA importiert den berechneten Wert (z.B. `max.muster`), nicht die Formel. Excel, LibreOffice Calc und Google Sheets legen diesen Wert beim Speichern in der Datei ab. Fehlt er oder ist er ein Fehlerwert, meldet der Import die Zelle (siehe Fehler 4)
 
 ### Integration mit HR-Systemen
 
@@ -483,6 +522,10 @@ Falls dein HR-System Exporte unterstützt:
 
 Nein, nur `.xlsx` Excel-Format wird unterstützt. Konvertiere CSV zu Excel wenn nötig.
 
+### Kann ich Excel-Formeln in der Datei verwenden?
+
+Ja. Der Import liest den berechneten Wert, nicht die Formel. Hat eine Formel keinen gültigen Wert (Fehlerwert wie `#REF!` oder Datei ohne Berechnung), meldet der Import die Zelle und importiert nichts (siehe Fehler 4).
+
 ### Werden Passwörter beim Import gesetzt?
 
 Nein. Nutze die Onboarding-Funktion um Benutzern zu ermöglichen, eigene Passwörter zu setzen.
@@ -501,7 +544,11 @@ Der Benutzer wird ohne diese Gruppe importiert. Eine Warnung erscheint im Log.
 
 ### Kann ich den Import rückgängig machen?
 
-Nein, aber du kannst importierte Benutzer manuell archivieren oder löschen. Daher: Immer Test-Import zuerst!
+Nein. Importierte Benutzer musst du einzeln archivieren oder löschen. Daher: Immer Test-Import zuerst!
+
+### Kann ich mehrere Benutzer auf einmal löschen?
+
+Nein, eine Massenlöschung gibt es nicht. Öffne den Benutzer in der Benutzerliste und verwende in der Detailansicht das Symbol **Archivieren** (Benutzer bleibt erhalten, kann sich aber nicht mehr anmelden) oder **Löschen** (endgültig, samt allen Daten des Benutzers). Beginne deshalb mit einem Test-Import von 3-5 Benutzern und prüfe das Ergebnis, bevor du die ganze Liste importierst; so bleibt ein allfälliges Aufräumen klein.
 
 ### Werden E-Mails beim Import versendet?
 

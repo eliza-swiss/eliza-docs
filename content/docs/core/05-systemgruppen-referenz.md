@@ -89,7 +89,7 @@ Dieses Kapitel ist eine **Nachschlage-Referenz** für alle Systemgruppen. Hier f
 | IKS (Admin) | IKS-Elemente (Risiken, Chancen, Massnahmen) verwalten |
 | IKS (Lesen und Hinzufügen) | IKS-Elemente ansehen und neue hinzufügen |
 | Massnahmen (Lesen und Hinzufügen) | Massnahmen ansehen und neue hinzufügen |
-| Massnahmen (Admin) | Massnahmen vollständig verwalten |
+| Massnahmen modulübergreifend (Admin) | Das Massnahmen-Modul vollständig verwalten: alle Listen und Auswertungen, Kategorien, Massnahmen ohne Bezug; Massnahmen an Objekten anderer Module, soweit du das Objekt bearbeiten darfst |
 | Kontrollen (Lesen und Hinzufügen) | Kontrollen durchführen und dokumentieren |
 
 ### Projekte
@@ -157,15 +157,17 @@ Dieses Kapitel ist eine **Nachschlage-Referenz** für alle Systemgruppen. Hier f
 
 | Systemgruppe | Beschreibung |
 |--------------|--------------|
-| Inventar (Lesen) | Inventar-Einträge ansehen |
-| Inventar (Admin) | Inventar verwalten, neue Ressourcen erfassen |
+| Inventar (Lesen) | Inventar-Einträge und deren Massnahmen ansehen |
+| Inventar (Admin, inklusive verknüpfter Massnahmen) | Inventar verwalten, neue Ressourcen erfassen, Massnahmen an Inventarobjekten hinzufügen, ändern und löschen |
 
 ### Prüfmittel
 
 | Systemgruppe | Beschreibung |
 |--------------|--------------|
-| Prüfmittel (Lesen) | Prüfmittel ansehen |
-| Prüfmittel (Admin) | Prüfmittel verwalten, Kalibrierungen erfassen |
+| Prüfmittel (Lesen) | Prüfmittel und deren Massnahmen ansehen |
+| Prüfmittel (Admin, inklusive verknüpfter Massnahmen) | Prüfmittel verwalten, Kalibrierungen erfassen, Massnahmen an Prüfmitteln hinzufügen, ändern und löschen |
+
+> **💡 Massnahmen an Inventar und Prüfmitteln:** Die Massnahmen eines Inventarobjekts oder Prüfmittels folgen den Rechten des jeweiligen Moduls. Wer das Objekt sehen darf, sieht auch seine Massnahmen; wer es bearbeiten darf, verwaltet sie. Dafür braucht es keine IKS-Berechtigung, und ein Modul-Admin erhält keinen Zugriff auf Massnahmen anderer Module. Nur «Massnahmen modulübergreifend (Admin)» verwaltet das ganze Massnahmen-Modul.
 
 ### Kennzahlen (KPI)
 
@@ -230,13 +232,6 @@ Dieses Kapitel ist eine **Nachschlage-Referenz** für alle Systemgruppen. Hier f
 |--------------|--------------|
 | CIRS (Lesen) | CIRS-Meldungen ansehen |
 | CIRS (Admin) | CIRS-Meldungen verwalten |
-
-### Evaluationen
-
-| Systemgruppe | Beschreibung |
-|--------------|--------------|
-| Evaluationen (Lesen) | Evaluationen ansehen |
-| Evaluationen (Admin) | Evaluationen erstellen und verwalten |
 
 ### Zitate
 

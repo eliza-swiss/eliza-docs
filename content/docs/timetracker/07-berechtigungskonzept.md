@@ -182,6 +182,8 @@ Die Sichtbarkeit von Absenzen im Monatsplan und in Übersichten hängt von der S
 | **Gleiche Organisationseinheit** | ✅ | ✅ | ❌ |
 | **Andere Mitarbeitende** | ✅ | ❌ | ❌ |
 
+**Standard:** Neue Abwesenheitsarten sind standardmässig **privat** (Privacy by Default). Bestehende Abwesenheitsarten behalten ihre bisherige Sichtbarkeit. Die Stufe stellst du als HR in der Liste der Abwesenheitsarten pro Art ein.
+
 **Anonymisierte Darstellung:**
 
 Wenn die Systemeinstellung "Private Absenzen anonymisiert anzeigen" aktiviert ist, sehen Mitarbeitende ohne Sichtberechtigung ein neutrales "Belegt"-Symbol. Ist die Einstellung deaktiviert, werden nicht sichtbare Absenzen komplett ausgeblendet.

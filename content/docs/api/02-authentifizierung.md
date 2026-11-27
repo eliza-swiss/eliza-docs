@@ -39,7 +39,7 @@ Authorization: Token dein_api_token_hier
 **Beispiel mit curl:**
 
 ```bash
-curl -H "Authorization: Token 1801d1fd0c1c1f9e3388bba24a747b7311dbdc72" \
+curl -H "Authorization: Token dein_api_token_hier" \
      https://example.myeliza.ch/api/organisation/mitarbeitende
 ```
 
@@ -77,7 +77,7 @@ print(response.json())
 
 ```python
 # FALSCH - Token im Code
-API_TOKEN = "1801d1fd0c1c1f9e3388bba24a747b7311dbdc72"
+API_TOKEN = "3f9a0c7e..."  # dein Token, im Klartext
 
 # RICHTIG - Token aus Umgebungsvariable
 import os

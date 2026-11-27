@@ -91,8 +91,8 @@ Definiere Massnahmen nach dem SMART-Prinzip:
 
 Weise jeder Massnahme sowohl eine **verantwortliche** als auch eine **kontrollierende** Person/Funktion zu:
 
-- **Verantwortung**: Setzt die Massnahme um
-- **Kontrolle durch**: Prüft die Wirksamkeit
+- **Verantwortliche Person oder Funktion**: Setzt die Massnahme um und kann sie bearbeiten
+- **Kontrollierende Person oder Funktion**: Überprüft Umsetzung beziehungsweise Wirksamkeit und dokumentiert die Kontrolle
 
 > **⚠️ Wichtig:** Die verantwortliche Person sollte **nicht gleichzeitig** die kontrollierende Person sein.
 

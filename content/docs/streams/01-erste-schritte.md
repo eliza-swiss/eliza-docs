@@ -27,7 +27,7 @@ Das News & Events-Modul ermöglicht die interne Kommunikation in deinem Unterneh
 
 **Navigationspfad:** Klicke in der linken Seitennavigation auf **News & Events**
 
-Du gelangst automatisch zur News-Übersicht, wo du die neuesten Nachrichten aus deinen abonnierten Kanälen siehst.
+Du gelangst automatisch zur News-Übersicht, wo du die neuen, noch nicht gelesenen Nachrichten aus deinen abonnierten Kanälen siehst.
 
 ## Die Startseite im Überblick
 
@@ -48,7 +48,7 @@ Im Untermenü findest du folgende Bereiche:
 | Menüpunkt | Beschreibung |
 |-----------|--------------|
 | **Newskanäle** | Alle verfügbaren Newskanäle durchsuchen |
-| **News** | Alle News-Beiträge anzeigen |
+| **News** | Neue, noch nicht gelesene News aus deinen abonnierten Newskanälen anzeigen |
 | **Events** | Alle Events im Überblick |
 | **Meine Events** | Events, zu denen du eingeladen bist |
 | **Einstellungen** | Modul-Einstellungen (nur für Admins) |
@@ -149,7 +149,7 @@ ELIZA zeigt ungelesene News als Badge in der Navigation an. Zusätzlich können 
 
 ### Kann ich alte News wiederfinden?
 
-Ja! Nutze die Suchfunktion (Alt+S) oder navigiere direkt zum entsprechenden Newskanal.
+Ja! Die News-Startseite zeigt nur News, die du noch nicht gelesen hast. Bereits gelesene News findest du im jeweiligen Newskanal: Öffne den Newskanal und klicke auf **Gelesen** (oder **Alle** für alle News des Kanals). Alternativ hilft dir die Suchfunktion (Alt+S).
 
 ## Nächste Schritte
 

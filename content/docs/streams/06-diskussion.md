@@ -23,12 +23,17 @@ Die **Diskussion** ist eine modulübergreifende Funktion in ELIZA, die unter Inh
 
 ## Wo findest du die Diskussion?
 
-Sobald die Administration sie aktiviert hat, erscheint die Diskussions-Card am Ende folgender Seiten:
+Die Diskussions-Card erscheint am Ende folgender Seiten:
 
-- **News-Beiträge** (News & Events)
-- **DMS-Dokumente**
-- **Tutorials-Lektionen**
-- **Prozesse**
+| Inhalt | Modul | Verfügbarkeit |
+|--------|-------|---------------|
+| **Traktanden und Sitzungen** | Spaces | Immer aktiv |
+| **News-Beiträge und Events** | News & Events | Immer aktiv |
+| **Meldungen** | Meldungen | Erst nach Aktivierung durch die Administration |
+| **Kennzahlen** | Kennzahlen | Erst nach Aktivierung |
+| **DMS-Dokumente** | Dokumente | Erst nach Aktivierung |
+| **Prozesse** | Prozesse | Erst nach Aktivierung |
+| **Tutorials-Lektionen und Handbuchartikel** | Wissen | Erst nach Aktivierung |
 
 ![Diskussions-Card mit Reagieren, Kommentieren und Seen-Tracking](/docs/streams/images/social-bar-overview.svg)
 
@@ -124,6 +129,16 @@ Die erwähnte Person erhält eine **Benachrichtigung** im Posteingang („Hugo B
 
 💡 **Tipp:** Mehrfach-Erwähnungen sind möglich (z.B. `@hugo.boss @sandra.berger Kannst du das prüfen?`) — jede Person bekommt eine eigene Benachrichtigung.
 
+## Alle Kommentare an einem Ort
+
+Du musst die Gespräche nicht in jedem Modul einzeln suchen: Unter **Dashboard → Kommentare** sammelt ELIZA alle Kommentare, die du sehen darfst, quer durch alle Module. Drei Register helfen beim Filtern:
+
+- **Neueste**: alles, was du sehen darfst, das Neueste zuoberst
+- **Erwähnungen**: Kommentare, in denen dich jemand mit `@` erwähnt hat
+- **Meine**: deine eigenen Kommentare
+
+Über das Symbol am rechten Rand springst du zum Objekt und antwortest dort im Zusammenhang. Ausführlich beschrieben ist die Übersicht im Dashboard-Handbuch, Kapitel «Kommentare: alle Diskussionen an einem Ort».
+
 ## Gesehen-Tracking
 
 Bei Inhalten mit aktivem **Gesehen-Tracking** erfasst ELIZA automatisch, wer den Inhalt aufgerufen hat — ähnlich wie LinkedIn anzeigt, „wer hat meinen Beitrag gesehen".
@@ -164,7 +179,9 @@ Die Diskussion respektiert die normalen Berechtigungen der jeweiligen Inhalte:
 - **Gesehen-Liste anzeigen**: Nur **Autor/Admin** sieht, wer den Inhalt gesehen hat (nicht alle Benutzer)
 - **Fremden Kommentar bearbeiten/löschen**: Nur **Admins** mit den entsprechenden Berechtigungen
 
-Du wirst nie auf Inhalte stossen, die du eigentlich nicht sehen darfst — wenn du keine Berechtigung hast, ist auch die Diskussion nicht sichtbar.
+Du wirst nie auf Inhalte stossen, die du eigentlich nicht sehen darfst: Fehlt dir die Berechtigung, ist auch die Diskussion nicht sichtbar.
+
+> **⚠️ Spaces beachten:** Bei Traktanden und Sitzungen zählt die Sichtbarkeit des Spaces, nicht deine Mitgliedschaft. Ein Space auf **öffentlich** ist für alle Mitarbeitenden einsehbar, samt Sitzungen, Traktanden und deren Kommentaren. Sollen die Inhalte dem Team vorbehalten bleiben, gehört der Space auf **geschützt**.
 
 ## Aktivierung (für Administratoren)
 
@@ -175,10 +192,12 @@ Die Diskussion ist **standardmässig deaktiviert** und muss pro Modul eingeschal
    - **DMS**: Reaktionen/Kommentare und Gesehen-Tracking
    - **Tutorials**: ditto für Lektionen
    - **Prozesse**: ditto für Prozesse
+   - **Meldungen**: ditto für Meldungen
+   - **Kennzahlen**: ditto für Kennzahlen
 3. **Zeitfenster für Kommentar-Bearbeitung** anpassen (Standard 15 Min, 0 = unbegrenzt)
 4. **Speichern**
 
-News-Beiträge (Streams) haben Reaktionen und Kommentare seit jeher aktiv — dort wird die Diskussion automatisch angezeigt.
+News-Beiträge und Events (News & Events) sowie Traktanden und Sitzungen (Spaces) haben Reaktionen und Kommentare seit jeher aktiv, dort wird die Diskussion automatisch angezeigt.
 
 💡 **Tipp:** Aktiviere zuerst nur ein Modul (z.B. DMS) für ein paar Wochen, sammle Feedback, und schalte dann weitere Module nach.
 
@@ -198,6 +217,9 @@ Nein, Reaktionen verschicken keine Benachrichtigungen — sonst würde es bei be
 
 **Wer sieht, dass ich einen Inhalt gesehen habe?**
 Nur der **Autor / die Admins** des Inhalts. Andere normale Leser sehen nur die Gesamtzahl, nicht deinen Namen.
+
+**Ich sehe im Dashboard Kommentare aus einem Team, in dem ich nicht Mitglied bin. Warum?**
+Weil der zugehörige Space auf «öffentlich» steht und damit für alle Mitarbeitenden einsehbar ist. Eine Space-Administratorin kann ihn auf «geschützt» umstellen, dann verschwinden auch die Kommentare aus deiner Übersicht.
 
 **Warum erscheint eine Person nicht im @-Mention-Dropdown?**
 Vorgeschlagen werden nur Personen, die den aktuellen Inhalt sehen dürfen. Hat jemand keine Sicht-Berechtigung auf den Beitrag, kann sie/er auch nicht erwähnt werden — wende dich an deinen Admin, falls die Berechtigung erweitert werden soll.

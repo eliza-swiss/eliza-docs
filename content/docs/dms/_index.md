@@ -232,6 +232,46 @@ Publiziere Dokumente über öffentliche Links und erstelle Dokument-Pakete für 
 
 ---
 
+### [14. PDFs mit ELIZA Sign unterzeichnen](pdfs-mit-eliza-sign-unterzeichnen/)
+
+**PDFs einfach, fortgeschritten oder qualifiziert elektronisch unterzeichnen**
+
+Erstelle Signaturaufträge für interne und externe Personen, positioniere Unterschriften im PDF und lege das vollständig unterzeichnete Ergebnis als neue DMS-Version ab — von der einfachen Unterschrift bis zur qualifizierten elektronischen Signatur (QES) über eSignR und Swisscom Mobile ID.
+
+**Inhalte:**
+- Signaturauftrag starten
+- Parallele und sequenzielle Unterzeichnung
+- Interne und externe Personen einladen
+- Persönliche Unterschrifts-Badges erstellen
+- Unterschrift im PDF positionieren
+- Laufende Aufträge verfolgen und abbrechen
+- ELIZA Sign-Siegel, Auditprotokoll und Integritätsnachweis
+- Qualifizierte elektronische Signatur (QES) über eSignR und Mobile ID: Voraussetzungen, Ablauf, Versuche und Neustart
+
+**Zielgruppe:** Alle Benutzer, Dokumentenverantwortliche
+**Lesezeit:** ~15 Minuten
+
+---
+
+### [15. Dokumente am Computer bearbeiten](dokumente-am-computer-bearbeiten/)
+
+**Entwürfe und Arbeitskopien direkt in Word, Excel, PowerPoint, LibreOffice oder Collabora Office bearbeiten**
+
+Öffne die Datei eines Entwurfs oder einer Arbeitskopie mit einem Klick im Office-Programm auf deinem Rechner. Was du speicherst, landet sofort in ELIZA, eine Fassung pro Bearbeitung.
+
+**Inhalte:**
+- Voraussetzungen und unterstützte Dateien
+- Dokument am Desktop öffnen, speichern und schliessen
+- Statuskarte während der Bearbeitung
+- Geschützte Ansicht von Microsoft Office
+- Einstellungen für ELIZA-Administratoren
+- Häufige Fehler beim Öffnen und Speichern
+
+**Zielgruppe:** Alle Benutzer, ELIZA-Administratoren
+**Lesezeit:** ~10 Minuten
+
+---
+
 ## Spezialthemen
 
 ### [11. Excel Template-Sprache](excel-template-sprache/)
@@ -264,9 +304,9 @@ Schritt-für-Schritt Anleitung zum 5-Schritte-Wizard für professionelle Word-Vo
 Starte mit den ersten Schritten, lerne Dokumente zu erstellen und verstehe die Ordnerstruktur.
 
 ### 👔 Dokumentenverantwortliche
-**Empfohlene Kapitel:** 4-7, 10
+**Empfohlene Kapitel:** 4-7, 10, 14
 
-Fokussiere dich auf Workflow, Vorlagen, Versionierung und Berechtigungen. Best Practices helfen dir, Dokumente professionell zu verwalten.
+Fokussiere dich auf Workflow, Vorlagen, Versionierung, Berechtigungen und ELIZA Sign. Best Practices helfen dir, Dokumente professionell zu verwalten.
 
 ### 🔧 Administratoren
 **Empfohlene Kapitel:** 5, 7, 9, 10
@@ -303,7 +343,7 @@ Dieses Handbuch wird kontinuierlich verbessert. Wenn du Fehler findest oder Verb
 
 ## Letzte Aktualisierung
 
-**Version**: 2026.01.30
+**Version**: 2026.08.22
 **Autor**: ELIZA Documentation Team
 
 ---

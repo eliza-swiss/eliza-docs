@@ -353,6 +353,29 @@ Administratoren können neue Dokumentarten unter **Einstellungen** erstellen.
 - Lade Zertifikate und Nachweise direkt hoch
 - Diese erscheinen auch im Personaldossier
 
+## Event-Historie einsehen
+
+> **⚠️ Hinweis:** Dazu muss das Modul **News & Events** aktiviert sein (`STREAMS_ENABLED`).
+
+Auf der Detail-Ansicht eines Mitarbeitenden zeigt der Knopf **«Events (Anzahl)»** alle Event-Teilnahmen der Person, zum Beispiel besuchte interne Weiterbildungen und Kurse.
+
+1. Öffne die Detail-Ansicht des Mitarbeitenden
+2. Klicke in der Buttonleiste auf **«Events (n)»**
+3. Filtere nach **Alle**, **Vergangene** oder **Kommende**
+
+Die Tabelle zeigt pro Teilnahme:
+
+| Spalte | Beschreibung |
+|------|--------------|
+| **Datum** | Start- (und End-)Datum des Events |
+| **Event** | Titel; verlinkt, wenn du das Event selbst sehen darfst |
+| **Newskanal** | Kanal, in dem das Event veröffentlicht wurde |
+| **Status** | Zugesagt, Warteliste, Abgelehnt oder Eingeladen |
+| **Anwesenheit** | «Anwesend» bei bestätigter Anwesenheit; «Nicht erfasst» bei vergangenen, zugesagten Events ohne Anwesenheitseintrag |
+| **Aktionen** | Termin als .ics herunterladen; Teilnahmebestätigung (Word), wenn das Event sie anbietet und die Anwesenheit bestätigt ist |
+
+**Wer sieht die Historie?** Dieselben Personen wie bei den Weiterbildungen: die Person selbst, ihre Vorgesetzten, HR-Admins ihrer Organisationseinheiten und Personen mit der Berechtigung «Private Daten ansehen». Personen ohne Benutzerkonto haben keine Event-Historie.
+
 ## Memos erstellen
 
 > **⚠️ Hinweis:** Dieses Modul muss aktiviert sein (`ORGANISATION_USE_MEMOS`).
@@ -416,6 +439,7 @@ In diesem Kapitel hast du gelernt:
 - Die verschiedenen Anstellungsarten
 - Wie du HR-Dokumente verwaltest
 - Wie du Weiterbildungen dokumentierst
+- Wo du die Event-Historie einer Person findest
 - Wie du Daten exportierst
 
 ## Nächste Schritte

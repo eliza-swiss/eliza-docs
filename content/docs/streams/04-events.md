@@ -104,6 +104,8 @@ Zeigt nur Events, die dich betreffen:
 | **Selbstanmeldung erlauben** | Personen können sich ohne Einladung selbst anmelden |
 | **Unterschrift erforderlich** | Teilnehmer müssen digital unterschreiben |
 | **Teilnehmerliste für alle sichtbar** | Standardmässig aktiv. Wenn deaktiviert, sehen nur Ersteller, Admins und Anwesenheitsprüfer die Namensliste – die Teilnehmerzahl bleibt für alle sichtbar |
+| **Teilnahmebestätigung anbieten** | Anwesende Personen und die Event-Verwaltung können nach dem Event eine Teilnahmebestätigung als Word-Dokument herunterladen (siehe [Teilnahmebestätigung](#teilnahmebestätigung)) |
+| **Vorlage Teilnahmebestätigung** | Optional: Word-Dokument aus dem DMS mit Platzhaltern. Leer lassen für die ELIZA-Standardvorlage |
 
 ### Verwaltung
 
@@ -117,18 +119,26 @@ Zeigt nur Events, die dich betreffen:
 
 ![Event mit Teilnehmern](/docs/streams/images/event-participants.svg)
 
-## Teilnehmer einladen
+## Teilnehmende hinzufügen
 
-Nach dem Erstellen eines Events kannst du Teilnehmer einladen:
+Nach dem Erstellen eines Events kannst du als Event-Verwaltung (Ersteller, Admins, Anwesenheitsprüfer) Teilnehmende hinzufügen:
 
-1. Öffne das Event
-2. Klicke auf **Teilnehmer einladen** oder das Personen-Icon
-3. Wähle die einzuladenden Benutzer aus:
+1. Öffne das Event und klicke auf das Personen-Icon (**Teilnehmende verwalten**)
+2. Klicke auf **Hinzufügen**
+3. Wähle die **Art der Aufnahme**:
+   - **Einladen**: die Person erhält eine Einladung und sagt selbst zu oder ab
+   - **Direkt anmelden**: die Person wird sofort mit Status «Zugesagt» eingetragen. Ist das Event ausgebucht, landet sie auf der Warteliste
+4. Wähle die Personen aus:
    - **Einzelne Benutzer** auswählen
-   - **Gruppen** oder **Organisationseinheiten** einladen
-4. Klicke auf **Einladen**
+   - **Organisationseinheiten** (alle aktuellen Mitglieder)
+5. Optional: eine **Mitteilung an die Personen** erfassen
+6. Klicke auf **Hinzufügen**
 
-Die eingeladenen Personen erhalten eine Benachrichtigung.
+Die Personen erhalten eine Benachrichtigung («Einladung zum Event» bzw. «Anmeldung zum Event»). Die Erfolgsmeldung zeigt, wie viele Personen eingeladen, direkt angemeldet oder auf die Warteliste gesetzt wurden.
+
+> 💡 **Tipp für Personen ohne Systemzugang:** Mit «Direkt anmelden» trägst du Personen ein, die sich nicht selbst anmelden. Offene Einladungen kannst du in der Liste **Eingeladen** mit dem grünen Knopf **Anmeldung bestätigen** im Namen der Person zusagen.
+
+Der Knopf **Hinzufügen** bleibt für die Event-Verwaltung bis zum Event-Ende sichtbar, auch nach Ablauf der Anmeldefrist. Die Anmeldefrist gilt nur für die Selbstanmeldung.
 
 ## Einladungen beantworten
 
@@ -236,10 +246,52 @@ Auf der Teilnehmer-Seite hast du zusätzlich:
 - **Anwesenheitsliste**: alle als anwesend markierten Personen. Bei unterschriftspflichtigen Events siehst du pro Person, ob die Unterschrift vorliegt («Signiert») oder noch fehlt («Unterschrift offen»). Fehlende Unterschriften kannst du über **Unterschrift nachtragen** erfassen.
 - **Abwesend**: zugesagte Personen, die noch nicht als anwesend markiert sind – so erkennst du auf einen Blick, wer fehlt.
 - **Excel-Export**: die Anwesenheitsliste lässt sich als Excel-Datei exportieren (inkl. Unterschriftsbild).
+- **Teilnahmebestätigung**: ist sie im Event aktiviert, lädst du pro anwesende Person eine Word-Bestätigung oder alle zusammen als ZIP (siehe unten).
 
 Anwesenheit und Unterschrift lassen sich auch **nach dem Event** noch erfassen oder nachtragen.
 
 > 💡 **Hinweis:** Teilnehmende werden mit Avatar dargestellt. Der Name ist nur für berechtigte Personen (mit der Berechtigung «Benutzer ansehen») anklickbar.
+
+## Teilnahmebestätigung
+
+Für Kurse und Schulungen kann ELIZA eine **Teilnahmebestätigung als Word-Dokument** erzeugen.
+
+### Aktivieren
+
+1. Öffne das Event zum Bearbeiten
+2. Aktiviere im Abschnitt **Anmeldung & Teilnehmer** den Schalter **Teilnahmebestätigung anbieten**
+3. Optional: wähle unter **Vorlage Teilnahmebestätigung** ein Word-Dokument aus dem DMS. Ohne Vorlage verwendet ELIZA die Standardvorlage (Logo der Installation, Titel, Name, Event, Datum, Ort, Unterschriftslinie)
+
+Beim Kopieren eines Events werden Schalter und Vorlage mitkopiert.
+
+### Herunterladen
+
+Eine Bestätigung gibt es nur für Personen mit **bestätigter Anwesenheit**:
+
+- **Teilnehmende** laden ihre eigene Bestätigung auf der Event-Seite (Banner «Deine Anwesenheit ist bestätigt» › **Teilnahmebestätigung herunterladen**), in **Meine Events** oder in ihrer Event-Historie auf der Mitarbeitenden-Seite
+- Die **Event-Verwaltung** findet in der **Anwesenheitsliste** pro Person das Bestätigungs-Symbol sowie oben rechts das Symbol **Alle Bestätigungen (ZIP)**
+
+### Eigene Word-Vorlage
+
+Lade ein Word-Dokument (.docx) ins DMS hoch und verwende darin diese Platzhalter:
+
+| Platzhalter | Inhalt |
+|------|--------------|
+| `{{ teilnehmer_name }}` | Name der Person |
+| `{{ event_titel }}` | Titel des Events |
+| `{{ event_datum }}` | Datum bzw. Zeitraum des Events (formatiert) |
+| `{{ start_datum }}`, `{{ end_datum }}` | Start- und Enddatum |
+| `{{ ort }}` | Ort |
+| `{{ newskanal }}` | Newskanal (Veranstalter) |
+| `{{ event_text }}` | Beschreibung des Events als Klartext |
+| `{{ ausgestellt_von }}` | Name der Person, die das Event erstellt hat |
+| `{{ heute_datum }}` | Datum der Erstellung der Bestätigung |
+| `{{ firma_name }}` | Name aus den Whitelabel-Einstellungen (App-Name) |
+| `{{ logo_bild }}` | Logo der Installation (Word-Logo aus den Whitelabel-Einstellungen) |
+| `{{ event_bild }}` | Titelbild des Events, falls vorhanden |
+| `{{ unterschrift_bild }}` | Unterschrift der Person, falls beim Event erfasst |
+
+Bedingungen sind möglich, z.B. `{% if ort %}Ort: {{ ort }}{% endif %}`.
 
 ## Event anheften (Sticky)
 
@@ -274,9 +326,15 @@ ELIZA bietet einen persönlichen iCal-Feed für deine Events:
 
 Der Feed aktualisiert sich automatisch mit neuen Events.
 
-### Einzelnes Event exportieren
+### Einzelnes Event herunterladen (.ics)
 
-Du kannst auch einzelne Events als .ics-Datei herunterladen und in deinen Kalender importieren.
+Jedes Event lässt sich einzeln als .ics-Datei herunterladen und in Outlook, Google Kalender oder Apple Kalender öffnen:
+
+- Auf der **Event-Seite** über das Kalender-Symbol oben rechts (**Termin herunterladen (.ics)**)
+- In **Meine Events** über das Kalender-Symbol in der Spalte «Aktionen»
+- Auf der **Teilnehmerseite** über das Kalender-Symbol neben dem Excel-Export
+
+Die Datei enthält Titel, Zeit, Ort, Beschreibung und den Link zurück ins Event. Wer den iCal-Feed abonniert hat, erhält keinen Doppeltermin: Datei und Feed verwenden dieselbe Termin-Kennung.
 
 ## Benachrichtigungen
 

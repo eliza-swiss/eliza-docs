@@ -46,7 +46,7 @@ Der Checklisten-Modus ist eine spezialisierte Form des Formulars, die sich auf s
 
 ### Schritt 1: Vorlage erstellen
 
-1. Navigiere zu **Formulare → Vorlagen → Neue Vorlage**
+1. Öffne **Formulare** und klicke auf **+ Formular-Vorlage**
 2. Fülle die Grundinformationen aus:
    - **Titel**: z.B. "5S Arbeitsplatz-Audit"
    - **Beschreibung**: Zweck der Checkliste erklären
@@ -81,14 +81,14 @@ Organisiere die Fragen in logischer Reihenfolge:
 
 1. **Gruppiere nach Themenbereichen**: Nutze aussagekräftige Fragetexte als Überschriften
 2. **Logische Abfolge**: Von allgemein zu spezifisch
-3. **Abhängigkeiten**: Nutze bedingte Fragen für Details bei "Nein"-Antworten
+3. **Abhängigkeiten**: Frage Details bei "Nein"-Antworten in einem Folgeformular ab
 
 **Beispiel-Struktur für 5S Arbeitsplatz-Audit:**
 
 ```
 1. Sortieren (Seiri)
    - Sind nur benötigte Gegenstände am Arbeitsplatz? [Ja/Nein]
-   - Wenn Nein: Welche unnötigen Gegenstände wurden gefunden? [Textarea]
+   - Bemerkung bei Abweichung (optional) [Textarea]
 
 2. Systematisieren (Seiton)
    - Hat jeder Gegenstand einen festen Platz? [Ja/Nein]
@@ -233,7 +233,7 @@ Nach dem Einreichen der Checkliste siehst du:
 - **Logische Struktur**: Gruppiere nach Themenbereichen
 - **Angemessene Länge**: 10-30 Fragen (abhängig vom Umfang)
 - **Hilfetext**: Erkläre Bewertungsmassstäbe
-- **Bedingte Fragen**: Fordere Details nur bei Abweichungen
+- **Folgeformulare**: Fordere Details nur bei Abweichungen (pro Absenden öffnet sich höchstens ein Folgeformular)
 
 ❌ **Vermeiden:**
 - Mehrdeutige Fragen ("Ist alles in Ordnung?")
@@ -317,8 +317,8 @@ Ja! Checklisten sind für wiederholte Anwendung gedacht. Du kannst:
 ### Was passiert, wenn ich eine Frage mit "Nein" beantworte?
 
 Das hängt von deiner Konfiguration ab:
-- **Bedingte Fragen**: Zusätzliche Detailfragen werden eingeblendet
-- **Formular-Actions**: Automatische Meldungen können erstellt werden
+- **Folgeformulare**: Bei passender Regel geht es nach dem Absenden in einem Folgeformular mit Detailfragen weiter
+- **Formular-Actions**: Automatische Meldungen können erstellt werden. Hat die Checkliste Folgeformulare, laufen ihre eigenen Aktionen nur, wenn der Ablauf bei ihr endet. Geht es in ein Folgeformular weiter, hinterlege die Aktion dort
 - **Ergebnis**: Der Erfüllungsgrad wird entsprechend berechnet
 
 ### Kann ich eine Checkliste abbrechen?
@@ -438,18 +438,22 @@ Hilfetext:
         verschmutzte Bereiche
 ```
 
-### Bedingte Logik nutzen
+### Details mit Folgeformularen abfragen
 
-Fordere Details nur bei Abweichungen:
+Fordere Details nur bei Abweichungen: Lege die Detailfragen in ein Folgeformular und lass es per Regel automatisch wählen (siehe [Vorlagen erstellen]({{< ref "04-vorlagen" >}}), Abschnitt «Verzweigen mit Folgeformularen»).
 
 ```
-Frage 1: Sind alle Sicherheitseinrichtungen funktionstüchtig? [Ja/Nein]
+Checkliste – Frage 1: Sind alle Sicherheitseinrichtungen funktionstüchtig? [Ja/Nein]
 
-→ Wenn "Nein":
+→ Regel: Frage 1 ist gleich "Nein" → Folgeformular "Defekt erfassen":
   Frage 1a: Welche Sicherheitseinrichtung ist defekt? [Textarea]
   Frage 1b: Dringlichkeit der Behebung? [Single Choice: Sofort/Dringend/Normal]
   Frage 1c: Foto des Defekts [Datei-Upload]
 ```
+
+Pro Absenden öffnet sich höchstens ein Folgeformular, nämlich das erste (nach Reihenfolge), dessen Regel zutrifft. Prüfst du mehrere Punkte auf diese Weise, fasse die Detailfragen in einem gemeinsamen Folgeformular zusammen: eine Bedingung pro Frage und unter **Verknüpfung** «Mindestens eine Bedingung muss zutreffen».
+
+Soll aus einem Defekt eine Meldung entstehen, hinterlege die Aktion «Meldung erstellen» am Folgeformular "Defekt erfassen", denn dort endet der Ablauf. Die Aktionen der Checkliste selbst laufen nur, wenn kein Folgeformular geöffnet wird.
 
 ### Konsistente Struktur
 

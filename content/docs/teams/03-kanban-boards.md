@@ -114,6 +114,32 @@ Zusätzlich werden **Standard-Labels** erstellt:
 
 Klicke auf **"Ansicht: Liste"** um zur Listen-Ansicht zu wechseln.
 
+### Karten sortieren
+
+Über den Listen der Kanban-Ansicht steht die Sortierleiste. Sie ordnet die Karten in jeder Liste:
+
+| Sortierung | Reihenfolge |
+|------------|-------------|
+| **Manuell** | Die von Hand gezogene Reihenfolge, gleich für alle |
+| **Label** | Rot vor Orange vor Grün, Karten ohne farbiges Label zuunterst |
+| **Letzte Änderung** | Zuletzt geänderte Karten zuoberst |
+| **Frist** | Früheste Frist zuoberst, Karten ohne Frist zuunterst |
+| **A–Z** | Alphabetisch nach Titel |
+
+**So sortiert "A–Z":**
+
+- Gross- und Kleinschreibung spielt keine Rolle
+- Umlaute und Akzente zählen wie der Grundbuchstabe ("Änderung" steht bei A, "Łódź" bei L)
+- Zahlen zählen nach ihrem Wert ("Karte 2" steht vor "Karte 10"); Titel, die mit einer Zahl beginnen, stehen vor den übrigen
+- Anführungszeichen, Klammern sowie "¿" und "¡" am Anfang zählen nicht ("«Projekt Alpha»" steht bei P)
+- Karten ohne Titel stehen zuunterst
+
+**Gut zu wissen:**
+
+- Die Sortierung ändert nur die Anzeige. Die manuelle Reihenfolge bleibt erhalten; mit **"Manuell"** kommst du zu ihr zurück.
+- Solange eine Sortierung aktiv ist, lassen sich Karten nicht ziehen, weder innerhalb einer Liste noch in eine andere. Wähle dafür **"Manuell"**.
+- ELIZA merkt sich deine Sortierung pro Board in deinem Browser. Andere Personen sehen das Board in ihrer eigenen Sortierung, und in einem anderen Browser oder auf einem anderen Gerät beginnt das Board wieder mit **"Manuell"**.
+
 ### Listen-Ansicht
 
 **Tabellarische Darstellung** aller Cards.

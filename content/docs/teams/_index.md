@@ -58,7 +58,7 @@ Das Spaces-Modul ist die **zentrale Kollaborations- und Projektmanagement-Plattf
 - Traktanden mit hierarchischer Struktur
 - Teilnehmerverwaltung
 - Beschluss-Tracking
-- Word-Export für Protokolle
+- PDF- und Word-Export für Protokolle, Word auf Wunsch mit Vorlage aus dem DMS
 - Jitsi-Integration für Online-Meetings
 - Meeting-Vorlagen
 

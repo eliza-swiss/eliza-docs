@@ -11,451 +11,174 @@ tags:
 
 # Vertragsübersicht
 
-In diesem Kapitel lernst du, wie du die Vertragsübersicht effektiv nutzt und Verträge schnell findest.
+In diesem Kapitel lernst du, wie du Verträge mit Filter, Suche und Sortierung schnell findest, auf der Startseite der Verträge und in jedem Vertragsordner.
 
-## Vertragsübersicht öffnen
+## Wo du die Vertragsliste findest
 
-### Zugriff auf die Übersicht
+- **Startseite der Verträge**: Klicke im Menü auf **Verträge**. Die Liste zeigt alle Verträge, die du sehen darfst, über alle Ordner hinweg
+- **Vertragsordner**: Öffne einen Ordner unter **Vertragsordner**. Die Liste zeigt die Verträge dieses Ordners, auf Wunsch samt Unterordnern
 
-**Methode 1: Über Ordner**
+Beide Listen funktionieren gleich. Was im Folgenden für die Startseite steht, gilt auch im Ordner.
 
-1. Navigiere zum Vertragsmanagement
-2. Öffne einen Ordner
-3. Scrolle zum Bereich **"Verträge"**
-4. Du siehst die Tabelle mit allen Verträgen im Ordner
+## Die Startseite im Überblick
 
-**Methode 2: Globale Übersicht**
+![Startseite der Verträge mit zugeklapptem Filter: (1) aktive Filter mit Kreuz und «Alle zurücksetzen», (2) Filterkopf zum Aufklappen, (3) Suchfeld, (4) Einträge pro Seite und Seitenwechsel, (5) Spalten, Excel und neuer Vertrag](/docs/contracts/images/vertraege_liste_filter_zu.svg)
 
-- Manche Installationen haben eine globale Vertragsübersicht
-- Zeigt alle Verträge über alle Ordner hinweg
-- Erfordert entsprechende Berechtigungen
+1. **Aktive Filter**: Jeder gewählte Filter steht als Hinweis über der Liste. Mit dem Kreuz entfernst du ihn, mit **Alle zurücksetzen** alle auf einmal
+2. **Filter**: Ein Klick auf den Kopf klappt den Filterbereich auf und zu. Die Zahl in Klammern zeigt, wie viele Filter gerade gelten
+3. **Suchen**: Suchbegriff für Titel, Beschreibung, Vertragspartner, Vertragsart, verantwortliche Person und Organisationseinheit
+4. **Seiten**: Die Tabelle zeigt 50 Verträge pro Seite. Unter **Pro Seite** wählst du 25, 50, 100 oder 250
+5. **Spalten, Excel, Vertrag**: Spalten ein- und ausblenden, die gefilterte Liste exportieren, einen neuen Vertrag erfassen
 
-## Die Vertrags-Tabelle
+### Beim ersten Besuch
 
-### Spalten der Tabelle
+- Der Filterbereich ist zugeklappt, damit die Tabelle gleich oben steht
+- Vorausgewählt sind die Status **entwurf** und **aktiv**. Du siehst sie oben als Hinweise
+- Klappst du den Filter auf, bleibt er beim nächsten Besuch offen. Klappst du ihn zu, bleibt er zu. Das gilt für die Startseite und alle Vertragsordner gemeinsam
 
-Die Vertragsübersicht zeigt standardmäßig folgende Spalten:
+## Filtern
 
-| Spalte | Beschreibung | Beispiel |
-|--------|--------------|----------|
-| **Titel** | Name des Vertrags | Microsoft Office 365 |
-| **Partner** | Vertragspartner | Microsoft Deutschland |
-| **Von** | Startdatum | 01.01.2024 |
-| **Bis** | Enddatum | 31.12.2024 |
-| **Status** | Aktueller Status | Aktiv, Entwurf, etc. |
-| **Aktionen** | Buttons | Ansehen, Bearbeiten, Löschen |
+![Aufgeklappter Filter: (1) aktive Filter, (2) Filterkopf, (3) gewählte Chips sind kräftig umrandet, (4) bei vielen Einträgen grenzt ein Suchfeld die Chips ein](/docs/contracts/images/vertraege_filter_offen.svg)
 
-### Spalten anpassen
+Klappe den **Filter** auf und klicke die gewünschten Chips an. Ein zweiter Klick auf einen gewählten Chip hebt die Auswahl wieder auf. Die Tabelle passt sich sofort an.
 
-**Spalten ein-/ausblenden:**
+| Abschnitt | Was du wählst |
+|-----------|---------------|
+| **Status** | entwurf, inaktiv, aktiv, abgelaufen |
+| **Freigabestatus** | entwurf, zur Prüfung, Geprüft, freigegeben. Nur sichtbar, wenn der Freigabe-Workflow eingeschaltet ist ([Kapitel 9]({{< ref "09-freigabe-workflow" >}})) |
+| **Vertragsart** | die Vertragsarten, die in der Liste vorkommen |
+| **Vertragsende** | abgelaufen oder Ende in den nächsten 30, 90 oder 365 Tagen. Hier gilt immer nur eine Wahl |
+| **Geldfluss** | Cash-in (Einnahmen) oder Cash-out (Ausgaben) |
+| **Verantwortung** | verantwortliche Personen und Organisationseinheiten |
+| **Vertragspartner** | die Vertragspartner der Verträge in der Liste |
 
-1. Klicke auf das **Spalten-Icon** (oben rechts in der Tabelle)
-2. Wähle die gewünschten Spalten aus
-3. Klicke auf **"Übernehmen"**
+**So wirken mehrere Filter zusammen:**
 
-**Zusätzlich verfügbare Spalten:**
+- **Im selben Abschnitt** genügt einer der Werte: «entwurf» und «aktiv» zeigt beide
+- **Verschiedene Abschnitte** müssen alle zutreffen: «aktiv» und «Ende 90 Tage» zeigt nur aktive Verträge, die in den nächsten 90 Tagen enden
 
-- Vertragstyp
-- Verantwortlicher Mitarbeiter
-- Verantwortliche Organisationseinheit
-- Cashflow-Typ
-- Betrag
-- Zahlungsperiodizität
-- Kündigungsfrist
-- Frühester Kündigungstermin
-- Spätester Kündigungstermin
+Die Chips zeigen nur Werte aus Verträgen, die du sehen darfst. Personen, Partner oder Vertragsarten aus fremden Verträgen tauchen im Filter nicht auf.
 
-## Suche und Filter
+Bei mehr als zwölf Personen und Organisationseinheiten oder mehr als zwölf Vertragspartnern erscheint über den Chips ein Suchfeld. Tippe einige Buchstaben, und es bleiben nur die passenden Chips stehen.
 
-### Schnellsuche
+## Suchen
 
-**Suchfeld nutzen:**
+Gib im Feld **Suchen** über der Tabelle einen oder mehrere Begriffe ein. Gesucht wird in:
 
-1. Finde das Suchfeld oben rechts in der Tabelle
-2. Gib einen Suchbegriff ein
-3. Die Tabelle wird sofort gefiltert
-
-**Was wird durchsucht:**
-
-- Vertragstitel
+- Titel und Beschreibung des Vertrags
 - Vertragspartner
-- Beschreibung
+- Vertragsart
+- verantwortlicher Person und Organisationseinheit
 
-**Beispiel:**
+Bei mehreren Wörtern muss jedes Wort irgendwo vorkommen: «Wartung Lift» findet «Wartungsvertrag Lift Hauptgebäude», aber nicht «Wartungsvertrag Netzwerk». Die Suche wirkt zusätzlich zu den Filtern.
 
-- Suche nach "Microsoft" → Zeigt alle Verträge mit Microsoft
-- Suche nach "Lizenz" → Zeigt alle Lizenzverträge
+## Filter weitergeben und merken
 
-### Nach Status filtern
-
-**Status-Filter:**
-
-Die Vertragsübersicht kann nach Status gefiltert werden:
-
-**Verfügbare Status:**
-
-- **Entwurf**: Verträge in Vorbereitung
-- **Aktiv**: Laufende Verträge
-- **Gekündigt**: Verträge die gekündigt wurden
-- **Abgelaufen**: Verträge deren Laufzeit abgelaufen ist
-- **Archiviert**: Archivierte Verträge
-
-**Filter anwenden:**
-
-1. Klicke auf **"Filter"** (oben links)
-2. Wähle **"Status"**
-3. Wähle gewünschten Status
-4. Tabelle wird gefiltert
-
-**Mehrfachauswahl:**
-
-- Halte `Ctrl` (Windows) oder `Cmd` (Mac) gedrückt
-- Wähle mehrere Status aus
-- Beispiel: Zeige "Aktiv" UND "Gekündigt"
-
-### Nach Datum filtern
-
-**Zeitraum-Filter:**
-
-Filter Verträge nach Laufzeit:
-
-**Von-Datum:**
-
-- Zeige nur Verträge die nach einem bestimmten Datum starten
-- Beispiel: Von-Datum >= 01.01.2024
-
-**Bis-Datum:**
-
-- Zeige nur Verträge die vor einem bestimmten Datum enden
-- Beispiel: Bis-Datum <= 31.12.2024
-
-**Kombination:**
-
-- Zeige Verträge die in einem bestimmten Zeitraum laufen
-- Beispiel: Von 01.01.2024 bis 31.12.2024
-
-**Ablaufende Verträge finden:**
-
-1. Filtere nach Status "Aktiv"
-2. Filtere nach Bis-Datum <= heute + 3 Monate
-3. Zeigt Verträge die in den nächsten 3 Monaten auslaufen
-
-### Nach Partner filtern
-
-**Partner-Auswahl:**
-
-1. Klicke auf **"Filter"**
-2. Wähle **"Partner"**
-3. Gib Partnernamen ein
-4. Wähle aus Vorschlagsliste
-
-**Mehrere Partner:**
-
-- Wähle mehrere Partner aus
-- Zeigt Verträge mit allen ausgewählten Partnern
-
-### Erweiterte Filter
-
-**Cashflow-Typ:**
-
-- Filtere nach "Einnahmen" (in) oder "Ausgaben" (out)
-- Beispiel: Zeige nur Verträge die Kosten verursachen
-
-**Verantwortlicher:**
-
-- Filtere nach verantwortlichem Mitarbeiter
-- Beispiel: Zeige alle Verträge von Max Muster
-
-**Organisationseinheit:**
-
-- Filtere nach verantwortlicher Orgunit
-- Beispiel: Zeige alle IT-Verträge
-
-## Sortierung
-
-### Spalten sortieren
-
-**Klicke auf Spaltentitel:**
-
-- **Einmal klicken**: Aufsteigend sortieren
-- **Zweimal klicken**: Absteigend sortieren
-- **Dreimal klicken**: Sortierung aufheben
-
-**Häufig genutzte Sortierungen:**
-
-**Nach Ablaufdatum sortieren:**
-
-1. Klicke auf Spalte **"Bis"**
-2. Aufsteigend = Älteste zuerst
-3. Zeigt Verträge die bald auslaufen
-
-**Nach Partner sortieren:**
-
-1. Klicke auf Spalte **"Partner"**
-2. Alphabetische Sortierung
-
-**Nach Status sortieren:**
-
-1. Klicke auf Spalte **"Status"**
-2. Gruppiert Verträge nach Status
-
-### Sortierung kombinieren
-
-**Multi-Level Sortierung:**
-
-Manche Tabellen unterstützen mehrfache Sortierung:
-
-1. Halte `Shift` gedrückt
-2. Klicke auf zweite Spalte
-3. Sortiert erst nach erster, dann nach zweiter Spalte
-
-**Beispiel:**
-
-- Erst nach Status sortieren
-- Dann nach Ablaufdatum
-- Zeigt aktive Verträge chronologisch nach Ablaufdatum
-
-## Verträge exportieren
-
-### Excel-Export
-
-**Voraussetzungen:**
-
-- Berechtigung zum Export (meist Admin-Rechte)
-- Zugriff auf Ordner oder Übersicht
-
-**Schritt-für-Schritt:**
-
-1. Öffne den Ordner
-2. Klicke auf **"Exportieren"** (oben rechts)
-3. Wähle **"Excel-Export"**
-4. Datei wird heruntergeladen
-
-**Export-Optionen:**
-
-**Unterordner einbeziehen:**
-
-- Aktiviere **"Unterordner einbeziehen"**
-- Exportiert Verträge aus allen Unterordnern
-
-**Abgelaufene Verträge einbeziehen:**
-
-- Aktiviere **"Abgelaufene Verträge"**
-- Exportiert auch Verträge mit Status "Abgelaufen"
-
-**Archivierte Verträge einbeziehen:**
-
-- Aktiviere **"Archivierte Verträge"**
-- Exportiert auch archivierte Verträge
-
-**Beispiel: Alle aktiven Verträge exportieren**
+Filter und Suchbegriff stehen in der Adresse des Browsers, zum Beispiel:
 
 ```
-✅ Unterordner einbeziehen
-❌ Abgelaufene Verträge
-❌ Archivierte Verträge
+/contracts/contracts/?status=active&end=90&q=Wartung
 ```
 
-### Export-Inhalt
+- **Weitergeben**: Kopiere die Adresse und schicke sie einer Kollegin oder einem Kollegen. Sie sehen dieselbe Auswahl, aber nur die Verträge, die sie sehen dürfen
+- **Als Lesezeichen oder Favorit speichern**: So hast du eine häufig gebrauchte Auswahl mit einem Klick
+- **Zurück und Vorwärts** im Browser wechseln zwischen deinen letzten Auswahlen
+- **Letzte Auswahl**: Öffnest du die Liste wieder ohne Filter in der Adresse, stellt ELIZA deine letzte Auswahl wieder her. Jeder Vertragsordner merkt sich seine eigene Auswahl
 
-**Exportierte Spalten:**
+Alte Links und Favoriten auf «Abgelaufene Verträge» führen automatisch zum Status **abgelaufen**.
 
-Der Excel-Export enthält alle Vertragsdaten:
+## Die Tabelle
 
-- Grunddaten (Titel, Beschreibung, Partner)
-- Laufzeit (Von, Bis, Dauer)
-- Kündigung (Fristen, Termine)
-- Finanzielle Aspekte (Cashflow, Betrag)
-- Verantwortlichkeiten (Mitarbeiter, Orgunit)
-- Status
+### Spalten
 
-**Nicht exportiert:**
+| Spalte | Inhalt |
+|--------|--------|
+| **Titel** | Name des Vertrags, darunter der Ordnerpfad |
+| **Vertragsart** | Art des Vertrags |
+| **Verantwortung** | verantwortliche Person und Organisationseinheit |
+| **Vertragspartner** | Partner und beteiligte Kontakte |
+| **Beginn** und **Ende** | Laufzeit |
+| **Geldfluss** | Cash-in oder Cash-out |
+| **Jährliche Kosten** | Betrag pro Jahr aus Betrag und Zahlungsperiodizität |
+| **Status** | Vertragsstatus |
+| **Freigabestatus** | nur mit eingeschaltetem Freigabe-Workflow |
+| **Aktuelle Wertflüsse** | nur mit eingeschalteten Wertflüssen |
 
-- Dateien (Vertragsunterlagen)
-- Wertflüsse (separate Tabelle)
-- Audit-Historie
+Über **Spalten** blendest du Spalten ein und aus. Der Titel bleibt immer sichtbar. Der Browser merkt sich deine Auswahl.
 
-## Listen-Ansicht vs. Kalender-Ansicht
+### Sortieren
 
-### Listen-Ansicht (Standard)
+Klicke auf einen Spaltentitel, um nach dieser Spalte zu sortieren, ein zweiter Klick kehrt die Richtung um. Ohne Wahl ist die Liste nach Titel sortiert. Nach «Jährliche Kosten» und den Wertflüssen lässt sich nicht sortieren.
 
-Die Listen-Ansicht zeigt Verträge als Tabelle:
+### Seiten
 
-**Vorteile:**
+Die Tabelle lädt jeweils nur die angezeigte Seite, auch bei tausenden Verträgen bleibt sie deshalb schnell. Unten links steht, wie viele Verträge der Filter findet und wie viele es insgesamt sind.
 
-- ✅ Übersichtliche Darstellung vieler Verträge
-- ✅ Sortierung und Filterung
-- ✅ Alle Spalten auf einen Blick
+## Excel-Export
 
-**Nachteile:**
+Ein Klick auf **Excel** lädt genau die Verträge herunter, die du gerade siehst: mit allen Filtern, dem Suchbegriff und der Sortierung, über alle Seiten. Im Vertragsordner gilt auch der Schalter «inkl. Unterordner».
 
-- ❌ Keine visuelle Zeitachse
-- ❌ Schwerer zu erkennen: Was läuft wann aus?
+Der Export enthält die Angaben der Verträge. Vertragsdokumente sind nicht dabei.
 
-### Kalender-Ansicht (optional)
+## Verträge in einem Vertragsordner
 
-Manche Installationen bieten eine Kalender-Ansicht:
+![Vertragsordner: (1) Unterordner als Liste über den Verträgen, (2) Schalter «inkl. Unterordner», (3) Total pro Jahr der gefilterten Verträge](/docs/contracts/images/vertragsordner_liste.svg)
 
-**Vorteile:**
+1. **Unterordner**: Die Unterordner stehen als Liste über den Verträgen. Ein Klick öffnet den Unterordner
+2. **inkl. Unterordner**: Eingeschaltet zeigt die Tabelle auch alle Verträge in den Ordnern darunter, über alle Stufen. Filter, Suche und Excel-Export beziehen sie mit ein
+3. **Total pro Jahr**: Die jährlichen Einnahmen und Ausgaben der gefilterten Verträge. Verträge in verschiedenen Währungen werden pro Währung zusammengezählt
 
-- ✅ Visuelle Zeitachse
-- ✅ Laufzeiten auf einen Blick
-- ✅ Überschneidungen erkennbar
+Die Suche im Ordner findet Verträge. Vertragsdokumente findest du über die Suche oben in ELIZA oder unter **Vertragsdokumente**.
 
-**Nachteile:**
+## Praktische Beispiele
 
-- ❌ Weniger Details sichtbar
-- ❌ Bei vielen Verträgen unübersichtlich
+### Verträge, die bald enden
 
-**Wechsel zwischen Ansichten:**
+1. Filter aufklappen
+2. **Status aktiv** und **Ende 90 Tage** wählen
+3. In der Tabelle nach **Ende** sortieren
 
-- Klicke auf **"Listen-Ansicht"** oder **"Kalender-Ansicht"** (oben rechts)
+Tipp: Speichere diese Adresse als Favorit und prüfe die Liste jede Woche.
 
-## Paginierung
+### Alle Verträge eines Partners
 
-### Seitenwechsel
+1. Filter aufklappen
+2. Unter **Vertragspartner** den Namen ins Suchfeld tippen und den Chip wählen
+3. Unter **Status** auch «inaktiv» und «abgelaufen» wählen, wenn du die ganze Geschichte sehen willst
 
-Bei vielen Verträgen wird die Liste auf mehrere Seiten aufgeteilt:
+### Was kostet die Informatik pro Jahr?
 
-**Navigation:**
+1. Den Ordner **Informatik** öffnen
+2. **inkl. Unterordner** einschalten
+3. Unter **Geldfluss** «Cash-out» wählen
+4. Unten steht das **Total pro Jahr**
 
-- **Erste Seite**: Klicke auf `|<`
-- **Vorherige Seite**: Klicke auf `<`
-- **Nächste Seite**: Klicke auf `>`
-- **Letzte Seite**: Klicke auf `>|`
-- **Direkt zu Seite**: Gib Seitennummer ein
+### Entwürfe aufräumen
 
-**Einträge pro Seite:**
-
-1. Wähle Anzahl aus Dropdown (10, 25, 50, 100)
-2. Mehr Einträge = weniger Seiten
-
-💡 **Tipp:** Bei vielen Verträgen: Wähle 100 Einträge pro Seite für bessere Übersicht.
-
-## Praktische Szenarien
-
-### Szenario 1: Verträge die bald ablaufen
-
-**Ziel:** Finde alle Verträge die in den nächsten 3 Monaten auslaufen.
-
-**Vorgehen:**
-
-1. Filtere nach Status **"Aktiv"**
-2. Sortiere nach Spalte **"Bis"** (aufsteigend)
-3. Scrolle durch die Liste
-4. Verträge mit Bis-Datum < heute + 3 Monate sind relevant
-
-### Szenario 2: Alle Verträge mit Microsoft
-
-**Ziel:** Finde alle Verträge mit Microsoft Deutschland.
-
-**Vorgehen:**
-
-1. Nutze Suchfeld
-2. Gib "Microsoft" ein
-3. Tabelle zeigt nur Microsoft-Verträge
-
-### Szenario 3: Kostenintensive Verträge
-
-**Ziel:** Finde alle Verträge mit Kosten > 10'000 CHF.
-
-**Vorgehen:**
-
-1. Füge Spalte **"Betrag"** hinzu
-2. Sortiere nach **"Betrag"** (absteigend)
-3. Filtere nach Cashflow-Typ **"out"** (Ausgaben)
-4. Erste Einträge sind kostenintensivste Verträge
-
-### Szenario 4: Alle Entwürfe
-
-**Ziel:** Finde alle Verträge die noch als Entwurf markiert sind.
-
-**Vorgehen:**
-
-1. Filtere nach Status **"Entwurf"**
-2. Prüfe Verträge
-3. Aktiviere oder lösche Entwürfe
-
-## Best Practices
-
-### ✅ Empfehlungen
-
-**1. Regelmässig Verträge prüfen:**
-
-- Sortiere nach Ablaufdatum
-- Prüfe wöchentlich ablaufende Verträge
-- Setze Erinnerungen
-
-**2. Filter kombinieren:**
-
-- Status + Ablaufdatum = Aktive Verträge die auslaufen
-- Partner + Status = Alle aktiven Microsoft-Verträge
-- Orgunit + Cashflow = IT-Kosten
-
-**3. Excel-Export für Auswertungen:**
-
-- Exportiere regelmässig
-- Erstelle Pivot-Tabellen in Excel
-- Analysiere Vertragskosten
-
-**4. Spalten anpassen:**
-
-- Blende unnötige Spalten aus
-- Zeige nur relevante Informationen
-- Speichere Ansicht (Browser-Einstellung)
-
-### ❌ Häufige Fehler
-
-**1. Filter nicht zurücksetzen:**
-
-- 💡 Lösung: Klicke auf "Filter zurücksetzen"
-
-**2. Falsche Sortierung:**
-
-- 💡 Lösung: Korrekte Spalte wählen, Richtung prüfen
-
-**3. Paginierung übersehen:**
-
-- 💡 Lösung: Prüfe ob weitere Seiten existieren
-
-**4. Export ohne Filter:**
-
-- 💡 Lösung: Filter VOR Export anwenden
+1. Unter **Status** nur **entwurf** wählen
+2. Die Entwürfe prüfen und aktivieren oder löschen
 
 ## Häufige Fragen
 
-### Kann ich meine Filter speichern?
-
-Aktuell nicht direkt in der Anwendung. Du kannst:
-
-- Browser-Lesezeichen mit URL + Filterparametern erstellen
-- Regelmässig gleiche Filter manuell anwenden
-
 ### Warum sehe ich nicht alle Verträge?
 
-**Mögliche Gründe:**
+- **Filter aktiv**: Schau oben bei den Hinweisen nach und klicke auf **Alle zurücksetzen**. Beachte: Vorausgewählt sind nur «entwurf» und «aktiv», inaktive und abgelaufene Verträge sind deshalb zuerst ausgeblendet
+- **Berechtigungen**: Verträge in geschützten Ordnern siehst du nur als Mitglied des Ordnerteams ([Kapitel 5]({{< ref "05-berechtigungskonzept" >}}))
+- **Weitere Seiten**: Unten rechts wechselst du die Seite
 
-1. **Filter aktiv**: Prüfe und setze Filter zurück
-2. **Berechtigungen**: Du hast keinen Zugriff auf geschützte Ordner
-3. **Paginierung**: Weitere Seiten existieren
+### Warum fehlt der Filter «Freigabestatus»?
 
-### Kann ich mehrere Ordner gleichzeitig durchsuchen?
+Er erscheint nur, wenn der Freigabe-Workflow für Verträge eingeschaltet ist.
 
-Nur wenn deine Installation eine globale Vertragsübersicht hat. Sonst musst du Ordner einzeln durchsuchen.
+### Der Filter ist bei mir immer offen. Wie bekomme ich ihn zu?
 
-### Wie exportiere ich nur bestimmte Verträge?
+Klicke einmal auf den Filterkopf. ELIZA merkt sich, dass du ihn zugeklappt haben willst.
 
-1. Wende Filter an (z.B. Status = "Aktiv")
-2. Dann exportieren
-3. Export enthält nur gefilterte Verträge
+### Kann ich meine Filter speichern?
+
+Ja, über die Adresse: Speichere sie als Lesezeichen oder Favorit. Ausserdem stellt ELIZA beim nächsten Besuch deine letzte Auswahl wieder her.
 
 ## Nächste Schritte
 
-Jetzt, wo du Verträge effektiv suchen kannst:
-
-1. **[Kapitel 5: Berechtigungskonzept]({{< ref "05-berechtigungskonzept" >}})** - Verstehe Zugriffskontrolle
-2. **[Kapitel 7: Workflow]({{< ref "07-workflow" >}})** - Nutze Workflows für Vertragsprozesse
-
----
-
-💡 **Tipp:** Erstelle dir eine wöchentliche Routine: Prüfe alle Verträge mit Ablaufdatum < heute + 3 Monate!
+1. **[Kapitel 5: Berechtigungskonzept]({{< ref "05-berechtigungskonzept" >}})**: Wer welche Verträge sieht
+2. **[Kapitel 9: Freigabe-Workflow]({{< ref "09-freigabe-workflow" >}})**: Verträge prüfen und freigeben

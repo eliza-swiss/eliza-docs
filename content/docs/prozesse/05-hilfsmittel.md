@@ -214,7 +214,7 @@ Hilfsdokumente = Anleitungen und Informationen aus dem DMS (z.B. Arbeitsanweisun
 
 ### Kann ich externe Links als Hilfsmittel hinterlegen?
 
-Ja, nutze das URL-Feld um Links zu Webapplikationen oder externen Ressourcen zu speichern.
+Ja, nutze das URL-Feld, um Links zu Webapplikationen oder externen Ressourcen zu speichern. Für einen CMI-Eintrag kannst du einen Verweis im Format `kal://<UUID>` eintragen. ELIZA akzeptiert nur CMI-Verweise mit einer gültigen UUID; ein abschliessender Schrägstrich ist erlaubt.
 
 ---
 

@@ -439,18 +439,53 @@ Du kannst einen Chatbot-Template für den Meldekreis hinterlegen:
 
 > **⚠️ Wichtig:** Prüfe vor einer Sichtbarkeitsänderung, ob alle relevanten Personen als Admin oder Team eingetragen sind.
 
+## Meldekreis archivieren
+
+Wird ein Meldekreis nicht mehr gebraucht, archivierst du ihn, statt ihn zu löschen. Meldungen, Historien, Kommentare und Anhänge bleiben erhalten.
+
+### Voraussetzungen
+
+- Du bist Admin des Meldekreises oder hast die Berechtigung **issues.change_tracker**
+
+### Vorgehensweise
+
+1. Öffne den Meldekreis
+2. Klicke im Drei-Punkte-Menü auf **"Meldekreis archivieren"**. Denselben Button findest du auch oben rechts auf der Seite **"Meldekreis bearbeiten"**
+3. Prüfe die Angaben: Die Seite zeigt, wie viele abgeschlossene und wie viele offene Meldungen mitarchiviert werden
+4. Sind noch Meldungen offen, bestätige mit dem Häkchen, dass sie ebenfalls archiviert werden
+5. Klicke auf **"Meldekreis archivieren"**
+
+### Was beim Archivieren passiert
+
+- Der Meldekreis nimmt keine neuen Meldungen mehr an, auch nicht über öffentliche Formulare
+- Er verschwindet aus der Übersicht der Meldekreise
+- Alle Meldungen des Meldekreises werden mitarchiviert und fallen damit aus Listen, Fristen und Benachrichtigungen
+- Wer eine Meldung nur erfasst hat, sieht sie danach nicht mehr
+
+> **💡 Tipp:** Archivierte Meldekreise findest du in der Übersicht unter **"Archiviert"**. Der Filter erscheint, sobald es einen archivierten Meldekreis gibt, den du sehen darfst.
+
+### Meldekreis reaktivieren
+
+1. Öffne den archivierten Meldekreis über den Filter **"Archiviert"**
+2. Klicke im Hinweis oben auf **"Meldekreis reaktivieren"** oder oben rechts auf der Seite **"Meldekreis bearbeiten"**
+
+Beim Reaktivieren kommen genau die Meldungen zurück, die mit dem Meldekreis archiviert wurden. Meldungen, die schon vorher einzeln archiviert waren, bleiben archiviert.
+
 ## Meldekreis löschen
 
 ### Voraussetzungen
 
-- Du benötigst **issues.delete_tracker**-Berechtigung
-- Vertrauliche Meldekreise können nicht gelöscht werden
+- Du siehst den Meldekreis und hast die Berechtigung **issues.delete_tracker** oder bist Admin dieses Meldekreises
+- Vertrauliche Meldekreise können von niemandem gelöscht werden
 
 ### Vorgehensweise
 
 1. Öffne den Meldekreis
 2. Klicke auf **"Löschen"**
-3. Bestätige die Löschung
+3. Die Seite bietet zuerst **Archivieren** an: Meldungen, Kommentare und Anhänge bleiben erhalten, und du kannst den Meldekreis später reaktivieren
+4. Willst du endgültig löschen, klappe unter **Endgültig löschen** auf, was mitgelöscht wird (Meldungen, Kommentare, Kategorien, Wissensartikel …), setze das Häkchen und klicke auf **"Endgültig löschen"**
+
+Meldungen, die du nicht öffnen darfst, erscheinen nur als Anzahl und werden ebenfalls gelöscht. Personen und Organisationseinheiten bleiben erhalten, nur ihre Zuweisung zum Meldekreis fällt weg.
 
 > **⚠️ Wichtig:** Beim Löschen eines Meldekreises werden **alle Meldungen** in diesem Meldekreis ebenfalls gelöscht! Diese Aktion kann nicht rückgängig gemacht werden.
 

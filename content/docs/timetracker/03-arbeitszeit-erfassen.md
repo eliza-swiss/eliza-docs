@@ -173,6 +173,8 @@ Falls in deiner Organisation aktiviert, kannst du Arbeitszeiten einem Projekt zu
 
 **Schritt 3:** Klicke auf **Speichern**
 
+> **💡 Tipp:** Auch beim Bearbeiten kannst du Beginn und Ende im Format `HHMM` eingeben – z.B. `0815` oder `815` statt `08:15`.
+
 ### Eintrag löschen
 
 **Schritt 1:** Klicke auf den Eintrag

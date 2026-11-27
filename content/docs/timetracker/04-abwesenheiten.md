@@ -50,9 +50,15 @@ Jede Abwesenheitsart hat eine einstellbare Sichtbarkeitsstufe, die bestimmt, wer
 
 | Stufe | Wer sieht die Absenz? | Beispiel |
 |-------|----------------------|----------|
-| **Öffentlich** | Alle Mitarbeitenden | Ferien, Militär |
+| **Öffentlich** | Alle Mitarbeitenden | Ferien, Militär (wenn die HR sie bewusst öffnet) |
 | **Organisationseinheit** | Nur Mitarbeitende im gleichen Bereich | Weiterbildung, Aussentermin |
 | **Privat** | Nur die betroffene Person, Vorgesetzte und HR | Arztbesuch, Therapie |
+
+#### Standard: Privat
+
+Neue Abwesenheitsarten sind standardmässig **privat**. Auch die mit ELIZA mitgelieferten Abwesenheitsarten (z.B. Ferien, Krankheit, Militär) sind bei neuen Installationen privat eingerichtet. Soll eine Art für das Team oder alle Mitarbeitenden sichtbar sein, stellt die HR die Sichtbarkeit bewusst auf «Organisationseinheit» oder «Öffentlich».
+
+Bestehende Abwesenheitsarten behalten ihre bisherige Sichtbarkeit. Wurde eine Art früher als «Öffentlich» angelegt, bleibt sie öffentlich, bis die HR sie ändert.
 
 **Wichtige Regeln:**
 

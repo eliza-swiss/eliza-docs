@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="690" viewBox="0 0 1200 690" role="img" aria-labelledby="title desc" font-family="Roboto, Arial, sans-serif">
+  <title id="title">Übersicht des ELIZA-Freigabeworkflows für Verträge</title>
+  <desc id="desc">Ein Vertrag durchläuft Entwurf, Prüfung, geprüften Zustand und Freigabe. Änderungen an freigegebenen Verträgen erfolgen über eine Arbeitskopie, Vertragsdokumente über eine neue Version.</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-15%" width="120%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#263238" flood-opacity="0.14"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#78909c"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1976d2"/>
+    </marker>
+    <style>
+      .heading { font-size: 25px; font-weight: 700; fill: #263238; }
+      .subheading { font-size: 14px; fill: #607d8b; }
+      .card-title { font-size: 17px; font-weight: 700; fill: #263238; }
+      .card-text { font-size: 12px; fill: #546e7a; }
+      .step-number { font-size: 12px; font-weight: 700; }
+      .role { font-size: 11px; font-weight: 700; }
+      .section-title { font-size: 16px; font-weight: 700; fill: #37474f; }
+      .small { font-size: 11px; fill: #607d8b; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="690" fill="#f5f7f8"/>
+  <rect width="1200" height="62" fill="#424242"/>
+  <circle cx="30" cy="31" r="7" fill="#42a5f5"/>
+  <circle cx="48" cy="31" r="7" fill="#ff9800"/>
+  <circle cx="66" cy="31" r="7" fill="#ef5350"/>
+  <circle cx="84" cy="31" r="7" fill="#7b1fa2"/>
+  <circle cx="102" cy="31" r="7" fill="#4caf50"/>
+  <text x="126" y="38" fill="#ffffff" font-size="18" font-weight="700">Verträge › Freigabe-Workflow</text>
+
+  <text x="600" y="105" text-anchor="middle" class="heading">Vom Entwurf zur nachvollziehbaren Freigabe</text>
+  <text x="600" y="131" text-anchor="middle" class="subheading">Prüfung, Freigabe und spätere Änderungen bleiben klar getrennt und dokumentiert</text>
+
+  <!-- Hauptworkflow -->
+  <line x1="260" y1="233" x2="340" y2="233" stroke="#78909c" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="540" y1="233" x2="620" y2="233" stroke="#78909c" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="820" y1="233" x2="900" y2="233" stroke="#78909c" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <g transform="translate(60,170)" filter="url(#shadow)">
+    <rect width="200" height="126" rx="10" fill="#ffffff" stroke="#ffb74d" stroke-width="2"/>
+    <rect width="200" height="12" rx="10" fill="#ff9800"/>
+    <circle cx="30" cy="45" r="17" fill="#fff3e0"/>
+    <text x="30" y="50" text-anchor="middle" class="step-number" fill="#e65100">1</text>
+    <text x="58" y="50" class="card-title">Entwurf</text>
+    <text x="20" y="77" class="card-text">Vertrag erfassen und</text>
+    <text x="20" y="95" class="card-text">Dokumente ergänzen</text>
+    <rect x="20" y="105" width="104" height="19" rx="10" fill="#fff3e0"/>
+    <text x="72" y="118" text-anchor="middle" class="role" fill="#e65100">Federführung</text>
+  </g>
+
+  <g transform="translate(340,170)" filter="url(#shadow)">
+    <rect width="200" height="126" rx="10" fill="#ffffff" stroke="#64b5f6" stroke-width="2"/>
+    <rect width="200" height="12" rx="10" fill="#2196f3"/>
+    <circle cx="30" cy="45" r="17" fill="#e3f2fd"/>
+    <text x="30" y="50" text-anchor="middle" class="step-number" fill="#1565c0">2</text>
+    <text x="58" y="50" class="card-title">Zur Prüfung</text>
+    <text x="20" y="77" class="card-text">Inhalt kontrollieren und</text>
+    <text x="20" y="95" class="card-text">Rückmeldung geben</text>
+    <rect x="20" y="105" width="126" height="19" rx="10" fill="#e3f2fd"/>
+    <text x="83" y="118" text-anchor="middle" class="role" fill="#1565c0">Prüfende Funktion</text>
+  </g>
+
+  <g transform="translate(620,170)" filter="url(#shadow)">
+    <rect width="200" height="126" rx="10" fill="#ffffff" stroke="#7986cb" stroke-width="2"/>
+    <rect width="200" height="12" rx="10" fill="#3f51b5"/>
+    <circle cx="30" cy="45" r="17" fill="#e8eaf6"/>
+    <text x="30" y="50" text-anchor="middle" class="step-number" fill="#303f9f">3</text>
+    <text x="58" y="50" class="card-title">Geprüft</text>
+    <text x="20" y="77" class="card-text">Prüfung abgeschlossen,</text>
+    <text x="20" y="95" class="card-text">Freigabe steht noch aus</text>
+    <rect x="20" y="105" width="105" height="19" rx="10" fill="#e8eaf6"/>
+    <text x="72" y="118" text-anchor="middle" class="role" fill="#303f9f">Vier-Augen</text>
+  </g>
+
+  <g transform="translate(900,170)" filter="url(#shadow)">
+    <rect width="240" height="126" rx="10" fill="#ffffff" stroke="#66bb6a" stroke-width="2"/>
+    <rect width="240" height="12" rx="10" fill="#4caf50"/>
+    <circle cx="30" cy="45" r="17" fill="#e8f5e9"/>
+    <path d="M22 45 L28 51 L39 39" fill="none" stroke="#2e7d32" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="58" y="50" class="card-title">Freigegeben</text>
+    <text x="20" y="77" class="card-text">Verbindliches Original bleibt</text>
+    <text x="20" y="95" class="card-text">sichtbar und nachvollziehbar</text>
+    <rect x="20" y="105" width="143" height="19" rx="10" fill="#e8f5e9"/>
+    <text x="92" y="118" text-anchor="middle" class="role" fill="#2e7d32">Freigebende Funktion</text>
+  </g>
+
+  <!-- Rückweg -->
+  <path d="M 442 303 C 442 338, 160 330, 160 299" fill="none" stroke="#ef5350" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
+  <rect x="214" y="321" width="172" height="22" rx="11" fill="#ffffff" stroke="#ffcdd2"/>
+  <text x="300" y="336" text-anchor="middle" class="small" fill="#c62828">Zurückweisen mit Begründung</text>
+
+  <!-- Änderungen nach Freigabe -->
+  <rect x="60" y="375" width="1080" height="252" rx="12" fill="#ffffff" stroke="#d7e0e5" filter="url(#shadow)"/>
+  <text x="88" y="410" class="section-title">Änderungen nach der Freigabe</text>
+  <text x="88" y="433" class="small">Das freigegebene Original bleibt gültig, während Änderungen separat vorbereitet werden.</text>
+
+  <g transform="translate(90,468)">
+    <rect width="245" height="112" rx="9" fill="#e8f5e9" stroke="#66bb6a"/>
+    <circle cx="31" cy="34" r="17" fill="#4caf50"/>
+    <path d="M23 34 L29 40 L40 28" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="58" y="32" class="card-title">Freigegebenes Original</text>
+    <text x="58" y="52" class="card-text">bleibt sichtbar</text>
+    <rect x="20" y="72" width="205" height="24" rx="12" fill="#ffffff"/>
+    <text x="122" y="88" text-anchor="middle" class="small" fill="#2e7d32">Historie und Freigabe bleiben erhalten</text>
+  </g>
+
+  <line x1="345" y1="524" x2="438" y2="524" stroke="#1976d2" stroke-width="3" stroke-dasharray="7 5" marker-end="url(#arrowBlue)"/>
+  <text x="391" y="506" text-anchor="middle" class="small" fill="#1565c0">Ändern</text>
+
+  <g transform="translate(450,468)">
+    <rect width="250" height="112" rx="9" fill="#e3f2fd" stroke="#42a5f5"/>
+    <rect x="20" y="18" width="44" height="55" rx="4" fill="#ffffff" stroke="#90caf9"/>
+    <path d="M52 18 L64 30 L52 30 Z" fill="#bbdefb"/>
+    <line x1="29" y1="42" x2="55" y2="42" stroke="#90a4ae"/>
+    <line x1="29" y1="51" x2="55" y2="51" stroke="#90a4ae"/>
+    <text x="82" y="35" class="card-title">Arbeitskopie</text>
+    <text x="82" y="55" class="card-text">Vertragsdaten bearbeiten</text>
+    <text x="20" y="91" class="small" fill="#1565c0">oder: Dokument als «Neue Version» hochladen</text>
+  </g>
+
+  <line x1="710" y1="524" x2="803" y2="524" stroke="#78909c" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="757" y="506" text-anchor="middle" class="small">erneut prüfen</text>
+
+  <g transform="translate(815,468)">
+    <rect width="295" height="112" rx="9" fill="#f5f5f5" stroke="#90a4ae"/>
+    <circle cx="38" cy="40" r="21" fill="#ffffff" stroke="#ff9800" stroke-width="3"/>
+    <path d="M38 27 A13 13 0 0 1 49 45" fill="none" stroke="#2196f3" stroke-width="3" marker-end="url(#arrowBlue)"/>
+    <text x="75" y="35" class="card-title">Workflow erneut durchlaufen</text>
+    <text x="75" y="56" class="card-text">Prüfen und freigeben</text>
+    <rect x="20" y="78" width="255" height="22" rx="11" fill="#e8f5e9"/>
+    <text x="148" y="93" text-anchor="middle" class="small" fill="#2e7d32">Freigabe übernimmt die Änderungen ins Original</text>
+  </g>
+
+  <text x="600" y="665" text-anchor="middle" font-size="11" fill="#90a4ae">Schematische Darstellung · Berechtigungen, Fristen und Kommentare werden im Workflow protokolliert</text>
+</svg>

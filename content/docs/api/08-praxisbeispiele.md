@@ -178,24 +178,31 @@ def dokument_hochladen(dateipfad, ordner_id, titel=None, remote_key=None):
         return None
 
 
-def dokument_status_aendern(dokument_id, neuer_status):
+def dokument_workflow(dokument_uuid, vorgang, kommentar=None):
     """
-    Ändert den Status eines Dokuments.
+    Führt einen Workflow-Vorgang an einem Dokument aus.
+
+    Den Status setzt du nicht direkt per PATCH: das Feld `state` ist nur
+    lesbar, ein PATCH mit einem anderen Status gibt HTTP 400. Der Status
+    ändert sich über die Workflow-Endpunkte, die dieselben Regeln prüfen wie
+    die Weboberfläche.
 
     Args:
-        dokument_id: ID des Dokuments
-        neuer_status: Neuer Status ('draft', 'review', 'approved', 'archived')
+        dokument_uuid: UUID des Dokuments
+        vorgang: 'review', 'approve', 'reject' (Kommentar Pflicht) oder 'archive'
+        kommentar: steht mit der Statuszeile im Workflow-Kommentar; bei 'reject' die Begründung
     """
-    response = session.patch(
-        f"{BASE_URL}/dms/document/{dokument_id}",
-        json={"state": neuer_status}
+    daten = {"comment": kommentar} if kommentar else {}
+    response = session.post(
+        f"{BASE_URL}/dms/document/{dokument_uuid}/{vorgang}",
+        json=daten
     )
 
     if response.status_code == 200:
-        print(f"✓ Status geändert auf: {neuer_status}")
+        print(f"✓ {vorgang}: Status jetzt {response.json()['state']}")
         return True
     else:
-        print(f"✗ Fehler: {response.json()}")
+        print(f"✗ Fehler ({response.status_code}): {response.json()}")
         return False
 
 
@@ -210,8 +217,10 @@ if __name__ == "__main__":
     )
 
     if dok:
-        # Status auf "Genehmigt" setzen
-        dokument_status_aendern(dok["id"], "approved")
+        # Neue Dokumente entstehen als Entwurf: zur Prüfung geben, dann freigeben.
+        # Welche Vorgänge dir offenstehen, zeigt GET /dms/document/{uuid}/allowed_actions.
+        if dokument_workflow(dok["uuid"], "review"):
+            dokument_workflow(dok["uuid"], "approve")
 ```
 
 ## Beispiel 3: Arbeitszeiten exportieren

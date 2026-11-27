@@ -91,7 +91,7 @@ Lerne, wie du Schulungskurse erstellst, mit Lektionen füllst und freigibst.
 - Skills-Verknüpfung
 - Admin-Team
 - Zertifikatsvorlagen konfigurieren
-- Kursstatus (Entwurf, Freigegeben, Archiviert)
+- Kursstatus (Entwurf, Zur Prüfung, Freigegeben, Abgelaufen) und Archiv
 - Kurs als Word exportieren
 
 **Zielgruppe:** Kursersteller, Administratoren

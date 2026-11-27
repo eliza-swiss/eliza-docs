@@ -244,6 +244,8 @@ GET-Anfragen auf Listen-Endpoints liefern Arrays:
 | `state` / `status` | String (Enum) | `"draft"`, `"approved"` |
 | `order` | Integer | `1`, `2`, `3` |
 
+Bei Dokumenten und Prozessen ist `state` nur lesbar: Der Status ändert sich dort ausschliesslich über die Workflow-Endpunkte (siehe [Endpunkte-Übersicht]({{< ref "04-endpunkte-uebersicht" >}})).
+
 ## Validierungsfehler
 
 Bei ungültigen Daten erhältst du detaillierte Fehlermeldungen:

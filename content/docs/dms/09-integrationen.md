@@ -145,7 +145,7 @@ Microsoft Office Online (Word for the Web) ist ein von Microsoft bereitgestellte
 | **Wasserzeichen** | Nur in der Desktop-App |
 | **ActiveX Controls** | Interaktive Formularelemente |
 
-> 💡 **Tipp:** Wenn deine Dokumente Makros, Serienbriefe oder Datenbankfelder verwenden, bearbeite sie in der lokalen Microsoft Word Desktop-App und lade die aktualisierte Version in ELIZA hoch.
+> 💡 **Tipp:** Wenn deine Dokumente Makros, Serienbriefe oder Datenbankfelder verwenden, bearbeite sie im Office-Programm auf deinem Rechner. Mit der [Bearbeitung am Computer]({{< ref "15-bearbeitung-am-desktop" >}}) öffnest du Entwürfe und Arbeitskopien direkt aus ELIZA, und was du speicherst, landet sofort im DMS.
 
 > ⚠️ **Wichtig:** Diese Einschränkungen sind von Microsoft vorgegeben und betreffen alle Anwendungen, die Office Online nutzen (SharePoint, OneDrive, ELIZA, etc.).
 

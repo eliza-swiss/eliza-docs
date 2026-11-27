@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="100%" font-family="Roboto, Arial, sans-serif">
+<defs><filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.15"/></filter><marker id="ar" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto-start-reverse"><path d="M0,0 L12,6 L0,12 z" fill="#FF9800"/></marker><marker id="arg" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4CAF50"/></marker></defs>
+<rect width="1000" height="560" fill="#fafafa"/>
+<text x="500" y="36" text-anchor="middle" fill="#424242" font-size="20" font-weight="bold">Rechte Seitenleiste ein- und ausklappen</text>
+<text x="500" y="60" text-anchor="middle" fill="#757575" font-size="13">Ein Klick auf den runden Knopf oben rechts schaltet zwischen den beiden Ansichten um</text>
+<circle cx="32" cy="88" r="12" fill="#FF9800"/><text x="32" y="93" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">1</text>
+<text x="52" y="93" fill="#424242" font-size="15" font-weight="bold">Ausgeklappt</text>
+<rect x="20" y="110" width="460" height="390" rx="8" fill="#eeeeee" stroke="#e0e0e0" filter="url(#sh)"/>
+<path d="M20 146 V118 a8 8 0 0 1 8 -8 H472 a8 8 0 0 1 8 8 V146 z" fill="#424242"/>
+<circle cx="36" cy="128" r="4.5" fill="#42A5F5"/>
+<circle cx="47" cy="128" r="4.5" fill="#FF9800"/>
+<circle cx="58" cy="128" r="4.5" fill="#EA4545"/>
+<circle cx="69" cy="128" r="4.5" fill="#7B1FA2"/>
+<circle cx="80" cy="128" r="4.5" fill="#4CAF50"/>
+<text x="100" y="133" fill="#fff" font-size="12">Prozesse › Pflegeplanung</text>
+<rect x="32" y="160" width="276" height="328" rx="8" fill="#fff" filter="url(#sh)"/>
+<text x="46" y="186" fill="#424242" font-size="14" font-weight="bold">Pflegeplanung</text>
+<rect x="230" y="172" width="64" height="18" rx="9" fill="#4CAF50"/><text x="262" y="185" text-anchor="middle" fill="#fff" font-size="10">freigegeben</text>
+<rect x="46" y="204" width="210.79999999999998" height="6" rx="3" fill="#E0E0E0"/>
+<rect x="46" y="218" width="173.6" height="6" rx="3" fill="#E0E0E0"/>
+<rect x="46" y="232" width="193.44" height="6" rx="3" fill="#E0E0E0"/>
+<circle cx="56" cy="290" r="9" fill="#fff" stroke="#4CAF50" stroke-width="2"/>
+<line x1="65" y1="290" x2="76.0" y2="290" stroke="#9E9E9E" stroke-width="1.5"/>
+<rect x="76.0" y="274" width="49.33333333333333" height="32" rx="5" fill="#E3F2FD" stroke="#42A5F5"/>
+<rect x="84.0" y="287" width="33.33333333333333" height="6" rx="3" fill="#90CAF9"/>
+<line x1="125.33333333333331" y1="290" x2="141.33333333333331" y2="290" stroke="#9E9E9E" stroke-width="1.5"/>
+<rect x="141.33333333333331" y="274" width="49.33333333333333" height="32" rx="5" fill="#E3F2FD" stroke="#42A5F5"/>
+<rect x="149.33333333333331" y="287" width="33.33333333333333" height="6" rx="3" fill="#90CAF9"/>
+<line x1="190.66666666666663" y1="290" x2="206.66666666666666" y2="290" stroke="#9E9E9E" stroke-width="1.5"/>
+<rect x="206.66666666666666" y="274" width="49.33333333333333" height="32" rx="5" fill="#E3F2FD" stroke="#42A5F5"/>
+<rect x="214.66666666666666" y="287" width="33.33333333333333" height="6" rx="3" fill="#90CAF9"/>
+<line x1="256.0" y1="290" x2="274" y2="290" stroke="#9E9E9E" stroke-width="1.5"/>
+<circle cx="284" cy="290" r="9" fill="#fff" stroke="#EA4545" stroke-width="3"/>
+<rect x="46" y="350" width="223.20000000000002" height="6" rx="3" fill="#E0E0E0"/>
+<rect x="46" y="364" width="198.4" height="6" rx="3" fill="#E0E0E0"/>
+<rect x="46" y="378" width="213.28" height="6" rx="3" fill="#E0E0E0"/>
+<rect x="46" y="392" width="148.79999999999998" height="6" rx="3" fill="#E0E0E0"/>
+<rect x="318" y="160" width="150" height="38" rx="7" fill="#d6e2f5"/>
+<text x="328" y="184" fill="#212121" font-size="12" font-weight="bold">Prozesslandkarte</text>
+<rect x="318" y="206" width="150" height="28" rx="6" fill="#fff"/>
+<text x="330" y="224" fill="#374151" font-size="11">1000 - Heimleitung</text>
+<rect x="318" y="240" width="150" height="28" rx="6" fill="#fff"/>
+<text x="330" y="258" fill="#374151" font-size="11">2000 - Betreuung</text>
+<rect x="318" y="274" width="150" height="28" rx="6" fill="#fff"/>
+<text x="330" y="292" fill="#374151" font-size="11">3000 - Support</text>
+<circle cx="452" cy="179" r="19" fill="none" stroke="#FF9800" stroke-width="3"/>
+<circle cx="452" cy="179" r="13" fill="#fff" stroke="#BDBDBD"/>
+<text x="452" y="185" text-anchor="middle" fill="#424242" font-size="18" font-weight="bold">›</text>
+<circle cx="532" cy="88" r="12" fill="#FF9800"/><text x="532" y="93" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">2</text>
+<text x="552" y="93" fill="#424242" font-size="15" font-weight="bold">Eingeklappt</text>
+<rect x="520" y="110" width="460" height="390" rx="8" fill="#eeeeee" stroke="#e0e0e0" filter="url(#sh)"/>
+<path d="M520 146 V118 a8 8 0 0 1 8 -8 H972 a8 8 0 0 1 8 8 V146 z" fill="#424242"/>
+<circle cx="536" cy="128" r="4.5" fill="#42A5F5"/>
+<circle cx="547" cy="128" r="4.5" fill="#FF9800"/>
+<circle cx="558" cy="128" r="4.5" fill="#EA4545"/>
+<circle cx="569" cy="128" r="4.5" fill="#7B1FA2"/>
+<circle cx="580" cy="128" r="4.5" fill="#4CAF50"/>
+<text x="600" y="133" fill="#fff" font-size="12">Prozesse › Pflegeplanung</text>
+<rect x="532" y="160" width="394" height="328" rx="8" fill="#fff" filter="url(#sh)"/>
+<text x="546" y="186" fill="#424242" font-size="14" font-weight="bold">Pflegeplanung</text>
+<rect x="848" y="172" width="64" height="18" rx="9" fill="#4CAF50"/><text x="880" y="185" text-anchor="middle" fill="#fff" font-size="10">freigegeben</text>
+<rect x="546" y="204" width="311.09999999999997" height="6" rx="3" fill="#E0E0E0"/>
+<rect x="546" y="218" width="256.2" height="6" rx="3" fill="#E0E0E0"/>
+<rect x="546" y="232" width="285.48" height="6" rx="3" fill="#E0E0E0"/>
+<circle cx="556" cy="290" r="9" fill="#fff" stroke="#4CAF50" stroke-width="2"/>
+<line x1="565" y1="290" x2="576.0" y2="290" stroke="#9E9E9E" stroke-width="1.5"/>
+<rect x="576.0" y="274" width="62.5" height="32" rx="5" fill="#E3F2FD" stroke="#42A5F5"/>
+<rect x="584.0" y="287" width="46.5" height="6" rx="3" fill="#90CAF9"/>
+<line x1="638.5" y1="290" x2="654.5" y2="290" stroke="#9E9E9E" stroke-width="1.5"/>
+<rect x="654.5" y="274" width="62.5" height="32" rx="5" fill="#E3F2FD" stroke="#42A5F5"/>
+<rect x="662.5" y="287" width="46.5" height="6" rx="3" fill="#90CAF9"/>
+<line x1="717.0" y1="290" x2="733.0" y2="290" stroke="#9E9E9E" stroke-width="1.5"/>
+<rect x="733.0" y="274" width="62.5" height="32" rx="5" fill="#E3F2FD" stroke="#42A5F5"/>
+<rect x="741.0" y="287" width="46.5" height="6" rx="3" fill="#90CAF9"/>
+<line x1="795.5" y1="290" x2="811.5" y2="290" stroke="#9E9E9E" stroke-width="1.5"/>
+<rect x="811.5" y="274" width="62.5" height="32" rx="5" fill="#E3F2FD" stroke="#42A5F5"/>
+<rect x="819.5" y="287" width="46.5" height="6" rx="3" fill="#90CAF9"/>
+<line x1="874.0" y1="290" x2="892" y2="290" stroke="#9E9E9E" stroke-width="1.5"/>
+<circle cx="902" cy="290" r="9" fill="#fff" stroke="#EA4545" stroke-width="3"/>
+<rect x="546" y="350" width="329.40000000000003" height="6" rx="3" fill="#E0E0E0"/>
+<rect x="546" y="364" width="292.8" height="6" rx="3" fill="#E0E0E0"/>
+<rect x="546" y="378" width="314.76" height="6" rx="3" fill="#E0E0E0"/>
+<rect x="546" y="392" width="219.6" height="6" rx="3" fill="#E0E0E0"/>
+<text x="729.0" y="470" text-anchor="middle" fill="#2E7D32" font-size="12" font-weight="bold">Der Inhalt nutzt jetzt die ganze Breite</text>
+<line x1="550" y1="450" x2="908" y2="450" stroke="#4CAF50" stroke-width="2" marker-start="url(#arg)" marker-end="url(#arg)"/>
+<circle cx="952.0" cy="179" r="19" fill="none" stroke="#FF9800" stroke-width="3"/>
+<circle cx="952.0" cy="179" r="13" fill="#fff" stroke="#BDBDBD"/>
+<text x="952.0" y="185" text-anchor="middle" fill="#424242" font-size="18" font-weight="bold">‹</text>
+<path d="M484 300 H512" stroke="#FF9800" stroke-width="3" marker-end="url(#ar)"/>
+<rect x="160" y="518" width="680" height="30" rx="15" fill="#FFF3E0"/>
+<text x="500" y="538" text-anchor="middle" fill="#424242" font-size="13">Deine Wahl gilt für alle Seiten mit rechter Seitenleiste und bleibt im Browser gespeichert</text>
+<text x="414" y="93" text-anchor="end" fill="#E65100" font-size="13" font-weight="bold">Klick: einklappen</text>
+<path d="M420 89 Q452 89 452 150" fill="none" stroke="#FF9800" stroke-width="2" marker-end="url(#ar)"/>
+<text x="914" y="93" text-anchor="end" fill="#E65100" font-size="13" font-weight="bold">Klick: wieder ausklappen</text>
+<path d="M920 89 Q952 89 952 150" fill="none" stroke="#FF9800" stroke-width="2" marker-end="url(#ar)"/>
+</svg>

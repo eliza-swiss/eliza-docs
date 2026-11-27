@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 560" font-family="Roboto, Arial, sans-serif">
+  <defs>
+    <filter id="schatten" x="-5%" y="-10%" width="110%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="blau" x1="0" x2="1"><stop offset="0" stop-color="#e3f2fd"/><stop offset="1" stop-color="#bbdefb"/></linearGradient>
+    <linearGradient id="orange" x1="0" x2="1"><stop offset="0" stop-color="#ffe0b2"/><stop offset="1" stop-color="#ffcc80"/></linearGradient>
+    <linearGradient id="gruen" x1="0" x2="1"><stop offset="0" stop-color="#c8e6c9"/><stop offset="1" stop-color="#a5d6a7"/></linearGradient>
+  </defs>
+  <rect width="880" height="560" fill="#f5f5f5" rx="12"/>
+
+  <!-- 1 Blau -->
+  <text x="24" y="34" font-size="13" font-weight="bold" fill="#616161">1  Nach dem Klick</text>
+  <rect x="24" y="44" width="832" height="112" rx="10" fill="url(#blau)" filter="url(#schatten)"/>
+  <rect x="24" y="44" width="5" height="112" rx="2" fill="#1e88e5"/>
+  <rect x="48" y="66" width="22" height="15" rx="2" fill="none" stroke="#212121" stroke-width="2.2"/>
+  <rect x="55" y="81" width="8" height="5" fill="#212121"/>
+  <text x="90" y="78" font-size="14" font-weight="bold" fill="#212121">Das Dokument öffnet sich in deinem Office-Programm.</text>
+  <text x="90" y="98" font-size="13" fill="#212121">Jedes Speichern landet direkt in ELIZA und erscheint in der Versionshistorie.</text>
+  <text x="90" y="116" font-size="12" fill="#424242">Öffnet sich nichts? Dann klicke innerhalb von 60 Sekunden auf «Am Computer öffnen».</text>
+  <circle cx="96" cy="137" r="4.5" fill="#4caf50"/>
+  <text x="108" y="141" font-size="12" fill="#424242">Wartet darauf, dass dein Office-Programm das Dokument öffnet.</text>
+  <rect x="682" y="112" width="164" height="32" rx="8" fill="#1565c0"/>
+  <text x="764" y="133" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">Am Computer öffnen</text>
+
+  <!-- 2 Orange -->
+  <text x="24" y="190" font-size="13" font-weight="bold" fill="#616161">2  Während der Bearbeitung</text>
+  <rect x="24" y="200" width="832" height="92" rx="10" fill="url(#orange)" filter="url(#schatten)"/>
+  <rect x="24" y="200" width="5" height="92" rx="2" fill="#ff9800"/>
+  <rect x="48" y="226" width="22" height="15" rx="2" fill="none" stroke="#212121" stroke-width="2.2"/>
+  <rect x="55" y="241" width="8" height="5" fill="#212121"/>
+  <text x="90" y="238" font-size="14" fill="#212121">Du bearbeitest dieses Dokument seit 09:14 Uhr am Computer. Zuletzt gespeichert um 09:26 Uhr.</text>
+  <circle cx="96" cy="262" r="4.5" fill="#4caf50"/>
+  <circle cx="96" cy="262" r="8" fill="none" stroke="#4caf50" stroke-opacity="0.45" stroke-width="2"/>
+  <text x="108" y="266" font-size="12" fill="#424242">Wird laufend aktualisiert. Nach dem Schliessen im Office-Programm lädt die Seite die neue Fassung.</text>
+  <rect x="662" y="252" width="176" height="30" rx="8" fill="#e3f2fd" stroke="#bbdefb"/>
+  <circle cx="680" cy="267" r="7" fill="#1565c0"/>
+  <rect x="677" y="264" width="6" height="6" fill="#fff"/>
+  <text x="694" y="272" font-size="12.5" font-weight="bold" fill="#1565c0">Bearbeitung beenden</text>
+
+  <!-- 2b Geschützte Ansicht -->
+  <text x="24" y="326" font-size="13" font-weight="bold" fill="#616161">2b  Office öffnet zuerst schreibgeschützt (geschützte Ansicht)</text>
+  <rect x="24" y="336" width="832" height="78" rx="10" fill="url(#orange)" filter="url(#schatten)"/>
+  <rect x="24" y="336" width="5" height="78" rx="2" fill="#ff9800"/>
+  <text x="90" y="364" font-size="14" fill="#212121">Du bearbeitest dieses Dokument seit 09:14 Uhr am Computer.</text>
+  <text x="90" y="386" font-size="13" font-weight="bold" fill="#212121">Das Office-Programm hat das Dokument schreibgeschützt geöffnet.</text>
+  <text x="90" y="403" font-size="12.5" fill="#212121">Klicke dort auf «Bearbeitung aktivieren», um es zu bearbeiten.</text>
+
+  <!-- 3 Grün -->
+  <text x="24" y="448" font-size="13" font-weight="bold" fill="#616161">3  Nach dem Schliessen im Office-Programm</text>
+  <rect x="24" y="458" width="832" height="64" rx="10" fill="url(#gruen)" filter="url(#schatten)"/>
+  <rect x="24" y="458" width="5" height="64" rx="2" fill="#43a047"/>
+  <circle cx="59" cy="490" r="11" fill="#212121"/>
+  <path d="M53 490 L57.5 494.5 L65 486" stroke="#fff" stroke-width="2.6" fill="none"/>
+  <text x="90" y="495" font-size="14" fill="#212121">Die Bearbeitung am Computer ist beendet. Die neue Fassung wird geladen …</text>
+</svg>

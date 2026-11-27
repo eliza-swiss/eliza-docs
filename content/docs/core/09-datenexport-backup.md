@@ -68,7 +68,7 @@ Wenn ein Kunde seinen ELIZA-Vertrag kündigt, hat er Anspruch auf alle seine Dat
 **Unter Linux:**
 
 ```bash
-tar xzf backup_beispiel_myeliza_ch_20231215.tgz
+tar xzf backup_beispiel_myeliza_ch_20231215-10-30.tgz
 ```
 
 ### Die Backup-Struktur verstehen
@@ -92,7 +92,7 @@ backup/
     ├── timetracker.json       → Zeiterfassung
     ├── kpi.json               → Kennzahlen
     ├── ... weitere JSON-Dateien
-    └── beispiel_media.tgz     → Alle hochgeladenen Dateien
+    └── beispiel.myeliza.ch_media.tgz → Alle hochgeladenen Dateien
 </pre>
 
 ### JSON-Dateien öffnen und verstehen

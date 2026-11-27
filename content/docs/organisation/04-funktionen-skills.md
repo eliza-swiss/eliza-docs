@@ -339,8 +339,36 @@ Mitwirkungen verbinden Mitarbeitende mit Funktionen (unabhängig von Organisatio
 | **Beschreibung** | Aufgabengebiet |
 | **Kompetenzen** | Befugnisse |
 | **Verantwortung** | Verantwortungsbereiche |
+| **Übertragene Funktionen** | Funktionen, die der Stelle als Bausteine zugeordnet sind (siehe unten) |
 
 3. Speichere
+
+### Funktionen als Bausteine übertragen
+
+Im Abschnitt **Übertragene Funktionen** des Formulars wählst du Funktionen aus, deren Beschreibung, Kompetenzen und Verantwortung zur Stelle gehören:
+
+1. Öffne das Auswahlfeld **Übertragene Funktionen** und wähle die gewünschten Funktionen aus. Über das Suchfeld oben in der Liste findest du eine Funktion schnell über Abkürzung oder Titel
+2. Gewählte Funktionen stehen zuoberst in der Liste. Eine neu gewählte Funktion kommt ans Ende der gewählten, eine abgewählte rückt zurück zu den übrigen
+3. Speichere
+4. Lege in der Detailansicht die Reihenfolge fest: Ziehe eine Zeile am Griff unter der Abkürzung an die gewünschte Stelle. Die neue Reihenfolge wird sofort gespeichert. Den Griff siehst du, wenn du die Stellenbeschreibung bearbeiten darfst und mindestens zwei Funktionen übertragen sind
+
+In der Detailansicht der Stellenbeschreibung und im Word-Export erscheinen die Funktionen in dieser Reihenfolge als Tabelle mit den Spalten **Abkürzung**, **Titel**, **Beschreibung / Aufgabengebiet**, **Kompetenzen** und **Verantwortung**. Ist ein Feld der Funktion leer, steht dort «-».
+
+- Die Texte stammen immer direkt aus der Funktion. Änderst du die Funktion, zeigen alle Stellenbeschreibungen mit dieser Funktion sofort den neuen Stand.
+- Wer die Stellenbeschreibung sehen darf, sieht auch die Texte ihrer Funktionen. Der Link zur Funktion selbst erscheint nur für Personen, die Funktionen ansehen dürfen.
+- Archivierte Funktionen, die schon zugeordnet sind, bleiben sichtbar und tragen den Zusatz «(archiviert)». Du kannst sie abwählen, aber nicht neu auswählen.
+- Funktionen, die du selbst nicht ansehen darfst, bleiben beim Speichern mit ihrer Position erhalten.
+
+### Eine Stellenbeschreibung kopieren
+
+Für eine ähnliche Stelle musst du nicht von vorne beginnen:
+
+1. Öffne die Stellenbeschreibung, die du als Vorlage nehmen willst
+2. Klicke oben rechts auf das Kopier-Symbol (**Kopieren (ohne Mitarbeitende)**)
+3. ELIZA legt die Kopie an und öffnet direkt ihre Bearbeitungsseite. Die Stellenbezeichnung trägt den Zusatz «(Kopie)»
+4. Wähle die Mitarbeitenden aus, passe die übrigen Angaben an und speichere
+
+Übernommen werden Stellenbezeichnung, Vorgesetzte(r), Stellvertretung, Beschreibung, Kompetenzen, Verantwortung, Gültigkeit und die übertragenen Funktionen in ihrer Reihenfolge. Leer bleiben die Mitarbeitenden und die Dokumente, denn diese gehören zum Personaldossier der bisherigen Person. Die Kopie startet als **Entwurf**. Den Button siehst du, wenn du Stellenbeschreibungen anlegen und bearbeiten darfst.
 
 ### Status-Workflow
 
@@ -350,6 +378,35 @@ Mitwirkungen verbinden Mitarbeitende mit Funktionen (unabhängig von Organisatio
 | **in Prüfung** | Zur Genehmigung eingereicht |
 | **freigegeben** | Gültige, aktive Stellenbeschreibung |
 | **archiviert** | Nicht mehr gültig |
+
+### Mitwirkungen aus übertragenen Funktionen
+
+Ist die Stellenbeschreibung freigegeben und fehlen ihren Mitarbeitenden Mitwirkungen, oder entfernst du Funktionen bzw. archivierst die Stelle, öffnet sich beim **Speichern** ein Fenster über der Bearbeitung. Hast du Funktionen hinzugefügt oder entfernt, heisst es **Funktionsänderungen übernehmen**, sonst **Mitwirkungen prüfen**. Gespeichert wird erst mit **Übernehmen**:
+
+1. Unter **Hinzugefügte Funktionen** (und unter **Fehlende Mitwirkung** für bestehende Funktionen, denen Mitwirkungen fehlen, z.B. beim Freigeben) steht für jede Funktion dasselbe Formular wie auf der Funktion: **Mitarbeitende**, **Organisationseinheit**, **Von**, **Bis**, **Prozess**, **Qualifikation** und **Im Organigramm anzeigen**. Bei **Mitarbeitende** sind alle Personen der Stelle ausgewählt, denen diese Mitwirkung noch fehlt; wählbar sind nur Personen der Stelle. Wähle ab, wer die Mitwirkung nicht erhalten soll. **Von** ist mit «Gültig ab» der Stelle vorbelegt, **Bis** darf nicht in der Vergangenheit liegen
+2. Hast du Funktionen entfernt, Mitarbeitende aus der Stelle genommen oder die Stelle archiviert, nennt das Fenster unter **Entfernte Funktionen** bzw. **Nicht mehr in der Stellenbeschreibung**, was weggefallen ist. Unter **Mitwirkungen der Mitarbeitenden** wählst du pro Mitwirkung **Entfernen** (per heute beenden) oder **Behalten** (bleibt unverändert); **Alle entfernen** bzw. **Alle behalten** setzt die Wahl für alle Zeilen, danach kannst du einzelne ändern. Nicht gefragt wird nach Mitwirkungen, die eine andere freigegebene Stelle derselben Person noch enthält
+3. **Übernehmen** speichert die Stellenbeschreibung zusammen mit den Mitwirkungen. Stimmt eine Angabe nicht, bleibt das Fenster mit einem Hinweis offen und es wird nichts gespeichert
+4. **Zurück zur Bearbeitung** schliesst das Fenster, ohne etwas zu speichern; deine Eingaben in der Stellenbeschreibung bleiben erhalten
+
+Fehlen bei einer gespeicherten Stelle Mitwirkungen, steht in der Detailansicht bei **Übertragene Funktionen** der Hinweis «… Mitwirkungen fehlen». Er öffnet das Fenster **Fehlende Mitwirkungen erfassen** zum Hinzufügen.
+
+Beachte: Eine Mitwirkung vergibt der Person die Rechte der Funktion, mit einer Organisationseinheit auch die Rechte dieser Einheit. Im Organigramm erscheint sie nur mit einer Organisationseinheit. Das Fenster erscheint nur, wenn du Mitwirkungen hinzufügen bzw. ändern darfst, und zeigt nur Mitwirkungen, die du sehen darfst.
+
+### Stellenprofil einer Person
+
+In der Detailansicht einer Person zeigt der Tab **Stellenprofil** (Seitentitel «Stellenprofil von …») oben den Kasten **Person** mit Vorgesetzten, Anstellungsgrad, Organisation und Kontakt, darunter die Stellenbeschreibungen der Person.
+
+Im Abschnitt **Funktionen** steht jede Funktion der Person genau einmal, aufgeteilt in drei Gruppen:
+
+- **Übertragen, aber keine Mitwirkung**: Die Stelle verlangt die Funktion, die Person hat aber weder eine laufende Mitwirkung noch eine Mitgliedschaft dazu. Mit **Mitwirkungen abgleichen** gelangst du zur Stellenbeschreibung und legst die fehlenden Mitwirkungen an.
+- **Übertragen und wahrgenommen**: Die Stelle verlangt die Funktion, und die Person nimmt sie wahr.
+- **Zusätzlich wahrgenommen**: Die Person nimmt die Funktion wahr, ohne dass eine Stelle sie verlangt.
+
+Hat die Person keine Stelle mit übertragenen Funktionen, gibt es nur die Gruppe **Wahrgenommen**. Jede Zeile nennt Prozess und Beginn der Mitwirkung oder die Mitgliedschaft; mit dem Stift bearbeitest du die Mitwirkung. Ein Klick auf die Zeile zeigt Beschreibung, Kompetenzen und Verantwortung der Funktion; ist ein Feld leer, steht dort «-». Die Zeile **Funktion** führt zur Funktion, sofern du Funktionen ansehen darfst.
+
+Die Weiterbildungen sind nach Status gruppiert; abgelaufene stehen zuoberst.
+
+Der Word-Export des Stellenprofils heisst «Stellenprofil». Jede Stelle erscheint mit ihrer Tabelle und dem vollen Text der Funktionen. Darunter folgen nur die Funktionen, die nicht schon in einer Stelle stehen, mit vollem Text; der Abschnitt heisst dann **Weitere aktuell zugeordnete Funktionen**.
 
 ### Dokumente anhängen
 

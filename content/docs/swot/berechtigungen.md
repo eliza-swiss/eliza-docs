@@ -97,24 +97,36 @@ Zusätzlich gibt es **Admin-Rechte** für erweiterte Verwaltung.
 
 ---
 
-### Massnahmen (Admin)
+### Massnahmen modulübergreifend (Admin)
 
-**Vollzugriff auf Massnahmen und Kontrollen**
+**Vollzugriff auf das Massnahmen-Modul**
 
 **Was kannst du tun?**
 - ✅ Alle Massnahmen anzeigen
 - ✅ Massnahmen erstellen
-- ✅ Alle Massnahmen bearbeiten (auch fremde)
-- ✅ Massnahmen löschen
+- ✅ Alle Massnahmen bearbeiten (auch fremde), sofern du das verknüpfte Objekt bearbeiten darfst
+- ✅ Massnahmen löschen, sofern du das verknüpfte Objekt bearbeiten darfst
 - ✅ Kontrollen anzeigen
 - ✅ Kontrollen erstellen
 - ✅ Kontrollen bearbeiten
-- ✅ Kontrollen löschen
+- ✅ Kontrollen löschen, sofern du das verknüpfte Objekt der Massnahme bearbeiten darfst
 
 **Für wen geeignet?**
 - IKS-Verantwortliche
 - Qualitätsmanager
 - Personen mit Gesamtverantwortung für Massnahmen
+
+---
+
+### Massnahmen an Inventar und Prüfmitteln
+
+Massnahmen können an Inventarobjekten und Prüfmitteln hängen. Dort gelten die Rechte des jeweiligen Moduls, nicht die IKS-Rechte:
+
+- **Inventar (Lesen)** und **Prüfmittel (Lesen)**: du siehst den Reiter «Massnahmen» am Objekt und die Übersicht «Massnahmen» im Modulmenü
+- **Inventar (Admin, inklusive verknüpfter Massnahmen)** und **Prüfmittel (Admin, inklusive verknüpfter Massnahmen)**: du fügst Massnahmen hinzu, änderst und löschst sie
+- Verantwortliche Personen und Funktionen bearbeiten ihre Massnahmen wie überall
+- Ein Inventar-Admin sieht keine Prüfmittel- oder IKS-Massnahmen, ein Prüfmittel-Admin keine Inventar- oder IKS-Massnahmen
+- Kontrollen erfassen braucht weiterhin eine Rolle an der Massnahme (verantwortlich oder kontrollierend) oder «Kontrollen (Lesen und Hinzufügen)»
 
 ---
 
@@ -201,16 +213,18 @@ Diese Logik ist **intuitiv und praxisnah**:
 
 Es gibt einen **wichtigen Unterschied**:
 
-| Rolle | Berechtigung erforderlich? | Kann Kontrollen hinzufügen? |
-|-------|---------------------------|----------------------------|
-| **Verantwortliche Person** | ✅ Ja, "Kontrollen (Lesen und Hinzufügen)" | ✅ Ja, wenn berechtigt |
-| **Kontrollierende Person** | ❌ Nein, automatisch | ✅ Ja, immer |
-| **Verantwortliche Funktion** | ✅ Ja, "Kontrollen (Lesen und Hinzufügen)" | ✅ Ja, wenn berechtigt |
-| **Kontrollierende Funktion** | ❌ Nein, automatisch | ✅ Ja, immer |
+| Rolle | Kann die Massnahme bearbeiten? | Kann Kontrollen hinzufügen? |
+|-------|-------------------------------|----------------------------|
+| **Verantwortliche Person** | ✅ Ja | ✅ Ja |
+| **Verantwortliche Funktion** | ✅ Ja | ✅ Ja |
+| **Kontrollierende Person** | ❌ Nein | ✅ Ja |
+| **Kontrollierende Funktion** | ❌ Nein | ✅ Ja |
+
+Für alle vier Rollen ist keine zusätzliche Berechtigung nötig; sie gelten nur für die Massnahmen, bei denen du oder deine Funktion eingetragen seid.
 
 **Begründung:**
-- **Verantwortliche** setzen Massnahmen um → benötigen allgemeine Berechtigung
-- **Controller** überwachen und prüfen → erhalten automatisch Zugriff auf ihre Massnahmen
+- **Verantwortliche** setzen die Massnahme um → dürfen sie bearbeiten
+- **Controller** überprüfen Umsetzung beziehungsweise Wirksamkeit und dokumentieren die Kontrolle → dürfen die Massnahme sehen und Kontrollen erfassen, aber nicht ändern
 
 ---
 
@@ -269,7 +283,7 @@ So nutzt du die **automatische Kontroll-Berechtigung**:
 - Klicke auf "Bearbeiten"
 
 **2. Controller eintragen**
-- Scrolle zum Abschnitt "Kontrolle durch"
+- Scrolle zum Abschnitt "Kontrolle"
 - Wähle im Feld "**Kontrollierende Person**" den User aus
 - Speichere die Änderungen
 
@@ -374,7 +388,7 @@ Das **Ergebnis ist identisch** - du kannst Kontrollen hinzufügen. Beide Zuweisu
 ### Kann ich fremde Kontrollen bearbeiten?
 
 **Nein**, es sei denn:
-- Du bist "Massnahmen (Admin)" → kannst alle Kontrollen bearbeiten
+- Du bist "Massnahmen modulübergreifend (Admin)" → kannst alle Kontrollen bearbeiten
 - Du bist in der Controller-Funktion der Massnahme → kannst Kontrollen dieser Massnahme bearbeiten
 
 ### Sehe ich alle Massnahmen im Dashboard?
